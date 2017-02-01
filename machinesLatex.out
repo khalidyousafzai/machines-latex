@@ -37,7 +37,7 @@
 \BOOKMARK [1][-]{section.3.3}{امالی برقی دباؤ}{chapter.3}% \RL {\arabicfont  37}
 \BOOKMARK [1][-]{section.3.4}{ہیجان انگیز برقی رو اور مرکزی ضیاع}{chapter.3}% \RL {\arabicfont  38}
 \BOOKMARK [1][-]{section.3.5}{تبادلہ برقی دباؤ اور تبادلہ برقی رو کے خصوصیات}{chapter.3}% \RL {\arabicfont  39}
-\BOOKMARK [1][-]{section.3.6}{ثانوی جانب بار کا ابتدائی جانب اثر}{chapter.3}% \RL {\arabicfont  40}
+\BOOKMARK [1][-]{section.3.6}{ثانوی جانب بوجھ کا ابتدائی جانب اثر}{chapter.3}% \RL {\arabicfont  40}
 \BOOKMARK [1][-]{section.3.7}{ٹرانسفارمر کی علامت پر نقطوں کا مطلب}{chapter.3}% \RL {\arabicfont  41}
 \BOOKMARK [1][-]{section.3.8}{رکاوٹ کا تبادلہ}{chapter.3}% \RL {\arabicfont  42}
 \BOOKMARK [1][-]{section.3.9}{ٹرانسفارمر کے وولٹ-ایمپیئر}{chapter.3}% \RL {\arabicfont  43}
@@ -84,7 +84,7 @@
 \BOOKMARK [1][-]{section.6.3}{معاصر مشین کا مساوی دور}{chapter.6}% \RL {\arabicfont  84}
 \BOOKMARK [1][-]{section.6.4}{برقی طاقت کی منتقلی}{chapter.6}% \RL {\arabicfont  85}
 \BOOKMARK [1][-]{section.6.5}{یکساں حال، برقرار چالو مشین کے خصوصیات}{chapter.6}% \RL {\arabicfont  86}
-\BOOKMARK [2][-]{subsection.6.5.1}{معاصر جنریٹر: برقی بار بالمقابل Im کے خطوط}{section.6.5}% \RL {\arabicfont  87}
+\BOOKMARK [2][-]{subsection.6.5.1}{معاصر جنریٹر: برقی بوجھ بالمقابل Im کے خطوط}{section.6.5}% \RL {\arabicfont  87}
 \BOOKMARK [2][-]{subsection.6.5.2}{معاصر موٹر:Ia بالمقابل Im کے خط}{section.6.5}% \RL {\arabicfont  88}
 \BOOKMARK [1][-]{section.6.6}{کھلے دور اور کسرِ دور معائنہ }{chapter.6}% \RL {\arabicfont  89}
 \BOOKMARK [2][-]{subsection.6.6.1}{کُھلے دور معائنہ}{section.6.6}% \RL {\arabicfont  90}
@@ -100,8 +100,8 @@
 \BOOKMARK [1][-]{section.7.8}{مساوی برقی دور پر غور}{chapter.7}% \RL {\arabicfont  100}
 \BOOKMARK [1][-]{section.7.9}{امالی موٹر کا مساوی تھونن دور }{chapter.7}% \RL {\arabicfont  101}
 \BOOKMARK [1][-]{section.7.10}{پنجرا نما امالی موٹر}{chapter.7}% \RL {\arabicfont  102}
-\BOOKMARK [1][-]{section.7.11}{بے بار موٹر اور جامد موٹر کے معائنہ }{chapter.7}% \RL {\arabicfont  103}
-\BOOKMARK [2][-]{subsection.7.11.1}{بے بار موٹر کا معائنہ}{section.7.11}% \RL {\arabicfont  104}
+\BOOKMARK [1][-]{section.7.11}{بے بوجھ موٹر اور جامد موٹر کے معائنہ }{chapter.7}% \RL {\arabicfont  103}
+\BOOKMARK [2][-]{subsection.7.11.1}{بے بوجھ موٹر کا معائنہ}{section.7.11}% \RL {\arabicfont  104}
 \BOOKMARK [2][-]{subsection.7.11.2}{جامد موٹر کا معائنہ}{section.7.11}% \RL {\arabicfont  105}
 \BOOKMARK [0][-]{chapter.8}{یک سمتی رو مشین}{}% \RL {\arabicfont  106}
 \BOOKMARK [1][-]{section.8.1}{میکانی سمت کار کی بنیادی کارکردگی}{chapter.8}% \RL {\arabicfont  107}
@@ -110,6 +110,5 @@
 \BOOKMARK [1][-]{section.8.3}{مروڑ}{chapter.8}% \RL {\arabicfont  110}
 \BOOKMARK [1][-]{section.8.4}{بیرونی ہیجان اور خود ہیجان یک سمتی جنریٹر}{chapter.8}% \RL {\arabicfont  111}
 \BOOKMARK [1][-]{section.8.5}{یک سمتی مشین کی کارکردگی کے خط}{chapter.8}% \RL {\arabicfont  112}
-\BOOKMARK [2][-]{subsection.8.5.1}{حاصل برقی دباؤ بالمقابل برقی بار}{section.8.5}% \RL {\arabicfont  113}
+\BOOKMARK [2][-]{subsection.8.5.1}{حاصل برقی دباؤ بالمقابل برقی بوجھ}{section.8.5}% \RL {\arabicfont  113}
 \BOOKMARK [2][-]{subsection.8.5.2}{رفتار بالمقابل مروڑ}{section.8.5}% \RL {\arabicfont  114}
-\BOOKMARK [0][-]{equation.8.5.17}{فرہنگ}{}% \RL {\arabicfont  115}
