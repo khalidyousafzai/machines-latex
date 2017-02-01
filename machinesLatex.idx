@@ -1,427 +1,431 @@
-\indexentry{scalar|hyperpage}{\RL {\arabicfont  1}}
-\indexentry{مقداری|hyperpage}{\RL {\arabicfont  1}}
-\indexentry{vector|hyperpage}{\RL {\arabicfont  2}}
-\indexentry{سمتیہ|hyperpage}{\RL {\arabicfont  2}}
-\indexentry{unit vector|hyperpage}{\RL {\arabicfont  2}}
-\indexentry{اکائی سمتیہ|hyperpage}{\RL {\arabicfont  2}}
-\indexentry{orthonormal|hyperpage}{\RL {\arabicfont  3}}
-\indexentry{سمتیہ!عمودی اکائی|hyperpage}{\RL {\arabicfont  3}}
-\indexentry{cartesian system|hyperpage}{\RL {\arabicfont  3}}
-\indexentry{محدد!کارتیسی|hyperpage}{\RL {\arabicfont  3}}
-\indexentry{cylindrical coordinates|hyperpage}{\RL {\arabicfont  5}}
-\indexentry{محدد!نلکی|hyperpage}{\RL {\arabicfont  5}}
-\indexentry{cross section|hyperpage}{\RL {\arabicfont  8}}
-\indexentry{عمودی تراش|hyperpage}{\RL {\arabicfont  8}}
-\indexentry{عمودی تراش!رقبہ|hyperpage}{\RL {\arabicfont  8}}
-\indexentry{charge|hyperpage}{\RL {\arabicfont  9}}
-\indexentry{برقی بار|hyperpage}{\RL {\arabicfont  9}}
-\indexentry{Coulomb's law|hyperpage}{\RL {\arabicfont  9}}
-\indexentry{قانون!کولمب|hyperpage}{\RL {\arabicfont  9}}
-\indexentry{برقی میدان|hyperpage}{\RL {\arabicfont  10}}
-\indexentry{electric field!intensity|hyperpage}{\RL {\arabicfont  10}}
-\indexentry{برقی میدان!شدت|hyperpage}{\RL {\arabicfont  10}}
-\indexentry{magnetic field!intensity|hyperpage}{\RL {\arabicfont  11}}
-\indexentry{مقناطیسی میدان!شدت|hyperpage}{\RL {\arabicfont  11}}
-\indexentry{surface density|hyperpage}{\RL {\arabicfont  11}}
-\indexentry{سطحی کثافت|hyperpage}{\RL {\arabicfont  11}}
-\indexentry{cross product|hyperpage}{\RL {\arabicfont  13}}
-\indexentry{ضرب صلیبی|hyperpage}{\RL {\arabicfont  13}}
-\indexentry{dot product|hyperpage}{\RL {\arabicfont  16}}
-\indexentry{ضرب نقطہ|hyperpage}{\RL {\arabicfont  16}}
-\indexentry{differentiation|hyperpage}{\RL {\arabicfont  18}}
-\indexentry{تفرق|hyperpage}{\RL {\arabicfont  18}}
-\indexentry{تفرق!جزوی|hyperpage}{\RL {\arabicfont  18}}
-\indexentry{طول موج|hyperpage}{\RL {\arabicfont  19}}
-\indexentry{تکمل|hyperpage}{\RL {\arabicfont  19}}
-\indexentry{موثر|hyperpage}{\RL {\arabicfont  19}}
-\indexentry{Euler|hyperpage}{\RL {\arabicfont  21}}
-\indexentry{یولر مساوات|hyperpage}{\RL {\arabicfont  21}}
-\indexentry{phasor|hyperpage}{\RL {\arabicfont  21}}
-\indexentry{مرحلی سمتیہ|hyperpage}{\RL {\arabicfont  21}}
-\indexentry{lagging|hyperpage}{\RL {\arabicfont  22}}
-\indexentry{تاخیری زاویہ|hyperpage}{\RL {\arabicfont  22}}
-\indexentry{leading|hyperpage}{\RL {\arabicfont  22}}
-\indexentry{پیش زاویہ|hyperpage}{\RL {\arabicfont  22}}
-\indexentry{phase difference|hyperpage}{\RL {\arabicfont  23}}
-\indexentry{مرحلی فرق|hyperpage}{\RL {\arabicfont  23}}
-\indexentry{power factor angle|hyperpage}{\RL {\arabicfont  23}}
-\indexentry{زاویہ جزو طاقت|hyperpage}{\RL {\arabicfont  23}}
-\indexentry{power factor|hyperpage}{\RL {\arabicfont  23}}
-\indexentry{جزو طاقت|hyperpage}{\RL {\arabicfont  23}}
-\indexentry{power factor!leading|hyperpage}{\RL {\arabicfont  23}}
-\indexentry{جزو طاقت!پیش|hyperpage}{\RL {\arabicfont  23}}
-\indexentry{power factor!lagging|hyperpage}{\RL {\arabicfont  23}}
-\indexentry{جزو طاقت!تاخیری|hyperpage}{\RL {\arabicfont  23}}
-\indexentry{single phase|hyperpage}{\RL {\arabicfont  23}}
-\indexentry{یک مرحلہ|hyperpage}{\RL {\arabicfont  23}}
-\indexentry{resistance|hyperpage}{\RL {\arabicfont  25}}
-\indexentry{مزاحمت|hyperpage}{\RL {\arabicfont  25}}
-\indexentry{magnetic constant|hyperpage}{\RL {\arabicfont  25}}
-\indexentry{permeability|hyperpage}{\RL {\arabicfont  25}}
-\indexentry{مقناطیسی مستقل|hyperpage}{\RL {\arabicfont  25}}
-\indexentry{conductivity|hyperpage}{\RL {\arabicfont  25}}
-\indexentry{موصلیت|hyperpage}{\RL {\arabicfont  25}}
-\indexentry{reluctance|hyperpage}{\RL {\arabicfont  26}}
-\indexentry{ہچکچاہٹ|hyperpage}{\RL {\arabicfont  26}}
-\indexentry{permeability!relative|hyperpage}{\RL {\arabicfont  26}}
-\indexentry{relative permeability|hyperpage}{\RL {\arabicfont  26}}
-\indexentry{مقناطیسی مستقل!جزو|hyperpage}{\RL {\arabicfont  26}}
-\indexentry{Ohm's law|hyperpage}{\RL {\arabicfont  26}}
-\indexentry{قانون!اوہم|hyperpage}{\RL {\arabicfont  26}}
-\indexentry{کثافت!برقی رو|hyperpage}{\RL {\arabicfont  27}}
-\indexentry{برقی میدان!شدت|hyperpage}{\RL {\arabicfont  27}}
-\indexentry{تانبا|hyperpage}{\RL {\arabicfont  28}}
-\indexentry{برقی رو|hyperpage}{\RL {\arabicfont  28}}
-\indexentry{برقی دباؤ|hyperpage}{\RL {\arabicfont  28}}
-\indexentry{mmf|hyperpage}{\RL {\arabicfont  29}}
-\indexentry{مقناطیسی دباؤ|hyperpage}{\RL {\arabicfont  29}}
-\indexentry{ہچکچاہٹ|hyperpage}{\RL {\arabicfont  29}}
-\indexentry{flux|hyperpage}{\RL {\arabicfont  29}}
-\indexentry{مقناطیسی بہاو|hyperpage}{\RL {\arabicfont  29}}
-\indexentry{مقناطیسی مستقل!جزو|hyperpage}{\RL {\arabicfont  30}}
-\indexentry{laminations|hyperpage}{\RL {\arabicfont  31}}
-\indexentry{پتری|hyperpage}{\RL {\arabicfont  31}}
-\indexentry{magnetic core|hyperpage}{\RL {\arabicfont  31}}
-\indexentry{مقناطیسی مرکز|hyperpage}{\RL {\arabicfont  31}}
-\indexentry{ampere-turn|hyperpage}{\RL {\arabicfont  32}}
-\indexentry{ایمپیئر-چکر|hyperpage}{\RL {\arabicfont  32}}
-\indexentry{Weber|hyperpage}{\RL {\arabicfont  32}}
-\indexentry{ویبر|hyperpage}{\RL {\arabicfont  32}}
-\indexentry{magnetic flux!density|hyperpage}{\RL {\arabicfont  32}}
-\indexentry{مقناطیسی بہاو!کثافت|hyperpage}{\RL {\arabicfont  32}}
-\indexentry{magnetic field!intensity|hyperpage}{\RL {\arabicfont  32}}
-\indexentry{مقناطیسی میدان!شدت|hyperpage}{\RL {\arabicfont  32}}
-\indexentry{Tesla|hyperpage}{\RL {\arabicfont  32}}
-\indexentry{ٹسلا|hyperpage}{\RL {\arabicfont  32}}
-\indexentry{Faraday's law|hyperpage}{\RL {\arabicfont  37}}
-\indexentry{فیراڈے!قانون|hyperpage}{\RL {\arabicfont  37}}
-\indexentry{induced voltage|hyperpage}{\RL {\arabicfont  37}}
-\indexentry{امالی برقی دباؤ|hyperpage}{\RL {\arabicfont  37}}
-\indexentry{ویبر-چکر|hyperpage}{\RL {\arabicfont  37}}
-\indexentry{ارتباط بہاو|hyperpage}{\RL {\arabicfont  37}}
-\indexentry{کسر دور|hyperpage}{\RL {\arabicfont  38}}
-\indexentry{inductance|hyperpage}{\RL {\arabicfont  38}}
-\indexentry{امالہ|hyperpage}{\RL {\arabicfont  38}}
-\indexentry{Henry|hyperpage}{\RL {\arabicfont  38}}
-\indexentry{Henry|hyperpage}{\RL {\arabicfont  38}}
-\indexentry{لچھا!پیچدار|hyperpage}{\RL {\arabicfont  39}}
-\indexentry{self inductance|hyperpage}{\RL {\arabicfont  41}}
-\indexentry{خود امالہ|hyperpage}{\RL {\arabicfont  41}}
-\indexentry{mutual inductance|hyperpage}{\RL {\arabicfont  41}}
-\indexentry{مشترکہ امالہ|hyperpage}{\RL {\arabicfont  41}}
-\indexentry{self flux linkage|hyperpage}{\RL {\arabicfont  41}}
-\indexentry{خود ارتباط بہاو|hyperpage}{\RL {\arabicfont  41}}
-\indexentry{mutual flux linkage|hyperpage}{\RL {\arabicfont  41}}
-\indexentry{مشترکہ ارتباط امالہ|hyperpage}{\RL {\arabicfont  41}}
-\indexentry{Watt|hyperpage}{\RL {\arabicfont  42}}
-\indexentry{واٹ|hyperpage}{\RL {\arabicfont  42}}
-\indexentry{power|hyperpage}{\RL {\arabicfont  42}}
-\indexentry{طاقت|hyperpage}{\RL {\arabicfont  42}}
-\indexentry{Joule|hyperpage}{\RL {\arabicfont  42}}
-\indexentry{جاول|hyperpage}{\RL {\arabicfont  42}}
-\indexentry{energy|hyperpage}{\RL {\arabicfont  42}}
-\indexentry{توانائی|hyperpage}{\RL {\arabicfont  42}}
-\indexentry{residual magnetic flux|hyperpage}{\RL {\arabicfont  44}}
-\indexentry{کثافت مقناطیسی بہاو!بقایا|hyperpage}{\RL {\arabicfont  44}}
-\indexentry{coercivity|hyperpage}{\RL {\arabicfont  44}}
-\indexentry{مقناطیس!خاتم شدت|hyperpage}{\RL {\arabicfont  44}}
-\indexentry{hysteresis loop|hyperpage}{\RL {\arabicfont  45}}
-\indexentry{مقناطیس!چال کا دائرہ|hyperpage}{\RL {\arabicfont  45}}
-\indexentry{saturation|hyperpage}{\RL {\arabicfont  46}}
-\indexentry{سیرابیت|hyperpage}{\RL {\arabicfont  46}}
-\indexentry{induced voltage|hyperpage}{\RL {\arabicfont  48}}
-\indexentry{امالی برقی دباؤ|hyperpage}{\RL {\arabicfont  48}}
-\indexentry{rms|hyperpage}{\RL {\arabicfont  48}}
-\indexentry{موثر|hyperpage}{\RL {\arabicfont  48}}
-\indexentry{excitation current|hyperpage}{\RL {\arabicfont  51}}
-\indexentry{برقی رو!ہیجان انگیز|hyperpage}{\RL {\arabicfont  51}}
-\indexentry{مقناطیسی چال|hyperpage}{\RL {\arabicfont  51}}
-\indexentry{core|hyperpage}{\RL {\arabicfont  55}}
-\indexentry{مقناطیسی مرکز|hyperpage}{\RL {\arabicfont  55}}
-\indexentry{coil!primary|hyperpage}{\RL {\arabicfont  55}}
-\indexentry{ابتدائی!لچھا|hyperpage}{\RL {\arabicfont  55}}
-\indexentry{لچھا!ابتدائی|hyperpage}{\RL {\arabicfont  55}}
-\indexentry{primary!side|hyperpage}{\RL {\arabicfont  55}}
-\indexentry{ابتدائی!جانب|hyperpage}{\RL {\arabicfont  55}}
-\indexentry{side!secondary|hyperpage}{\RL {\arabicfont  55}}
-\indexentry{ثانوی جانب|hyperpage}{\RL {\arabicfont  55}}
-\indexentry{coil!secondary|hyperpage}{\RL {\arabicfont  55}}
-\indexentry{لچھا!ثانوی|hyperpage}{\RL {\arabicfont  55}}
-\indexentry{coil!low voltage|hyperpage}{\RL {\arabicfont  56}}
-\indexentry{لچھا!کم برقی دباؤ|hyperpage}{\RL {\arabicfont  56}}
-\indexentry{coil!high voltage|hyperpage}{\RL {\arabicfont  56}}
-\indexentry{لچھا!زیادہ برقی دباؤ|hyperpage}{\RL {\arabicfont  56}}
-\indexentry{برقی دباؤ!تبادلہ|hyperpage}{\RL {\arabicfont  56}}
-\indexentry{ٹرانسفارمر!دباؤ بڑھاتا|hyperpage}{\RL {\arabicfont  58}}
-\indexentry{step down transformer|hyperpage}{\RL {\arabicfont  58}}
-\indexentry{ٹرانسفارمر!دباؤ گھٹاتا|hyperpage}{\RL {\arabicfont  58}}
-\indexentry{step up transformer|hyperpage}{\RL {\arabicfont  58}}
-\indexentry{تین مرحلہ|hyperpage}{\RL {\arabicfont  59}}
-\indexentry{three phase|hyperpage}{\RL {\arabicfont  59}}
-\indexentry{single phase|hyperpage}{\RL {\arabicfont  59}}
-\indexentry{ایک مرحلہ|hyperpage}{\RL {\arabicfont  59}}
-\indexentry{ٹرانسفارمر!برقی دباؤ، میٹر|hyperpage}{\RL {\arabicfont  59}}
-\indexentry{ٹرانسفارمر!رو، میٹر|hyperpage}{\RL {\arabicfont  59}}
-\indexentry{electrical rating|hyperpage}{\RL {\arabicfont  59}}
-\indexentry{برقی استعداد|hyperpage}{\RL {\arabicfont  59}}
-\indexentry{transformer!communication|hyperpage}{\RL {\arabicfont  59}}
-\indexentry{ٹرانسفارمر!ذرائع ابلاغ|hyperpage}{\RL {\arabicfont  59}}
-\indexentry{transformer!air core|hyperpage}{\RL {\arabicfont  59}}
-\indexentry{ٹرانسفارمر!خلائی مرکز والا|hyperpage}{\RL {\arabicfont  59}}
-\indexentry{بے بوجھ|hyperpage}{\RL {\arabicfont  60}}
-\indexentry{excitation current|hyperpage}{\RL {\arabicfont  60}}
-\indexentry{ہیجان انگیز برقی رو|hyperpage}{\RL {\arabicfont  60}}
-\indexentry{excitation|hyperpage}{\RL {\arabicfont  61}}
-\indexentry{ہیجان|hyperpage}{\RL {\arabicfont  61}}
-\indexentry{excitation current|hyperpage}{\RL {\arabicfont  61}}
-\indexentry{ہیجان انگیز!برقی رو|hyperpage}{\RL {\arabicfont  61}}
-\indexentry{excited coil|hyperpage}{\RL {\arabicfont  61}}
-\indexentry{ہیجان!لچھا|hyperpage}{\RL {\arabicfont  61}}
-\indexentry{excitation voltage|hyperpage}{\RL {\arabicfont  61}}
-\indexentry{ہیجان انگیز!برقی دباؤ|hyperpage}{\RL {\arabicfont  61}}
-\indexentry{induced voltage|hyperpage}{\RL {\arabicfont  61}}
-\indexentry{امالی برقی دباؤ|hyperpage}{\RL {\arabicfont  61}}
-\indexentry{electromotive force|hyperpage}{\RL {\arabicfont  61}}
-\indexentry{محرک برقی دباؤ|hyperpage}{\RL {\arabicfont  61}}
-\indexentry{eddy currents|hyperpage}{\RL {\arabicfont  62}}
-\indexentry{بھنور نما!برقی رو|hyperpage}{\RL {\arabicfont  62}}
-\indexentry{eddy current loss|hyperpage}{\RL {\arabicfont  62}}
-\indexentry{بھنور نما!ضیاع|hyperpage}{\RL {\arabicfont  62}}
-\indexentry{laminations|hyperpage}{\RL {\arabicfont  62}}
-\indexentry{پتریاں|hyperpage}{\RL {\arabicfont  62}}
-\indexentry{core loss|hyperpage}{\RL {\arabicfont  62}}
-\indexentry{مرکزی ضیاع|hyperpage}{\RL {\arabicfont  62}}
-\indexentry{enamel|hyperpage}{\RL {\arabicfont  62}}
-\indexentry{روغن|hyperpage}{\RL {\arabicfont  62}}
-\indexentry{E,I|hyperpage}{\RL {\arabicfont  62}}
-\indexentry{ایک، تین پتریاں|hyperpage}{\RL {\arabicfont  62}}
-\indexentry{Fourier series|hyperpage}{\RL {\arabicfont  63}}
-\indexentry{فوریئر تسلسل|hyperpage}{\RL {\arabicfont  63}}
-\indexentry{harmonic components|hyperpage}{\RL {\arabicfont  64}}
-\indexentry{موسیقائی جزو|hyperpage}{\RL {\arabicfont  64}}
-\indexentry{fundamental component|hyperpage}{\RL {\arabicfont  64}}
-\indexentry{بنیادی جزو|hyperpage}{\RL {\arabicfont  64}}
-\indexentry{core loss component|hyperpage}{\RL {\arabicfont  64}}
-\indexentry{مرکزی ضیاع!جزو|hyperpage}{\RL {\arabicfont  64}}
-\indexentry{magnetizing current|hyperpage}{\RL {\arabicfont  64}}
-\indexentry{مقناطیسی برقی رو|hyperpage}{\RL {\arabicfont  64}}
-\indexentry{transformer!ideal|hyperpage}{\RL {\arabicfont  65}}
-\indexentry{ٹرانسفارمر!کامل|hyperpage}{\RL {\arabicfont  65}}
-\indexentry{voltage!transformation|hyperpage}{\RL {\arabicfont  66}}
-\indexentry{برقی دباؤ!تبادلہ|hyperpage}{\RL {\arabicfont  66}}
-\indexentry{current!transformation|hyperpage}{\RL {\arabicfont  66}}
-\indexentry{برقی رو!تبادلہ|hyperpage}{\RL {\arabicfont  66}}
-\indexentry{ٹرانسفارمر!بوجھ بردار|hyperpage}{\RL {\arabicfont  69}}
-\indexentry{in-phase|hyperpage}{\RL {\arabicfont  70}}
-\indexentry{ہم قدم|hyperpage}{\RL {\arabicfont  70}}
-\indexentry{impedance transformation|hyperpage}{\RL {\arabicfont  71}}
-\indexentry{تبادلہ!رکاوٹ|hyperpage}{\RL {\arabicfont  71}}
-\indexentry{VA|hyperpage}{\RL {\arabicfont  75}}
-\indexentry{volt-ampere|hyperpage}{\RL {\arabicfont  75}}
-\indexentry{وولٹ-ایمپیئر|hyperpage}{\RL {\arabicfont  75}}
-\indexentry{magnetic flux!leakage|hyperpage}{\RL {\arabicfont  78}}
-\indexentry{مقناطیسی بہاو!رستا|hyperpage}{\RL {\arabicfont  78}}
-\indexentry{leakage reactance|hyperpage}{\RL {\arabicfont  79}}
-\indexentry{رستا!متعاملہ|hyperpage}{\RL {\arabicfont  79}}
-\indexentry{leakage inductance|hyperpage}{\RL {\arabicfont  79}}
-\indexentry{رستا!امالہ|hyperpage}{\RL {\arabicfont  79}}
-\indexentry{پیچھے|hyperpage}{\RL {\arabicfont  80}}
-\indexentry{open circuit test|hyperpage}{\RL {\arabicfont  85}}
-\indexentry{معائنہ!کھلے دور|hyperpage}{\RL {\arabicfont  85}}
-\indexentry{بناوٹ|hyperpage}{\RL {\arabicfont  85}}
-\indexentry{تین مرحلہ|hyperpage}{\RL {\arabicfont  92}}
-\indexentry{three phase|hyperpage}{\RL {\arabicfont  92}}
-\indexentry{delta connected|hyperpage}{\RL {\arabicfont  92}}
-\indexentry{جوڑ!تکونی|hyperpage}{\RL {\arabicfont  92}}
-\indexentry{تکونی جوڑ|hyperpage}{\RL {\arabicfont  92}}
-\indexentry{star connected|hyperpage}{\RL {\arabicfont  92}}
-\indexentry{جوڑ!ستارہ نما|hyperpage}{\RL {\arabicfont  92}}
-\indexentry{ستارہ نما جوڑ|hyperpage}{\RL {\arabicfont  92}}
-\indexentry{earth|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{زمین|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{ground wire|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{زمینی تار|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{گرم تار|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{ٹھنڈی تار|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{phase voltage|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{یک مرحلہ برقی دباؤ|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{تار کی برقی دباؤ|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{phase current|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{یک مرحلہ برقی رو|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{line current|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{تار کی برقی رو|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{line voltage|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{ground current|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{زمینی برقی رو|hyperpage}{\RL {\arabicfont  94}}
-\indexentry{rating|hyperpage}{\RL {\arabicfont  96}}
-\indexentry{استعداد|hyperpage}{\RL {\arabicfont  96}}
-\indexentry{rating|hyperpage}{\RL {\arabicfont  97}}
-\indexentry{استعداد|hyperpage}{\RL {\arabicfont  97}}
-\indexentry{name plate|hyperpage}{\RL {\arabicfont  97}}
-\indexentry{تختی|hyperpage}{\RL {\arabicfont  97}}
-\indexentry{load|hyperpage}{\RL {\arabicfont  98}}
-\indexentry{بوجھ|hyperpage}{\RL {\arabicfont  98}}
-\indexentry{برقرار چالو|hyperpage}{\RL {\arabicfont  100}}
-\indexentry{time period|hyperpage}{\RL {\arabicfont  100}}
-\indexentry{دوری عرصہ|hyperpage}{\RL {\arabicfont  100}}
-\indexentry{relay|hyperpage}{\RL {\arabicfont  103}}
-\indexentry{رِیلے|hyperpage}{\RL {\arabicfont  103}}
-\indexentry{سمتی رفتار|hyperpage}{\RL {\arabicfont  104}}
-\indexentry{Lorenz equation|hyperpage}{\RL {\arabicfont  104}}
-\indexentry{مساوات لورینز|hyperpage}{\RL {\arabicfont  104}}
-\indexentry{stator coil|hyperpage}{\RL {\arabicfont  106}}
-\indexentry{لچھا! ساکن|hyperpage}{\RL {\arabicfont  106}}
-\indexentry{ساکن لچھا|hyperpage}{\RL {\arabicfont  106}}
-\indexentry{rotor coli|hyperpage}{\RL {\arabicfont  106}}
-\indexentry{لچھا!گھومتا|hyperpage}{\RL {\arabicfont  106}}
-\indexentry{گھومتا لچھا|hyperpage}{\RL {\arabicfont  106}}
-\indexentry{conservative field|hyperpage}{\RL {\arabicfont  110}}
-\indexentry{قدامت پسند میدان|hyperpage}{\RL {\arabicfont  110}}
-\indexentry{تدریجی تفرق|hyperpage}{\RL {\arabicfont  115}}
-\indexentry{بھٹی|hyperpage}{\RL {\arabicfont  116}}
-\indexentry{Faraday's law|hyperpage}{\RL {\arabicfont  127}}
-\indexentry{فیراڈے!قانون|hyperpage}{\RL {\arabicfont  127}}
-\indexentry{core|hyperpage}{\RL {\arabicfont  128}}
-\indexentry{مرکز|hyperpage}{\RL {\arabicfont  128}}
-\indexentry{برقی رو!بھنور نما|hyperpage}{\RL {\arabicfont  128}}
-\indexentry{بھنور نما برقی رو|hyperpage}{\RL {\arabicfont  128}}
-\indexentry{laminations|hyperpage}{\RL {\arabicfont  128}}
-\indexentry{پتری|hyperpage}{\RL {\arabicfont  128}}
-\indexentry{eddy currents|hyperpage}{\RL {\arabicfont  128}}
-\indexentry{چکر فی منٹ|hyperpage}{\RL {\arabicfont  128}}
-\indexentry{stator coil|hyperpage}{\RL {\arabicfont  129}}
-\indexentry{ساکن لچھا|hyperpage}{\RL {\arabicfont  129}}
-\indexentry{frequency|hyperpage}{\RL {\arabicfont  132}}
-\indexentry{تعدد|hyperpage}{\RL {\arabicfont  132}}
-\indexentry{synchronous|hyperpage}{\RL {\arabicfont  132}}
-\indexentry{معاصر|hyperpage}{\RL {\arabicfont  132}}
-\indexentry{electromagnet|hyperpage}{\RL {\arabicfont  132}}
-\indexentry{مقناطیس!برقی|hyperpage}{\RL {\arabicfont  132}}
-\indexentry{armature coil|hyperpage}{\RL {\arabicfont  133}}
-\indexentry{لچھا!قوی|hyperpage}{\RL {\arabicfont  133}}
-\indexentry{field coil|hyperpage}{\RL {\arabicfont  133}}
-\indexentry{لچھا!میدانی|hyperpage}{\RL {\arabicfont  133}}
-\indexentry{لچھا!سمت|hyperpage}{\RL {\arabicfont  135}}
-\indexentry{charge|hyperpage}{\RL {\arabicfont  138}}
-\indexentry{بار|hyperpage}{\RL {\arabicfont  138}}
-\indexentry{برقی بار|hyperpage}{\RL {\arabicfont  138}}
-\indexentry{Lorentz law|hyperpage}{\RL {\arabicfont  138}}
-\indexentry{قانون!لورینز|hyperpage}{\RL {\arabicfont  138}}
-\indexentry{volt|hyperpage}{\RL {\arabicfont  139}}
-\indexentry{وولٹ|hyperpage}{\RL {\arabicfont  139}}
-\indexentry{voltage|hyperpage}{\RL {\arabicfont  139}}
-\indexentry{برقی دباؤ|hyperpage}{\RL {\arabicfont  139}}
-\indexentry{emf|hyperpage}{\RL {\arabicfont  139}}
-\indexentry{electromotive force|hyperpage}{\RL {\arabicfont  139}}
-\indexentry{برقی دباؤ!محرک|hyperpage}{\RL {\arabicfont  139}}
-\indexentry{لچھا!پھیلے|hyperpage}{\RL {\arabicfont  142}}
-\indexentry{pole!non-salient|hyperpage}{\RL {\arabicfont  142}}
-\indexentry{قطب!ہموار|hyperpage}{\RL {\arabicfont  142}}
-\indexentry{pole!salient|hyperpage}{\RL {\arabicfont  142}}
-\indexentry{قطب!ابھرے|hyperpage}{\RL {\arabicfont  142}}
-\indexentry{winding!distributed|hyperpage}{\RL {\arabicfont  142}}
-\indexentry{مقناطیسی دباؤ!سمت|hyperpage}{\RL {\arabicfont  143}}
-\indexentry{Fourier series|hyperpage}{\RL {\arabicfont  143}}
-\indexentry{فوریئر تسلسل|hyperpage}{\RL {\arabicfont  143}}
-\indexentry{time period|hyperpage}{\RL {\arabicfont  144}}
-\indexentry{دوری عرصہ|hyperpage}{\RL {\arabicfont  144}}
-\indexentry{fundamental|hyperpage}{\RL {\arabicfont  144}}
-\indexentry{بنیادی جزو|hyperpage}{\RL {\arabicfont  144}}
-\indexentry{harmonic|hyperpage}{\RL {\arabicfont  144}}
-\indexentry{موسیقائی جزو|hyperpage}{\RL {\arabicfont  144}}
-\indexentry{سلسلہ وار|hyperpage}{\RL {\arabicfont  147}}
-\indexentry{winding factor|hyperpage}{\RL {\arabicfont  149}}
-\indexentry{جزو!پھیلاو|hyperpage}{\RL {\arabicfont  149}}
-\indexentry{synchronous speed|hyperpage}{\RL {\arabicfont  158}}
-\indexentry{معاصر رفتار|hyperpage}{\RL {\arabicfont  158}}
-\indexentry{synchronous speed|hyperpage}{\RL {\arabicfont  158}}
-\indexentry{معاصر رفتار|hyperpage}{\RL {\arabicfont  158}}
-\indexentry{rpm|hyperpage}{\RL {\arabicfont  158}}
-\indexentry{generator!ac|hyperpage}{\RL {\arabicfont  162}}
-\indexentry{جنریٹر!بدلتی رو|hyperpage}{\RL {\arabicfont  162}}
-\indexentry{محور|hyperpage}{\RL {\arabicfont  163}}
-\indexentry{axle|hyperpage}{\RL {\arabicfont  163}}
-\indexentry{دھرا|hyperpage}{\RL {\arabicfont  163}}
-\indexentry{rms|hyperpage}{\RL {\arabicfont  166}}
-\indexentry{موثر قیمت|hyperpage}{\RL {\arabicfont  166}}
-\indexentry{voltage!DC|hyperpage}{\RL {\arabicfont  167}}
-\indexentry{برقی دباؤ!یک سمتی|hyperpage}{\RL {\arabicfont  167}}
-\indexentry{commutator|hyperpage}{\RL {\arabicfont  167}}
-\indexentry{سمت کار!میکانی|hyperpage}{\RL {\arabicfont  167}}
-\indexentry{rectifier|hyperpage}{\RL {\arabicfont  167}}
-\indexentry{سمت کار!برقیاتی|hyperpage}{\RL {\arabicfont  167}}
-\indexentry{torque|hyperpage}{\RL {\arabicfont  168}}
-\indexentry{مروڑ|hyperpage}{\RL {\arabicfont  168}}
-\indexentry{مقناطیسی مستقل|hyperpage}{\RL {\arabicfont  168}}
-\indexentry{steady state|hyperpage}{\RL {\arabicfont  177}}
-\indexentry{برقرار چالو|hyperpage}{\RL {\arabicfont  177}}
-\indexentry{transient state|hyperpage}{\RL {\arabicfont  177}}
-\indexentry{عارضی صورت|hyperpage}{\RL {\arabicfont  177}}
-\indexentry{synchronous speed|hyperpage}{\RL {\arabicfont  178}}
-\indexentry{معاصر رفتار|hyperpage}{\RL {\arabicfont  178}}
-\indexentry{slip rings|hyperpage}{\RL {\arabicfont  178}}
-\indexentry{سرک چھلے|hyperpage}{\RL {\arabicfont  178}}
-\indexentry{carbon bush|hyperpage}{\RL {\arabicfont  179}}
-\indexentry{بش|hyperpage}{\RL {\arabicfont  179}}
-\indexentry{کاربن بش|hyperpage}{\RL {\arabicfont  179}}
-\indexentry{قطب!ابھرے|hyperpage}{\RL {\arabicfont  179}}
-\indexentry{non-salient poles|hyperpage}{\RL {\arabicfont  179}}
-\indexentry{قطب!ہموار|hyperpage}{\RL {\arabicfont  179}}
-\indexentry{hunting|hyperpage}{\RL {\arabicfont  180}}
-\indexentry{تعقب|hyperpage}{\RL {\arabicfont  180}}
-\indexentry{torque!pull out|hyperpage}{\RL {\arabicfont  180}}
-\indexentry{مروڑ!انتہائی|hyperpage}{\RL {\arabicfont  180}}
-\indexentry{غیر معاصر|hyperpage}{\RL {\arabicfont  180}}
-\indexentry{circuit breaker|hyperpage}{\RL {\arabicfont  180}}
-\indexentry{دور شکن|hyperpage}{\RL {\arabicfont  180}}
-\indexentry{سطحی تکمل|hyperpage}{\RL {\arabicfont  183}}
-\indexentry{synchronous inductance|hyperpage}{\RL {\arabicfont  186}}
-\indexentry{معاصر امالہ|hyperpage}{\RL {\arabicfont  186}}
-\indexentry{برقی دباؤ!ہیجانی|hyperpage}{\RL {\arabicfont  187}}
-\indexentry{ہیجانی برقی دباؤ|hyperpage}{\RL {\arabicfont  187}}
-\indexentry{مرحلی سمتیہ|hyperpage}{\RL {\arabicfont  188}}
-\indexentry{power-angle law|hyperpage}{\RL {\arabicfont  190}}
-\indexentry{طاقت بالمقابل زاویہ|hyperpage}{\RL {\arabicfont  190}}
-\indexentry{مخلوط عدد|hyperpage}{\RL {\arabicfont  194}}
-\indexentry{کپیسٹر|hyperpage}{\RL {\arabicfont  196}}
-\indexentry{design|hyperpage}{\RL {\arabicfont  197}}
-\indexentry{پورا بوجھ|hyperpage}{\RL {\arabicfont  199}}
-\indexentry{کارگزاری|hyperpage}{\RL {\arabicfont  203}}
-\indexentry{قوی الیکٹرانکس|hyperpage}{\RL {\arabicfont  209}}
-\indexentry{slip|hyperpage}{\RL {\arabicfont  210}}
-\indexentry{سرک|hyperpage}{\RL {\arabicfont  210}}
-\indexentry{torque|hyperpage}{\RL {\arabicfont  211}}
-\indexentry{مروڑ|hyperpage}{\RL {\arabicfont  211}}
-\indexentry{چوٹی|hyperpage}{\RL {\arabicfont  213}}
-\indexentry{رفتار!اضافی زاویائی|hyperpage}{\RL {\arabicfont  214}}
-\indexentry{اضافی!زاویائی رفتار|hyperpage}{\RL {\arabicfont  214}}
-\indexentry{رستا متعاملیت|hyperpage}{\RL {\arabicfont  219}}
-\indexentry{linear circuit|hyperpage}{\RL {\arabicfont  228}}
-\indexentry{خطی!برقی دور|hyperpage}{\RL {\arabicfont  228}}
-\indexentry{Thevenin theorem|hyperpage}{\RL {\arabicfont  228}}
-\indexentry{مسئلہ!تھونن|hyperpage}{\RL {\arabicfont  228}}
-\indexentry{theorem!maximum power transfer|hyperpage}{\RL {\arabicfont  230}}
-\indexentry{مسئلہ!زیادہ سے زیادہ طاقت کی منتقلی|hyperpage}{\RL {\arabicfont  230}}
-\indexentry{slip rings|hyperpage}{\RL {\arabicfont  231}}
-\indexentry{سرک چھلے|hyperpage}{\RL {\arabicfont  231}}
-\indexentry{اوہم میٹر|hyperpage}{\RL {\arabicfont  239}}
-\indexentry{یک سمتی رو!مشین|hyperpage}{\RL {\arabicfont  243}}
-\indexentry{قوی الیکٹرانکس|hyperpage}{\RL {\arabicfont  243}}
-\indexentry{commutator|hyperpage}{\RL {\arabicfont  243}}
-\indexentry{سمت کار|hyperpage}{\RL {\arabicfont  243}}
-\indexentry{فورئیر|hyperpage}{\RL {\arabicfont  252}}
-\indexentry{self excited|hyperpage}{\RL {\arabicfont  253}}
-\indexentry{ہیجان!خود|hyperpage}{\RL {\arabicfont  253}}
-\indexentry{separately excited|hyperpage}{\RL {\arabicfont  253}}
-\indexentry{ہیجان!بیرونی|hyperpage}{\RL {\arabicfont  253}}
-\indexentry{field coil|hyperpage}{\RL {\arabicfont  253}}
-\indexentry{میدانی لچھے|hyperpage}{\RL {\arabicfont  253}}
-\indexentry{armature coil|hyperpage}{\RL {\arabicfont  253}}
-\indexentry{قوی لچھے|hyperpage}{\RL {\arabicfont  253}}
-\indexentry{parallel connected|hyperpage}{\RL {\arabicfont  255}}
-\indexentry{داخلی ہیجان!متوازی|hyperpage}{\RL {\arabicfont  255}}
-\indexentry{داخلی ہیجان!سلسلہ وار|hyperpage}{\RL {\arabicfont  255}}
-\indexentry{داخلی ہیجان!مرکب|hyperpage}{\RL {\arabicfont  255}}
-\indexentry{مرکب جنریٹر|hyperpage}{\RL {\arabicfont  255}}
-\indexentry{قریب جڑی مرکب|hyperpage}{\RL {\arabicfont  255}}
-\indexentry{دور جڑی مرکب|hyperpage}{\RL {\arabicfont  255}}
+\indexentry{scalar|hyperpage}{1}
+\indexentry{مقداری|hyperpage}{1}
+\indexentry{vector|hyperpage}{2}
+\indexentry{سمتیہ|hyperpage}{2}
+\indexentry{unit vector|hyperpage}{2}
+\indexentry{اکائی سمتیہ|hyperpage}{2}
+\indexentry{orthonormal|hyperpage}{3}
+\indexentry{سمتیہ!عمودی اکائی|hyperpage}{3}
+\indexentry{cartesian system|hyperpage}{3}
+\indexentry{محدد!کارتیسی|hyperpage}{3}
+\indexentry{cylindrical coordinates|hyperpage}{5}
+\indexentry{محدد!نلکی|hyperpage}{5}
+\indexentry{cross section|hyperpage}{8}
+\indexentry{عمودی تراش|hyperpage}{8}
+\indexentry{عمودی تراش!رقبہ|hyperpage}{8}
+\indexentry{charge|hyperpage}{9}
+\indexentry{برقی بار|hyperpage}{9}
+\indexentry{Coulomb's law|hyperpage}{9}
+\indexentry{قانون!کولمب|hyperpage}{9}
+\indexentry{برقی میدان|hyperpage}{10}
+\indexentry{electric field!intensity|hyperpage}{10}
+\indexentry{برقی میدان!شدت|hyperpage}{10}
+\indexentry{magnetic field!intensity|hyperpage}{11}
+\indexentry{مقناطیسی میدان!شدت|hyperpage}{11}
+\indexentry{surface density|hyperpage}{11}
+\indexentry{سطحی کثافت|hyperpage}{11}
+\indexentry{cross product|hyperpage}{13}
+\indexentry{ضرب صلیبی|hyperpage}{13}
+\indexentry{dot product|hyperpage}{16}
+\indexentry{ضرب نقطہ|hyperpage}{16}
+\indexentry{differentiation|hyperpage}{18}
+\indexentry{تفرق|hyperpage}{18}
+\indexentry{تفرق!جزوی|hyperpage}{18}
+\indexentry{طول موج|hyperpage}{19}
+\indexentry{تکمل|hyperpage}{19}
+\indexentry{موثر|hyperpage}{19}
+\indexentry{Euler|hyperpage}{21}
+\indexentry{یولر مساوات|hyperpage}{21}
+\indexentry{phasor|hyperpage}{21}
+\indexentry{مرحلی سمتیہ|hyperpage}{21}
+\indexentry{lagging|hyperpage}{22}
+\indexentry{تاخیری زاویہ|hyperpage}{22}
+\indexentry{leading|hyperpage}{22}
+\indexentry{پیش زاویہ|hyperpage}{22}
+\indexentry{phase difference|hyperpage}{23}
+\indexentry{مرحلی فرق|hyperpage}{23}
+\indexentry{power factor angle|hyperpage}{23}
+\indexentry{زاویہ جزو طاقت|hyperpage}{23}
+\indexentry{power factor|hyperpage}{23}
+\indexentry{جزو طاقت|hyperpage}{23}
+\indexentry{power factor!leading|hyperpage}{23}
+\indexentry{جزو طاقت!پیش|hyperpage}{23}
+\indexentry{power factor!lagging|hyperpage}{23}
+\indexentry{جزو طاقت!تاخیری|hyperpage}{23}
+\indexentry{single phase|hyperpage}{23}
+\indexentry{یک مرحلہ|hyperpage}{23}
+\indexentry{resistance|hyperpage}{25}
+\indexentry{مزاحمت|hyperpage}{25}
+\indexentry{magnetic constant|hyperpage}{25}
+\indexentry{permeability|hyperpage}{25}
+\indexentry{مقناطیسی مستقل|hyperpage}{25}
+\indexentry{conductivity|hyperpage}{25}
+\indexentry{موصلیت|hyperpage}{25}
+\indexentry{reluctance|hyperpage}{26}
+\indexentry{ہچکچاہٹ|hyperpage}{26}
+\indexentry{permeability!relative|hyperpage}{26}
+\indexentry{relative permeability|hyperpage}{26}
+\indexentry{مقناطیسی مستقل!جزو|hyperpage}{26}
+\indexentry{Ohm's law|hyperpage}{26}
+\indexentry{قانون!اوہم|hyperpage}{26}
+\indexentry{کثافت!برقی رو|hyperpage}{27}
+\indexentry{برقی میدان!شدت|hyperpage}{27}
+\indexentry{تانبا|hyperpage}{28}
+\indexentry{برقی رو|hyperpage}{28}
+\indexentry{برقی دباؤ|hyperpage}{28}
+\indexentry{mmf|hyperpage}{29}
+\indexentry{مقناطیسی دباؤ|hyperpage}{29}
+\indexentry{ہچکچاہٹ|hyperpage}{29}
+\indexentry{flux|hyperpage}{29}
+\indexentry{مقناطیسی بہاو|hyperpage}{29}
+\indexentry{مقناطیسی مستقل!جزو|hyperpage}{30}
+\indexentry{laminations|hyperpage}{31}
+\indexentry{پتری|hyperpage}{31}
+\indexentry{magnetic core|hyperpage}{31}
+\indexentry{مقناطیسی مرکز|hyperpage}{31}
+\indexentry{ampere-turn|hyperpage}{32}
+\indexentry{ایمپیئر-چکر|hyperpage}{32}
+\indexentry{Weber|hyperpage}{32}
+\indexentry{ویبر|hyperpage}{32}
+\indexentry{magnetic flux!density|hyperpage}{32}
+\indexentry{مقناطیسی بہاو!کثافت|hyperpage}{32}
+\indexentry{magnetic field!intensity|hyperpage}{32}
+\indexentry{مقناطیسی میدان!شدت|hyperpage}{32}
+\indexentry{Tesla|hyperpage}{32}
+\indexentry{ٹسلا|hyperpage}{32}
+\indexentry{Faraday's law|hyperpage}{37}
+\indexentry{فیراڈے!قانون|hyperpage}{37}
+\indexentry{induced voltage|hyperpage}{37}
+\indexentry{امالی برقی دباؤ|hyperpage}{37}
+\indexentry{ویبر-چکر|hyperpage}{37}
+\indexentry{ارتباط بہاو|hyperpage}{37}
+\indexentry{کسر دور|hyperpage}{38}
+\indexentry{inductance|hyperpage}{38}
+\indexentry{امالہ|hyperpage}{38}
+\indexentry{Henry|hyperpage}{38}
+\indexentry{Henry|hyperpage}{38}
+\indexentry{لچھا!پیچدار|hyperpage}{39}
+\indexentry{self inductance|hyperpage}{41}
+\indexentry{خود امالہ|hyperpage}{41}
+\indexentry{mutual inductance|hyperpage}{41}
+\indexentry{مشترکہ امالہ|hyperpage}{41}
+\indexentry{self flux linkage|hyperpage}{41}
+\indexentry{خود ارتباط بہاو|hyperpage}{41}
+\indexentry{mutual flux linkage|hyperpage}{41}
+\indexentry{مشترکہ ارتباط امالہ|hyperpage}{41}
+\indexentry{Watt|hyperpage}{42}
+\indexentry{واٹ|hyperpage}{42}
+\indexentry{power|hyperpage}{42}
+\indexentry{طاقت|hyperpage}{42}
+\indexentry{Joule|hyperpage}{42}
+\indexentry{جاول|hyperpage}{42}
+\indexentry{energy|hyperpage}{42}
+\indexentry{توانائی|hyperpage}{42}
+\indexentry{residual magnetic flux|hyperpage}{44}
+\indexentry{کثافت مقناطیسی بہاو!بقایا|hyperpage}{44}
+\indexentry{coercivity|hyperpage}{44}
+\indexentry{مقناطیس!خاتم شدت|hyperpage}{44}
+\indexentry{hysteresis loop|hyperpage}{45}
+\indexentry{مقناطیس!چال کا دائرہ|hyperpage}{45}
+\indexentry{saturation|hyperpage}{46}
+\indexentry{سیرابیت|hyperpage}{46}
+\indexentry{induced voltage|hyperpage}{48}
+\indexentry{امالی برقی دباؤ|hyperpage}{48}
+\indexentry{rms|hyperpage}{48}
+\indexentry{موثر|hyperpage}{48}
+\indexentry{excitation current|hyperpage}{51}
+\indexentry{برقی رو!ہیجان انگیز|hyperpage}{51}
+\indexentry{مقناطیسی چال|hyperpage}{51}
+\indexentry{core|hyperpage}{55}
+\indexentry{مقناطیسی مرکز|hyperpage}{55}
+\indexentry{coil!primary|hyperpage}{55}
+\indexentry{ابتدائی!لچھا|hyperpage}{55}
+\indexentry{لچھا!ابتدائی|hyperpage}{55}
+\indexentry{primary!side|hyperpage}{55}
+\indexentry{ابتدائی!جانب|hyperpage}{55}
+\indexentry{side!secondary|hyperpage}{55}
+\indexentry{ثانوی جانب|hyperpage}{55}
+\indexentry{coil!secondary|hyperpage}{55}
+\indexentry{لچھا!ثانوی|hyperpage}{55}
+\indexentry{coil!low voltage|hyperpage}{56}
+\indexentry{لچھا!کم برقی دباؤ|hyperpage}{56}
+\indexentry{coil!high voltage|hyperpage}{56}
+\indexentry{لچھا!زیادہ برقی دباؤ|hyperpage}{56}
+\indexentry{برقی دباؤ!تبادلہ|hyperpage}{56}
+\indexentry{ٹرانسفارمر!دباؤ بڑھاتا|hyperpage}{58}
+\indexentry{step down transformer|hyperpage}{58}
+\indexentry{ٹرانسفارمر!دباؤ گھٹاتا|hyperpage}{58}
+\indexentry{step up transformer|hyperpage}{58}
+\indexentry{تین مرحلہ|hyperpage}{59}
+\indexentry{three phase|hyperpage}{59}
+\indexentry{single phase|hyperpage}{59}
+\indexentry{ایک مرحلہ|hyperpage}{59}
+\indexentry{ٹرانسفارمر!برقی دباؤ، میٹر|hyperpage}{59}
+\indexentry{ٹرانسفارمر!رو، میٹر|hyperpage}{59}
+\indexentry{electrical rating|hyperpage}{59}
+\indexentry{برقی استعداد|hyperpage}{59}
+\indexentry{transformer!communication|hyperpage}{59}
+\indexentry{ٹرانسفارمر!ذرائع ابلاغ|hyperpage}{59}
+\indexentry{transformer!air core|hyperpage}{59}
+\indexentry{ٹرانسفارمر!خلائی مرکز والا|hyperpage}{59}
+\indexentry{بے بوجھ|hyperpage}{60}
+\indexentry{excitation current|hyperpage}{60}
+\indexentry{ہیجان انگیز برقی رو|hyperpage}{60}
+\indexentry{excitation|hyperpage}{61}
+\indexentry{ہیجان|hyperpage}{61}
+\indexentry{excitation current|hyperpage}{61}
+\indexentry{ہیجان انگیز!برقی رو|hyperpage}{61}
+\indexentry{excited coil|hyperpage}{61}
+\indexentry{ہیجان!لچھا|hyperpage}{61}
+\indexentry{excitation voltage|hyperpage}{61}
+\indexentry{ہیجان انگیز!برقی دباؤ|hyperpage}{61}
+\indexentry{induced voltage|hyperpage}{61}
+\indexentry{امالی برقی دباؤ|hyperpage}{61}
+\indexentry{electromotive force|hyperpage}{61}
+\indexentry{محرک برقی دباؤ|hyperpage}{61}
+\indexentry{eddy currents|hyperpage}{62}
+\indexentry{بھنور نما!برقی رو|hyperpage}{62}
+\indexentry{eddy current loss|hyperpage}{62}
+\indexentry{بھنور نما!ضیاع|hyperpage}{62}
+\indexentry{laminations|hyperpage}{62}
+\indexentry{پتریاں|hyperpage}{62}
+\indexentry{core loss|hyperpage}{62}
+\indexentry{مرکزی ضیاع|hyperpage}{62}
+\indexentry{enamel|hyperpage}{62}
+\indexentry{روغن|hyperpage}{62}
+\indexentry{E,I|hyperpage}{62}
+\indexentry{ایک، تین پتریاں|hyperpage}{62}
+\indexentry{Fourier series|hyperpage}{63}
+\indexentry{فوریئر تسلسل|hyperpage}{63}
+\indexentry{harmonic components|hyperpage}{64}
+\indexentry{موسیقائی جزو|hyperpage}{64}
+\indexentry{fundamental component|hyperpage}{64}
+\indexentry{بنیادی جزو|hyperpage}{64}
+\indexentry{core loss component|hyperpage}{64}
+\indexentry{مرکزی ضیاع!جزو|hyperpage}{64}
+\indexentry{magnetizing current|hyperpage}{64}
+\indexentry{مقناطیسی برقی رو|hyperpage}{64}
+\indexentry{transformer!ideal|hyperpage}{65}
+\indexentry{ٹرانسفارمر!کامل|hyperpage}{65}
+\indexentry{voltage!transformation|hyperpage}{66}
+\indexentry{برقی دباؤ!تبادلہ|hyperpage}{66}
+\indexentry{current!transformation|hyperpage}{66}
+\indexentry{برقی رو!تبادلہ|hyperpage}{66}
+\indexentry{ٹرانسفارمر!بوجھ بردار|hyperpage}{69}
+\indexentry{in-phase|hyperpage}{70}
+\indexentry{ہم قدم|hyperpage}{70}
+\indexentry{impedance transformation|hyperpage}{71}
+\indexentry{تبادلہ!رکاوٹ|hyperpage}{71}
+\indexentry{VA|hyperpage}{75}
+\indexentry{volt-ampere|hyperpage}{75}
+\indexentry{وولٹ-ایمپیئر|hyperpage}{75}
+\indexentry{magnetic flux!leakage|hyperpage}{78}
+\indexentry{مقناطیسی بہاو!رستا|hyperpage}{78}
+\indexentry{leakage reactance|hyperpage}{79}
+\indexentry{رستا!متعاملہ|hyperpage}{79}
+\indexentry{leakage inductance|hyperpage}{79}
+\indexentry{رستا!امالہ|hyperpage}{79}
+\indexentry{پیچھے|hyperpage}{80}
+\indexentry{model|hyperpage}{81}
+\indexentry{ریاضی نمونہ|hyperpage}{81}
+\indexentry{open circuit test|hyperpage}{85}
+\indexentry{معائنہ!کھلے دور|hyperpage}{85}
+\indexentry{بناوٹ|hyperpage}{85}
+\indexentry{تین مرحلہ|hyperpage}{92}
+\indexentry{three phase|hyperpage}{92}
+\indexentry{delta connected|hyperpage}{92}
+\indexentry{جوڑ!تکونی|hyperpage}{92}
+\indexentry{تکونی جوڑ|hyperpage}{92}
+\indexentry{star connected|hyperpage}{92}
+\indexentry{جوڑ!ستارہ نما|hyperpage}{92}
+\indexentry{ستارہ نما جوڑ|hyperpage}{92}
+\indexentry{earth|hyperpage}{94}
+\indexentry{زمین|hyperpage}{94}
+\indexentry{ground wire|hyperpage}{94}
+\indexentry{زمینی تار|hyperpage}{94}
+\indexentry{گرم تار|hyperpage}{94}
+\indexentry{ٹھنڈی تار|hyperpage}{94}
+\indexentry{phase voltage|hyperpage}{94}
+\indexentry{یک مرحلہ برقی دباؤ|hyperpage}{94}
+\indexentry{تار کی برقی دباؤ|hyperpage}{94}
+\indexentry{phase current|hyperpage}{94}
+\indexentry{یک مرحلہ برقی رو|hyperpage}{94}
+\indexentry{line current|hyperpage}{94}
+\indexentry{تار کی برقی رو|hyperpage}{94}
+\indexentry{line voltage|hyperpage}{94}
+\indexentry{ground current|hyperpage}{94}
+\indexentry{زمینی برقی رو|hyperpage}{94}
+\indexentry{rating|hyperpage}{96}
+\indexentry{استعداد|hyperpage}{96}
+\indexentry{rating|hyperpage}{97}
+\indexentry{استعداد|hyperpage}{97}
+\indexentry{name plate|hyperpage}{97}
+\indexentry{تختی|hyperpage}{97}
+\indexentry{load|hyperpage}{98}
+\indexentry{بوجھ|hyperpage}{98}
+\indexentry{برقرار چالو|hyperpage}{100}
+\indexentry{time period|hyperpage}{100}
+\indexentry{دوری عرصہ|hyperpage}{100}
+\indexentry{relay|hyperpage}{103}
+\indexentry{رِیلے|hyperpage}{103}
+\indexentry{سمتی رفتار|hyperpage}{104}
+\indexentry{Lorenz equation|hyperpage}{104}
+\indexentry{مساوات لورینز|hyperpage}{104}
+\indexentry{stator coil|hyperpage}{106}
+\indexentry{لچھا! ساکن|hyperpage}{106}
+\indexentry{ساکن لچھا|hyperpage}{106}
+\indexentry{rotor coli|hyperpage}{106}
+\indexentry{لچھا!گھومتا|hyperpage}{106}
+\indexentry{گھومتا لچھا|hyperpage}{106}
+\indexentry{conservative field|hyperpage}{110}
+\indexentry{قدامت پسند میدان|hyperpage}{110}
+\indexentry{تدریجی تفرق|hyperpage}{115}
+\indexentry{بھٹی|hyperpage}{116}
+\indexentry{Faraday's law|hyperpage}{127}
+\indexentry{فیراڈے!قانون|hyperpage}{127}
+\indexentry{core|hyperpage}{128}
+\indexentry{مرکز|hyperpage}{128}
+\indexentry{برقی رو!بھنور نما|hyperpage}{128}
+\indexentry{بھنور نما برقی رو|hyperpage}{128}
+\indexentry{laminations|hyperpage}{128}
+\indexentry{پتری|hyperpage}{128}
+\indexentry{eddy currents|hyperpage}{128}
+\indexentry{چکر فی منٹ|hyperpage}{128}
+\indexentry{stator coil|hyperpage}{129}
+\indexentry{ساکن لچھا|hyperpage}{129}
+\indexentry{frequency|hyperpage}{132}
+\indexentry{تعدد|hyperpage}{132}
+\indexentry{synchronous|hyperpage}{132}
+\indexentry{معاصر|hyperpage}{132}
+\indexentry{electromagnet|hyperpage}{132}
+\indexentry{مقناطیس!برقی|hyperpage}{132}
+\indexentry{armature coil|hyperpage}{133}
+\indexentry{لچھا!قوی|hyperpage}{133}
+\indexentry{field coil|hyperpage}{133}
+\indexentry{لچھا!میدانی|hyperpage}{133}
+\indexentry{لچھا!سمت|hyperpage}{135}
+\indexentry{charge|hyperpage}{138}
+\indexentry{بار|hyperpage}{138}
+\indexentry{برقی بار|hyperpage}{138}
+\indexentry{Lorentz law|hyperpage}{138}
+\indexentry{قانون!لورینز|hyperpage}{138}
+\indexentry{volt|hyperpage}{139}
+\indexentry{وولٹ|hyperpage}{139}
+\indexentry{voltage|hyperpage}{139}
+\indexentry{برقی دباؤ|hyperpage}{139}
+\indexentry{emf|hyperpage}{139}
+\indexentry{electromotive force|hyperpage}{139}
+\indexentry{برقی دباؤ!محرک|hyperpage}{139}
+\indexentry{لچھا!پھیلے|hyperpage}{142}
+\indexentry{pole!non-salient|hyperpage}{142}
+\indexentry{قطب!ہموار|hyperpage}{142}
+\indexentry{pole!salient|hyperpage}{142}
+\indexentry{قطب!ابھرے|hyperpage}{142}
+\indexentry{winding!distributed|hyperpage}{142}
+\indexentry{مقناطیسی دباؤ!سمت|hyperpage}{143}
+\indexentry{Fourier series|hyperpage}{143}
+\indexentry{فوریئر تسلسل|hyperpage}{143}
+\indexentry{time period|hyperpage}{144}
+\indexentry{دوری عرصہ|hyperpage}{144}
+\indexentry{fundamental|hyperpage}{144}
+\indexentry{بنیادی جزو|hyperpage}{144}
+\indexentry{harmonic|hyperpage}{144}
+\indexentry{موسیقائی جزو|hyperpage}{144}
+\indexentry{سلسلہ وار|hyperpage}{147}
+\indexentry{winding factor|hyperpage}{149}
+\indexentry{جزو!پھیلاو|hyperpage}{149}
+\indexentry{synchronous speed|hyperpage}{158}
+\indexentry{معاصر رفتار|hyperpage}{158}
+\indexentry{synchronous speed|hyperpage}{158}
+\indexentry{معاصر رفتار|hyperpage}{158}
+\indexentry{rpm|hyperpage}{158}
+\indexentry{generator!ac|hyperpage}{162}
+\indexentry{جنریٹر!بدلتی رو|hyperpage}{162}
+\indexentry{محور|hyperpage}{163}
+\indexentry{axle|hyperpage}{163}
+\indexentry{دھرا|hyperpage}{163}
+\indexentry{rms|hyperpage}{166}
+\indexentry{موثر قیمت|hyperpage}{166}
+\indexentry{voltage!DC|hyperpage}{167}
+\indexentry{برقی دباؤ!یک سمتی|hyperpage}{167}
+\indexentry{commutator|hyperpage}{167}
+\indexentry{سمت کار!میکانی|hyperpage}{167}
+\indexentry{rectifier|hyperpage}{167}
+\indexentry{سمت کار!برقیاتی|hyperpage}{167}
+\indexentry{torque|hyperpage}{168}
+\indexentry{مروڑ|hyperpage}{168}
+\indexentry{مقناطیسی مستقل|hyperpage}{168}
+\indexentry{steady state|hyperpage}{177}
+\indexentry{برقرار چالو|hyperpage}{177}
+\indexentry{transient state|hyperpage}{177}
+\indexentry{عارضی صورت|hyperpage}{177}
+\indexentry{synchronous speed|hyperpage}{178}
+\indexentry{معاصر رفتار|hyperpage}{178}
+\indexentry{slip rings|hyperpage}{178}
+\indexentry{سرک چھلے|hyperpage}{178}
+\indexentry{carbon bush|hyperpage}{179}
+\indexentry{بش|hyperpage}{179}
+\indexentry{کاربن بش|hyperpage}{179}
+\indexentry{قطب!ابھرے|hyperpage}{179}
+\indexentry{non-salient poles|hyperpage}{179}
+\indexentry{قطب!ہموار|hyperpage}{179}
+\indexentry{hunting|hyperpage}{180}
+\indexentry{تعقب|hyperpage}{180}
+\indexentry{torque!pull out|hyperpage}{180}
+\indexentry{مروڑ!انتہائی|hyperpage}{180}
+\indexentry{غیر معاصر|hyperpage}{180}
+\indexentry{circuit breaker|hyperpage}{180}
+\indexentry{دور شکن|hyperpage}{180}
+\indexentry{سطحی تکمل|hyperpage}{183}
+\indexentry{synchronous inductance|hyperpage}{186}
+\indexentry{معاصر امالہ|hyperpage}{186}
+\indexentry{برقی دباؤ!ہیجانی|hyperpage}{187}
+\indexentry{ہیجانی برقی دباؤ|hyperpage}{187}
+\indexentry{مرحلی سمتیہ|hyperpage}{188}
+\indexentry{power-angle law|hyperpage}{190}
+\indexentry{طاقت بالمقابل زاویہ|hyperpage}{190}
+\indexentry{مخلوط عدد|hyperpage}{194}
+\indexentry{کپیسٹر|hyperpage}{196}
+\indexentry{design|hyperpage}{197}
+\indexentry{پورا بوجھ|hyperpage}{199}
+\indexentry{کارگزاری|hyperpage}{203}
+\indexentry{قوی الیکٹرانکس|hyperpage}{209}
+\indexentry{model|hyperpage}{209}
+\indexentry{ریاضی نمونہ|hyperpage}{209}
+\indexentry{slip|hyperpage}{211}
+\indexentry{سرک|hyperpage}{211}
+\indexentry{torque|hyperpage}{211}
+\indexentry{مروڑ|hyperpage}{211}
+\indexentry{چوٹی|hyperpage}{213}
+\indexentry{رفتار!اضافی زاویائی|hyperpage}{214}
+\indexentry{اضافی!زاویائی رفتار|hyperpage}{214}
+\indexentry{رستا متعاملیت|hyperpage}{219}
+\indexentry{linear circuit|hyperpage}{228}
+\indexentry{خطی!برقی دور|hyperpage}{228}
+\indexentry{Thevenin theorem|hyperpage}{228}
+\indexentry{مسئلہ!تھونن|hyperpage}{228}
+\indexentry{theorem!maximum power transfer|hyperpage}{230}
+\indexentry{مسئلہ!زیادہ سے زیادہ طاقت کی منتقلی|hyperpage}{230}
+\indexentry{slip rings|hyperpage}{231}
+\indexentry{سرک چھلے|hyperpage}{231}
+\indexentry{اوہم میٹر|hyperpage}{239}
+\indexentry{یک سمتی رو!مشین|hyperpage}{243}
+\indexentry{قوی الیکٹرانکس|hyperpage}{243}
+\indexentry{commutator|hyperpage}{243}
+\indexentry{سمت کار|hyperpage}{243}
+\indexentry{فورئیر|hyperpage}{252}
+\indexentry{self excited|hyperpage}{253}
+\indexentry{ہیجان!خود|hyperpage}{253}
+\indexentry{separately excited|hyperpage}{253}
+\indexentry{ہیجان!بیرونی|hyperpage}{253}
+\indexentry{field coil|hyperpage}{253}
+\indexentry{میدانی لچھے|hyperpage}{253}
+\indexentry{armature coil|hyperpage}{253}
+\indexentry{قوی لچھے|hyperpage}{253}
+\indexentry{parallel connected|hyperpage}{255}
+\indexentry{داخلی ہیجان!متوازی|hyperpage}{255}
+\indexentry{داخلی ہیجان!سلسلہ وار|hyperpage}{255}
+\indexentry{داخلی ہیجان!مرکب|hyperpage}{255}
+\indexentry{مرکب جنریٹر|hyperpage}{255}
+\indexentry{قریب جڑی مرکب|hyperpage}{255}
+\indexentry{دور جڑی مرکب|hyperpage}{255}

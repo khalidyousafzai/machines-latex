@@ -82,7 +82,7 @@
 \contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 2}.\RL {\arabicfont 6}}خود امالہ}{\RL {\arabicfont 182}}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 2}.\RL {\arabicfont 6}}مشترکہ امالہ}{\RL {\arabicfont 183}}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 2}.\RL {\arabicfont 6}}معاصر امالہ}{\RL {\arabicfont 185}}{subsection.6.2.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 6}}معاصر مشین کا مساوی دور}{\RL {\arabicfont 187}}{section.6.3}
+\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 6}}معاصر مشین کا مساوی دور یا ریاضی نمونہ}{\RL {\arabicfont 187}}{section.6.3}
 \contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 6}}برقی طاقت کی منتقلی}{\RL {\arabicfont 189}}{section.6.4}
 \contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 6}}یکساں حال، برقرار چالو مشین کے خصوصیات}{\RL {\arabicfont 194}}{section.6.5}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}.\RL {\arabicfont 6}}معاصر جنریٹر: برقی بوجھ بالمقابل \ensuremath {I_m} کے خطوط}{\RL {\arabicfont 194}}{subsection.6.5.1}
@@ -99,7 +99,7 @@
 \contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 7}}گھومتے لچھوں کے مساوی فرضی ساکن لچھے}{\RL {\arabicfont 218}}{section.7.6}
 \contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 7}}امالی موٹر کا مساوی برقی دور}{\RL {\arabicfont 219}}{section.7.7}
 \contentsline {section}{\numberline {\RL {\arabicfont 8}.\RL {\arabicfont 7}}مساوی برقی دور پر غور}{\RL {\arabicfont 224}}{section.7.8}
-\contentsline {section}{\numberline {\RL {\arabicfont 9}.\RL {\arabicfont 7}}امالی موٹر کا مساوی تھونن دور }{\RL {\arabicfont 228}}{section.7.9}
+\contentsline {section}{\numberline {\RL {\arabicfont 9}.\RL {\arabicfont 7}}امالی موٹر کا مساوی تھونن دور یا ریاضی نمونہ}{\RL {\arabicfont 228}}{section.7.9}
 \contentsline {section}{\numberline {\RL {\arabicfont 10}.\RL {\arabicfont 7}}پنجرا نما امالی موٹر}{\RL {\arabicfont 234}}{section.7.10}
 \contentsline {section}{\numberline {\RL {\arabicfont 11}.\RL {\arabicfont 7}}بے بوجھ موٹر اور جامد موٹر کے معائنہ }{\RL {\arabicfont 235}}{section.7.11}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 11}.\RL {\arabicfont 7}}بے بوجھ موٹر کا معائنہ}{\RL {\arabicfont 235}}{subsection.7.11.1}
@@ -113,3 +113,6 @@
 \contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 8}}یک سمتی مشین کی کارکردگی کے خط}{\RL {\arabicfont 257}}{section.8.5}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}حاصل برقی دباؤ بالمقابل برقی بوجھ}{\RL {\arabicfont 257}}{subsection.8.5.1}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}رفتار بالمقابل مروڑ}{\RL {\arabicfont 259}}{subsection.8.5.2}
+\contentsline {chapter}{فرہنگ}{\RL {\arabicfont 267}}{equation.8.5.17}
+\select@language {english}
+\select@language {arabic}
