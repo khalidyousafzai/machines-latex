@@ -1,0 +1,44 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usetikzlibrary{decorations.markings}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+\tikzset{->-/.style={decoration={
+  markings,
+  mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+\tikzset{-<-/.style={decoration={
+  markings,
+  mark=at position .5 with {\arrowreversed{latex}}},postaction={decorate}}}
+%grid
+%\draw[gray] (-\tR,-\tR) grid (\tR,\tR);
+%
+\pgfmathsetmacro{\rR}{2.4}   %stator inner radius
+\pgfmathsetmacro{\tR}{\rR+0.2}
+%axis
+\draw[gray](-2,0)--(8,0);
+\draw[gray](0,-1.5)--(0,1.5);
+%mmf
+\draw(-1,0)--++(1,1)--++(2,-2)--++(2,2)--++(2,-2)--++(2,2);
+\draw (0,1)--++(-0.1,0) node[left] {$\tfrac{Ni}{2}$};
+\draw (0,-1)--++(-0.1,0) node[left] {$-\tfrac{Ni}{2}$};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

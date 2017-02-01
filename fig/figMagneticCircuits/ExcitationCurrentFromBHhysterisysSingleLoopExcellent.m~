@@ -1,0 +1,80 @@
+# Brillouin function
+#Excitation Current from BH Brillouin curve
+#
+clc
+clear all
+format long
+
+grid off
+axis off
+
+Bn=@(J,y) ((2.*J.+1)./J).*coth((2.*J+1)./J.*y)-1./(2.*J).*coth(y./(2.*J));
+
+J=0.5;
+ylmt=2;
+yhys=0.6;
+xshift=-8;
+
+y=0:0.001:ylmt;
+
+ty=asin(Bn(J,y)./Bn(J,ylmt));
+
+#plot(y,Bn(J,y),"color","black")
+hold on
+
+#plots BH loop
+
+yp=(ylmt.+yhys)./ylmt.*y.*sin(y.*3.142./(2.*ylmt))-yhys;
+plot(yp,Bn(J,y),"color","black","linewidth",1,-yp,-Bn(J,y),"color","black","linewidth",1) 
+
+ym=(ylmt.-yhys)./ylmt.*y.*sin(y.*3.142./(2.*ylmt))+yhys;
+plot(ym,Bn(J,y),"color","black","linewidth",1,-ym,-Bn(J,y),"color","black","linewidth",1)                                                      #this plots hysterisys loop
+
+plot ([-2,2],[0,0]);                                                             #axis
+plot ([0,0],[1.1*Bn(J,ylmt),-1.1*Bn(J,ylmt)]);
+
+#hold off
+
+#print -demf ExcitationCurrentBHloopOnly.emf 
+#print -mono ExcitationCurrentBHloopOnly.pdf
+
+
+
+
+
+#plots Excitation Current
+
+plot (xshift-ty,-yp,"color","black","linewidth",1,xshift-pi+ty,-ym,"color","black","linewidth",1,xshift+ty,ym,"color","black","linewidth",1,xshift+pi-ty,yp,"color","black","linewidth",1)    #excitation current
+
+plot ([xshift-0.2-pi,xshift+0.2+pi],[0,0]);            #x-axis only
+
+t=-pi:0.001:pi;                                      #sine wave flux
+plot (xshift+t,Bn(J,ylmt)*sin(t),"linewidth",1);
+
+#showing the point along the RISING FLUX
+y=1;
+ty=asin(Bn(J,y)./Bn(J,ylmt));
+yp=(ylmt.+yhys)./ylmt.*y.*sin(y.*3.142./(2.*ylmt))-yhys;
+ym=(ylmt.-yhys)./ylmt.*y.*sin(y.*3.142./(2.*ylmt))+yhys;
+
+plot ([ym,ym],[0,Bn(J,y)]);
+plot([ym,xshift+ty],[Bn(J,y),Bn(J,y)]);
+plot([xshift+ty,xshift+ty],[Bn(J,y),0]);
+
+#showing the point along the FALLING FLUX
+y=0.5;
+ty=asin(Bn(J,y)./Bn(J,ylmt));
+yp=(ylmt.+yhys)./ylmt.*y.*sin(y.*3.142./(2.*ylmt))-yhys;
+ym=(ylmt.-yhys)./ylmt.*y.*sin(y.*3.142./(2.*ylmt))+yhys;
+
+plot ([yp,yp],[0,Bn(J,y)]);
+plot([yp,pi+xshift-ty],[Bn(J,y),Bn(J,y)]);
+plot([pi+xshift-ty,pi+xshift-ty],[Bn(J,y),yp]);
+
+
+axis off
+grid off
+
+
+print -demf ExcitationCurrent.emf
+print -mono ExcitationCurrent.pdf

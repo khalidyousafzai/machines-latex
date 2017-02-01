@@ -1,0 +1,61 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{bm}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{calc}
+
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+%\usepackage[active,tightpage]{preview}
+%\PreviewEnvironment{tikzpicture}
+%
+\input{myEMTvectors.tex}
+
+
+\begin{document}
+\begin{urdufont}
+%\tdplotsetmaincoords{70}{110}
+\begin{tikzpicture}[scale=3]
+
+\coordinate (Oa) at (0,0);
+
+%phasors
+\draw[-latex] (Oa)--++(0:1) node[right]{${\bf{\hat{V}}}=V e^{j 0}$};
+\draw[-latex] (Oa)--++(30:1.5) node[above]{${\bf{\hat{I}}}_1=I_1 e^{j \frac{\pi}{6}}$};
+\draw[-latex] (Oa)--++(-45:0.5) node[below]{${\bf{\hat{I}}}_2=I_2 e^{-j \frac{\pi}{4}}$};
+%
+\draw[gray]
+  % radius=0.3, initial=0, final=30
+  %([shift={(0:0.3)}]c1) arc (0:90:0.3)
+  ($(0,0) + (0:0.4)$) arc (0:30:0.4) node[black] at (15:0.55) {$30^\circ$};
+\draw[gray]
+  % radius=0.3, initial=0, final=90
+  %([shift={(0:3mm)}]c1) arc (0:90:3mm)
+  ($(0,0) + (0:0.3)$) arc (0:-45:0.3) node[black] at (-20:0.45){$45^\circ$};
+%-------
+\coordinate (Ob) at (2,0);
+
+%phasors
+\draw[gray,dashed] (Ob)--++(0:1) node [right] {لکیر افقی};
+\draw[-latex] (Ob)--++(60:1) node[above]{${\bf{\hat{V}}}=20 e^{j \frac{\pi}{3}}$};
+\draw[-latex] (Ob)--++(-90:0.75) node[below]{${\bf{\hat{I}}}=15 e^{-j \frac{\pi}{2}}$};
+%angles
+\draw[gray]
+  % radius=0.3, initial=0, final=30
+  %([shift={(0:0.3)}]c1) arc (0:90:0.3)
+  ($(Ob) + (0:0.4)$) arc (0:60:0.4);
+\draw  (Ob)++(30:0.5)node {$\frac{\pi}{3}$};
+\draw[gray]
+  % radius=0.3, initial=0, final=90
+  %([shift={(0:3mm)}]c1) arc (0:90:3mm)
+  ($(Ob) + (0:0.3)$) arc (0:-90:0.3);
+\draw  (Ob)++(-45:0.4)node {$\frac{\pi}{2}$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+

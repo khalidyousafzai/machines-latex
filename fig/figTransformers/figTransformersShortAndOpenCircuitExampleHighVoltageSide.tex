@@ -1,0 +1,46 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{siunitx}  
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,-3) grid (15,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-3) grid (15,1);
+%
+\def\ky{-3};
+\draw(0,0)  to  [short]  ++(0.5,0) to [resistor,l=$0.0217$] ++(1.5,0) to [inductor,l=$j 0.032 $] ++(2.5,0)coordinate(a){} to [short] ++(2.5,0); 
+\draw(0,\ky) to ++(7,0);
+\draw(a) to [short] ++(0,-0.6);
+\draw(4,-0.6) to [short] ++(1,0);
+\draw(4,\ky) to [european resistor,l=$\SI{201}{\kilo \ohm}$] ++(0,2.4);
+\draw(5,\ky) to [inductor,l_=$j \SI{13.9}{\kilo \ohm}$] ++(0,2.4);
+%
+
+%transformer
+\draw (8.5,-0.4) node[transformer](T){};
+\draw(T.base) node[above]{$11000:220$};
+\draw(T.A1) |- (7,0);
+\draw(T.A2) |- (7,-3);
+\draw(T.B1) |- (10,0) to [short] ++(0.5,0) to [european resistor,l=$54.34$] ++(2,0) to [inductor,l=$j 80$] ++(2,0);
+\draw(T.B2) |- (10,\ky) to [short] ++(4.5,0);
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

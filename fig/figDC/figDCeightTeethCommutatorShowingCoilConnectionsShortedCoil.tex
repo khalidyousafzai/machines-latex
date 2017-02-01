@@ -1,0 +1,79 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usetikzlibrary{decorations.markings}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+\tikzset{->-/.style={decoration={
+  markings,
+  mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+\tikzset{-<-/.style={decoration={
+  markings,
+  mark=at position .5 with {\arrowreversed{latex}}},postaction={decorate}}}
+%grid
+%\draw[gray] (-\tR,-\tR) grid (\tR,\tR);
+%
+\pgfmathsetmacro{\rR}{2.4}   %stator inner radius
+\pgfmathsetmacro{\tR}{\rR+0.2}
+\pgfmathsetmacro{\delSlotTheta}{15}   %slot width in degrees
+\pgfmathsetmacro{\delR}{0.5}     %slot radial depth
+\pgfmathsetmacro{\rA}{0.9}
+\pgfmathsetmacro{\rB}{1.3}
+\pgfmathsetmacro{\rC}{2}
+\pgfmathsetmacro{\rAB}{0.5*(\rA+\rB)}
+\pgfmathsetmacro{\tilt}{22.5}
+\pgfmathsetmacro{\delTheta}{30}
+%commutator teeth, numbered
+\foreach \thetaA/\txt in {0/1,45/8,90/7,135/6,180/5,225/4,270/3,315/2}{
+\draw (\thetaA+\tilt-\delTheta/2:\rA) arc (\thetaA+\tilt-\delTheta/2:\thetaA+\tilt+\delTheta/2:\rA)--(\thetaA+\tilt+\delTheta/2:\rB) arc (\thetaA+\tilt+\delTheta/2:\thetaA+\tilt-\delTheta/2:\rB)--cycle;
+\draw node at (\thetaA+\tilt:\rAB){$\txt$};  %end of teeth and start of coils
+\foreach \i/\j in {0/10,10/20,0/-10,-10/-20}{
+\pgfmathsetmacro{\i}{\i+\tilt-22.5}
+\pgfmathsetmacro{\j}{\j+\tilt-22.5}
+\draw(\thetaA+\i:\rC) to [out=\thetaA+\i,in=\thetaA+\j] (\thetaA+\j:\rC);}
+\draw (\thetaA+20+\tilt-22.5:\rC) --(\thetaA+22.5+\tilt-22.5:\rB);
+\draw (\thetaA-20+\tilt-22.5:\rC) --(\thetaA-22.5+\tilt-22.5:\rB);  }
+%bush
+\draw (15:\rA)++(-0.4,0)coordinate (bB);
+\draw[fill] (15:\rA) arc (15:-15:\rA)--++(-0.4,0)--(bB) --cycle;
+\draw (180+15:\rA)++(0.4,0)coordinate (bA);
+\draw[fill] (180+15:\rA) arc (180+15:180-15:\rA)--++(0.4,0)--(bA) --cycle;
+%bush current
+\draw[->-] (180:\rA-0.4)--++(0.4,0); 
+\draw[-<-] (0:\rA-0.4)--++(-0.4,0);
+\draw node at (0,0){$i$};
+%current
+\draw[gray,-latex] (30:\rC+1) arc (30:60:\rC+1);
+\draw[gray,-latex] (-30:\rC+1) arc (-30:-60:\rC+1);
+\draw (45:\rC+1) node[gray,fill=white]{$\tfrac{i}{2}$};
+\draw (-45:\rC+1) node[gray,fill=white]{$\tfrac{i}{2}$};
+%text
+\draw node at (0+\tilt-22.5:\rC+0.5){الف};
+\draw node at (-45+\tilt-22.5:\rC+0.5){ب};
+\draw node at (-90+\tilt-22.5:\rC+0.5){پ};
+\draw node at (-135+\tilt-22.5:\rC+0.5){ت};
+\draw node at (-180+\tilt-22.5:\rC+0.5){ٹ};
+\draw node at (-225+\tilt-22.5:\rC+0.5){ث};
+\draw node at (-270+\tilt-22.5:\rC+0.5){ج};
+\draw node at (-315+\tilt-22.5:\rC+0.5){چ};
+\draw node[right,align=right] at (20:\rC+0.5){\RL{الف لچھے کو بش نے} \\  \RL{کسر دور کیا ہوا ہے}};
+\draw node[left,align=right] at (160:\rC+0.5){\RL{ٹ لچھے کو بش نے} \\   \RL{کسر دور کیا ہوا ہے}};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

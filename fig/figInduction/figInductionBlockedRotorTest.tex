@@ -1,0 +1,41 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\draw (0,0) to [short,o-,i={$\hat{I}_{s,rk} $}] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUpper) to  [inductor,l={$j X_m$}] ++(0,-3)coordinate(rotorStartLow) to [short,-*] (0,-3);
+\draw (rotorStartUpper) to [inductor,l={$j X_r'$},*-]++(2,0) to [resistor,l={$\tfrac{R_r'}{1}$}] ++(0,-3) to [short,-*] (rotorStartLow);
+%
+\draw node at (0,-1.5){$\begin{aligned} &+\\ & \hat{V}_{rk}\\ &- \end{aligned}$};
+\draw node at (0.5,-4){الف};
+%
+\begin{scope}[xshift=-7cm]
+\draw (0,0) to [short,o-,i={$\hat{I}_{s,rk} $}] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0) to  [resistor,l_={$R^*$}] ++(0,-1.5) to [inductor,l_={$jX_r'$}] ++(0,-1.5) to [short,-o] (0,-3)coordinate(lowerLeftTerminal);
+%
+\draw node at (0,-1.5){$\begin{aligned} &+\\ & \hat{V}_{rk}\\ &- \end{aligned}$};
+\draw node[below right] at (-0.4,-3){$\begin{aligned} Z_{rk}&=R_{s}+j X_s+R^*+j X_r' \\ &=R_{rk} +j X_{rk}  \end{aligned}$};
+\draw node at (4.5,-4){ب};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

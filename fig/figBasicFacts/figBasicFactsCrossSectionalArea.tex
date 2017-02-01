@@ -1,0 +1,77 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+ \pgfmathsetmacro{\xst}{0.75}            %start points, lower left corner
+ \pgfmathsetmacro{\yst}{0.5}
+ 
+ \pgfmathsetmacro{\xdel}{0.75}           %change from start point
+ \pgfmathsetmacro{\ydel}{0.5}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+
+\coordinate(O) at (3,0,0);
+%front of cube
+\coordinate (n1) at (\xst,\yst);
+\coordinate (n2) at (\xst+\xdel,\yst);
+\coordinate (n3) at (\xst+\xdel,\yst+\ydel);
+\coordinate (n4) at (\xst,\yst+\ydel);
+%side view
+\draw[gray](0,0,0)--(2,0,0)--(2,0.75,0)--(0,0.75,0)--cycle;
+\draw[gray,dashed](1.5,-0.25,0)--(1.5,1.4,0);
+%angle of cut
+\draw [<->,domain=0:90] plot ({1.5+0.2*cos(\x)}, {0.75+0.2*sin(\x)}) node [right] at (1.6,1.1){$90^\circ$};
+\node at (1.5,1.6,0) {تراش عمودی};
+%unit vectors
+\draw[-latex](0,0,0)--(0.5,0,0) node[below]{${\bf{a}}_y$};
+\draw[-latex](0,0,0)--(0,0.5,0) node[left]{${\bf{a}}_z$};
+%axis
+\draw[gray,dashed](O)--++(1.75,0);
+\draw[gray,dashed](O)--++(-0.25,-0.25);
+\draw[gray,dashed](O)--++(0,0.75);
+\draw[-stealth,gray] (O)++(1.75,0)--++(0.5,0) node[right]{$y$};
+\draw[-stealth,gray] (O)++(0,0.75)--++(0,0.5) node[above]{$z$};
+\draw[-stealth,gray] (O)++(-0.25,-0.25)--++(-0.25,-0.25) node[below]{$x$};
+%rod 3d
+\draw[black](O)++(-0.25,-0.25)--++(1.75,0)--++(0,0.75)node[pos=0.6,left]{$h$}--++(-1.75,0);
+\shade[opacity=0.5,right color=black!10, left color=black!80](O)++(-0.25,-0.25)++(1.75,0)--++(0.25,0.25) node[pos=0.3, right]{$w$}--++(0,0.75) --++(-0.25,-0.25)--cycle; %right face
+\draw(O)++(1.75,0.75)--++(-1.75,0);
+\draw(O)++(-0.25,-0.25)++(1.75,0)--++(0.25,0.25) node[pos=0.3, right]{$w$}--++(0,0.75) --++(-0.25,-0.25)--cycle; %right face
+\draw(O)++(1.75,0.75)--++(-1.75,0);
+
+\coordinate(textarea) at (5.75,0.75);
+\coordinate(textvector) at (5.5,1.5);
+\draw[gray,thin,<-] (O)++(1.625,0.16) to [out=0,in=270] (textarea);
+%text
+\node[anchor = south] at (textarea) {تراش عمودی سطح};
+\node at (textvector){${\bf{A}}=w h {\bf{a}}_y$};
+%\draw[black,dashed](O)++(-0.25,-0.25)--++(-0.5,0);
+%point charge at centre of cube
+%\draw[fill] (\xst+0.75*\xdel,\yst+0.75*\ydel) circle (0.2mm);
+%flux density
+%\node[right] at (1.75,1.75) {${\bf{D}}(x_0,y_0,z_0)=D_{x0}{\bf{a}}_x+D_{y0} {\bf{a}}_y+D_{z0} {\bf{a}}_z$};
+%\draw[-stealth] (1.75,1.75) to [out=180,in=90] (\xst+0.75*\xdel,\yst+0.75*\ydel);
+%back edges of cube
+
+%front,right and top of cube
+%\path (n2)--(n6) node [black,right,pos=0.3]{$w$};
+
+%\node[anchor=east] at (7,0){$
+%\begin{aligned}
+%{\bf{A}}_1&=A_1 {\bf{a}}_{A1}=w l {\bf{a}}_z\\
+%{\bf{A}}_2&=A_2 {\bf{a}}_{A2}=w h {\bf{a}}_y
+%\end{aligned}$
+%};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}

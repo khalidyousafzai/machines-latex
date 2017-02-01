@@ -1,0 +1,75 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+%\usetikzlibrary{calc}
+\usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
+%\usetikzlibrary{calc,decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\pXrabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+%\pgfmathsetmacro{\g}{0.1}     %gap between rotor and stator
+
+%ROTOR 
+\pgfmathsetmacro{\P}{4} %number of poles
+\pgfmathsetmacro{\rR}{1}   %rotor radius  
+\pgfmathsetmacro{\pTheta}{50}  %pole face in degrees 
+\pgfmathsetmacro{\pX}{0.1}   %poles edge x-direction
+\pgfmathsetmacro{\pY}{0.1}    %pole edge  y-direction
+%
+\pgfmathsetmacro{\rWf}{\rR*cos(\pTheta/2)}    %rotor  full section width excluding the curved section
+\pgfmathsetmacro{\rT}{2*\rR*sin(\pTheta/2)-2*\pY}    %rotor body thickness
+\pgfmathsetmacro{\rReduction}{\rT/(2*tan(180/\P))}   %reduction in rotor length due to adjacent rotor
+\pgfmathsetmacro{\rWr}{\rWf-\rReduction-\pX}    %rotor's flat section's effective length
+%=================================
+%this draws a single leg of rotor at zero angle
+\def\rotor{
+\draw(\rReduction,-\rT/2)--++(\rWr,0)--++(0,-\pY)--++(\pX,0)  arc (-\pTheta/2:\pTheta/2:\rR)--++(-\pX,0)--++(0,-\pY)--++(-\rWr,0);}
+%==============================
+\def\dotCross{
+\draw (\rWf-\pX-1.3*\pX,\rT/2+1.3*\pX) circle (2.5pt);
+\draw[fill] (\rWf-\pX-1.3*\pX,\rT/2+1.3*\pX) circle (1.5pt);
+\draw (\rWf-\pX-1.3*\pX,-\rT/2-1.3*\pX) circle (2.5pt);
+\draw (\rWf-\pX-1.3*\pX,-\rT/2-1.3*\pX)++(45:2.2pt)--++(-135:4.4pt);
+\draw (\rWf-\pX-1.3*\pX,-\rT/2-1.3*\pX)++(-45:2.2pt)--++(135:4.4pt);  }
+%=====================================
+\def\crossDot{
+\draw (\rWf-\pX-1.3*\pX,-\rT/2-1.3*\pX) circle (2.5pt);
+\draw[fill] (\rWf-\pX-1.3*\pX,-\rT/2-1.3*\pX) circle (1.5pt);
+\draw (\rWf-\pX-1.3*\pX,\rT/2+1.3*\pX) circle (2.5pt);
+\draw (\rWf-\pX-1.3*\pX,\rT/2+1.3*\pX)++(45:2.2pt)--++(-135:4.4pt);
+\draw (\rWf-\pX-1.3*\pX,\rT/2+1.3*\pX)++(-45:2.2pt)--++(135:4.4pt);  }
+%===========================================
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+
+%for six poles change to P=6 above and enter the relevant angles below
+\foreach \angle in {0,90,180,270}{
+\begin{scope}[rotate=\angle]
+\rotor
+\end{scope}  }
+%
+\foreach \angle in {0, 180}{
+\begin{scope}[rotate=\angle]
+\dotCross
+\end{scope}  }
+%
+\foreach \angle in {90, 270}{
+\begin{scope}[rotate=\angle]
+\crossDot
+\end{scope}  }
+%
+
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
+%---------------------
+

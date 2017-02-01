@@ -1,0 +1,50 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.5}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}[x=10cm,y=10cm]
+%grid
+%\draw[gray,xstep=0.1,ystep=0.1] (-0.5,-0.5) grid (1,0.4);
+%axis
+\draw(0,0.4)node[left]{$T$}--(0,-0.5);
+\draw(-0.55,0)--(1.1,0);
+%
+\foreach \a/\b/\c in {-0.5/-1/2,0/0/1,0.5/1/0,1/2/-1}{
+\draw (\a,0.01)node[gray,shift={(0.02,0.02)}]{$\c$}--++(0,-0.02) node[shift={(-0.02,-0.02)},black]{$\b$}; }
+\draw node at (1.1,-0.04){$\tfrac{\omega}{\omega_s}$};
+\draw node[gray] at (1.1,0.04){$s$};
+\draw node at (0.8,-0.1){جنریٹر};
+\draw node at (0.25,-0.1){موٹر};
+\draw node at (-0.2,-0.1){بریک};
+%
+\def\Rr{0.144}
+\draw[scale=0.5,domain=-1:2.2,samples=50,smooth,variable=\x] plot ({\x},{(\Rr/(1-\x))/((0.113+\Rr/(1-\x))^2+(0.49+0.209)^2)});
+%
+%=============
+%
+%\draw node at (1.5,2){\RL{بریک}};
+%\draw node at (3.5,2){\RL{موٹر}};
+%\draw node at (6,2){\RL{جنریٹر}};
+
+
+
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

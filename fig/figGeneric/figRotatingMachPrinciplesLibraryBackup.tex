@@ -1,0 +1,97 @@
+%STATOR
+\pgfmathsetmacro{\sRi}{1.25}   %stator inner radius
+\pgfmathsetmacro{\sRo}{1.75}  %stator outer radius
+%SLOT
+\pgfmathsetmacro{\delSlotTheta}{10}   %slot width in degrees
+\pgfmathsetmacro{\delR}{0.25}     %slot radial depth
+\pgfmathsetmacro{\gap}{0.1}
+%==============================
+%ROTOR 
+\pgfmathsetmacro{\rR}{\sRi-\gap}   %rotor radius  
+\pgfmathsetmacro{\pTheta}{50}  %pole face in degrees 
+\pgfmathsetmacro{\pX}{0.1}   %poles edge x-direction
+\pgfmathsetmacro{\pY}{0.1}    %pole edge  y-direction
+%
+%\pgfmathsetmacro{\rReduction}{\rT/(2*tan(180/\P))}   %reduction in rotor length due to adjacent rotor
+%\pgfmathsetmacro{\rWr}{\rWf-\rReduction-\pX}    %rotor's flat section's effective length
+%========
+%===============================
+%STATOR
+%\stator{#slots}{#tilt angle} draws stator with #SLOTS  slots tilted at #tilt angle.
+\newcommand{\stator}[2]{
+\draw(0,0) circle (\sRo);
+\foreach \slot in {1,...,#1}{
+\pgfmathsetmacro{\thetaS}{360*(\slot-1)/#1+#2}
+\pgfmathsetmacro{\thetaE}{360*\slot/#1+#2}
+\draw([shift={(\thetaS+\delSlotTheta/2:\sRi)}]0,0) arc (\thetaS+\delSlotTheta/2:\thetaE-\delSlotTheta/2:\sRi);
+\draw(\thetaS-\delSlotTheta/2:\sRi)--++(\thetaS-\delSlotTheta/2:\delR) arc (\thetaS-\delSlotTheta/2:\thetaS+\delSlotTheta/2:\sRi+\delR)--(\thetaS+\delSlotTheta/2:\sRi); } }
+%===============================
+%ROTOR
+%\rotor{#poles}{#tilt angle}   
+\newcommand{\rotor}[2]{
+\pgfmathsetmacro{\rWf}{\rR*cos(\pTheta/2)}    %rotor  full section width excluding the curved section
+\pgfmathsetmacro{\rT}{2*\rR*sin(\pTheta/2)-2*\pY}    %rotor body thickness
+%
+\pgfmathsetmacro{\rReduction}{\rT*cos(180/#1)/(2*sin(180/#1))}   %reduction in rotor length due to adjacent rotor
+\pgfmathsetmacro{\rWr}{\rWf-\rReduction-\pX}    %rotor's flat section's effective length
+\foreach \pole in {1,...,#1}{
+\pgfmathsetmacro{\angle}{360*(\pole-1)/#1+#2}
+\begin{scope}[rotate=\angle]
+\draw ([shift={(-\pTheta/2:\rR)}]0,0) arc (-\pTheta/2:\pTheta/2:\rR);
+%\draw(\rReduction,-\rT/2)--++(\rWr,0)--++(0,-\pY)--++(\pX,0)  arc (-\pTheta/2:\pTheta/2:\rR)--++(-\pX,0)--++(0,-\pY)--++(-\rWr,0);
+\end{scope}} }
+%=============================
+%==============================
+%DOTS and CROSSes around POLES
+%\dotCross{#poles}{#tilt angle} puts these around the poles present at the angles
+\newcommand{\dotCross}[2]{
+\foreach \pole in {1,...,#1}{
+\pgfmathsetmacro{\angle}{360*(\pole-1)/#1+#2}
+\begin{scope}[rotate=\angle]{
+\draw (\rWf-\pX-1.3*\pX,\rT/2+1.3*\pX) circle (2.5pt);
+\draw[fill] (\rWf-\pX-1.3*\pX,\rT/2+1.3*\pX) circle (1.5pt);
+\draw (\rWf-\pX-1.3*\pX,-\rT/2-1.3*\pX) circle (2.5pt);
+\draw (\rWf-\pX-1.3*\pX,-\rT/2-1.3*\pX)++(45:2.2pt)--++(-135:4.4pt);
+\draw (\rWf-\pX-1.3*\pX,-\rT/2-1.3*\pX)++(-45:2.2pt)--++(135:4.4pt);  }
+\end{scope}} }
+%=====================================
+%DOTS and CROSSes around POLES
+%\crossDot{#poles}{#tilt angle} puts these around the poles present at the angles
+\newcommand{\crossDot}[2]{
+\foreach \pole in {1,...,#1}{
+\pgfmathsetmacro{\angle}{360*(\pole-1)/#1+#2}
+\begin{scope}[rotate=\angle]{
+\draw (\rWf-\pX-1.3*\pX,-\rT/2-1.3*\pX) circle (2.5pt);
+\draw[fill] (\rWf-\pX-1.3*\pX,-\rT/2-1.3*\pX) circle (1.5pt);
+\draw (\rWf-\pX-1.3*\pX,\rT/2+1.3*\pX) circle (2.5pt);
+\draw (\rWf-\pX-1.3*\pX,\rT/2+1.3*\pX)++(45:2.2pt)--++(-135:4.4pt);
+\draw (\rWf-\pX-1.3*\pX,\rT/2+1.3*\pX)++(-45:2.2pt)--++(135:4.4pt);  }
+\end{scope} } }
+%===========================================
+%==================
+%SLOT wire as empty circle
+%\slotEmptyCircle{comma separated slot angles}
+\newcommand{\slotEmptyCircle}[1]{
+\foreach \slotTheta in {#1}{
+\draw (\slotTheta:\sRi+\delR/2) circle (2.5pt); } }
+%==================
+%SLOT DOT
+%\slotDot{comma separated angles}
+\newcommand{\slotDot}[1]{
+\foreach \slotTheta in {#1}{
+\draw (\slotTheta:\sRi+\delR/2) circle (2.5pt);
+\draw[fill] (\slotTheta:\sRi+\delR/2) circle (1.5pt); } }
+%===============================
+%SLOT CROSS
+%\slotCross{comma separated angles}
+\newcommand{\slotCross}[1]{
+\foreach \slotTheta in {#1}{
+\draw (\slotTheta:\sRi+\delR/2) circle (2.5pt);
+\draw (\slotTheta:\sRi+\delR/2)++(45:2.2pt)--++(-135:4.4pt);
+\draw (\slotTheta:\sRi+\delR/2)++(-45:2.2pt)--++(135:4.4pt); } }
+%====================================
+%SLOT NAME
+%\slotNAME{comma separated angles/name/NameAtleftORrightOfSlot}
+\newcommand{\slotName}[1]{
+\foreach \slotTheta/\slName/\leftRight in {#1}{
+\draw (\slotTheta:\sRi+\delR/2)node[\leftRight]{$\slName$}; } }

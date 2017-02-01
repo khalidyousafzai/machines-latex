@@ -1,0 +1,65 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\pgfmathsetmacro{\sRo}{2.1}  %stator outer radius needs to be increased to accomodate the slot names
+\pgfmathsetmacro{\sTilt}{45}  %stator tilt
+\stator{12}{\sTilt}
+%
+\slotDot{\sTilt,\sTilt+60,\sTilt+120}       %a1,b1,c1
+\slotCross{\sTilt+90,\sTilt+60+90,\sTilt+30}   %a1',b1',c1'
+%\slotNameAtRadial{comma separated angles/name}
+\slotNameAtRadial{\sTilt/a1,\sTilt+60/b1,\sTilt+120/c1}       %a1,b1,c1
+\slotNameAtRadial{\sTilt+90/a1',\sTilt+60+90/b1',\sTilt+30/c1'}    %a1',b1',c1'
+%
+\pgfmathsetmacro{\sTilt}{45+180}  %stator tilt
+\slotDot{\sTilt,\sTilt+60,\sTilt+120}       %a2,b2,c2
+\slotCross{\sTilt+90,\sTilt+60+90,\sTilt+30}   %a2',b2',c2'
+%\slotNameAtRadial{comma separated angles/name}
+\slotNameAtRadial{\sTilt/a2,\sTilt+60/b2,\sTilt+120/c2}       %a2,b2,c2
+\slotNameAtRadial{\sTilt+90/a2',\sTilt+60+90/b2',\sTilt+30/c2'}    %a2',b2',c2'
+
+\rotor{4}{15}
+%\dotCrossEachPole{comma separated poles}
+\dotCrossEachPole{15,15+180}
+\crossDotEachPole{15+90,15+90+180}
+\draw node at (15:0.7*\rR){$N$};
+\draw node at (15+180:0.7*\rR){$N$};
+\draw node at (15+90:0.7*\rR){$S$};
+\draw node at (15+90+180:0.7*\rR){$S$};
+
+%=======
+\begin{scope}[xshift=-6cm]
+\draw (0,0) to [short,*-*] ++(0:0.75) to [short] ++(0,0.25)node[shift={(0+90:0.3)}]{a1'} to [inductor] ++(0:2)node[shift={(0+90:0.3)}]{a1} to [short,-*] ++(0,-0.25) to [short,-o] ++(0:0.5) node[right] {$a$};
+\draw (0:0.75) to [short] ++(0,-0.25)node[shift={(0-90:0.3)}]{a2'} to [inductor] ++(0:2)node[shift={(0-90:0.3)}]{a2} to [short] ++(0,0.25);
+%
+\draw (0,0) to [short,-*] ++(120:0.75) to [short] ++(120+90:0.25)node[shift={(120+90:0.3)}]{b1'} to [inductor] ++(120:2)node[shift={(120+90:0.3)}]{b1} to [short,-*] ++(120-90:0.25) to [short,-o] ++(120:0.5) node [above]{$b$};
+\draw (120:0.75) to [short] ++(120-90:0.25)node[shift={(120-90:0.3)}]{b2'} to [inductor] ++(120:2)node[shift={(120-90:0.3)}]{b2} to [short] ++(120+90:0.25);
+%
+\draw (0,0) to [short,-*] ++(240:0.75) to [short] ++(240+90:0.25)node[shift={(240+90:0.3)}]{c1'} to [inductor] ++(240:2)node[shift={(240+90:0.3)}]{c1} to [short,-*] ++(240-90:0.25) to [short,-o] ++(240:0.5)node[below]{$c$};
+\draw (240:0.75) to [short] ++(240-90:0.25)node[shift={(240-90:0.3)}]{c2'} to [inductor] ++(240:2)node[shift={(240-90:0.3)}]{c2} to [short] ++(240+90:0.25);
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

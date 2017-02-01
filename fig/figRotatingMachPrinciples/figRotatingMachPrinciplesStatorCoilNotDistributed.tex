@@ -1,0 +1,57 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%
+\stator{2}{90}
+\slotDot{90}
+\slotCross{270}
+\draw (0,0) circle (\rR);
+%FLUX
+\foreach \angle in {-80,-60,-40,-20,0,20,40,60,80}{
+\draw[gray,-latex] (\angle:0.8*\rR) --++(\angle:0.7); }
+\foreach \angle in {100,120,140,160,180,200,220,240,260,280}{
+\draw[gray,latex-] (\angle:0.8*\rR) --++(\angle:0.7); }
+%text
+\draw[gray,-latex] (0:1.1*\sRo)--++(0:1)node[right] {\RL{لچھے کی سمت}};
+\draw[gray,-stealth]([shift={(0:1.1*\sRo+0.5)}]0,0) arc (0:30:1.1*\sRo+0.5);
+\draw node[fill=white,text=gray] at (15:1.1*\sRo+0.5){$\theta$};
+\draw[gray,dashed] (-90:\sRo+0.1)--++(0,-0.6);
+%radial direction and flux
+\draw[gray,-latex] (0,0) --(40:0.7*\rR)coordinate[pos=0.5](kradial);
+\draw[-latex] (0,0) --(160:0.7*\rR)coordinate[pos=0.5](kradialO);
+\draw[-latex] (40:0.8*\rR) --++(40:0.7)coordinate[pos=0.6](kflux); 
+\draw[latex-] (160:0.8*\rR) --++(160:0.7)coordinate[pos=0.8](kfluxO); 
+%text
+\draw[gray,-stealth] (-90:\sRo+0.4)++(0.2,0) --++(2,0)node[xshift=0.4cm,right,align=right](kNOTopposing){\RL{اس جانب خلائی درز میں} \\ \RL{مقناطیسی بہاو رداس} \\ \RL{کی سمت میں ہے}};
+\draw[gray,-stealth] (-90:\sRo+0.4)++(-0.2,0) --++(-2,0)node[xshift=-0.5cm,left,align=right](kOpposing){\RL{اس جانب خلائی درز میں} \\ \RL{مقناطیسی بہاو رداس کی} \\ \RL{الٹ سمت میں ہے}};
+\draw[<-](kradial) to [out=-45,in=130] (kNOTopposing);
+\draw[<-](kflux) to [out=-45,in=130] (kNOTopposing);
+\draw[<-](kradialO) to [out=220,in=30] (kOpposing);
+\draw[<-](kfluxO) to [out=220,in=30] (kOpposing);
+\draw node[left,gray] at (160:2*\sRo)(kmu){$\mu_r \to \infty$};
+\draw[<-,gray] (160:\sRo) to [out=160,in=0] (kmu);
+\draw[<-,gray] (150:\rR) to [out=150,in=0] (kmu);
+%brace
+\draw[decorate,decoration={brace,amplitude=5pt}] (-90:\sRo+0.4)++(-0.5,0) ++(-2,0)++(0,0.8) -- ++(0,-1.6) node [black,midway,xshift=9pt] {};
+\draw[decorate,decoration={brace,amplitude=5pt}] (-90:\sRo+0.4)++(0.5,0) ++(2,0)++(0,-0.8) -- ++(0,1.6) node [black,midway,xshift=9pt] {};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

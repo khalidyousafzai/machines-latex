@@ -1,0 +1,83 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+%\usetikzlibrary{calc}
+\usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
+%\usetikzlibrary{calc,decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+
+\pgfmathsetmacro{\h}{2.5}
+ \pgfmathsetmacro{\w}{1}
+\pgfmathsetmacro{\t}{0.3}
+\pgfmathsetmacro{\N}{4}
+ \pgfmathsetmacro{\r}{\t/2}
+\pgfmathsetmacro{\g}{0.3}   %gap between coil and edge of window
+
+%coil step
+\pgfmathsetmacro{\stepHL}{(\h-2*\t-2*\g)/(\N-1)}
+
+
+%\pgfmathsetmacro{\thetaStart}{0} 
+%\pgfmathsetmacro{\thetaEnd}{180}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%
+\draw ([shift=(90:\r)]0,0) arc (90:270:\r)--++(180:\w)--++(90:\h)--++(0:\w)--++(270:\t)--++(180:\w-\t)--++(270:\h-2*\t)--++(0:\w-\t);
+\draw ([shift=(90:0.9*\r)]0,0)coordinate(pivotUpper){} arc (90:270:0.9*\r)coordinate(pivotLower){};
+\draw(pivotUpper)--++(0:0.01)coordinate(leverLowerL){}--++(80:\h-0.8*\t)coordinate(leverUpperL){}--++(-10:\t)coordinate(leverUpperR){}--++(-100:\h)coordinate(leverLowerR){}--(pivotLower);
+%
+\coordinate  (kL) at ($(leverLowerL) ! 0.85 ! (leverUpperL)$);
+\coordinate (kR) at ($(leverLowerR) ! 0.85 ! (leverUpperR)$);
+\coordinate (kM) at ($(kL) ! 0.5 ! (kR)$);
+
+
+\path[gray] (0,0)--++(180:\w-0.5*\t)coordinate[pos=0.8](kDashA)--++(90:\h-\t)coordinate[pos=0.1](kDashB)coordinate[pos=0.9](kDashC)--++(0:\w-0.5*\t)coordinate[pos=0.2](kDashD)coordinate[pos=0.9](kDashE) to [out=0,in=90] (kM)--++(-100:\h-2*\t) to [out=-100,in=0] (0,0);
+%
+\draw[gray](0,0)--(kDashA) to [out=180,in=-90] (kDashB)--(kDashC) to [out=90,in=180](kDashD) --(kDashE) to [out=0,in=90] (kM)--++(-100:\h-2*\t) to [out=-100,in=0] (0,0);
+\draw[solid] (0,0) circle (0.5 pt);   %mark centre of pivot
+\draw[-latex]  (kM)++(80:0.1) -- ++(0:1)node[right]{$F_m$};
+%
+\draw[gray](0,\h)--++(90:0.4)coordinate[pos=0.5](distanceL);
+\draw[gray](0,\h)++(0.3,0)--++(90:0.4)coordinate[pos=0.5](distanceR);
+\draw[->](distanceL)--(distanceR)node[right]{$x$};
+%COIL
+\def\leftEdge{-\w};
+\def\coilTop{\h-\t-\g};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\N-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TA){};
+\draw (\leftEdge,\coilTop-\N*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TB){};
+%--------------------
+\draw (TA) to [european resistor,i_<={$i$},-o,l_={$R$}]++(180:2.5)coordinate(supplyP);
+\draw (TB) to [short,-o]++(180:2.5)coordinate(supplyN);
+\node at ($(supplyP)!0.5!(supplyN)$){$\begin{aligned} &+\\&v\\&-  \end{aligned}$};
+%text
+\node[left] at ($(TA)!0.5!(TB)$){$\begin{aligned} &+\\e&,\lambda\\&-  \end{aligned}$};
+\node[right](urdu) at (1,1){\RL{حرکت کرنے والا حصہ}};
+\draw[gray,<-](0.6,1.7) to [out=-10,in=150] (urdu);
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

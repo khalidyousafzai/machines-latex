@@ -1,0 +1,120 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.9}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+  
+\begin{document}
+\begin{urdufont}
+\pgfmathsetmacro{\J}{0.5}
+\pgfmathsetmacro{\k}{(2*\J+1)/(2*\J)}
+%\def\kcoth(#1){(e^(#1)+e^(-#1))/(e^(#1)-e^(-#1))}    %this gives correct answers
+%\def\Brillouin(#1){and(#1>-0.001, #1< 0.001)*(0)+or(#1<-0.001, #1>0.001)*(\k*(e^(\k*#1)+e^(-\k*#1))/(e^(\k*#1)-e^(-\k*#1))-1/(2*\J)*(e^(#1/(2*\J))+e^(-#1/(2*\J)))/(e^(#1/(2*\J))-e^(-#1/(2*\J))))}    %this gives correct answers
+%
+\pgfmathdeclarefunction{kcoth}{1}{\pgfmathparse{(e^(#1)+e^(-#1))/(e^(#1)-e^(-#1))}}%
+\pgfmathdeclarefunction{Brillouin}{1}{\pgfmathparse{and(#1>-0.001, #1< 0.001)*(0)+or(#1<-0.001, #1>0.001)*(\k*kcoth(#1*\k)-1/(2*\J)*kcoth(#1/(2*\J)))}}%
+%
+\pgfmathsetmacro{\kpi}{2}
+\pgfmathsetmacro{\kPeak}{Brillouin(\kpi)}
+%
+\pgfmathdeclarefunction{BrillouinRising}{1}{\pgfmathparse{-0.2*cos(#1*90/\kpi)^2+Brillouin(#1)}}%
+\pgfmathdeclarefunction{BrillouinFalling}{1}{\pgfmathparse{0.2*cos(#1*90/\kpi)^2+Brillouin(#1)}}%
+%
+
+\pgfmathdeclarefunction{ktimeRising}{1}{\pgfmathparse{asin(BrillouinRising(#1)/\kPeak)}}%
+\pgfmathdeclarefunction{ktimeFalling}{1}{\pgfmathparse{asin(BrillouinFalling(#1)/\kPeak)}}%
+%
+\tikzset{
+  set arrow inside/.code={\pgfqkeys{/tikz/arrow inside}{#1}},
+  set arrow inside={end/.initial=>, opt/.initial=},
+  /pgf/decoration/Mark/.style={
+    mark/.expanded=at position #1 with
+    {
+      \noexpand\arrow[\pgfkeysvalueof{/tikz/arrow inside/opt}]{\pgfkeysvalueof{/tikz/arrow inside/end}}
+    }
+  },
+  arrow inside/.style 2 args={
+    set arrow inside={#1},
+    postaction={
+      decorate,decoration={
+        markings,Mark/.list={#2}
+      }
+    }
+  },
+}
+%============
+\begin{tikzpicture}
+	\begin{axis}[
+  axis x line=middle, 
+axis y line=none,
+axis line style={-},
+ ymin=-1.45*\kpi, ymax=1.45*\kpi,
+ticks=none,
+%ylabel=$i_\varphi$,
+xmin=-200,xmax=200, 
+xlabel=$t$,
+xlabel style={right},
+ ylabel style={above left},
+]
+\addplot [domain=-180:180,smooth]{\kpi*sin(x)}node [pos=0.4,fill=white] {$\varphi$};
+\addplot [domain=-180:180,smooth]{1.4*\kpi*cos(x)}node [pos=0.3,fill=white]{$e$};
+%
+\addplot[ domain=\kpi:-\kpi, smooth,variable=\x]({-180-ktimeFalling(x)},{0.75*x})coordinate[pos=1](ka);
+\addplot[ domain=-\kpi:\kpi, smooth,variable=\x]({ktimeRising(x)},{0.75*x})coordinate[pos=0](kb)coordinate[pos=1](kc)node[pos=0.2,fill=white]{$i_\varphi$};
+\addplot[ domain=\kpi:-\kpi, smooth,variable=\x]({180-ktimeFalling(x)},{0.75*x})coordinate[pos=0](kd);
+%\addplot[ domain=-\kpi:\kpi,smooth,variable=\x]({360+ktimeRising(x)},{0.5*x})coordinate[pos=0](kd);
+
+\draw (ka) to [out=-45,in=-135] (kb);   %filling empty gaps
+\draw (kc) to [out=45,in=135] (kd);
+%
+\end{axis}
+%
+%grid
+%\draw [gray] (0,0) grid (8,8);
+%
+\end{tikzpicture}%
+%==============================
+%================
+\begin{tikzpicture}
+	\begin{axis}[xscale=0.56,
+  axis x line=middle, 
+axis y line=middle,
+axis line style={-},
+ ymin=-1.45*\kPeak, ymax=1.45*\kPeak,
+ticks=none,
+ylabel=$\varphi$,
+  %xmin=-5, xmax=5, xtick={-5,...,5}, 
+xlabel=$i_\varphi$,
+xlabel style={right},
+ ylabel style={left},
+]
+\addplot[domain=-\kpi:\kpi]{BrillouinRising(x)}[arrow inside={}{0.25,0.75}];
+\addplot[ domain=\kpi:-\kpi]{BrillouinFalling(x)}[arrow inside={}{0.25,0.75}];
+%
+%\addplot[domain=-\kpi:\kpi]{Brillouin(x)};
+%
+\end{axis}
+%
+%grid
+%\draw [gray] (0,0) grid (8,8);
+%
+\end{tikzpicture}
+%=============================
+
+%==============================
+\end{urdufont}
+\end{document}
+%---------------------
+

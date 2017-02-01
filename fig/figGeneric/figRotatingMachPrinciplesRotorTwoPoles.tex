@@ -1,0 +1,41 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+%\usetikzlibrary{calc}
+\usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
+%\usetikzlibrary{calc,decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\pXrabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+%\pgfmathsetmacro{\g}{0.1}     %gap between rotor and stator
+
+
+
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%TWO POLE ROTOR 
+\pgfmathsetmacro{\rR}{0.75}   %rotor radius  
+\pgfmathsetmacro{\pTheta}{50}  %this is the pole face in degrees 
+\pgfmathsetmacro{\pX}{0.1}   %poles edge x-direction
+\pgfmathsetmacro{\pY}{0.1}    %pole edge  y-direction
+\pgfmathsetmacro{\rTheta}{30}   %rotation angle of rotor
+\pgfmathsetmacro{\wR}{2*\rR*cos(\pTheta/2)}    %rotor width
+
+\begin{scope}[rotate=\rTheta]
+\draw([shift={(-\pTheta/2:\rR)}]0,0) arc (-\pTheta/2:\pTheta/2:\rR)--++(-\pX,0)--++(0,-\pY)--++(-\wR+2*\pX,0)--++(0,\pY)--++(-\pX,0) arc (180-\pTheta/2:180+\pTheta/2:\rR)--++(\pX,0)--++(0,\pY)--++(\wR-2*\pX,0)--++(0,-\pY)--++(\pX,0);
+\end{scope}
+%
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,66 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{tikz}
+%\usepackage{tikz-3dplot}
+\usetikzlibrary{calc}
+
+\input{myEMTvectors.tex}
+
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%\draw[step=1,gray,thick] (0,0) grid (2,2);
+%\draw[step=0.1,gray,thin] (0,0) grid (2,2);
+\coordinate (O) at (0,0);
+\def\radius{2};
+\def\angle{30};
+%\coordinate (c) at  ($(a) ! 0.25 ! (b)$);
+%\coordinate (d) at  (c)--+($(c)-(O)$);
+ %
+\pgfmathsetmacro{\SinValue}{\radius*sin(\angle)}
+\pgfmathsetmacro{\CosValue}{\radius*cos(\angle)}
+
+\draw[-latex] (O)--(\angle:\radius) node[above left]{{\bf{L}}};
+\draw[gray,-latex] (O)--(0:\CosValue) node[pos=0.5,below]{$L \cos \theta$};
+\draw[gray,-latex] (O)++(0:\CosValue)--++(90:\SinValue) node[pos=0.5,right]{$L \sin \theta$};
+
+\draw[thick] (O)++(\angle:\radius/2)--++(\angle:0.3)--++(\angle+90:0.2)--++(\angle+90+90:0.3)--cycle;
+%\coordinate (p) at ${(O)++(\angle:\radius/2)}!0.5!{}
+%($(<center>) + (<init angle>:<radius>)$) arc (start angle:end angle:radius);
+\draw[gray]  ($(O) + (0:0.4)$) arc (0:30:0.4);
+\node[gray] at (0.7,0.2) {$\theta$};
+%force
+\draw[latex-](0.8,0.6)--(-0.4,0.6)node[left]{${\bf{F}}=F {\bf{a}}_x$};
+%load
+\node[above] at (0.3,1.3) {بار};
+\draw[thin,gray,->] (0.3,1.3) to [out=-90,in=120] (0.9,0.75);
+%unit vectors
+\coordinate(UV) at (-4,-0.3);
+\draw[-latex] (UV)--++(0.4,0) node[right]{${\bf{a}}_x$};
+\draw[-latex] (UV)--++(0,0.4)node[above]{${\bf{a}}_y$};
+ %--------------------------------------------
+ %\pgfmathsetmacro{\SinValue}{2*sin(45)}
+%\pgfmathsetmacro{\CosValue}{-2*cos(45)}
+%
+%\draw[gray,-latex] (O)--++(0,\CosValue) node[pos=0.5, left]{$L \cos \theta$};             %moment arm components
+%\draw[gray,-latex] (O)++(0,\CosValue)--++(\SinValue,0)node[pos=0.5, below]{$L \sin \theta$};
+%
+%\draw[domain=-90:-45] plot ({0.4*cos(\x) },{0.4*sin(\x)});
+%\node at (0.2,-0.6) {$\theta$};
+%
+%\coordinate (c1) at (-45:2);
+%($(<center>) + (<init angle>:<radius>)$) arc (start angle:end angle:radius);
+%\draw[]  ($(c1) + (-45:0.3)$) arc (-45:90:0.3);
+%\node at (2.2,-1.3) {$\theta_{LF}$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+

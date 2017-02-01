@@ -1,0 +1,33 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\draw (0,0) to [short,o-] ++(0.5,0) to [resistor,l={$R_{t}$}]++(2,0) to [inductor,l={$j X_{t}$}] ++(2,0)coordinate(dashedUP) to [short,i_={$\hat{I}_r'$}] ++(0.5,0) to [inductor,l={$j X_r'$}] ++(2,0)  to [resistor,l={$\frac{R_r'}{s}$}] ++(0,-2) to [short,-*] (0,-2);
+\draw[gray,dashed] (dashedUP)++(0,0.5)node[above]{الف} --++(0,-3)node[below]{ب};
+%text
+\draw node at (0,-1){$\begin{aligned} &+\\ & \hat{V}_{t}\\ &- \end{aligned}$};
+\draw node[gray,right,align=right]  at (0.5,-1){\RL{نقطہ دار لکیر کی اس} \\ \RL{جانب مساوی تھونن} \\  \RL{دور استعمال ہوا ہے}};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

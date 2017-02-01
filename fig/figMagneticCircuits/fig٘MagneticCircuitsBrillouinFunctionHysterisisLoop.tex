@@ -1,0 +1,109 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.9}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+  
+\begin{document}
+\begin{urdufont}
+\pgfmathsetmacro{\J}{0.5}
+\pgfmathsetmacro{\k}{(2*\J+1)/(2*\J)}
+\def\kcoth(#1){(e^(#1)+e^(-#1))/(e^(#1)-e^(-#1))}    %this gives correct answers
+\def\Brillouin(#1){and(#1>-0.001, #1< 0.001)*(0)+or(#1<-0.001, #1>0.001)*(\k*(e^(\k*#1)+e^(-\k*#1))/(e^(\k*#1)-e^(-\k*#1))-1/(2*\J)*(e^(#1/(2*\J))+e^(-#1/(2*\J)))/(e^(#1/(2*\J))-e^(-#1/(2*\J))))}    %this gives correct answers
+%
+\tikzset{
+  set arrow inside/.code={\pgfqkeys{/tikz/arrow inside}{#1}},
+  set arrow inside={end/.initial=>, opt/.initial=},
+  /pgf/decoration/Mark/.style={
+    mark/.expanded=at position #1 with
+    {
+      \noexpand\arrow[\pgfkeysvalueof{/tikz/arrow inside/opt}]{\pgfkeysvalueof{/tikz/arrow inside/end}}
+    }
+  },
+  arrow inside/.style 2 args={
+    set arrow inside={#1},
+    postaction={
+      decorate,decoration={
+        markings,Mark/.list={#2}
+      }
+    }
+  },
+}
+%================
+\begin{tikzpicture}
+	\begin{axis}[
+  axis x line=middle, 
+axis y line=middle,
+axis line style={-},
+%  ymin=-1, ymax=1, ytick={-1,...,1}, 
+ticks=none,
+ylabel=$B$,
+  %xmin=-5, xmax=5, xtick={-5,...,5}, 
+%xlabel=$H$,
+xlabel style={below right},
+ ylabel style={above left},
+]
+\pgfmathsetmacro{\kpi}{2}
+\addplot[ domain=\kpi:-\kpi]{0.2*cos(x*90/\kpi)^2+\Brillouin(x)}[arrow inside={}{0.25,0.75}];
+\addplot[domain=-\kpi:\kpi]{-0.2*cos(x*90/\kpi)^2+\Brillouin(x)}[arrow inside={}{0.25,0.75}];
+%
+\end{axis}
+\draw node at (4,-0.25) {ب};
+%
+%grid
+%\draw [gray] (0,0) grid (8,8);
+%
+\end{tikzpicture}%
+
+
+%==================
+\begin{tikzpicture}
+	\begin{axis}[
+  axis x line=middle, 
+axis y line=middle,
+axis line style={-},
+%  ymin=-1, ymax=1, ytick={-1,...,1}, 
+ticks=none,
+ylabel=$B$,
+  %xmin=-5, xmax=5, xtick={-5,...,5}, 
+xlabel=$H$,
+xlabel style={below right},
+ ylabel style={above left},
+]
+\pgfmathsetmacro{\kpi}{2}
+\addplot[ domain=0:\kpi]{\Brillouin(x)}[arrow inside={}{0.5}];
+\addplot[ domain=\kpi:-\kpi]{0.2*cos(x*90/\kpi)^2+\Brillouin(x)}[arrow inside={}{0.25,0.75}];
+\addplot[domain=-\kpi:0]{-0.15*cos(x*90/\kpi)^2+\Brillouin(x)}[arrow inside={}{0.5}];
+\addplot[domain=0:\kpi]{-0.15*cos(0.75*x*90/\kpi)^2+\Brillouin(x)}[arrow inside={}{0.5}];
+\end{axis}
+%
+%grid
+%\draw [gray] (0,0) grid (8,8);
+%
+\draw node at (3.2,2.6){$a$};
+\draw node at (6.8,6){$b$};
+\draw node at (3.2,3.5){$c$};
+\draw node at (3,3.1){$d$};
+\draw node at (-0.1,0.1){$e$};
+\draw node at (3.6,2.2){$f$};
+\draw node at (3.9,2.7){$g$};
+\draw node at (6.8,5.4){$h$};
+\draw node at (4,-0.2) {الف};
+\end{tikzpicture}%
+%==============================
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,45 @@
+\documaneclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{calc}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+%
+\input{myEMTvectors.tex}
+
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+\coordinate (O) at (4,0,0);
+%\coordinate (c) at  ($(a) ! 0.25 ! (b)$);
+%\coordinate (d) at  (c)--+($(c)-(O)$);
+ 
+\draw[-latex] (O)--++(-45:2) node[pos=0.4, above right] {${\bf{L}}$};
+%\draw[gray] (O)++(-45:2)--++(-45:0.3);
+\draw[-latex] (O)++(-45:2)--++(70:0.75) node[right]{${\bf{F}}$};
+\draw (O)++(0,0.1) node[above] {محور};
+%
+\coordinate (O) at (0,0,0);
+%\coordinate (c) at  ($(a) ! 0.25 ! (b)$);
+%\coordinate (d) at  (c)--+($(c)-(O)$);
+ %
+\draw(0,0)--(1,1);
+
+%\draw[-latex] (O)--++(-45:2) node[pos=0.4, above right] {${\bf{L}}$};
+%\draw[gray] (O)++(-45:2)--++(-45:0.75);
+%\draw[-latex] (O)++(-45:2)--++(70:0.75) node[right]{${\bf{F}}$};
+%
+\end{tikzpicture}%
+\end{urdufont}
+
+\end{document}
+

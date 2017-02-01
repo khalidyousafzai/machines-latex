@@ -1,0 +1,64 @@
+\documaneclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+%transformer outer dimensions. these six parameters defines the transformer
+\pgfmathsetmacro{\h}{2.5}
+\pgfmathsetmacro{\w}{2}
+\pgfmathsetmacro{\t}{0.4}
+\pgfmathsetmacro{\g}{0.2}   %gap between coil and edge of window
+\pgfmathsetmacro{\nL}{4}       %number of left hand turns
+\pgfmathsetmacro{\nR}{3}      %number of right hand turns
+%------------------------------
+
+%window size
+\pgfmathsetmacro{\winH}{\h-2*\t}
+\pgfmathsetmacro{\winW}{\w-2*\t}
+%coil step
+\pgfmathsetmacro{\stepHL}{(\h-2*\t-2*\g)/(\nL-0.5)}
+\pgfmathsetmacro{\stepHR}{(\h-2*\t-2*\g)/(\nR-0.5)}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-1,-1) grid (3,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-1,-1) grid (3,3);
+%transformer
+\draw(0,0) rectangle (\w,\h);
+\draw(\t,\t) rectangle ++(\winW,\winH);
+%----------------------
+%left hand coil. top to bottom
+\draw(\t/4,{\h-\t-\g}) to [out=0,in=45] (\t,{\h-\t-\g-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (0,{\h-\t-\g-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\t,{\h-\t-\g-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\t/4,{\h-\t-\g})--++(-1.25*\t,0) node(T.A1){};
+\draw (0,\t+\g)--++(-1*\t,0)node(T.A2){};
+%-------------
+%right hand coil. top to bottom
+\draw(\w-\t/4,{\h-\t-\g}) to [out=180,in=135] (\w-\t,{\h-\t-\g-\stepHR/2}); %top half section
+\pgfmathsetmacro{\nRend}{\nR-2}
+\foreach \y in { 0, ..., \nRend }{
+\draw (\w,{\h-\t-\g-\stepHR/2-\y*\stepHR}) to [out=-45,in=135] (\w-\t,{\h-\t-\g-\stepHR/2-\y*\stepHR-\stepHR});
+} 
+%right hand terminals
+\draw (\w-\t/4,{\h-\t-\g})--++(1.25*\t,0) node(T.B1){};
+\draw (\w,\t+\g)--++(1*\t,0)node(T.B2){};
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
+%---------------------
+

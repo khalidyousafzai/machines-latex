@@ -1,0 +1,43 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\pgfmathsetmacro{\x}{1}
+\pgfmathsetmacro{\y}{0.2}
+
+\newcommand{\ripple}{to [out=0,in=90] ++(0.1,-0.1)--++(0,-\y) to [out=-90,in=180]++(0.1,-0.1) to [out=0,in=-90]++(0.1,0.1) --++(0,\y) to [out=90,in=180]++(0.1,0.1)}
+%ripple
+\draw (0,2)--++(\x/2,0)  \ripple --++(\x,0)  \ripple--++(\x,0)  \ripple--++(\x,0)  \ripple--++(\x,0)  \ripple;  
+%axis
+\draw (0,0)--(0,2.5) node[left]{$e$};
+\draw (0,0)--(6.5,0);
+%
+\draw[gray,<->] (1.4,0)--++(0,2)node[pos=0.5,fill=white]{$4 \omega N A B_m$};
+\draw[gray,<->] (4.9,0)--++(0,1.6)node[pos=0.5,fill=white]{$3 \omega N A B_m$};
+\draw[gray] (2.1,1.6)--++(0.6,0)coordinate[pos=0.7](ripA);
+\draw[gray,<-] (ripA)--++(0,-0.2);
+\draw[gray,<-] (ripA)++(0,0.4)--++(0,0.2) to [out=90,in=180] ++(0.2,0.2) node[right]{\RL{غیر ضروری لہر}};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

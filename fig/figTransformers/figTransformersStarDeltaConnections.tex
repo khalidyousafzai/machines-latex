@@ -1,0 +1,145 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{siunitx}  
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+%transformer outer dimensions
+\pgfmathsetmacro{\l}{1.5}
+\pgfmathsetmacro{\s}{0.5}
+\pgfmathsetmacro{\arm}{2}
+\pgfmathsetmacro{\shiftX}{9cm}
+\pgfmathsetmacro{\shiftY}{1.25 cm}
+\pgfmathsetmacro{\gap}{3.5 cm}
+
+\pgfmathsetmacro{\startDelX}{-\arm/2}
+\pgfmathsetmacro{\startDelY}{-\arm/3}
+
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-3,-3) grid (12,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (12,5);
+%
+\draw node at (11.5,-2) {الف};
+\draw node at (0,-2) {ب};
+%
+\begin{scope}[xshift=\shiftX]
+\draw (0,0) node  [transformer core](T1){}; 
+\draw (0,2.5) node  [transformer core](T2){}; 
+\draw (0,5) node  [transformer core](T3){}; 
+\draw(T1.base) node {$\bullet \hspace{2mm} \bullet$};
+\draw(T2.base) node {$\bullet \hspace{2mm} \bullet$};
+\draw(T3.base) node {$\bullet \hspace{2mm} \bullet$};
+%
+\draw(T1.A1) to [short,-o] ++(-\l,0) node[left](c) {$c$};
+\draw(T2.A1) to [short,-o] ++(-\l,0) node[left](b) {$b$};
+\draw(T3.A1) to [short,-o] ++(-\l,0) node[left] (a){$a$};
+%
+\draw(T1.A2) to [short,-*] ++(-\s,0) coordinate (k1){};
+\draw(T2.A2) to [short,-*] ++(-\s,0)coordinate (k2){};
+\draw(T3.A2) to [short] ++(-\s,0)coordinate (k3){};
+%
+\draw(k3) to [short] (k2) to [short] (k1) to [short,-o] ++(-\l+\s,0)node[left](n){$n$};
+%text
+\node[right] at ($(a) ! 0.5 ! (b)$) {$
+\begin{aligned}
+&+\\
+&v_{ab}\\
+&-
+\end{aligned}
+$};
+%
+\node[right] at ($(b) ! 0.5 ! (c)$) {$
+\begin{aligned}
+&+\\
+&v_{bc}\\
+&-
+\end{aligned}
+$};
+%
+\node at ($(T1.A1) ! 0.5 ! (T1.A2)$){$
+\begin{aligned}
+&+\\
+&v_{cn}\\
+&-
+\end{aligned}
+$};
+%
+\node at ($(T2.A1) ! 0.5 ! (T2.A2)$){$
+\begin{aligned}
+&+\\
+&v_{bn}\\
+&-
+\end{aligned}
+$};
+%
+\node at ($(T3.A1) ! 0.5 ! (T3.A2)$){$
+\begin{aligned}
+&+\\
+&v_{an}\\
+&-
+\end{aligned}
+$};
+%right hand side
+\draw(T1.B1) to [short,-o] ++(\l,0)  node[right](c'){$c'$};
+\draw(T2.B1) to [short,-o] ++(\l,0)node[right](b'){$b'$};
+\draw(T3.B1) to [short,-o] ++(\l,0) node [right](a'){$a'$};
+%;
+\draw(T1.B2) to [short] ++(\s,0) to [short,-*] ++(0,7.1);
+\draw(T2.B2) to [short,-*] (T1.B1);
+\draw(T3.B2) to [short,-*] (T2.B1);
+%text
+\draw node at ($(a') ! 0.5 ! (b')$){$
+\begin{aligned}
+&+\\
+&v_{ab}'\\
+&-
+\end{aligned}
+$};
+%
+\draw node at ($(b') ! 0.5 ! (c')$){$
+\begin{aligned}
+&+\\
+&v_{bc}'\\
+&-
+\end{aligned}
+$};
+\end{scope}
+%=====================
+\begin{scope}[yshift=\shiftY]
+%star
+\draw (0,0) to [inductor,l={$- v_{an} +$}] ++(0:\arm)node [below left] {$\bullet$} to [short] ++(0,-2.2) to [short,-o]++(-4,0) node[left] {$a$};
+\draw (0,0) to [inductor,l={$+ v_{cn} -$}] ++(120:\arm) node [right]{$\bullet$} to [short,-o] ++(-1,0) node [left] {$c$};
+\draw (0,0) to [inductor,l={$+ v_{bn} -$}] ++(-120:\arm) node [above left] {$\bullet$} to [short,-o] ++(-1,0)node [left]{$b$};
+\draw (0,0) to [short,*-o] ++(-0.5,0) node [left]{$n$};
+\draw(2,2) node {$Y:\Delta$};
+%delta
+\begin{scope}[xshift=\gap]
+\draw (\startDelX,\startDelY) to [inductor,l_={$- v_{ab}'+$}] ++(0:\arm)coordinate(delA){} to [inductor] ++(120:\arm)coordinate(delB){}  to [inductor] ++(-120:\arm);
+\path  (30:0.6*\arm)  node[rotate=-60] {$+ v_{ca}' -$}; 
+\path  (150:0.6*\arm)  node[rotate=60] {$+ v_{bc}' -$}; 
+\draw (delA) to [short,-o] ++(\s,0) node[right]{$a'$};
+\draw (delB) to [short] ++(0,0.5) to [short,-o] ++(1.5,0) node[right]{$c'$};
+\draw (\startDelX,\startDelY) to [short] ++(0,-0.75) to [short,-o] ++(\l+1,0)node[right]{$b'$};
+\draw[below left]  node at (delA){$\bullet$};
+\draw[right]  node at (delB){$\bullet$};
+\draw[above]  node at (\startDelX,\startDelY){$\bullet$};
+\end{scope}
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

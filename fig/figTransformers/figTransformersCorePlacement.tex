@@ -1,0 +1,73 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage[siunitx]{circuitikz}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+ 
+ \pgfmathsetmacro{\t}{0.3}  
+\pgfmathsetmacro{\d}{0.9}  
+\pgfmathsetmacro{\s}{0.05 cm}  
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (6,2);
+%\draw[help lines,xstep=0.1,ystep=0.1] (-2,-2) grid (6,2);
+%
+\begin{scope}[xshift=4cm]
+\draw(0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw(-3*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+\draw(-2.5*\t,2)node{ایک};
+\draw(0.5,2) node{تین};
+\draw(0,-0.1)node[below]{الف};
+\end{scope}
+%
+\begin{scope}[xshift=1cm]
+\draw(0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw(-1.1*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+\draw(0.5,2)node{\RL{پہلی تہہ}};
+\end{scope}
+%
+\begin{scope}[x=-1cm,y=1cm]
+\draw(0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw(-1.1*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+\draw(0.5,2)node{\RL{دوسری تہہ}};
+\draw(-0.5,-0.3)node[below]{ب};
+\end{scope}
+
+%stacked core
+\begin{scope}[xshift=-3cm,yshift=0cm]
+\draw(0.3,-0.3)node[below]{پ};
+%bottom layer
+\draw[fill=white](0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw[fill=white](-1.1*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+%first layer
+\begin{scope}[x=-1cm,y=1cm,xshift=0.88cm-\s,yshift=-\s]
+\draw[fill=white](0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw[fill=white](-1.1*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+\end{scope}
+%second layer
+\begin{scope}[x=1cm,y=1cm,xshift=-2*\s,yshift=-2*\s]
+\draw[fill=white](0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw[fill=white](-1.1*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+\end{scope}
+%third layer
+\begin{scope}[x=-1cm,y=1cm,xshift=0.88cm-3*\s,yshift=-3*\s]
+\draw[fill=white](0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw[fill=white](-1.1*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+\end{scope}
+\end{scope}
+
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}

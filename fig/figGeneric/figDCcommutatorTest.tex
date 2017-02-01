@@ -1,0 +1,44 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}[xscale=0.4,yscale=1]
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+\pgfmathsetmacro{\cRi}{1}  %commutator inner radius
+\pgfmathsetmacro{\cRo}{\cRi+0.5}  %commutator inner radius
+\pgfmathsetmacro{\cW}{0.8}   %commutator width
+\pgfmathsetmacro{\cT}{\cRo-\cRi}    %commutator thickness
+\pgfmathsetmacro{\tilt}{-10}
+\pgfmathsetmacro{\gap}{5}     %gap between commutator pieces
+\pgfmathsetmacro{\bush}{30}   %bush as half angle
+\pgfmathsetmacro{\bR}{\cRo+0.1}   %bush radius
+\pgfmathsetmacro{\coilW}{0.5}
+\pgfmathsetmacro{\coilL}{5}
+\pgfmathsetmacro{\coilLdel}{4}
+\pgfmathsetmacro{\coilWdel}{0.1}
+%
+\draw (\tilt+\gap:\cRi)coordinate(aA) arc (\tilt+\gap:180+\tilt-\gap:\cRi)coordinate(aB)--++(180+\tilt-\gap:\cRo-\cRi)coordinate(aC) arc (180+\tilt-\gap:\tilt+\gap:\cRo)coordinate(aD)--cycle;
+\draw(aA)--++(-\cW,0)coordinate(aE)--++(\tilt+\gap:\cT)coordinate(aF)--(aD);
+\draw(aC)--++(-\cW,0)coordinate(aG)--++(180+\tilt-\gap:-\cT)coordinate(aH)--(aB);
+%
+\draw[fill=white] (aE) arc (\tilt+\gap:180+\tilt-\gap:\cRi)coordinate(aB)--++(180+\tilt-\gap:\cRo-\cRi)coordinate(aC) arc (180+\tilt-\gap:\tilt+\gap:\cRo)coordinate(aD)--cycle;
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

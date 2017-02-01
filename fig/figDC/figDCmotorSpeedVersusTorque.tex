@@ -1,0 +1,48 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{siunitx} 
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+  \newcommand\DrawControl[3]{
+  node[#2,circle,fill=#2,inner sep=2pt,label={above:$#1$},label={[black]below:{\footnotesize#3}}] at #1 {}
+}
+\begin{document}
+\begin{urdufont}
+
+
+\begin{tikzpicture}
+%grid
+%\draw [gray,thick] (0,0) grid (6,5);
+%\draw [gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (6,5);
+\begin{axis}[yscale=0.5,
+ymin=940,
+ymax=1010,
+%axis lines=middle,
+axis x line=bottom,
+axis y line=left,
+axis line style=-, 
+]
+    \addplot[smooth] plot coordinates {(0,1000) (250.088,991.95) (527.35,983.96) (804.65,975.83)};
+
+\end{axis}
+%grid
+%\draw [gray] (-2,-2) grid (7,5);
+%
+\draw node at (3.5,-0.75){مروڑ \quad \si{\newton \meter}};
+\draw node[rotate=90] at (-1.5,1.4){\RL{رفتار (چکر فی منٹ)}};
+\end{tikzpicture}
+
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,81 @@
+\documentclass[b5paper]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{calc}
+
+\input{../myEMTvectors.tex}
+
+
+ \pgfmathsetmacro{\x}{2}            %start points, lower left corner
+ \pgfmathsetmacro{\y}{4}
+\pgfmathsetmacro{\z}{3}
+%
+ \pgfmathsetmacro{\xticks}{\x-1}            %number of ticks
+ \pgfmathsetmacro{\yticks}{\y-1}
+\pgfmathsetmacro{\zticks}{\z-1}
+\pgfmathsetmacro{\tickL}{0.1}    %tick mark length
+
+\begin{document}
+
+\begin{tikzpicture}[x={(-0.5 cm,-0.5 cm)},y={(1 cm,0 cm)},z={(0 cm,1 cm)}]
+
+
+%front of cube
+\coordinate (n1) at (\x,0,0);
+\coordinate (n2) at (\x,0,\z);
+\coordinate (n3) at (\x,\y,\z);
+\coordinate (n4) at (\x,\y,0);
+%back of cube
+\coordinate (n5) at (0,0,0);
+\coordinate (n6) at (0,0,\z);
+\coordinate (n7) at (0,\y,\z);
+\coordinate (n8) at (0,\y,0);
+%axis
+\draw[gray] (0,0,0)--(\x+1,0,0);
+\draw[gray] (0,0,0)--(0,\y+1,0);
+\draw[gray] (0,0,0)--(0,0,\z+0.5);
+%x,y,z length labels
+\draw[left] node at (\x,0,0){$x$};
+\draw[below] node at (0,\y,0){$y$};
+\draw[left] node at (0,0,\z){$z$};
+%ticks
+\foreach \xt in {1,...,\xticks}{\draw[gray] (\xt,-\tickL,0)--(\xt,\tickL,0);}
+\foreach \yt in {1,...,\yticks}{\draw[gray] (-\tickL,\yt,0)--(\tickL,\yt,0);}
+\foreach \zt in {1,...,\zticks}{\draw[gray] (0,-\tickL,\zt)--(0,\tickL,\zt);}
+%cube
+\draw[gray,thin] (n1)--(n2);   %front side
+\draw[gray,thin] (n2)--(n6)--(n7)--(n3)--cycle;   %top side
+\draw[gray,thin] (n3)--(n7)--(n8)--(n4);     %right side
+%vectors
+\draw[-latex] (0,0,0)--(\x,\y,\z)node[pos=0.5,above left]{${\bf{A}}$} node[above]{$P$};
+\draw[-latex] (0,0,0)--(\x,0,0)node[pos=0.2,left]{${\bf{A}}_x$};
+\draw[-latex] (\x,0,0)--(\x,\y,0)node[pos=0.5,below]{${\bf{A}}_y$};
+\draw[-latex] (\x,\y,0)--(\x,\y,\z)node[pos=0.7,right]{${\bf{A}}_z$};
+%TEXT
+\draw node at (0,\y+2,\z){$\begin{aligned} &P(x,y,z)\\  \kvec{A}&=\kvec{A}_x +\kvec{A}_y+\kvec{A}_z\\   &=x \ax+y \ay+z\az \end{aligned}$};
+%lines on body
+%\foreach \delX in {0,...,\x}{
+%\draw[gray,thin](\delX,\y,0)--(\delX,\y,\z);
+%\draw[gray,thin](\delX,0,\z)--(\delX,\y,\z);   }
+%
+%\foreach \delY in {0,...,\y}{
+%\draw[gray,thin](\x,\delY,0)--(\x,\delY,\z);
+%\draw[gray,thin](0,\delY,\z)--(\x,\delY,\z);  }
+%
+%\foreach \delZ  in {0,...,\z}{
+%\draw[gray,thin](0,\y,\delZ)--(\x,\y,\delZ);
+%\draw[gray,thin](\x,0,\delZ)--(\x,\y,\delZ);  }
+%
+%
+%\shade[left color=transparent!0, right color=transparent!100,shading angle=105,fill opacity=0.5,draw=gray] (n1)--(n2)--(n3)--(n4)--cycle;   %front side
+%\shade[right color=gray!10,left color=black!50,shading angle=105,fill opacity=0.5,draw=gray] (n2)--(n6)--(n7)--(n3)--cycle;   %top side
+%\shade[right color=gray!10,left color=black!50,shading angle=105,fill opacity=0.5,draw=gray] (n3)--(n7)--(n8)--(n4)--cycle;     %right side
+%cube repeated a bit differently
+%\shade[left color=transparent!100, right color=transparent!0,shading angle=105,fill opacity=0.5] (n1)--(n2)--(n3)--(n4)--cycle;   %front side
+%\shade[left color=transparent!100, right color=transparent!0,shading angle=45,fill opacity=0.5] (n2)--(n6)--(n7)--(n3)--cycle;   %top side
+%\shade[left color=transparent!0, right color=transparent!100,shading angle=105,fill opacity=0.5] (n3)--(n7)--(n8)--(n4)--cycle;     %right side
+%
+
+\end{tikzpicture}%
+
+\end{document}

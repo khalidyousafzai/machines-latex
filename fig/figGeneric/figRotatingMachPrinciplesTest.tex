@@ -1,0 +1,49 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+%\usetikzlibrary{calc}
+\usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
+%\usetikzlibrary{calc,decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+%\pgfmathsetmacro{\g}{0.1}     %gap between rotor and stator
+
+\pgfmathsetmacro{\rR}{0.75}   %rotor radius   %
+\pgfmathsetmacro{\tR}{0.6}     %rotor thickness
+\pgfmathsetmacro{\a}{0.1}   %poles edge x-direction
+\pgfmathsetmacro{\b}{0.1}    %pole edge  y-direction
+\pgfmathsetmacro{\thetaR}{30}  %rotor tilt angle
+
+\pgfmathsetmacro{\tS}{\tR-2*\b}
+\pgfmathsetmacro{\rSi}{\rR+\g}
+\pgfmathsetmacro{\rSo}{\rSi+\tS+\delY/2}
+
+\pgfmathsetmacro{\thetaR}{asin(\tR/(2*\rR))}  %
+\pgfmathsetmacro{\wR}{2*\rR*cos(\thetaR)}    %
+
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+
+%grid
+%\draw[gray,thick] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%
+%TWO POLE ROTOR 
+\begin{scope}[rotate=\thetaR]
+\draw([shift={(-\thetaR:\rR)}]0,0) arc (-\thetaR:\thetaR:\rR)--++(-\a,0)--++(0,-\b)--++(-\wR+2*\a,0)--++(0,\b)--++(-\a,0) arc (180-\thetaR:180+\thetaR:\rR)--++(\a,0)--++(0,\b)--++(\wR-2*\a,0)--++(0,-\b)--++(\a,0);
+%
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
+%---------------------
+

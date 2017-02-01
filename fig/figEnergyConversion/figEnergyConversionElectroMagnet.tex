@@ -1,0 +1,87 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+%\usetikzlibrary{calc}
+\usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
+%\usetikzlibrary{calc,decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+
+\pgfmathsetmacro{\shiftX}{5 cm}
+
+\pgfmathsetmacro{\h}{1.2}
+\pgfmathsetmacro{\t}{0.4}
+\pgfmathsetmacro{\g}{0.1}
+\pgfmathsetmacro{\nL}{3}
+
+\pgfmathsetmacro{\xE}{3*\t cm}
+\pgfmathsetmacro{\yE}{\h/4 cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%
+\draw(0,0)--++(0,\h)--++(6*\t,0)--++(0,-\h)--++(-\t,0)--++(0,\h-\t)--++(-\t,0)--++(0,-\h+\t)--++(-2*\t,0)--++(0,\h-\t)--++(-\t,0)--++(0,-\h+\t)--cycle;
+\draw(0,-\t/2)--++(6*\t,0)--++(0,-1.5*\t)--++(-6*\t,0)--cycle;     %load
+\draw[gray] (6*\t+0.1,0)--++(0.3,0)coordinate[pos=0.5] (gap);
+\draw[gray] (6*\t+0.1,0)++(0,-\t/2)--++(0.3,0);
+\draw[gray,<-] (gap)--++(0,0.3)--++(0.2,0.2) node[above] {$l$};
+\draw[gray,<-] (gap)++(0,-0.5*\t)--++(0,-0.3);
+\draw node at (3*\t,-1.25*\t){\RL{لوہے کا بار}};
+%===================================
+\pgfmathsetmacro{\stepHL}{(\h-\t-2*\g)/(\nL)}
+%
+\def\leftEdge{2*\t};
+\def\coilTop{\h-\t-\g};
+\def\rightEdge{4*\t};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\rightEdge,{\coilTop-\stepHL/2}); %top half turn
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\rightEdge,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-0.75*\t,0) node(TA){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-0.5*\t,0)node(TB){};
+%
+\draw node[left] at (-\t,0){ب};
+%===========================
+%===========================
+%figure-alf
+\begin{scope}[xshift=\shiftX,x=1cm,y=0.25cm]
+\draw(0,0) circle  (1.2);
+\draw(0,0) circle  (0.8);
+\draw[gray,<-] (220:1.2) to [out=220,in=45](-1.5,-1.5) node[below] {رقبہ $A$};
+\draw[gray,<-] (-90:0.4) to [out=-90,in=120](1,-2) node[below] {رقبہ $A$};
+\begin{scope}
+\clip (0,0) circle  (0.8);
+\draw(0,0) circle  (0.4);
+\draw (-0.4,0)--++(0,2);
+\draw (0.4,0)--++(0,2);
+\end{scope}
+%
+\begin{scope}[yshift=0.8cm]
+\draw([shift={(0:1.2)}]0,0) arc (0:180:1.2);
+\end{scope}
+\draw(-1.2,0)--++(0,0.8cm);
+\draw(1.2,0)--++(0,0.8cm);
+\draw node[right] at (4*\t,0){الف};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,94 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%
+\pgfmathsetmacro{\sY}{1}
+\pgfmathsetmacro{\sX}{0.4}
+\pgfmathsetmacro{\sW}{0.5}
+\pgfmathsetmacro{\bH}{1}
+\pgfmathsetmacro{\g}{0.05}
+\pgfmathsetmacro{\cH}{1.5}
+\pgfmathsetmacro{\cW}{3}
+\pgfmathsetmacro{\cG}{0.1}
+\pgfmathsetmacro{\cArm}{1}
+%
+\pgfmathsetmacro{\shiftX}{2cm}
+%
+%SLIP RING
+%\draw (0,0) ellipse (\sX cm and \sY cm);        %moved to end to cover part of bush
+%\draw (0,0) ellipse (0.7*\sX cm and 0.7*\sY cm);
+\draw(\sW,0)++(-90:\sX cm and \sY cm) arc (-90:90:\sX cm and \sY cm);
+\draw(0,\sY)--++(\sW,0);
+\draw(0,-\sY)--++(\sW,0);
+%%BUSH
+\path(-135:\sX cm +\g cm and \sY cm+\g cm)++(0,-\bH)coordinate(bushLowerLeft);
+\draw[fill=white](-135:\sX cm +\g cm and \sY cm+\g cm)coordinate(arcS) arc (-135:-45:\sX cm +\g cm and \sY cm+\g cm)coordinate(arcE) --++(\sW,0)--++(0,-\bH)coordinate(bushConnectionA)--++(-\sW,0)--(bushLowerLeft)--cycle;
+\draw(arcE)--++(0,-\bH);
+\draw(arcS)--++(\sW,0);   %this is the invisible side and needs to be covered
+%SLIP RING
+\draw[fill=white] (0,0) ellipse (\sX cm and \sY cm);   %shade a portion of the bush
+\draw (0,0) ellipse (0.7*\sX cm and 0.7*\sY cm);
+%ONE TURN COIL
+\draw (0,0)++(0,\cG/2)coordinate(coilS) --++(-\cArm-\sX,0)--++(0,\cH/2-\cG) to [short,i_={$I_r$}] ++(-\cW,0)--++(0,-\cH)  to [short,i_={$I_r$}] ++(\cW,0)--++(0,\cH/2-\cG/2)--++(\cArm+0.13,0)coordinate(coilE);
+\draw[fill] (coilE) circle (1pt);
+\draw(coilS)--++(0.29,0)coordinate(coilSS);
+\draw[gray,dashed] (coilSS)--++(\sW+0.1,0)coordinate(coilSSS);
+%\draw(coilSSS)--++(1 cm,0);    %gets covered by the second slip ring so moved to end
+%
+%external wire to bush
+\draw[fill] (bushConnectionA) circle (1pt);
+\draw[thick] (bushConnectionA) to [out=-35,in=180] ++(3,-0.75)coordinate(negCon) to [short,i_={$I_r$,-o}]++(1,0);
+%urdu text
+\draw node at (-3,0){\RL{گھومتا لچھا}};
+%===============
+\begin{scope}[xshift=\shiftX]
+%\draw[gray,thick](-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](-2,-2) grid (2,2);
+%SLIP RING
+\draw(\sW,0)++(-90:\sX cm and \sY cm) arc (-90:90:\sX cm and \sY cm);
+\draw(0,\sY)--++(\sW,0);
+\draw(0,-\sY)--++(\sW,0);
+%BUSH
+\path(-135:\sX cm +\g cm and \sY cm+\g cm)++(0,-\bH)coordinate(bushLowerLeft);
+\draw[fill=white](-135:\sX cm +\g cm and \sY cm+\g cm)coordinate(arcS) arc (-135:-45:\sX cm +\g cm and \sY cm+\g cm)coordinate(arcE) --++(\sW,0)--++(0,-\bH)coordinate(bushConnectionB)--++(-\sW,0)--(bushLowerLeft)--cycle;
+\draw(arcE)--++(0,-\bH);
+\draw(arcS)--++(\sW,0);   %this is the invisible side and needs to be covered
+%SLIP RING
+\draw[fill=white] (0,0) ellipse (\sX cm and \sY cm);   %shade a portion of the bush
+\draw (0,0) ellipse (0.7*\sX cm and 0.7*\sY cm);
+%external wire to bush
+\draw[fill] (bushConnectionB) circle (1pt);
+\draw[thick] (bushConnectionB) to [out=-35,in=0] ++(1,-0.25) to [short,i<={$I_r$},-o]++(1,0);
+
+\draw[stealth-](0.8,0.7) to [out=0,in=210] ++(1,-0.5)node[right]{\RL{سرک چھلا}};
+\end{scope}
+%
+\draw(coilSSS)--++(0.84 cm,0)coordinate(coilSSSS);
+\draw[fill] (coilSSSS) circle (1pt) ;
+%urdu text
+\draw[stealth-] (bushConnectionB)++(0,\bH/2) to [out=0,in=210] ++(1,0.5)node[right]{\RL{کاربن بش}};
+
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,65 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\stator{6}{30}
+\slotDot{90,-30,210}
+\slotCross{-90,30,150}
+\rotor{2}{30}
+\dotCrossEachPole{30}
+\crossDotEachPole{210}
+\draw node at (30:0.6*\rR){$N$};
+\draw node at (210:0.6*\rR){$S$};
+%
+%\slotName{45/a_1/,-45/a_1'/below,135/a_2'/,-135/a_2/below}
+\draw (90-15:\sRi+1.25*\delR)node[]{$a$};
+\draw (270-15:\sRi+1.25*\delR)node[]{$a'$};
+\draw (210-15:\sRi+1.25*\delR)node[]{$b$};
+\draw (30-15:\sRi+1.25*\delR)node[]{$b'$};
+\draw (-30-15:\sRi+1.25*\delR)node[]{$c$};
+\draw (150-15:\sRi+1.25*\delR)node[]{$c'$};
+%
+\draw[thick,gray,-latex](0,0)--(0:1.2*\sRo)node[right]{\RL{$a$ لچھا}};
+\draw[thick,gray,-latex](0,0)--(120:1.2*\sRo)node[above]{\RL{$b$ لچھا}};
+\draw[thick,gray,-latex](0,0)--(-120:1.2*\sRo)node[below]{\RL{$c$ لچھا}};
+%text
+\draw[thin,gray,dashed] (0:2*\sRo)--++(0.25,0)coordinate(zeroAngle)--++(0.25,0);
+\draw[gray,-stealth] (zeroAngle) arc (0:20:2*\sRo+0.25);
+\node[fill=white,text=gray] at (10:2*\sRo+0.25){$\theta$};
+%=============
+\begin{scope}[xshift=-\shiftX]
+\draw[-latex](0,0)--(0:1*\sRo)node[shift={(0:1*\sRo+0.2cm)}]{$a$};
+\draw[-latex](0,0)--(120:1*\sRo)node[shift={(120:1*\sRo+0.2cm)}]{$b$};
+\draw[-latex](0,0)--(-120:1*\sRo)node[shift={(-120:1*\sRo+0.2cm)}]{$c$};
+%
+\draw[stealth-stealth]([shift={(0:0.8)}]0,0)  arc (0:120:0.8);
+\draw node at (60:0.8)[fill=white]{$120^\circ$};
+\draw[stealth-stealth]([shift={(0:0.8)}]0,0)  arc (0:-120:0.8);
+\draw node at (-60:0.8)[fill=white]{$120^\circ$};
+\draw[stealth-stealth]([shift={(120:0.8)}]0,0)  arc (120:240:0.8);
+\draw node at (180:0.8)[fill=white]{$120^\circ$};
+\end{scope}
+%
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
+%---------------------
+

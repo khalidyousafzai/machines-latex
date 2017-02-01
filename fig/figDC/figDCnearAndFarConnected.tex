@@ -1,0 +1,53 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usetikzlibrary{decorations.markings}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick](-3,-3) grid (3,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](-3,-3) grid (3,3);
+%
+%\draw (0,0)coordinate(k);
+%\mymotor{k}{tilt angle}
+\draw (0,0)coordinate(k);
+\mymotor{k}{90}{جنریٹر}
+\draw (0,0.4)--(0,1)--++(1,0)  to  [short,i^={$I_{ms}$}] ++(0.5,0) to [inductor,l={$N_{ms}$},-o]++(2,0);
+\draw (0,-0.4)--(0,-1) to [short,-o]++(3.5,0);
+\draw (1,1) to [short,*-,i={$I_{mm}$}] ++(0,-0.5) to [inductor,-*,l={$N_{mm}$}]++(0,-1.5);
+\draw node at (3.5,0){$\begin{aligned}  &+\\ &V \\ &-  \end{aligned}$};
+%field
+\draw node at (1.5,-1.5){\RL{الف: قریب جڑی}};
+%=============
+\begin{scope}[xshift=-6cm]
+%\draw (0,0)coordinate(k);
+%\mymotor{k}{tilt angle}
+\draw (0,0)coordinate(k);
+\mymotor{k}{90}{جنریٹر}
+\draw (0,0.4)--(0,1)  to [inductor,l={$N_{ms}$},i={$I_{ms}$}]++(2,0)   to [short,-o] ++(1.5,0);
+\draw (0,-0.4)--(0,-1) to [short,-o]++(3.5,0);
+\draw (2,1) to [short,*-,i={$I_{mm}$}] ++(0,-0.5) to [inductor,l={$N_{mm}$},-*]++(0,-1.5);
+\draw node at (3.5,0){$\begin{aligned}  &+\\ &V \\ &-  \end{aligned}$};
+%field
+\draw node at (1.5,-1.5){\RL{ب: دور جڑی}};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,38 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\draw (0,0) to [short,o-,i={$\hat{I}_r'$}] ++(0.5,0) to [resistor,l={$\tfrac{R_r'}{s}$}]++(2,0) to [inductor,l={$jX_{r}'$}] ++(2,0) to ++(0,-2) to [short,-o] (0,-2);
+\draw node at (0,-1){$\begin{aligned} &+\\ & \hat{E}_s\\ &- \end{aligned}$};
+\draw node[below right] at (6,0.5){$
+\begin{aligned}
+R_r'&=\left(\tfrac{N_s}{N_r} \right)^2 R_r\\
+X_r'&=\left(\tfrac{N_s}{N_r} \right)^2 X_r
+\end{aligned}$};
+%
+\draw node[below right] at (0,-2.5){$
+i_a'(t)=\tfrac{s E_s}{\sqrt{R_r'^2+s^2X_r'^2}} \cos (s \omega_e t -\theta_0-\phi_z)  $}; 
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

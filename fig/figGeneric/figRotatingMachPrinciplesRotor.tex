@@ -1,0 +1,44 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+%\usetikzlibrary{calc}
+\usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
+%\usetikzlibrary{calc,decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+
+%\pgfmathsetmacro{\shiftX}{5 cm}
+
+\pgfmathsetmacro{\rR}{0.75}   %stator radius
+
+
+%\pgfmathsetmacro{\nR}{3}
+
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+
+%grid
+%\draw[gray,thick] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%
+%STATOR
+\draw(0,0) circle (\sRo);
+\foreach \thetaS/\thetaE in {90/270,-90/90}{
+\draw([shift={(\thetaS+\delTheta:\sRi)}]0,0) arc (\thetaS+\delTheta:\thetaE-\delTheta:\sRi);
+\draw(\thetaS-\delTheta:\sRi)--++(\thetaS-\delTheta:\delR) arc (\thetaS-\delTheta:\thetaS+\delTheta:\sRi+\delR)--(\thetaS+\delTheta:\sRi); }
+%
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
+%---------------------
+

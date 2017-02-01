@@ -1,0 +1,80 @@
+\documentclass[leqno,b5paper]{book}
+%\usepackage{fancyhdr}   %put fancyhdr on jan-01-2015 and it worked
+%\pagestyle{fancy}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{./tex/khalidUrduBooksEMT}                     %my sty file
+
+
+\input{./tex/myUrduCommandsEMT.tex}                  %turning latex into urdu
+\input{./tex/myUrduGreek.tex}
+\input{./tex/myEMTvectors.tex}
+%\input{./tex/myElectronicsVariablesBetter.tex}         %these are all tested. to use at the very end when book is finished
+
+\graphicspath{{./fig/figFrontPage/}{./fig/figBasicFacts/}{./fig/figMagneticCircuits/}{./fig/figTransformers/}{./fig/figEnergyConversion/}{./fig/figRotatingMachPrinciples/}{./fig/figSynchronous/}{./fig/figInduction/}{./fig/figDC/}{./fig/figQuestions/}}		%paths to figures
+%
+%
+
+\includeonly{./tex/prefaceFirstBook,./tex/machBasicFacts,./tex/machMagneticCircuits,./tex/machTransformers,./tex/machElectroMechConv,./tex/machRotatingMachPrinciples,./tex/machSynchronous,./tex/machInduction,./tex/machDCmachines}
+%\includeonly{./tex/prefaceFirstBook,./tex/machBasicFacts,./tex/machMagneticCircuits,./tex/machTransformers,./tex/machElectroMechConv,./tex/machRotatingMachPrinciples}
+%\includeonly{./tex/emtSymbols,./tex/emtPreface,./tex/prefaceFirstBook,./tex/tikztest,./tex/k}
+
+
+
+\author{
+خالد خان یوسفزئی\\
+{\small {کامسیٹ انسٹیٹیوٹ آف انفارمیشن ٹیکنالوجی، اسلام آباد}}\\
+\texttt{khalidyousafzai@comsats.edu.pk}
+}
+
+\title{برقی آلات}
+\date{}                           %if absent gives date in arabic which is a rubbish
+
+%\makeindex
+%====================
+
+\begin{document}
+\begin{urdufont}
+
+\renewcommand*{\contentsname}{عنوان}    %this command has to be placed right here
+
+\frontmatter                          %just added instead of \pagenumbering{roman}
+%%\pagenumbering{roman}    
+
+\maketitle
+
+
+\tableofcontents
+\pagestyle{empty}
+%\include{./tex/emtPreface}
+\include{./tex/prefaceFirstBook}
+\include{./tex/emtSymbols}
+
+\mainmatter                      %added this
+\renewcommand*{\chaptername}{باب}
+%%\pagenumbering{arabic}   %instead of this
+
+\pagestyle{headings}
+
+
+\include{./tex/machBasicFacts}
+\include{./tex/machMagneticCircuits}
+\include{./tex/machTransformers}
+\include{./tex/machElectroMechConv}
+\include{./tex/machRotatingMachPrinciples}
+\include{./tex/machSynchronous}
+\include{./tex/machInduction}
+\include{./tex/machDCmachines}
+
+
+
+
+\backmatter
+
+\renewcommand*{\indexname}{فرہنگ}      %this command has to be placed right here just before printindex command
+\cleardoublepage
+\addcontentsline{toc}{chapter}{فرہنگ}
+\printindex
+
+\end{urdufont}
+\end{document}

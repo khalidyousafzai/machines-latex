@@ -1,0 +1,25 @@
+\documentclass[b5paper]{standalone}
+\usepackage{bm}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{calc}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+
+\input{myEMTvectors.tex}
+
+
+\begin{document}
+
+\begin{tikzpicture}
+\draw[help lines] (-1,-1) grid (5,3);
+\draw[thin, <->] (-1,0)--(5,0) node[below,black]{$x$};
+\draw[thin, <->] (0,-1)--(0,3) node[left,black]{$y$};
+\draw[thick,-latex] (0,0)--(1,0) node[below] {$\ax$};
+\draw[thick,-latex] (0,0)--(0,1) node[left] {$\ay$};
+
+\draw[thick,-latex](1,2)--(5,2)node[pos=0.4,above] {$\kvec{F}=4 \ax$};
+\end{tikzpicture}%
+
+\end{document}
+

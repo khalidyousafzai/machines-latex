@@ -1,0 +1,62 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{tikz}
+%\usepackage{tikz-3dplot}
+\usetikzlibrary{calc}
+
+%\usepackage[active,tightpage]{preview}   %this stops the picture from being centered properly
+%\PreviewEnvironment{tikzpicture}
+%
+\input{myEMTvectors.tex}
+
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+
+\coordinate (O) at (4,0,0);
+%\coordinate (c) at  ($(a) ! 0.25 ! (b)$);
+%\coordinate (d) at  (c)--+($(c)-(O)$);
+ %
+%axis
+\draw[gray](3.5,0)--(4.5,0)node[right]{$x$};
+\draw[gray](4,-0.5)--(4,0.5)node[above]{$y$};
+%force and moment arm
+\draw[-latex] (O)--++(-45:2) node[pos=0.4, below] {${\bf{L}}$};
+%\draw[gray] (O)++(-45:2)--++(-45:0.3);
+\draw[-latex] (O)++(-45:2)--++(90:0.75) node[right]{${\bf{F}}=F{\bf{a}}_y$};
+%\draw (O)++(-45:2)++(0,-0.3) node[below left] {الف};
+%\draw (O)++(0,0.1) node[above] {محور};
+%
+\coordinate (O) at (0,0,0);
+%\coordinate (c) at  ($(a) ! 0.25 ! (b)$);
+%\coordinate (d) at  (c)--+($(c)-(O)$);
+ %
+ \pgfmathsetmacro{\SinValue}{2*sin(45)}
+\pgfmathsetmacro{\CosValue}{-2*cos(45)}
+%
+\draw[-latex] (O)--++(-45:2) node[pos=0.4, above right] {${\bf{L}}$};
+\draw[gray] (O)++(-45:2)--++(-45:0.75);                       %extending moment arm vector
+\draw[-latex] (O)++(-45:2)--++(90:0.75) node[right]{${\bf{F}}$};
+%
+\draw[gray,-latex] (O)--++(0,\CosValue) node[pos=0.5, left]{$L \cos \theta$};             %moment arm components
+\draw[gray,-latex] (O)++(0,\CosValue)--++(\SinValue,0)node[pos=0.5, below]{$L \sin \theta$};
+%
+\draw[domain=-90:-45] plot ({0.4*cos(\x) },{0.4*sin(\x)});
+\node at (0.2,-0.6) {$\theta$};
+%
+\coordinate (c1) at (-45:2);
+%($(<center>) + (<init angle>:<radius>)$) arc (start angle:end angle:radius);
+\draw[]  ($(c1) + (-45:0.3)$) arc (-45:90:0.3);
+\node at (2.2,-1.3) {$\theta_{LF}$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+

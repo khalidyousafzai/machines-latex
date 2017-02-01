@@ -1,0 +1,142 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{3}
+\pgfmathsetmacro{\w}{4}
+\pgfmathsetmacro{\t}{0.4}
+\pgfmathsetmacro{\g}{0.3}   %gap between coil and edge of window
+\pgfmathsetmacro{\nL}{4}       %number of left hand turns
+\pgfmathsetmacro{\nR}{3}      %number of right hand turns
+
+
+%window size
+\pgfmathsetmacro{\winH}{\h-2*\t}
+\pgfmathsetmacro{\winW}{0.5*(\w-3*\t)}
+%coil step
+\pgfmathsetmacro{\stepHL}{0.5*(\h-2*\t-3*\g)/(\nL-0.5)}
+\pgfmathsetmacro{\stepHR}{0.5*(\h-2*\t-3*\g)/(\nR-0.5)}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-1,-1) grid (5,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-1,-1) grid (5,3);
+%transformer
+\draw(0,0) rectangle (\w,\h);
+\draw(\t,\t) rectangle ++(\winW,\winH);
+\draw(2*\t+\winW,\t) rectangle ++(\winW,\winH);
+%----------------------
+%========================
+%left leg TOP coil. top to bottom
+\def\leftEdge{0};
+\def\coilTop{\h-\t-\g};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TA.A1){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TA.A2){};
+%--------------------
+%left leg BOTTOM coil. top to bottom
+\def\leftEdge{0};
+\def\coilTop{\h-\t-2*\g-\nL*\stepHL+0.5*\stepHL};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TA.B1){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TA.B2){};
+%==========================
+%============================
+%middle leg TOP coil. top to bottom
+\def\leftEdge{\t+\winW};
+\def\coilTop{\h-\t-\g};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TB.A1){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TB.A2){};
+%--------------------
+%middle  leg BOTTOM coil. top to bottom
+\def\leftEdge{\t+\winW};
+\def\coilTop{\h-\t-2*\g-\nL*\stepHL+0.5*\stepHL};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TB.B1){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TB.B2){};
+%===========================
+%============================
+%right leg TOP coil. top to bottom
+%========================
+\def\leftEdge{\w-\t};
+\def\coilTop{\h-\t-\g};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TC.A1){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TC.A2){};
+%--------------------
+%right leg BOTTOM coil. top to bottom
+\def\leftEdge{\w-\t};
+\def\coilTop{\h-\t-2*\g-\nL*\stepHL+0.5*\stepHL};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TC.B1){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TC.B2){};
+%==========================
+%===========================
+%text
+\draw (-0.4,1) node{$\hat{V}_{i1}$};
+\draw (-0.4,2) node{$\hat{V}_{s1}$};
+\draw (1.4,1) node{$\hat{V}_{i2}$};
+\draw (1.4,2) node{$\hat{V}_{s2}$};
+\draw (3.2,1) node{$\hat{V}_{i3}$};
+\draw (3.2,2) node{$\hat{V}_{s3}$};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

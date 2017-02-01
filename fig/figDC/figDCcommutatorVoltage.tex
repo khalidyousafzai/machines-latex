@@ -1,0 +1,40 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-1,0) grid (7,2);
+%
+\pgfmathsetmacro{\x}{1}
+\pgfmathsetmacro{\y}{0.8}
+
+\newcommand{\ripple}{to [out=0,in=90] ++(0.1,-0.1)--++(0,-\y) to [out=-90,in=180]++(0.1,-0.1) to [out=0,in=-90]++(0.1,0.1) --++(0,\y) to [out=90,in=180]++(0.1,0.1)}
+%ripple
+\draw (0,1)--++(\x/2,0)  \ripple --++(\x,0)  \ripple--++(\x,0)  \ripple--++(\x,0)  \ripple--++(\x,0)  \ripple;  
+%axis
+\draw (0,0)--(0,1.4) node[left]{$e$};
+\draw (0,0)--(6.5,0);
+%
+\draw [gray,<-] (2.1,1) to [out=90, in=180] ++(0.5,0.6)node[right,align=right](text){\small \RL{ان لمحات پر سمت کار کے}\\  \small \RL{ دندے کسے دور ہیں۔}};
+\draw[gray,<-](0.75,1) to [out=90,in=180] (text);
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

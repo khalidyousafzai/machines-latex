@@ -1,0 +1,41 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%
+\begin{scope}[yshift=-2cm]
+\dotLinear{1,5}
+\crossLinear{-1,3}
+\slotSegment{-1/1,1/3,3/5}
+\slotTop{-1/5}
+\draw[gray,stealth-] (5.5,0) to [out=0,in=180] (6,0.5)node[right]{\RL{ساکن حصہ}};
+\end{scope}
+%
+\draw[gray](-1.5,0)--(5.5,0)node[right]{$\theta$};
+\draw[gray](0,0)--(0,1.5)node[above]{$\tau$};
+\foreach \x/\labelText in {0/0,2/\pi,4/2\pi}{
+\draw[gray](\x,0)--++(0,-0.2) node[below]{$\labelText$};}
+\draw(-1.5,-1)--(-1,-1)--(-1,1)--(1,1)--(1,-1)--(3,-1)--(3,1)--(5,1)--(5,-1)--(5.5,-1);
+%text
+\draw node[left] at (-1.5,1){$+\tfrac{Ni}{2}$};
+\draw node[left] at (-1.5,-1){$-\tfrac{Ni}{2}$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

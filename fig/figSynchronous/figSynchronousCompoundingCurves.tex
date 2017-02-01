@@ -1,0 +1,79 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.5}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%
+\begin{axis}[
+	ticks=none,
+	xmin=0,
+	xmax=1.35,
+	ymin=0,
+%	axis lines=middle,
+%	axis y line=middle,
+	axis line style=-,
+%	ytick={0.25,0.5},
+%	yticklabels={50,100},
+%	xtick style={draw=none},
+	ylabel style={align=right},
+	ylabel={\RL{ $V_a$ برقرار رکھنے کے لئے} \\ \RL{ درکار میدانی برقی رو $I_m$}},
+	xlabel style={align=right},
+	xlabel={\RL{برقی بار یا قوی لچھے کی برقی رو $I_a$}},
+%	every axis x label/.style={
+  %  at={(ticklabel* cs:1.05)},
+   % anchor=west,
+%},
+%every axis y label/.style={
+  %  at={(ticklabel* cs:1.05)},
+    %anchor=south,
+%},
+]
+\newcommand\tka{0}
+\addplot[
+black,
+domain=0:1.1,
+samples=100,
+]
+{sqrt(1+x*x+2*x*sin(\tka))} node[right] {ہمقدم} ;
+%==
+\newcommand\tkb{36}
+\addplot[
+black,
+domain=0:1.1,
+samples=100,
+]
+{sqrt(1+x*x+2*x*sin(\tkb))} node[right] {پیچے} ;
+%=====
+\newcommand\tkc{-36}
+\addplot[
+black,
+domain=0:1.1,
+samples=100,
+]
+{sqrt(1+x*x+2*x*sin(\tkc))} node[right] {آگے} ;
+\end{axis}
+%===========
+\draw[gray,dashed] (5,0)--(5,5.5) node[pos=0.2,left]{\RL{پورا بار}};
+\end{tikzpicture}%
+%============================
+\end{urdufont}
+\end{document}
+%---------------------
+

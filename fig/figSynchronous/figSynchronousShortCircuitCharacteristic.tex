@@ -1,0 +1,56 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%
+%axis
+\draw[gray] (0,0)--(1.5,0)node[right]{$I_m$};
+\draw[gray] (0,0)--(0,2)node[above]{$I_{a }$};
+\draw[gray] node[rotate=90] at (-1,1){\RL{کسر دور برقی رو}};
+%curves
+\draw (0,0)--++(60:2.2)coordinate[pos=0.7](pointE);
+%
+\draw[gray](pointE)--($(0,0)! (pointE)!(1.5,0)$)node[below,black]{$I_{m0}$};
+\draw[gray](pointE)--($(0,0)! (pointE)!(0,2)$)node[left,black]{$I_{a0}$};
+\draw node at (3,-0.5){الف};
+%======================
+\begin{scope}[xshift=-5cm]
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+\draw[gray](1.1,1.6)--(1.1,0)node[below,black]{$I_{m0}$};
+\draw[gray](1.1,1.6)--(0,1.59)node[left,black]{$V_{a0}$};
+\draw[gray] node[rotate=90] at (-1,1){\RL{کھلے سرے برقی دباو}};
+%axis
+\draw[gray] (0,0)--(2.5,0)node[right]{$I_m$};
+\draw[gray] (0,0)--(0,2)node[above]{$V_a$};
+%curves
+\draw (0,0)--++(60:2.2);
+\draw(0,0)++(60:1.3) to [out=60,in=190] ++(1.4,0.75);
+\draw[gray](pointE)--($(0,0)!(pointE)!(2.5,0)$);
+\draw node at (-2,-0.5){ب};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

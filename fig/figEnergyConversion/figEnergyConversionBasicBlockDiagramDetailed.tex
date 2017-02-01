@@ -1,0 +1,60 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+%\usetikzlibrary{calc}
+\usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
+%\usetikzlibrary{calc,decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+
+\pgfmathsetmacro{\l}{5}
+ \pgfmathsetmacro{\b}{2.5}
+%\pgfmathsetmacro{\thetaStart}{0} 
+%\pgfmathsetmacro{\thetaEnd}{180}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,0) grid (5,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (5,5);
+%
+\draw (0,0)coordinate(a){}--++(0:\l)coordinate(b){}--++(90:\b)coordinate(c){}--++(180:\l)coordinate(d){}--cycle;
+\draw($(a)!0.2!(d)$) to [short,-o]++(180:\b)coordinate(leftLow){};
+\draw($(a)!0.8!(d)$) to [short,-o,i_<={$i$}]++(180:\b)coordinate(leftUpper){};
+\draw($(b)!0.2!(c)$) to [short,-o]++(0:\b)coordinate(rightLow){};
+\draw($(b)!0.8!(c)$) to [short,-o,i={$F_m$}]++(0:\b)coordinate(rightUpper){};
+%
+\node[left] at (-0.5,-0.5){$\partial W_{\textup{برقی}}=i \partial \lambda$};
+\node[right] at (5.5,-0.5){$\partial W_{\textup{میکانی}}=F_m \partial x$};
+\node at (2.5,-0.5){$\partial W_{\textup{مقناطیسی}}$};
+\node[ align=right] at (0.5*\l,0.5*\b) {\RL{توانائی نہ ضائع کرنے  اور مقناطیسی} \\ \RL{توانائی ذخیرہ کرنے والا نظام}};
+%
+\draw node at ($(leftLow) ! 0.5! (leftUpper)$){$
+\begin{aligned}
+&+\\
+\lambda&,e\\
+&-
+\end{aligned}
+$};
+%
+\draw node at ($(rightLow) ! 0.5! (rightUpper)$){$
+\begin{aligned}
+&+\\
+&x\\
+&-
+\end{aligned}
+$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

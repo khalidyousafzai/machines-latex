@@ -1,0 +1,54 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%
+\stator{2}{90}
+\slotDot{90}
+\slotCross{270}
+\draw node at (90-15:\sRi+2*\gap){$a$};
+\draw node at (-90-15:\sRi+2*\gap){$a'$};
+%ROTOR
+\pgfmathsetmacro{\pTheta}{165}
+\pgfmathsetmacro{\pX}{0}
+\pgfmathsetmacro{\pY}{0.25}
+\pgfmathsetmacro{\rTilt}{30}
+\rotor{2}{\rTilt}
+%rotor dot
+\draw (\rTilt+90:\rR-\delR/2) circle (2.5pt);
+\draw[fill] (\rTilt+90:\rR-\delR/2) circle (1.5pt); 
+%rotor cross
+\draw (\rTilt-90:\rR-\delR/2) circle (2.5pt);
+\draw (\rTilt-90:\rR-\delR/2)++(45:2.2pt)--++(-135:4.4pt);
+\draw (\rTilt-90:\rR-\delR/2)++(-45:2.2pt)--++(135:4.4pt); 
+%text
+\draw node at (\rTilt+90+25:\rR-\pY){$r$};
+\draw node at (\rTilt-90+30:\rR-\pY){$r'$};
+%urdu
+\draw[-latex] (0:1.2*\sRo)--++(0:1cm)node[right,gray]{\RL{ساکن لچھا}};
+\draw[-latex] (\rTilt:1.2*\sRo)--++(\rTilt:1cm)node[above right,gray]{\RL{گھومتا لچھا}};
+\draw[-stealth] (0:1.2*\sRo cm+0.5 cm) arc (0:\rTilt:1.2*\sRo cm+0.5 cm);
+\draw  node[fill=white] at (\rTilt/2:1.2*\sRo cm+0.5 cm){$\theta$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

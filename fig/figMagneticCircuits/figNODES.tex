@@ -1,0 +1,48 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick](0,0) grid (10,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](0,0) grid (10,2);
+%series section
+ \begin{scope}[shift={(0,0)}]
+\draw(-0.2,0.6)--(0.2,0.6);
+ \draw(-0.1,0.5)node [left]{$\tau$}--(0.1,0.5) node(supplyNeg){};
+\draw (supplyNeg)++(-0.1,0)--++(0,-0.5)--++(2,0) --++(0,0.2)++(-0.1,0) rectangle ++(0.2,0.6)node [below right]{$\Re_a$}++(-0.1,0)--++(0,0.2)--++(-2,0)--++(0,-0.4);
+\draw (1,-0.2) node{ب};
+%equations
+\draw (3,0) node [above right]{$
+\begin{aligned}
+\Delta \tau&=\phi \Re_c\\
+\Re_c &\to 0\\
+\Delta \tau& \to 0
+\end{aligned}
+$};
+  \end{scope}
+  %simple case
+ \begin{scope}[shift={(6,0)}]
+\draw(-0.2,0.6)--(0.2,0.6);
+ \draw(-0.1,0.5)node [left]{$\tau$}--(0.1,0.5) node(supplyNeg){};
+\draw (supplyNeg)++(-0.1,0)--++(0,-0.5)--++(2,0) --++(0,0.2)++(-0.1,0) rectangle ++(0.2,0.6)node [below right]{$\Re_a$}++(-0.1,0)--++(0,0.2)--++(-0.7,0)
+++(0,-0.1)  rectangle ++(-0.6,0.2) node[above right] {$\Re_c$}++(0,-0.1)--++(-0.7,0)--++(0,-0.4);
+\draw (1,2)node {$+ \Delta \tau -$};
+\draw (1,-0.2) node{الف};
+   \end{scope}
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

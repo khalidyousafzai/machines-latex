@@ -1,0 +1,57 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+\def\height{2};
+\def\width{1.5};
+\def\thick{0.4};
+\def\depthX{0.2};
+\def\depthY{0.2};
+\def\gap{0.05};
+%grid
+%\draw[gray,thick](0,0) grid (5,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](0,0) grid (5,3);
+%going clockwise from origin
+\draw(0,0)--++(0,\height)--++(\width,0)--++(0,-\height)--cycle;
+\draw(0,0)++(\thick,\thick)--++(0,\height-2*\thick)--++(\width-2*\thick,0)--++(0,-\height+2*\thick)--cycle;
+%
+\draw(\thick,\thick)--++(\depthX,\depthY) --++(0,\height-2*\thick-\depthY);
+\draw(\thick,\thick)--++(\depthX,\depthY) --++(\width-2*\thick-\depthX,0);
+\draw(0,\height)--++(\depthX,\depthY)--++(\width,0)--++(-\depthX,-\depthY);
+\draw(\width,0)--++(\depthX,\depthY)--++(0,\height)--++(-\depthX,-\depthY);
+%flux
+\draw[gray,-latex](1.1,1.8)node[left]{$\phi_c$}--++(0.2,0)--++(0,-\height+\thick)--++(-\width+\thick,0)--++(0,\height-\thick)--++(0.3,0);
+%winding
+\draw (0.6,1.4) to [out=45,in=0] (0.2,1.5) to [short,i_<=$i$] (-1,1.5) node[left]{$+$};
+\foreach \l in {1.4,1.2,1}{
+\draw (0,\l) to [out=-135,in=45] (0.6,\l-0.2);
+}
+\draw (0,0.8) to (-1,0.8)node[left]{$-$};
+%turns
+\node at (0,1.15)[left]{$\tau=N i$};
+%urdu coil
+\draw[gray,thin,<-](0.3,0.9) to [out=-90,in=60] (-0.7,-0.3)node[below]{ لچھا کا چکر$N$};
+%dimensions
+\draw[,<->] (1.1,-0.1)--++(0.4,0)node[below,pos=0.5]{$b$};
+\draw[<->](1.5+0.1,-0.1)--++(0.2,0.2)node [pos=0.4,right]{$w$};
+%cross sectional area
+\draw[gray](1.1,1)--++(\thick,0)--++(\depthX,\depthY)--++(-\thick,0)--cycle;
+\draw[gray,<-] (1.6,1.2) to [out=90,in=-90](2.4,1.7)node[above right,black]{$A_c=b w$};
+\draw[gray,<-](1.3,0.6) to [out=0,in=-180] (2.7,1)node [right,black]{\RL{اس لکیر پر اوسط لمبائی $l_c$ ہے۔}};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

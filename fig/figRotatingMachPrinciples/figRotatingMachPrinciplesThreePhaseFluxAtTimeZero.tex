@@ -1,0 +1,68 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\stator{6}{30}
+\slotDot{90,30,150}
+\slotCross{-30,-90,-150}
+\draw (0,0) circle (\rR);
+%
+%\slotName{45/a_1/,-45/a_1'/below,135/a_2'/,-135/a_2/below}
+\draw (90-15:\sRi+1.25*\delR)node[]{$a$};
+\draw (270-15:\sRi+1.25*\delR)node[]{$a'$};
+\draw (210-15:\sRi+1.25*\delR)node[]{$b$};
+\draw (30-15:\sRi+1.25*\delR)node[]{$b'$};
+\draw (-30-15:\sRi+1.25*\delR)node[]{$c$};
+\draw (150-15:\sRi+1.25*\delR)node[]{$c'$};
+%
+\draw[-latex](0,0)--(0:1.8*\rR)node[right]{$\tau_a$};
+\draw[gray,dashed,-latex](0,0)--(120:1.8*\rR)node[above]{$\tau_b$};
+\draw[gray,dashed,-latex](0,0)--(-120:1.8*\rR)node[below]{$\tau_c$};
+\draw[-latex](0,0)--(-60:0.9*\rR)node[left]{$\tau_b$};
+\draw[-latex](0,0)--(60:0.9*\rR)node[left]{$\tau_c$};
+\draw (-60:0.3*\rR) arc (-60:0:0.3*\rR);
+\draw node at (-25:0.6*\rR){$60^\circ$};
+%text
+\draw node[right] at (2.2*\rR,1.2*\rR){$\begin{aligned}
+\tau_a&=\tau_0\\
+\tau_b&=-0.5 \tau_0\\
+\tau_c&=-0.5 \tau_0
+\end{aligned}$};
+%
+\draw[gray,stealth-] (-30:\sRi cm+\delR cm )++(0,0) to [out=-30,in=135]++(-30:0.6*\sRi)coordinate(reversedText);
+\draw[gray,stealth-] (30:\sRi cm+\delR cm )++(0,-0.15cm) to [out=-90,in=135](reversedText)node[below right,align=right]{\RL{ان لچھوں میں برقی رو} \\ \RL{ کی سمتیں الٹی ہیں}};
+%=============
+\begin{scope}[xshift=\shiftX]
+\draw[-latex](0,0)--++(-60:0.9*\rR)node[pos=0.6,left]{$\tau_b$}coordinate(tipB);
+\draw[-latex](tipB)--++(0:1.8*\rR)node[pos=0.5,below]{$\tau_a$}coordinate(tipA);
+\draw[-latex](tipA)--++(60:0.9*\rR)node[pos=0.4,right]{$\tau_c$}coordinate(tipC);
+\draw[-latex,thick](0,0)--(tipC)node[pos=0.5,above]{$\tau=\tfrac{3}{2} \tau_0$};
+\draw (-60:0.3*\rR) arc (-60:0:0.3*\rR);
+\draw node at (-25:0.6*\rR){$60^\circ$};
+\draw (tipC)++(180:0.3*\rR) arc (180:240:0.3*\rR);
+\draw (tipC)++(210:0.6*\rR)node{$60^\circ$};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

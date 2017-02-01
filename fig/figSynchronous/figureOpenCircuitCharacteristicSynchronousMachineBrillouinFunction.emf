@@ -1,0 +1,244 @@
+Available formats :
+	psf:			.fps:	Flattened PostScript (no curves) 	(built-in)
+-------------------------------------------
+	ps:			.spsc:	Simplified PostScript with curves 	(built-in)
+-------------------------------------------
+	debug:			.dbg:	for test purposes 	(built-in)
+-------------------------------------------
+	dump:			.dbg:	for test purposes (same as debug) 	(built-in)
+-------------------------------------------
+	gs:			.gs:	any device that GhostScript provides - use gs:format, e.g. gs:pdfwrite 	(built-in)
+-------------------------------------------
+	ps2ai:			.ai:	Adobe Illustrator via ps2ai.ps of GhostScript 	(built-in)
+-------------------------------------------
+	magick:			....:	MAGICK driver 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvmagick++.so)
+-------------------------------------------
+	gcode:			.gcode:	emc2 gcode format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	cairo:			.c:	cairo driver 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[              -pango	 : boolean	 : use pango for font rendering]
+[           -funcname	 : string	 : sets the base name for the generated functions and variables.  e.g. myfig]
+[             -header	 : string	 : sets the output file name for the generated C header file.  e.g. myfig.h]
+-------------------------------------------
+	lwo:			.lwo:	LightWave 3D Object Format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	rib:			.rib:	RenderMan Interface Bytestream 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	rpl:			.rpl:	Real3D Programming Language Format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	dxf:			.dxf:	CAD exchange format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[        -polyaslines	 : boolean	 : use LINE instead of POLYLINE in DXF]
+[                 -mm	 : boolean	 : use mm coordinates instead of points in DXF (mm=pt/72*25.4)]
+[                -ctl	 : boolean	 : map colors to layers]
+[   -splineaspolyline	 : boolean	 : approximate splines with PolyLines (only for -f dxf_s)]
+[       -splineasnurb	 : boolean	 : experimental (only for -f dxf_s)]
+[    -splineasbspline	 : boolean	 : experimental (only for -f dxf_s)]
+[-splineassinglespline	 : boolean	 : experimental (only for -f dxf_s)]
+[-splineasmultispline	 : boolean	 : experimental (only for -f dxf_s)]
+[     -splineasbezier	 : boolean	 : use Bezier splines in DXF format (only for -f dxf_s)]
+[    -splineprecision	 : integer	 : number of samples to take from spline curve when doing approximation with -splineaspolyline or -splineasmultispline - should be >=2 (default 5)]
+[     -dumplayernames	 : boolean	 : dump all layer names found to standard output]
+[             -layers	 : string	 : layers to be shown (comma separated list of layer names, no space)]
+[        -layerfilter	 : string	 : layers to be hidden (comma separated list of layer names, no space)]
+-------------------------------------------
+	dxf_s:			.dxf:	CAD exchange format with splines 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[        -polyaslines	 : boolean	 : use LINE instead of POLYLINE in DXF]
+[                 -mm	 : boolean	 : use mm coordinates instead of points in DXF (mm=pt/72*25.4)]
+[                -ctl	 : boolean	 : map colors to layers]
+[   -splineaspolyline	 : boolean	 : approximate splines with PolyLines (only for -f dxf_s)]
+[       -splineasnurb	 : boolean	 : experimental (only for -f dxf_s)]
+[    -splineasbspline	 : boolean	 : experimental (only for -f dxf_s)]
+[-splineassinglespline	 : boolean	 : experimental (only for -f dxf_s)]
+[-splineasmultispline	 : boolean	 : experimental (only for -f dxf_s)]
+[     -splineasbezier	 : boolean	 : use Bezier splines in DXF format (only for -f dxf_s)]
+[    -splineprecision	 : integer	 : number of samples to take from spline curve when doing approximation with -splineaspolyline or -splineasmultispline - should be >=2 (default 5)]
+[     -dumplayernames	 : boolean	 : dump all layer names found to standard output]
+[             -layers	 : string	 : layers to be shown (comma separated list of layer names, no space)]
+[        -layerfilter	 : string	 : layers to be hidden (comma separated list of layer names, no space)]
+-------------------------------------------
+	java1:			.java:	java 1 applet source code 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[     java class name	 : string	 : name of java class to generate]
+-------------------------------------------
+	java2:			.java2:	java 2 source code 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[     java class name	 : string	 : name of java class to generate]
+-------------------------------------------
+	pdf:			.pdf:	Adobe's Portable Document Format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	kil:			.kil:	.kil format for Kontour 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	text:			.txt:	text in different forms  	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[             -height	 : integer	 : page height in terms of characters]
+[              -width	 : integer	 : page width in terms of characters]
+[               -dump	 : boolean	 : dump text pieces]
+-------------------------------------------
+	sk:			.sk:	Sketch Format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	mpost:			.mp:	MetaPost Format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	asy:			.asy:	Asymptote Format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	mma:			.m:	Mathematica Graphics 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[        -eofillfills	 : boolean	 : Filling is used for eofill (default is not to fill)]
+-------------------------------------------
+	latex2e:		.tex:	LaTeX2e picture format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[           -integers	 : boolean	 : round all coordinates to the nearest integer]
+-------------------------------------------
+	noixml:			.xml:	Nemetschek NOI XML format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[                  -r	 : string	 : Allplan resource file]
+[                -bsl	 : integer	 : Bezier Split Level (default 3)]
+-------------------------------------------
+	pic:			.pic:	PIC format for troff et.al. 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[              -troff	 : boolean	 : troff mode (default is groff)]
+[          -landscape	 : boolean	 : landscape output]
+[           -portrait	 : boolean	 : portrait output]
+[           -keepfont	 : boolean	 : print unrecognized literally]
+[               -text	 : boolean	 : try not to make pictures from running text]
+[              -debug	 : boolean	 : enable debug output]
+-------------------------------------------
+	hpgl:			.hpgl:	HPGL code 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -penplotter	 : boolean	 : plotter is pen plotter (i.e. no support for specific line widths)]
+[  -pencolorsfromfile	 : boolean	 : read pen colors from file drvhpgl.pencolors in pstoedit data directory]
+[          -pencolors	 : integer	 : maximum number of pen colors to be used by pstoedit (default 0) - ]
+[           -filltype	 : string	 : select fill type e.g. FT 1]
+[              -hpgl2	 : boolean	 : Use HPGL/2 instead of HPGL/1]
+[              -rot90	 : boolean	 : rotate hpgl by 90 degrees]
+[             -rot180	 : boolean	 : rotate hpgl by 180 degrees]
+[             -rot270	 : boolean	 : rotate hpgl by 270 degrees]
+-------------------------------------------
+	pcl:			.pcl:	PCL code 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -penplotter	 : boolean	 : plotter is pen plotter (i.e. no support for specific line widths)]
+[  -pencolorsfromfile	 : boolean	 : read pen colors from file drvhpgl.pencolors in pstoedit data directory]
+[          -pencolors	 : integer	 : maximum number of pen colors to be used by pstoedit (default 0) - ]
+[           -filltype	 : string	 : select fill type e.g. FT 1]
+[              -hpgl2	 : boolean	 : Use HPGL/2 instead of HPGL/1]
+[              -rot90	 : boolean	 : rotate hpgl by 90 degrees]
+[             -rot180	 : boolean	 : rotate hpgl by 180 degrees]
+[             -rot270	 : boolean	 : rotate hpgl by 270 degrees]
+-------------------------------------------
+	pcbi:			.dat:	engrave data - insulate/PCB format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	pcb:			.pcb:	pcb format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[               -grid	 : double	 : attempt to snap relevant output to grid (mils) and put failed objects to a different layer]
+[           -snapdist	 : double	 : grid snap distance ratio (0 < snapdist <= 0.5, default 0.1)]
+[            -tshiftx	 : double	 : additional x shift measured in target units (mils)]
+[            -tshifty	 : double	 : additional y shift measured in target units (mils)]
+[               -grid	 : double	 : attempt to snap relevant output to grid (mils) and put failed objects to a different layer]
+[                 -mm	 : boolean	 : Switch to metric units (mm)]
+[           -stdnames	 : boolean	 : use standard layer names instead of descriptive names]
+[          -forcepoly	 : boolean	 : force all objects to be interpreted as polygons]
+-------------------------------------------
+	pcbfill:		.pcbfill:	pcb format with fills 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	gschem:			.gschem:	gschem format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	cfdg:			.cfdg:	Context Free Design Grammar 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	tk:			.tk:	tk and/or tk applet source code 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[                  -R	 : boolean	 : swap HW]
+[                  -I	 : boolean	 : no impress]
+[                  -n	 : string	 : tagnames]
+-------------------------------------------
+	vtk:			.vtk:	VTK driver: if you don't want to see this, uncomment the corresponding line in makefile and make again 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -VTKeoption	 : integer	 : just an example]
+-------------------------------------------
+	svm:			.svm:	StarView/OpenOffice.org metafile 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[                  -m	 : boolean	 : map to Arial]
+[                 -nf	 : boolean	 : emulate narrow fonts]
+-------------------------------------------
+	gnuplot:		.gnuplot:	gnuplot format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	tgif:			.obj:	Tgif .obj format 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[                 -ta	 : boolean	 : text as attribute]
+-------------------------------------------
+	fig:			.fig:	.fig format for xfig 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -startdepth	 : integer	 : Set the initial depth (default 999)]
+[             -metric	 : boolean	 : Switch to centimeter display (default inches)]
+[ -usecorrectfontsize	 : boolean	 : don't scale fonts for xfig. Use this if you also use this option with xfig]
+[              -depth	 : integer	 : Set the page depth in inches (default 11)]
+-------------------------------------------
+	xfig:			.fig:	.fig format for xfig 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -startdepth	 : integer	 : Set the initial depth (default 999)]
+[             -metric	 : boolean	 : Switch to centimeter display (default inches)]
+[ -usecorrectfontsize	 : boolean	 : don't scale fonts for xfig. Use this if you also use this option with xfig]
+[              -depth	 : integer	 : Set the page depth in inches (default 11)]
+-------------------------------------------
+	tfig:			.fig:	.fig format for xfig 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -startdepth	 : integer	 : Set the initial depth (default 999)]
+[             -metric	 : boolean	 : Switch to centimeter display (default inches)]
+[ -usecorrectfontsize	 : boolean	 : don't scale fonts for xfig. Use this if you also use this option with xfig]
+[              -depth	 : integer	 : Set the page depth in inches (default 11)]
+-------------------------------------------
+	idraw:			.idraw:	Interviews draw format (EPS) 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+-------------------------------------------
+	sample:			.sam:	sample driver: if you don't want to see this, uncomment the corresponding line in makefile and make again 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvstd.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[       -sampleoption	 : integer	 : just an example]
+-------------------------------------------
+	gmfa:			.meta:	ASCII GNU metafile  	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvlplot.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -plotformat	 : string	 : plotutil format to generate]
+-------------------------------------------
+	gmfb:			.meta:	binary GNU metafile  	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvlplot.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -plotformat	 : string	 : plotutil format to generate]
+-------------------------------------------
+	plot:			.plot:	GNU libplot output types, e.g. plot:-plotformat X 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvlplot.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -plotformat	 : string	 : plotutil format to generate]
+-------------------------------------------
+	plot-pnm:		.pnm:	pnm  via GNU libplot 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvlplot.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -plotformat	 : string	 : plotutil format to generate]
+-------------------------------------------
+	plot-cgm:		.cgm:	cgm  via GNU libplot 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvlplot.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -plotformat	 : string	 : plotutil format to generate]
+-------------------------------------------
+	plot-ai:		.ai:	ai   via GNU libplot 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvlplot.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -plotformat	 : string	 : plotutil format to generate]
+-------------------------------------------
+	plot-svg:		.svg:	svg  via GNU libplot 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvlplot.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -plotformat	 : string	 : plotutil format to generate]
+-------------------------------------------
+	plot-ps:		.ps:	ps   via GNU libplot 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvlplot.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -plotformat	 : string	 : plotutil format to generate]
+-------------------------------------------
+	plot-fig:		.fig:	fig  via GNU libplot 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvlplot.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -plotformat	 : string	 : plotutil format to generate]
+-------------------------------------------
+	plot-pcl:		.pcl:	pcl  via GNU libplot 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvlplot.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -plotformat	 : string	 : plotutil format to generate]
+-------------------------------------------
+	plot-hpgl:		.hpgl:	hpgl via GNU libplot 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvlplot.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -plotformat	 : string	 : plotutil format to generate]
+-------------------------------------------
+	plot-tek:		.tek:	tek  via GNU libplot 	(/usr/lib/i386-linux-gnu/pstoedit/libp2edrvlplot.so)
+This driver supports the following additional options: (specify using -f "format:-option1 -option2")
+[         -plotformat	 : string	 : plotutil format to generate]
+-------------------------------------------

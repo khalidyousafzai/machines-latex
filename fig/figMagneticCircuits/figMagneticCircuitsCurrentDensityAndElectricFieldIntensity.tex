@@ -1,0 +1,56 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+ 
+ \pgfmathsetmacro{\height}{0.75}  
+\pgfmathsetmacro{\widthX}{0.25}  
+\pgfmathsetmacro{\widthY}{0.25}  
+\pgfmathsetmacro{\length}{1.75}  
+
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%\draw[gray,thick] (0,0) grid (2,2);
+%\draw[help lines,xstep=0.1,ystep=0.1] (0,0) grid (2,2);
+\coordinate(O) at (0,0,0);
+
+%rod 3d
+\draw[black] (O)--(\length,0)node[pos=0.3,below]{$l$}--++(0,\height)--++(-\length,0)--cycle;
+\draw[black] (O)++(\length,0)--++(\widthX,\widthY)--++(0,\height)--++(-\length,0)--++(-\widthX,-\widthY);
+\draw[black] (O)++(\length,0)++(0,\height)--++(\widthX,\widthY);
+%cross section
+\draw[gray,dashed](O)++(0.4*\length,0)--++(0,\height)--++(\widthX,\widthY)--++(0,-\height)--cycle;
+%current arrow
+\draw[gray,-latex] (O)++(0.4*\length,0.5*\height)++(0.5*\widthX,0.5*\widthY)--++(0.3*\length,0) node [below] {$i$};
+%circuit
+\draw (O)++(0,0.5*\height+0.12)--++(-0.2,0)--++(0,1.75)--++(0.5*\length+0.2,0);  %left section
+\draw[thick] (O)++(0,0.5*\height+0.12)++(-0.2,0)++(0,1.75)++(0.5*\length+0.2,0)++(0,0.2)--++(0,-0.4)node[below]{$v$}; 
+\draw (O)++(\length,0.5*\height)++(0.5*\widthX,0.5*\widthY)--++(0.2,0)--++(0,1.75)--++(-0.5*\length-0.2,0)++(0,0.1)--++(0,-0.2); %right section
+
+\draw[gray] (0.85,0.155) to [out=-45,in=180] (1.5,-0.5) node[right] {$A$};
+%unit vector
+\draw[-latex] (O)++(-1.8,0)--++(-1.4142*\widthX,-1.4142*\widthY)node[below]{${\bf{a}}_x$};
+\draw[-latex] (O)++(-1.8,0)--++(2*\widthX,0)node[right]{${\bf{a}}_y$};
+\draw[-latex] (O)++(-1.8,0)--++(0,2*\widthY)node[above]{${\bf{a}}_z$};
+%equations
+\draw (O)++(2*\length,-0.6) node [above right]{$
+\begin{aligned}
+R&=\frac{l}{\sigma A}\\
+i&=\frac{v}{R}=v \left( \frac{\sigma A}{l} \right)\\
+\frac{i}{A}&=\sigma \frac{v}{l}\\
+J&=\sigma E
+\end{aligned}
+$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}

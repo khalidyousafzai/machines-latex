@@ -1,0 +1,130 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+%\usetikzlibrary{calc}
+\usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
+%\usetikzlibrary{calc,decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+%static section
+\pgfmathsetmacro{\h}{3.5}  %height
+ \pgfmathsetmacro{\w}{2.5}    %width
+\pgfmathsetmacro{\t}{0.6}    %thickness
+\pgfmathsetmacro{\dx}{0.3}    %depth-x
+\pgfmathsetmacro{\dy}{0.3}    %depth-y
+\pgfmathsetmacro{\nL}{4}        %turns on left hand side
+ \pgfmathsetmacro{\r}{\t/2}     %radius
+\pgfmathsetmacro{\g}{0.2}   %gap between coil and edge of window
+%moving plunger
+\pgfmathsetmacro{\hm}{0.6}  %height
+\pgfmathsetmacro{\wm}{1}  
+\pgfmathsetmacro{\x}{0.3} 
+%\pgfmathsetmacro{\dym}{0.3} 
+\pgfmathsetmacro{\s}{0.05}    %space between fixed and moving parts
+
+\pgfmathsetmacro{\leg}{0.5*(\h-2*\s-\hm)}
+
+
+%\pgfmathsetmacro{\thetaStart}{0} 
+%\pgfmathsetmacro{\thetaEnd}{180}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%
+\coordinate (z) at (0,0);
+\coordinate (a) at (0,\h);
+\coordinate (b) at (\w,\h);
+\coordinate (c) at (\w,\h-\leg);
+\coordinate (d) at (\w-\t,\h-\leg);
+\coordinate (e) at (\w-\t,\h-\t);
+\coordinate (f) at (\t,\h-\t);
+\coordinate (g) at (\t,\t);
+\coordinate (h) at (\w-\t,\t);
+\coordinate (i) at (\w-\t,\leg);
+\coordinate (j) at (\w,\leg);
+\coordinate (k) at (\w,0);
+\draw (c)++ (\dx,\dy) coordinate(cc);
+\draw (b)++(\dx,\dy)coordinate (bb) ;
+\draw (a)++(\dx,\dy)coordinate (aa) ;
+%plunger
+\coordinate(zm) at (\w-\t+\x,\leg+\s);
+\draw (zm)++ (0,\hm) coordinate(am);
+\draw (am)++ (\wm,0) coordinate(bm);
+\draw (bm)++ (0,-\hm) coordinate(cm);
+\draw (am)++ (\dx,\dy) coordinate(aam);
+\draw (bm)++ (\dx,\dy) coordinate(bbm);
+\draw (cm)++ (\dx,\dy) coordinate(ccm);
+%
+\draw(am)--(aam)--(bbm)--(bm)--cycle;   %plunger top
+%fixed
+\draw[fill=white](z)--(a)--(aa)--(bb)--(cc)--(c)--(d)--(e)--(f)--(g)--(h)--(i)--(j)--(k)--cycle;   %front view
+\draw(a)--(b)--(c);      %top's side view
+\draw[gray](b)--(bb);     %edge
+%
+\draw(k)--++(\dx,\dy)--++(0,\leg)--(j);           %lower half section's side view
+\draw(i)--++(\dx,\dy)--++(\t,0);       
+%
+\draw(g)--++(\dx,\dy)coordinate(m) --++(0,\h-2*\t-\dy);    %mid side view
+\draw(m)--++(\w-2*\t-\dx,0);
+%plunger
+\draw[fill=white](zm)--(am)--(bm)--(cm)--cycle;    %plunger front view
+\draw(cm)--(ccm)--(bbm)--(bm)--cycle;  %plunger right view
+%text showing dimensions
+\draw[gray,<->](c)++(0,0.3)--++(-\t,0) node[pos=0.5,fill=white]{$b$};
+\draw [gray,dashed](k)--++(0.4,-0.4);
+\draw [gray,dashed](k)++(\dx,\dy)--++(0.4,-0.4);
+\draw[gray,<->] (k)++(0.2,-0.2)--++(\dx,\dy)node[pos=0.4,below right]{$w$};
+\draw[gray](d)++(0.15,-0.2) node{$x$};
+\draw[gray,thick](d)++(0,-0.25)--++(0,-0.25);
+\draw[gray,->]($(d)!0.5!(i)$)--++(\x,0);
+%showing gaps-g
+\draw[gray,dashed](d)++(-0.1,0)--++(-0.3,0)coordinate[pos=0.7] (gapArrowUpper);
+\draw[gray,dashed](d)++(\x,-\s)++(-0.1,0)--++(-0.3-\x,0);
+\draw[gray,<-](gapArrowUpper)--++(0,0.2)--++(-0.2,0)node[left]{$g$};
+\draw[gray,<-](gapArrowUpper)++(0,-\s)--++(0,-0.2);
+%
+\draw[gray,dashed](i)++(-0.1,0)--++(-0.3,0)coordinate[pos=0.7] (gapArrowLower);
+\draw[gray,dashed](i)++(\x,\s)++(-0.1,0)--++(-0.3-\x,0);
+\draw[gray,<-](gapArrowLower)--++(0,-0.2);
+\draw[gray,<-](gapArrowLower)++(0,\s)--++(0,0.2)--++(-0.2,0)node[left]{$g$};
+%COIL
+%left leg coil.  drawn from top to bottom
+%coil step
+\pgfmathsetmacro{\stepHL}{(\h-2*\t-2*\g)/(\nL)}
+%
+\def\leftEdge{0};
+\def\coilTop{\h-\t-\g};
+\def\rightEdge{\t+\dx};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\rightEdge,{\coilTop-\stepHL/2}); %top half turn
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\rightEdge,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TA){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TB){};
+\node at ($(TA)!0.5!(TB)$){$\begin{aligned}&+\\ e&,\lambda\\&-   \end{aligned}$};
+%=================================
+%right hand figure
+
+
+%
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
+%---------------------
+

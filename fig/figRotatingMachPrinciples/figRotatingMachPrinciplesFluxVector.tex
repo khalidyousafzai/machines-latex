@@ -1,0 +1,43 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\begin{scope}[draw=gray]
+\stator{2}{90}
+\end{scope}
+%elliptic rotor
+\pgfmathsetmacro{\angle}{30}
+\begin{scope}[rotate=\angle]
+\draw[gray] (-90:\rR-2*\gap) to [out=0,in=-90] (0:\rR) to [out=90,in=0] (90:\rR-2*\gap) to [out=180,in=90] (180:\rR) to [out=-90,in=180] (-90:\rR-2*\gap);
+%flux
+\draw[-latex] (0,0) --(0:0.75)node [below,pos=0.7]{$B_0$};
+\draw[gray,dashed] (0:\rR)--++(0:1.6);
+\end{scope}
+%
+\draw[gray,dashed] (0:\sRo+0.1)--++(0:0.8);
+\draw[gray,->] (0:\sRo+0.5) arc (0:\angle:\sRo+0.5);
+\draw node[gray,fill=white] at (\angle/2:\sRo+0.5){$\theta_m$};
+%text
+\draw node[left,align=right] at (170:\sRo+0.5){\RL{سائن نما مقناطیسی دباو} \\  \RL{کو سمتیہ سے ظاہر کیا جاتا ہے} \\   \RL{جس کا  طول $B_0$ اور اس کی} \\  \RL{سمت چوٹی کا زاویہ دیتی ہے۔}}; 
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

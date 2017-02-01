@@ -1,0 +1,38 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\draw[gray](-2,0) --(4,0)node[right]{$\theta_e$}; %axis
+\draw[gray] (0,-1.5)--(0,1.5);
+\draw[above left] node at (0,1){$B_0$};
+\draw (0,1) cos (-1,0) node[below]{$-\tfrac{\pi}{2}$};
+\draw (0,1) cos (1,0);
+\draw (2,-1) cos (1,0);
+\draw (2,-1) cos (3,0);
+\foreach \x in {-1,1,2,3}{
+\draw[gray](\x,0)--++(0,-0.1);}
+\draw[gray](2,0)--++(0,-0.1)node[below,text=black]{$\pi$};
+
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

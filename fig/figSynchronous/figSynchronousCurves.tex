@@ -1,0 +1,34 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (5,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (5,2);
+%
+\begin{axis}[xmax=9,ymax=9, samples=50]
+
+  \addplot[blue, ultra thick] (x,{sqrt(1+x*x-2*sqrt(x*x-0.25))});
+\end{axis}
+
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,74 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+  
+\begin{document}
+\begin{urdufont}
+\pgfmathsetmacro{\J}{0.5}
+\pgfmathsetmacro{\k}{(2*\J+1)/(2*\J)}
+\begin{tikzpicture}[
+  declare function={
+    kBJ(\x)= and(\x>-0.001, \x< 0.001)*(0)+or(\x<-0.001, \x>0.001)*(\k*(e^(\k*\x)+e^(-\k*\x))/(e^(\k*\x)-e^(-\k*\x))-1/(2*\J)*(e^(\x/(2*\J))+e^(-\x/(2*\J)))/(e^(\x/(2*\J))-e^(-\x/(2*\J))));
+  }
+]
+\begin{axis}[
+  axis x line=middle, axis y line=middle,
+ % ymin=-5, ymax=5, ytick={-5,...,5}, 
+ticks=none,
+ylabel=$e_{q0}$,
+  %xmin=-5, xmax=5, xtick={-5,...,5}, 
+xlabel=$I_m$,
+xlabel style={below right},
+ ylabel style={above left},
+]
+\addplot[blue, domain=0:2]{kBJ(x)};
+\end{axis}
+%
+%grid
+\draw[gray](0,0) grid (5,5);
+\draw node at (4,2){\RL{رفتار} $\omega_0$};
+\draw node at (4,-1){ب};
+\end{tikzpicture} 
+
+
+\begin{tikzpicture}[
+  declare function={
+    kBJ(\x)= and(\x>-0.001, \x< 0.001)*(0)+or(\x<-0.001, \x>0.001)*(\k*(e^(\k*\x)+e^(-\k*\x))/(e^(\k*\x)-e^(-\k*\x))-1/(2*\J)*(e^(\x/(2*\J))+e^(-\x/(2*\J)))/(e^(\x/(2*\J))-e^(-\x/(2*\J))));
+kcoth(\x)=(e^\x+e^-\x)/(e^\x-e^-\x);
+  }
+]
+\begin{scope}[xshift=7cm]
+\begin{axis}[
+  axis x line=middle, axis y line=middle,
+ % ymin=-5, ymax=5, ytick={-5,...,5}, 
+ticks=none,
+ylabel=$e_{q0}$,
+  %xmin=-5, xmax=5, xtick={-5,...,5}, 
+xlabel=$I_m$,
+xlabel style={below right},
+ ylabel style={above left},
+]
+\addplot[blue, domain=0:2]{kBJ(x)};
+\end{axis}
+%
+%grid
+\draw[gray](0,0) grid (8,5);
+\draw node at (4,-1){الف};
+\end{scope}
+%
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
+%---------------------
+

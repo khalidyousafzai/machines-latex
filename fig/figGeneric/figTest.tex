@@ -1,0 +1,30 @@
+\documaneclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+
+%grid
+%\draw[gray,thick] (-1,-1) grid (3,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-1,-1) grid (3,3);
+\foreach \thetaS/\thetaE in {90/180, 180/270,270/360,0/90}{
+\stator }
+
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
+%---------------------
+

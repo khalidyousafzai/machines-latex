@@ -1,0 +1,36 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+\begin{document}
+\begin{urdufont}
+
+
+\begin{tikzpicture}[
+  declare function={
+    kcoth(\x)= and(\x>-0.001, \x< 0.001)*(1)+or(\x<-0.001, \x>0.001)*(e^\x+e^-\x)/(e^\x-e^-\x);
+  }
+]
+\begin{axis}[
+  axis x line=middle, axis y line=middle,
+  ymin=-5, ymax=5, ytick={-5,...,5}, ylabel=$y$,
+  xmin=-5, xmax=5, xtick={-5,...,5}, xlabel=$x$,
+]
+\addplot[blue, domain=-1:1]{kcoth(x)};
+\end{axis}
+\end{tikzpicture} 
+\end{urdufont}
+\end{document}
+%---------------------
+

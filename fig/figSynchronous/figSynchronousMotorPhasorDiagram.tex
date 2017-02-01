@@ -1,0 +1,63 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (5,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (5,2);
+%
+
+%======================
+\pgfmathsetmacro{\phaseI}{-45}
+\pgfmathsetmacro{\phaseV}{0}
+\draw[gray,thick,-latex](0,0)--++(\phaseI:1.5)node[left]{$\hat{I}_a$};
+\draw[-latex](0,0)--++(\phaseV:3)node[above,pos=0.8]{$\hat{V}_{s}$}coordinate(vTip);
+\draw[latex-](vTip)--++(-90+\phaseI:1.5)node[pos=0.5,right]{$j \hat{I}_aX_{s}$}coordinate(ixStart);
+\draw[-latex,thick](0,0)--(ixStart)node[below]{$\hat{E}_{am}$};
+%text
+\draw[gray](0:0.6) arc (0:\phaseI:0.6);
+\draw[gray](-13:0.85)node{$\phi$};
+%
+\draw(0:1.2) arc (0:-28:1.2);
+\draw(-14:1.4)node{$\sigma$};
+\draw node[right] at (0,1.5){\RL{برقی رو پیچھے ہے}};
+\draw node at (3,-1.5){\RL{الف}};
+%=====================
+%=====================
+\begin{scope}[xshift=-6.5cm]
+\pgfmathsetmacro{\phaseI}{45}
+\pgfmathsetmacro{\phaseV}{0}
+\draw[gray,thick,-latex](0,0)--++(\phaseI:1.5)node[above left]{$\hat{I}_a$};
+\draw[-latex](0,0)--++(\phaseV:3)node[above,pos=0.8]{$\hat{V}_{s}$}coordinate(vTip);
+\draw[latex-](vTip)--++(-90+\phaseI:1.5)node[pos=0.5,above right]{$j \hat{I}_aX_{s}$}coordinate(ixStart);
+\draw[-latex,thick](0,0)--(ixStart)node[below,pos=0.7]{$\hat{E}_{am}$};
+%text
+\draw[gray](0:0.6) arc (0:\phaseI:0.6);
+\draw[gray](22.5:0.85)node{$\phi$};
+%
+\draw(0:1.2) arc (0:-14:1.2);
+\draw(-7:1.4)node{$\sigma$};
+\draw node[right] at (2,1.5){\RL{برقی رو آگے ہے}};
+\draw node at (1,-1.5){\RL{ب}};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

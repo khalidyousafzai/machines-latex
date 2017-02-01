@@ -1,0 +1,72 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%
+\stator{2}{90}
+\slotDot{90}
+\slotCross{270}
+\draw node at (90-15:\sRi+2*\gap){$a$};
+\draw node at (-90-15:\sRi+2*\gap){$a'$};
+%
+%ROTOR
+\pgfmathsetmacro{\pTheta}{165}
+\pgfmathsetmacro{\pX}{0}
+\pgfmathsetmacro{\pY}{0.25}
+\pgfmathsetmacro{\rTilt}{30}
+\rotor{2}{\rTilt}
+%rotor dot
+\draw (\rTilt+90:\rR-\delR/2) circle (2.5pt);
+\draw[fill] (\rTilt+90:\rR-\delR/2) circle (1.5pt); 
+%rotor cross
+\draw (\rTilt-90:\rR-\delR/2) circle (2.5pt);
+\draw (\rTilt-90:\rR-\delR/2)++(45:2.2pt)--++(-135:4.4pt);
+\draw (\rTilt-90:\rR-\delR/2)++(-45:2.2pt)--++(135:4.4pt); 
+%text
+\draw node at (\rTilt+90+25:\rR-\pY){$r$};
+\draw node at (\rTilt-90+30:\rR-\pY){$r'$};
+%
+\draw[-latex](0:1.1*\sRo)--++(0:1cm)node[right]{$\tau_a$};
+\draw[-latex](\rTilt:1.1*\sRo)--++(\rTilt:1.5cm)node[right]{$\tau_r$};
+\draw[-stealth] (0:1.1*\sRo cm+0.5cm) arc (0:\rTilt:1.1*\sRo cm +0.5 cm);
+\draw node[fill=white] at (\rTilt/2:1.1*\sRo cm+0.5 cm){$\theta_{ar}$};
+%text
+\draw (3 cm,-0.5 cm) node[below right] {$
+\begin{aligned}
+\tau_{ar}&=\tau_a^2+\tau_r^2-2 \tau_a \tau_r \cos (180-\theta_{ar})\\
+&=\tau_a^2+\tau_r^2+2 \tau_a \tau_r \cos \theta_{ar}
+\end{aligned}
+$};
+%
+\begin{scope}[xshift=5 cm,yshift=1cm]
+\draw[-latex] (0,0)--++(0:1 cm)coordinate(aTip)node[below,pos=0.5]{$\tau_a$};
+\draw[-latex] (aTip)--++(\rTilt:1.5 cm)coordinate(rTip)node[below,pos=0.8]{$\tau_r$};
+\draw[-latex,thick](0,0)--(rTip)node[above,pos=0.5]{$\tau_{ar}$};
+%angle
+\draw[gray](aTip)--++(1cm,0);
+\draw[gray](aTip)++(0.4cm,0)node[shift={(0.2cm,-0.3cm)}]{$\theta_{ar}$} arc (0:\rTilt:0.4 cm);
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

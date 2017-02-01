@@ -1,0 +1,22 @@
+\documentclass[border=5pt]{standalone}
+\usepackage{pgfplots}
+
+\def\FunctionF(#1){(#1)^3}%
+
+\newcommand*{\SpecialXValue}{1.5}%
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    domain=-3:3, samples=50,
+    enlargelimits=false,
+    ymin=-5, ymax=5,
+    every axis plot post/.style= ultra thick]
+    \addplot [cyan] {(x<1)*(3-3*x)+!(x<1)*-\FunctionF(x-1.5))};
+    \pgfmathsetmacro{\specialY}{\FunctionF(1.5)}
+    \fill (axis cs:1.5,\specialY) circle [radius=4pt] node [right] {(2,\specialY)};
+\end{axis}
+
+
+\end{tikzpicture}
+\end{document}

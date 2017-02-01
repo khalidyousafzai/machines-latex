@@ -1,0 +1,59 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{siunitx}  
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,-4) grid (8,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-4) grid (8,1);
+%
+\def\ky{-3};
+\draw(0,0)  to  [short]  ++(0.5,0)  to [european resistor,l=$R_{ms}$] ++(2,0) to [inductor,l=$j X_{ms}$] ++(3,0) to [short] ++(2.5,0); 
+\draw(0,\ky) to [short]++(8,0);
+\draw(5.5,0) to [short] ++(0,-0.6);
+\draw(5,-0.6) to [short] ++(1,0);
+\draw(5,\ky) to [european resistor,l=$R_c$] ++(0,2.4);
+\draw(6,\ky) to [inductor,l_=$j X_m$] ++(0,2.4);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1\\
+&-
+\end{aligned}
+$};
+%
+\draw(8,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_2'\\
+&-
+\end{aligned}
+$};
+%
+\draw(0.5,-0.5)node[below right]{$
+\begin{aligned}
+R_{ms}&=R_1+R_2'\\
+X_{ms}&=X_1+X_2'
+\end{aligned}
+$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

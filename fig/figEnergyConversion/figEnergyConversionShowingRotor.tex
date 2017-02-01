@@ -1,0 +1,109 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+%\usetikzlibrary{calc}
+\usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
+%\usetikzlibrary{calc,decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+
+\pgfmathsetmacro{\r}{0.5}
+\pgfmathsetmacro{\g}{0.1}
+\pgfmathsetmacro{\angle}{30} 
+\pgfmathsetmacro{\angleRotation}{20} 
+\pgfmathsetmacro{\angleR}{40}
+\pgfmathsetmacro{\t}{2*(\r+\g)*sin(\angle)}
+\pgfmathsetmacro{\tr}{2*\r*sin(\angleR)}
+\pgfmathsetmacro{\hor}{(\r+\g)*cos(\angle)}
+\pgfmathsetmacro{\leg}{0.75}
+\pgfmathsetmacro{\w}{2*(\hor+\leg)}
+\pgfmathsetmacro{\h}{0.75*\w}
+
+
+%\pgfmathsetmacro{\angleEnd}{180}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,0) grid (5,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (5,5);
+%STATOR
+\draw([shift={(-\angle:\r+\g)}]0,0) arc (-\angle:\angle:\r+\g)--++(\leg,0)--++(0,-\h)--++(-\w,0)--++(0,\h)--++(\leg,0)  arc (180-\angle:180+\angle:\r+\g)--++(-\leg+\t,0)--++(0,-\h+2*\t)--++(\w-2*\t,0)--++(0,\h-2*\t)--++(-\leg+\t,0);
+\draw[gray,->]  (-\r-2*\leg,0) node[left] {\RL{ساکن حصہ}}  to [out=0,in=180] (-\w/2,-\h/2);
+%
+%============
+\begin{scope}[rotate=90]
+%COIL ON STATOR
+\pgfmathsetmacro{\nL}{4}
+\pgfmathsetmacro{\stepHL}{(\w-2*\t-2*\g)/(\nL)}
+%
+\def\leftEdge{-\h+\t/2};
+\def\coilTop{\w/2-\g-\t};
+\def\rightEdge{-\h+1.5*\t};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\rightEdge,{\coilTop-\stepHL/2}); %top half turn
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\rightEdge,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-0.5*\t,0) coordinate(TRA){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-0.25*\t,0)coordinate(TRB){};
+\end{scope}
+\draw(TRA) to [short,i_<={$i_2$}] ++(0,-0.3)node (TRAA){};
+\draw(TRB) to [short] ++(0,-0.3)node(TRBB){};
+\node at ($(TRAA)!0.5!(TRBB)$){$\lambda_2$};
+%========
+%ROTOR
+\begin{scope}[rotate=\angleRotation]
+\pgfmathsetmacro{\hRot}{\r*cos(\angleR)}
+\draw([shift={(-\angleR:\r)}]0,0) arc (-\angleR:\angleR:\r)--++(-2*\hRot,0) arc (180-\angleR:180+\angleR:\r)--++(2*\hRot,0);
+%
+\draw[gray,->]  (-\r-1*\leg,1.2) node[left] {\RL{گھومتا حصہ}}  to [out=-30,in=100] (180-\angleR:\r);
+\end{scope}
+%=================
+%ROTOR COIL
+\begin{scope}[rotate=-90+\angleRotation]
+\pgfmathsetmacro{\nL}{3}
+\pgfmathsetmacro{\stepHL}{(2*\r-2*\g)/(\nL)}
+%
+\def\leftEdge{-\tr/2};
+\def\coilTop{\r-1.5*\g};
+\def\rightEdge{\tr/2};
+%
+\draw(\leftEdge+\tr/4,\coilTop) to [out=0,in=45] (\rightEdge,{\coilTop-\stepHL/2}); %top half turn
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\rightEdge,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\tr/4,\coilTop)coordinate(kA);%--++(-0.5*\tr,0) coordinate(TA){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)coordinate(kB);% to [out=180,in=90]++(-0.25*\t,0)coordinate(TB){};
+%==================
+\end{scope}
+%
+\draw(kA) to [out=110,in=-90]++(-0.1,0.4) to [short,i_<={$i_1$}] ++(0,0.3)node(rTA){};
+\draw(kB) to [out=100,in=-90]++(0,0.2) to [short] ++(0,0.55)node(rTB){};
+\draw node at ($(rTA)!0.5!(rTB)$){$\lambda_1$};
+%
+\draw[gray,dashed](0,0) --++(0:2);
+\draw[gray,dashed](0,0) --++(\angleRotation:2);
+\draw[gray]([shift={(0:1.5)}]0,0) arc (0:\angleRotation:1.5);
+\draw[gray] node at (\angleRotation/2:1.7){$\theta$};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,62 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (5,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (5,2);
+%
+\draw[-latex](0,0)--(3,0)node[below,pos=0.7]{$\hat{V}_a$}coordinate(vEnd);
+\draw[-latex](0,0)--++(-30:1)node[below]{$\hat{I}_a$};
+\draw[gray] (0:0.5) arc (0:-30:0.5);
+\draw[gray] (-15:0.8) node {$\phi$};
+%
+\draw[gray,-latex](vEnd)--++(-30:1)node[below]{$\hat{I}_a$};
+\draw[-latex](vEnd)--++(60:1.5)coordinate(vTip)node[right,pos=0.7]{$j \hat{I}_a X_s$};
+\draw[-latex,thick](0,0)--(vTip)node[above,pos=0.7]{$\hat{E}_{am}$};
+\draw[gray] (vEnd)++(-30:0.3)--++(60:0.4)--++(150:0.3);
+\draw[gray,dashed](vEnd)--++(0:1.5);
+\draw[gray](vEnd)++(-30:0.7) arc (-30:0:0.7);
+\draw[gray](vEnd)++(-15:0.9)node {$\phi$};
+\draw (0.8,0) arc (0:19:0.8);
+\draw (10:1) node{$\sigma$};
+\draw node at (2.25,-1.5){\RL{الف}};
+%==================
+\begin{scope}[xshift=-5cm]
+\draw[-latex](0,0)--(3,0)node[below,pos=0.7]{$\hat{V}_a$}coordinate(vEnd);
+\draw[-latex](0,0)--++(60:1)node[left]{$\hat{I}_a$};
+\draw[gray] (0:0.5) arc (0:60:0.5);
+\draw[gray] (45:0.7) node {$\phi$};
+%
+\draw[gray,-latex](vEnd)--++(60:1)node[right]{$\hat{I}_a$};
+\draw[-latex](vEnd)--++(150:1.5)coordinate(vTip)node[shift={(0:1)}]{$j \hat{I}_a X_s$};
+\draw[-latex,thick](0,0)--(vTip)node[shift={(160:0.6)}]{$\hat{E}_{am}$};
+\draw[gray] (vEnd)++(60:0.3)--++(150:0.4)--++(-120:0.3);
+\draw[gray,dashed](vEnd)--++(0:1);
+\draw[gray](vEnd)++(0:0.4) arc (0:60:0.4);
+\draw[gray](vEnd)++(30:0.6)node {$\phi$};
+\draw (0.8,0) arc (0:23:0.8);
+\draw (11:1) node{$\sigma$};
+\draw node at (2.25,-1.5){\RL{ب}};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

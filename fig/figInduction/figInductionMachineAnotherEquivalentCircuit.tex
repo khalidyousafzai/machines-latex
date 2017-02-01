@@ -1,0 +1,38 @@
+\documentclass[12pt,b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\draw (0,0) to [short,o-,i={$\hat{I}_s $}] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUp) to [short,-*,i={$\hat{I}_\varphi$}] ++(0,-0.6)coordinate(upperJunction) to [short] ++(-0.5,0) to [short,i_={$\hat{I}_c$}] ++(0,-0.5) to  [resistor,l_={$R_c$}] ++(0,-2) to [short,-o] ++(-4,0)coordinate(lowerLeftTerminal);
+\draw (upperJunction) to [short] ++(0.5,0) to [short,i={$\hat{I}_m$}] ++(0,-0.5) to  [inductor,l={$jX_m$}] ++(0,-2)coordinate(rotorStartLow) to [short,-*] ++(-1,0);
+\draw (rotorStartUp) to [short,*-,i={$\hat{I}_r'$}] ++(2,0) to [inductor,l={$j X_r'$}] ++(2,0) to [resistor,l={$R_r'$}] ++(2,0) to [resistor,l={$R_r' \left( \tfrac{1-s}{s}\right)$}] ++(0,-3.1) to [short] ++(-4,0);
+\draw (rotorStartLow) to [short,*-] ++(1.5,0);
+%text
+\node at (9.5,1.2){\RL{برقی ضیاع}};
+\node at (11.75,-0.7){\RL{میکانی طاقت}};
+%
+\draw node at (0,-1.5){$\begin{aligned} &+\\ & \hat{V}_s\\ &- \end{aligned}$};
+\draw node at (6.5,-1.5){$\begin{aligned} &+\\ & \hat{E}_s\\ &- \end{aligned}$};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

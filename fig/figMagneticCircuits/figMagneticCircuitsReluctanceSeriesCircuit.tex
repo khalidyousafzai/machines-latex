@@ -1,0 +1,42 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+
+\usetikzlibrary{circuits.ee.IEC}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}[circuit ee IEC]
+%grid lines
+%\draw[gray,thick] (0,0) grid (12,3);
+%
+\begin{scope}[shift={(0,0)}]
+\draw (0,0)--(3,0) node[below,pos=0.5]{ب} to [resistor={info=south:{$\Re_a$}}] (3,2) to [short,i<=$\phi$]  (0,2) to [battery={info=south:{$\tau$}}] (0,0); 
+\end{scope}
+%
+\begin{scope}[shift={(7.5,0)}]
+\draw (0,0)--(3,0) node[below,pos=0.5]{الف} to [resistor={info=south:{$\Re_a$}}] (3,2) to [resistor={info={$\Re_c$},info'={$+ \Delta \tau -$}}] (1,2) to [short,i<=$\phi$] (0,2) to [battery={info=south:{$\tau$}}] (0,0); 
+\end{scope}
+%equations
+\draw[above,right] (4,1.5) node{$
+\begin{aligned}
+\Delta \tau&=\phi \Re_c\\
+\Re_c& \to 0\\
+\Delta \tau& \to 0
+\end{aligned}
+$};
+
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

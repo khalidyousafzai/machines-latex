@@ -1,0 +1,44 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%
+\draw[-latex] (0,0)--++(4.14,0)node[pos=0.8,above]{$\hat{V}_{sa}$}coordinate(vTip);
+\draw[-latex](0,0)--++(36.87:1)node[above left]{$\hat{I}_a$};
+%
+\draw[-latex] (0,0)--(-3.266:4.34)coordinate(genVtip)node[below,pos=0.8]{$\hat{E}_a$};
+\draw[-latex] (genVtip)--(vTip)coordinate[pos=0.3](load);
+\draw[gray,stealth-] (load) to [out=20,in=180] ++(1,0.5) node[right]{$j \hat{I}_a X_s$};
+%
+\draw[gray,dashed] (10:4.34) arc (10:-25:4.34);
+%
+\draw[-latex,gray](0,0)--++(-15:4.34)coordinate(genVtipA)node[below,pos=0.8]{$\hat{E}_a'$}coordinate[pos=0.3](greaterLoad);
+\draw[-latex,gray] (genVtipA)--(vTip)coordinate[pos=0.5](loadA);
+\draw[-latex,gray](0,0)--(5:2.5)node[pos=0.8,above]{$\hat{I}_a'$};
+\draw[gray,stealth-] (loadA) to [out=-20,in=180] ++(1,-0.5) node[right]{$j \hat{I}_a' X_s$};
+\draw[gray,stealth-] (greaterLoad) to [out=-90,in=0] ++(-1,-1)node[left]{\RL{زیادہ میکانی بار}};
+%
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

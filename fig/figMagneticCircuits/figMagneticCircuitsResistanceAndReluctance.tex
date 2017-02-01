@@ -1,0 +1,49 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+ 
+ \pgfmathsetmacro{\height}{0.75}  
+\pgfmathsetmacro{\widthX}{0.25}  
+\pgfmathsetmacro{\widthY}{0.25}  
+\pgfmathsetmacro{\length}{1.75}  
+
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+
+\coordinate(O) at (0,0,0);
+
+%rod 3d
+\draw[black] (O)--(\length,0)node[pos=0.5,below]{$l$}--++(0,\height)--++(-\length,0)--cycle;
+\draw[black] (O)++(\length,0)--++(\widthX,\widthY)node[pos=0.4,right]{$w$}--++(0,\height)node[pos=0.5,right]{$h$}--++(-\length,0)--++(-\widthX,-\widthY);
+\draw[black] (O)++(\length,0)++(0,\height)--++(\widthX,\widthY);
+
+\draw[gray,-latex] (O)++(0.3*\length,0.5*\height)--++(0.4*\length,0);
+
+\coordinate(textarea) at (\length,2*\height);
+\coordinate(flowMid) at (0.5*\length,0.5*\height);
+\coordinate(mathEq) at (3*\length,0.7*\height);
+
+\draw[gray,thin,dashed,<-] (flowMid) to [out=90,in=270] (textarea);
+%text
+\node[anchor = south] at (textarea) {سمت کی بہاو مقناطیسی یا رو برقی};
+\node[anchor = east] at (mathEq) {$
+\begin{aligned}
+R&=\frac{l}{\sigma A}\\
+\Re &=\frac{l}{\mu A}
+\end{aligned}
+$};
+
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}

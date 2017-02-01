@@ -1,0 +1,41 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}[xscale=2]
+%grid
+%\draw[gray,thick] (-3,-3) grid (3,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (3,3);
+%
+%B=[0 0.061 0.089 .132 .194 .284 .416 .603 .857 1.177 1.520 1.800 1.952 1.999 2.009 2.014 2.020];
+%H=[0 48 71 105 155 228 336 494 729 1074 1582 2331 3436 5063 7460 10994 16201];
+%BH curve
+%\draw [black] plot [smooth] coordinates {(0,0)(0.048,0.061)(0.071,0.089)(0.105,0.132)(0.155,0.194)(0.228,0.284)(0.336,0.416)(0.494,0.603)(0.729,0.857)(1.074,1.177)(1.582,1.52)(2.331,1.8)(3.436,1.952)(5.063,1.999)(7.460,2.009)(10.994,2.014)(16.201,2.02)}
+%B versus log(H)
+\draw [black] plot [smooth] coordinates {( 1.68,0.061)(1.85,0.089)(2.01,0.132)(2.19,0.194)(2.36,0.284)(2.53,0.416)(2.69,0.603)(2.86,0.857)(3.03,1.177)(3.2,1.52)(3.36,1.8)(3.54,1.952)(3.7,1.999)(3.87,2.009)(4.04,2.014)(4.21,2.02)};
+%axis
+\draw (1.68,0.061)--(1.68,2.3) node[above left]{$B \,(\si{\tesla})$};
+\draw (1.68,0.061)--(4.4,0.061) node [below right,yshift=-0.05cm]{$H(\si{\ampere t / \meter})$};
+%ticks
+\foreach \x/\d in {2/10^2,3/10^3,4/10^4}{
+\draw(\x,0.061)--(\x,0)node [below]{$\d$};
+}
+\foreach \y in {0.5,1.0,1.5,2.0}{
+\draw(1.68,\y)--(1.6,\y) node [left]{$\y$};
+}
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+

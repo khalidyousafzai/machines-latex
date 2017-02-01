@@ -1,0 +1,53 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepackage{siunitx}
+%\usetikzlibrary{calc}
+\usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
+%\usetikzlibrary{calc,decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+
+\pgfmathsetmacro{\radX}{1.8}
+ \pgfmathsetmacro{\radY}{0.4}
+\pgfmathsetmacro{\thetaStart}{0} 
+\pgfmathsetmacro{\thetaEnd}{180}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%axis
+\begin{semilogxaxis}[x=2cm,
+    log basis x=10,
+    log ticks with fixed point,
+ymax=1.8,
+xmax=100,
+axis x line=bottom,
+axis y line=left,
+axis line style=-,
+xlabel={$P_a, \quad \textup{موثر}\,  \si{\volt\ampere\per\kilogram}{}$},
+ylabel={$B_{\textup{چوٹی}},\quad \si{\tesla}$},
+    ]
+%{(-3,0) (-2,0.09) (-1,0.34) (0,1.3) (1,1.8) (1.7,1.9)}
+  \addplot [smooth]coordinates  {(0.001,0) (0.01,0.075) (0.1,0.283) (1,1.083) (10,1.5) (50,1.583)};
+  \end{semilogxaxis}
+%
+% {(0.001,0) (0.01,0.09) (0.1,0.34) (1,1.3) (10,1.8) (50,1.9)} the flux is multiplied by 50/60 to get data for 50 Hz
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

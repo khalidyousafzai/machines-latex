@@ -1,0 +1,79 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%
+\pgfmathsetmacro{\j}{0.25}
+\pgfmathsetmacro{\shiftY}{0.5}
+%
+%dashed vertical lines
+\draw[gray,dashed](-135/90,0)--++(0,-11*\shiftY-5*\j)node[left]{\textup{الف}};
+\draw[gray,dashed](-90/90,0)--++(0,-11*\shiftY-5*\j)node[left]{\textup{با}};
+\draw[gray,dashed](-45/90,0)--++(0,-11*\shiftY-5*\j)node[left]{\textup{ج}};
+\draw[gray,dashed](45/90,0)--++(0,-11*\shiftY-5*\j)node[xshift=-0.5 cm]{\textup{د}};
+\draw[gray,dashed](90/90,0)--++(0,-11*\shiftY-5*\j)node[left]{\textup{ذ}};
+%axis
+\draw[gray](-2,0)--(5.5,0)node[right]{$\theta$};
+\draw[gray](0,0)--(0,1.5*\j)node[above]{$\tau_{a45}$};
+%\draw (-45/90,0)--++(0,-0.2)node[below,gray]{$-45^\circ$};
+%
+\mmf{-180/-\j/-135/\j,-135/\j/45/-\j,45/-\j/225/\j,225/\j/405/-\j}
+\draw(405/90,-\j)--(470/90,-\j);
+%text
+\draw[gray,dashed]  (-140/90,\j)--++(-0.6,0)node[left,solid]{$\tfrac{N i}{6}$};
+%
+\begin{scope}[yshift=-3.5*\shiftY cm]
+%axis
+\draw[gray](-2,0)--(5.5,0)node[right]{$\theta$};
+\draw[gray](0,0)--(0,1.5*\j)node[above]{$\tau_{a90}$};;
+%
+\mmf{-180/-\j/-90/\j,-90/\j/90/-\j,90/-\j/270/\j,270/\j/450/-\j}
+\draw(450/90,-\j)--(470/90,-\j);
+\end{scope}
+%
+\begin{scope}[yshift=-7*\shiftY cm]
+%axis
+\draw[gray](-2,0)--(5.5,0)node[right]{$\theta$};
+\draw[gray](0,0)--(0,1.5*\j)node[above]{$\tau_{a135}$};
+%\draw(45/90,0)--++(0,-0.2)node[below,gray]{$45^\circ$};
+%
+\mmf{-180/-\j/-45/\j,-45/\j/135/-\j,135/-\j/315/\j}
+\draw(315/90,\j)--(470/90,\j);
+\end{scope}
+%
+\begin{scope}[yshift=-11*\shiftY cm,xscale=1/90]   %,xscale=1/3 cm
+%axis
+\draw[gray](-2*90,0)--(5.5*90,0)node[right]{$\theta$};
+\draw[gray](0,0)--(0,3.5*\j)node[above]{$\tau$};
+\draw[gray] (0,0)--++(0,-0.1)node[below]{$0^\circ$};
+\draw[gray] (180,0)--++(0,-0.1)node[below]{$180^\circ$};
+\draw[gray] (360,0)--++(0,-0.1)node[below]{$360^\circ$};
+%
+\draw(-180,-3*\j)--(-135,-3*\j)--(-135,-\j)--(-90,-\j)--(-90,\j)--(-45,\j)--(-45,3*\j)--(45,3*\j)--(45,\j)--(90,\j)--(90,-\j)--(135,-\j)--(135,-3*\j)--(225,-3*\j)--(225,-\j)--(270,-\j)--(270,\j)--(315,\j)--(316,3*\j)--(405,3*\j)--(405,\j)--(455,\j)--(455,-\j)--(470,-\j);
+\draw(315/90,1)--(470/90,1);
+%text
+\draw[gray,dashed]  (-90,\j)--(-140-0.6*90,\j)node[left,solid]{$\tfrac{N i}{6}$};
+\draw[gray,dashed]  (-45,3*\j)--++(-0.9*90,0)--++(-0.3*90,\j)--(-140-0.6*90,4*\j)node[left,solid]{$\tfrac{N i}{2}$};
+%
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

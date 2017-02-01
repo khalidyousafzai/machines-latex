@@ -1,0 +1,45 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\draw (0,0)  to [resistor,o-,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUp) to [inductor,l_={$j X_m$}] ++(0,-2)coordinate(statorLowerRight) to [short,-o](0,-2);
+\draw(rotorStartUp) to [short,*-o] ++(1,0)node[above,gray]{الف};
+\draw(statorLowerRight) to [short,*-o] ++(1,0)node[below,gray]{ب};
+%
+\draw node at (0,-1){$\begin{aligned} &+\\ & \hat{V}_s\\ &- \end{aligned}$};
+\draw node at (5,-1){$\begin{aligned} &+\\ & \hat{V}_{t}\\ &- \end{aligned}$};
+%text
+\draw node[right] at (0,-2.5){\RL{تھونن برقی دباو حاصل کریں}};
+%
+\begin{scope}[xshift=6cm]
+\draw (0,0)  to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUp) to [inductor,l_={$j X_m$}] ++(0,-2)coordinate(statorLowerRight) to (0,-2) to (0,0);
+\draw(rotorStartUp) to [short,*-o] ++(1,0)node[above,gray]{الف};
+\draw(statorLowerRight) to [short,*-o] ++(1,0)node[below,gray]{ب};
+%text
+\draw node[right] at (0,-2.5){\RL{تھونن رکاوٹ حاصل کریں}};
+\draw node at (5,-1){$Z_{t}$};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,65 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+\def\height{2};
+\def\width{1.5};
+\def\thick{0.4};
+\def\depthX{0.2};
+\def\depthY{0.2};
+\def\gap{0.05};
+%grid
+%\draw[gray,thick](0,0) grid (12,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](0,0) grid (12,3);
+%going clockwise from origin
+\draw(0,0)--++(0,\height)--++(\width,0)--++(0,-0.5*\height+\gap)--++(-\thick,0)--++(0,0.5*\height-\gap-\thick)--++(-\width+2*\thick,0)--++(0,-\height+2*\thick)--++(\width-2*\thick,0)--++(0,0.5*\height-\thick-\gap)--++(\thick,0)--++(0,-0.5*\height+\gap)--cycle;
+%
+\draw(\thick,\thick)--++(\depthX,\depthY) --++(0,\height-2*\thick-\depthY);
+\draw(0.4,0.4)--++(\width-2*\thick-\depthX,0);
+\draw(0,\height)--++(\depthX,\depthY)--++(\width,0)--++(-\depthX,-\depthY);
+\draw(\width,\height)++(\depthX,\depthY)--++(0,-0.5*\height+\gap)--++(-\depthX,-\depthY);
+\draw(\width,0)--++(\depthX,\depthY)--++(0,0.5*\height-\gap)--++(-\depthX,-\depthY);
+\draw(\thick+\depthX,\thick+\depthY)--++(\width-2*\thick-\depthX,0);
+%gap
+\draw(1.7,1.155)--++(-0.1,0);
+\draw(1.1,0.95)--++(0.1,0.1);
+
+%gap
+\draw[gray](1.8,1.15)--++(0.3,0);
+\draw[gray](1.8,1.25)--++(0.3,0);
+\draw[->](2.2,1.7)node[right]{$l_a$}--++(-0.2,-0.2)--++(0,-0.25);
+\draw[->](2,1)--++(0,0.15);
+%flux
+\draw[gray](1.1,1.8)--++(0.2,0)--++(0,-\height+\thick)--++(-\width+\thick,0)--++(0,\height-\thick)--++(0.5,0)--cycle;
+%dimensions
+\draw[,<->] (1.1,-0.1)--++(0.4,0)node[below,pos=0.5]{$b$};
+\draw[<->](1.5+0.1,-0.1)--++(0.2,0.2)node [pos=0.4,right]{$w$};
+\draw[<->] (-0.1,0)--++(0,\height) node [left,pos=0.5]{$h$};
+\draw[<->](\thick,-0.1)--++(\width-2*\thick,0)node[pos=0.5,below]{$n$};
+\draw[<->](0,-0.7)--++(\width,0)node[pos=0.5,below]{$m$};
+\draw[gray,<-](0.8,1.8) to [out=90,in=180] (2,2.7) node[right,black]{$l_c$ لمبائی کی مرکز};
+%equations
+\draw (4,0) node[above right]{$
+\begin{aligned}
+A_a&=A_c=bw\\
+b&=\frac{m-n}{2}\\
+l_c&=2(h+n)-l_a
+\end{aligned}
+$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,40 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage[siunitx]{circuitikz}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+ 
+ \pgfmathsetmacro{\height}{0.75}  
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-4,-4) grid (4,4);
+%\draw[help lines,xstep=0.1,ystep=0.1] (-4,-4) grid (4,4);
+%symbol only
+\draw (0,0) node [transformer core](T){}  % reminded by @PaulGessler, thanks.
+ %     (T.A1) node[above] {A1}
+   %   (T.A2) node[below] {A2}
+     % (T.B1) node[above] {B1} 
+    %  (T.B2) node[below] {B2}
+      (T.base) node[above]{$N_1:N_2$};
+\draw(T.A2) to [short] (-4cm,-2.1) to [american voltage source,l=$v_1$] (-4,0) to [resistor,l_=$R_1$,i^=$i_\varphi$] (T.A1);
+\draw(-1,-1)node{$
+\begin{aligned}
+&+\\
+&e_1\\
+&-
+\end{aligned}
+$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}

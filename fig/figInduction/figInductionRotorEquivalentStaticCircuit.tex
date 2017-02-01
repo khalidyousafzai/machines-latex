@@ -1,0 +1,36 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\draw (0,0) to [short,o-,i={$i_{fs}(t)$}] ++(0.5,0) to [resistor,l={$\tfrac{R_r}{s}$}]++(2,0) to [inductor,l={$j X_{r}$}] ++(2,0) to ++(0,-2) to [short,-o] (0,-2);
+\draw node at (0,-1){$\begin{aligned} &+\\ & e_{fs}(t)\\ &- \end{aligned}$};
+\draw node[below right] at (6,0.5){$
+\begin{aligned}
+Z_{fs}&=\tfrac{R_r}{s}+j X_r\\
+\phi_z&=\tan^{-1} \left( \frac{X_r}{\tfrac{R_r}{s}}\right)\\
+&=\tan^{-1} \frac{s X_r}{R_r}
+\end{aligned}$};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,80 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%
+\pgfmathsetmacro{\sRi}{0.8*\sRi}
+\pgfmathsetmacro{\rR}{\sRi-\gap}
+
+\stator{2}{90}
+\slotDot{90}
+\slotCross{270}
+\draw node at (90-15:\sRi+2*\gap){$a$};
+\draw node at (-90-15:\sRi+2*\gap){$a'$};
+%
+\draw[-latex] (0:\rR cm-0.3 cm)--++(0:0.7cm)node[xshift=0.2cm]{$S_a$};
+\draw[latex-] (180:\rR cm-0.3 cm)--++(180:0.7cm)node[xshift=-0.2cm]{$N_a$};
+%ROTOR
+\pgfmathsetmacro{\pTheta}{165}
+\pgfmathsetmacro{\pX}{0}
+\pgfmathsetmacro{\pY}{0.25}
+\pgfmathsetmacro{\rTilt}{30}
+\rotor{2}{\rTilt}
+%rotor no current
+\draw (\rTilt+90:\rR-\delR/2) circle (2.5pt);
+\draw (\rTilt-90:\rR-\delR/2) circle (2.5pt);
+%text
+\draw node at (\rTilt+90+25:\rR-\pY){$r$};
+\draw node at (\rTilt-90+30:\rR-\pY){$r'$};
+%
+\begin{scope}[xshift=-7cm]
+\stator{2}{90}
+\slotEmptyCircle{90}
+\slotEmptyCircle{270}
+\draw node at (90-15:\sRi+2*\gap){$a$};
+\draw node at (-90-15:\sRi+2*\gap){$a'$};
+%
+%ROTOR
+\pgfmathsetmacro{\pTheta}{165}
+\pgfmathsetmacro{\pX}{0}
+\pgfmathsetmacro{\pY}{0.25}
+\pgfmathsetmacro{\rTilt}{30}
+\rotor{2}{\rTilt}
+%rotor dot
+\draw (\rTilt+90:\rR-\delR/2) circle (2.5pt);
+\draw[fill] (\rTilt+90:\rR-\delR/2) circle (1.5pt); 
+%rotor cross
+\draw (\rTilt-90:\rR-\delR/2) circle (2.5pt);
+\draw (\rTilt-90:\rR-\delR/2)++(45:2.2pt)--++(-135:4.4pt);
+\draw (\rTilt-90:\rR-\delR/2)++(-45:2.2pt)--++(135:4.4pt); 
+%
+\draw[-latex] (\rTilt:\rR cm-0.3 cm)node[shift={(180+\rTilt:0.2cm)}]{$N_r$}--++(\rTilt:0.7cm);
+\draw[latex-] (180+\rTilt:\rR cm-0.3 cm)node[shift={(\rTilt:0.25cm)}]{$S_r$}--++(180+\rTilt:0.7cm);
+%text)
+\draw node at (\rTilt+90+25:\rR-\pY){$r$};
+\draw node at (\rTilt-90+30:\rR-\pY){$r'$};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

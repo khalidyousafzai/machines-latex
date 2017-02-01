@@ -1,0 +1,42 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%
+
+%axis
+\draw[gray] (0,0)--(6.2,0);
+\draw[gray](0,0)--(0,1.25) node[left]{$e_a$};
+%cosine DARK
+\draw (1,1) cos (0,0);
+\draw (1,1) cos (2,0);
+\draw (3,1) cos (2,0);
+\draw(3,1) cos (4,0);
+\draw (5,1) cos (4,0);
+\draw (5,1) cos (6,0);
+\draw node[below] at (2,0){$1\pi$};
+\draw node[below] at (4,0){$2\pi$};
+\draw node[below] at (6,0){$3\pi$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

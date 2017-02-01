@@ -1,0 +1,36 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\draw (0,0) to [short,o-] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUp) to [inductor,*-,l={$j X_m$}] ++(0,-2)coordinate(statorLowerRight) to [short,-o](0,-2);
+\draw (rotorStartUp)  to ++(1.5,0) to [inductor,l={$j X_r'$}] ++(2,0) to [resistor,l={$R_r'$}] ++(2,0) to [resistor,l={$R_r' \left( \tfrac{1-s}{s}\right)$}] ++(0,-2) to [short,-*] (statorLowerRight);
+%text
+\draw node[right] at (0,-3){\RL{اس کا مساوی تھونن مساوی دور بنائیں}};
+\draw[gray,dashed] (rotorStartUp)++(1.5,0.5)node[left]{الف}--++(0,-3)node[left]{ب};
+%text
+%
+\draw node at (0,-1){$\begin{aligned} &+\\ & \hat{V}_s\\ &- \end{aligned}$};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

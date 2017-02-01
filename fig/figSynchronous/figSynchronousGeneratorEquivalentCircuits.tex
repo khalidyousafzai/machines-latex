@@ -1,0 +1,68 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+\draw (0,0) to  [short,o-] (0.5,0) to[resistor,l={$R_a$}] ++(2,0) to [inductor,l={$j X_s$}] ++(2,0) to [short,,i={$\hat{I}_a$},-o] ++(1,0); 
+\draw (5.5,-2) to [short,o-o] (0,-2);
+
+\draw node at (0.2,-1){$
+\begin{aligned}
+&+\\
+&\hat{E}_{am}\\
+&-
+\end{aligned} $};
+%
+\draw node at (5.5,-1){$
+\begin{aligned}
+&+\\
+&\hat{V}_a\\
+&-
+\end{aligned} $};
+%text
+\draw node at (2.25,-2.5){\RL{الف}};
+%=============
+\begin{scope}[xshift=-6cm]
+\draw (0,0) to  [short,o-] (0.5,0) to [inductor,l={$j X_s$}] ++(2,0) to [short,,i={$\hat{I}_a$},-o] ++(1,0); 
+\draw (3.5,-2) to [short,o-o] (0,-2);
+
+\draw node at (0.2,-1){$
+\begin{aligned}
+&+\\
+&\hat{E}_{am}\\
+&-
+\end{aligned} $};
+%
+\draw node at (3.5,-1){$
+\begin{aligned}
+&+\\
+&\hat{V}_a\\
+&-
+\end{aligned} $};
+%text
+\draw node at (1.5,-0.5) {$X_s \gg R_a$};
+\draw node at (1.55,-2.5){\RL{ب}};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

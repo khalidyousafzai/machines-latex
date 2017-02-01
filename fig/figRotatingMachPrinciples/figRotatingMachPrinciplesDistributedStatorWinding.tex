@@ -1,0 +1,41 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\statorEach{45/90,90/135,135/225,225/270,270/315,315/405}
+\draw (0,0) circle (\rR);
+\slotDot{45,90,135}
+\slotCross{-45,-90,-135}
+\draw node at (45:\sRo+0.3) {$a_{45}$};
+\draw node at (90:\sRo+0.3) {$a_{90}$};
+\draw node at (135:\sRo+0.3) {$a_{135}$};
+\draw node at (225:\sRo+0.3) {$a_{45}'$};
+\draw node at (270:\sRo+0.3) {$a_{90}'$};
+\draw node at (315:\sRo+0.3) {$a_{135}'$};
+%text
+\draw[gray] (0:\sRo+0.6)--++(0:0.7*\rR);
+\draw[gray](45:\sRo+0.6)--++(45:0.7*\rR);
+\draw[gray,-stealth] (0:\sRo+0.6+0.4*\rR) arc (0:45:\sRo+0.6+0.4*\rR);
+\draw node[fill=white,text=gray] at (22.5:\sRo+0.6+0.4*\rR){$45^\circ$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,45 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{bm}	
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%
+\draw[-latex](0,0)--(0:\sRo)node[right]{${\bm{\tau}}_{a90}$};
+\draw[-latex](0,0)--(45:\sRo)node[right]{${\bm{\tau}}_{a135}$}node[pos=0.7,above left]{$\tau_n$};
+\draw[-latex](0,0)--(-45:\sRo)node[right]{${\bm{\tau}}_{a45}$};
+\draw[gray,<->] (0:0.4*\sRo) arc (0:45:0.4*\sRo);
+\draw node at (22.5:0.6*\sRo){$45^\circ$};
+\draw[gray,<->] (0:0.4*\sRo) arc (0:-45:0.4*\sRo);
+\draw node at (-22.5:0.6*\sRo){$45^\circ$};
+%
+\begin{scope}[xshift=2*\sRo cm]
+\draw[-latex](0,0)--(-45:\sRo)node[below left,pos=0.5]{${\bm{\tau}}_{45}$};
+\draw[-latex](-45:\sRo)--++(0:\sRo)node[below,pos=0.5]{${\bm{\tau}}_{90}$};
+\draw[-latex] (-45:\sRo)++(0:\sRo)--++(45:\sRo)node[below right,pos=0.5]{${\bm{\tau}}_{135}$} coordinate(netFlux);
+\draw[thick,-latex](0,0)--(netFlux)node[above,pos=0.5]{${\bm{\tau}}$};
+\draw(0:0.4*\sRo) arc (0:-45:0.4*\sRo);
+\draw node at (-20:0.6*\sRo){$45^\circ$};
+\draw(netFlux)--++(180:0.4*\sRo) arc (180:225:0.4*\sRo);
+\draw (netFlux)++(200:0.6*\sRo)node{$45^\circ$};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

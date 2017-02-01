@@ -1,0 +1,46 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{siunitx}  
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,-4) grid (6,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-4) grid (6,1);
+%
+\def\ky{-2};
+\draw(0,0)  to  [short,i=$I_t$]  ++(1.5,0)  to [european resistor,l=$R_{ms}$] ++(2,0) to [inductor,l=$j X_{ms}$]  ++(2.5,0) to [short] ++(0,\ky) to [short] ++(-6,0); 
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_t\\
+&-
+\end{aligned}
+$};
+%
+\draw(2,-0.5) node[below right]{$
+\begin{aligned}
+R_{ms}&=R_1'+R_2\\
+X_{ms}&=X_1'+X_2
+\end{aligned}
+$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

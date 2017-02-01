@@ -1,0 +1,96 @@
+\documentclass[b5paper]{standalone}
+\usepackage{bm}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{calc}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+%
+\input{myEMTvectors.tex}
+
+
+\begin{document}
+\tdplotsetmaincoords{70}{110}
+\begin{tikzpicture}[scale=3,tdplot_main_coords]
+
+%CIRCLE
+\coordinate (O) at (0,0,0);
+\def\angleA{35};
+\def\angleB{45};
+\def\kradius{0.75};
+\def\height{0.75};
+
+%vectors
+%\tdplotsinandcos{\sintheta}{\costheta}{\angleA}%
+%\draw[thick,-latex] (0,0,0)--(\kradius * \costheta,\kradius * \sintheta,0);
+%\tdplotsinandcos{\sintheta}{\costheta}{\angleB}%
+%\draw[gray,-latex] (0,0,0)--(\kradius * \costheta,\kradius * \sintheta,0)  node[pos=0.5, above]{${\rho_0}$};
+%text
+%\tdplotdrawarc[gray,->]{(0,0,0)}{0.35}{0}{\angleA}{anchor=north,color=black}{$\theta$};
+
+%CYLINDER
+%axis for cylinder
+\coordinate (O) at (0,0,0);
+\coordinate (Otop) at (0,0,\height);
+
+\draw[gray,dashed] (O) -- ++(\kradius,0,0);  %hidden axis
+\draw[gray,dashed] (O) -- ++(0,\kradius,0);
+\draw[gray,dashed] (O) -- ++(0,0,\height);
+
+\draw[gray] (O)++(\kradius,0,0) -- ++(0.3,0,0)node[below ] {$x$};  %visible axis
+\draw[gray] (O)++(0,\kradius,0) -- ++(0,0.2,0)node[right ] {$y$};
+\draw[gray] (O)++(0,0,\height) -- ++(0,0,0.3)node[above] {$z$};
+
+%top and bottom of cylinder
+\tdplotdrawarc[gray, dashed]{(O)}{\kradius}{110}{290}{}{};   %bottom of cylinder
+\tdplotdrawarc[gray]{(O)}{\kradius}{-70}{110}{}{};
+\tdplotdrawarc[gray]{(Otop)}{\kradius}{0}{360}{}{};   %top of cylinder
+%left edge of cylinder
+\tdplotsinandcos{\sintheta}{\costheta}{-70}%
+\coordinate (leftLower) at (\kradius * \costheta,\kradius * \sintheta, 0);
+\coordinate (leftUpper) at (\kradius * \costheta,\kradius * \sintheta, \height);
+\draw[gray](leftLower)--(leftUpper);
+%radial solid line
+\tdplotsinandcos{\sinthetaA}{\costhetaA}{\angleA}%
+\draw[gray] (O)--++(\kradius * \costhetaA,\kradius * \sinthetaA,0)node[below left]{$c$};   %lower radial section
+\draw[gray] (Otop)--++(\kradius * \costhetaA,\kradius * \sinthetaA,0)node[below left]{$a$};  %upper radial section
+\draw[black](\kradius * \costhetaA,\kradius * \sinthetaA,0)--(\kradius * \costhetaA,\kradius * \sinthetaA,\height);     %vertical section
+\draw[gray,dashed] (O)++(\kradius * \costhetaA,\kradius * \sinthetaA,0)--++(0.8*\kradius * \costhetaA,0.8*\kradius * \sinthetaA,0);   %lower radial extension
+%radial dashed line
+\tdplotsinandcos{\sinthetaB}{\costhetaB}{\angleB}%
+\draw[gray,dashed] (O)--++(\kradius * \costhetaB,\kradius * \sinthetaB,0)node[above right]{$d$}; ; %lower radial section
+\draw[gray,dashed] (Otop)--++(\kradius * \costhetaB,\kradius * \sinthetaB,0) node[pos=0.5,above right,black]{$\rho$} node[below right,gray]{$b$}; %upper radial section
+\draw[black,dashed](\kradius * \costhetaB,\kradius * \sinthetaB,0)--(\kradius * \costhetaB,\kradius * \sinthetaB,\height);    %vertical section
+\draw[gray,dashed] (O)++(\kradius * \costhetaB,\kradius * \sinthetaB,0)--++(0.8*\kradius * \costhetaB,0.8*\kradius * \sinthetaB,0);   %lower radial extension
+%shaded area   DOESNOT WORK
+%\coordinate(A) at (\kradius * \costhetaA,\kradius * \sinthetaA,0);
+%\coordinate(A) at (\kradius * \costhetaA,\kradius * \sinthetaA,\height);
+%\coordinate(C) at (\kradius * \costhetaB,\kradius * \sinthetaB,\height);
+%\coordinate(D) at (\kradius * \costhetaB,\kradius * \sinthetaB,0);
+%\shade[opacity=0.5,right color=black!10, left color=black!80] (a)--(b)--(c)--(d)-cycle;
+%height is l
+\coordinate (leftLowerL) at (0,-1, 0);
+\coordinate (leftUpperL) at (0,-1, \height);
+\path (leftLowerL)--(leftUpperL) node[pos=0.4,right]{$l$};
+
+%right edge of cylinder
+\tdplotsinandcos{\sintheta}{\costheta}{110}%
+\coordinate (rightLower) at (\kradius * \costheta,\kradius * \sintheta, 0);
+\coordinate (rightUpper) at (\kradius * \costheta,\kradius * \sintheta, \height);
+\draw[gray](rightLower)--(rightUpper);
+%angles
+\tdplotdrawarc[color=gray,-latex,tdplot_main_coords]{(O)}{0.25}{0}{35}{anchor=north,black}{$\theta$};
+\tdplotdrawarc[color=gray,-latex,tdplot_main_coords]{(O)}{1.25}{35}{45}{anchor=north,black}{$\Delta \theta$};
+%vector
+%\tdplotsinandcos{\sintheta}{\costheta}{70}%
+%\draw[thick,-latex](O)--++(\kradius * \costheta,\kradius * \sintheta, 0.8*\height); %main vector
+%\draw[gray,dotted](O)--++(\kradius * \costheta,\kradius * \sintheta, 0)node[pos=0.5,black,below] {$\rho_0$}; %vector horizontal section lower
+%\draw[gray,dotted](O)++(0,0,0.8*\height) --++(\kradius * \costheta,\kradius * \sintheta,0); %vector horizontal section upper
+%\draw[gray,dotted](O)++(\kradius * \costheta,\kradius * \sintheta, 0)--++(0,0,0.8*\height); %vector vertical section
+%showing angle
+ %\tdplotdrawarc[color=gray,-latex,tdplot_main_coords]{(O)}{0.3}{0}{70}{anchor=north,black}{$\theta$};
+%\tdplotdrawarc[color=gray,-latex,tdplot_main_coords]{(0,0,0)}{0.5}{0}{15}{anchor=north west}{$\theta_2$};
+
+\end{tikzpicture}%
+\end{document}
+

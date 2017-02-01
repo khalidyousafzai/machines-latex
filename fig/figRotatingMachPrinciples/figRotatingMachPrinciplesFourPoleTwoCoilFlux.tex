@@ -1,0 +1,77 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\stator{4}{45}
+\rotor{4}{0}
+
+\slotEmptyCircle{45,135,-45,-135}
+\dotCrossEachPole{0,180}
+\crossDotEachPole{90,270}
+\draw node at (0:0.6*\rR){$N$};
+\draw node at (180:0.6*\rR){$N$};
+\draw node at (90:0.6*\rR){$S$};
+\draw node at (270:0.6*\rR){$S$};
+%
+%\slotName{45/a_1/,-45/a_1'/below,135/a_2'/,-135/a_2/below}
+\draw (45+15:\sRi+1.25*\delR)node[]{$a_1$};
+\draw (135-15:\sRi+1.25*\delR)node[]{$a_2'$};
+\draw (-45+15:\sRi+1.25*\delR)node[]{$a_1'$};
+\draw (-135-15:\sRi+1.25*\delR)node[]{$a_2$};
+%text
+\draw[stealth-] (45:\sRi cm+1/2*\delR cm+2.5pt) to [out=45,in=180] ++(1cm,0.5cm)node[right]{\RL{قوی لچھا}};
+\draw[stealth-] (\rWf -\pX -1.3*\pX ,\rT/2 +1.3*\pX  )++(45:2.5pt) to [out=45,in=180] ++(1cm,0.5cm)node[right]{\RL{میدانی لچھا}};
+%===========================
+%FLUX 0degree to 90 degree
+\pgfmathsetmacro{\delAngle}{30}   %smooth flux entry into stator
+\draw[gray,-stealth] (\rT/2,\rT/5)coordinate(aa)--++(0:0.6*\rR);
+\draw[gray](\rT/2,\rT/5)++(0:0.6*\rR)--++(0:0.2*\rR) to [out=0,in=-90+\delAngle] (\delAngle:\sRo-0.2) arc (\delAngle:90-\delAngle:\sRo-0.2)coordinate (leftUpperFlux);
+\draw[gray] (\rT/5,\rT/2)coordinate(bb)--++(90:0.5*\rR);
+\draw[gray,stealth-](\rT/5,\rT/2)++(90:0.5*\rR)--++(90:0.2*\rR) to [out=90,in=180-\delAngle] (leftUpperFlux);
+\draw[gray] (bb) to [out=-90,in=180] (aa);
+%====
+%FLUX 0 degree to -90 degree
+\draw[gray,-stealth] (\rT/2,-\rT/5)coordinate(aa)--++(0:0.6*\rR);
+\draw[gray](\rT/2,-\rT/5)++(0:0.6*\rR)--++(0:0.2*\rR) to [out=0,in=90-\delAngle] (-\delAngle:\sRo-0.2) arc (-\delAngle:-90+\delAngle:\sRo-0.2)coordinate (leftUpperFlux);
+\draw[gray] (\rT/5,-\rT/2)coordinate(bb)--++(-90:0.5*\rR);
+\draw[gray,stealth-](\rT/5,-\rT/2)++(-90:0.5*\rR)--++(-90:0.2*\rR) to [out=-90,in=180+\delAngle] (leftUpperFlux);
+\draw[gray] (bb) to [out=90,in=180] (aa);
+%====
+%FLUX 90 degree to 180 degree
+\draw[gray,-stealth] (-\rT/2,\rT/5)coordinate(aa)--++(180:0.6*\rR);
+\draw[gray](-\rT/2,\rT/5)++(180:0.6*\rR)--++(180:0.2*\rR) to [out=180,in=-90-\delAngle] (180-\delAngle:\sRo-0.2) arc (180-\delAngle:90+\delAngle:\sRo-0.2)coordinate (leftUpperFlux);
+\draw[gray] (-\rT/5,\rT/2)coordinate(bb)--++(90:0.5*\rR);
+\draw[gray,stealth-](-\rT/5,\rT/2)++(90:0.5*\rR)--++(90:0.2*\rR) to [out=90,in=\delAngle] (leftUpperFlux);
+\draw[gray] (bb) to [out=-90,in=0] (aa);
+%====
+%FLUX -90 degree to 180 degree
+\draw[gray,-stealth] (-\rT/2,-\rT/5)coordinate(aa)--++(180:0.6*\rR);
+\draw[gray](-\rT/2,-\rT/5)++(180:0.6*\rR)--++(180:0.2*\rR) to [out=180,in=90+\delAngle] (180+\delAngle:\sRo-0.2) arc (180+\delAngle:270-\delAngle:\sRo-0.2)coordinate (leftUpperFlux);
+\draw[gray] (-\rT/5,-\rT/2)coordinate(bb)--++(-90:0.5*\rR);
+\draw[gray,stealth-](-\rT/5,-\rT/2)++(-90:0.5*\rR)--++(-90:0.2*\rR) to [out=-90,in=-\delAngle] (leftUpperFlux);
+\draw[gray] (bb) to [out=90,in=0] (aa);
+%
+
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

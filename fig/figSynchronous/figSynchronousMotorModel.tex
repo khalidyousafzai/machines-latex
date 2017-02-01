@@ -1,0 +1,41 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+\draw (0,0) to [short,i={$i_a$},o-] ++(1,0) to [resistor,l={$R_a$}] ++(2,0) to [inductor,l={$L_s$}] ++(2,0) to [sinusoidal voltage source] ++(0,-2) to [short,-o](0,-2);
+\draw node at (0,-1){$
+\begin{aligned}
+&+\\
+&v_a\\
+&-
+\end{aligned} $};
+%
+\draw node at (6,-1){$
+\begin{aligned}
+&+\\
+&e_{am}\\
+&-
+\end{aligned} $};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

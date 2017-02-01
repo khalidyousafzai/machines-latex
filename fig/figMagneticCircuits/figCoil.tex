@@ -1,0 +1,50 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+%\usetikzlibrary{calc}
+\usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
+%\usetikzlibrary{calc,decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+
+\pgfmathsetmacro{\radX}{1.8}
+ \pgfmathsetmacro{\radY}{0.4}
+\pgfmathsetmacro{\thetaStart}{0} 
+\pgfmathsetmacro{\thetaEnd}{180}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%coil backside
+\foreach \y in {0,0.2,0.4,0.6,0.8,1,1.2,1.4,1.6,1.8,2}{
+\draw[thick,domain={0:180},variable=\t,smooth,samples=100] plot({\radX*cos(\t)},{\y+0.1/180*\t+\radY*sin(\t)});
+}
+%coil front
+\foreach \y in {0,0.2,0.4,0.6,0.8,1,1.2,1.4,1.6,1.8,2}{
+\draw[thick,domain={180:360},variable=\t,smooth,samples=100] plot({\radX*cos(\t)},{\y+0.1/180*\t+\radY*sin(\t)});
+}
+%end connections
+\draw[thick](\radX,0)--(1.4*\radX,0);
+\draw[thick](\radX,2+0.1/180*360)--(1.4*\radX,2+0.1/180*360);
+%text
+\draw[gray,<->](1.4*\radX,0+0.05)--(1.4*\radX,2+0.1/180*360-0.05)node[pos=0.5,right]{$l$};
+\draw[gray,dashed](0,2+0.1/180*360-0.4)--(0,2+0.1/180*360+0.4);
+\draw[gray,->] (0,2+0.1/180*360+0.4)--++(\radX,0)node [above,pos=0.5]{$r$};
+\draw(-2,1)node[left]{\RL{$N$ چکر}};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

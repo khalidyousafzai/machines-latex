@@ -1,0 +1,134 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{siunitx}  
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+%transformer outer dimensions
+\pgfmathsetmacro{\shiftX}{12 cm}
+\pgfmathsetmacro{\shiftY}{5 cm}
+
+\pgfmathsetmacro{\arm}{2}
+\pgfmathsetmacro{\con}{2.5}
+\pgfmathsetmacro{\conStarS}{\con-\arm*cos(30)}                  %one arm of star is at ninty degree
+\pgfmathsetmacro{\conStarL}{\con+\arm*cos(30)}
+\pgfmathsetmacro{\h}{sqrt(3)/2*\arm}
+\pgfmathsetmacro{\conDeltaS}{\con-\arm/sqrt(3)}                      %one arm of delta is at 90 degree as h=sqrt{3}/2*\arm
+\pgfmathsetmacro{\conDeltaL}{\con+\arm/sqrt(12)}
+\pgfmathsetmacro{\conDeltaZeroS}{\con-\arm*cos(60)}    %one arm of delta is at 0 degree as h=sqrt{3}/2*\arm
+\pgfmathsetmacro{\conDeltaZeroM}{\con}
+\pgfmathsetmacro{\conDeltaZeroL}{\con+\arm*cos(60)}
+
+
+\pgfmathsetmacro{\gap}{4 cm}        %gap between star and delta centres
+\pgfmathsetmacro{\startNintyX}{-\h/3}    %start of delta if one arm is at 90 degrees
+\pgfmathsetmacro{\startNintyY}{-\arm/2}
+\pgfmathsetmacro{\startZeroX}{-\arm/2}   %start of delta if one arm is at 0 degrees
+\pgfmathsetmacro{\startZeroY}{-\h/3} 
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-3,-3) grid (18,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (18,5);
+%===================
+%STAR-DELTA
+\begin{scope}[yshift=\shiftY]
+%star at 90 degrees
+\draw (0,0) to [short] ++(-90:\arm)coordinate (starA){} to [short,-o,i<={$I$}] ++(180:\con)coordinate (starAend){};
+\draw (0,0) to [short] ++(30:\arm)coordinate (starB){} to [short] ++(0,0.5) to [short,-o]++(180:\conStarL)coordinate (starBend){};
+\draw (0,0) to [short] ++(150:\arm)coordinate (starC){} to  [short,-o]++(180:\conStarS)coordinate (starCend){};
+%text
+\draw[<->](-2,1)--(-2,-2) node[fill=white,pos=0.5]{$V$};
+\draw[gray] (-0.1,0)--(-1,0);
+\draw[<->](-0.5,0)--(-0.5,-2) node[fill=white,pos=0.5]{$\frac{V}{\sqrt{3}}$};
+%=================
+%delta at 90 degrees
+\begin{scope}[xshift=\gap]
+\draw (\startNintyX,\startNintyY)coordinate (deltaNintyA){} to [short] ++(30:\arm)coordinate (deltaNintyB){} to [short] ++(150:\arm)coordinate (deltaNintyC){} to [short,i={$aI$}]++(-90:\arm);
+\draw (deltaNintyA) to [short]++(0,-0.5) to [short,-o,i={$\sqrt{3} a I$}] ++(\conDeltaL,0);
+\draw (deltaNintyB) to [short,-o] ++(\conDeltaS,0);
+\draw (deltaNintyC) to [short]++(0,0.5) to [short,-o] ++(\conDeltaL,0);
+\draw[<->](1.5,0)--(1.5,1.5) node [fill=white,pos=0.5]{$\frac{V}{\sqrt{3} a}$};
+\end{scope}
+%=================================
+%=================================
+%DELTA-STAR
+\begin{scope}[xshift=\shiftX+\gap, xscale=-1, yscale=1]
+%star at 90 degrees
+\draw (0,0) to [short] ++(-90:\arm)coordinate (starA){} to [short,-o,i<={$\frac{aI}{\sqrt{3}}$}] ++(180:\con)coordinate (starAend){};
+\draw (0,0) to [short] ++(30:\arm)coordinate (starB){} to [short] ++(0,0.5) to [short,-o]++(180:\conStarL)coordinate (starBend){};
+\draw (0,0) to [short] ++(150:\arm)coordinate (starC){} to  [short,-o]++(180:\conStarS)coordinate (starCend){};
+%text
+\draw[<->](-2,1)--(-2,-2) node[fill=white,pos=0.5]{$\frac{\sqrt{3}V}{a}$};
+\draw[gray] (-0.1,0)--(-1,0);
+\draw[<->](-0.5,0)--(-0.5,-2) node[fill=white,pos=0.5]{$\frac{V}{a}$};
+%=================
+%delta at 90 degrees
+\begin{scope}[xshift=\gap]
+\draw (\startNintyX,\startNintyY)coordinate (deltaNintyA){} to [short] ++(30:\arm)coordinate (deltaNintyB){} to [short] ++(150:\arm)coordinate (deltaNintyC){} to [short,i<={$\frac{I}{\sqrt{3}}$}]++(-90:\arm);
+\draw (deltaNintyA) to [short]++(0,-0.5) to [short,-o,i={$I$}] ++(\conDeltaL,0);
+\draw (deltaNintyB) to [short,-o] ++(\conDeltaS,0);
+\draw (deltaNintyC) to [short]++(0,0.5) to [short,-o] ++(\conDeltaL,0);
+\draw[<->](1.5,0)--(1.5,1.5) node [fill=white,pos=0.5]{$V$};
+\end{scope}
+\end{scope}
+%----======----
+\end{scope}
+%====================
+%===================
+%===================
+%LOWER TWO FIGURES
+%STAR-STAR
+%star at 90 degrees
+\draw (0,0) to [short] ++(-90:\arm)coordinate (starA){} to [short,-o,i<={$I$}] ++(180:\con)coordinate (starAend){};
+\draw (0,0) to [short] ++(30:\arm)coordinate (starB){} to [short] ++(0,0.5) to [short,-o]++(180:\conStarL)coordinate (starBend){};
+\draw (0,0) to [short] ++(150:\arm)coordinate (starC){} to  [short,-o]++(180:\conStarS)coordinate (starCend){};
+%text
+\draw[<->](-2,1)--(-2,-2) node[fill=white,pos=0.5]{$V$};
+\draw[gray] (-0.1,0)--(-1,0);
+\draw[<->](-0.5,0)--(-0.5,-2) node[fill=white,pos=0.5]{$\frac{V}{\sqrt{3}}$};
+%=================
+\begin{scope}[xshift=\gap,xscale=-1,yscale=1]
+%star at 90 degrees
+\draw (0,0) to [short] ++(-90:\arm)coordinate (starA){} to [short,-o,i<={$a I$}] ++(180:\con)coordinate (starAend){};
+\draw (0,0) to [short] ++(30:\arm)coordinate (starB){} to [short] ++(0,0.5) to [short,-o]++(180:\conStarL)coordinate (starBend){};
+\draw (0,0) to [short] ++(150:\arm)coordinate (starC){} to  [short,-o]++(180:\conStarS)coordinate (starCend){};
+%text
+\draw[<->](-2,1)--(-2,-2) node[fill=white,pos=0.5]{$\frac{V}{a}$};
+\draw[gray] (-0.1,0)--(-1,0);
+\draw[<->](-0.5,0)--(-0.5,-2) node[fill=white,pos=0.5]{$\frac{V}{a \sqrt{3}}$};
+\end{scope}
+%
+ % DELTA-DELTA
+%delta
+\begin{scope}[xshift=\shiftX]
+\draw(\startZeroX,\startZeroY)coordinate(deltA){} to [short,i={$\frac{I}{\sqrt{3}} $}] ++(0:\arm)coordinate(deltB){} to [short]++(120:\arm)coordinate(deltC){} to [short] ++(-120:\arm);
+\draw[short] (deltA) to [short,-o]++(180:\conDeltaZeroS);
+\draw[short] (deltB) to [short] ++(0,-0.5) to [short,-o]++(180:\conDeltaZeroL);
+\draw[short] (deltC) to [short] ++(0,0.5) to [short,-o,i<={$I$}]++(180:\conDeltaZeroM);
+\draw[<->] (-2,-0.65) --++(0,2.2)node[fill=white,pos=0.5]{$V$};
+%delta
+\begin{scope}[xshift=\gap,xscale=-1,yscale=1]
+\draw(\startZeroX,\startZeroY)coordinate(deltA){} to [short,i={$\frac{a I}{\sqrt{3}} $}] ++(0:\arm)coordinate(deltB){} to [short]++(120:\arm)coordinate(deltC){} to [short] ++(-120:\arm);
+\draw[short] (deltA) to [short,-o]++(180:\conDeltaZeroS);
+\draw[short] (deltB) to [short] ++(0,-0.5) to [short,-o]++(180:\conDeltaZeroL);
+\draw[short] (deltC) to [short] ++(0,0.5) to [short,-o,i<={$a I$}]++(180:\conDeltaZeroM);
+\draw[<->] (-2,-0.65) --++(0,2.2)node[fill=white,pos=0.5]{$\tfrac{V}{a}$};
+\end{scope}
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

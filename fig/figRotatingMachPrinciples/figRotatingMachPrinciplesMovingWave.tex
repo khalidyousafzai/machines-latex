@@ -1,0 +1,63 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%axis
+\draw[gray](-2,0) --(5,0)node[right]{$\theta_e$}; %axis
+\draw[gray] (0,-1)--(0,1.5);
+\begin{scope}[gray,dashed]
+%cosine wave
+\draw (0,1) cos (-1,0);
+\draw (0,1) cos (1,0);
+\draw (2,-1) cos (1,0);
+\draw (2,-1) cos (3,0);
+\draw[stealth-](0,1) to [out=90,in=0]++(-0.5,0.5)node[left]{$t=0$};
+\end{scope}
+%
+\begin{scope}[gray,xshift=0.2 cm]
+%cosine wave
+\draw (0,1) cos (-1,0);
+\draw (0,1) cos (1,0);
+\draw (2,-1) cos (1,0);
+\draw (2,-1) cos (3,0);
+\draw[dotted](0,0)--(0,1);
+\draw[stealth-](0,1) to [out=90,in=180]++(0.5,0.5)node[right]{$t=0.001$};
+%delay
+\draw(0,-0.1)--++(0,-0.2);
+\draw[stealth-](-0.2,-0.15)--++(-0.2,0);
+\draw[stealth-](0,-0.15)--++(0.2,0)--++(0.2,-0.2)node[below]{$\tfrac{\pi}{10}$};
+\end{scope}
+%
+\begin{scope}[xshift=1.75 cm]
+%cosine wave
+\draw (0,1) cos (-1,0);
+\draw (0,1) cos (1,0);
+\draw (2,-1) cos (1,0);
+\draw (2,-1) cos (3,0);
+\draw[stealth-](0,1) to [out=90,in=150]++(0.7,0)node[right]{$t=t'$};
+\draw[dashed,black](0,1)--(0,0);
+\end{scope}
+\draw[dashed,-stealth](0,0.5)--++(1.75,0)coordinate[pos=0.75](finalPlace);
+\draw[stealth-](finalPlace) to [out=-90,in=180] (1.6,-0.2)node[right]{$\omega t'$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

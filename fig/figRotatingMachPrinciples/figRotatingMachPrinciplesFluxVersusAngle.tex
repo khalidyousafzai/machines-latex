@@ -1,0 +1,45 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\stator{2}{90}
+%elliptic rotor
+\draw (-90:\rR-2*\gap) to [out=0,in=-90] (0:\rR) to [out=90,in=0] (90:\rR-2*\gap) to [out=180,in=90] (180:\rR) to [out=-90,in=180] (-90:\rR-2*\gap);
+\draw node at (0:0.6*\rR){$N$};
+\draw node at (180:0.6*\rR){$S$};
+%flux
+\foreach \angle in {-80,-60,...,80}{
+\draw[-latex] (\angle:\sRo+\gap)--++(\angle:cos \angle) node[shift={(\angle:0.3)}] {$\angle^\circ$};}
+\foreach \angle in {100,120,...,260}{
+\draw[latex-] (\angle:\sRo+\gap)--++(\angle:-cos \angle);}
+%
+\draw[gray,-latex] (0,0)--(-40:\sRo);
+\draw[gray,-latex] (0,0)--(60:\sRo);
+\draw[gray,-latex] (0,0)--(160:\sRo);
+%
+\draw[gray,dashed] (0:\sRo+2)--++(0:1);
+\draw[gray,->] (0:\sRo+2.5) arc (0:30:\sRo+2.5);
+\draw node[gray,fill=white] at (15:\sRo+2.5){$\theta_p$};
+
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

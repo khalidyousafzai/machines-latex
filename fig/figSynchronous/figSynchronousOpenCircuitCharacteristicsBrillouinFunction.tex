@@ -1,0 +1,56 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+  
+\begin{document}
+\begin{urdufont}
+\pgfmathsetmacro{\J}{0.5}
+\pgfmathsetmacro{\k}{(2*\J+1)/(2*\J)}
+\begin{tikzpicture}[
+  declare function={
+    kBJ(\x)= and(\x>-0.001, \x< 0.001)*(0)+or(\x<-0.001, \x>0.001)*(\k*(e^(\k*\x)+e^(-\k*\x))/(e^(\k*\x)-e^(-\k*\x))-1/(2*\J)*(e^(\x/(2*\J))+e^(-\x/(2*\J)))/(e^(\x/(2*\J))-e^(-\x/(2*\J))));
+  }
+]
+\begin{axis}[yscale=0.5,
+ymax=1.05,
+  axis x line=middle, axis y line=middle,
+ % ymin=-5, ymax=5, ytick={-5,...,5}, 
+axis line style=-,
+ylabel=$V$,
+  %xmin=-5, xmax=5, xtick={-5,...,5}, 
+xlabel=$A$,
+xlabel style={below right,xshift=0.5cm},
+ylabel style={above left,xshift=-0.2cm},
+xtick={0.625,1.25,1.875,2.5},
+xticklabels={$2$,$4$,$6$,$8$},
+ytick={0.286,0.571,0.857},
+yticklabels={200,400,600},
+]
+\addplot[domain=0:2.5]{kBJ(x)};
+\end{axis}
+%
+%grid
+%\draw[gray,thick](0,0) grid (7,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](0,0) grid (7,3);
+%\draw (0,1.852)--++(5,0);
+%\draw (3.55,0)--++(0,3);
+%
+\draw node at (4,-1){\RL{میدانی برقی رو}};
+\draw node[rotate=90] at (-1.5,1.5){\RL{کھلے دور برقی دباو}};
+
+\end{tikzpicture} 
+\end{urdufont}
+\end{document}
+%---------------------
+

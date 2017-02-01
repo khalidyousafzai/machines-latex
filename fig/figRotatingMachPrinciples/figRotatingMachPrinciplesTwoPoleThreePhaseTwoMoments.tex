@@ -1,0 +1,75 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\begin{scope}[xshift=0.8*\shiftX]
+\stator{6}{30}
+\slotDot{90,-30,210}
+\slotCross{-90,30,150}
+\rotor{2}{0}
+\dotCrossEachPole{00}
+\crossDotEachPole{180}
+\draw node at (0:0.6*\rR){$N$};
+\draw node at (180:0.6*\rR){$S$};
+%
+%\slotName{45/a_1/,-45/a_1'/below,135/a_2'/,-135/a_2/below}
+\draw (90-15:\sRi+1.25*\delR)node[]{$a$};
+\draw (270-15:\sRi+1.25*\delR)node[]{$a'$};
+\draw (210-15:\sRi+1.25*\delR)node[]{$b$};
+\draw (30-15:\sRi+1.25*\delR)node[]{$b'$};
+\draw (-30-15:\sRi+1.25*\delR)node[]{$c$};
+\draw (150-15:\sRi+1.25*\delR)node[]{$c'$};
+%text
+\node at (-90:\sRo+0.4){\RL{لمحہ $t_1$}};
+\end{scope}
+%=============
+%\begin{scope}[xshift=-\shiftX]
+\draw[-latex](0,0)--(0:0.5*\sRo)node[shift={(0:0.5*\sRo+0.2cm)}]{$a$};
+\draw[-latex](0,0)--(120:0.5*\sRo)node[shift={(120:0.5*\sRo+0.2cm)}]{$b$};
+\draw[-latex](0,0)--(-120:0.5*\sRo)node[shift={(-120:0.5*\sRo+0.2cm)}]{$c$};
+%\end{scope}
+%================
+\begin{scope}[xshift=-0.8*\shiftX]
+\stator{6}{30}
+\slotDot{90,-30,210}
+\slotCross{-90,30,150}
+\rotor{2}{105}
+\dotCrossEachPole{105}
+\crossDotEachPole{285}
+\draw node at (105:0.6*\rR){$N$};
+\draw node at (285:0.6*\rR){$S$};
+%
+%\slotName{45/a_1/,-45/a_1'/below,135/a_2'/,-135/a_2/below}
+\draw (90-15:\sRi+1.25*\delR)node[]{$a$};
+\draw (270-15:\sRi+1.25*\delR)node[]{$a'$};
+\draw (210-15:\sRi+1.25*\delR)node[]{$b$};
+\draw (30-15:\sRi+1.25*\delR)node[]{$b'$};
+\draw (-30-15:\sRi+1.25*\delR)node[]{$c$};
+\draw (150-15:\sRi+1.25*\delR)node[]{$c'$};
+%text
+\node at (-90:\sRo+0.4){\RL{لمحہ $t_2$}};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

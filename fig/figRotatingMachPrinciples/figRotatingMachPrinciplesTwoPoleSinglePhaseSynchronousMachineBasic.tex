@@ -1,0 +1,60 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%
+\stator{2}{90}
+\rotor{2}{30}
+
+%FLUX
+\begin{scope}[rotate=30]
+\pgfmathsetmacro{\delAngle}{30}   %smooth flux entry into stator
+\draw[gray] (0,\rT/5)--++(0:0.8*\rR) to [out=0,in=-90+\delAngle] (\delAngle:\sRo-0.2) arc (\delAngle:180-\delAngle:\sRo-0.2)coordinate (leftUpperFlux);
+\draw[gray,<-](0,\rT/5)--++(180:0.8*\rR) to [out=180,in=-90-\delAngle] (leftUpperFlux);
+\draw[gray,->] (90-1:\sRo-0.2) to [out=180,in=0](90+1:\sRo-0.2);
+%
+\draw[gray] (0,-\rT/5)--++(0:0.8*\rR) to [out=0,in=90-\delAngle] (-\delAngle:\sRo-0.2) arc (-\delAngle:-180+\delAngle:\sRo-0.2)coordinate (leftLowerFlux);
+\draw[gray,<-](0,-\rT/5)--++(180:0.8*\rR) to [out=180,in=90+\delAngle] (leftLowerFlux);
+\draw[gray,->] (-90+1:\sRo-0.2) to [out=180,in=0](-90-1:\sRo-0.2);
+%
+\draw node at (0:0.6*\rR){$N$};
+\draw node at (180:0.6*\rR){$S$};
+
+\end{scope}
+
+%text
+\slotEmptyCircle{90,-90}
+\slotName{90/a/right,270/a'/left}
+
+
+\draw [gray,dashed](0:\sRo+0.1)--++(0:0.5);
+\draw [gray,dashed](30:\sRo+0.1)--++(30:0.5);
+\draw[->] ([shift={(0:\sRo+0.3)}]0,0) arc (0:30:\sRo+0.3);
+\draw node at (30/2:\sRo+0.6){$\theta_m$};
+
+\draw node[left,->] at (160:1.4*\sRo){\RL{ساکن حصہ}};;
+\draw[->] (160:1.4*\sRo) to [out=-45,in=180] (180:\sRo);
+\draw node[left,->] at (145:1.4*\sRo){\RL{گھومتا مقناطیس}};;
+\draw[->] (145:1.4*\sRo) to [out=-45,in=100] (185:\rR);
+
+
+
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

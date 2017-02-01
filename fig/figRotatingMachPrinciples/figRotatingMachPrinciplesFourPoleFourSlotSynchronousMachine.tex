@@ -1,0 +1,82 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\stator{4}{0}
+\rotor{4}{30}
+
+\slotEmptyCircle{0,90,180,270}
+\slotName{0/a_1'/above,90/a_1/right,180/a_2'/above,270/a_2/left}
+\dotCrossEachPole{30,210}
+\crossDotEachPole{120,300}
+\draw node at (30:0.6*\rR){$N$};
+\draw node at (210:0.6*\rR){$N$};
+\draw node at (120:0.6*\rR){$S$};
+\draw node at (300:0.6*\rR){$S$};
+%
+\begin{scope}[xshift=\shiftX]
+\pgfmathsetmacro{\rReduction}{0}   %reduction in rotor length due to adjacent rotor
+\pgfmathsetmacro{\rWr}{1}    %rotor's flat section's effective length
+\begin{scope}[rotate=30]
+\draw(\rReduction,-\rT/2)--++(\rWr,0)--++(0,-\pY)--++(\pX,0)  arc (-\pTheta/2:\pTheta/2:\rR)--++(-\pX,0)--++(0,-\pY)--++(-\rWr,0);
+\node[gray] at (0:0.8*\rR){$N$};
+%flux
+\draw[gray,-latex] (0,\rT/3)--++(0:0.5*\rR);
+\draw[gray,-latex] (0,\rT/3)++(0:0.5*\rR)--++(0:0.3*\rR) to [out=0,in=210] (1.2*\rR,\rT/2);
+\draw[gray,-latex] (0,0)--++(0:0.5*\rR);
+\draw[gray,-latex] (0,0)++(0:0.5*\rR)--++(0:0.8*\rR);
+\draw[gray,-latex] (0,-\rT/3)--++(0:0.5*\rR);
+\draw[gray,-latex] (0,-\rT/3)++(0:0.5*\rR)--++(0:0.3*\rR) to [out=0,in=150] (1.2*\rR,-\rT/2);
+
+%
+\begin{scope}[rotate=-90]
+%COIL
+%left leg coil.  drawn from top to bottom
+%======
+\pgfmathsetmacro{\nL}{3}
+\pgfmathsetmacro{\stepHL}{(\rWr-\pX-\gap)/(\nL)}
+%
+\def\leftEdge{-\rT/2};
+\def\coilTop{\rWr-\pX-\gap};
+\def\rightEdge{\rT/2};
+%
+\draw[thick](\leftEdge+\rT/4,\coilTop) to [out=0,in=45] (\rightEdge,{\coilTop-\stepHL/2}); %top half turn
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw[thick] (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\rightEdge,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw[thick,<-] (\leftEdge+\rT/4,\coilTop)--++(-1.25*\rT,0) node(TA){};
+\draw[thick] (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\rT,0)node(TB){};
+%\node at ($(TA)!0.5!(TB)$){$\begin{aligned}&+\\ e&,\lambda\\&-   \end{aligned}$};
+%=================================
+
+
+\end{scope}
+\end{scope}
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

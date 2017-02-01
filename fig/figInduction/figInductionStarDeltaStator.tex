@@ -1,0 +1,51 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\pgfmathsetmacro{\h}{sqrt(3)/2*2}
+\pgfmathsetmacro{\hc}{\h/3}
+\pgfmathsetmacro{\x}{(2/3*\h+0.5)*cos (30)}
+
+\pgfmathsetmacro{\xsize}{2*cos(30)}
+\pgfmathsetmacro{\ysize}{2*sin(30)}
+\draw (0,0) to [resistor,*-,l={$R_s$}] ++(-90:2) to [short,-o] ++(180:3);
+\draw (0,0) to [resistor,l={$R_s$}] ++(30:2);
+\draw (0,0) to [resistor,l={$R_s$}] ++(150:2) to [short,-o]++(180:3-\xsize);
+%
+\draw node at (-3,+\ysize/2-1){$R$};
+\draw  node at (0,-2.5){$R=R_s+R_s=2R_s$};
+%
+\begin{scope}[xshift=-6cm,yshift=-1cm]
+\draw (0,0)++(-150:2/3*\h) to [resistor,*-]++(0:2) coordinate(a) to [resistor]++(120:2)coordinate(b) to [resistor]++(-120:2);
+\draw node at (-90:\hc+0.5){$R_s$};
+\draw node at (30:\hc+0.5){$R_s$};
+\draw node at (150:\hc+0.5){$R_s$};
+\draw (-150:2/3*\h) to [short]++(-150:0.5) to [short,-o]++(180:1);
+\draw (b) to [short,*-] ++(90:0.5) to [short,-o] ++(180:2.433);
+\draw node at (-2.433,0.5){$R$};
+\draw node at (-90:\hc+1){$\tfrac{1}{R}=\tfrac{1}{R_s}+\tfrac{1}{2R_s}$};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,84 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+  
+\begin{document}
+\begin{urdufont}
+\pgfmathsetmacro{\J}{0.5}
+\pgfmathsetmacro{\k}{(2*\J+1)/(2*\J)}
+\begin{tikzpicture}[scale=0.5,
+  declare function={
+    kBJ(\x)= and(\x>-0.001, \x< 0.001)*(0)+or(\x<-0.001, \x>0.001)*(0.1+\k*(e^(\k*\x)+e^(-\k*\x))/(e^(\k*\x)-e^(-\k*\x))-1/(2*\J)*(e^(\x/(2*\J))+e^(-\x/(2*\J)))/(e^(\x/(2*\J))-e^(-\x/(2*\J))));
+  }
+]
+\begin{axis}[
+  axis x line=middle, axis y line=middle,
+,axis line style={-},
+  ymin=0, ymax=1, ytick={0,...,1}, 
+ticks=none,
+  %xmin=-5, xmax=5, xtick={-5,...,5}, 
+xlabel style={below right},
+ ylabel style={above left},
+]
+\addplot[ domain=0.1:2]{kBJ(x)};
+\end{axis}
+%
+%grid
+%\draw[gray](0,0) grid (5,5);
+%
+\draw node at (4,2){\RL{رفتار} $\omega_0$};
+\draw node[below right] at (7,0){$I_m$};
+\draw node[left] at (0,6){$e_{q0}$};
+\draw node at (4,-1){ب};
+\end{tikzpicture} 
+
+
+\begin{tikzpicture}[scale=0.5,
+  declare function={
+    kBJ(\x)= and(\x>-0.001, \x< 0.001)*(0)+or(\x<-0.001, \x>0.001)*(0.1+\k*(e^(\k*\x)+e^(-\k*\x))/(e^(\k*\x)-e^(-\k*\x))-1/(2*\J)*(e^(\x/(2*\J))+e^(-\x/(2*\J)))/(e^(\x/(2*\J))-e^(-\x/(2*\J))));
+kcoth(\x)=(e^\x+e^-\x)/(e^\x-e^-\x);
+  }
+]
+\begin{scope}[xshift=7cm]
+\begin{axis}[
+  axis x line=middle, axis y line=middle,
+,axis line style={-},
+  ymin=0, ymax=1, ytick={0,...,1}, 
+ticks=none,
+%ylabel=$e_{q0}$,
+  %xmin=-5, xmax=5, xtick={-5,...,5}, 
+%xlabel=$N_mI_m$,
+xlabel style={below right},
+ ylabel style={above left},
+]
+\addplot[ domain=0.1:2]{kBJ(x)};
+\end{axis}
+%
+%grid
+%\draw[gray,thick](0,0) grid (8,6);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](0,0) grid (8,6);
+%
+\draw[] (0.1,1.1)--++(1,0)coordinate[pos=0.7](kk);
+\draw[<-](kk)--++(0,0.3) to [out=45,in=180] ++(1,0.5)node[right]{\RL{بقایا مقناطیسی بہاو}};
+\draw[<-](kk)++(0,-1.1)--++(0,-0.3);
+\draw node[below right] at (7,0){$N_mI_m$};
+\draw node[left] at (0,6){$\phi_m$};
+\draw node at (4,-1){الف};
+\end{scope}
+%
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
+%---------------------
+

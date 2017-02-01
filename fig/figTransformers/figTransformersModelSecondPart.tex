@@ -1,0 +1,53 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{siunitx}  
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-3,-3) grid (7,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (7,1);
+%
+\def\ky{-3};
+\draw(0,0)  to  [short,i^=$\hat{I}_1$]  ++(0.5,0) to [resistor,l=$R_1$] ++(1.5,0) to [inductor,l=$j X_1$] ++(2.5,0)coordinate(a){} to [short,i=$\hat{I}_2'$] ++(2.5,0); 
+\draw(0,\ky) to ++(7,0);
+\draw(a) to [short,i=$\hat{I}_\varphi$] ++(0,-0.6);
+\draw(4,-0.6) to [short] ++(1,0);
+\draw(4,\ky) to [european resistor,l=$R_c$,i<=$\hat{I}_c$] ++(0,2.4);
+\draw(5,\ky) to [inductor,l_=$j X_m$,i_<=$\hat{I}_m$] ++(0,2.4);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1\\
+&-
+\end{aligned}
+$};
+%
+\draw(7,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{E}_1\\
+&-
+\end{aligned}
+$};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

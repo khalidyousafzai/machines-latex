@@ -1,0 +1,52 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usetikzlibrary{decorations.markings}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick](-3,-3) grid (3,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](-3,-3) grid (3,3);
+%
+%\draw (0,0)coordinate(k);
+%\mymotor{k}{tilt angle}
+\draw (0,0)coordinate(k);
+\mymotor{k}{90}{جنریٹر}
+\draw (0,0.4)--++(0,0.5) to [inductor,-o,l={\RL{میدانی لچھا}}] ++(2,0);
+\draw (0,-0.4)--++(0,-0.5) to [short,-o]++(2,0);
+%field
+\draw node at (1,-1.5){\RL{الف: سلسلہ وار جڑی}};
+\draw node[right] at (0.5,0){\RL{قوی لچھا}};
+%
+\begin{scope}[xshift=-5cm]
+%\draw (0,0)coordinate(k);
+%\mymotor{k}{tilt angle}
+\draw (0,0)coordinate(k);
+\mymotor{k}{90}{جنریٹر}
+\draw (0,0.4)--(0,1)--++(1,0)  to [inductor,-o,l={\RL{میدانی لچھا}}] ++(2,0);
+\draw (0,-0.4)--(0,-1) to [short,-o]++(3,0);
+\draw (1,1) to [inductor,*-*,l={\RL{میدانی لچھا}}] ++(0,-2);
+%field
+\draw node at (1,-1.5){\RL{ب: مرکب جڑی}};
+\draw node[left] at (-0.5,0){\RL{قوی لچھا}};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

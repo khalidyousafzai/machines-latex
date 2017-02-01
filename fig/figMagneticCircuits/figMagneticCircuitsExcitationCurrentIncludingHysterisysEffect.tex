@@ -1,0 +1,56 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+%---------------
+ 
+\pgfkeys{/pgf/declare function={yp(\y) =((\ylmt+\yhys)/\ylmt)*\y*sin(0.5*\pi*\y/\ylmt)-\yhys;}}
+\pgfkeys{/pgf/declare function={ym(\y)=\yhys+(\ylmt-\yhys)/\ylmt*\y*sin(\y.*3.142/(2*\ylmt));}}
+ %declaring Brillouin function for pgfplots
+%\pgfkeys{/pgf/declare function={B(\x) =(\lmtL <=\x<0) * ( -4/tanh(4*\x)+1/tanh(\x)) + (0<=\x<=\lmt) * ( 4/tanh(4*\x)-1/tanh(\x)) ;}}
+ \pgfkeys{/pgf/declare function={B(\x) =  ( 4/tanh(4*\x)-1/tanh(\x)) ;}}
+
+\begin{document}
+\begin{urdufont}
+\pgfmathsetmacro{\pi}{3.142};
+\pgfmathsetmacro{\e}{2.78};        %natural log
+
+\pgfmathsetmacro{\ylmt}{2};
+\pgfmathsetmacro{\ylmtL}{-2};
+\pgfmathsetmacro{\yhys}{0.25};
+
+%y=0:0.001:ylmt;
+
+%\def\functionF{#1}{4*coth(4*(#1))-coth(#1)};
+%yp=(\ylmt+\yhys)/\ylmt*y*sin(y*3.142/(2*\ylmt))-\yhys;
+
+\begin{tikzpicture}[declare function={
+    func(\x)= (\x<=0) * (-B(\x))   +
+                (\x>0) * (B(\x));
+  }
+]
+\begin{axis}
+[
+    domain=\ylmtL:\ylmt,samples=100
+   ]
+\addplot {func(yp(\x))};
+
+\end{axis}
+
+
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+

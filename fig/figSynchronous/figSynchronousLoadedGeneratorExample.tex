@@ -1,0 +1,37 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%
+\draw[-latex] (0,0)--++(2.396,0)node[pos=0.8,above]{$\hat{V}_{sa}$}coordinate(vTip);
+\draw[-latex](0,0)--++(36.87:1.4)node[left,xshift=-0.2cm]{$\hat{I}_a$};
+\draw [gray] (0.4,0) arc (0:36.87:0.4);
+\draw [gray] node at (13:1){$36.87^\circ$};
+\draw[gray,-latex] (vTip)--++(36.87:1.4)node[left,xshift=-0.2cm]{$\hat{I}_a$};
+\draw[latex-] (vTip)--++(-53.13:0.5356)node[pos=0.4,right,xshift=0.2cm]{$j \hat{I}_a X_s$}coordinate(loadTip);
+\draw[-latex,thick] (0,0)--(loadTip)node[below,pos=0.8]{$\hat{E}_a$};
+\draw[gray](1,0) arc (0:-8.96:1)node[below]{$8.96^\circ$};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

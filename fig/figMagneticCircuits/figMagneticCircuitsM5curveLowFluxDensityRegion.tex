@@ -1,0 +1,40 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}[xscale=1,yscale=3]
+%grid
+%\draw[gray,thick] (-3,-3) grid (3,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (3,3);
+%
+%B=[0 0.061 0.089 .132 .194 .284 .416 .603 .857 1.177 1.520 1.800 1.952 1.999 2.009 2.014 2.020];
+%H=[0 48 71 105 155 228 336 494 729 1074 1582 2331 3436 5063 7460 10994 16201];
+%BH curve linear scale
+\draw [black] plot [smooth] coordinates {(0.48,0.061)(0.71,0.089)(1.05,0.132)(1.55,0.194)(2.28,0.284)(3.36,0.416)(4.94,0.603)};
+%(7.29,0.857)(10.74,1.177)(15.82,1.52)(23.31,1.8)}(34.36,1.952)(50.63,1.999)(74.60,2.009)(109.94,2.014)(162.01,2.02)}
+%axis
+\draw (0.48,0.061)--(0.48,0.7) node[above]{$B(\si{\tesla})$};
+\draw (0.48,0.061)--(5.2,0.061) node [right]{$H(\si{\kilo \ampere t/\meter})$};
+%ticks
+\foreach \x/\d in {1/0.1,2/0.2,3/0.3,4/0.4,5/0.5,6/0.6,7/0.7,8/0.8,9/0.9,10/1.0,11/1.1}{
+\draw(\x,0.061)--(\x,0.03)node [below]{$\d$};
+}
+\foreach \y/\d in {0.2/0.2,0.4/0.4,0.6/0.6,0.8/0.8,1/1.0,1.2/1.2}{
+\draw(0.48,\y)--(0.42,\y) node [left]{$\d$};
+}
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+

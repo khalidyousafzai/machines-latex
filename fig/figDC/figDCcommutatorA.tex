@@ -1,0 +1,117 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}[xscale=0.4,yscale=1]
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+\pgfmathsetmacro{\cRi}{1}  %commutator inner radius
+\pgfmathsetmacro{\cRo}{\cRi+0.1}  %commutator inner radius
+\pgfmathsetmacro{\cW}{0.8}   %commutator width
+\pgfmathsetmacro{\cT}{\cRo-\cRi}    %commutator thickness
+\pgfmathsetmacro{\tilt}{-10}
+\pgfmathsetmacro{\gap}{5}     %gap between commutator pieces
+\pgfmathsetmacro{\bush}{30}   %bush as half angle
+\pgfmathsetmacro{\bR}{\cRo+0.1}   %bush radius
+\pgfmathsetmacro{\coilW}{0.5}
+\pgfmathsetmacro{\coilL}{5}
+\pgfmathsetmacro{\coilLdel}{4}
+\pgfmathsetmacro{\coilWdel}{0.1}
+
+%upper commutator
+\path[fill=white] (\tilt+\gap:\cRi)coordinate(fillA) arc (\tilt+\gap:180+\tilt-\gap:\cRi)coordinate(fillB) --++(180+\tilt-\gap:\cT)coordinate(fillC) arc (180+\tilt-\gap:90:\cRo)coordinate(fillD)--++(\cW,0)coordinate(fillE) arc (90:\tilt+\gap:\cRo)coordinate(fillF)--++(-\cW,0)coordinate(fillG) --cycle;
+\path (\tilt+\gap:\cRi)coordinate(aA) arc (\tilt+\gap:180+\tilt-\gap:\cRi)coordinate(aB) --++(180+\tilt-\gap:\cT)coordinate(aC) arc (180+\tilt-\gap:\tilt+\gap:\cRo)coordinate(aD)--cycle;
+\path(aD)--++(\cW,0)coordinate(bA) arc (\tilt+\gap:90:\cRo)coordinate(bB)--++(-\cW,0)coordinate(bC);
+\path(aB)--++(\cW,0)coordinate(cA) arc (180+\tilt-\gap:\tilt+\gap:\cRi)coordinate(cB);
+%
+\draw (90+\bush:\bR)--++(\cW,0); %upper bush lower back horizontal edge
+\draw(aB)--++(\cW,0) arc (180+\tilt-\gap:\tilt+\gap:\cRi);
+\path[fill=white] (\tilt+\gap:\cRi) arc (\tilt+\gap:180+\tilt-\gap:\cRi) --++(180+\tilt-\gap:\cT) arc (180+\tilt-\gap:90:\cRo)--++(\cW,0) arc (90:\tilt+\gap:\cRo)--++(-\cW,0) --cycle;
+\draw (\tilt+\gap:\cRi) arc (\tilt+\gap:180+\tilt-\gap:\cRi) --++(180+\tilt-\gap:\cT) arc (180+\tilt-\gap:\tilt+\gap:\cRo)--cycle;
+\draw(aD)--++(\cW,0) arc (\tilt+\gap:90:\cRo)--++(-\cW,0);
+
+%upper bush
+\path (90+\bush:\bR)coordinate(bbA) arc (90+\bush:90-\bush:\bR)coordinate(bbB) --++(\cW,0)coordinate(bbC)--++(0,\cW)coordinate(bbD)--++(-\cW,0)coordinate(bbE)--++(0,-\cW);
+\path(bbA)--++(0,\cW)coordinate(bbF)--(bbE);
+\path[fill=white] (90+\bush:\bR) arc (90+\bush:90-\bush:\bR) --(bbE)--(bbF)--cycle;
+\path[fill=white](bbB)--(bbC)--(bbD)--(bbE)--cycle;
+%
+\draw (90+\bush:\bR) arc (90+\bush:90-\bush:\bR) --++(\cW,0)--++(0,\cW)--++(-\cW,0)--++(0,-\cW);
+\draw(bbA)--++(0,\cW)--(bbE);
+%
+%lower commutator
+\path (180+\tilt+\gap:\cRi)coordinate(aA) arc (180+\tilt+\gap:180+180+\tilt-\gap:\cRi)coordinate(aB)--++(180+180+\tilt-\gap:\cT)coordinate(aC) arc (180+180+\tilt-\gap:180+\tilt+\gap:\cRo)coordinate(aD)--cycle;
+\path(aB)--++(\cW,0)coordinate(aaA)--++(\tilt-\gap:\cT)coordinate(aaB)--++(-\cW,0);
+\path(aD)--++(\cW,0)coordinate(aaC)--++(\tilt-\gap:\cT)coordinate(aaD)--++(-\cW,0);
+\path (aaD) arc (180+\tilt+\gap:180+180+\tilt-\gap:\cRi);
+\path(aaB) arc (180+180+\tilt-\gap:270:\cRo)coordinate(aaE)--++(-\cW,0)coordinate(aaF);
+%lower bush
+\path(270-\bush:\bR)coordinate(bbbA) arc (270-\bush:270+\bush:\bR)coordinate(bbbB)--++(\cW,0)coordinate(bbbC)--++(0,-\cW)coordinate(bbbD)--++(-\cW,0)coordinate(bbbE)--++(0,\cW);
+\path(270-\bush:\bR) --++(0,-\cW)--(bbbE);
+\path (bbbA)--++(\cW,0)coordinate(bbbG) arc (270-\bush:270+\bush:\bR);
+\path (bbbA)++(0,-\cW)coordinate(bbbF);
+%========
+\draw(bbbA)--++(\cW,0)coordinate(bbbG) arc (270-\bush:270+\bush:\bR);
+\draw (aaD) arc (180+\tilt+\gap:180+180+\tilt-\gap:\cRi);
+\path[fill=white](aA) arc (180+\tilt+\gap:180+180+\tilt-\gap:\cRi) --(aaA)--(aaB)  arc (180+180+\tilt-\gap:270:\cRo)--++(-\cW,0) arc (270:180+\tilt-\gap:\cRo)--cycle;
+\draw (180+\tilt+\gap:\cRi) arc (180+\tilt+\gap:180+180+\tilt-\gap:\cRi)--++(180+180+\tilt-\gap:\cT) arc (180+180+\tilt-\gap:180+\tilt+\gap:\cRo)--cycle;
+\draw(aB)--++(\cW,0)--++(\tilt-\gap:\cT)--++(-\cW,0);
+\draw(aD)--++(\cW,0)--++(\tilt-\gap:\cT)--++(-\cW,0);
+\draw(aaB) arc (180+180+\tilt-\gap:270:\cRo)--++(-\cW,0);
+%lower bush
+\path[fill=white](bbbA) arc (270-\bush:270+\bush:\bR)--++(\cW,0)--++(0,-\cW)--++(-\cW,0)--(bbbF)--cycle;
+\draw(270-\bush:\bR)coordinate(bbbA) arc (270-\bush:270+\bush:\bR)coordinate(bbbB)--++(\cW,0)coordinate(bbbC)--++(0,-\cW)coordinate(bbbD)--++(-\cW,0)coordinate(bbbE)--++(0,\cW);
+\draw(270-\bush:\bR) --++(0,-\cW)--(bbbE);
+%grid
+%\draw[gray] (-10,-5) grid (4,3);
+%coil
+\draw[thick] (-\coilLdel,-\coilWdel)coordinate(coilS)--++(0,-\coilW)--++(-\coilL,0)--++(0,2*\coilW+2*\coilWdel)--++(\coilL,0)--++(0,-\coilW)coordinate(coilE);
+\draw[thick](coilS)--++(\coilLdel/2,0) to [out=0,in=150] (-0.9,-0.4)coordinate (coilSend) ;
+\draw[thick](coilE)--++(\coilLdel/2,0) to [out=0,in=210] (-0.9,0.4)coordinate (coilEend);
+\draw[fill] (coilSend) circle (1.5pt);
+\draw[fill] (coilEend) circle (1.5pt);
+%magnet
+\draw (coilS)++(0,-2.5*\coilW)--++(0,1.5*\coilW-0.2)--++(-\coilL,0)--++(0,-1.5*\coilW+0.2);
+\draw (coilE)++(0,2.5*\coilW)--++(0,-1.5*\coilW+0.2)--++(-\coilL,0)--++(0,1.5*\coilW-0.2);
+\draw node at (-6.5,-1.25){$N$};
+\draw node at (-6.5,1.25){$S$};
+\foreach \x in {-8,-7,-6,-5}{
+\draw[gray,-latex] (\x,-\coilWdel-\coilW-0.2)--++(0,2*\coilW+2*\coilWdel+0.4);}
+%bush connections
+\draw[thick] (bbD)++(0,-0.1) to [out=0,in=180] ++(3,-1) to [short,-o]++(0.1,0)coordinate(outputA);
+\draw [fill] (bbD)++(0,-0.1) circle (1.5pt);
+\draw[thick] (bbbD)++(0,0.1) to [out=0,in=180] ++(3,1)to [short,-o]++(0.1,0)coordinate(outputB);
+\draw [fill] (bbbD)++(0,0.1) circle (1.5pt);
+\draw node[right] at ($(outputA)!0.5!(outputB)$){$\begin{aligned}  &+\\ e&=-\tfrac{\textup{d} \lambda}{\textup{d} t}\\ &-  \end{aligned}$};
+%direction of rotation
+\draw[->] (2*\cW,0)++(-30:\cRo) arc (-30:60:\cRo);
+\draw[<-] (2.6,0.5) to [out=0,in=180] ++(3,1)node[right]{\small{\RL{گھومنے کی سمت}}};
+%text
+\draw (\tilt+\gap:\cRo)++(\cW/2,0.2)node{د};
+\draw (\tilt-\gap:\cRo)++(\cW/2,-0.2)node{ڈ};
+\draw (90:\cRo+\cW/2)node{$+$};
+\draw (270:\cRo+\cW/2)node{$-$};
+\draw[<-] (-0.6,-1.75) to [out=180,in=0] ++(-1,-0.25)node[left]{\RL{کاربن بُش}};
+\draw[<-] (-0.8,0.75) to [out=180,in=0] ++(-1,1)node[left]{\RL{میکانی سمتکار}};
+\draw node at (-2.5,0.25){د};
+\draw node at (-2.5,-0.27){ڈ};
+\draw node at (-6.5,0){\small{\RL{ایک چکر لچھا}}};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

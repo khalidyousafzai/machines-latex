@@ -1,0 +1,65 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%ROTOR
+\pgfmathsetmacro{\pTheta}{150}
+\pgfmathsetmacro{\pY}{0.2}
+\rotor{2}{90}
+%DOT on rotor
+\draw (0:\rR-\pX) circle (2.5pt);
+\draw[fill] (0:\rR-\pX) circle (1.5pt);
+%CROSS on rotor
+\draw (180:\rR-\pX) circle (2.5pt);
+\draw (180:\rR-\pX)++(45:2.2pt)--++(-135:4.4pt);
+\draw (180:\rR-\pX)++(-45:2.2pt)--++(135:4.4pt);
+%STATOR
+\draw ([shift={(-85:\sRi+\gap)}]0,0) arc (-85:85:\sRi+\gap);
+\draw(85:\sRi+\gap)--++(0:1.2*\sRo);
+\draw(-85:\sRi+\gap)--++(0:1.2*\sRo);
+\node[very thick,gray] at (0:1.1*\sRo){$S$};
+\draw ([shift={(95:\sRi+\gap)}]0,0) arc (95:270-5:\sRi+\gap);
+\draw(95:\sRi+\gap)--++(180:1.2*\sRo);
+\draw(-95:\sRi+\gap)--++(180:1.2*\sRo);
+\node[very thick,gray] at (180:1.1*\sRo){$N$};
+%flux at south pole
+\foreach \angle in {-60,-40,40,60}{
+\draw[gray,-latex] (0,0)++(\angle:\rR-2*\gap)--++(\angle:6*\gap);  }
+%
+\draw[gray,latex-] (0,0)++(-40:\rR+4*\gap) to [out=45,in=180] ++(1,0.3)node[right]{$B_S$};
+%flux at north pole
+\foreach \angle in {120,140,160,180,200,220,240}{
+\draw[gray,latex-] (0,0)++(\angle:\rR-2*\gap)--++(\angle:6*\gap);  }
+%
+\draw[gray,latex-] (0,0)++(220:\rR+4*\gap) to [out=135,in=0] ++(-1,0.3)node[left]{$B_N$};
+%velocity
+\draw[thick,-latex](0:\rR-\pX)--++(0,-0.7)--++(0,1.4)coordinate (velocityTip);
+\draw[gray,stealth-] (velocityTip) to [out=45,in=180] ++(0.5,0.3) node[right,text=black] {$v_s$};
+%text
+\draw[-stealth](0,0)--++(0:\rR-\pX) node[fill=white,pos=0.5]{$r$};
+\draw[-latex]([shift={(30:0.7*\rR)}]0,0) arc (30:110:0.7*\rR);
+\draw node[fill=white] at (70:0.7*\rR){$\omega$};
+%
+\draw node[align=right] at (-3.5,0.75){\RL{محوری لمبائی} \\ \RL{$l$ ہے۔}};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

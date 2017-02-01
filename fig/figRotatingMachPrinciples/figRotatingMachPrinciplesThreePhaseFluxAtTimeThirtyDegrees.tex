@@ -1,0 +1,59 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\stator{6}{30}
+\slotDot{90,150}
+\slotCross{-30,-90}
+\slotEmptyCircle{30,210}
+\draw (0,0) circle (\rR);
+%
+%\slotName{45/a_1/,-45/a_1'/below,135/a_2'/,-135/a_2/below}
+\draw (90-15:\sRi+1.25*\delR)node[]{$a$};
+\draw (270-15:\sRi+1.25*\delR)node[]{$a'$};
+\draw (210-15:\sRi+1.25*\delR)node[]{$b$};
+\draw (30-15:\sRi+1.25*\delR)node[]{$b'$};
+\draw (-30-15:\sRi+1.25*\delR)node[]{$c$};
+\draw (150-15:\sRi+1.25*\delR)node[]{$c'$};
+%
+\draw[gray,-latex](0,0)--(0:1.8*\rR);
+\draw[gray,dashed,-latex](0,0)--(120:1.8*\rR)node[above]{$\tau_b$};
+\draw[gray,dashed,-latex](0,0)--(-120:1.8*\rR)node[below]{$\tau_c$};
+\draw[-latex](0,0)--(0:1.8*0.866*\rR)node[pos=0.4,below]{$\tau_a$};
+%\draw[-latex](0,0)--(-60:0.9*\rR)node[left]{$\tau_b$};
+\draw[-latex](0,0)--(60:1.8*0.866*\rR)node[pos=0.4,left]{$\tau_c$};
+%=============
+\begin{scope}[xshift=0.75*\shiftX]
+\draw[-latex](0,0)--++(0:1.8*0.866*\rR)node[pos=0.5,below]{$\tau_a$}coordinate(tipA);
+\draw[-latex](tipA)--++(60:1.8*0.866*\rR)node[pos=0.4,right]{$\tau_c$}coordinate(tipC);
+\draw[-latex,thick](0,0)--(tipC)node[pos=0.5,above left]{ $\tau=\tfrac{3}{2}\tau_0$};
+*
+%\draw(tipA)++(60:0.2*\rR) arc (60:180:0.2*\rR);
+%\draw (tipA)++(120:0.4*\rR)node{$120^\circ$};
+\draw(0:0.5*\rR) arc (0:30:0.5*\rR);
+\draw node at (12:0.9*\rR){$30^\circ$};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

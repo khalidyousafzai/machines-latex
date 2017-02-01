@@ -1,0 +1,65 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%
+\draw[-latex](0,0)node[shift={(210:0.3cm)}]{$A$}--++(0:3 cm)coordinate(aTip)node[above,pos=0.8]{$\tau_a$}node[below]{$B$};
+\draw[gray,-latex](0,0)--++(60:2 cm)node[above left,pos=0.5]{$\tau_r$}node[shift={(60:0.3 cm)}]{D};
+\draw[-latex](aTip)--++(60:2cm)coordinate(rTip)node[left,pos=0.4]{$\tau_r$};
+\draw[-latex](0,0)--(rTip)node[above,pos=0.7]{$\tau_{ar}$}node[shift={(23:0.3cm)}]{$C$}node[yshift=-2cm]{$E$};
+\draw[gray](aTip)-|(rTip);
+\draw[gray](aTip)++(0.3,0) arc (0:60:0.3 cm);
+\draw[gray] (aTip)++(25:0.6 cm) node{$\theta_{ar}$};
+%angles
+\draw(0:1 cm) arc (0:23.413:1 cm);
+\draw (11:1.3 cm) node{$\theta_{a}$};
+%
+\draw[gray](23.413:0.8 cm) arc (23.413:60:0.8 cm);
+\draw[gray] (41:1.1 cm) node{$\theta_{r}$};
+%
+\draw[dashed](0:1.7 cm) arc (0:60:1.7cm);
+\draw (40:2cm) node{$\theta_{ar}$};
+%========
+\begin{scope}[xshift=7cm]
+\draw[gray,-latex](0,0)node[black,shift={(210:0.3cm)}]{$M$}--++(0:3 cm)coordinate(aTip)node[gray,above,pos=0.8]{$\tau_a$}node[below]{$N$};
+\draw[-latex](0,0)--++(60:2 cm)node[above left,pos=0.5]{$\tau_r$}coordinate(rTipR)node[shift={(180:0.3 cm)}]{S};
+\draw[-latex](rTipR)--++(0:3 cm)coordinate(aTip)node[below,pos=0.4]{$\tau_a$};
+\draw[-latex](0,0)--(aTip)node[below,pos=0.7]{$\tau_{ar}$}node[shift={(23:0.3cm)}]{$Q$};
+\draw[gray](rTipR)--++(60:1.5 cm)node[shift={(-0.2,0.2)}]{$W$}--(aTip);
+%angles
+\draw(0:1 cm) arc (0:23.413:1 cm);
+\draw (11:1.3 cm) node[gray]{$\theta_{a}$};
+%
+\draw[gray](23.413:0.8 cm) arc (23.413:60:0.8 cm);
+\draw (41:1.1 cm) node{$\theta_{r}$};
+%
+\draw[dashed](0:1.7 cm) arc (0:60:1.7cm);
+\draw (40:2cm) node{$\theta_{ar}$};
+%
+\draw[gray](rTipR)++(0.5,0) arc (0:60:0.5);
+\draw[gray](rTipR)++(25:0.9)node{$\theta_{ar}$};
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

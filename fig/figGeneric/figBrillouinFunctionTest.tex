@@ -1,0 +1,83 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+  
+\begin{document}
+\begin{urdufont}
+\pgfmathsetmacro{\J}{0.5}
+\pgfmathsetmacro{\k}{(2*\J+1)/(2*\J)}
+\begin{tikzpicture}[
+  declare function={
+    kBJ(\x)= and(\x>-0.001, \x< 0.001)*(0)+or(\x<-0.001, \x>0.001)*(\k*(e^(\k*\x)+e^(-\k*\x))/(e^(\k*\x)-e^(-\k*\x))-1/(2*\J)*(e^(\x/(2*\J))+e^(-\x/(2*\J)))/(e^(\x/(2*\J))-e^(-\x/(2*\J))));
+  }
+]
+\begin{axis}[
+  axis x line=middle, axis y line=middle,
+ % ymin=-5, ymax=5, ytick={-5,...,5}, 
+axis line style=-,
+ticks=none,
+ylabel=$e_{q0}$,
+  %xmin=-5, xmax=5, xtick={-5,...,5}, 
+xlabel=$I_m$,
+xlabel style={below right},
+ ylabel style={above left},
+]
+\pgfmathsetmacro{\kpi}{2}
+\addplot[blue,domain=\kpi:-\kpi]{-0.2*cos(x*90/\kpi)^2+kBJ(x)};
+\addplot[blue,domain=-\kpi:\kpi]{0.2*cos(x*90/\kpi)^2+kBJ(x)};
+\end{axis}
+%
+%grid
+\draw[gray](0,0) grid (5,5);
+%
+\end{tikzpicture}
+%=======================
+\pgfmathsetmacro{\J}{0.5}
+\pgfmathsetmacro{\k}{(2*\J+1)/(2*\J)}
+\pgfmathsetmacro{\kpi}{2}
+
+\begin{tikzpicture}[
+  declare function={
+    kBJ(\x)= and(\x>-0.001, \x< 0.001)*(0)+or(\x<-0.001, \x>0.001)*(\k*(e^(\k*\x)+e^(-\k*\x))/(e^(\k*\x)-e^(-\k*\x))-1/(2*\J)*(e^(\x/(2*\J))+e^(-\x/(2*\J)))/(e^(\x/(2*\J))-e^(-\x/(2*\J))));}
+%
+\pgfmathsetmacro{\kvp}{-0.2*cos(\kpi*90/\kpi)^2+kBJ(\kpi)}
+ declare function={
+    kt(\x)=asin(\x/(\kvp);}
+]
+\begin{axis}[
+  axis x line=middle, axis y line=middle,
+ % ymin=-5, ymax=5, ytick={-5,...,5}, 
+axis line style=-,
+ticks=none,
+ylabel=$e_{q0}$,
+  %xmin=-5, xmax=5, xtick={-5,...,5}, 
+xlabel=$I_m$,
+xlabel style={below right},
+ ylabel style={above left},
+]
+%\addplot[domain=\kpi:-\kpi] ({\kt(x)},{-0.2*cos(x*90/\kpi)^2+kBJ(x)});
+\addplot[blue,domain=\kpi:-\kpi]{-0.2*cos(x*90/\kpi)^2+kBJ(x)};
+\addplot[blue,domain=-\kpi:\kpi]{0.2*cos(x*90/\kpi)^2+kBJ(x)};
+\end{axis}
+%
+%grid
+\draw[gray](0,0) grid (5,5);
+%
+\end{tikzpicture}
+
+
+\end{urdufont}
+\end{document}
+%---------------------
+

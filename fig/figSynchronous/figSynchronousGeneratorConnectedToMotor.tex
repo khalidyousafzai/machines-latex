@@ -1,0 +1,102 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (5,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (5,2);
+%
+\draw(0,0) to [short,o-,i={$\hat{I}_a$}] ++(0.5,0) to [inductor,l={$j X_{sm}$}]++(2,0) to [sinusoidal voltage source] ++(0,-2) to [short,-o] (0,-2);
+\draw node at (3.5,-1){$
+\begin{aligned}
+&+\\
+&{E}_{am}\\
+&-
+\end{aligned}$};
+\draw node at (0,-1){$\begin{aligned}
+&+\\
+&\hat{V}_s\\
+&-
+\end{aligned} $};
+%
+\draw node at (1.25,-2.25){\RL{الف}};
+%===========
+%===========
+\begin{scope}[xshift=-6cm]
+\draw[gray,thick,-latex](0,0)--++(0:1)node[above]{$\hat{I}_a$};
+\draw[-latex](0,0)--++(0:3)node[above,pos=0.8]{$\hat{V}_{s}$}coordinate(vTip);
+\draw[latex-](vTip)--++(-90:1.5)node[pos=0.5,right]{$j \hat{I}_aX_{sm}$}coordinate(ixStart);
+\draw[-latex,thick](0,0)--(ixStart)node[below,pos=0.6]{$\hat{E}_{am,m}$};
+%
+\draw node at (1.5,-2.25){\RL{ب}};
+\end{scope}
+%==========================
+%===========================
+\begin{scope}[xshift=-3.5cm,yshift=-6cm]
+\draw(0,0) to [sinusoidal voltage source] ++(0,2) to [inductor,l={$j X_{sg}$}]++(2,0) to [short,i={$\hat{I}_a$}] ++(0.5,0) to [inductor,l={$j X_{sm}$}] ++(2,0) to [sinusoidal voltage source]++(0,-2) to (0,0);
+\draw node at (2.25,1){$\begin{aligned}
+&+\\
+&\hat{V}_s\\
+&-
+\end{aligned} $};
+\draw node at (-1,1){$\begin{aligned}
+&+\\
+&\hat{E}_{am,g}\\
+&-
+\end{aligned} $};
+\draw node at (5.5,1){$\begin{aligned}
+&+\\
+&\hat{E}_{am,m}\\
+&-
+\end{aligned} $};
+\draw node at (7,1){\RL{پ}};
+\end{scope}
+%===============================
+%======================
+\begin{scope}[yshift=-9cm]
+\draw[gray,thick,-latex](0,0)--++(0:1.5)node[above]{$\hat{I}_a$};
+\draw[-latex](0,0)--++(0:3)node[above,pos=0.8]{$\hat{V}_{s}$}coordinate(vTip);
+\draw[latex-](vTip)--++(-90:1.5)node[pos=0.5,right]{$j \hat{I}_aX_{sm}$}coordinate(ixStart);
+\draw[-latex,thick](0,0)--(ixStart)node[below,pos=0.6]{$\hat{E}_{am,m}$};
+\draw[-latex](vTip)--++(90:2)node[pos=0.5,right]{$j \hat{I}_aX_{sg}$}coordinate(ixStartA);
+\draw[-latex,thick](0,0)--(ixStartA)node[above left,pos=0.6]{$\hat{E}_{am,g}$};
+%
+\draw node at (1.5,-2.25){\RL{ت}};
+\end{scope}
+%========================
+%=========================
+%======================
+\begin{scope}[xshift=-5cm ,yshift=-10cm]
+\pgfmathsetmacro{\phaseI}{45}
+\pgfmathsetmacro{\phaseV}{30}
+\draw[gray,thick,-latex](0,0)--++(\phaseI:4)node[right]{$\hat{I}_a$};
+\draw[-latex](0,0)--++(\phaseV:3)node[below,pos=0.8]{$\hat{V}_{s}$}coordinate(vTip);
+\draw[latex-](vTip)--++(-90+\phaseI:1.5)node[pos=0.3,above right]{$j \hat{I}_aX_{sm}$}coordinate(ixStart);
+\draw[-latex,thick](0,0)--(ixStart)node[below,pos=0.6]{$\hat{E}_{am,m}$};
+\draw[-latex](vTip)--++(90+\phaseI:2)node[above right]{$j \hat{I}_aX_{sg}$}coordinate(ixStartA);
+\draw[-latex,thick](0,0)--(ixStartA)node[above left,pos=0.6]{$\hat{E}_{am,g}$};
+%
+\draw node at (1.5,-1){\RL{ٹ}};
+
+\end{scope}
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

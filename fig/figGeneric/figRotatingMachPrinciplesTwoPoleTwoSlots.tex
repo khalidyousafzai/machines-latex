@@ -1,0 +1,43 @@
+\documaneclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%
+\stator{2}{90}
+\rotor{2}{30}
+
+%FLUX
+\begin{scope}[rotate=30]
+\pgfmathsetmacro{\delAngle}{30}   %smooth flux entry into stator
+\draw[gray] (0,\rT/5)--++(0:0.8*\rR) to [out=0,in=-90+\delAngle] (\delAngle:\sRo-0.2) arc (\delAngle:180-\delAngle:\sRo-0.2)coordinate (leftUpperFlux);
+\draw[gray,<-](0,\rT/5)--++(180:0.8*\rR) to [out=180,in=-90-\delAngle] (leftUpperFlux);
+\draw[gray,->] (90-1:\sRo-0.2) to [out=180,in=0](90+1:\sRo-0.2);
+%
+\draw[gray] (0,-\rT/5)--++(0:0.8*\rR) to [out=0,in=90-\delAngle] (-\delAngle:\sRo-0.2) arc (-\delAngle:-180+\delAngle:\sRo-0.2)coordinate (leftLowerFlux);
+\draw[gray,<-](0,-\rT/5)--++(180:0.8*\rR) to [out=180,in=90+\delAngle] (leftLowerFlux);
+\draw[gray,->] (-90+1:\sRo-0.2) to [out=180,in=0](-90-1:\sRo-0.2);
+%
+\draw node at (0:0.6*\rR){$N$};
+\draw node at (180:0.6*\rR){$S$};
+\end{scope}
+
+
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
+%---------------------
+

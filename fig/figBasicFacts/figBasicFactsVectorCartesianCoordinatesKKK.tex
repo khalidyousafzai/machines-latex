@@ -1,0 +1,46 @@
+\begin{tikzpicture}
+\def\kkkx{1}
+\def\kkky{1}
+\def\kkkz{0.75}
+
+\tdplotsetmaincoords{70}{110}
+
+\coordinate (O) at (0,0,0);
+\coordinate (P) at (\kkkx,\kkky,\kkkz);
+%axis
+\draw[gray] (0,0,0) -- (2,0,0);
+\draw[gray] (0,0,0) -- (0,1.5,0);
+\draw[gray] (0,0,0) -- (0,0,1);
+%equations
+\node[anchor=east] at (0,2.5,1) {$\begin{aligned}
+& P(x,y,z)\\
+\\
+\bf{A}&={\bf{A}}_x+{\bf{A}}_y+{\bf{A}}_z\\
+&=x \ax+y \ay+z \az
+     \end{aligned}$};
+%text
+\node[anchor=east] at (\kkkx,0,0) {$x$};
+\node[anchor=south west] at (0,\kkky,0) {$y$};
+\node[anchor=east] at (0,0,\kkkz) {$z$};
+\node[anchor=east] at (0,0,0) {$O$};
+\node[anchor=south] at (\kkkx,\kkky,\kkkz) {$P$};
+
+%dashed
+\draw[dashed] (\kkkx,\kkky,\kkkz)--(\kkkx,0,\kkkz);
+\draw[dashed] (\kkkx,0,\kkkz)--(\kkkx,0,0);
+
+\draw[dashed] (\kkkx,\kkky,0)--(0,\kkky,0);
+\draw[dashed] (0,\kkky,\kkkz)--(\kkkx,\kkky,\kkkz);
+\draw[dashed] (0,\kkky,\kkkz)--(0,\kkky,0);
+
+\draw[dashed] (0,\kkky,\kkkz)--(0,0,\kkkz);
+\draw[dashed] (0,0,\kkkz)--(\kkkx,0,\kkkz);
+%vectors
+\draw[thick,-latex] (0,0,0)--(\kkkx,\kkky,\kkkz) node[pos=0.4, above]{$\bf{A}$};
+\draw[thin,-latex] (0,0,0)--(\kkkx,0,0) node[pos=0.6, right]{${\bf{A}}_x$};
+\draw[thin,-latex] (\kkkx,0,0)--(\kkkx,\kkky,0)  node[pos=0.6, below]{${\bf{A}}_y$};
+\draw[thin,-latex] (\kkkx,\kkky,0)--(\kkkx,\kkky,\kkkz)  node[pos=0.7, right]{${\bf{A}}_z$};
+
+\end{tikzpicture}%
+
+

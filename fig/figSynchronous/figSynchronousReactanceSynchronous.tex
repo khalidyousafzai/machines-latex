@@ -1,0 +1,44 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%
+ \draw(0,0) to [short,o-,i={$\hat{I}_a$}] ++(1,0) to [resistor,l={$R_a$}] ++(2,0) to [inductor,l={$j X_s$}] ++(2,0) to ++(0,-2) to [short,-o] (0,-2);
+\draw node at (0,-1){$
+\begin{aligned}
+&+\\
+&\hat{E}_{am}\\
+&-
+\end{aligned} $};
+%txt
+\draw node[right] at (6,-1){$
+\begin{aligned}
+\hat{E}_{am}&=\hat{I}_a R_a +j \hat{I}_a X_s\\
+&\approx j \hat{I}_a X_s \quad \quad \quad X_s \gg R_a\\
+X_s&=\frac{|\hat{E}_{am}|}{|\hat{I}_a|}
+\end{aligned}
+$};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

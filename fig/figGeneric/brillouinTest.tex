@@ -1,0 +1,87 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.9}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+\listfiles
+  
+\begin{document}
+\begin{urdufont}
+\pgfmathsetmacro{\J}{0.5}
+\pgfmathsetmacro{\k}{(2*\J+1)/(2*\J)}
+
+%\def\kcoth(#1){(e^(#1)+e^(-#1))/(e^(#1)-e^(-#1))}    %this gives correct answers
+%\def\Brillouin(#1){and(#1>-0.001, #1< 0.001)*(0)+or(#1<-0.001, #1>0.001)*(\k*(e^(\k*#1)+e^(-\k*#1))/(e^(\k*#1)-e^(-\k*#1))-1/(2*\J)*(e^(#1/(2*\J))+e^(-#1/(2*\J)))/(e^(#1/(2*\J))-e^(-#1/(2*\J))))}    %this gives correct answers
+%
+\pgfmathdeclarefunction{kcoth}{1}{\pgfmathparse{(e^(#1)+e^(-#1))/(e^(#1)-e^(-#1))}}            %but i like this much better
+\pgfmathdeclarefunction{Brillouin}{1}{\pgfmathparse{and(#1>-0.001, #1< 0.001)*(0)+or(#1<-0.001, #1>0.001)*(\k*kcoth(#1*\k)-1/(2*\J)*kcoth(#1/(2*\J)))}}%
+%
+\pgfmathsetmacro{\xlmt}{2}
+\pgfmathsetmacro{\xhys}{0.6}
+\pgfmathsetmacro{\xshift}{-8}
+%
+\pgfmathdeclarefunction{Bnk}{1}{Brillouin(J,#1)+(Brillouin(J,\xlmt)-Brillouin(J,#1))*\xhys/Brillouin(J,\xlmt)}
+\pgfmathdeclarefunction{Bnp}{1}{Brillouin(J,#1)-(Brillouin(J,\xlmt)-Brillouin(J,#1))*\xhys/Brillouin(J,\xlmt)}
+%
+\pgfmathdeclarefunction{tx}{1}{\pgfmathparse{asin(Brillouin(#1)/Brillouin(\xlmt))}} 
+\pgfmathdeclarefunction{txk}{1}{\pgfmathparse{asin(Bnk(#1)/Brillouin(\xlmt))}}
+\pgfmathdeclarefunction{txp}{1}{\pgfmathparse{asin(Bnp(#1)/Brillouin(\xlmt))}}
+
+
+\begin{tikzpicture}
+	\begin{axis}[
+axis x line=middle, 
+axis y line=none,
+axis line style={-},
+%  xRin=-1, xRax=1, ytick={-1,...,1}, 
+ticks=none,
+ylabel=$B$,
+%  xRin=-xF(\xlmt), xRax=xF(\xlmt), 
+ % xRin=-1.1*Brillouin(\xlmt), xRax=1.1*Brillouin(\xlmt), 
+xlabel=$H$,
+xlabel style={below right},
+ ylabel style={above left},
+]
+%hysterisis loop
+\addplot[ domain=0:\xlmt,smooth]({x},{Bnk(x)});
+%\addplot[ domain=0:\xlmt,smooth]({-x},{-Bnk(x)});
+%\addplot[ domain=0:\xlmt,smooth]({x},{Bnp(x)});
+%\addplot[ domain=0:\xlmt,smooth]({-x},{-Bnp(x)});
+
+%excitation current
+%\addplot[ domain=0:\xlmt,smooth]({\xshift-txk(x)},{-x});
+%\addplot[ domain=0:\xlmt,smooth]({\xshift-pi+txk(x)},{-x});
+%\addplot[ domain=0:\xlmt,smooth]({\xshift+txp(x)},{x});
+%\addplot[ domain=0:\xlmt,smooth]({\xshift+pi-txp(x)},{x});
+%sine flux
+%\addplot[ domain=-pi:pi,smooth,variable=\t]({\xshift+\t},{Brillouin(\xlmt)*sin(180*\t/pi)});
+
+%marking point along the RISING FLUX
+
+%marking point along the RISING FLUX
+%\addplot[] coordinates {(\xRa,0)(\xRa,\Bna)};
+%\addplot[] coordinates {(\xRa,\Bna)(\xshift+\txa,\Bna)};
+%\addplot[] coordinates {(\xshift+\txa,\Bna)(\xshift+\txa,0)};
+\pgfmathsetmacro{\kk}{10^(0.5) + 10^(-0.5))}
+\node at (axis cs:1,1){\kk};
+\end{axis}
+
+\end{tikzpicture}%
+%==============================
+
+%==============================
+\end{urdufont}
+\end{document}
+%---------------------
+

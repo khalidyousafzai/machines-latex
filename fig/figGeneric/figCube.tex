@@ -1,0 +1,63 @@
+\documentclass[b5paper]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+ \pgfmathsetmacro{\x}{2}            %start points, lower left corner
+ \pgfmathsetmacro{\y}{4}
+\pgfmathsetmacro{\z}{3}
+\pgfmathsetmacro{\tickL}{0.05}
+
+\begin{document}
+
+\begin{tikzpicture}[x={(-0.5 cm,-0.5 cm)},y={(1 cm,0 cm)},z={(0 cm,1 cm)}]
+
+
+%front of cube
+\coordinate (n1) at (\x,0,0);
+\coordinate (n2) at (\x,0,\z);
+\coordinate (n3) at (\x,\y,\z);
+\coordinate (n4) at (\x,\y,0);
+%back of cube
+\coordinate (n5) at (0,0,0);
+\coordinate (n6) at (0,0,\z);
+\coordinate (n7) at (0,\y,\z);
+\coordinate (n8) at (0,\y,0);
+%axis
+\draw[gray] (0,0,0)--(\x+0.5,0,0) node[below left]{$x$};
+\draw[gray] (0,0,0)--(0,\y+1,0) node[right]{$y$};
+\draw[gray] (0,0,0)--(0,0,\z+0.5) node[above]{$z$};
+%ticks
+\foreach \xt in {0,...,\x}{\draw[gray] (\xt,-\tickL,0)--(\xt,\tickL,0);}
+\foreach \yt in {0,...,\y}{\draw[gray] (-\tickL,\yt,0)--(\tickL,\yt,0);}
+\foreach \zt in {0,...,\z}{\draw[gray] (0,-\tickL,\zt)--(0,\tickL,\zt);}
+%vectors
+\draw[-latex] (0,0,0)--(\x,\y,\z)node[pos=0.5,above left]{${\bf{A}}$};
+\draw[-latex] (0,0,0)--(\x,0,0)node[pos=0.3,left]{${\bf{A}}_x$};
+\draw[-latex] (\x,0,0)--(\x,\y,0)node[pos=0.5,below]{${\bf{A}}_y$};
+\draw[-latex] (\x,\y,0)--(\x,\y,\z)node[pos=0.5,right]{${\bf{A}}_z$};
+%
+%lines on body
+%\foreach \delX in {0,...,\x}{
+%\draw[gray,thin](\delX,\y,0)--(\delX,\y,\z);
+%\draw[gray,thin](\delX,0,\z)--(\delX,\y,\z);   }
+%
+%\foreach \delY in {0,...,\y}{
+%\draw[gray,thin](\x,\delY,0)--(\x,\delY,\z);
+%\draw[gray,thin](0,\delY,\z)--(\x,\delY,\z);  }
+%
+%\foreach \delZ  in {0,...,\z}{
+%\draw[gray,thin](0,\y,\delZ)--(\x,\y,\delZ);
+%\draw[gray,thin](\x,0,\delZ)--(\x,\y,\delZ);  }
+%
+%cube
+%\shade[left color=transparent!0, right color=transparent!100,shading angle=105,fill opacity=0.5,draw=gray] (n1)--(n2)--(n3)--(n4)--cycle;   %front side
+%\shade[right color=gray!10,left color=black!50,shading angle=105,fill opacity=0.5,draw=gray] (n2)--(n6)--(n7)--(n3)--cycle;   %top side
+%\shade[right color=gray!10,left color=black!50,shading angle=105,fill opacity=0.5,draw=gray] (n3)--(n7)--(n8)--(n4)--cycle;     %right side
+%
+%\shade[left color=transparent!100, right color=transparent!0,shading angle=105,fill opacity=0.5] (n1)--(n2)--(n3)--(n4)--cycle;   %front side
+%\shade[left color=transparent!100, right color=transparent!0,shading angle=45,fill opacity=0.5] (n2)--(n6)--(n7)--(n3)--cycle;   %top side
+%\shade[left color=transparent!0, right color=transparent!100,shading angle=105,fill opacity=0.5] (n3)--(n7)--(n8)--(n4)--cycle;     %right side
+%
+
+\end{tikzpicture}
+
+\end{document}

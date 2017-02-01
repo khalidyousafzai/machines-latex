@@ -1,0 +1,53 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{bm}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\stator{6}{30}
+\slotDot{90,210,330}
+\slotCross{30,150,270}
+%\slotName{comma separated angles/name/NameAtleftORrightOfSlot}
+\slotName{90/a/above right,210/b/above left,330/c/above right}
+\slotName{30/b'/below right,150/c'/below left,270/a'/right}
+%
+\draw (0,0) circle (\rR);
+\draw[-latex] (0,0)--++(0:0.7*\rR)node [above]{$a$};
+\draw[-latex] (0,0)--++(120:0.7*\rR)node [below left]{$b$};
+\draw[-latex] (0,0)--++(-120:0.7*\rR)node [right]{$c$};
+%
+\draw[gray](0:\sRo+0.2)--++(0:0.5 )coordinate[pos=0.5] (angleZero);
+\draw[gray,-stealth](angleZero) arc (0:40:\sRo+0.2+0.25);
+\draw node[gray,fill=white] at (20:\sRo+0.2+0.25){$\theta$};
+%
+\begin{scope}[xshift=3 cm ]
+\draw node[right] at (0,0){$\begin{aligned}
+\tau_a&=\tau_0 \cos (\omega t+\theta_0) \cos (\theta)\\
+\tau_b&=\tau_0 \cos (\omega t+\theta_0-120^\circ) \cos (\theta-120^\circ)\\
+\tau_c&=\tau_0 \cos (\omega t+\theta_0+120^\circ) \cos (\theta+120^\circ)
+\end{aligned}
+$};
+\end{scope}
+%
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
+%---------------------
+

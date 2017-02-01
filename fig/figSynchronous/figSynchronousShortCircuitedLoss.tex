@@ -1,0 +1,35 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%axis
+\draw[] (0,0)--(3,0)node[right]{$ I_a$};
+\draw[] node at (1.5,-0.3){\RL{کسر دور برقی رو}};
+\draw[] (0,0)--(0,2)node[xshift=-0.35cm,rotate=90,pos=0.5]{\RL{طاقت کا ضیاع}};
+%curves
+\draw (0,0) to [out=0,in=-115] (2.2,1.8);
+
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

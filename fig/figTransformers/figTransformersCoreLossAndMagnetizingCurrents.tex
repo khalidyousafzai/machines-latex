@@ -1,0 +1,42 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage[siunitx]{circuitikz}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+ 
+ \pgfmathsetmacro{\t}{0.3}  
+\pgfmathsetmacro{\d}{0.9}  
+\pgfmathsetmacro{\s}{0.05 cm}  
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[help lines,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%
+\draw[gray,thick,-latex](0,0)--(0,-2.5)node[left]{$\hat{\phi}$};
+\draw[gray,thick,-latex](0,0)--(3.5,0)node[right]{$\hat{E}_1$};
+\draw[-latex](0,0)--(3,0)node[above,pos=0.5]{$\hat{I}_c$};
+\draw[-latex](0,0)--(0,-2)node[left,pos=0.5]{$\hat{I}_m$};
+\draw[-latex](0,0)--(3,-2)node[above,pos=0.6]{$\hat{I}_\varphi$};
+%
+\draw[dashed,gray](3,0)--(3,-2)--(0,-2);
+%angle
+\begin{scope}
+\clip (3,-2)--(0,0)--(3,0);
+\draw (0,0) circle (0.6);
+\end{scope}
+\draw(0.9,-0.3)node {$\theta_c$};
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}

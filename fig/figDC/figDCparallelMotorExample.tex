@@ -1,0 +1,43 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usetikzlibrary{decorations.markings}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick](-2,-2) grid (3,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](-2,-2) grid (3,3);
+%
+%\draw (0,0)coordinate(k);
+%\mymotor{k}{tilt angle}
+\draw (0,0)coordinate(k);
+\mymotor{k}{90}{موٹر}
+\draw node at (-1,-0.1){$\begin{aligned}  &+ \\   & E \\ &-  \end{aligned}$};
+\draw (0,0.4) to [resistor,i<={$I_q$}] ++(0,2) --++(2,0)  to  [short,-o,i<={$I_b$}]++(2.5,0)node[below](a){$+$};
+\draw (0,-0.4)--++(0,-0.7) to [short,-o]++(4.5,0)node[above](b){$-$};
+\draw (2,-1.1)  to [inductor,*-] ++(0,1.5) to [resistor,i<={$I_m$},-*] ++(0,2);
+\draw node at ($(a)!0.5!(b)$){$\SI{415}{\volt}$};
+%text
+\draw node at (-1,1.4){$\begin{aligned}  & R_q \\ &\SI{0.05}{\ohm}  \end{aligned}$};
+\draw node at (3,1.4){$\begin{aligned}  & R_m \\ &\SI{60}{\ohm}  \end{aligned}$};
+\draw node at (3,0){$\begin{aligned}  & L_m \\ &1000 \textup{چکر}  \end{aligned}$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

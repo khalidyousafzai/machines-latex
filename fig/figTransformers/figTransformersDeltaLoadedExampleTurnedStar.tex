@@ -1,0 +1,74 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{siunitx}  
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+%transformer outer dimensions
+\pgfmathsetmacro{\shiftX}{9 cm}
+\pgfmathsetmacro{\shiftY}{6.5 cm}
+
+\pgfmathsetmacro{\arm}{2}
+\pgfmathsetmacro{\con}{2.5}
+\pgfmathsetmacro{\conStarS}{\con-\arm*cos(30)}                  %one arm of star is at ninty degree
+\pgfmathsetmacro{\conStarL}{\con+\arm*cos(30)}
+\pgfmathsetmacro{\h}{sqrt(3)/2*\arm}
+\pgfmathsetmacro{\conDeltaS}{\con-\arm/sqrt(3)}                      %one arm of delta is at 90 degree as h=sqrt{3}/2*\arm
+\pgfmathsetmacro{\conDeltaL}{\con+\arm/sqrt(12)}
+\pgfmathsetmacro{\conDeltaZeroS}{\con-\arm*cos(60)}    %one arm of delta is at 0 degree as h=sqrt{3}/2*\arm
+\pgfmathsetmacro{\conDeltaZeroM}{\con}
+\pgfmathsetmacro{\conDeltaZeroL}{\con+\arm*cos(60)}
+
+
+\pgfmathsetmacro{\gap}{3 cm}        %gap between star and delta centres
+\pgfmathsetmacro{\startNintyX}{-\h/3}    %start of delta if one arm is at 90 degrees
+\pgfmathsetmacro{\startNintyY}{-\arm/2}
+\pgfmathsetmacro{\startZeroX}{-\arm/2}   %start of delta if one arm is at 0 degrees
+\pgfmathsetmacro{\startZeroY}{-\h/3} 
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-3,-3) grid (18,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (18,5);
+%
+%DELTA TRANSFORMER
+\draw (\startZeroX,\startZeroY)coordinate(delA){} to [inductor] ++(0:\arm)coordinate(delB){} to [inductor] ++(120:\arm)coordinate(delC){} to [inductor] ++(-120:\arm);
+\draw (delA) to [short,-o]++(180:\conDeltaZeroS);
+\draw (delB) to [short] ++(0,-0.5) to [short,-o]++(180:\conDeltaZeroL);
+\draw (delC) to [short,-o]++(180:\conDeltaZeroM);
+%STAR TRANSFORMER
+\begin{scope}[xshift=\gap]
+\draw (0,0)node[below right]{$n$} to [inductor] ++(0:\arm) coordinate(starA){};
+\draw (0,0) to [inductor,l={$\SI{346.41}{\volt}$}] ++(120:\arm)  to [short] ++(0,0.5) coordinate(starB){};
+\draw (0,0) to [inductor] ++(-120:\arm) to [short] ++(0,-0.5)coordinate(starC){};
+\node at (0,0) (starNN){};
+%----------
+%STAR LOAD
+\begin{scope}[xshift=0.7*\shiftX]
+\draw(0,0) to [resistor] ++(180:0.8*\arm) to [inductor] ++(180:0.8*\arm)coordinate(loadA){}; 
+\draw(0,0) to [resistor,l^={$0.168$}] ++(60:0.8*\arm) to [inductor,l^={$j 0.0639$}] ++(60:0.8*\arm) to [short] ++(0,0.2)coordinate(loadB){}; 
+\draw(0,0) to [resistor] ++(-60:0.8*\arm) to [inductor] ++(-60:0.8*\arm) to [short] ++(0,-0.2) coordinate(loadC){}; 
+\draw (starA) -| (loadA);
+\draw (starB) |- (loadB);
+\draw (starC) |- (loadC);
+\node at (0,0) (loadNN){};
+\draw[gray,dashed] (starNN) --++(45:1) --++(2.5*\arm,0) --(loadNN);
+\end{scope}
+\end{scope}
+%
+
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

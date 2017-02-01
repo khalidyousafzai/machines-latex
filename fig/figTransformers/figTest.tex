@@ -1,0 +1,71 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{siunitx}   
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+\
+%grid
+%\draw[gray,thick](-3,-3) grid (7,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](-3,-3) grid (7,3);
+%
+\begin{scope}[yshift=2cm]
+%going clockwise from origin
+\draw(0,0) to [american voltage source,l=$\hat{V}$] (0,2) to [short,i^=$\hat{I}_t$] ++(1,0) to [resistor,l=$\SI{0.1}{\ohm}$] ++(2.5,0) to [inductor,l=$j\SI{0.15}{\ohm}$] ++(2.5,0) to [european resistor,l=${Z_B=2+j4}$] ++(0,-2) to [short] (0,0);
+%text
+\draw(5.4,1) node{$
+\begin{aligned}
+&+\\
+&V_B\\
+&-
+\end{aligned}
+$};
+\end{scope}
+%
+\draw (0,0) node [transformer core](T1){}  % reminded by @PaulGessler, thanks.
+ %     (T1.A1) node[above] {A1}
+   %   (T1.A2) node[below] {A2}
+     % (T1.B1) node[above] {B1} 
+    %  (T1.B2) node[below] {B2}
+      (T1.base) node[above]{$
+\begin{aligned}
+1&:10\\
+N_1&:N_2
+\end{aligned}
+$};
+\draw (6,0) node [transformer core](T2){}  % reminded by @PaulGessler, thanks.
+ %     (T2.A1) node[above] {A1}
+   %   (T2.A2) node[below] {A2}
+     % (T2.B1) node[above] {B1} 
+    %  (T2.B2) node[below] {B2}
+      (T2.base) node[above]{$
+\begin{aligned}
+10&:1\\
+N_3&:N_4
+\end{aligned}
+$};
+%going clockwise from origin
+\draw (T1.B1) to [short,i_=$\hat{I}_t$] ++(0.5,0) to [resistor,l=$\SI{0.1}{\ohm}$] ++(1.5,0) to [inductor,l=$j\SI{0.15}{\ohm}$] (T2.A1) ;
+\draw(T1.B2) to (T2.A2);
+%
+\draw(T1.A2)--++(-1,0) to [american voltage source,l=$\hat{V}$] ++(0,2.1) [short,i_=$\hat{I}_G$] to (T1.A1);
+%
+\draw(T2.B1) to [short,i_=$\hat{I}_Z$] ++(1,0) to [european resistor,l=$Z_B$] ++(0,-2.1) to (T2.B2);
+\draw(0,-2.5) node{$T1$};
+\draw(6,-2.5) node{$T2$};
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

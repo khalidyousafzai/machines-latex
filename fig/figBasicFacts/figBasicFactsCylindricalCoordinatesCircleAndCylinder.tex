@@ -1,0 +1,85 @@
+\documentclass[b5paper]{standalone}
+\usepackage{bm}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{calc}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+%
+\input{myEMTvectors.tex}
+
+
+\begin{document}
+
+\tdplotsetmaincoords{70}{110}
+
+\begin{tikzpicture}[scale=3,tdplot_main_coords]
+
+%CIRCLE
+\coordinate (O) at (0,0,0);
+\def\angleA{35};
+\def\angleB{130};
+\def\kradius{0.75};
+\def\height{0.4};
+%axis
+\draw[gray] (0,0,0) -- (1.3*\kradius,0,0) node[below] {$x$};
+\draw[gray] (0,0,0) -- (0,1.2*\kradius,0) node[right] {$y$};
+\draw[gray] (0,0,0) -- (0,0,0.75*\kradius) node[above] {$z$};
+
+%circle
+\tdplotdrawarc[gray, dashed]{(O)}{\kradius}{0}{360}{}{};
+%vectors
+\tdplotsinandcos{\sintheta}{\costheta}{\angleA}%
+\draw[thick,-latex] (0,0,0)--(\kradius * \costheta,\kradius * \sintheta,0);
+\tdplotsinandcos{\sintheta}{\costheta}{\angleB}%
+\draw[gray,-latex] (0,0,0)--(\kradius * \costheta,\kradius * \sintheta,0)  node[pos=0.5, above]{${\rho_0}$};
+%text
+\tdplotdrawarc[gray,->]{(0,0,0)}{0.35}{0}{\angleA}{anchor=north,color=black}{$\theta$};
+
+%CYLINDER
+%axis for cylinder
+\def\movey{1.8};
+\def\movex{-0.6};
+\coordinate (Oc) at (\movex,\movey,0);
+\coordinate (Occ) at (\movex,\movey,\height);
+
+\draw[gray,dashed] (Oc) -- ++(\kradius,0,0);  %hidden axis
+\draw[gray,dashed] (Oc) -- ++(0,\kradius,0);
+\draw[gray,dashed] (Oc) -- ++(0,0,\height);
+
+\draw[gray] (Oc)++(\kradius,0,0) -- ++(0.3,0,0)node[below ] {$x$};  %visible axis
+\draw[gray] (Oc)++(0,\kradius,0) -- ++(0,0.2,0)node[right ] {$y$};
+\draw[gray] (Oc)++(0,0,\height) -- ++(0,0,0.3)node[above] {$z$};
+
+%top and bottom of cylinder
+\tdplotdrawarc[gray, dashed]{(Oc)}{\kradius}{110}{290}{}{};   %bottom of cylinder
+\tdplotdrawarc[gray]{(Oc)}{\kradius}{-70}{110}{}{};
+\tdplotdrawarc[gray]{(Occ)}{\kradius}{0}{360}{}{};   %top of cylinder
+%left edge of cylinder
+\tdplotsinandcos{\sintheta}{\costheta}{-70}%
+\coordinate (leftLower) at (\movex+\kradius * \costheta,\movey+\kradius * \sintheta, 0);
+\coordinate (leftUpper) at (\movex+\kradius * \costheta,\movey+\kradius * \sintheta, \height);
+\draw[gray](leftLower)--(leftUpper);
+%showing height
+\coordinate (leftLowerL) at (\movex+\kradius * \costheta,0.95*\movey+\kradius * \sintheta, 0);
+\coordinate (leftUpperL) at (\movex+\kradius * \costheta,0.95*\movey+\kradius * \sintheta, \height);
+\draw[gray,<->](leftLowerL)--(leftUpperL) node[pos=0.5,left]{$z_0$};
+
+%right edge of cylinder
+\tdplotsinandcos{\sintheta}{\costheta}{110}%
+\coordinate (rightLower) at (\movex+\kradius * \costheta,\movey+\kradius * \sintheta, 0);
+\coordinate (rightUpper) at (\movex+\kradius * \costheta,\movey+\kradius * \sintheta, \height);
+\draw[gray](rightLower)--(rightUpper);
+%vector
+\tdplotsinandcos{\sintheta}{\costheta}{70}%
+\draw[thick,-latex](Oc)--++(\kradius * \costheta,\kradius * \sintheta, 0.8*\height); %main vector
+\draw[gray,dotted](Oc)--++(\kradius * \costheta,\kradius * \sintheta, 0)node[pos=0.5,black,below] {$\rho_0$}; %vector horizontal section lower
+\draw[gray,dotted](Oc)++(0,0,0.8*\height) --++(\kradius * \costheta,\kradius * \sintheta,0); %vector horizontal section upper
+\draw[gray,dotted](Oc)++(\kradius * \costheta,\kradius * \sintheta, 0)--++(0,0,0.8*\height); %vector vertical section
+%showing angle
+ \tdplotdrawarc[color=gray,-latex,tdplot_main_coords]{(Oc)}{0.3}{0}{70}{anchor=north,black}{$\theta$};
+%\tdplotdrawarc[color=gray,-latex,tdplot_main_coords]{(0,0,0)}{0.5}{0}{15}{anchor=north west}{$\theta_2$};
+
+\end{tikzpicture}%
+\end{document}
+

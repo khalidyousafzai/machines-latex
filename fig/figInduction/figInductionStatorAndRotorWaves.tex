@@ -1,0 +1,75 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+\input{../figRotatingMachPrinciplesLibrary.tex}
+\pgfmathsetmacro{\shiftX}{5cm}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\stator{6}{30}
+\slotDot{90,-30,210}
+\slotCross{-90,30,150}
+\pgfmathsetmacro{\pTheta}{150}
+\pgfmathsetmacro{\pY}{0.2}
+\pgfmathsetmacro{\rTilt}{20}
+\rotor{2}{\rTilt}
+\draw node at (\rTilt+90+15:\rR-0.4){$r$};
+\draw node at (\rTilt+90+180-15:\rR-0.4){$r'$};
+%dot on rotot
+\draw (90+\rTilt:\rR-\pX) circle (2.5pt);
+\draw[fill] (90+\rTilt:\rR-\pX) circle (1.5pt);
+%CROSS on rotor
+\draw (\rTilt-90:\rR-\pX) circle (2.5pt);
+\draw (\rTilt-90:\rR-\pX)++(45:2.2pt)--++(-135:4.4pt);
+\draw (\rTilt-90:\rR-\pX)++(-45:2.2pt)--++(135:4.4pt);
+%mmf vector and angles
+\draw[-latex,gray] (0,0)--(\rTilt:0.8*\rR);
+\draw[-latex](0,0)-- (\rTilt+30:0.8*\rR)coordinate[pos=0.5](statorMMF)node[above,pos=0.6]{$\tau_s^+$};
+\draw[gray](0:1.2*\sRo)--++(0:1.5cm);
+\draw[gray](\rTilt:1.2*\sRo cm +0.5cm)--++(\rTilt:1cm)node [right,rotate=\rTilt]{\RL{گھومتا لچھا}};
+\draw[gray] (\rTilt+30:1.2*\sRo) --++(\rTilt+30:1cm) ;
+\draw[gray,stealth-](statorMMF) to [out=180,in=0] ++(-3,1)node[left]{\RL{گھومتے لچھے کی موج}};
+\draw node[left] at (-3,-0.5){$
+\begin{aligned}
+\theta_z&=\omega_e t - \omega t\\
+\frac{\textup{d} \theta_z}{\textup{d} t}&=\omega_e-\omega\\
+&=\omega_z
+\end{aligned}
+$};
+%
+\draw[-stealth] (0:1.2*\sRo cm +0.75 cm)  arc (0:\rTilt:1.2*\sRo cm +0.75 cm);
+\draw node[right,fill=white] at (\rTilt/2:1.2*\sRo cm+0.5 cm){$\omega t$}; 
+%
+\draw[-stealth] (\rTilt:1.2*\sRo cm +1 cm)  arc (\rTilt:\rTilt+30:1.2*\sRo cm +1 cm);
+\draw node[fill=white] at (\rTilt+15:1.2*\sRo+1){$\theta_z$};
+%
+\draw[-stealth] (0:1.2*\sRo cm +0.25 cm)  arc (0:\rTilt+30:1.2*\sRo cm +0.25 cm);
+\draw node[fill=white] at (\rTilt/2+20:1.2*\sRo cm+0.25 cm){$\omega_e t$};
+%\slotName{45/a_1/,-45/a_1'/below,135/a_2'/,-135/a_2/below}
+\draw (90-15:\sRi+1.25*\delR)node[]{$a$};
+\draw (270-15:\sRi+1.25*\delR)node[]{$a'$};
+\draw (210-15:\sRi+1.25*\delR)node[]{$b$};
+\draw (30-15:\sRi+1.25*\delR)node[]{$b'$};
+\draw (-30-15:\sRi+1.25*\delR)node[]{$c$};
+\draw (150-15:\sRi+1.25*\delR)node[]{$c'$};
+%
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

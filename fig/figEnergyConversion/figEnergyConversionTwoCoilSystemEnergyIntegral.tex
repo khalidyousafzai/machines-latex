@@ -1,0 +1,57 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{circuitikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+%\usetikzlibrary{calc}
+\usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
+%\usetikzlibrary{calc,decorations.pathreplacing}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+
+
+
+\pgfmathsetmacro{\x}{2}
+\pgfmathsetmacro{\y}{3}
+\pgfmathsetmacro{\z}{2} 
+
+%\pgfmathsetmacro{\thetaEnd}{180}
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}[x={(-0.5cm,-0.5cm)},y={(1cm,0)},z={(0,1cm)}]
+%grid
+%\draw[gray,thick] (0,0) grid (5,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (5,5);
+%AXIS
+\draw[gray](0,0,0)--(2.5,0,0);
+\draw[gray](0,0,0)--(0,4,0);
+\draw[gray](0,0,0)--(0,0,2.5);
+%BOX VECTORS
+\draw[->](0,0,0)--++(\x/2,0,0) node[gray,above,rotate=45] {\RL{پہلا راستہ}};
+\draw(\x/2,0,0)--(\x,0,0)node[left,gray]{$x_0$};
+\draw[->](\x,0,0)--(\x,\y/2,0)node[gray,below]{\RL{دوسرا راستہ}};
+\draw(\x,\y/2,0)--(\x,\y,0);
+\draw[->](\x,\y,0)--(\x,\y,\z/2)node[gray,rotate=90,above]{\RL{تیسرا راستہ}};
+\draw(\x,\y,\z/2)--(\x,\y,\z)coordinate(end);
+%dashed
+\draw[gray,dashed](end)--++(-\x,0,0)--++(0,-\y,0)node[above left]{$\lambda_{20}$};
+\draw[gray,dashed](end)++(-\x,0,0)--++(0,0,-\z)node[above right]{$\lambda_{10}$}--++(\x,0,0);
+\draw[gray,dashed](end)--++(0,-\y,0)--++(-\x,0,0);
+\draw[gray,dashed](end)++(0,-\y,0)--++(0,0,-\z);
+%ACTUAL PATH
+\draw[thick,->](0,0,0) to [out=-30,in=-150] (\x/2,\y/2,\y/3)node[black,above,rotate=40]{\RL{اصل راستہ}};
+\draw[thick] (\x/2,\y/2,\y/3)  to [out=30,in=180] (\x,\y,\z);
+%
+\draw node[right] at (0,4,1.5){$W_m(x_0, \lambda_{10},\lambda_{20})$};
+\draw[gray,<-]  (\x,\y,\z)++(0.1,0.1,0) to [out=-30,in=180](0,4,1.5);
+%
+\end{tikzpicture}%
+\end{urdufont}
+\end{document}
+%---------------------
+

@@ -1,0 +1,56 @@
+\documentclass[b5paper]{standalone}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usepackage{ifthen}   
+\usepackage{amsmath}
+\usepackage[siunitx]{circuitikz}
+\usetikzlibrary{calc}
+%
+\setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+ 
+ \pgfmathsetmacro{\height}{0.75}  
+
+\begin{document}
+\begin{urdufont}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-4,-4) grid (4,4);
+%\draw[help lines,xstep=0.1,ystep=0.1] (-4,-4) grid (4,4);
+%symbol only
+\begin{scope}[xshift=5cm]
+\draw (0,0) node [transformer core](T){}  % reminded by @PaulGessler, thanks.
+ %     (T.A1) node[above] {A1}
+   %   (T.A2) node[below] {A2}
+     % (T.B1) node[above] {B1} 
+    %  (T.B2) node[below] {B2}
+      (T.base) node[above]{$
+\begin{aligned}
+N_1& : N_2\\
+V_1&:V_2
+\end{aligned}
+$};
+%\draw (T.A1) --++(-2,0);
+%\draw (T.A2) --++(-2,0);
+%
+\draw[<-,gray](0,-1.7) to [out=-90,in=180] (0.4,-2.7) node[right,black] {\RL{مقناطیسی مرکز}};
+\draw(-1,-2.7) node{الف};
+\end{scope}
+%transformer powered
+\draw (0,0) node [transformer core](T){}  % reminded by @PaulGessler, thanks.
+  %    (T.A1) node[above] {A1}
+    %  (T.A2) node[below] {A2}
+     %(T.B1) node[above] {B1} 
+     % (T.B2) node[below] {B2}
+      (T.base) node[above]{$V_1:V_2$};
+
+\draw (T.A2) --++(-2,0)   to [american voltage source,l=$v(t)$] ++(0,2.1)--(T.A1);
+\draw (-1.5,0.7) node{\RL{ابتدائی جانب}};
+\draw(1.5,0.7) node{\RL{ثانوی جانب}};
+\draw(1,-2.7) node{ب};
+\end{tikzpicture}
+\end{urdufont}
+\end{document}
