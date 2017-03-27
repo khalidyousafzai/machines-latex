@@ -1,5 +1,5 @@
 \select@language {arabic}
-\contentsline {chapter}{دیباچہ}{ix}{chapter*.2}
+\contentsline {chapter}{میری پہلی کتاب کا دیباچہ}{ix}{chapter*.2}
 \contentsline {chapter}{\numberline {\RL {\arabicfont 1}}بنیادی حقائق}{\RL {\arabicfont 1}}{chapter.1}
 \contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 1}}بنیادی اکائیاں}{\RL {\arabicfont 1}}{section.1.1}
 \contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 1}}مقداری}{\RL {\arabicfont 1}}{section.1.2}
@@ -44,17 +44,17 @@
 \contentsline {section}{\numberline {\RL {\arabicfont 9}.\RL {\arabicfont 3}}ٹرانسفارمر کے وولٹ-ایمپیئر}{\RL {\arabicfont 75}}{section.3.9}
 \contentsline {section}{\numberline {\RL {\arabicfont 10}.\RL {\arabicfont 3}}ٹرانسفارمر کے امالہ اور اس کے مساوی دور}{\RL {\arabicfont 77}}{section.3.10}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}لچھے کی مزاحمت اور اس کی متعاملہ علیحدہ کرنا}{\RL {\arabicfont 77}}{subsection.3.10.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}رِستا امالہ}{\RL {\arabicfont 78}}{subsection.3.10.2}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}رِستا امالہ}{\RL {\arabicfont 79}}{subsection.3.10.2}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی برقی رو اور مرکز کے اثرات}{\RL {\arabicfont 79}}{subsection.3.10.3}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی لچھے کی امالی برقی دباؤ}{\RL {\arabicfont 80}}{subsection.3.10.4}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{\RL {\arabicfont 81}}{subsection.3.10.5}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{\RL {\arabicfont 81}}{subsection.3.10.6}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی لچھے کی امالی برقی دباؤ}{\RL {\arabicfont 81}}{subsection.3.10.4}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{\RL {\arabicfont 82}}{subsection.3.10.5}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{\RL {\arabicfont 82}}{subsection.3.10.6}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ٹرانسفارمر کے سادہ ترین مساوی دور}{\RL {\arabicfont 84}}{subsection.3.10.7}
-\contentsline {section}{\numberline {\RL {\arabicfont 11}.\RL {\arabicfont 3}}کھلے دور معائنہ اور کسرِ دور معائنہ}{\RL {\arabicfont 85}}{section.3.11}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 11}.\RL {\arabicfont 3}}کھلے دور معائنہ}{\RL {\arabicfont 85}}{subsection.3.11.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 11}.\RL {\arabicfont 3}} کسرِ دور معائنہ}{\RL {\arabicfont 88}}{subsection.3.11.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 12}.\RL {\arabicfont 3}}تین مرحلہ ٹرانسفارمر}{\RL {\arabicfont 92}}{section.3.12}
-\contentsline {section}{\numberline {\RL {\arabicfont 13}.\RL {\arabicfont 3}}ٹرانسفارمر چالو کرتے لمحہ زیادہ محرکی برقی رو کا گزر}{\RL {\arabicfont 100}}{section.3.13}
+\contentsline {section}{\numberline {\RL {\arabicfont 11}.\RL {\arabicfont 3}}کھلے دور معائنہ اور کسرِ دور معائنہ}{\RL {\arabicfont 86}}{section.3.11}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 11}.\RL {\arabicfont 3}}کھلے دور معائنہ}{\RL {\arabicfont 87}}{subsection.3.11.1}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 11}.\RL {\arabicfont 3}} کسرِ دور معائنہ}{\RL {\arabicfont 89}}{subsection.3.11.2}
+\contentsline {section}{\numberline {\RL {\arabicfont 12}.\RL {\arabicfont 3}}تین مرحلہ ٹرانسفارمر}{\RL {\arabicfont 93}}{section.3.12}
+\contentsline {section}{\numberline {\RL {\arabicfont 13}.\RL {\arabicfont 3}}ٹرانسفارمر چالو کرتے لمحہ زیادہ محرکی برقی رو کا گزر}{\RL {\arabicfont 101}}{section.3.13}
 \contentsline {chapter}{\numberline {\RL {\arabicfont 4}}برقی اور میکانی توانائی کا باہمی تبادلہ}{\RL {\arabicfont 103}}{chapter.4}
 \contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 4}}مقناطیسی نظام میں قوت اور مروڑ}{\RL {\arabicfont 104}}{section.4.1}
 \contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 4}}تبادلہ توانائی والا ایک لچھے کا نظام}{\RL {\arabicfont 109}}{section.4.2}
@@ -64,7 +64,7 @@
 \contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}}قانونِ فیراڈے}{\RL {\arabicfont 127}}{section.5.1}
 \contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}}معاصر مشین}{\RL {\arabicfont 128}}{section.5.2}
 \contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 5}}محرک برقی دباؤ}{\RL {\arabicfont 138}}{section.5.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 5}}پھیلے لچھے اور سائن نما مقناطیسی دباؤ}{\RL {\arabicfont 142}}{section.5.4}
+\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 5}}پھیلے لچھے اور سائن نما مقناطیسی دباؤ}{\RL {\arabicfont 141}}{section.5.4}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 4}.\RL {\arabicfont 5}}بدلتی رو والے مشین}{\RL {\arabicfont 143}}{subsection.5.4.1}
 \contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 5}}مقناطیسی دباؤ کی گھومتی موجیں}{\RL {\arabicfont 152}}{section.5.5}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}.\RL {\arabicfont 5}}ایک دور کی لپٹی مشین}{\RL {\arabicfont 152}}{subsection.5.5.1}
