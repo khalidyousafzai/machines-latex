@@ -1,5 +1,7 @@
 \select@language {arabic}
-\contentsline {chapter}{میری پہلی کتاب کا دیباچہ}{ix}{chapter*.2}
+\contentsline {chapter}{دیباچہ}{ix}{chapter*.2}
+\select@language {english}
+\select@language {arabic}
 \contentsline {chapter}{\numberline {\RL {\arabicfont 1}}بنیادی حقائق}{\RL {\arabicfont 1}}{chapter.1}
 \contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 1}}بنیادی اکائیاں}{\RL {\arabicfont 1}}{section.1.1}
 \contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 1}}مقداری}{\RL {\arabicfont 1}}{section.1.2}
