@@ -1,6 +1,6 @@
 //place this pk file  at /usr/share/X11/xkb/ 
 // the changes needs to be added to /usr/share/X11/xkb/rules/evdev.xml     
-// and then /var/lib/xkb/*.skm are deleted. 
+// and then delete all  /var/lib/xkb/*.skm 
 // computer restart is needed thereafter.   KKK
 
 // Urdu keymap
