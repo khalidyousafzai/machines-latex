@@ -58,7 +58,7 @@
 \contentsline {section}{\numberline {\RL {\arabicfont 12}.\RL {\arabicfont 3}}تین مرحلہ ٹرانسفارمر}{\RL {\arabicfont 93}}{section.3.12}
 \contentsline {section}{\numberline {\RL {\arabicfont 13}.\RL {\arabicfont 3}}ٹرانسفارمر چالو کرتے لمحہ زیادہ محرکی برقی رو کا گزر}{\RL {\arabicfont 101}}{section.3.13}
 \contentsline {chapter}{\numberline {\RL {\arabicfont 4}}برقی اور میکانی توانائی کا باہمی تبادلہ}{\RL {\arabicfont 103}}{chapter.4}
-\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 4}}مقناطیسی نظام میں قوت اور مروڑ}{\RL {\arabicfont 104}}{section.4.1}
+\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 4}}مقناطیسی نظام میں قوت اور قوت گردشہ}{\RL {\arabicfont 104}}{section.4.1}
 \contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 4}}تبادلہ توانائی والا ایک لچھے کا نظام}{\RL {\arabicfont 109}}{section.4.2}
 \contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 4}}توانائی اور کو-توانائی}{\RL {\arabicfont 114}}{section.4.3}
 \contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 4}}زیادہ لچھوں کا مقناطیسی نظام}{\RL {\arabicfont 119}}{section.4.4}
@@ -75,9 +75,9 @@
 \contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 5}}محرک برقی دباؤ}{\RL {\arabicfont 162}}{section.5.6}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 6}.\RL {\arabicfont 5}}بدلتی رو برقی جنریٹر}{\RL {\arabicfont 162}}{subsection.5.6.1}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 6}.\RL {\arabicfont 5}}یک سمتی رو برقی جنریٹر}{\RL {\arabicfont 167}}{subsection.5.6.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 5}}ہموار قطب مشینوں میں مروڑ}{\RL {\arabicfont 168}}{section.5.7}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 7}.\RL {\arabicfont 5}}توانائی کے طریقے سے میکانی مروڑ کا حساب}{\RL {\arabicfont 168}}{subsection.5.7.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 7}.\RL {\arabicfont 5}}مقناطیسی بہاو سے میکانی مروڑ کا حساب}{\RL {\arabicfont 170}}{subsection.5.7.2}
+\contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 5}}ہموار قطب مشینوں میں قوت گردشہ}{\RL {\arabicfont 168}}{section.5.7}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 7}.\RL {\arabicfont 5}}توانائی کے طریقے سے میکانی قوت گردشہ کا حساب}{\RL {\arabicfont 168}}{subsection.5.7.1}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 7}.\RL {\arabicfont 5}}مقناطیسی بہاو سے میکانی قوت گردشہ کا حساب}{\RL {\arabicfont 170}}{subsection.5.7.2}
 \contentsline {chapter}{\numberline {\RL {\arabicfont 6}}یکساں حال، برقرار چالو معاصر مشین}{\RL {\arabicfont 177}}{chapter.6}
 \contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 6}}متعدد مرحلہ معاصر مشین}{\RL {\arabicfont 178}}{section.6.1}
 \contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 6}}معاصر مشین کے امالہ}{\RL {\arabicfont 181}}{section.6.2}
@@ -110,11 +110,11 @@
 \contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 8}}میکانی سمت کار کی بنیادی کارکردگی}{\RL {\arabicfont 243}}{section.8.1}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 1}.\RL {\arabicfont 8}}میکانی سمت کار کی تفصیل}{\RL {\arabicfont 245}}{subsection.8.1.1}
 \contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 8}}یک سمتی جنریٹر کی برقی دباؤ}{\RL {\arabicfont 249}}{section.8.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 8}}مروڑ}{\RL {\arabicfont 251}}{section.8.3}
+\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 8}}قوت گردشہ}{\RL {\arabicfont 251}}{section.8.3}
 \contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 8}}بیرونی ہیجان اور خود ہیجان یک سمتی جنریٹر}{\RL {\arabicfont 253}}{section.8.4}
 \contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 8}}یک سمتی مشین کی کارکردگی کے خط}{\RL {\arabicfont 257}}{section.8.5}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}حاصل برقی دباؤ بالمقابل برقی بوجھ}{\RL {\arabicfont 257}}{subsection.8.5.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}رفتار بالمقابل مروڑ}{\RL {\arabicfont 259}}{subsection.8.5.2}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}رفتار بالمقابل قوت گردشہ}{\RL {\arabicfont 259}}{subsection.8.5.2}
 \contentsline {chapter}{فرہنگ}{\RL {\arabicfont 267}}{equation.8.5.17}
 \select@language {english}
 \select@language {arabic}

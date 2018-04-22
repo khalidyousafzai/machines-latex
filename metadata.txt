@@ -1,16 +1,16 @@
 InfoKey:Title
 InfoValue:Engineering Electromagnetics
 InfoKey:Sub Title
-InfoValue:برقی و مقناطیسیات
+InfoValue:برقی آلات
 InfoKey: Author
 InfoValue:Khalid Khan Yousafzai
 InfoKey: Subject
-InfoValue:Electromagnetics
+InfoValue:Machines
 InfoKey: Creator
 InfoValue: Bidi v1.0.3 &lt;revision 82&gt; Copyright &#169; 2009 Vafa Khalighi
 InfoKey: Producer
 InfoValue: xdvipdfmx (0.7.8)
 InfoKey: Keywords
-InfoValue: engineering , electromagnetics , urdu , pdf, khalid, ciit , comsats, برقی و مقناطیسیات, "خالد"
+InfoValue: engineering , machines , urdu , pdf, khalid, ciit , comsats, برقی آلات, "خالد"
 InfoKey: Paper Size
 InfoValue: B5

@@ -1,5 +1,4 @@
 \begin{theindex}
-
 \begin{otherlanguage}{english}
 
   \item ampere-turn, \hyperpage{32}
@@ -230,7 +229,6 @@
   \item winding factor, \hyperpage{149}
 
 \end{otherlanguage}
-
   \newpage
 \indexspace
 \item ابتدائی
@@ -397,6 +395,8 @@
 \item قطب
    \subitem ابھرے، \hyperpage{141}، \hyperpage{179}
    \subitem ہموار، \hyperpage{141}، \hyperpage{179}
+\item قوت گردشہ، \hyperpage{168}، \hyperpage{211}
+   \subitem انتہائی، \hyperpage{180}
 \item قوی الیکٹرانکس، \hyperpage{209}، \hyperpage{243}
 \item قوی لچھے، \hyperpage{253}
 \indexspace
@@ -437,8 +437,6 @@
 \item مرکز، \hyperpage{128}
 \item مرکزی ضیاع، \hyperpage{62}
    \subitem جزو، \hyperpage{64}
-\item مروڑ، \hyperpage{168}، \hyperpage{211}
-   \subitem انتہائی، \hyperpage{180}
 \item مزاحمت، \hyperpage{25}
 \item مساوات لورینز، \hyperpage{104}
 \item مسئلہ
