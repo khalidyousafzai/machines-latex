@@ -38,7 +38,7 @@
 \contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 3}}ٹرانسفارمر کی اہمیت}{\RL {\arabicfont 56}}{section.3.1}
 \contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 3}}ٹرانسفارمر کے اقسام}{\RL {\arabicfont 59}}{section.3.2}
 \contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 3}}امالی برقی دباؤ}{\RL {\arabicfont 60}}{section.3.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 3}}ہیجان انگیز برقی رو اور مرکزی ضیاع}{\RL {\arabicfont 62}}{section.3.4}
+\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 3}}ہیجان انگیز برقی رو اور قالبی ضیاع}{\RL {\arabicfont 62}}{section.3.4}
 \contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 3}}تبادلہ برقی دباؤ اور تبادلہ برقی رو کے خصوصیات}{\RL {\arabicfont 65}}{section.3.5}
 \contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 3}}ثانوی جانب بوجھ کا ابتدائی جانب اثر}{\RL {\arabicfont 68}}{section.3.6}
 \contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 3}}ٹرانسفارمر کی علامت پر نقطوں کا مطلب}{\RL {\arabicfont 69}}{section.3.7}
@@ -47,7 +47,7 @@
 \contentsline {section}{\numberline {\RL {\arabicfont 10}.\RL {\arabicfont 3}}ٹرانسفارمر کے امالہ اور اس کے مساوی دور}{\RL {\arabicfont 77}}{section.3.10}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}لچھے کی مزاحمت اور اس کی متعاملہ علیحدہ کرنا}{\RL {\arabicfont 77}}{subsection.3.10.1}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}رِستا امالہ}{\RL {\arabicfont 79}}{subsection.3.10.2}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی برقی رو اور مرکز کے اثرات}{\RL {\arabicfont 79}}{subsection.3.10.3}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی برقی رو اور قالب کے اثرات}{\RL {\arabicfont 79}}{subsection.3.10.3}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی لچھے کی امالی برقی دباؤ}{\RL {\arabicfont 81}}{subsection.3.10.4}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{\RL {\arabicfont 82}}{subsection.3.10.5}
 \contentsline {subsection}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{\RL {\arabicfont 82}}{subsection.3.10.6}
@@ -102,19 +102,19 @@
 \contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 7}}امالی موٹر کا مساوی برقی دور}{\RL {\arabicfont 219}}{section.7.7}
 \contentsline {section}{\numberline {\RL {\arabicfont 8}.\RL {\arabicfont 7}}مساوی برقی دور پر غور}{\RL {\arabicfont 224}}{section.7.8}
 \contentsline {section}{\numberline {\RL {\arabicfont 9}.\RL {\arabicfont 7}}امالی موٹر کا مساوی تھونن دور یا ریاضی نمونہ}{\RL {\arabicfont 228}}{section.7.9}
-\contentsline {section}{\numberline {\RL {\arabicfont 10}.\RL {\arabicfont 7}}پنجرا نما امالی موٹر}{\RL {\arabicfont 234}}{section.7.10}
-\contentsline {section}{\numberline {\RL {\arabicfont 11}.\RL {\arabicfont 7}}بے بوجھ موٹر اور جامد موٹر کے معائنہ }{\RL {\arabicfont 235}}{section.7.11}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 11}.\RL {\arabicfont 7}}بے بوجھ موٹر کا معائنہ}{\RL {\arabicfont 235}}{subsection.7.11.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 11}.\RL {\arabicfont 7}}جامد موٹر کا معائنہ}{\RL {\arabicfont 237}}{subsection.7.11.2}
-\contentsline {chapter}{\numberline {\RL {\arabicfont 8}}یک سمتی رو مشین}{\RL {\arabicfont 243}}{chapter.8}
-\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 8}}میکانی سمت کار کی بنیادی کارکردگی}{\RL {\arabicfont 243}}{section.8.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 1}.\RL {\arabicfont 8}}میکانی سمت کار کی تفصیل}{\RL {\arabicfont 245}}{subsection.8.1.1}
-\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 8}}یک سمتی جنریٹر کی برقی دباؤ}{\RL {\arabicfont 249}}{section.8.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 8}}قوت گردشہ}{\RL {\arabicfont 251}}{section.8.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 8}}بیرونی ہیجان اور خود ہیجان یک سمتی جنریٹر}{\RL {\arabicfont 253}}{section.8.4}
-\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 8}}یک سمتی مشین کی کارکردگی کے خط}{\RL {\arabicfont 257}}{section.8.5}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}حاصل برقی دباؤ بالمقابل برقی بوجھ}{\RL {\arabicfont 257}}{subsection.8.5.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}رفتار بالمقابل قوت گردشہ}{\RL {\arabicfont 259}}{subsection.8.5.2}
-\contentsline {chapter}{فرہنگ}{\RL {\arabicfont 267}}{equation.8.5.17}
+\contentsline {section}{\numberline {\RL {\arabicfont 10}.\RL {\arabicfont 7}}پنجرا نما امالی موٹر}{\RL {\arabicfont 235}}{section.7.10}
+\contentsline {section}{\numberline {\RL {\arabicfont 11}.\RL {\arabicfont 7}}بے بوجھ موٹر اور جامد موٹر کے معائنہ }{\RL {\arabicfont 236}}{section.7.11}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 11}.\RL {\arabicfont 7}}بے بوجھ موٹر کا معائنہ}{\RL {\arabicfont 236}}{subsection.7.11.1}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 11}.\RL {\arabicfont 7}}جامد موٹر کا معائنہ}{\RL {\arabicfont 238}}{subsection.7.11.2}
+\contentsline {chapter}{\numberline {\RL {\arabicfont 8}}یک سمتی رو مشین}{\RL {\arabicfont 245}}{chapter.8}
+\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 8}}میکانی سمت کار کی بنیادی کارکردگی}{\RL {\arabicfont 245}}{section.8.1}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 1}.\RL {\arabicfont 8}}میکانی سمت کار کی تفصیل}{\RL {\arabicfont 247}}{subsection.8.1.1}
+\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 8}}یک سمتی جنریٹر کی برقی دباؤ}{\RL {\arabicfont 251}}{section.8.2}
+\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 8}}قوت گردشہ}{\RL {\arabicfont 253}}{section.8.3}
+\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 8}}بیرونی ہیجان اور خود ہیجان یک سمتی جنریٹر}{\RL {\arabicfont 255}}{section.8.4}
+\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 8}}یک سمتی مشین کی کارکردگی کے خط}{\RL {\arabicfont 259}}{section.8.5}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}حاصل برقی دباؤ بالمقابل برقی بوجھ}{\RL {\arabicfont 259}}{subsection.8.5.1}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}رفتار بالمقابل قوت گردشہ}{\RL {\arabicfont 261}}{subsection.8.5.2}
+\contentsline {chapter}{فرہنگ}{\RL {\arabicfont 269}}{equation.8.5.17}
 \select@language {english}
 \select@language {arabic}
