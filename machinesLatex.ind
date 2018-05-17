@@ -2,7 +2,7 @@
 \begin{otherlanguage}{english}
 
   \item ampere-turn, \hyperpage{32}
-  \item armature coil, \hyperpage{133}, \hyperpage{253}
+  \item armature coil, \hyperpage{133}, \hyperpage{255}
   \item axle, \hyperpage{163}
 
   \indexspace
@@ -17,7 +17,7 @@
     \subitem low voltage, \hyperpage{56}
     \subitem primary, \hyperpage{55}
     \subitem secondary, \hyperpage{55}
-  \item commutator, \hyperpage{167}, \hyperpage{243}
+  \item commutator, \hyperpage{167}, \hyperpage{245}
   \item conductivity, \hyperpage{25}
   \item conservative field, \hyperpage{110}
   \item core, \hyperpage{55}, \hyperpage{128}
@@ -60,7 +60,7 @@
   \indexspace
 
   \item Faraday's law, \hyperpage{37}, \hyperpage{127}
-  \item field coil, \hyperpage{133}, \hyperpage{253}
+  \item field coil, \hyperpage{133}, \hyperpage{255}
   \item flux, \hyperpage{29}
   \item Fourier series, \hyperpage{63}, \hyperpage{143}
   \item frequency, \hyperpage{132}
@@ -135,7 +135,7 @@
 
   \indexspace
 
-  \item parallel connected, \hyperpage{255}
+  \item parallel connected, \hyperpage{257}
   \item permeability, \hyperpage{25}
     \subitem relative, \hyperpage{26}
   \item phase current, \hyperpage{95}
@@ -171,15 +171,15 @@
 
   \item saturation, \hyperpage{45}
   \item scalar, \hyperpage{1}
-  \item self excited, \hyperpage{253}
+  \item self excited, \hyperpage{255}
   \item self flux linkage, \hyperpage{41}
   \item self inductance, \hyperpage{41}
-  \item separately excited, \hyperpage{253}
+  \item separately excited, \hyperpage{255}
   \item side
     \subitem secondary, \hyperpage{55}
   \item single phase, \hyperpage{23}, \hyperpage{59}
   \item slip, \hyperpage{211}
-  \item slip rings, \hyperpage{178}, \hyperpage{231}
+  \item slip rings, \hyperpage{178}, \hyperpage{233}
   \item star connected, \hyperpage{93}
   \item stator coil, \hyperpage{106}, \hyperpage{129}
   \item steady state, \hyperpage{177}
@@ -206,11 +206,11 @@
     \subitem ideal, \hyperpage{65}
   \item transient state, \hyperpage{177}
 
-  \newpage
+  \indexspace
 
   \item unit vector, \hyperpage{2}
 
-  \indexspace
+  \newpage
 
   \item VA, \hyperpage{75}
   \item vector, \hyperpage{2}
@@ -227,7 +227,6 @@
   \item winding
     \subitem distributed, \hyperpage{142}
   \item winding factor, \hyperpage{149}
-
 \end{otherlanguage}
   \newpage
 \indexspace
@@ -241,7 +240,7 @@
 \item اکائی سمتیہ، \hyperpage{2}
 \item امالہ، \hyperpage{38}
 \item امالی برقی دباؤ، \hyperpage{37}، \hyperpage{48}، 
-\item اوہم میٹر، \hyperpage{239}
+\item اوہم میٹر، \hyperpage{240}
 \item ایک، تین پتریاں، \hyperpage{62}
 \item ایک مرحلہ، \hyperpage{59}
 \item ایمپیئر-چکر، \hyperpage{32}
@@ -298,7 +297,7 @@
 \item ٹرانسفارمر
    \subitem برقی دباؤ، میٹر، \hyperpage{59}
    \subitem بوجھ بردار، \hyperpage{69}
-   \subitem خلائی مرکز والا، \hyperpage{59}
+   \subitem خلائی قالب، \hyperpage{59}
    \subitem دباؤ بڑھاتا، \hyperpage{58}
    \subitem دباؤ گھٹاتا، \hyperpage{58}
    \subitem ذرائع ابلاغ، \hyperpage{59}
@@ -330,10 +329,10 @@
 \item خود امالہ، \hyperpage{41}
 \indexspace
 \item داخلی ہیجان
-   \subitem سلسلہ وار، \hyperpage{255}
-   \subitem متوازی، \hyperpage{255}
-   \subitem مرکب، \hyperpage{255}
-\item دور جڑی مرکب، \hyperpage{255}
+   \subitem سلسلہ وار، \hyperpage{257}
+   \subitem متوازی، \hyperpage{257}
+   \subitem مرکب، \hyperpage{257}
+\item دور جڑی مرکب، \hyperpage{257}
 \item دور شکن، \hyperpage{180}
 \item دوری عرصہ، \hyperpage{101}، \hyperpage{144}
 \item دھرا، \hyperpage{163}
@@ -356,11 +355,11 @@
 \item ساکن لچھا، \hyperpage{106}، \hyperpage{129}
 \item ستارہ نما جوڑ، \hyperpage{93}
 \item سرک، \hyperpage{211}
-\item سرک چھلے، \hyperpage{178}، \hyperpage{231}
+\item سرک چھلے، \hyperpage{178}، \hyperpage{233}
 \item سطحی تکمل، \hyperpage{183}
 \item سطحی کثافت، \hyperpage{11}
 \item سلسلہ وار، \hyperpage{147}
-\item سمت کار، \hyperpage{243}
+\item سمت کار، \hyperpage{245}
    \subitem برقیاتی، \hyperpage{167}
    \subitem میکانی، \hyperpage{167}
 \item سمتیہ، \hyperpage{2}
@@ -381,24 +380,27 @@
 \indexspace
 \item غیر معاصر، \hyperpage{180}
 \indexspace
-\item فورئیر، \hyperpage{252}
+\item فورئیر، \hyperpage{254}
 \item فوریئر تسلسل، \hyperpage{63}، \hyperpage{143}
 \item فیراڈے
    \subitem قانون، \hyperpage{37}، \hyperpage{127}
 \indexspace
+\item قالب، \hyperpage{128}
+\item قالبی ضیاع، \hyperpage{62}
+   \subitem جزو، \hyperpage{64}
 \item قانون
    \subitem اوہم، \hyperpage{26}
    \subitem کولمب، \hyperpage{9}
    \subitem لورینز، \hyperpage{138}
 \item قدامت پسند میدان، \hyperpage{110}
-\item قریب جڑی مرکب، \hyperpage{255}
+\item قریب جڑی مرکب، \hyperpage{257}
 \item قطب
    \subitem ابھرے، \hyperpage{141}، \hyperpage{179}
    \subitem ہموار، \hyperpage{141}، \hyperpage{179}
-\item قوت گردشہ، \hyperpage{168}، \hyperpage{211}
+\item قوت مروڑ، \hyperpage{168}، \hyperpage{211}
    \subitem انتہائی، \hyperpage{180}
-\item قوی الیکٹرانکس، \hyperpage{209}، \hyperpage{243}
-\item قوی لچھے، \hyperpage{253}
+\item قوی الیکٹرانکس، \hyperpage{209}، \hyperpage{245}
+\item قوی لچھے، \hyperpage{255}
 \indexspace
 \item کاربن بش، \hyperpage{179}
 \item کارگزاری، \hyperpage{203}
@@ -433,10 +435,7 @@
 \item مخلوط عدد، \hyperpage{194}
 \item مرحلی سمتیہ، \hyperpage{21}، \hyperpage{188}
 \item مرحلی فرق، \hyperpage{23}
-\item مرکب جنریٹر، \hyperpage{255}
-\item مرکز، \hyperpage{128}
-\item مرکزی ضیاع، \hyperpage{62}
-   \subitem جزو، \hyperpage{64}
+\item مرکب جنریٹر، \hyperpage{257}
 \item مزاحمت، \hyperpage{25}
 \item مساوات لورینز، \hyperpage{104}
 \item مسئلہ
@@ -461,7 +460,7 @@
 \item مقناطیسی چال، \hyperpage{51}
 \item مقناطیسی دباؤ، \hyperpage{29}
    \subitem سمت، \hyperpage{143}
-\item مقناطیسی مرکز، \hyperpage{31}، \hyperpage{55}
+\item مقناطیسی قالب، \hyperpage{31}، \hyperpage{55}
 \item مقناطیسی مستقل، \hyperpage{25}، \hyperpage{168}
    \subitem جزو، \hyperpage{26}، \hyperpage{30}
 \item مقناطیسی میدان
@@ -470,7 +469,7 @@
 \item موثر قیمت، \hyperpage{166}
 \item موسیقائی جزو، \hyperpage{64}، \hyperpage{144}
 \item موصلیت، \hyperpage{25}
-\item میدانی لچھے، \hyperpage{253}
+\item میدانی لچھے، \hyperpage{255}
 \indexspace
 \item واٹ، \hyperpage{42}
 \item وولٹ، \hyperpage{139}
@@ -481,8 +480,8 @@
 \item ہچکچاہٹ، \hyperpage{26}، \hyperpage{29}
 \item ہم قدم، \hyperpage{70}
 \item ہیجان، \hyperpage{61}
-   \subitem بیرونی، \hyperpage{253}
-   \subitem خود، \hyperpage{253}
+   \subitem بیرونی، \hyperpage{255}
+   \subitem خود، \hyperpage{255}
    \subitem لچھا، \hyperpage{61}
 \item ہیجان انگیز
    \subitem برقی دباؤ، \hyperpage{61}
@@ -491,9 +490,10 @@
 \item ہیجانی برقی دباؤ، \hyperpage{187}
 \newpage
 \item یک سمتی رو
-   \subitem مشین، \hyperpage{243}
+   \subitem مشین، \hyperpage{245}
 \item یک مرحلہ، \hyperpage{23}
 \item یک مرحلہ برقی دباؤ، \hyperpage{95}
 \item یک مرحلہ برقی رو، \hyperpage{95}
 \item یولر مساوات، \hyperpage{21}
+
 \end{theindex}

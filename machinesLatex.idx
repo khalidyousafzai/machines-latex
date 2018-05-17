@@ -82,7 +82,7 @@
 \indexentry{laminations|hyperpage}{31}
 \indexentry{پتری|hyperpage}{31}
 \indexentry{magnetic core|hyperpage}{31}
-\indexentry{مقناطیسی مرکز|hyperpage}{31}
+\indexentry{مقناطیسی قالب|hyperpage}{31}
 \indexentry{ampere-turn|hyperpage}{32}
 \indexentry{ایمپیئر-چکر|hyperpage}{32}
 \indexentry{Weber|hyperpage}{32}
@@ -137,7 +137,7 @@
 \indexentry{برقی رو!ہیجان انگیز|hyperpage}{51}
 \indexentry{مقناطیسی چال|hyperpage}{51}
 \indexentry{core|hyperpage}{55}
-\indexentry{مقناطیسی مرکز|hyperpage}{55}
+\indexentry{مقناطیسی قالب|hyperpage}{55}
 \indexentry{coil!primary|hyperpage}{55}
 \indexentry{ابتدائی!لچھا|hyperpage}{55}
 \indexentry{لچھا!ابتدائی|hyperpage}{55}
@@ -156,18 +156,18 @@
 \indexentry{step down transformer|hyperpage}{58}
 \indexentry{ٹرانسفارمر!دباؤ گھٹاتا|hyperpage}{58}
 \indexentry{step up transformer|hyperpage}{58}
-\indexentry{تین مرحلہ|hyperpage}{59}
 \indexentry{three phase|hyperpage}{59}
+\indexentry{تین مرحلہ|hyperpage}{59}
 \indexentry{single phase|hyperpage}{59}
 \indexentry{ایک مرحلہ|hyperpage}{59}
 \indexentry{ٹرانسفارمر!برقی دباؤ، میٹر|hyperpage}{59}
 \indexentry{ٹرانسفارمر!رو، میٹر|hyperpage}{59}
 \indexentry{electrical rating|hyperpage}{59}
 \indexentry{برقی استعداد|hyperpage}{59}
+\indexentry{ٹرانسفارمر!خلائی قالب|hyperpage}{59}
 \indexentry{transformer!communication|hyperpage}{59}
 \indexentry{ٹرانسفارمر!ذرائع ابلاغ|hyperpage}{59}
 \indexentry{transformer!air core|hyperpage}{59}
-\indexentry{ٹرانسفارمر!خلائی مرکز والا|hyperpage}{59}
 \indexentry{بے بوجھ|hyperpage}{60}
 \indexentry{excitation current|hyperpage}{60}
 \indexentry{ہیجان انگیز برقی رو|hyperpage}{60}
@@ -185,14 +185,14 @@
 \indexentry{محرک برقی دباؤ|hyperpage}{61}
 \indexentry{eddy currents|hyperpage}{62}
 \indexentry{بھنور نما!برقی رو|hyperpage}{62}
-\indexentry{eddy current loss|hyperpage}{62}
 \indexentry{بھنور نما!ضیاع|hyperpage}{62}
-\indexentry{laminations|hyperpage}{62}
-\indexentry{پتریاں|hyperpage}{62}
 \indexentry{core loss|hyperpage}{62}
-\indexentry{مرکزی ضیاع|hyperpage}{62}
+\indexentry{قالبی ضیاع|hyperpage}{62}
+\indexentry{eddy current loss|hyperpage}{62}
 \indexentry{enamel|hyperpage}{62}
 \indexentry{روغن|hyperpage}{62}
+\indexentry{laminations|hyperpage}{62}
+\indexentry{پتریاں|hyperpage}{62}
 \indexentry{E,I|hyperpage}{62}
 \indexentry{ایک، تین پتریاں|hyperpage}{62}
 \indexentry{Fourier series|hyperpage}{63}
@@ -202,7 +202,7 @@
 \indexentry{fundamental component|hyperpage}{64}
 \indexentry{بنیادی جزو|hyperpage}{64}
 \indexentry{core loss component|hyperpage}{64}
-\indexentry{مرکزی ضیاع!جزو|hyperpage}{64}
+\indexentry{قالبی ضیاع!جزو|hyperpage}{64}
 \indexentry{magnetizing current|hyperpage}{64}
 \indexentry{مقناطیسی برقی رو|hyperpage}{64}
 \indexentry{transformer!ideal|hyperpage}{65}
@@ -284,7 +284,7 @@
 \indexentry{Faraday's law|hyperpage}{127}
 \indexentry{فیراڈے!قانون|hyperpage}{127}
 \indexentry{core|hyperpage}{128}
-\indexentry{مرکز|hyperpage}{128}
+\indexentry{قالب|hyperpage}{128}
 \indexentry{برقی رو!بھنور نما|hyperpage}{128}
 \indexentry{بھنور نما برقی رو|hyperpage}{128}
 \indexentry{laminations|hyperpage}{128}
@@ -353,7 +353,7 @@
 \indexentry{rectifier|hyperpage}{167}
 \indexentry{سمت کار!برقیاتی|hyperpage}{167}
 \indexentry{torque|hyperpage}{168}
-\indexentry{قوت گردشہ|hyperpage}{168}
+\indexentry{قوت مروڑ|hyperpage}{168}
 \indexentry{مقناطیسی مستقل|hyperpage}{168}
 \indexentry{steady state|hyperpage}{177}
 \indexentry{برقرار چالو|hyperpage}{177}
@@ -369,10 +369,10 @@
 \indexentry{قطب!ابھرے|hyperpage}{179}
 \indexentry{non-salient poles|hyperpage}{179}
 \indexentry{قطب!ہموار|hyperpage}{179}
-\indexentry{hunting|hyperpage}{180}
 \indexentry{تعقب|hyperpage}{180}
+\indexentry{hunting|hyperpage}{180}
 \indexentry{torque!pull out|hyperpage}{180}
-\indexentry{قوت گردشہ!انتہائی|hyperpage}{180}
+\indexentry{قوت مروڑ!انتہائی|hyperpage}{180}
 \indexentry{غیر معاصر|hyperpage}{180}
 \indexentry{circuit breaker|hyperpage}{180}
 \indexentry{دور شکن|hyperpage}{180}
@@ -395,7 +395,7 @@
 \indexentry{slip|hyperpage}{211}
 \indexentry{سرک|hyperpage}{211}
 \indexentry{torque|hyperpage}{211}
-\indexentry{قوت گردشہ|hyperpage}{211}
+\indexentry{قوت مروڑ|hyperpage}{211}
 \indexentry{چوٹی|hyperpage}{213}
 \indexentry{رفتار!اضافی زاویائی|hyperpage}{214}
 \indexentry{اضافی!زاویائی رفتار|hyperpage}{214}
@@ -404,28 +404,28 @@
 \indexentry{خطی!برقی دور|hyperpage}{228}
 \indexentry{Thevenin theorem|hyperpage}{228}
 \indexentry{مسئلہ!تھونن|hyperpage}{228}
-\indexentry{theorem!maximum power transfer|hyperpage}{231}
 \indexentry{مسئلہ!زیادہ سے زیادہ طاقت کی منتقلی|hyperpage}{231}
-\indexentry{slip rings|hyperpage}{231}
-\indexentry{سرک چھلے|hyperpage}{231}
-\indexentry{اوہم میٹر|hyperpage}{239}
-\indexentry{یک سمتی رو!مشین|hyperpage}{243}
-\indexentry{قوی الیکٹرانکس|hyperpage}{243}
-\indexentry{commutator|hyperpage}{243}
-\indexentry{سمت کار|hyperpage}{243}
-\indexentry{فورئیر|hyperpage}{252}
-\indexentry{self excited|hyperpage}{253}
-\indexentry{ہیجان!خود|hyperpage}{253}
-\indexentry{separately excited|hyperpage}{253}
-\indexentry{ہیجان!بیرونی|hyperpage}{253}
-\indexentry{field coil|hyperpage}{253}
-\indexentry{میدانی لچھے|hyperpage}{253}
-\indexentry{armature coil|hyperpage}{253}
-\indexentry{قوی لچھے|hyperpage}{253}
-\indexentry{parallel connected|hyperpage}{255}
-\indexentry{داخلی ہیجان!متوازی|hyperpage}{255}
-\indexentry{داخلی ہیجان!سلسلہ وار|hyperpage}{255}
-\indexentry{داخلی ہیجان!مرکب|hyperpage}{255}
-\indexentry{مرکب جنریٹر|hyperpage}{255}
-\indexentry{قریب جڑی مرکب|hyperpage}{255}
-\indexentry{دور جڑی مرکب|hyperpage}{255}
+\indexentry{theorem!maximum power transfer|hyperpage}{231}
+\indexentry{slip rings|hyperpage}{233}
+\indexentry{سرک چھلے|hyperpage}{233}
+\indexentry{اوہم میٹر|hyperpage}{240}
+\indexentry{یک سمتی رو!مشین|hyperpage}{245}
+\indexentry{قوی الیکٹرانکس|hyperpage}{245}
+\indexentry{commutator|hyperpage}{245}
+\indexentry{سمت کار|hyperpage}{245}
+\indexentry{فورئیر|hyperpage}{254}
+\indexentry{self excited|hyperpage}{255}
+\indexentry{ہیجان!خود|hyperpage}{255}
+\indexentry{separately excited|hyperpage}{255}
+\indexentry{ہیجان!بیرونی|hyperpage}{255}
+\indexentry{field coil|hyperpage}{255}
+\indexentry{میدانی لچھے|hyperpage}{255}
+\indexentry{armature coil|hyperpage}{255}
+\indexentry{قوی لچھے|hyperpage}{255}
+\indexentry{parallel connected|hyperpage}{257}
+\indexentry{داخلی ہیجان!متوازی|hyperpage}{257}
+\indexentry{داخلی ہیجان!سلسلہ وار|hyperpage}{257}
+\indexentry{داخلی ہیجان!مرکب|hyperpage}{257}
+\indexentry{مرکب جنریٹر|hyperpage}{257}
+\indexentry{قریب جڑی مرکب|hyperpage}{257}
+\indexentry{دور جڑی مرکب|hyperpage}{257}
