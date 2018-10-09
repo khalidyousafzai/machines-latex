@@ -206,11 +206,11 @@
     \subitem ideal, \hyperpage{65}
   \item transient state, \hyperpage{177}
 
-  \indexspace
+  \newpage
 
   \item unit vector, \hyperpage{2}
 
-  \newpage
+  \indexspace
 
   \item VA, \hyperpage{75}
   \item vector, \hyperpage{2}
@@ -227,14 +227,14 @@
   \item winding
     \subitem distributed, \hyperpage{142}
   \item winding factor, \hyperpage{149}
+
 \end{otherlanguage}
   \newpage
-\indexspace
+
 \item ابتدائی
    \subitem جانب، \hyperpage{55}
    \subitem لچھا، \hyperpage{55}
 \item ارتباط بہاو، \hyperpage{37}
-\item استعداد، \hyperpage{97، 98}
 \item اضافی
    \subitem زاویائی رفتار، \hyperpage{214}
 \item اکائی سمتیہ، \hyperpage{2}
@@ -247,7 +247,6 @@
 \indexspace
 \item بار، \hyperpage{138}
 \item برقرار چالو، \hyperpage{101}، \hyperpage{177}
-\item برقی استعداد، \hyperpage{59}
 \item برقی بار، \hyperpage{9}، \hyperpage{138}
 \item برقی دباؤ، \hyperpage{28}، \hyperpage{139}
    \subitem تبادلہ، \hyperpage{56}، \hyperpage{66}
@@ -258,6 +257,7 @@
    \subitem بھنور نما، \hyperpage{128}
    \subitem تبادلہ، \hyperpage{66}
    \subitem ہیجان انگیز، \hyperpage{51}
+\item برقی سکت، \hyperpage{59}
 \item برقی میدان، \hyperpage{10}
    \subitem شدت، \hyperpage{10}، \hyperpage{27}
 \item بش، \hyperpage{179}
@@ -358,6 +358,7 @@
 \item سرک چھلے، \hyperpage{178}، \hyperpage{233}
 \item سطحی تکمل، \hyperpage{183}
 \item سطحی کثافت، \hyperpage{11}
+\item سکت، \hyperpage{97، 98}
 \item سلسلہ وار، \hyperpage{147}
 \item سمت کار، \hyperpage{245}
    \subitem برقیاتی، \hyperpage{167}
@@ -495,5 +496,4 @@
 \item یک مرحلہ برقی دباؤ، \hyperpage{95}
 \item یک مرحلہ برقی رو، \hyperpage{95}
 \item یولر مساوات، \hyperpage{21}
-
 \end{theindex}
