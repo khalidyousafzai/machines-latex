@@ -1,6 +1,5 @@
 \begin{theindex}
 \begin{otherlanguage}{english}
-
   \item ampere-turn, \hyperpage{32}
   \item armature coil, \hyperpage{133}, \hyperpage{255}
   \item axle, \hyperpage{163}
@@ -206,7 +205,7 @@
     \subitem ideal, \hyperpage{65}
   \item transient state, \hyperpage{177}
 
-  \newpage
+  \indexspace
 
   \item unit vector, \hyperpage{2}
 
@@ -229,8 +228,10 @@
   \item winding factor, \hyperpage{149}
 
 \end{otherlanguage}
+
   \newpage
 
+  \indexspace
 \item ابتدائی
    \subitem جانب، \hyperpage{55}
    \subitem لچھا، \hyperpage{55}
@@ -489,7 +490,7 @@
    \subitem برقی رو، \hyperpage{61}
 \item ہیجان انگیز برقی رو، \hyperpage{60}
 \item ہیجانی برقی دباؤ، \hyperpage{187}
-\newpage
+\indexspace
 \item یک سمتی رو
    \subitem مشین، \hyperpage{245}
 \item یک مرحلہ، \hyperpage{23}
