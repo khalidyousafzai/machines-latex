@@ -1,120 +1,120 @@
 \select@language {arabic}
-\contentsline {chapter}{دیباچہ}{ix}{chapter*.2}
+\contentsline {chapter}{دیباچہ}{ix}
 \select@language {english}
 \select@language {arabic}
-\contentsline {chapter}{\numberline {\RL {\arabicfont 1}}بنیادی حقائق}{\RL {\arabicfont 1}}{chapter.1}
-\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 1}}بنیادی اکائیاں}{\RL {\arabicfont 1}}{section.1.1}
-\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 1}}مقداری}{\RL {\arabicfont 1}}{section.1.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 1}}سمتیہ}{\RL {\arabicfont 2}}{section.1.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 1}}محدد، خط مرتب}{\RL {\arabicfont 3}}{section.1.4}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 4}.\RL {\arabicfont 1}}کارتیسی محدد کا نظام}{\RL {\arabicfont 3}}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 4}.\RL {\arabicfont 1}}نلکی محدد کا نظام}{\RL {\arabicfont 4}}{subsection.1.4.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 1}}سمتیہ رقبہ}{\RL {\arabicfont 7}}{section.1.5}
-\contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 1}}رقبہ عمودی تراش}{\RL {\arabicfont 8}}{section.1.6}
-\contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 1}}برقی میدان اور مقناطیسی میدان}{\RL {\arabicfont 9}}{section.1.7}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 7}.\RL {\arabicfont 1}}برقی میدان اور برقی میدان کی شدت}{\RL {\arabicfont 9}}{subsection.1.7.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 7}.\RL {\arabicfont 1}}مقناطیسی میدان اور مقناطیسی میدان کی شدت}{\RL {\arabicfont 11}}{subsection.1.7.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 8}.\RL {\arabicfont 1}}سطحی اور حجمی کثافت}{\RL {\arabicfont 11}}{section.1.8}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 8}.\RL {\arabicfont 1}}سطحی کثافت}{\RL {\arabicfont 11}}{subsection.1.8.1}
-\contentsline {section}{\numberline {\RL {\arabicfont 9}.\RL {\arabicfont 1}}حجمی کثافت}{\RL {\arabicfont 12}}{section.1.9}
-\contentsline {section}{\numberline {\RL {\arabicfont 10}.\RL {\arabicfont 1}}ضربِ صلیبی اور ضربِ نقطہ}{\RL {\arabicfont 13}}{section.1.10}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 10}.\RL {\arabicfont 1}}ضرب صلیبی}{\RL {\arabicfont 13}}{subsection.1.10.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 10}.\RL {\arabicfont 1}}ضربِ نقطہ}{\RL {\arabicfont 16}}{subsection.1.10.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 11}.\RL {\arabicfont 1}}تفرق اور جزوی تفرق}{\RL {\arabicfont 18}}{section.1.11}
-\contentsline {section}{\numberline {\RL {\arabicfont 12}.\RL {\arabicfont 1}}خطی تکمل}{\RL {\arabicfont 19}}{section.1.12}
-\contentsline {section}{\numberline {\RL {\arabicfont 13}.\RL {\arabicfont 1}}سطحی تکمل}{\RL {\arabicfont 19}}{section.1.13}
-\contentsline {section}{\numberline {\RL {\arabicfont 14}.\RL {\arabicfont 1}} مرحلی سمتیہ}{\RL {\arabicfont 21}}{section.1.14}
-\contentsline {chapter}{\numberline {\RL {\arabicfont 2}}مقناطیسی ادوار}{\RL {\arabicfont 25}}{chapter.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 2}}مزاحمت اور ہچکچاہٹ}{\RL {\arabicfont 25}}{section.2.1}
-\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 2}}کثافتِ برقی رو اور برقی میدان کی شدت}{\RL {\arabicfont 26}}{section.2.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 2}}برقی ادوار}{\RL {\arabicfont 28}}{section.2.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 2}}مقناطیسی دور حصہ اول}{\RL {\arabicfont 29}}{section.2.4}
-\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 2}}کثافتِ مقناطیسی بہاو اور مقناطیسی میدان کی شدت}{\RL {\arabicfont 31}}{section.2.5}
-\contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 2}}مقناطیسی دور حصہ دوم}{\RL {\arabicfont 34}}{section.2.6}
-\contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 2}}خود امالہ ، مشترکہ امالہ اور توانائی}{\RL {\arabicfont 37}}{section.2.7}
-\contentsline {section}{\numberline {\RL {\arabicfont 8}.\RL {\arabicfont 2}}مقناطیسی مادہ کے خصوصیات}{\RL {\arabicfont 43}}{section.2.8}
-\contentsline {section}{\numberline {\RL {\arabicfont 9}.\RL {\arabicfont 2}}ہیجان شدہ لچھا}{\RL {\arabicfont 47}}{section.2.9}
-\contentsline {chapter}{\numberline {\RL {\arabicfont 3}}ٹرانسفارمر}{\RL {\arabicfont 55}}{chapter.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 3}}ٹرانسفارمر کی اہمیت}{\RL {\arabicfont 56}}{section.3.1}
-\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 3}}ٹرانسفارمر کے اقسام}{\RL {\arabicfont 59}}{section.3.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 3}}امالی برقی دباؤ}{\RL {\arabicfont 60}}{section.3.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 3}}ہیجان انگیز برقی رو اور قالبی ضیاع}{\RL {\arabicfont 62}}{section.3.4}
-\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 3}}تبادلہ برقی دباؤ اور تبادلہ برقی رو کے خصوصیات}{\RL {\arabicfont 65}}{section.3.5}
-\contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 3}}ثانوی جانب بوجھ کا ابتدائی جانب اثر}{\RL {\arabicfont 68}}{section.3.6}
-\contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 3}}ٹرانسفارمر کی علامت پر نقطوں کا مطلب}{\RL {\arabicfont 69}}{section.3.7}
-\contentsline {section}{\numberline {\RL {\arabicfont 8}.\RL {\arabicfont 3}}رکاوٹ کا تبادلہ}{\RL {\arabicfont 70}}{section.3.8}
-\contentsline {section}{\numberline {\RL {\arabicfont 9}.\RL {\arabicfont 3}}ٹرانسفارمر کے وولٹ-ایمپیئر}{\RL {\arabicfont 75}}{section.3.9}
-\contentsline {section}{\numberline {\RL {\arabicfont 10}.\RL {\arabicfont 3}}ٹرانسفارمر کے امالہ اور اس کے مساوی دور}{\RL {\arabicfont 77}}{section.3.10}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}لچھے کی مزاحمت اور اس کی متعاملہ علیحدہ کرنا}{\RL {\arabicfont 77}}{subsection.3.10.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}رِستا امالہ}{\RL {\arabicfont 79}}{subsection.3.10.2}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی برقی رو اور قالب کے اثرات}{\RL {\arabicfont 79}}{subsection.3.10.3}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی لچھے کی امالی برقی دباؤ}{\RL {\arabicfont 81}}{subsection.3.10.4}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{\RL {\arabicfont 82}}{subsection.3.10.5}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{\RL {\arabicfont 82}}{subsection.3.10.6}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ٹرانسفارمر کے سادہ ترین مساوی دور}{\RL {\arabicfont 84}}{subsection.3.10.7}
-\contentsline {section}{\numberline {\RL {\arabicfont 11}.\RL {\arabicfont 3}}کھلے دور معائنہ اور کسرِ دور معائنہ}{\RL {\arabicfont 86}}{section.3.11}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 11}.\RL {\arabicfont 3}}کھلے دور معائنہ}{\RL {\arabicfont 87}}{subsection.3.11.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 11}.\RL {\arabicfont 3}} کسرِ دور معائنہ}{\RL {\arabicfont 89}}{subsection.3.11.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 12}.\RL {\arabicfont 3}}تین مرحلہ ٹرانسفارمر}{\RL {\arabicfont 93}}{section.3.12}
-\contentsline {section}{\numberline {\RL {\arabicfont 13}.\RL {\arabicfont 3}}ٹرانسفارمر چالو کرتے لمحہ زیادہ محرکی برقی رو کا گزر}{\RL {\arabicfont 101}}{section.3.13}
-\contentsline {chapter}{\numberline {\RL {\arabicfont 4}}برقی اور میکانی توانائی کا باہمی تبادلہ}{\RL {\arabicfont 103}}{chapter.4}
-\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 4}}مقناطیسی نظام میں قوت اور قوت مروڑ}{\RL {\arabicfont 104}}{section.4.1}
-\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 4}}تبادلہ توانائی والا ایک لچھے کا نظام}{\RL {\arabicfont 109}}{section.4.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 4}}توانائی اور کو-توانائی}{\RL {\arabicfont 114}}{section.4.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 4}}زیادہ لچھوں کا مقناطیسی نظام}{\RL {\arabicfont 119}}{section.4.4}
-\contentsline {chapter}{\numberline {\RL {\arabicfont 5}}گھومتے مشین کے بنیادی اصول}{\RL {\arabicfont 127}}{chapter.5}
-\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}}قانونِ فیراڈے}{\RL {\arabicfont 127}}{section.5.1}
-\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}}معاصر مشین}{\RL {\arabicfont 128}}{section.5.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 5}}محرک برقی دباؤ}{\RL {\arabicfont 138}}{section.5.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 5}}پھیلے لچھے اور سائن نما مقناطیسی دباؤ}{\RL {\arabicfont 141}}{section.5.4}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 4}.\RL {\arabicfont 5}}بدلتی رو والے مشین}{\RL {\arabicfont 143}}{subsection.5.4.1}
-\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 5}}مقناطیسی دباؤ کی گھومتی موجیں}{\RL {\arabicfont 152}}{section.5.5}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}.\RL {\arabicfont 5}}ایک دور کی لپٹی مشین}{\RL {\arabicfont 152}}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}.\RL {\arabicfont 5}}تین دور کی لپٹی مشین کا تحلیلی تجزیہ}{\RL {\arabicfont 154}}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 5}.\RL {\arabicfont 5}}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{\RL {\arabicfont 158}}{subsection.5.5.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 5}}محرک برقی دباؤ}{\RL {\arabicfont 162}}{section.5.6}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 6}.\RL {\arabicfont 5}}بدلتی رو برقی جنریٹر}{\RL {\arabicfont 162}}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 6}.\RL {\arabicfont 5}}یک سمتی رو برقی جنریٹر}{\RL {\arabicfont 167}}{subsection.5.6.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 5}}ہموار قطب مشینوں میں قوت مروڑ}{\RL {\arabicfont 168}}{section.5.7}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 7}.\RL {\arabicfont 5}}توانائی کے طریقے سے میکانی قوت مروڑ کا حساب}{\RL {\arabicfont 168}}{subsection.5.7.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 7}.\RL {\arabicfont 5}}مقناطیسی بہاو سے میکانی قوت مروڑ کا حساب}{\RL {\arabicfont 170}}{subsection.5.7.2}
-\contentsline {chapter}{\numberline {\RL {\arabicfont 6}}یکساں حال، برقرار چالو معاصر مشین}{\RL {\arabicfont 177}}{chapter.6}
-\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 6}}متعدد مرحلہ معاصر مشین}{\RL {\arabicfont 178}}{section.6.1}
-\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 6}}معاصر مشین کے امالہ}{\RL {\arabicfont 181}}{section.6.2}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 2}.\RL {\arabicfont 6}}خود امالہ}{\RL {\arabicfont 182}}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 2}.\RL {\arabicfont 6}}مشترکہ امالہ}{\RL {\arabicfont 183}}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 2}.\RL {\arabicfont 6}}معاصر امالہ}{\RL {\arabicfont 185}}{subsection.6.2.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 6}}معاصر مشین کا مساوی دور یا ریاضی نمونہ}{\RL {\arabicfont 187}}{section.6.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 6}}برقی طاقت کی منتقلی}{\RL {\arabicfont 189}}{section.6.4}
-\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 6}}یکساں حال، برقرار چالو مشین کے خصوصیات}{\RL {\arabicfont 194}}{section.6.5}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}.\RL {\arabicfont 6}}معاصر جنریٹر: برقی بوجھ بالمقابل \ensuremath {I_m} کے خطوط}{\RL {\arabicfont 194}}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}.\RL {\arabicfont 6}}معاصر موٹر:\ensuremath {I_a} بالمقابل \ensuremath {I_m} کے خط}{\RL {\arabicfont 195}}{subsection.6.5.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 6}}کھلے دور اور کسرِ دور معائنہ }{\RL {\arabicfont 197}}{section.6.6}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 6}.\RL {\arabicfont 6}}کُھلے دور معائنہ}{\RL {\arabicfont 197}}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 6}.\RL {\arabicfont 6}}کسرِ دور معائنہ}{\RL {\arabicfont 198}}{subsection.6.6.2}
-\contentsline {chapter}{\numberline {\RL {\arabicfont 7}}امالی مشین}{\RL {\arabicfont 209}}{chapter.7}
-\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 7}}ساکن لچھوں کی گھومتی مقناطیسی موج}{\RL {\arabicfont 210}}{section.7.1}
-\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 7}}مشین کی سرکنے اور گھومتی موجوں پر تبصرہ}{\RL {\arabicfont 210}}{section.7.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 7}}ساکن لچھوں میں امالی برقی دباؤ}{\RL {\arabicfont 213}}{section.7.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 7}}ساکن لچھوں کی موج کا گھومتے لچھوں کے ساتھ اضافی رفتار اور ان میں پیدا امالی برقی دباؤ}{\RL {\arabicfont 213}}{section.7.4}
-\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 7}}گھومتے لچھوں کی گھومتی مقناطیسی دباؤ کی موج}{\RL {\arabicfont 217}}{section.7.5}
-\contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 7}}گھومتے لچھوں کے مساوی فرضی ساکن لچھے}{\RL {\arabicfont 218}}{section.7.6}
-\contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 7}}امالی موٹر کا مساوی برقی دور}{\RL {\arabicfont 219}}{section.7.7}
-\contentsline {section}{\numberline {\RL {\arabicfont 8}.\RL {\arabicfont 7}}مساوی برقی دور پر غور}{\RL {\arabicfont 224}}{section.7.8}
-\contentsline {section}{\numberline {\RL {\arabicfont 9}.\RL {\arabicfont 7}}امالی موٹر کا مساوی تھونن دور یا ریاضی نمونہ}{\RL {\arabicfont 228}}{section.7.9}
-\contentsline {section}{\numberline {\RL {\arabicfont 10}.\RL {\arabicfont 7}}پنجرا نما امالی موٹر}{\RL {\arabicfont 235}}{section.7.10}
-\contentsline {section}{\numberline {\RL {\arabicfont 11}.\RL {\arabicfont 7}}بے بوجھ موٹر اور جامد موٹر کے معائنہ }{\RL {\arabicfont 236}}{section.7.11}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 11}.\RL {\arabicfont 7}}بے بوجھ موٹر کا معائنہ}{\RL {\arabicfont 236}}{subsection.7.11.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 11}.\RL {\arabicfont 7}}جامد موٹر کا معائنہ}{\RL {\arabicfont 238}}{subsection.7.11.2}
-\contentsline {chapter}{\numberline {\RL {\arabicfont 8}}یک سمتی رو مشین}{\RL {\arabicfont 245}}{chapter.8}
-\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 8}}میکانی سمت کار کی بنیادی کارکردگی}{\RL {\arabicfont 245}}{section.8.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 1}.\RL {\arabicfont 8}}میکانی سمت کار کی تفصیل}{\RL {\arabicfont 247}}{subsection.8.1.1}
-\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 8}}یک سمتی جنریٹر کی برقی دباؤ}{\RL {\arabicfont 251}}{section.8.2}
-\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 8}}قوت مروڑ}{\RL {\arabicfont 253}}{section.8.3}
-\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 8}}بیرونی ہیجان اور خود ہیجان یک سمتی جنریٹر}{\RL {\arabicfont 255}}{section.8.4}
-\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 8}}یک سمتی مشین کی کارکردگی کے خط}{\RL {\arabicfont 259}}{section.8.5}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}حاصل برقی دباؤ بالمقابل برقی بوجھ}{\RL {\arabicfont 259}}{subsection.8.5.1}
-\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}رفتار بالمقابل قوت مروڑ}{\RL {\arabicfont 261}}{subsection.8.5.2}
-\contentsline {chapter}{فرہنگ}{\RL {\arabicfont 269}}{equation.8.5.17}
+\contentsline {chapter}{\numberline {\RL {\arabicfont 1}}بنیادی حقائق}{\RL {\arabicfont 1}}
+\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 1}}بنیادی اکائیاں}{\RL {\arabicfont 1}}
+\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 1}}مقداری}{\RL {\arabicfont 1}}
+\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 1}}سمتیہ}{\RL {\arabicfont 2}}
+\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 1}}محدد، خط مرتب}{\RL {\arabicfont 3}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 4}.\RL {\arabicfont 1}}کارتیسی محدد کا نظام}{\RL {\arabicfont 3}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 4}.\RL {\arabicfont 1}}نلکی محدد کا نظام}{\RL {\arabicfont 4}}
+\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 1}}سمتیہ رقبہ}{\RL {\arabicfont 7}}
+\contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 1}}رقبہ عمودی تراش}{\RL {\arabicfont 8}}
+\contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 1}}برقی میدان اور مقناطیسی میدان}{\RL {\arabicfont 9}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 7}.\RL {\arabicfont 1}}برقی میدان اور برقی میدان کی شدت}{\RL {\arabicfont 9}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 7}.\RL {\arabicfont 1}}مقناطیسی میدان اور مقناطیسی میدان کی شدت}{\RL {\arabicfont 11}}
+\contentsline {section}{\numberline {\RL {\arabicfont 8}.\RL {\arabicfont 1}}سطحی اور حجمی کثافت}{\RL {\arabicfont 11}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 8}.\RL {\arabicfont 1}}سطحی کثافت}{\RL {\arabicfont 11}}
+\contentsline {section}{\numberline {\RL {\arabicfont 9}.\RL {\arabicfont 1}}حجمی کثافت}{\RL {\arabicfont 12}}
+\contentsline {section}{\numberline {\RL {\arabicfont 10}.\RL {\arabicfont 1}}ضربِ صلیبی اور ضربِ نقطہ}{\RL {\arabicfont 13}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 10}.\RL {\arabicfont 1}}ضرب صلیبی}{\RL {\arabicfont 13}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 10}.\RL {\arabicfont 1}}ضربِ نقطہ}{\RL {\arabicfont 16}}
+\contentsline {section}{\numberline {\RL {\arabicfont 11}.\RL {\arabicfont 1}}تفرق اور جزوی تفرق}{\RL {\arabicfont 18}}
+\contentsline {section}{\numberline {\RL {\arabicfont 12}.\RL {\arabicfont 1}}خطی تکمل}{\RL {\arabicfont 19}}
+\contentsline {section}{\numberline {\RL {\arabicfont 13}.\RL {\arabicfont 1}}سطحی تکمل}{\RL {\arabicfont 19}}
+\contentsline {section}{\numberline {\RL {\arabicfont 14}.\RL {\arabicfont 1}} مرحلی سمتیہ}{\RL {\arabicfont 21}}
+\contentsline {chapter}{\numberline {\RL {\arabicfont 2}}مقناطیسی ادوار}{\RL {\arabicfont 25}}
+\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 2}}مزاحمت اور ہچکچاہٹ}{\RL {\arabicfont 25}}
+\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 2}}کثافتِ برقی رو اور برقی میدان کی شدت}{\RL {\arabicfont 26}}
+\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 2}}برقی ادوار}{\RL {\arabicfont 28}}
+\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 2}}مقناطیسی دور حصہ اول}{\RL {\arabicfont 29}}
+\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 2}}کثافتِ مقناطیسی بہاو اور مقناطیسی میدان کی شدت}{\RL {\arabicfont 31}}
+\contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 2}}مقناطیسی دور حصہ دوم}{\RL {\arabicfont 34}}
+\contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 2}}خود امالہ ، مشترکہ امالہ اور توانائی}{\RL {\arabicfont 37}}
+\contentsline {section}{\numberline {\RL {\arabicfont 8}.\RL {\arabicfont 2}}مقناطیسی مادہ کے خصوصیات}{\RL {\arabicfont 43}}
+\contentsline {section}{\numberline {\RL {\arabicfont 9}.\RL {\arabicfont 2}}ہیجان شدہ لچھا}{\RL {\arabicfont 47}}
+\contentsline {chapter}{\numberline {\RL {\arabicfont 3}}ٹرانسفارمر}{\RL {\arabicfont 55}}
+\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 3}}ٹرانسفارمر کی اہمیت}{\RL {\arabicfont 56}}
+\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 3}}ٹرانسفارمر کے اقسام}{\RL {\arabicfont 59}}
+\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 3}}امالی برقی دباؤ}{\RL {\arabicfont 60}}
+\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 3}}ہیجان انگیز برقی رو اور قالبی ضیاع}{\RL {\arabicfont 62}}
+\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 3}}تبادلہ برقی دباؤ اور تبادلہ برقی رو کے خصوصیات}{\RL {\arabicfont 65}}
+\contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 3}}ثانوی جانب بوجھ کا ابتدائی جانب اثر}{\RL {\arabicfont 68}}
+\contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 3}}ٹرانسفارمر کی علامت پر نقطوں کا مطلب}{\RL {\arabicfont 69}}
+\contentsline {section}{\numberline {\RL {\arabicfont 8}.\RL {\arabicfont 3}}رکاوٹ کا تبادلہ}{\RL {\arabicfont 70}}
+\contentsline {section}{\numberline {\RL {\arabicfont 9}.\RL {\arabicfont 3}}ٹرانسفارمر کے وولٹ-ایمپیئر}{\RL {\arabicfont 75}}
+\contentsline {section}{\numberline {\RL {\arabicfont 10}.\RL {\arabicfont 3}}ٹرانسفارمر کے امالہ اور اس کے مساوی دور}{\RL {\arabicfont 77}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}لچھے کی مزاحمت اور اس کی متعاملہ علیحدہ کرنا}{\RL {\arabicfont 77}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}رِستا امالہ}{\RL {\arabicfont 79}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی برقی رو اور قالب کے اثرات}{\RL {\arabicfont 79}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی لچھے کی امالی برقی دباؤ}{\RL {\arabicfont 81}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{\RL {\arabicfont 82}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{\RL {\arabicfont 82}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 10}.\RL {\arabicfont 3}}ٹرانسفارمر کے سادہ ترین مساوی دور}{\RL {\arabicfont 84}}
+\contentsline {section}{\numberline {\RL {\arabicfont 11}.\RL {\arabicfont 3}}کھلے دور معائنہ اور کسرِ دور معائنہ}{\RL {\arabicfont 86}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 11}.\RL {\arabicfont 3}}کھلے دور معائنہ}{\RL {\arabicfont 87}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 11}.\RL {\arabicfont 3}} کسرِ دور معائنہ}{\RL {\arabicfont 89}}
+\contentsline {section}{\numberline {\RL {\arabicfont 12}.\RL {\arabicfont 3}}تین مرحلہ ٹرانسفارمر}{\RL {\arabicfont 93}}
+\contentsline {section}{\numberline {\RL {\arabicfont 13}.\RL {\arabicfont 3}}ٹرانسفارمر چالو کرتے لمحہ زیادہ محرکی برقی رو کا گزر}{\RL {\arabicfont 101}}
+\contentsline {chapter}{\numberline {\RL {\arabicfont 4}}برقی اور میکانی توانائی کا باہمی تبادلہ}{\RL {\arabicfont 103}}
+\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 4}}مقناطیسی نظام میں قوت اور قوت مروڑ}{\RL {\arabicfont 104}}
+\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 4}}تبادلہ توانائی والا ایک لچھے کا نظام}{\RL {\arabicfont 109}}
+\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 4}}توانائی اور کو-توانائی}{\RL {\arabicfont 114}}
+\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 4}}زیادہ لچھوں کا مقناطیسی نظام}{\RL {\arabicfont 119}}
+\contentsline {chapter}{\numberline {\RL {\arabicfont 5}}گھومتے مشین کے بنیادی اصول}{\RL {\arabicfont 127}}
+\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}}قانونِ فیراڈے}{\RL {\arabicfont 127}}
+\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}}معاصر مشین}{\RL {\arabicfont 128}}
+\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 5}}محرک برقی دباؤ}{\RL {\arabicfont 138}}
+\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 5}}پھیلے لچھے اور سائن نما مقناطیسی دباؤ}{\RL {\arabicfont 141}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 4}.\RL {\arabicfont 5}}بدلتی رو والے مشین}{\RL {\arabicfont 143}}
+\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 5}}مقناطیسی دباؤ کی گھومتی موجیں}{\RL {\arabicfont 152}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}.\RL {\arabicfont 5}}ایک دور کی لپٹی مشین}{\RL {\arabicfont 152}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}.\RL {\arabicfont 5}}تین دور کی لپٹی مشین کا تحلیلی تجزیہ}{\RL {\arabicfont 154}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 5}.\RL {\arabicfont 5}}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{\RL {\arabicfont 158}}
+\contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 5}}محرک برقی دباؤ}{\RL {\arabicfont 162}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 6}.\RL {\arabicfont 5}}بدلتی رو برقی جنریٹر}{\RL {\arabicfont 162}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 6}.\RL {\arabicfont 5}}یک سمتی رو برقی جنریٹر}{\RL {\arabicfont 167}}
+\contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 5}}ہموار قطب مشینوں میں قوت مروڑ}{\RL {\arabicfont 168}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 7}.\RL {\arabicfont 5}}توانائی کے طریقے سے میکانی قوت مروڑ کا حساب}{\RL {\arabicfont 168}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 7}.\RL {\arabicfont 5}}مقناطیسی بہاو سے میکانی قوت مروڑ کا حساب}{\RL {\arabicfont 170}}
+\contentsline {chapter}{\numberline {\RL {\arabicfont 6}}یکساں حال، برقرار چالو معاصر مشین}{\RL {\arabicfont 177}}
+\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 6}}متعدد مرحلہ معاصر مشین}{\RL {\arabicfont 178}}
+\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 6}}معاصر مشین کے امالہ}{\RL {\arabicfont 181}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 2}.\RL {\arabicfont 6}}خود امالہ}{\RL {\arabicfont 182}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 2}.\RL {\arabicfont 6}}مشترکہ امالہ}{\RL {\arabicfont 183}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 2}.\RL {\arabicfont 6}}معاصر امالہ}{\RL {\arabicfont 185}}
+\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 6}}معاصر مشین کا مساوی دور یا ریاضی نمونہ}{\RL {\arabicfont 187}}
+\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 6}}برقی طاقت کی منتقلی}{\RL {\arabicfont 189}}
+\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 6}}یکساں حال، برقرار چالو مشین کے خصوصیات}{\RL {\arabicfont 194}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}.\RL {\arabicfont 6}}معاصر جنریٹر: برقی بوجھ بالمقابل \ensuremath {I_m} کے خطوط}{\RL {\arabicfont 194}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}.\RL {\arabicfont 6}}معاصر موٹر:\ensuremath {I_a} بالمقابل \ensuremath {I_m} کے خط}{\RL {\arabicfont 195}}
+\contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 6}}کھلے دور اور کسرِ دور معائنہ }{\RL {\arabicfont 197}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 6}.\RL {\arabicfont 6}}کُھلے دور معائنہ}{\RL {\arabicfont 197}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 6}.\RL {\arabicfont 6}}کسرِ دور معائنہ}{\RL {\arabicfont 198}}
+\contentsline {chapter}{\numberline {\RL {\arabicfont 7}}امالی مشین}{\RL {\arabicfont 209}}
+\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 7}}ساکن لچھوں کی گھومتی مقناطیسی موج}{\RL {\arabicfont 210}}
+\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 7}}مشین کی سرکنے اور گھومتی موجوں پر تبصرہ}{\RL {\arabicfont 210}}
+\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 7}}ساکن لچھوں میں امالی برقی دباؤ}{\RL {\arabicfont 213}}
+\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 7}}ساکن لچھوں کی موج کا گھومتے لچھوں کے ساتھ اضافی رفتار اور ان میں پیدا امالی برقی دباؤ}{\RL {\arabicfont 213}}
+\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 7}}گھومتے لچھوں کی گھومتی مقناطیسی دباؤ کی موج}{\RL {\arabicfont 217}}
+\contentsline {section}{\numberline {\RL {\arabicfont 6}.\RL {\arabicfont 7}}گھومتے لچھوں کے مساوی فرضی ساکن لچھے}{\RL {\arabicfont 218}}
+\contentsline {section}{\numberline {\RL {\arabicfont 7}.\RL {\arabicfont 7}}امالی موٹر کا مساوی برقی دور}{\RL {\arabicfont 219}}
+\contentsline {section}{\numberline {\RL {\arabicfont 8}.\RL {\arabicfont 7}}مساوی برقی دور پر غور}{\RL {\arabicfont 224}}
+\contentsline {section}{\numberline {\RL {\arabicfont 9}.\RL {\arabicfont 7}}امالی موٹر کا مساوی تھونن دور یا ریاضی نمونہ}{\RL {\arabicfont 228}}
+\contentsline {section}{\numberline {\RL {\arabicfont 10}.\RL {\arabicfont 7}}پنجرا نما امالی موٹر}{\RL {\arabicfont 235}}
+\contentsline {section}{\numberline {\RL {\arabicfont 11}.\RL {\arabicfont 7}}بے بوجھ موٹر اور جامد موٹر کے معائنہ }{\RL {\arabicfont 236}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 11}.\RL {\arabicfont 7}}بے بوجھ موٹر کا معائنہ}{\RL {\arabicfont 236}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 11}.\RL {\arabicfont 7}}جامد موٹر کا معائنہ}{\RL {\arabicfont 238}}
+\contentsline {chapter}{\numberline {\RL {\arabicfont 8}}یک سمتی رو مشین}{\RL {\arabicfont 245}}
+\contentsline {section}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 8}}میکانی سمت کار کی بنیادی کارکردگی}{\RL {\arabicfont 245}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 1}.\RL {\arabicfont 8}}میکانی سمت کار کی تفصیل}{\RL {\arabicfont 247}}
+\contentsline {section}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 8}}یک سمتی جنریٹر کی برقی دباؤ}{\RL {\arabicfont 251}}
+\contentsline {section}{\numberline {\RL {\arabicfont 3}.\RL {\arabicfont 8}}قوت مروڑ}{\RL {\arabicfont 253}}
+\contentsline {section}{\numberline {\RL {\arabicfont 4}.\RL {\arabicfont 8}}بیرونی ہیجان اور خود ہیجان یک سمتی جنریٹر}{\RL {\arabicfont 255}}
+\contentsline {section}{\numberline {\RL {\arabicfont 5}.\RL {\arabicfont 8}}یک سمتی مشین کی کارکردگی کے خط}{\RL {\arabicfont 259}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 1}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}حاصل برقی دباؤ بالمقابل برقی بوجھ}{\RL {\arabicfont 259}}
+\contentsline {subsection}{\numberline {\RL {\arabicfont 2}.\RL {\arabicfont 5}.\RL {\arabicfont 8}}رفتار بالمقابل قوت مروڑ}{\RL {\arabicfont 261}}
+\contentsline {chapter}{فرہنگ}{\RL {\arabicfont 269}}
 \select@language {english}
 \select@language {arabic}

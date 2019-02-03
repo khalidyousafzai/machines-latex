@@ -1,231 +1,231 @@
 \begin{theindex}
 \begin{otherlanguage}{english}
-  \item ampere-turn, \hyperpage{32}
-  \item armature coil, \hyperpage{133}, \hyperpage{255}
-  \item axle, \hyperpage{163}
+  \item ampere-turn, 32
+  \item armature coil, 133, 255
+  \item axle, 163
 
   \indexspace
 
-  \item carbon bush, \hyperpage{179}
-  \item cartesian system, \hyperpage{3}
-  \item charge, \hyperpage{9}, \hyperpage{138}
-  \item circuit breaker, \hyperpage{180}
-  \item coercivity, \hyperpage{44}
+  \item carbon bush, 179
+  \item cartesian system, 3
+  \item charge, 9, 138
+  \item circuit breaker, 180
+  \item coercivity, 44
   \item coil
-    \subitem high voltage, \hyperpage{56}
-    \subitem low voltage, \hyperpage{56}
-    \subitem primary, \hyperpage{55}
-    \subitem secondary, \hyperpage{55}
-  \item commutator, \hyperpage{167}, \hyperpage{245}
-  \item conductivity, \hyperpage{25}
-  \item conservative field, \hyperpage{110}
-  \item core, \hyperpage{55}, \hyperpage{128}
-  \item core loss, \hyperpage{62}
-  \item core loss component, \hyperpage{64}
-  \item Coulomb's law, \hyperpage{9}
-  \item cross product, \hyperpage{13}
-  \item cross section, \hyperpage{8}
+    \subitem high voltage, 56
+    \subitem low voltage, 56
+    \subitem primary, 55
+    \subitem secondary, 55
+  \item commutator, 167, 245
+  \item conductivity, 25
+  \item conservative field, 110
+  \item core, 55, 128
+  \item core loss, 62
+  \item core loss component, 64
+  \item Coulomb's law, 9
+  \item cross product, 13
+  \item cross section, 8
   \item current
-    \subitem transformation, \hyperpage{66}
-  \item cylindrical coordinates, \hyperpage{5}
+    \subitem transformation, 66
+  \item cylindrical coordinates, 5
 
   \indexspace
 
-  \item delta connected, \hyperpage{93}
-  \item design, \hyperpage{197}
-  \item differentiation, \hyperpage{18}
-  \item dot product, \hyperpage{16}
+  \item delta connected, 93
+  \item design, 197
+  \item differentiation, 18
+  \item dot product, 16
 
   \indexspace
 
-  \item E,I, \hyperpage{62}
-  \item earth, \hyperpage{95}
-  \item eddy current loss, \hyperpage{62}
-  \item eddy currents, \hyperpage{62}, \hyperpage{128}
+  \item E,I, 62
+  \item earth, 95
+  \item eddy current loss, 62
+  \item eddy currents, 62, 128
   \item electric field
-    \subitem intensity, \hyperpage{10}
-  \item electrical rating, \hyperpage{59}
-  \item electromagnet, \hyperpage{132}
-  \item electromotive force, \hyperpage{61}, \hyperpage{139}
-  \item emf, \hyperpage{139}
-  \item enamel, \hyperpage{62}
-  \item energy, \hyperpage{42}
-  \item Euler, \hyperpage{21}
-  \item excitation, \hyperpage{61}
-  \item excitation current, \hyperpage{51}, \hyperpage{60, 61}
-  \item excitation voltage, \hyperpage{61}
-  \item excited coil, \hyperpage{61}
+    \subitem intensity, 10
+  \item electrical rating, 59
+  \item electromagnet, 132
+  \item electromotive force, 61, 139
+  \item emf, 139
+  \item enamel, 62
+  \item energy, 42
+  \item Euler, 21
+  \item excitation, 61
+  \item excitation current, 51, 60, 61
+  \item excitation voltage, 61
+  \item excited coil, 61
 
   \indexspace
 
-  \item Faraday's law, \hyperpage{37}, \hyperpage{127}
-  \item field coil, \hyperpage{133}, \hyperpage{255}
-  \item flux, \hyperpage{29}
-  \item Fourier series, \hyperpage{63}, \hyperpage{143}
-  \item frequency, \hyperpage{132}
-  \item fundamental, \hyperpage{144}
-  \item fundamental component, \hyperpage{64}
+  \item Faraday's law, 37, 127
+  \item field coil, 133, 255
+  \item flux, 29
+  \item Fourier series, 63, 143
+  \item frequency, 132
+  \item fundamental, 144
+  \item fundamental component, 64
 
   \indexspace
 
   \item generator
-    \subitem ac, \hyperpage{162}
-  \item ground current, \hyperpage{95}
-  \item ground wire, \hyperpage{95}
+    \subitem ac, 162
+  \item ground current, 95
+  \item ground wire, 95
 
   \indexspace
 
-  \item harmonic, \hyperpage{144}
-  \item harmonic components, \hyperpage{64}
-  \item Henry, \hyperpage{38}
-  \item hunting, \hyperpage{180}
-  \item hysteresis loop, \hyperpage{45}
+  \item harmonic, 144
+  \item harmonic components, 64
+  \item Henry, 38
+  \item hunting, 180
+  \item hysteresis loop, 45
 
   \indexspace
 
-  \item impedance transformation, \hyperpage{72}
-  \item in-phase, \hyperpage{70}
-  \item induced voltage, \hyperpage{37}, \hyperpage{48}, \hyperpage{61}
-  \item inductance, \hyperpage{38}
+  \item impedance transformation, 72
+  \item in-phase, 70
+  \item induced voltage, 37, 48, 61
+  \item inductance, 38
 
   \indexspace
 
-  \item Joule, \hyperpage{42}
+  \item Joule, 42
 
   \indexspace
 
-  \item lagging, \hyperpage{22}
-  \item laminations, \hyperpage{31}, \hyperpage{62}, \hyperpage{128}
-  \item leading, \hyperpage{22}
-  \item leakage inductance, \hyperpage{79}
-  \item leakage reactance, \hyperpage{79}
-  \item line current, \hyperpage{95}
-  \item line voltage, \hyperpage{95}
-  \item linear circuit, \hyperpage{228}
-  \item load, \hyperpage{99}
-  \item Lorentz law, \hyperpage{138}
-  \item Lorenz equation, \hyperpage{104}
+  \item lagging, 22
+  \item laminations, 31, 62, 128
+  \item leading, 22
+  \item leakage inductance, 79
+  \item leakage reactance, 79
+  \item line current, 95
+  \item line voltage, 95
+  \item linear circuit, 228
+  \item load, 99
+  \item Lorentz law, 138
+  \item Lorenz equation, 104
 
   \indexspace
 
-  \item magnetic constant, \hyperpage{25}
-  \item magnetic core, \hyperpage{31}
+  \item magnetic constant, 25
+  \item magnetic core, 31
   \item magnetic field
-    \subitem intensity, \hyperpage{11}, \hyperpage{32}
+    \subitem intensity, 11, 32
   \item magnetic flux
-    \subitem density, \hyperpage{32}
-    \subitem leakage, \hyperpage{79}
-  \item magnetizing current, \hyperpage{64}
-  \item mmf, \hyperpage{29}
-  \item model, \hyperpage{82}, \hyperpage{209}
-  \item mutual flux linkage, \hyperpage{41}
-  \item mutual inductance, \hyperpage{41}
+    \subitem density, 32
+    \subitem leakage, 79
+  \item magnetizing current, 64
+  \item mmf, 29
+  \item model, 82, 209
+  \item mutual flux linkage, 41
+  \item mutual inductance, 41
 
   \indexspace
 
-  \item name plate, \hyperpage{98}
-  \item non-salient poles, \hyperpage{179}
+  \item name plate, 98
+  \item non-salient poles, 179
 
   \indexspace
 
-  \item Ohm's law, \hyperpage{26}
-  \item open circuit test, \hyperpage{87}
-  \item orthonormal, \hyperpage{3}
+  \item Ohm's law, 26
+  \item open circuit test, 87
+  \item orthonormal, 3
 
   \indexspace
 
-  \item parallel connected, \hyperpage{257}
-  \item permeability, \hyperpage{25}
-    \subitem relative, \hyperpage{26}
-  \item phase current, \hyperpage{95}
-  \item phase difference, \hyperpage{23}
-  \item phase voltage, \hyperpage{95}
-  \item phasor, \hyperpage{21}
+  \item parallel connected, 257
+  \item permeability, 25
+    \subitem relative, 26
+  \item phase current, 95
+  \item phase difference, 23
+  \item phase voltage, 95
+  \item phasor, 21
   \item pole
-    \subitem non-salient, \hyperpage{141}
-    \subitem salient, \hyperpage{141}
-  \item power, \hyperpage{42}
-  \item power factor, \hyperpage{23}
-    \subitem lagging, \hyperpage{23}
-    \subitem leading, \hyperpage{23}
-  \item power factor angle, \hyperpage{23}
-  \item power-angle law, \hyperpage{190}
+    \subitem non-salient, 141
+    \subitem salient, 141
+  \item power, 42
+  \item power factor, 23
+    \subitem lagging, 23
+    \subitem leading, 23
+  \item power factor angle, 23
+  \item power-angle law, 190
   \item primary
-    \subitem side, \hyperpage{55}
+    \subitem side, 55
 
   \indexspace
 
-  \item rating, \hyperpage{97, 98}
-  \item rectifier, \hyperpage{167}
-  \item relative permeability, \hyperpage{26}
-  \item relay, \hyperpage{103}
-  \item reluctance, \hyperpage{26}
-  \item residual magnetic flux, \hyperpage{44}
-  \item resistance, \hyperpage{25}
-  \item rms, \hyperpage{48}, \hyperpage{166}
-  \item rotor coli, \hyperpage{106}
-  \item rpm, \hyperpage{158}
+  \item rating, 97, 98
+  \item rectifier, 167
+  \item relative permeability, 26
+  \item relay, 103
+  \item reluctance, 26
+  \item residual magnetic flux, 44
+  \item resistance, 25
+  \item rms, 48, 166
+  \item rotor coli, 106
+  \item rpm, 158
 
   \indexspace
 
-  \item saturation, \hyperpage{45}
-  \item scalar, \hyperpage{1}
-  \item self excited, \hyperpage{255}
-  \item self flux linkage, \hyperpage{41}
-  \item self inductance, \hyperpage{41}
-  \item separately excited, \hyperpage{255}
+  \item saturation, 45
+  \item scalar, 1
+  \item self excited, 255
+  \item self flux linkage, 41
+  \item self inductance, 41
+  \item separately excited, 255
   \item side
-    \subitem secondary, \hyperpage{55}
-  \item single phase, \hyperpage{23}, \hyperpage{59}
-  \item slip, \hyperpage{211}
-  \item slip rings, \hyperpage{178}, \hyperpage{233}
-  \item star connected, \hyperpage{93}
-  \item stator coil, \hyperpage{106}, \hyperpage{129}
-  \item steady state, \hyperpage{177}
-  \item step down transformer, \hyperpage{58}
-  \item step up transformer, \hyperpage{58}
-  \item surface density, \hyperpage{11}
-  \item synchronous, \hyperpage{132}
-  \item synchronous inductance, \hyperpage{186}
-  \item synchronous speed, \hyperpage{158}, \hyperpage{178}
+    \subitem secondary, 55
+  \item single phase, 23, 59
+  \item slip, 211
+  \item slip rings, 178, 233
+  \item star connected, 93
+  \item stator coil, 106, 129
+  \item steady state, 177
+  \item step down transformer, 58
+  \item step up transformer, 58
+  \item surface density, 11
+  \item synchronous, 132
+  \item synchronous inductance, 186
+  \item synchronous speed, 158, 178
 
   \indexspace
 
-  \item Tesla, \hyperpage{32}
+  \item Tesla, 32
   \item theorem
-    \subitem maximum power transfer, \hyperpage{231}
-  \item Thevenin theorem, \hyperpage{228}
-  \item three phase, \hyperpage{59}, \hyperpage{93}
-  \item time period, \hyperpage{101}, \hyperpage{144}
-  \item torque, \hyperpage{168}, \hyperpage{211}
-    \subitem pull out, \hyperpage{180}
+    \subitem maximum power transfer, 231
+  \item Thevenin theorem, 228
+  \item three phase, 59, 93
+  \item time period, 101, 144
+  \item torque, 168, 211
+    \subitem pull out, 180
   \item transformer
-    \subitem air core, \hyperpage{59}
-    \subitem communication, \hyperpage{59}
-    \subitem ideal, \hyperpage{65}
-  \item transient state, \hyperpage{177}
+    \subitem air core, 59
+    \subitem communication, 59
+    \subitem ideal, 65
+  \item transient state, 177
 
   \indexspace
 
-  \item unit vector, \hyperpage{2}
+  \item unit vector, 2
 
   \indexspace
 
-  \item VA, \hyperpage{75}
-  \item vector, \hyperpage{2}
-  \item volt, \hyperpage{139}
-  \item volt-ampere, \hyperpage{75}
-  \item voltage, \hyperpage{139}
-    \subitem DC, \hyperpage{167}
-    \subitem transformation, \hyperpage{66}
+  \item VA, 75
+  \item vector, 2
+  \item volt, 139
+  \item volt-ampere, 75
+  \item voltage, 139
+    \subitem DC, 167
+    \subitem transformation, 66
 
   \indexspace
 
-  \item Watt, \hyperpage{42}
-  \item Weber, \hyperpage{32}
+  \item Watt, 42
+  \item Weber, 32
   \item winding
-    \subitem distributed, \hyperpage{142}
-  \item winding factor, \hyperpage{149}
+    \subitem distributed, 142
+  \item winding factor, 149
 
 \end{otherlanguage}
 
@@ -233,268 +233,268 @@
 
   \indexspace
 \item ابتدائی
-   \subitem جانب، \hyperpage{55}
-   \subitem لچھا، \hyperpage{55}
-\item ارتباط بہاو، \hyperpage{37}
+   \subitem جانب، 55
+   \subitem لچھا، 55
+\item ارتباط بہاو، 37
 \item اضافی
-   \subitem زاویائی رفتار، \hyperpage{214}
-\item اکائی سمتیہ، \hyperpage{2}
-\item امالہ، \hyperpage{38}
-\item امالی برقی دباؤ، \hyperpage{37}، \hyperpage{48}، 
-\item اوہم میٹر، \hyperpage{240}
-\item ایک، تین پتریاں، \hyperpage{62}
-\item ایک مرحلہ، \hyperpage{59}
-\item ایمپیئر-چکر، \hyperpage{32}
+   \subitem زاویائی رفتار، 214
+\item اکائی سمتیہ، 2
+\item امالہ، 38
+\item امالی برقی دباؤ، 37، 48، 
+\item اوہم میٹر، 240
+\item ایک، تین پتریاں، 62
+\item ایک مرحلہ، 59
+\item ایمپیئر-چکر، 32
 \indexspace
-\item بار، \hyperpage{138}
-\item برقرار چالو، \hyperpage{101}، \hyperpage{177}
-\item برقی بار، \hyperpage{9}، \hyperpage{138}
-\item برقی دباؤ، \hyperpage{28}، \hyperpage{139}
-   \subitem تبادلہ، \hyperpage{56}، \hyperpage{66}
-   \subitem محرک، \hyperpage{139}
-   \subitem ہیجانی، \hyperpage{187}
-   \subitem یک سمتی، \hyperpage{167}
-\item برقی رو، \hyperpage{28}
-   \subitem بھنور نما، \hyperpage{128}
-   \subitem تبادلہ، \hyperpage{66}
-   \subitem ہیجان انگیز، \hyperpage{51}
-\item برقی سکت، \hyperpage{59}
-\item برقی میدان، \hyperpage{10}
-   \subitem شدت، \hyperpage{10}، \hyperpage{27}
-\item بش، \hyperpage{179}
-\item بناوٹ، \hyperpage{87}
-\item بنیادی جزو، \hyperpage{64}، \hyperpage{144}
-\item بوجھ، \hyperpage{99}
-\item بھٹی، \hyperpage{116}
+\item بار، 138
+\item برقرار چالو، 101، 177
+\item برقی بار، 9، 138
+\item برقی دباؤ، 28، 139
+   \subitem تبادلہ، 56، 66
+   \subitem محرک، 139
+   \subitem ہیجانی، 187
+   \subitem یک سمتی، 167
+\item برقی رو، 28
+   \subitem بھنور نما، 128
+   \subitem تبادلہ، 66
+   \subitem ہیجان انگیز، 51
+\item برقی سکت، 59
+\item برقی میدان، 10
+   \subitem شدت، 10، 27
+\item بش، 179
+\item بناوٹ، 87
+\item بنیادی جزو، 64، 144
+\item بوجھ، 99
+\item بھٹی، 116
 \item بھنور نما
-   \subitem برقی رو، \hyperpage{62}
-   \subitem ضیاع، \hyperpage{62}
-\item بھنور نما برقی رو، \hyperpage{128}
-\item بے بوجھ، \hyperpage{60}
+   \subitem برقی رو، 62
+   \subitem ضیاع، 62
+\item بھنور نما برقی رو، 128
+\item بے بوجھ، 60
 \indexspace
-\item پتری، \hyperpage{31}، \hyperpage{128}
-\item پتریاں، \hyperpage{62}
-\item پورا بوجھ، \hyperpage{199}
-\item پیچھے، \hyperpage{80}
-\item پیش زاویہ، \hyperpage{22}
+\item پتری، 31، 128
+\item پتریاں، 62
+\item پورا بوجھ، 199
+\item پیچھے، 80
+\item پیش زاویہ، 22
 \indexspace
-\item تاخیری زاویہ، \hyperpage{22}
-\item تار کی برقی دباؤ، \hyperpage{95}
-\item تار کی برقی رو، \hyperpage{95}
-\item تانبا، \hyperpage{28}
+\item تاخیری زاویہ، 22
+\item تار کی برقی دباؤ، 95
+\item تار کی برقی رو، 95
+\item تانبا، 28
 \item تبادلہ
-   \subitem رکاوٹ، \hyperpage{72}
-\item تختی، \hyperpage{98}
-\item تدریجی تفرق، \hyperpage{115}
-\item تعدد، \hyperpage{132}
-\item تعقب، \hyperpage{180}
-\item تفرق، \hyperpage{18}
-   \subitem جزوی، \hyperpage{18}
-\item تکمل، \hyperpage{19}
-\item تکونی جوڑ، \hyperpage{93}
-\item توانائی، \hyperpage{42}
-\item تین مرحلہ، \hyperpage{59}، \hyperpage{93}
+   \subitem رکاوٹ، 72
+\item تختی، 98
+\item تدریجی تفرق، 115
+\item تعدد، 132
+\item تعقب، 180
+\item تفرق، 18
+   \subitem جزوی، 18
+\item تکمل، 19
+\item تکونی جوڑ، 93
+\item توانائی، 42
+\item تین مرحلہ، 59، 93
 \indexspace
 \item ٹرانسفارمر
-   \subitem برقی دباؤ، میٹر، \hyperpage{59}
-   \subitem بوجھ بردار، \hyperpage{69}
-   \subitem خلائی قالب، \hyperpage{59}
-   \subitem دباؤ بڑھاتا، \hyperpage{58}
-   \subitem دباؤ گھٹاتا، \hyperpage{58}
-   \subitem ذرائع ابلاغ، \hyperpage{59}
-   \subitem رو، میٹر، \hyperpage{59}
-   \subitem کامل، \hyperpage{65}
-\item ٹسلا، \hyperpage{32}
-\item ٹھنڈی تار، \hyperpage{95}
+   \subitem برقی دباؤ، میٹر، 59
+   \subitem بوجھ بردار، 69
+   \subitem خلائی قالب، 59
+   \subitem دباؤ بڑھاتا، 58
+   \subitem دباؤ گھٹاتا، 58
+   \subitem ذرائع ابلاغ، 59
+   \subitem رو، میٹر، 59
+   \subitem کامل، 65
+\item ٹسلا، 32
+\item ٹھنڈی تار، 95
 \indexspace
-\item ثانوی جانب، \hyperpage{55}
+\item ثانوی جانب، 55
 \indexspace
-\item جاول، \hyperpage{42}
+\item جاول، 42
 \item جزو
-   \subitem پھیلاو، \hyperpage{149}
-\item جزو طاقت، \hyperpage{23}
-   \subitem پیش، \hyperpage{23}
-   \subitem تاخیری، \hyperpage{23}
+   \subitem پھیلاو، 149
+\item جزو طاقت، 23
+   \subitem پیش، 23
+   \subitem تاخیری، 23
 \item جنریٹر
-   \subitem بدلتی رو، \hyperpage{162}
+   \subitem بدلتی رو، 162
 \item جوڑ
-   \subitem تکونی، \hyperpage{93}
-   \subitem ستارہ نما، \hyperpage{93}
+   \subitem تکونی، 93
+   \subitem ستارہ نما، 93
 \indexspace
-\item چکر فی منٹ، \hyperpage{128}
-\item چوٹی، \hyperpage{213}
+\item چکر فی منٹ، 128
+\item چوٹی، 213
 \indexspace
 \item خطی
-   \subitem برقی دور، \hyperpage{228}
-\item خود ارتباط بہاو، \hyperpage{41}
-\item خود امالہ، \hyperpage{41}
+   \subitem برقی دور، 228
+\item خود ارتباط بہاو، 41
+\item خود امالہ، 41
 \indexspace
 \item داخلی ہیجان
-   \subitem سلسلہ وار، \hyperpage{257}
-   \subitem متوازی، \hyperpage{257}
-   \subitem مرکب، \hyperpage{257}
-\item دور جڑی مرکب، \hyperpage{257}
-\item دور شکن، \hyperpage{180}
-\item دوری عرصہ، \hyperpage{101}، \hyperpage{144}
-\item دھرا، \hyperpage{163}
+   \subitem سلسلہ وار، 257
+   \subitem متوازی، 257
+   \subitem مرکب، 257
+\item دور جڑی مرکب، 257
+\item دور شکن، 180
+\item دوری عرصہ، 101، 144
+\item دھرا، 163
 \indexspace
 \item رستا
-   \subitem امالہ، \hyperpage{79}
-   \subitem متعاملہ، \hyperpage{79}
-\item رستا متعاملیت، \hyperpage{219}
+   \subitem امالہ، 79
+   \subitem متعاملہ، 79
+\item رستا متعاملیت، 219
 \item رفتار
-   \subitem اضافی زاویائی، \hyperpage{214}
-\item روغن، \hyperpage{62}
-\item ریاضی نمونہ، \hyperpage{82}، \hyperpage{209}
-\item رِیلے، \hyperpage{103}
+   \subitem اضافی زاویائی، 214
+\item روغن، 62
+\item ریاضی نمونہ، 82، 209
+\item رِیلے، 103
 \indexspace
-\item زاویہ جزو طاقت، \hyperpage{23}
-\item زمین، \hyperpage{95}
-\item زمینی برقی رو، \hyperpage{95}
-\item زمینی تار، \hyperpage{95}
+\item زاویہ جزو طاقت، 23
+\item زمین، 95
+\item زمینی برقی رو، 95
+\item زمینی تار، 95
 \indexspace
-\item ساکن لچھا، \hyperpage{106}، \hyperpage{129}
-\item ستارہ نما جوڑ، \hyperpage{93}
-\item سرک، \hyperpage{211}
-\item سرک چھلے، \hyperpage{178}، \hyperpage{233}
-\item سطحی تکمل، \hyperpage{183}
-\item سطحی کثافت، \hyperpage{11}
-\item سکت، \hyperpage{97، 98}
-\item سلسلہ وار، \hyperpage{147}
-\item سمت کار، \hyperpage{245}
-   \subitem برقیاتی، \hyperpage{167}
-   \subitem میکانی، \hyperpage{167}
-\item سمتیہ، \hyperpage{2}
-   \subitem عمودی اکائی، \hyperpage{3}
-\item سمتی رفتار، \hyperpage{104}
-\item سیرابیت، \hyperpage{45}
+\item ساکن لچھا، 106، 129
+\item ستارہ نما جوڑ، 93
+\item سرک، 211
+\item سرک چھلے، 178، 233
+\item سطحی تکمل، 183
+\item سطحی کثافت، 11
+\item سکت، 97، 98
+\item سلسلہ وار، 147
+\item سمت کار، 245
+   \subitem برقیاتی، 167
+   \subitem میکانی، 167
+\item سمتیہ، 2
+   \subitem عمودی اکائی، 3
+\item سمتی رفتار، 104
+\item سیرابیت، 45
 \indexspace
-\item ضرب صلیبی، \hyperpage{13}
-\item ضرب نقطہ، \hyperpage{16}
+\item ضرب صلیبی، 13
+\item ضرب نقطہ، 16
 \indexspace
-\item طاقت، \hyperpage{42}
-\item طاقت بالمقابل زاویہ، \hyperpage{190}
-\item طول موج، \hyperpage{19}
+\item طاقت، 42
+\item طاقت بالمقابل زاویہ، 190
+\item طول موج، 19
 \indexspace
-\item عارضی صورت، \hyperpage{177}
-\item عمودی تراش، \hyperpage{8}
-   \subitem رقبہ، \hyperpage{8}
+\item عارضی صورت، 177
+\item عمودی تراش، 8
+   \subitem رقبہ، 8
 \indexspace
-\item غیر معاصر، \hyperpage{180}
+\item غیر معاصر، 180
 \indexspace
-\item فورئیر، \hyperpage{254}
-\item فوریئر تسلسل، \hyperpage{63}، \hyperpage{143}
+\item فورئیر، 254
+\item فوریئر تسلسل، 63، 143
 \item فیراڈے
-   \subitem قانون، \hyperpage{37}، \hyperpage{127}
+   \subitem قانون، 37، 127
 \indexspace
-\item قالب، \hyperpage{128}
-\item قالبی ضیاع، \hyperpage{62}
-   \subitem جزو، \hyperpage{64}
+\item قالب، 128
+\item قالبی ضیاع، 62
+   \subitem جزو، 64
 \item قانون
-   \subitem اوہم، \hyperpage{26}
-   \subitem کولمب، \hyperpage{9}
-   \subitem لورینز، \hyperpage{138}
-\item قدامت پسند میدان، \hyperpage{110}
-\item قریب جڑی مرکب، \hyperpage{257}
+   \subitem اوہم، 26
+   \subitem کولمب، 9
+   \subitem لورینز، 138
+\item قدامت پسند میدان، 110
+\item قریب جڑی مرکب، 257
 \item قطب
-   \subitem ابھرے، \hyperpage{141}، \hyperpage{179}
-   \subitem ہموار، \hyperpage{141}، \hyperpage{179}
-\item قوت مروڑ، \hyperpage{168}، \hyperpage{211}
-   \subitem انتہائی، \hyperpage{180}
-\item قوی الیکٹرانکس، \hyperpage{209}، \hyperpage{245}
-\item قوی لچھے، \hyperpage{255}
+   \subitem ابھرے، 141، 179
+   \subitem ہموار، 141، 179
+\item قوت مروڑ، 168، 211
+   \subitem انتہائی، 180
+\item قوی الیکٹرانکس، 209، 245
+\item قوی لچھے، 255
 \indexspace
-\item کاربن بش، \hyperpage{179}
-\item کارگزاری، \hyperpage{203}
-\item کپیسٹر، \hyperpage{196}
+\item کاربن بش، 179
+\item کارگزاری، 203
+\item کپیسٹر، 196
 \item کثافت
-   \subitem برقی رو، \hyperpage{27}
+   \subitem برقی رو، 27
 \item کثافت مقناطیسی بہاو
-   \subitem بقایا، \hyperpage{44}
-\item کسر دور، \hyperpage{38}
+   \subitem بقایا، 44
+\item کسر دور، 38
 \indexspace
-\item گرم تار، \hyperpage{95}
-\item گھومتا لچھا، \hyperpage{106}
+\item گرم تار، 95
+\item گھومتا لچھا، 106
 \indexspace
 \item لچھا
-   \subitem ابتدائی، \hyperpage{55}
-   \subitem پھیلے، \hyperpage{142}
-   \subitem پیچدار، \hyperpage{39}
-   \subitem ثانوی، \hyperpage{55}
-   \subitem زیادہ برقی دباؤ، \hyperpage{56}
-   \subitem  ساکن، \hyperpage{106}
-   \subitem سمت، \hyperpage{135}
-   \subitem قوی، \hyperpage{133}
-   \subitem کم برقی دباؤ، \hyperpage{56}
-   \subitem گھومتا، \hyperpage{106}
-   \subitem میدانی، \hyperpage{133}
+   \subitem ابتدائی، 55
+   \subitem پھیلے، 142
+   \subitem پیچدار، 39
+   \subitem ثانوی، 55
+   \subitem زیادہ برقی دباؤ، 56
+   \subitem  ساکن، 106
+   \subitem سمت، 135
+   \subitem قوی، 133
+   \subitem کم برقی دباؤ، 56
+   \subitem گھومتا، 106
+   \subitem میدانی، 133
 \indexspace
 \item محدد
-   \subitem کارتیسی، \hyperpage{3}
-   \subitem نلکی، \hyperpage{5}
-\item محرک برقی دباؤ، \hyperpage{61}
-\item محور، \hyperpage{163}
-\item مخلوط عدد، \hyperpage{194}
-\item مرحلی سمتیہ، \hyperpage{21}، \hyperpage{188}
-\item مرحلی فرق، \hyperpage{23}
-\item مرکب جنریٹر، \hyperpage{257}
-\item مزاحمت، \hyperpage{25}
-\item مساوات لورینز، \hyperpage{104}
+   \subitem کارتیسی، 3
+   \subitem نلکی، 5
+\item محرک برقی دباؤ، 61
+\item محور، 163
+\item مخلوط عدد، 194
+\item مرحلی سمتیہ، 21، 188
+\item مرحلی فرق، 23
+\item مرکب جنریٹر، 257
+\item مزاحمت، 25
+\item مساوات لورینز، 104
 \item مسئلہ
-   \subitem تھونن، \hyperpage{228}
+   \subitem تھونن، 228
    \subitem زیادہ سے زیادہ طاقت کی منتقلی، 
-\item مشترکہ ارتباط امالہ، \hyperpage{41}
-\item مشترکہ امالہ، \hyperpage{41}
-\item معاصر، \hyperpage{132}
-\item معاصر امالہ، \hyperpage{186}
-\item معاصر رفتار، \hyperpage{158}، \hyperpage{178}
+\item مشترکہ ارتباط امالہ، 41
+\item مشترکہ امالہ، 41
+\item معاصر، 132
+\item معاصر امالہ، 186
+\item معاصر رفتار، 158، 178
 \item معائنہ
-   \subitem کھلے دور، \hyperpage{87}
-\item مقداری، \hyperpage{1}
+   \subitem کھلے دور، 87
+\item مقداری، 1
 \item مقناطیس
-   \subitem برقی، \hyperpage{132}
-   \subitem چال کا دائرہ، \hyperpage{45}
-   \subitem خاتم شدت، \hyperpage{44}
-\item مقناطیسی برقی رو، \hyperpage{64}
-\item مقناطیسی بہاو، \hyperpage{29}
-   \subitem رستا، \hyperpage{79}
-   \subitem کثافت، \hyperpage{32}
-\item مقناطیسی چال، \hyperpage{51}
-\item مقناطیسی دباؤ، \hyperpage{29}
-   \subitem سمت، \hyperpage{143}
-\item مقناطیسی قالب، \hyperpage{31}، \hyperpage{55}
-\item مقناطیسی مستقل، \hyperpage{25}، \hyperpage{168}
-   \subitem جزو، \hyperpage{26}، \hyperpage{30}
+   \subitem برقی، 132
+   \subitem چال کا دائرہ، 45
+   \subitem خاتم شدت، 44
+\item مقناطیسی برقی رو، 64
+\item مقناطیسی بہاو، 29
+   \subitem رستا، 79
+   \subitem کثافت، 32
+\item مقناطیسی چال، 51
+\item مقناطیسی دباؤ، 29
+   \subitem سمت، 143
+\item مقناطیسی قالب، 31، 55
+\item مقناطیسی مستقل، 25، 168
+   \subitem جزو، 26، 30
 \item مقناطیسی میدان
-   \subitem شدت، \hyperpage{11}، \hyperpage{32}
-\item موثر، \hyperpage{19}، \hyperpage{48}
-\item موثر قیمت، \hyperpage{166}
-\item موسیقائی جزو، \hyperpage{64}، \hyperpage{144}
-\item موصلیت، \hyperpage{25}
-\item میدانی لچھے، \hyperpage{255}
+   \subitem شدت، 11، 32
+\item موثر، 19، 48
+\item موثر قیمت، 166
+\item موسیقائی جزو، 64، 144
+\item موصلیت، 25
+\item میدانی لچھے، 255
 \indexspace
-\item واٹ، \hyperpage{42}
-\item وولٹ، \hyperpage{139}
-\item وولٹ-ایمپیئر، \hyperpage{75}
-\item ویبر، \hyperpage{32}
-\item ویبر-چکر، \hyperpage{37}
+\item واٹ، 42
+\item وولٹ، 139
+\item وولٹ-ایمپیئر، 75
+\item ویبر، 32
+\item ویبر-چکر، 37
 \indexspace
-\item ہچکچاہٹ، \hyperpage{26}، \hyperpage{29}
-\item ہم قدم، \hyperpage{70}
-\item ہیجان، \hyperpage{61}
-   \subitem بیرونی، \hyperpage{255}
-   \subitem خود، \hyperpage{255}
-   \subitem لچھا، \hyperpage{61}
+\item ہچکچاہٹ، 26، 29
+\item ہم قدم، 70
+\item ہیجان، 61
+   \subitem بیرونی، 255
+   \subitem خود، 255
+   \subitem لچھا، 61
 \item ہیجان انگیز
-   \subitem برقی دباؤ، \hyperpage{61}
-   \subitem برقی رو، \hyperpage{61}
-\item ہیجان انگیز برقی رو، \hyperpage{60}
-\item ہیجانی برقی دباؤ، \hyperpage{187}
+   \subitem برقی دباؤ، 61
+   \subitem برقی رو، 61
+\item ہیجان انگیز برقی رو، 60
+\item ہیجانی برقی دباؤ، 187
 \indexspace
 \item یک سمتی رو
-   \subitem مشین، \hyperpage{245}
-\item یک مرحلہ، \hyperpage{23}
-\item یک مرحلہ برقی دباؤ، \hyperpage{95}
-\item یک مرحلہ برقی رو، \hyperpage{95}
-\item یولر مساوات، \hyperpage{21}
+   \subitem مشین، 245
+\item یک مرحلہ، 23
+\item یک مرحلہ برقی دباؤ، 95
+\item یک مرحلہ برقی رو، 95
+\item یولر مساوات، 21
 \end{theindex}
