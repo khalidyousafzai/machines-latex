@@ -32,7 +32,7 @@
 \draw(0,\height)--++(\depthX,\depthY)--++(\width,0)--++(-\depthX,-\depthY);
 \draw(\width,0)--++(\depthX,\depthY)--++(0,\height)--++(-\depthX,-\depthY);
 %flux
-\draw[gray,-latex](1.1,1.8)node[left]{$\phi_c$}--++(0.2,0)--++(0,-\height+\thick)--++(-\width+\thick,0)--++(0,\height-\thick)--++(0.3,0);
+\draw[gray,-latex](1.1,1.8)node[left,black]{$\phi_c$}--++(0.2,0)--++(0,-\height+\thick)--++(-\width+\thick,0)--++(0,\height-\thick)--++(0.3,0);
 %winding
 \draw (0.6,1.4) to [out=45,in=0] (0.2,1.5) to [short,i_<=$i$] (-1,1.5) node[left]{$+$};
 \foreach \l in {1.4,1.2,1}{
@@ -42,7 +42,7 @@
 %turns
 \node at (0,1.15)[left]{$\tau=N i$};
 %urdu coil
-\draw[gray,thin,<-](0.3,0.9) to [out=-90,in=60] (-0.7,-0.3)node[below]{ لچھا کا چکر$N$};
+\draw[thin,<-](0.3,0.9) to [out=-90,in=60] (-0.7,-0.3)node[below]{ لچھا کا چکر$N$};
 %dimensions
 \draw[,<->] (1.1,-0.1)--++(0.4,0)node[below,pos=0.5]{$b$};
 \draw[<->](1.5+0.1,-0.1)--++(0.2,0.2)node [pos=0.4,right]{$w$};

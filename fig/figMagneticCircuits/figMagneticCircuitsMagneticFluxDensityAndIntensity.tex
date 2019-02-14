@@ -20,11 +20,14 @@
 \def\depthX{0.2};
 \def\depthY{0.2};
 \def\gap{0.05};
+\pgfmathsetmacro{\widthX}{0.25}  
+\pgfmathsetmacro{\widthY}{0.25}  
+\coordinate(O) at (-0.5,0);
 %grid
 %\draw[gray,thick](0,0) grid (12,3);
 %\draw[gray,thin,xstep=0.1,ystep=0.1](0,0) grid (12,3);
 %going clockwise from origin
-\draw(0,0)--++(0,\height)--++(\width,0)--++(0,-0.5*\height+\gap)--++(-\thick,0)--++(0,0.5*\height-\gap-\thick)--++(-\width+2*\thick,0)--++(0,-\height+2*\thick)--++(\width-2*\thick,0)--++(0,0.5*\height-\thick-\gap)--++(\thick,0)--++(0,-0.5*\height+\gap)--cycle;
+\draw(0,0)--++(0,\height)--++(\width,0)node[pos=0.5,pin=45:قالب{}]{}--++(0,-0.5*\height+\gap)--++(-\thick,0)--++(0,0.5*\height-\gap-\thick)--++(-\width+2*\thick,0)--++(0,-\height+2*\thick)--++(\width-2*\thick,0)--++(0,0.5*\height-\thick-\gap)--++(\thick,0)--++(0,-0.5*\height+\gap)--cycle;
 %
 \draw(\thick,\thick)--++(\depthX,\depthY) --++(0,\height-2*\thick-\depthY);
 \draw(0.4,0.4)--++(\width-2*\thick-\depthX,0);
@@ -49,9 +52,9 @@
 \draw[->](2.2,1.7)node[right]{$l_a$}--++(-0.2,-0.2)--++(0,-0.25);
 \draw[->](2,1)--++(0,0.15);
 %flux
-\draw[-latex,gray](1.1,1.8)node[left]{$\phi$}--++(0.2,0)--++(0,-\height+\thick)--++(-\width+\thick,0)--++(0,\height-\thick)--++(0.5,0);
+\draw[-latex,gray](1.1,1.8)node[left,black]{$\phi$}--++(0.2,0)--++(0,-\height+\thick)--++(-\width+\thick,0)--++(0,\height-\thick)--++(0.5,0);
 %urdu coil
-\draw[gray,thin,<-](0.3,0.9) to [out=-90,in=60] (-0.7,-0.3)node[below]{ لچھا کا چکر$N$};
+\draw[thin,<-](0.3,0.9) to [out=-90,in=60] (-0.7,-0.3)node[below]{ لچھا کا چکر$N$};
 %equations
 \node at (4,1)[right]{$
 \begin{aligned}
@@ -63,6 +66,10 @@ $};
 %dimensions
 \draw[,<->] (1.1,-0.1)--++(0.4,0)node[below,pos=0.5]{$b$};
 \draw[<->](1.5+0.1,-0.1)--++(0.2,0.2)node [pos=0.4,right]{$w$};
+%unit vector
+\draw[-latex] (O)++(-1.8,0)--++(-1.4142*\widthX,-1.4142*\widthY)node[below]{${\bf{a}}_x$};
+\draw[-latex] (O)++(-1.8,0)--++(2*\widthX,0)node[right]{${\bf{a}}_y$};
+\draw[-latex] (O)++(-1.8,0)--++(0,2*\widthY)node[above]{${\bf{a}}_z$};
 \end{tikzpicture}%
 \end{urdufont}
 \end{document}
