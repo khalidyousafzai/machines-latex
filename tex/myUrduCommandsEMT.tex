@@ -85,7 +85,7 @@
 \renewcommand{\theexamplecounter}{\arabic{examplecounter}.\thechapter}
 
 \newenvironment*{مثال}
-{\noindent\ignorespaces \vspace{\baselineskip} \hrule \vspace{\baselineskip}  مثال \refstepcounter{examplecounter} \theexamplecounter :}%
+{\noindent\ignorespaces \vspace{\baselineskip} \hrule \vspace{\baselineskip}  مثال \refstepcounter{examplecounter} \theexamplecounter :\quad}%
 {\par\noindent \hrule  \vspace{\baselineskip}}
 
 %------
@@ -95,7 +95,7 @@
 \renewcommand{\thepracticecounter}{\arabic{practicecounter}.\thechapter}
 
 \newenvironment*{مشق}
-{\noindent\ignorespaces \vspace{\baselineskip} \hrule \vspace{\baselineskip} مشق \refstepcounter{practicecounter} \thepracticecounter :}%
+{\noindent\ignorespaces \vspace{\baselineskip} \hrule \vspace{\baselineskip} مشق \refstepcounter{practicecounter} \thepracticecounter :\quad}%
 {\par\noindent \hrule  \vspace{\baselineskip}}
 %---------
 
@@ -105,5 +105,5 @@
 \renewcommand{\thequestioncounter}{\arabic{questioncounter}.\thechapter}
 
 \newenvironment*{سوال}				
-{\noindent\ignorespaces  سوال \refstepcounter{questioncounter} \thequestioncounter :}%
+{\noindent\ignorespaces  سوال \refstepcounter{questioncounter} \thequestioncounter :\quad}%
 {\par\noindent }
