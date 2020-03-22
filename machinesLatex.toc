@@ -19,11 +19,11 @@
 \contentsline {section}{\numberline {1.9}حجمی کثافت}{12}% 
 \contentsline {section}{\numberline {1.10}صلیبی ضرب اور ضرب نقطہ}{12}% 
 \contentsline {subsection}{\numberline {1.10.1}صلیبی ضرب}{13}% 
-\contentsline {subsection}{\numberline {1.10.2}ضربِ نقطہ}{15}% 
+\contentsline {subsection}{\numberline {1.10.2}نقطی ضرب}{15}% 
 \contentsline {section}{\numberline {1.11}تفرق اور جزوی تفرق}{17}% 
-\contentsline {section}{\numberline {1.12}خطی تکمل}{18}% 
-\contentsline {section}{\numberline {1.13}سطحی تکمل}{19}% 
-\contentsline {section}{\numberline {1.14} مرحلی سمتیہ}{20}% 
+\contentsline {section}{\numberline {1.12}خطی تکمل}{17}% 
+\contentsline {section}{\numberline {1.13}سطحی تکمل}{18}% 
+\contentsline {section}{\numberline {1.14} مرحلی سمتیہ}{21}% 
 \contentsline {chapter}{\numberline {2}مقناطیسی ادوار}{25}% 
 \contentsline {section}{\numberline {2.1}مزاحمت اور ہچکچاہٹ}{25}% 
 \contentsline {section}{\numberline {2.2}کثافتِ برقی رو اور برقی میدان کی شدت}{26}% 
