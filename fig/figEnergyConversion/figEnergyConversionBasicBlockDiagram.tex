@@ -27,6 +27,8 @@
 %\draw[gray,thick] (0,0) grid (5,5);
 %\draw[gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (5,5);
 %
+\pgfmathsetmacro{\l}{5}
+ \pgfmathsetmacro{\b}{2.5}
 \draw (0,0)coordinate(a){}--++(0:\l)coordinate(b){}--++(90:\b)coordinate(c){}--++(180:\l)coordinate(d){}--cycle;
 \draw($(a)!0.2!(d)$) to [short,-o]++(180:\b)coordinate(leftLow){};
 \draw($(a)!0.8!(d)$) to [short,-o,i_<={$i$}]++(180:\b)coordinate(leftUpper){};

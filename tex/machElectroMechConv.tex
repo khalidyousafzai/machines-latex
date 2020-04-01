@@ -81,7 +81,39 @@
 اگر نظام میں توانائی کی ضیاع کو توانائی کے ذخیرہ ہونے سے علیحدہ کرنا ممکن ہو تو ایسی صورت میں توانائی کے ضیاع  کو بیرونی رکن سے پیش کیا جاتا ہے۔ شکل \حوالہ{شکل_تبادلہ_توانائی_قوت_پیدا_کرتا_آلا}   میں ایک ایسا ہی نظام دکھایا گیا ہے جس میں  لچھا برقی نظام کو پیش کرتا ہے اور حرکت کرنے والا حصہ میکانی نظام کو پیش کرتا ہے۔ یہاں لچھے میں توانائی کے ضیاع کو، بیرونی  مزاحمت \عددیء{R} سے ظاہر کیا گیا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figEnergyConversionBasicBlockDiagram}
+%\includegraphics{figEnergyConversionBasicBlockDiagram}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,0) grid (5,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (5,5);
+%
+\pgfmathsetmacro{\l}{5}
+ \pgfmathsetmacro{\b}{2.5}
+\draw (0,0)coordinate(a){}--++(0:\l)coordinate(b){}--++(90:\b)coordinate(c){}--++(180:\l)coordinate(d){}--cycle;
+\draw($(a)!0.2!(d)$) to [short,-o]++(180:\b)coordinate(leftLow){};
+\draw($(a)!0.8!(d)$) to [short,-o,i_<={$i$}]++(180:\b)coordinate(leftUpper){};
+\draw($(b)!0.2!(c)$) to [short,-o]++(0:\b)coordinate(rightLow){};
+\draw($(b)!0.8!(c)$) to [short,-o,i={$F_m$}]++(0:\b)coordinate(rightUpper){};
+%
+\node[below right] at (leftLow){\RL{برقی سرا}};
+\node[below left] at (rightLow){\RL{میکانی سرا}};
+\node[ align=right] at (0.5*\l,0.5*\b) {\RL{توانائی نہ ضائع کرنے  اور مقناطیسی} \\ \RL{توانائی ذخیرہ کرنے والا نظام}};
+\draw node at ($(leftLow) ! 0.5! (leftUpper)$){$
+\begin{aligned}
+&+\\
+&e\\
+&-
+\end{aligned}
+$};
+%
+\draw node at ($(rightLow) ! 0.5! (rightUpper)$){$
+\begin{aligned}
+&+\\
+&x\\
+&-
+\end{aligned}
+$};
+\end{tikzpicture}%
 \caption{ برقی توانائی سے میکانی توانائی کے تبادلہ کا نظام۔}
 \label{شکل_تبادلہ_توانائی_نظام_بطور_ڈبہ}
 \end{figure}

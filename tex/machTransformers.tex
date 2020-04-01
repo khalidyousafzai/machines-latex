@@ -4,7 +4,42 @@
 دستیاب برقی دباو\حاشیہد{بدلتی برقی دباو کی علامت میں مثبت اور منفی نشان وقت صفر پر برقی دباو کی مثبت اور منفی سرے ظاہر کرتے ہیں۔} پر ٹرانسفارمر کے ایک لچھے کو برقی طاقت فراہم کی جاتی ہے اور باقی لچھوں سے  مختلف برقی دباو پر یہی برقی طاقت حاصل کی جاتی ہے۔جس لچھے پر برقی دباو لاگو کیا جائے اسے \اصطلاح{ابتدائی لچھا}\فرہنگ{لچھا!ابتدائی}\فرہنگ{ابتدائی!لچھا}\حاشیہب{primary coil}\فرہنگ{coil!primary}  کہتے ہیں اور ٹرانسفارمر کی اس جانب کو \اصطلاح{ابتدائی جانب}\فرہنگ{ابتدائی!جانب}\حاشیہب{primary side}\فرہنگ{primary!side} کہتے ہیں۔اسی طرح جس لچھے (لچھوں) سے برقی طاقت حاصل کی جاتی ہے اسے (انہیں) \اصطلاح{ثانوی لچھا}\فرہنگ{لچھا!ثانوی}\حاشیہب{secondary coil}\فرہنگ{coil!secondary}  (لچھے) کہتے ہیں اور اس جانب کو \اصطلاح{ثانوی جانب}\فرہنگ{ثانوی جانب}\فرہنگ{side!secondary}\حاشیہب{secondary side}  کہتے ہیں۔یہ شکل کے حصہ با میں دکھایا گیا ہے۔ٹرانسفارمر کی ابتدائی جانب کو بائیں ہاتھ کی جانب اور ثانوی جانب کو دائیں ہاتھ کی جانب بنایا جاتا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figTransformersSymbol}
+%\includegraphics{figTransformersSymbol}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-4,-4) grid (4,4);
+%\draw[help lines,xstep=0.1,ystep=0.1] (-4,-4) grid (4,4);
+%symbol only
+\begin{scope}[xshift=5cm]
+\draw (0,0) node [transformer core](T){}  % reminded by @PaulGessler, thanks.
+ %     (T.A1) node[above] {A1}
+   %   (T.A2) node[below] {A2}
+     % (T.B1) node[above] {B1} 
+    %  (T.B2) node[below] {B2}
+      (T.base) node[above]{$
+\begin{aligned}
+N_1& : N_2\\
+V_1&:V_2
+\end{aligned}
+$};
+%\draw (T.A1) --++(-2,0);
+%\draw (T.A2) --++(-2,0);
+%
+\draw[<-,gray](0,-1.7) to [out=-90,in=180] (0.4,-2.7) node[right,black] {\RL{مقناطیسی قالب}};
+\draw(-1,-2.7) node{الف};
+\end{scope}
+%transformer powered
+\draw (0,0) node [transformer core](T){}  % reminded by @PaulGessler, thanks.
+  %    (T.A1) node[above] {A1}
+    %  (T.A2) node[below] {A2}
+     %(T.B1) node[above] {B1} 
+     % (T.B2) node[below] {B2}
+      (T.base) node[above]{$V_1:V_2$};
+\draw (T.A2) --++(-2,0)   to [american voltage source,l=$v(t)$] ++(0,2.1)--(T.A1);
+\draw (-1.5,0.7) node{\RL{ابتدائی جانب}};
+\draw(1.5,0.7) node{\RL{ثانوی جانب}};
+\draw(1,-2.7) node{ب};
+\end{tikzpicture}
 \caption{ٹرانسفارمر کی علامت۔}
 \label{شکل_ٹرانسفارمر_علامت}
 \end{figure}
@@ -432,7 +467,7 @@ V_1 I_1=V_2 I_2
 برقی دباو اور برقی رو کے حاصلِ ضرب  یعنی \عددیء{V_1 I_1} یا \عددیء{V_2 I_2} کو ٹرانسفارمر کی وولٹ ضربِ ایمپیئر کہتے ہیں جسے عموماً چھوٹا کر کے صرف \اصطلاح{وولٹ-ایمپیئر}\فرہنگ{وولٹ-ایمپیئر}
 \حاشیہب{volt-ampere, VA}\فرہنگ{volt-ampere}\فرہنگ{VA}  کہا جاتا ہے\حاشیہد{وولٹ-ایمپیئر کو عموماً کلو وولٹ-ایمپیئر یعنی \عددیء{\si{\kilo \volt \ampere}} میں بیان کیا جاتا ہے}۔یہ ٹرانسفارمر کی برقی سکت کی ناپ ہے جو اس پر لگی تختی پر لکھا جاتا ہے۔اس تختی پر ٹرانسفارمر کے برقی دباو اور برقی تعداد ارتعاش بھی لکھے جاتے ہیں۔یوں ٹرانسفارمر کے وولٹ-ایمپیئر
 \begin{align}\label{مساوات_ٹرانسفارمر_وولٹ_ایمپئیر}
-\textup{وولٹ-ایمپیئر}= V_1 I_1 = V_2 I_2
+\textup{\RL{وولٹ-ایمپیئر}}= V_1 I_1 = V_2 I_2
 \end{align}
 ہوں گے۔
 
