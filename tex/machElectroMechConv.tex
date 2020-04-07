@@ -38,7 +38,79 @@
 %
 \begin{figure}
 \centering
-\includegraphics{figEnergyConversionTorqueOnOneTurn}
+%\includegraphics{figEnergyConversionTorqueOnOneTurn}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-0.5,-0.5) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-0.5,-0.5) grid (2,2);
+\pgfmathsetmacro{\rad}{1}
+ \pgfmathsetmacro{\len}{2}
+\pgfmathsetmacro{\gap}{0.5}
+%defining mid point arrow macros
+\tikzset{->-/.style={decoration={
+  markings,
+  mark=at position #1 with {\arrow{>}}},postaction={decorate}}}
+\tikzset{-<-/.style={decoration={
+  markings,
+  mark=at position #1 with {\arrow{<}}},postaction={decorate}}}
+%
+%flux
+\foreach \y in {0.1,0.3,0.5,0.7,0.9}{
+\draw[gray,thin,-latex](-\rad-\gap,\y*\len)--(\rad+\gap,\y*\len);
+}
+%coil as Dot and Cross
+\draw[thick](\rad,0.1*\len) circle (0.2);
+\draw[thick](\rad,0.1*\len)++(-135:0.2)--++(45:0.4);
+\draw[thick](\rad,0.1*\len)++(135:0.2)--++(-45:0.4);
+\draw[thick](-\rad,0.9*\len) circle (0.2);
+\draw[fill](-\rad,0.9*\len) circle (0.1);
+%torque and moment arm
+\draw[-latex](\rad,0.1*\len)coordinate (kCross)--++(0,\len)node[above]{$F=1.375 \az $};
+\draw[-latex](-\rad,0.9*\len) coordinate(kDot)--++(0,-\len)node [below]{$F=-1.375 \az $};
+\draw(\rad,0.1*\len)--(-\rad,0.9*\len)coordinate [pos=0.5](kO);
+%perpendicular
+\draw[gray,dashed,-latex] (kO)--($(kO)!0.8cm!90:(\rad,0.1*\len)$)coordinate [pos=0.5](kA);
+\begin{scope}
+\clip($(kO)!0.8cm!90:(\rad,0.1*\len)$)--(kO)--++(1,0);
+\draw[gray,dashed] (kO) circle (0.4);
+\end{scope}
+\draw[gray] (kO)++(18:0.65) node {$\theta$};
+%angle
+\begin{scope}
+\clip  (-\rad,0)--(-\rad,0.9*\len)--(\rad,0.1*\len)--cycle;
+\draw (-\rad,0.9*\len) circle (0.5);
+\draw (-\rad,0.9*\len)++(-65:0.7)node{$\theta$};
+\end{scope}
+
+%magnet
+\draw(-\rad-2*\gap,0)--++(1*\gap,0)--++(0,\len)node[left,pos=0.5]{$N$}--++(-\rad,0);
+\draw(\rad+2*\gap,0)--++(-1*\gap,0)--++(0,\len)node[right,pos=0.5]{$S$}--++(\rad,0);
+%unit vectors
+\draw[-latex,gray](-1.8,-2)--++(0.5,0)node[right]{$\ax$};
+\draw[-latex,gray](-1.8,-2)--++(0,0.5)node[above]{$\az$};
+\draw node at (1.5,-2){ب};
+%
+%
+\begin{scope}[xshift=6cm]
+%flux
+\foreach \y in {0.1,0.3,0.5,0.7,0.9}{
+\draw[gray,thin,-latex](-\rad-\gap,\y*\len)--(\rad+\gap,\y*\len);
+}
+%coil top view
+\draw [->-=0.192,->-=0.815] (0.1,-0.4)node[right]{$a$}--++(0,0.4)--++(\rad-0.1,0)node[below]{$b$}--++(0,\len)node[above]{$c$}--++(-2*\rad,0)node[above]{$d$}--++(0,-\len)node[below]{$e$}--++(\rad-0.1,0)--++(0,-0.4)node[left]{$f$};
+\draw[gray,dashed] (0,1.1*\len)--++(0,0.5); 
+\draw[gray,->] (0,1.1*\len+0.35)--++(\rad,0)node[above,pos=0.5]{$r$};
+%magnet
+\draw(-\rad-2*\gap,0)--++(1*\gap,0)--++(0,\len)node[left,pos=0.5]{$N$}--++(-\rad,0);
+\draw(\rad+2*\gap,0)--++(-1*\gap,0)--++(0,\len)node[right,pos=0.5]{$S$}--++(\rad,0);
+%unit vectors
+\draw[-latex,gray](-1.8,-2)--++(0.5,0)node[right]{$\ax$};
+\draw[-latex,gray](-1.8,-2)--++(0,0.5)node[above]{$\ay$};
+\draw node at (1.5,-2){الف};
+%
+\end{scope}
+\end{tikzpicture}%
+
 \caption{ایک چکر کے لچھے پر قوت اور قوت مروڑ}
 \label{شکل_تبادلہ_طاقت_لچھے_پر_قوت_اور_مروڑ}
 \end{figure}
@@ -86,7 +158,6 @@
 %grid
 %\draw[gray,thick] (0,0) grid (5,5);
 %\draw[gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (5,5);
-%
 \pgfmathsetmacro{\l}{5}
  \pgfmathsetmacro{\b}{2.5}
 \draw (0,0)coordinate(a){}--++(0:\l)coordinate(b){}--++(90:\b)coordinate(c){}--++(180:\l)coordinate(d){}--cycle;
@@ -120,12 +191,66 @@ $};
 %
 \begin{figure}
 \centering
-\includegraphics{figEnergyConversionForceGeneratingDevice}
+%\includegraphics{figEnergyConversionForceGeneratingDevice}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+\pgfmathsetmacro{\h}{2.5}
+ \pgfmathsetmacro{\w}{1}
+\pgfmathsetmacro{\t}{0.3}
+\pgfmathsetmacro{\N}{4}
+ \pgfmathsetmacro{\r}{\t/2}
+\pgfmathsetmacro{\g}{0.3}   %gap between coil and edge of window
+%coil step
+\pgfmathsetmacro{\stepHL}{(\h-2*\t-2*\g)/(\N-1)}
+\draw ([shift=(90:\r)]0,0) arc (90:270:\r)--++(180:\w)--++(90:\h)--++(0:\w)--++(270:\t)--++(180:\w-\t)--++(270:\h-2*\t)--++(0:\w-\t);
+\draw ([shift=(90:0.9*\r)]0,0)coordinate(pivotUpper){} arc (90:270:0.9*\r)coordinate(pivotLower){};
+\draw(pivotUpper)--++(0:0.01)coordinate(leverLowerL){}--++(80:\h-0.8*\t)coordinate(leverUpperL){}--++(-10:\t)coordinate(leverUpperR){}--++(-100:\h)coordinate(leverLowerR){}--(pivotLower);
+%
+\coordinate  (kL) at ($(leverLowerL) ! 0.85 ! (leverUpperL)$);
+\coordinate (kR) at ($(leverLowerR) ! 0.85 ! (leverUpperR)$);
+\coordinate (kM) at ($(kL) ! 0.5 ! (kR)$);
+
+
+\path[gray] (0,0)--++(180:\w-0.5*\t)coordinate[pos=0.8](kDashA)--++(90:\h-\t)coordinate[pos=0.1](kDashB)coordinate[pos=0.9](kDashC)--++(0:\w-0.5*\t)coordinate[pos=0.2](kDashD)coordinate[pos=0.9](kDashE) to [out=0,in=90] (kM)--++(-100:\h-2*\t) to [out=-100,in=0] (0,0);
+%
+\draw[gray](0,0)--(kDashA) to [out=180,in=-90] (kDashB)--(kDashC) to [out=90,in=180](kDashD) --(kDashE) to [out=0,in=90] (kM)--++(-100:\h-2*\t) to [out=-100,in=0] (0,0);
+\draw[solid] (0,0) circle (0.5 pt);   %mark centre of pivot
+\draw[-latex]  (kM)++(80:0.1) -- ++(0:1)node[right]{$F_m$};
+%
+\draw[gray](0,\h)--++(90:0.4)coordinate[pos=0.5](distanceL);
+\draw[gray](0,\h)++(0.3,0)--++(90:0.4)coordinate[pos=0.5](distanceR);
+\draw[->](distanceL)--(distanceR)node[right]{$x$};
+%COIL
+\def\leftEdge{-\w};
+\def\coilTop{\h-\t-\g};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\N-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TA){};
+\draw (\leftEdge,\coilTop-\N*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TB){};
+%--------------------
+\draw (TA) to [european resistor,i_<={$i$},-o,l_={$R$}]++(180:2.5)coordinate(supplyP);
+\draw (TB) to [short,-o]++(180:2.5)coordinate(supplyN);
+\node at ($(supplyP)!0.5!(supplyN)$){$\begin{aligned} &+\\&v\\&-  \end{aligned}$};
+%text
+\node[left] at ($(TA)!0.5!(TB)$){$\begin{aligned} &+\\e&,\lambda\\&-  \end{aligned}$};
+\node[right](urdu) at (1,1){\RL{حرکی حصہ}};
+\draw[gray,<-](0.6,1.7) to [out=-10,in=150] (urdu);
+%
+\end{tikzpicture}%
+
 \caption{ قوت پیدا کرنے والا آلا۔}
 \label{شکل_تبادلہ_توانائی_قوت_پیدا_کرتا_آلا}
 \end{figure}
 
-توانائی کا بنیادی اصول کہتا ہے کہ توانائی نا تو پیدا کی جا سکتی ہے اور نا ہی اسے تباہ کیا جا سکتا ہے۔ اس کو صرف ایک قسم  سے دوسرے قسم کی توانائی میں تبدیل کیا جا سکتا ہے۔ لہٰذا اسے جو برقی توانائی \عددیء{\partial W_{\textup{برقی}}} دی جائے  اس میں سے کچھ میکانی توانائی \عددیء{\partial W_{\textup{میکانی}}}  میں تبدیل ہو گی، کچھ  مقناطیسی میدان میں  ذخیرہ ہو گی یعنی \عددیء{\partial W_{\textup{مقناطیسی}}} اور بقایا مختلف طریقوں سے  ضائع \عددیء{\partial W_{\textup{ضائع}}} ہو گی  جو ہمارے کسی کام نہ آ سکے گی۔ یعنی
+توانائی کا بنیادی اصول کہتا ہے کہ توانائی نا تو پیدا کی جا سکتی ہے اور نا ہی اسے تباہ کیا جا سکتا ہے۔ اس کو صرف ایک قسم  سے دوسرے قسم کی توانائی میں تبدیل کیا جا سکتا ہے۔ لہٰذا اس نظام کو جو برقی توانائی \عددیء{\partial W_{\textup{برقی}}} دی جائے  اس میں سے کچھ میکانی توانائی \عددیء{\partial W_{\textup{میکانی}}}  میں تبدیل ہو گی، کچھ  مقناطیسی میدان میں  ذخیرہ ہو گی یعنی \عددیء{\partial W_{\textup{مقناطیسی}}} اور بقایا مختلف طریقوں سے  ضائع \عددیء{\partial W_{\textup{ضائع}}} ہو گی  جو ہمارے کسی کام نہ آ سکے گی۔ یعنی
 \begin{align}
 \partial W_{\textup{برقی}}=\partial W_{\textup{میکانی}}+\partial W_{\textup{مقناطیسی}}+\partial W_{\textup{ضائع}}
 \end{align}
@@ -153,7 +278,41 @@ i \frac{\partial \lambda}{\partial t}=F_m \frac{\partial x}{\partial t}+\frac{\p
 مساوات \حوالہ{مساوات_برقی_مقناطیسی_تبادلہ_توانائی_کا_طریقہ} توانائی کے طریقہ کی بنیاد ہے۔ یہ مساوات استعمال کرتے وقت یاد رہے کہ قوت بنیادی طور پر لورینز کے قانون\حاشیہب{Lorenz equation} سے ہی پیدا ہوتی ہے۔مساوات \حوالہ{مساوات_برقی_مقناطیسی_تبادلہ_توانائی_کا_طریقہ}  میں برقی متغیرہ \عددیء{i} اور \عددیء{e} کی بجائے \عددیء{i} اور \عددیء{\lambda} ہیں۔ لہٰذا شکل \حوالہ{شکل_تبادلہ_توانائی_نظام_بطور_ڈبہ}    کو شکل \حوالہ{شکل_تبادلہ_توانائی_قوت_پیدا_کرتا_آلا_زیادہ_معلومات}   کی طرح بھی بنایا جا سکتا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figEnergyConversionBasicBlockDiagramDetailed}
+%\includegraphics{figEnergyConversionBasicBlockDiagramDetailed}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,0) grid (5,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (5,5);
+\pgfmathsetmacro{\l}{5}
+ \pgfmathsetmacro{\b}{2.5}
+\draw (0,0)coordinate(a){}--++(0:\l)coordinate(b){}--++(90:\b)coordinate(c){}--++(180:\l)coordinate(d){}--cycle;
+\draw($(a)!0.2!(d)$) to [short,-o]++(180:\b)coordinate(leftLow){};
+\draw($(a)!0.8!(d)$) to [short,-o,i_<={$i$}]++(180:\b)coordinate(leftUpper){};
+\draw($(b)!0.2!(c)$) to [short,-o]++(0:\b)coordinate(rightLow){};
+\draw($(b)!0.8!(c)$) to [short,-o,i={$F_m$}]++(0:\b)coordinate(rightUpper){};
+%
+\node[left] at (-0.5,-0.5){$\partial W_{\textup{برقی}}=i \partial \lambda$};
+\node[right] at (5.5,-0.5){$\partial W_{\textup{میکانی}}=F_m \partial x$};
+\node at (2.5,-0.5){$\partial W_{\textup{مقناطیسی}}$};
+\node[ align=right] at (0.5*\l,0.5*\b) {\RL{توانائی نہ ضائع کرنے  اور مقناطیسی} \\ \RL{توانائی ذخیرہ کرنے والا نظام}};
+%
+\draw node at ($(leftLow) ! 0.5! (leftUpper)$){$
+\begin{aligned}
+&+\\
+\lambda&,e\\
+&-
+\end{aligned}
+$};
+%
+\draw node at ($(rightLow) ! 0.5! (rightUpper)$){$
+\begin{aligned}
+&+\\
+&x\\
+&-
+\end{aligned}
+$};
+\end{tikzpicture}%
+
 \caption{توانائی کی شکل تبدیل کرنے والا ایک نظام۔}
 \label{شکل_تبادلہ_توانائی_قوت_پیدا_کرتا_آلا_زیادہ_معلومات}
 \end{figure}
@@ -193,7 +352,32 @@ i=\phi=\lambda=W_m=F_m=x=0
 ہے۔ابتدائی نقطہ شکل \حوالہ{شکل_تبادلہ_توانائی_مقناطیسی_میدان_میں_توانائی}  میں دکھایا گیا ہے۔ ہم اب لچھے کو برقی توانائی فراہم کرتے ہیں۔ لچھے میں برقی رو رواں ہوتی ہے جس سے قوت اور حرکت پیدا ہوتی ہے۔ ہم آخر کار  اختتامی نقطے پہ پہنچ جاتے ہیں۔اختتامی نقطہ بھی شکل میں دکھایا گیا ہے۔ اس نقطہ پہ \عددیء{\lambda=\lambda_0} اور \عددیء{x=x_0} ہے اور یہاں مقناطیسی میدان میں توانائی \عددیء{W_m(x_0,\lambda_0)} ہے۔ہم ابتدائی نقطہ  سے اختتامی نقطہ  تک پہنچنے کے لئے  برقی توانائی کو یوں بڑھاتے ہیں کہ \عددیء{\lambda} اور \عددیء{x}  شکل \حوالہ{شکل_تبادلہ_توانائی_مقناطیسی_میدان_میں_توانائی}  میں موٹی لکیر سے دکھائے اصل راستے پر رہیں۔لہٰذا ہمیں آخری نقطہ پہ مقناطیسی میدان میں مقناطیسی توانائی \عددیء{W_m(x_0,\lambda_0)} معلوم کرنے کے لئے مساوات \حوالہ{مساوات_تبادلہ_توانائی_تکمل}  کا اصل راستے پہ تکمل کرنا ہو گا۔ ایسا کرنا خاصا مشکل کام ہے۔ بجائے یہ ہم ایک بہتر راستہ اختیار کرتے ہیں۔
 \begin{figure}
 \centering
-\includegraphics{figEnergyConversionEnergyInMagneticField}
+%\includegraphics{figEnergyConversionEnergyInMagneticField}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,0) grid (5,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (5,5);
+\pgfmathsetmacro{\l}{5}
+ \pgfmathsetmacro{\b}{2.5}
+\draw[gray](0,0)--(5,0)node[ right]{$x$};
+\draw[gray](0,0)--(0,3)node[above]{$\lambda$};
+%ACTUAL PATH
+\draw[thick,->] (0,0) to [out=30,in=180] (0.6,1);
+\draw[thick] (0.6,1) to [out=0,in=120] (2,1.5) to [out=-60,in=-130](3,2.5) ;
+%EASY PATHS
+\draw[->](0,0)--(1.5,0)node[gray,below]{\RL{پہلا راستہ}};
+\draw(1.5,0)--(3,0)node[below]{$x_0$};
+\draw[->](3,0)--(3,1.25)node[gray,right]{\RL{دوسرا راستہ}};
+\draw(3,1.25)--(3,2.5) node [above]{$W_m(x_0,\lambda_0)$};
+\node[gray,rotate=30] at (1,1.5){\RL{اصل راستہ}};
+\draw[gray,dashed](3,2.5)--(0,2.5);
+\node[left] at (0,2.5){$\lambda_0$};
+%text
+\node[gray,above] at (-1,1){\RL{ابتدائی نقطہ}};
+\draw[gray,<-](0,0) to [out=170,in=-90] (-1,1);
+\node[gray,above] at (4.5,2){\RL{اختتامی  نقطہ}};
+\draw[gray,<-](3.1,2.5) to [out=0,in=150] (3.7,2.4);
+\end{tikzpicture}%
 \caption{مقناطیسی میدان میں توانائی۔}
 \label{شکل_تبادلہ_توانائی_مقناطیسی_میدان_میں_توانائی}
 \end{figure}
@@ -236,7 +420,131 @@ W=\frac{\lambda_0^2}{2 L(x_0)}
 شکل \حوالہ{شکل_تبادلہ_توانائی_حرکت_اور_توانائی}  میں حرکت کرنے والا ایک مقناطیسی نظام دکھایا گیا ہے۔ حرکت کرنے والے حصے اور ساکن حصے  کے مابین خلائی درز \عددیء{g} ہے۔ اگر \عددیء{N=500} ،\عددیء{g=\SI{1}{\milli \meter}} ،\عددیء{b=\SI{0.2}{\meter}}، \عددیء{w=\SI{0.4}{\meter}} اور \عددیء{i=\SI{30}{\ampere}} ہوں تو اس خلائی درز میں توانائی \عددیء{W_m} معلوم کریں۔
 \begin{figure}
 \centering
-\includegraphics{figEnergyConversionForceOnPlunger}
+%\includegraphics{figEnergyConversionForceOnPlunger}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%static section
+\pgfmathsetmacro{\h}{3.5}  %height
+ \pgfmathsetmacro{\w}{2.5}    %width
+\pgfmathsetmacro{\t}{0.6}    %thickness
+\pgfmathsetmacro{\dx}{0.3}    %depth-x
+\pgfmathsetmacro{\dy}{0.3}    %depth-y
+\pgfmathsetmacro{\nL}{4}        %turns on left hand side
+ \pgfmathsetmacro{\r}{\t/2}     %radius
+\pgfmathsetmacro{\g}{0.2}   %gap between coil and edge of window
+%moving plunger
+\pgfmathsetmacro{\hm}{0.6}  %height
+\pgfmathsetmacro{\wm}{1}  
+\pgfmathsetmacro{\x}{0.3} 
+%\pgfmathsetmacro{\dym}{0.3} 
+\pgfmathsetmacro{\s}{0.05}    %space between fixed and moving parts
+
+\pgfmathsetmacro{\leg}{0.5*(\h-2*\s-\hm)}
+
+\pgfmathsetmacro{\shiftX}{6cm}
+\pgfmathsetmacro{\shiftY}{\h cm -\leg cm}
+%\pgfmathsetmacro{\thetaStart}{0} 
+%\pgfmathsetmacro{\thetaEnd}{180}
+
+\coordinate (z) at (0,0);
+\coordinate (a) at (0,\h);
+\coordinate (b) at (\w,\h);
+\coordinate (c) at (\w,\h-\leg);
+\coordinate (d) at (\w-\t,\h-\leg);
+\coordinate (e) at (\w-\t,\h-\t);
+\coordinate (f) at (\t,\h-\t);
+\coordinate (g) at (\t,\t);
+\coordinate (h) at (\w-\t,\t);
+\coordinate (i) at (\w-\t,\leg);
+\coordinate (j) at (\w,\leg);
+\coordinate (k) at (\w,0);
+\draw (c)++ (\dx,\dy) coordinate(cc);
+\draw (b)++(\dx,\dy)coordinate (bb) ;
+\draw (a)++(\dx,\dy)coordinate (aa) ;
+%plunger
+\coordinate(zm) at (\w-\t+\x,\leg+\s);
+\draw (zm)++ (0,\hm) coordinate(am);
+\draw (am)++ (\wm,0) coordinate(bm);
+\draw (bm)++ (0,-\hm) coordinate(cm);
+\draw (am)++ (\dx,\dy) coordinate(aam);
+\draw (bm)++ (\dx,\dy) coordinate(bbm);
+\draw (cm)++ (\dx,\dy) coordinate(ccm);
+%
+\draw(am)--(aam)--(bbm)--(bm)--cycle;   %plunger top
+%fixed
+\draw[fill=white](z)--(a)--(aa)--(bb)--(cc)--(c)--(d)--(e)--(f)--(g)--(h)--(i)--(j)--(k)--cycle;   %front view
+\draw(a)--(b)--(c);      %top's side view
+\draw[gray](b)--(bb);     %edge
+%
+\draw(k)--++(\dx,\dy)--++(0,\leg)--(j);           %lower half section's side view
+\draw(i)--++(\dx,\dy)--++(\t,0);       
+%
+\draw(g)--++(\dx,\dy)coordinate(m) --++(0,\h-2*\t-\dy);    %mid side view
+\draw(m)--++(\w-2*\t-\dx,0);
+%plunger
+\draw[fill=white](zm)--(am)--(bm)--(cm)--cycle;    %plunger front view
+\draw(cm)--(ccm)--(bbm)--(bm)--cycle;  %plunger right view
+%text showing dimensions
+\draw[gray,<->](c)++(0,0.3)--++(-\t,0) node[pos=0.5,fill=white]{$b$};
+\draw [gray,dashed](k)--++(0.4,-0.4);
+\draw [gray,dashed](k)++(\dx,\dy)--++(0.4,-0.4);
+\draw[gray,<->] (k)++(0.2,-0.2)--++(\dx,\dy)node[pos=0.4,below right]{$w$};
+\draw[gray](d)++(0.15,-0.2) node{$x$};
+\draw[gray,thick](d)++(0,-0.25)--++(0,-0.25);
+\draw[gray,->]($(d)!0.5!(i)$)--++(\x,0);
+\draw[gray,<->]($(am)!0.7!(bm)$)--++(0,-\hm) node[fill=white,pos=0.5]{$h$};
+\draw[gray,<-] ($(aam)!0.8!(bbm)$) to [out=90,in=180] ++(\dx,2*\dy)node[right]{\RL{حرکی حصہ}};
+%showing gaps-g
+\draw[gray,dashed](d)++(-0.1,0)--++(-0.3,0)coordinate[pos=0.7] (gapArrowUpper);
+\draw[gray,dashed](d)++(\x,-\s)++(-0.1,0)--++(-0.3-\x,0);
+\draw[gray,<-](gapArrowUpper)--++(0,0.2)--++(-0.2,0)node[left]{$g$};
+\draw[gray,<-](gapArrowUpper)++(0,-\s)--++(0,-0.2);
+%
+\draw[gray,dashed](i)++(-0.1,0)--++(-0.3,0)coordinate[pos=0.7] (gapArrowLower);
+\draw[gray,dashed](i)++(\x,\s)++(-0.1,0)--++(-0.3-\x,0);
+\draw[gray,<-](gapArrowLower)--++(0,-0.2);
+\draw[gray,<-](gapArrowLower)++(0,\s)--++(0,0.2)--++(-0.2,0)node[left]{$g$};
+\draw[gray] node at (\w/2,-\t) {$h \gg g$};
+%COIL
+%left leg coil.  drawn from top to bottom
+%coil step
+\pgfmathsetmacro{\stepHL}{(\h-2*\t-2*\g)/(\nL)}
+%
+\def\leftEdge{0};
+\def\coilTop{\h-\t-\g};
+\def\rightEdge{\t+\dx};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\rightEdge,{\coilTop-\stepHL/2}); %top half turn
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\rightEdge,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop) to [short,-o,i_<={$i$}]++(-2.25*\t,0) node(TA){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL) to [short,-o]++(-2*\t,0)node(TB){};
+\node at ($(TA)!0.5!(TB)$){$\begin{aligned}&+\\ e&,\lambda\\&-   \end{aligned}$};
+%=================================
+%right hand figure
+\begin{scope}[xshift=\shiftX,yshift=\shiftY]
+%flux
+\path[fill=gray](0,\t)--++(0,-\t/2) to [out=-90,in=90] ++(\x,-\t/2-\s) --++(0,-\hm) to [out=-90,in=90] ++(-\x,-\s-\t/2)--++(0,-\t/2)--++(\t,0)--++(0,\t+\t+\hm+\s+\s)--cycle;
+%upper and lower leg's portions
+\draw (0,\t)--++(0,-\t)--++(\t,0)--++(0,\t);
+\draw (0,-\s-\hm-\s-\t)--++(0,\t)--++(\t,0)--++(0,-\t);
+%plunger itself
+\draw(0,-\s)++(\x,0)--++(\wm,0)--++(0,-\hm)--++(-\wm,0)--cycle;
+%text
+\node[gray,left] at (-0.5*\wm,-\hm){\RL{مقناطیسی بہاو}};
+\draw[gray,->] (-0.5*\wm,-\hm) to [out=0,in=-135] (0.13,0.13);
+%
+\draw[gray,<-](\x,-\s-\hm/2)--++(-\t/3,0);
+\draw[gray,<-](\t,-\s-\hm/2)--++(\t/3,0)--++(\t/2,\t)--++(\t/2,0) node[right]{$(b-x)$};
+\end{scope}
+%
+\end{tikzpicture}%
 \caption{حرکت اور توانائی۔}
 \label{شکل_تبادلہ_توانائی_حرکت_اور_توانائی}
 \end{figure}
@@ -279,7 +587,23 @@ F_m&=-\frac{g L^2 i^2}{N^2 \mu_0 w (b-x)^2}\\
 	شکل \حوالہ{شکل_تبادلہ_توانائی_کو_توانائی_کی_تعریف}  میں \عددیء{\lambda} اور \عددیء{i} کے مابین ترسیم دکھایا گیا ہے۔ جیسا آپ دیکھ سکتے ہیں کہ لکیر کے نیچے رقبہ دراصل توانائی ہی ہے۔ اگر ہم اس ترسیم پر کوئی ایک نقطہ \عددیء{(\lambda,i)} لیں اور اس نکتے سے ایک لکیر نیچے کی طرف اور دوسری لکیر بائیں جانب کھینچے تو ہمیں ایک مستطیل ملتا ہے جس کا رقبہ \عددیء{\lambda i} کے برابر ہو گا۔ اگر اس میں سے ہم توانائی  \عددیء{W_m} منفی کر لیں تو جو مقدار ملتی ہے اس کو کو-توانائی \عددیء{W_m'} کہتے ہیں یعنی
 \begin{figure}
 \centering
-\includegraphics{figEnergyConversionDefiningCoenergy}
+%\includegraphics{figEnergyConversionDefiningCoenergy}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,0) grid (5,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (5,5);
+\pgfmathsetmacro{\l}{5}
+ \pgfmathsetmacro{\b}{2.5}
+\draw[gray](0,0)--(4,0)node[ right]{};
+\draw[gray](0,0)--(0,2.2)node[above]{};
+\draw[-] (0,0) to [out=30,in=180] (0.6,0.7) to [out=0,in=120] (2,1.3) to [out=-60,in=-130](3,2) to [out=50,in=180] (3.5,2.2)node[below right,align=left]{\RL{لکیر کے نیچھے رقبہ}\\ \RL{ توانائی کے برابر ہے۔}} ;
+\draw[dashed,gray](3,0)--(3,2) node[below,black] at (3,0){$\lambda$};
+\draw[gray,dashed](3,2)--(0,2) node[left,black]{$i$};
+%text
+\node[right] at (1,0.5){$W_m$ توانائی};
+\node[right] at (0.25,1.75){$Wm' $ کو-توانائی};
+%
+\end{tikzpicture}%
 \caption{کو-توانائی کی تعریف۔}
 \label{شکل_تبادلہ_توانائی_کو_توانائی_کی_تعریف}
 \end{figure}
@@ -332,7 +656,34 @@ W_m'(i,x)=\int_{0}^{i} L(x) i  \dif i=\frac{L(x) i^2}{2}
 شکل \حوالہ{شکل_تبادلہ_توانائی_پیچدار_لچھا}  میں ایک پیچدار لچھا\حاشیہب{spiral coil} دکھایا گیا ہے جس کی محوری لمبائی \عددیء{l}،   رداس \عددیء{r}  اور چکر \عددیء{N}  ہیں۔ایسے پیچدار لچھے کی مقناطیسی بہاو محوری سمت میں لچھے کے اندر ہی رہتی ہے۔ لچھے کے باہر مقناطیسی بہاو کی مقدار قابلِ نظر انداز ہوتی ہے۔یوں لچھے کے اندر محوری لمبائی کی سمت میں میدانی شدت \عددیء{H \approx NI/l} ہوتی ہے۔
 \begin{figure}
 \centering
-\includegraphics{figEnergyConversionCoil}
+%\includegraphics{figEnergyConversionCoil}
+\begin{tikzpicture}
+%grid
+\pgfmathsetmacro{\radX}{1.8}
+ \pgfmathsetmacro{\radY}{0.4}
+\pgfmathsetmacro{\thetaStart}{0} 
+\pgfmathsetmacro{\thetaEnd}{180}
+%\draw[gray,thick] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%coil backside
+\foreach \y in {0,0.2,0.4,0.6,0.8,1,1.2,1.4,1.6,1.8,2}{
+\draw[thick,domain={0:180},variable=\t,smooth,samples=100] plot({\radX*cos(\t)},{\y+0.1/180*\t+\radY*sin(\t)});
+}
+%coil front
+\foreach \y in {0,0.2,0.4,0.6,0.8,1,1.2,1.4,1.6,1.8,2}{
+\draw[thick,domain={180:360},variable=\t,smooth,samples=100] plot({\radX*cos(\t)},{\y+0.1/180*\t+\radY*sin(\t)});
+}
+%end connections
+\draw[thick](\radX,0)--(1.4*\radX,0);
+\draw[thick](\radX,2+0.1/180*360)--(1.4*\radX,2+0.1/180*360);
+%text
+\draw[gray,<->](1.4*\radX,0+0.05)--(1.4*\radX,2+0.1/180*360-0.05)node[pos=0.5,right]{$l$};
+\draw[gray,dashed](0,2+0.1/180*360-0.4)--(0,2+0.1/180*360+0.4);
+\draw[gray,->] (0,2+0.1/180*360+0.4)--++(\radX,0)node [above,pos=0.5]{$r$};
+\draw(-2,1)node[left]{\RL{$N$ چکر}};
+%
+\end{tikzpicture}%
+
 \caption{پیچدار لچھا۔}
 \label{شکل_تبادلہ_توانائی_پیچدار_لچھا}
 \end{figure}
@@ -377,7 +728,71 @@ N=300, \quad A=\SI{0.8}{\meter \squared}, \quad I=\SI{30}{\ampere}
 اگر برقی مقناطیسی اور لوہے کے درمیان اوسط فاصلہ \عددیء{2.5} سنٹی میٹر لیا جائے تو یہ برقی مقناطیسی کتنی کمیت لوہا اٹھا سکتی ہے۔
 \begin{figure}
 \centering
-\includegraphics{figEnergyConversionElectroMagnet}
+%\includegraphics{figEnergyConversionElectroMagnet}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-4*\radX,-4*\radX) grid (4*\radX,4*\radX);
+\pgfmathsetmacro{\shiftX}{5 cm}
+
+\pgfmathsetmacro{\h}{1.2}
+\pgfmathsetmacro{\t}{0.4}
+\pgfmathsetmacro{\g}{0.1}
+\pgfmathsetmacro{\nL}{3}
+
+\pgfmathsetmacro{\xE}{3*\t cm}
+\pgfmathsetmacro{\yE}{\h/4 cm}
+
+\draw(0,0)--++(0,\h)--++(6*\t,0)--++(0,-\h)--++(-\t,0)--++(0,\h-\t)--++(-\t,0)--++(0,-\h+\t)--++(-2*\t,0)--++(0,\h-\t)--++(-\t,0)--++(0,-\h+\t)--cycle;
+\draw(0,-\t/2)--++(6*\t,0)--++(0,-1.5*\t)--++(-6*\t,0)--cycle;     %load
+\draw[gray] (6*\t+0.1,0)--++(0.3,0)coordinate[pos=0.5] (gap);
+\draw[gray] (6*\t+0.1,0)++(0,-\t/2)--++(0.3,0);
+\draw[gray,<-] (gap)--++(0,0.3)--++(0.2,0.2) node[above] {$l$};
+\draw[gray,<-] (gap)++(0,-0.5*\t)--++(0,-0.3);
+\draw node at (3*\t,-1.25*\t){\RL{لوہے کا بار}};
+%===================================
+\pgfmathsetmacro{\stepHL}{(\h-\t-2*\g)/(\nL)}
+%
+\def\leftEdge{2*\t};
+\def\coilTop{\h-\t-\g};
+\def\rightEdge{4*\t};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\rightEdge,{\coilTop-\stepHL/2}); %top half turn
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\rightEdge,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-0.75*\t,0) node(TA){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-0.5*\t,0)node(TB){};
+%
+\draw node[left] at (-\t,0){ب};
+%===========================
+%===========================
+%figure-alf
+\begin{scope}[xshift=\shiftX,x=1cm,y=0.25cm]
+\draw(0,0) circle  (1.2);
+\draw(0,0) circle  (0.8);
+\draw[gray,<-] (220:1.2) to [out=220,in=45](-1.5,-1.5) node[below] {رقبہ $A$};
+\draw[gray,<-] (-90:0.4) to [out=-90,in=120](1,-2) node[below] {رقبہ $A$};
+\begin{scope}
+\clip (0,0) circle  (0.8);
+\draw(0,0) circle  (0.4);
+\draw (-0.4,0)--++(0,2);
+\draw (0.4,0)--++(0,2);
+\end{scope}
+%
+\begin{scope}[yshift=0.8cm]
+\draw([shift={(0:1.2)}]0,0) arc (0:180:1.2);
+\end{scope}
+\draw(-1.2,0)--++(0,0.8cm);
+\draw(1.2,0)--++(0,0.8cm);
+\draw node[right] at (4*\t,0){الف};
+\end{scope}
+%
+\end{tikzpicture}%
+
 \caption{برقی مقناطیس۔}
 \label{شکل_تبادلہ_توانائی_برقی_مقناطیس}
 \end{figure}
@@ -410,7 +825,30 @@ F_m=\frac{\partial W_m}{\partial x}=-\frac{N^2 \mu_0 w i^2}{4 g}=\SI{-28278}{\ne
 ابھی تک صرف ایک لچھے کے نظام کا مطالعہ کیا گیا ہے۔ اس حصہ میں  ایک سے زیادہ لچھوں کے نظام کا مطالعہ کیا جائے گا۔ زیادہ لچھوں کا نظام بھی بالکل ایک لچھے کے نظام کی طرح حل ہوتے ہیں۔
 \begin{figure}
 \centering
-\includegraphics{figEnergyConversionBasicBlockDiagramDetailedTwoCoils}
+%\includegraphics{figEnergyConversionBasicBlockDiagramDetailedTwoCoils}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,0) grid (5,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (5,5);
+\pgfmathsetmacro{\l}{5}
+ \pgfmathsetmacro{\b}{2.5}
+\draw (0,0)coordinate(a){}--++(0:\l)coordinate(b){}--++(90:\b)coordinate(c){}--++(180:\l)coordinate(d){}--cycle;
+%
+\draw($(a)!0.9!(d)$) to [short,-o,i_<={$i_1$}]++(180:\b)coordinate(leftD){};
+\draw($(a)!0.6!(d)$) to [short,-o]++(180:\b)coordinate(leftC){};
+\draw($(a)!0.4!(d)$) to [short,-o,i_<={$i_2$}]++(180:\b)coordinate(leftB){};
+\draw($(a)!0.1!(d)$) to [short,-o]++(180:\b)coordinate(leftA){};
+\draw node at ($(leftC)!0.5!(leftD)$){$\lambda_1$};
+\draw node at ($(leftA)!0.5!(leftB)$){$\lambda_2$};
+
+\draw($(b)!0.2!(c)$) to [short,-o]++(0:\b)coordinate(rightLow){};
+\draw($(b)!0.8!(c)$) to [short,-o,i={$F_m$}]++(0:\b)coordinate(rightUpper){};
+\draw node at ($(rightLow)! 0.5 ! (rightUpper)$){$x$};
+%
+\draw node at (\l/2,\b/2){$\textup{d} W_m$};
+\draw[left] node at (0,-0.2){$\partial W_{\textup{برقی}}= i_1 \textup{d}\lambda_1 +i_2 \textup{d}\lambda_2$};
+\draw[right] node at (\l,-0.2){$\partial W_{\textup{میکانی}}= F_m \textup{d} x$};
+\end{tikzpicture}%
 \caption{ دو لچھوں کا نظام۔}
 \label{شکل_تبادلہ_توانائی_دو_لچھوں_کا_نظام}
 \end{figure}
@@ -439,7 +877,37 @@ F_m&=\left. \frac{\partial W_m(\lambda_1,\lambda_2,x)}{\partial x} \right|_{\lam
 
 \begin{figure}
 \centering
-\includegraphics{figEnergyConversionTwoCoilSystemEnergyIntegral}
+%\includegraphics{figEnergyConversionTwoCoilSystemEnergyIntegral}
+\begin{tikzpicture}[x={(-0.5cm,-0.5cm)},y={(1cm,0)},z={(0,1cm)}]
+%grid
+%\draw[gray,thick] (0,0) grid (5,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (5,5);
+\pgfmathsetmacro{\x}{2}
+\pgfmathsetmacro{\y}{3}
+\pgfmathsetmacro{\z}{2} 
+%AXIS
+\draw[gray](0,0,0)--(2.5,0,0);
+\draw[gray](0,0,0)--(0,4,0);
+\draw[gray](0,0,0)--(0,0,2.5);
+%BOX VECTORS
+\draw[->](0,0,0)--++(\x/2,0,0) node[gray,above,rotate=45] {\RL{پہلا راستہ}};
+\draw(\x/2,0,0)--(\x,0,0)node[left,gray]{$x_0$};
+\draw[->](\x,0,0)--(\x,\y/2,0)node[gray,below]{\RL{دوسرا راستہ}};
+\draw(\x,\y/2,0)--(\x,\y,0);
+\draw[->](\x,\y,0)--(\x,\y,\z/2)node[gray,rotate=90,above]{\RL{تیسرا راستہ}};
+\draw(\x,\y,\z/2)--(\x,\y,\z)coordinate(end);
+%dashed
+\draw[gray,dashed](end)--++(-\x,0,0)--++(0,-\y,0)node[above left]{$\lambda_{20}$};
+\draw[gray,dashed](end)++(-\x,0,0)--++(0,0,-\z)node[above right]{$\lambda_{10}$}--++(\x,0,0);
+\draw[gray,dashed](end)--++(0,-\y,0)--++(-\x,0,0);
+\draw[gray,dashed](end)++(0,-\y,0)--++(0,0,-\z);
+%ACTUAL PATH
+\draw[thick,->](0,0,0) to [out=-30,in=-150] (\x/2,\y/2,\y/3)node[black,above,rotate=40]{\RL{اصل راستہ}};
+\draw[thick] (\x/2,\y/2,\y/3)  to [out=30,in=180] (\x,\y,\z);
+%
+\draw node[right] at (0,4,1.5){$W_m(x_0, \lambda_{10},\lambda_{20})$};
+\draw[gray,<-]  (\x,\y,\z)++(0.1,0.1,0) to [out=-30,in=180](0,4,1.5);
+\end{tikzpicture}%
 \caption{دو لچھوں کے نظام میں مقناطیسی میدان میں  توانائی۔}
 \label{شکل_تبادلہ_توانائی_دو_لچھوں_کے_توانائی_کا_تکمل}
 \end{figure}
@@ -606,7 +1074,88 @@ L_{12}&=0.15 \cos \theta
  برقی رو  \عددیء{i_1=\SI{0.02}{\ampere},i_2=\SI{5}{\ampere}} پر قوت مروڑ \عددیء{T_m} معلوم کریں۔
 \begin{figure}
 \centering
-\includegraphics{figEnergyConversionShowingRotor}
+%\includegraphics{figEnergyConversionShowingRotor}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,0) grid (5,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,0) grid (5,5);
+\pgfmathsetmacro{\r}{0.5}
+\pgfmathsetmacro{\g}{0.1}
+\pgfmathsetmacro{\angle}{30} 
+\pgfmathsetmacro{\angleRotation}{20} 
+\pgfmathsetmacro{\angleR}{40}
+\pgfmathsetmacro{\t}{2*(\r+\g)*sin(\angle)}
+\pgfmathsetmacro{\tr}{2*\r*sin(\angleR)}
+\pgfmathsetmacro{\hor}{(\r+\g)*cos(\angle)}
+\pgfmathsetmacro{\leg}{0.75}
+\pgfmathsetmacro{\w}{2*(\hor+\leg)}
+\pgfmathsetmacro{\h}{0.75*\w}
+%STATOR
+\draw([shift={(-\angle:\r+\g)}]0,0) arc (-\angle:\angle:\r+\g)--++(\leg,0)--++(0,-\h)--++(-\w,0)--++(0,\h)--++(\leg,0)  arc (180-\angle:180+\angle:\r+\g)--++(-\leg+\t,0)--++(0,-\h+2*\t)--++(\w-2*\t,0)--++(0,\h-2*\t)--++(-\leg+\t,0);
+\draw[gray,->]  (-\r-2*\leg,0) node[left] {\RL{ساکن حصہ}}  to [out=0,in=180] (-\w/2,-\h/2);
+%
+%============
+\begin{scope}[rotate=90]
+%COIL ON STATOR
+\pgfmathsetmacro{\nL}{4}
+\pgfmathsetmacro{\stepHL}{(\w-2*\t-2*\g)/(\nL)}
+%
+\def\leftEdge{-\h+\t/2};
+\def\coilTop{\w/2-\g-\t};
+\def\rightEdge{-\h+1.5*\t};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\rightEdge,{\coilTop-\stepHL/2}); %top half turn
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\rightEdge,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-0.5*\t,0) coordinate(TRA){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-0.25*\t,0)coordinate(TRB){};
+\end{scope}
+\draw(TRA) to [short,i_<={$i_2$}] ++(0,-0.3)node (TRAA){};
+\draw(TRB) to [short] ++(0,-0.3)node(TRBB){};
+\node at ($(TRAA)!0.5!(TRBB)$){$\lambda_2$};
+%========
+%ROTOR
+\begin{scope}[rotate=\angleRotation]
+\pgfmathsetmacro{\hRot}{\r*cos(\angleR)}
+\draw([shift={(-\angleR:\r)}]0,0) arc (-\angleR:\angleR:\r)--++(-2*\hRot,0) arc (180-\angleR:180+\angleR:\r)--++(2*\hRot,0);
+%
+\draw[gray,->]  (-\r-1*\leg,1.2) node[left] {\RL{گھومتا حصہ}}  to [out=-30,in=100] (180-\angleR:\r);
+\end{scope}
+%=================
+%ROTOR COIL
+\begin{scope}[rotate=-90+\angleRotation]
+\pgfmathsetmacro{\nL}{3}
+\pgfmathsetmacro{\stepHL}{(2*\r-2*\g)/(\nL)}
+%
+\def\leftEdge{-\tr/2};
+\def\coilTop{\r-1.5*\g};
+\def\rightEdge{\tr/2};
+%
+\draw(\leftEdge+\tr/4,\coilTop) to [out=0,in=45] (\rightEdge,{\coilTop-\stepHL/2}); %top half turn
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\rightEdge,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\tr/4,\coilTop)coordinate(kA);%--++(-0.5*\tr,0) coordinate(TA){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)coordinate(kB);% to [out=180,in=90]++(-0.25*\t,0)coordinate(TB){};
+%==================
+\end{scope}
+%
+\draw(kA) to [out=110,in=-90]++(-0.1,0.4) to [short,i_<={$i_1$}] ++(0,0.3)node(rTA){};
+\draw(kB) to [out=100,in=-90]++(0,0.2) to [short] ++(0,0.55)node(rTB){};
+\draw node at ($(rTA)!0.5!(rTB)$){$\lambda_1$};
+%
+\draw[gray,dashed](0,0) --++(0:2);
+\draw[gray,dashed](0,0) --++(\angleRotation:2);
+\draw[gray]([shift={(0:1.5)}]0,0) arc (0:\angleRotation:1.5);
+\draw[gray] node at (\angleRotation/2:1.7){$\theta$};
+\end{tikzpicture}
 \caption{دو لچھوں کے نظام میں قوت مروڑ۔}
 \label{شکل_تبادلہ_توانائی_دو_لچھوں_میں_مروڑ}
 \end{figure}

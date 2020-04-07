@@ -10,19 +10,19 @@
 \contentsline {subsection}{\numberline {1.4.1}کارتیسی محددی نظام}{3}% 
 \contentsline {subsection}{\numberline {1.4.2}نلکی محددی نظام}{5}% 
 \contentsline {section}{\numberline {1.5}سمتیہ رقبہ}{7}% 
-\contentsline {section}{\numberline {1.6}رقبہ عمودی تراش}{8}% 
-\contentsline {section}{\numberline {1.7}برقی اور مقناطیسی میدان}{9}% 
-\contentsline {subsection}{\numberline {1.7.1}برقی میدان اور برقی میدان کی شدت}{9}% 
-\contentsline {subsection}{\numberline {1.7.2}مقناطیسی میدان اور مقناطیسی میدان کی شدت}{10}% 
+\contentsline {section}{\numberline {1.6}رقبہ عمودی تراش}{9}% 
+\contentsline {section}{\numberline {1.7}برقی اور مقناطیسی میدان}{10}% 
+\contentsline {subsection}{\numberline {1.7.1}برقی میدان اور برقی میدان کی شدت}{10}% 
+\contentsline {subsection}{\numberline {1.7.2}مقناطیسی میدان اور مقناطیسی میدان کی شدت}{11}% 
 \contentsline {section}{\numberline {1.8}سطحی اور حجمی کثافت}{11}% 
 \contentsline {subsection}{\numberline {1.8.1}سطحی کثافت}{11}% 
 \contentsline {section}{\numberline {1.9}حجمی کثافت}{12}% 
-\contentsline {section}{\numberline {1.10}صلیبی ضرب اور ضرب نقطہ}{12}% 
+\contentsline {section}{\numberline {1.10}صلیبی ضرب اور ضرب نقطہ}{13}% 
 \contentsline {subsection}{\numberline {1.10.1}صلیبی ضرب}{13}% 
 \contentsline {subsection}{\numberline {1.10.2}نقطی ضرب}{15}% 
-\contentsline {section}{\numberline {1.11}تفرق اور جزوی تفرق}{17}% 
-\contentsline {section}{\numberline {1.12}خطی تکمل}{17}% 
-\contentsline {section}{\numberline {1.13}سطحی تکمل}{18}% 
+\contentsline {section}{\numberline {1.11}تفرق اور جزوی تفرق}{18}% 
+\contentsline {section}{\numberline {1.12}خطی تکمل}{18}% 
+\contentsline {section}{\numberline {1.13}سطحی تکمل}{19}% 
 \contentsline {section}{\numberline {1.14} مرحلی سمتیہ}{21}% 
 \contentsline {chapter}{\numberline {2}مقناطیسی ادوار}{25}% 
 \contentsline {section}{\numberline {2.1}مزاحمت اور ہچکچاہٹ}{25}% 
@@ -50,71 +50,71 @@
 \contentsline {subsection}{\numberline {3.10.3}ثانوی برقی رو اور قالب کے اثرات}{79}% 
 \contentsline {subsection}{\numberline {3.10.4}ثانوی لچھے کی امالی برقی دباو}{80}% 
 \contentsline {subsection}{\numberline {3.10.5}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{81}% 
-\contentsline {subsection}{\numberline {3.10.6}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{82}% 
+\contentsline {subsection}{\numberline {3.10.6}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{81}% 
 \contentsline {subsection}{\numberline {3.10.7}ٹرانسفارمر کے سادہ ترین مساوی دور}{84}% 
 \contentsline {section}{\numberline {3.11}کھلے دور معائنہ اور کسرِ دور معائنہ}{85}% 
 \contentsline {subsection}{\numberline {3.11.1}کھلے دور معائنہ}{86}% 
 \contentsline {subsection}{\numberline {3.11.2} کسرِ دور معائنہ}{88}% 
 \contentsline {section}{\numberline {3.12}تین مرحلہ ٹرانسفارمر}{92}% 
-\contentsline {section}{\numberline {3.13}ٹرانسفارمر چالو کرتے لمحہ زیادہ محرکی برقی رو کا گزر}{100}% 
-\contentsline {chapter}{\numberline {4}برقی اور میکانی توانائی کا باہمی تبادلہ}{103}% 
-\contentsline {section}{\numberline {4.1}مقناطیسی نظام میں قوت اور قوت مروڑ}{104}% 
-\contentsline {section}{\numberline {4.2}تبادلہ توانائی والا ایک لچھے کا نظام}{109}% 
-\contentsline {section}{\numberline {4.3}توانائی اور کو-توانائی}{114}% 
-\contentsline {section}{\numberline {4.4}زیادہ لچھوں کا مقناطیسی نظام}{119}% 
-\contentsline {chapter}{\numberline {5}گھومتے مشین کے بنیادی اصول}{127}% 
-\contentsline {section}{\numberline {5.1}قانونِ فیراڈے}{127}% 
-\contentsline {section}{\numberline {5.2}معاصر مشین}{128}% 
-\contentsline {section}{\numberline {5.3}محرک برقی دباو}{138}% 
-\contentsline {section}{\numberline {5.4}پھیلے لچھے اور سائن نما مقناطیسی دباو}{142}% 
-\contentsline {subsection}{\numberline {5.4.1}بدلتی رو والے مشین}{143}% 
-\contentsline {section}{\numberline {5.5}مقناطیسی دباو کی گھومتی موجیں}{151}% 
-\contentsline {subsection}{\numberline {5.5.1}ایک دور کی لپٹی مشین}{152}% 
-\contentsline {subsection}{\numberline {5.5.2}تین دور کی لپٹی مشین کا تحلیلی تجزیہ}{153}% 
-\contentsline {subsection}{\numberline {5.5.3}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{158}% 
-\contentsline {section}{\numberline {5.6}محرک برقی دباو}{161}% 
-\contentsline {subsection}{\numberline {5.6.1}بدلتی رو برقی جنریٹر}{161}% 
-\contentsline {subsection}{\numberline {5.6.2}یک سمتی رو برقی جنریٹر}{166}% 
-\contentsline {section}{\numberline {5.7}ہموار قطب مشینوں میں قوت مروڑ}{167}% 
-\contentsline {subsection}{\numberline {5.7.1}توانائی کے طریقے سے میکانی قوت مروڑ کا حساب}{167}% 
-\contentsline {subsection}{\numberline {5.7.2}مقناطیسی بہاو سے میکانی قوت مروڑ کا حساب}{169}% 
-\contentsline {chapter}{\numberline {6}یکساں حال، برقرار چالو معاصر مشین}{175}% 
-\contentsline {section}{\numberline {6.1}متعدد مرحلہ معاصر مشین}{176}% 
-\contentsline {section}{\numberline {6.2}معاصر مشین کے امالہ}{179}% 
-\contentsline {subsection}{\numberline {6.2.1}خود امالہ}{180}% 
-\contentsline {subsection}{\numberline {6.2.2}مشترکہ امالہ}{181}% 
-\contentsline {subsection}{\numberline {6.2.3}معاصر امالہ}{183}% 
-\contentsline {section}{\numberline {6.3}معاصر مشین کا مساوی دور یا ریاضی نمونہ}{185}% 
-\contentsline {section}{\numberline {6.4}برقی طاقت کی منتقلی}{187}% 
-\contentsline {section}{\numberline {6.5}یکساں حال، برقرار چالو مشین کے خصوصیات}{192}% 
-\contentsline {subsection}{\numberline {6.5.1}معاصر جنریٹر: برقی بوجھ بالمقابل \ensuremath {I_m} کے خطوط}{192}% 
-\contentsline {subsection}{\numberline {6.5.2}معاصر موٹر:\ensuremath {I_a} بالمقابل \ensuremath {I_m} کے خط}{193}% 
-\contentsline {section}{\numberline {6.6}کھلے دور اور کسرِ دور معائنہ }{195}% 
-\contentsline {subsection}{\numberline {6.6.1}کُھلے دور معائنہ}{195}% 
-\contentsline {subsection}{\numberline {6.6.2}کسرِ دور معائنہ}{196}% 
-\contentsline {chapter}{\numberline {7}امالی مشین}{207}% 
-\contentsline {section}{\numberline {7.1}ساکن لچھوں کی گھومتی مقناطیسی موج}{208}% 
-\contentsline {section}{\numberline {7.2}مشین کی سرکنے اور گھومتی موجوں پر تبصرہ}{208}% 
-\contentsline {section}{\numberline {7.3}ساکن لچھوں میں امالی برقی دباو}{211}% 
-\contentsline {section}{\numberline {7.4}ساکن لچھوں کی موج کا گھومتے لچھوں کے ساتھ اضافی رفتار اور ان میں پیدا امالی برقی دباو}{211}% 
-\contentsline {section}{\numberline {7.5}گھومتے لچھوں کی گھومتی مقناطیسی دباو کی موج}{215}% 
-\contentsline {section}{\numberline {7.6}گھومتے لچھوں کے مساوی فرضی ساکن لچھے}{216}% 
-\contentsline {section}{\numberline {7.7}امالی موٹر کا مساوی برقی دور}{217}% 
-\contentsline {section}{\numberline {7.8}مساوی برقی دور پر غور}{222}% 
-\contentsline {section}{\numberline {7.9}امالی موٹر کا مساوی تھونن دور یا ریاضی نمونہ}{226}% 
-\contentsline {section}{\numberline {7.10}پنجرا نما امالی موٹر}{232}% 
-\contentsline {section}{\numberline {7.11}بے بوجھ موٹر اور جامد موٹر کے معائنہ }{233}% 
-\contentsline {subsection}{\numberline {7.11.1}بے بوجھ موٹر کا معائنہ}{233}% 
-\contentsline {subsection}{\numberline {7.11.2}جامد موٹر کا معائنہ}{235}% 
-\contentsline {chapter}{\numberline {8}یک سمتی رو مشین}{241}% 
-\contentsline {section}{\numberline {8.1}میکانی سمت کار کی بنیادی کارکردگی}{241}% 
-\contentsline {subsection}{\numberline {8.1.1}میکانی سمت کار کی تفصیل}{243}% 
-\contentsline {section}{\numberline {8.2}یک سمتی جنریٹر کی برقی دباو}{247}% 
-\contentsline {section}{\numberline {8.3}قوت مروڑ}{249}% 
-\contentsline {section}{\numberline {8.4}بیرونی ہیجان اور خود ہیجان یک سمتی جنریٹر}{251}% 
-\contentsline {section}{\numberline {8.5}یک سمتی مشین کی کارکردگی کے خط}{255}% 
-\contentsline {subsection}{\numberline {8.5.1}حاصل برقی دباو بالمقابل برقی بوجھ}{255}% 
-\contentsline {subsection}{\numberline {8.5.2}رفتار بالمقابل قوت مروڑ}{257}% 
-\contentsline {chapter}{فرہنگ}{265}% 
+\contentsline {section}{\numberline {3.13}ٹرانسفارمر چالو کرتے لمحہ زیادہ محرکی برقی رو کا گزر}{99}% 
+\contentsline {chapter}{\numberline {4}برقی اور میکانی توانائی کا باہمی تبادلہ}{101}% 
+\contentsline {section}{\numberline {4.1}مقناطیسی نظام میں قوت اور قوت مروڑ}{102}% 
+\contentsline {section}{\numberline {4.2}تبادلہ توانائی والا ایک لچھے کا نظام}{107}% 
+\contentsline {section}{\numberline {4.3}توانائی اور کو-توانائی}{112}% 
+\contentsline {section}{\numberline {4.4}زیادہ لچھوں کا مقناطیسی نظام}{117}% 
+\contentsline {chapter}{\numberline {5}گھومتے مشین کے بنیادی اصول}{125}% 
+\contentsline {section}{\numberline {5.1}قانونِ فیراڈے}{125}% 
+\contentsline {section}{\numberline {5.2}معاصر مشین}{126}% 
+\contentsline {section}{\numberline {5.3}محرک برقی دباو}{136}% 
+\contentsline {section}{\numberline {5.4}پھیلے لچھے اور سائن نما مقناطیسی دباو}{140}% 
+\contentsline {subsection}{\numberline {5.4.1}بدلتی رو والے مشین}{141}% 
+\contentsline {section}{\numberline {5.5}مقناطیسی دباو کی گھومتی موجیں}{149}% 
+\contentsline {subsection}{\numberline {5.5.1}ایک دور کی لپٹی مشین}{150}% 
+\contentsline {subsection}{\numberline {5.5.2}تین دور کی لپٹی مشین کا تحلیلی تجزیہ}{151}% 
+\contentsline {subsection}{\numberline {5.5.3}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{156}% 
+\contentsline {section}{\numberline {5.6}محرک برقی دباو}{159}% 
+\contentsline {subsection}{\numberline {5.6.1}بدلتی رو برقی جنریٹر}{159}% 
+\contentsline {subsection}{\numberline {5.6.2}یک سمتی رو برقی جنریٹر}{164}% 
+\contentsline {section}{\numberline {5.7}ہموار قطب مشینوں میں قوت مروڑ}{165}% 
+\contentsline {subsection}{\numberline {5.7.1}توانائی کے طریقے سے میکانی قوت مروڑ کا حساب}{165}% 
+\contentsline {subsection}{\numberline {5.7.2}مقناطیسی بہاو سے میکانی قوت مروڑ کا حساب}{167}% 
+\contentsline {chapter}{\numberline {6}یکساں حال، برقرار چالو معاصر مشین}{173}% 
+\contentsline {section}{\numberline {6.1}متعدد مرحلہ معاصر مشین}{174}% 
+\contentsline {section}{\numberline {6.2}معاصر مشین کے امالہ}{177}% 
+\contentsline {subsection}{\numberline {6.2.1}خود امالہ}{178}% 
+\contentsline {subsection}{\numberline {6.2.2}مشترکہ امالہ}{179}% 
+\contentsline {subsection}{\numberline {6.2.3}معاصر امالہ}{181}% 
+\contentsline {section}{\numberline {6.3}معاصر مشین کا مساوی دور یا ریاضی نمونہ}{183}% 
+\contentsline {section}{\numberline {6.4}برقی طاقت کی منتقلی}{185}% 
+\contentsline {section}{\numberline {6.5}یکساں حال، برقرار چالو مشین کے خصوصیات}{190}% 
+\contentsline {subsection}{\numberline {6.5.1}معاصر جنریٹر: برقی بوجھ بالمقابل \ensuremath {I_m} کے خطوط}{190}% 
+\contentsline {subsection}{\numberline {6.5.2}معاصر موٹر:\ensuremath {I_a} بالمقابل \ensuremath {I_m} کے خط}{191}% 
+\contentsline {section}{\numberline {6.6}کھلے دور اور کسرِ دور معائنہ }{193}% 
+\contentsline {subsection}{\numberline {6.6.1}کُھلے دور معائنہ}{193}% 
+\contentsline {subsection}{\numberline {6.6.2}کسرِ دور معائنہ}{194}% 
+\contentsline {chapter}{\numberline {7}امالی مشین}{205}% 
+\contentsline {section}{\numberline {7.1}ساکن لچھوں کی گھومتی مقناطیسی موج}{206}% 
+\contentsline {section}{\numberline {7.2}مشین کی سرکنے اور گھومتی موجوں پر تبصرہ}{206}% 
+\contentsline {section}{\numberline {7.3}ساکن لچھوں میں امالی برقی دباو}{209}% 
+\contentsline {section}{\numberline {7.4}ساکن لچھوں کی موج کا گھومتے لچھوں کے ساتھ اضافی رفتار اور ان میں پیدا امالی برقی دباو}{209}% 
+\contentsline {section}{\numberline {7.5}گھومتے لچھوں کی گھومتی مقناطیسی دباو کی موج}{213}% 
+\contentsline {section}{\numberline {7.6}گھومتے لچھوں کے مساوی فرضی ساکن لچھے}{214}% 
+\contentsline {section}{\numberline {7.7}امالی موٹر کا مساوی برقی دور}{215}% 
+\contentsline {section}{\numberline {7.8}مساوی برقی دور پر غور}{220}% 
+\contentsline {section}{\numberline {7.9}امالی موٹر کا مساوی تھونن دور یا ریاضی نمونہ}{224}% 
+\contentsline {section}{\numberline {7.10}پنجرا نما امالی موٹر}{230}% 
+\contentsline {section}{\numberline {7.11}بے بوجھ موٹر اور جامد موٹر کے معائنہ }{231}% 
+\contentsline {subsection}{\numberline {7.11.1}بے بوجھ موٹر کا معائنہ}{231}% 
+\contentsline {subsection}{\numberline {7.11.2}جامد موٹر کا معائنہ}{233}% 
+\contentsline {chapter}{\numberline {8}یک سمتی رو مشین}{239}% 
+\contentsline {section}{\numberline {8.1}میکانی سمت کار کی بنیادی کارکردگی}{239}% 
+\contentsline {subsection}{\numberline {8.1.1}میکانی سمت کار کی تفصیل}{241}% 
+\contentsline {section}{\numberline {8.2}یک سمتی جنریٹر کی برقی دباو}{245}% 
+\contentsline {section}{\numberline {8.3}قوت مروڑ}{247}% 
+\contentsline {section}{\numberline {8.4}بیرونی ہیجان اور خود ہیجان یک سمتی جنریٹر}{249}% 
+\contentsline {section}{\numberline {8.5}یک سمتی مشین کی کارکردگی کے خط}{253}% 
+\contentsline {subsection}{\numberline {8.5.1}حاصل برقی دباو بالمقابل برقی بوجھ}{253}% 
+\contentsline {subsection}{\numberline {8.5.2}رفتار بالمقابل قوت مروڑ}{255}% 
+\contentsline {chapter}{فرہنگ}{263}% 
 \select@language {english}
 \select@language {arabic}

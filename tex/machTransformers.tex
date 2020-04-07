@@ -57,7 +57,61 @@ $};
 شکل \حوالہ{شکل_ٹرانسفارمر_برقی_طاقت_منتقلی}  سے رجوع کریں۔برقی دباو اور برقی رو کی حاصلِ ضرب برقی طاقت ہوتی ہے یعنی
 \begin{figure}
 \centering
-\includegraphics{figTransformersVoltageStepUpBenefits}
+%\includegraphics{figTransformersVoltageStepUpBenefits}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-3,-3) grid (8,2);
+%\draw[help lines,xstep=0.1,ystep=0.1] (-3,-3) grid (8,2);
+ \pgfmathsetmacro{\height}{0.75}  
+%symbol only
+\draw (0,0) node [transformer core](Tup){}  % reminded by @PaulGessler, thanks.
+ %     (Tup.A1) node[above] {A1}
+   %   (Tup.A2) node[below] {A2}
+     % (Tup.B1) node[above] {B1} 
+    %  (Tup.B2) node[below] {B2}
+      (Tup.base) node[above]{$\SI{11}{\kilo \volt}:\SI{500}{\kilo \volt}$};
+%\draw (T.A1) --++(-2,0);
+%\draw (T.A2) --++(-2,0);
+%
+\draw (5,0) node [transformer core](Tdn){}  % reminded by @PaulGessler, thanks.
+ %     (Tdn.A1) node[above] {A1}
+   %   (Tdn.A2) node[below] {A2}
+     % (Tdn.B1) node[above] {B1} 
+    %  (Tdn.B2) node[below] {B2}
+      (Tdn.base) node[above]{$\SI{500}{\kilo \volt}:\SI{11}{\kilo \volt}$};
+%
+\draw(Tup.B1)--(Tdn.A1);
+\draw(Tup.B2)--(Tdn.A2);
+\draw(Tup.A1)--++(-2,0);
+\draw(Tup.A2)--++(-2,0);
+\draw(Tdn.B1)--++(2,0);
+\draw(Tdn.B2)--++(2,0);
+%text
+\draw(-0.5,-2.7)node[left]{\RL{تربیلا ڈیم}};
+\draw(6,-2.7)node[right]{\RL{لاہور شہر}};
+\draw(0,1)node{\RL{دباو بڑھاتا ٹرانسفارمر}};
+\draw(5,1)node{\RL{دباو گھٹاتا ٹرانسفارمر}};
+%rating
+\draw(-3,-1)node[right]{$
+\begin{aligned}
+\SI{11000}{\volt}&\\
+\SI{909090}{\ampere}&
+\end{aligned}
+$};
+\draw(2.5,-1)node{$
+\begin{aligned}
+\SI{500000}{\volt}&\\
+\SI{20000}{\ampere}&
+\end{aligned}
+$};
+\draw(6,-1)node[right]{$
+\begin{aligned}
+\SI{11000}{\volt}&\\
+\SI{909090}{\ampere}&
+\end{aligned}
+$};
+\end{tikzpicture}%
+
 \caption{برقی طاقت کی منتقلی۔}
 \label{شکل_ٹرانسفارمر_برقی_طاقت_منتقلی}
 \end{figure}
@@ -134,7 +188,28 @@ e_1=-\frac{\dif \lambda}{\dif t}=-N_1 \frac{\dif \varphi}{\dif t}
 %
 \begin{figure}
 \centering
-\includegraphics{figTransformersAppliedAndInducedVoltages}
+%\includegraphics{figTransformersAppliedAndInducedVoltages}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-4,-4) grid (4,4);
+%\draw[help lines,xstep=0.1,ystep=0.1] (-4,-4) grid (4,4);
+ \pgfmathsetmacro{\height}{0.75}
+%symbol only
+\draw (0,0) node [transformer core](T){}  % reminded by @PaulGessler, thanks.
+ %     (T.A1) node[above] {A1}
+   %   (T.A2) node[below] {A2}
+     % (T.B1) node[above] {B1} 
+    %  (T.B2) node[below] {B2}
+      (T.base) node[above]{$N_1:N_2$};
+\draw(T.A2) to [short] (-4cm,-2.1) to [american voltage source,l=$v_1$] (-4,0) to [resistor,l_=$R_1$,i^=$i_\varphi$] (T.A1);
+\draw(-1,-1)node{$
+\begin{aligned}
+&+\\
+&e_1\\
+&-
+\end{aligned}
+$};
+\end{tikzpicture}
 \caption{بیرونی برقی دباو اور اندرونی امالی برقی دباو میں فرق۔}
 \label{شکل_ٹرانسفارمر_بیرونی_اور_اندرونی_برقی_دباو}
 \end{figure}
@@ -162,7 +237,58 @@ v_1 = e_1=-N_1 \frac{\dif \varphi}{\dif t}
 
 \begin{figure}
 \centering
-\includegraphics{figTransformersCorePlacement}
+%\includegraphics{figTransformersCorePlacement}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (6,2);
+%\draw[help lines,xstep=0.1,ystep=0.1] (-2,-2) grid (6,2);
+ \pgfmathsetmacro{\t}{0.3}  
+\pgfmathsetmacro{\d}{0.9}  
+\pgfmathsetmacro{\s}{0.05 cm} 
+\begin{scope}[xshift=4cm]
+\draw(0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw(-3*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+\draw(-2.5*\t,2)node{ایک};
+\draw(0.5,2) node{تین};
+\draw(0,-0.1)node[below]{الف};
+\end{scope}
+%
+\begin{scope}[xshift=1cm]
+\draw(0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw(-1.1*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+\draw(0.5,2)node{\RL{پہلی تہہ}};
+\end{scope}
+%
+\begin{scope}[x=-1cm,y=1cm]
+\draw(0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw(-1.1*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+\draw(0.5,2)node{\RL{دوسری تہہ}};
+\draw(-0.5,-0.3)node[below]{ب};
+\end{scope}
+
+%stacked core
+\begin{scope}[xshift=-3cm,yshift=0cm]
+\draw(0.3,-0.3)node[below]{پ};
+%bottom layer
+\draw[fill=white](0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw[fill=white](-1.1*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+%first layer
+\begin{scope}[x=-1cm,y=1cm,xshift=0.88cm-\s,yshift=-\s]
+\draw[fill=white](0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw[fill=white](-1.1*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+\end{scope}
+%second layer
+\begin{scope}[x=1cm,y=1cm,xshift=-2*\s,yshift=-2*\s]
+\draw[fill=white](0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw[fill=white](-1.1*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+\end{scope}
+%third layer
+\begin{scope}[x=-1cm,y=1cm,xshift=0.88cm-3*\s,yshift=-3*\s]
+\draw[fill=white](0,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d,0)--++(0,\t)--++(-\d,0)--++(0,\t)--++(\d+\t,0)--++(0,-5*\t)--cycle;
+\draw[fill=white](-1.1*\t,0)--++(0,5*\t)--++(\t,0)--++(0,-5*\t)--cycle;
+\end{scope}
+\end{scope}
+\end{tikzpicture}
 \caption{قالبی پتری کے اشکال اور ان کو تہہ در تہہ رکھنے کا طریقہ۔}
 \label{شکل_ٹرانسفارم_تہہ_در_تہہ_مرکز}
 \end{figure}
@@ -193,7 +319,28 @@ E_{rms}=\frac{\omega N_1 \phi_0}{\sqrt{2}}=4.44 f N_1 \phi_0
 یہاں رکھ کر دوبارہ نظر ثانی کرتے ہیں۔ اگر ایک  لچھے پر \عددیء{E_{rms}} موثر برقی دباو لاگو کی جائے تو یہ لچھا اتنی ہیجان انگیز برقی رو \عددیء{i_{\varphi}} گزرنے دیتی ہے جس سے نمودار ہونے والا مقناطیسی بہاو مساوات \حوالہ{مساوات_ٹرانسفارمر_درکار_ہیجان_بہاو}  میں دیئے گئے مقناطیسی بہاو \عددیء{\phi_0} کے برابر ہو۔ یہ بات نہ صرف ٹرانسفارمر بلکہ کسی بھی مقناطیسی دور کے لئے درست اور لازم ہے۔
 \begin{figure}
 \centering
-\includegraphics{figTransformersCoreLossAndMagnetizingCurrents}
+%\includegraphics{figTransformersCoreLossAndMagnetizingCurrents}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[help lines,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+ \pgfmathsetmacro{\t}{0.3}  
+\pgfmathsetmacro{\d}{0.9}  
+\pgfmathsetmacro{\s}{0.05 cm} 
+\draw[gray,thick,-latex](0,0)--(0,-2.5)node[left]{$\hat{\phi}$};
+\draw[gray,thick,-latex](0,0)--(3.5,0)node[right]{$\hat{E}_1$};
+\draw[-latex](0,0)--(3,0)node[above,pos=0.5]{$\hat{I}_c$};
+\draw[-latex](0,0)--(0,-2)node[left,pos=0.5]{$\hat{I}_m$};
+\draw[-latex](0,0)--(3,-2)node[above,pos=0.6]{$\hat{I}_\varphi$};
+%
+\draw[dashed,gray](3,0)--(3,-2)--(0,-2);
+%angle
+\begin{scope}
+\clip (3,-2)--(0,0)--(3,0);
+\draw (0,0) circle (0.6);
+\end{scope}
+\draw(0.9,-0.3)node {$\theta_c$};
+\end{tikzpicture}
 \caption{مختلف مرحلی سمتیوں کے زاویے۔}
 \label{شکل_ٹرانسفارمر_مرکزی_ضیاع_اور_مقناطیسی_رو}
 \end{figure}
@@ -214,7 +361,55 @@ p_c=E_{rms} I_{\varphi,rms} \cos \theta_c
 ہم شکل \حوالہ{شکل_ٹرانسفارمر_کامل_بار_بردار_ٹرانسفارمر}  کی مدد سے ٹرانسفارمر کا مطالعہ کرتے ہیں۔  ہم فرض کرتے ہیں کہ ابتدائی جانب لچھے کے \عددیء{N_1} اور ثانوی جانب لچھے کے \عددیء{N_2} چکر ہیں اور یہ کہ ان  دونوں لچھوں کی مزاحمت صفر ہے۔ ہم مزید یہ کہتے ہیں کہ پوری مقناطیسی بہاو  قالب ہی میں رہتا ہے اور دونوں لچھوں سے گزرتا ہے۔ قالب میں برقی توانائی ضائع نہیں ہوتی اور اس کی مقناطیسی مستقل اتنی زیادہ ہے کہ ہیجان انگیز برقی رو قابلِ نظر انداز ہے۔ برقی رو \عددیء{i_1}  اور \عددیء{i_2} کی سمتیں یوں رکھی گئی ہیں کہ ان سے وجود میں آنے والے مقناطیسی بہاو ایک دوسرے کی اُلٹ سمتوں میں  ہیں۔ اصل ٹرانسفارمر ان باتوں پر تقریباً پورے اترتے ہیں۔ ایسے ٹرانسفارمر کو کامل ٹرانسفارمر\فرہنگ{ٹرانسفارمر!کامل}\حاشیہب{ideal transformer}\فرہنگ{transformer!ideal}  کہتے ہیں۔
 \begin{figure}
 \centering
-\includegraphics{figTransformersLoadedIdealTransformer}
+%\includegraphics{figTransformersLoadedIdealTransformer}
+\begin{tikzpicture}
+\def\height{2.5};
+\def\width{2.5};
+\def\thick{0.4};
+\def\depthX{0.2};
+\def\depthY{0.2};
+\def\gap{0.05};
+%grid
+%\draw[gray,thick](0,0) grid (5,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](0,0) grid (5,3);
+%going clockwise from origin
+\draw(0,0)--++(0,\height)--++(\width,0)--++(0,-\height)--cycle;
+\draw(0,0)++(\thick,\thick)--++(0,\height-2*\thick)--++(\width-2*\thick,0)--++(0,-\height+2*\thick)--cycle;
+%
+\draw(\thick,\thick)--++(\depthX,\depthY) --++(0,\height-2*\thick-\depthY);
+\draw(\thick,\thick)--++(\depthX,\depthY) --++(\width-2*\thick-\depthX,0);
+\draw(0,\height)--++(\depthX,\depthY)--++(\width,0)--++(-\depthX,-\depthY);
+\draw(\width,0)--++(\depthX,\depthY)--++(0,\height)--++(-\depthX,-\depthY);
+
+%left winding
+\draw (0.6,1.9) to [out=45,in=0] (0.2,2);% to (-1.5,2);
+\foreach \l in {1.9,1.7,1.5,1.3,1.1,0.9}{
+\draw (0,\l) to [out=-135,in=45] (0.6,\l-0.2);
+}
+\draw (0,0.7) to (-1.5,0.7) to [american voltage source] (-1.5,2) to[short,i^=$i_1$] (0.2,2);   %input power
+%right  winding
+\draw (2.1,1.9) to [out=135,in=0] (2.4,2);% to (-1.5,2);
+\foreach \l in {1.9,1.7,1.5,1.3,1.1,0.9}{
+\draw (2.7,\l) to [out=-45,in=135] (2.1,\l-0.2);
+}
+\draw(2.4,2) to [short,i^={$i_2$}] ++(1.5,0) to [european resistor] ++(0,-1.3)--(2.7,0.7);
+
+%flux
+\draw[gray,-latex](0.5*\width,\height-0.5*\thick)--++(0.5*\width-0.5*\thick,0)--++(0,-\height+\thick)--++(-\width+\thick,0)--++(0,\height-\thick)
+--++(0.5*\width-0.5*\thick,0);
+\path[fill=white] (0.4*\width,0.1) rectangle (0.6*\width,0.3); %making roo for writing flux
+\draw(0.5*\width,0.5*\thick)node{$_\varphi$};
+%text
+\draw (1,1.35)node{$N_1$};
+\draw (-0.3,1.35)node{$v_1$};
+\draw (-0.3,1.7)node{$+$};
+\draw (-0.3,1)node{$-$};
+\draw (1.7,1.35)node{$N_2$};
+\draw (3,1.35)node{$v_2$};
+\draw (3,1.7)node{$+$};
+\draw (3,1)node{$-$};
+\draw(4.2,1.5)node[right]{\RL{برقی بار}};
+\end{tikzpicture}
 \caption{کامل بوجھ بردار ٹرانسفارمر۔}
 \label{شکل_ٹرانسفارمر_کامل_بار_بردار_ٹرانسفارمر}
 \end{figure}
@@ -367,8 +562,35 @@ p=\hat{V_1} \cdot \hat{I_1}=\frac{V_1^2 \cos \theta_z}{\left(\frac{N_1}{N_2} \ri
 %
 \begin{figure}
 \centering
-\includegraphics{figTransformersImpedanceTransformation}
-\caption{ٹرانسفارمر کی تبادلہ رکاوٹ کی خصوصیت۔}
+%\includegraphics{figTransformersImpedanceTransformation}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-3,-3) grid (3,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (3,3);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\begin{scope}[xshift=1.5cm,yshift=5cm]
+\draw (0,0) node [transformer] (T1){};
+\draw (T1.base)node[above] {$N_1:N_2$};
+\draw(T1.A2) to [short] ++(-2,0) to [american voltage source,l=$\hat{V}_1$] ++(0,2.1) to  [short,i^=$\hat{I}_1$]  (T1.A1);
+\draw(T1.B1) to [short,i^=$\hat{I}_2$] ++(2,0) to [european resistor,l=$Z_2$] ++(0,-2.1) to (T1.B2);
+%text
+\draw(2.5,-1) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_2\\
+&-
+\end{aligned}
+$};
+%urdu
+\draw (4,-2.1) node {الف};
+\end{scope}
+%
+\draw (0,0) to [american voltage source,l=$\hat{V}_1$] ++(0,2.1) to [short,i_=$\hat{I}_1$] ++(3,0) to [european resistor,l=${Z'=\left(\frac{N_1}{N_2} \right)^2 Z_2}$] ++(0,-2.1) to (0,0);
+%urdu
+\draw (5.5,0) node {ب};
+\end{tikzpicture}
+\caption{ٹرانسفارمر کی خاصیت تبادلہ رکاوٹ۔}
 \label{شکل_ٹرانسفارمر_رکاوٹ_کا_تبادلہ}
 \end{figure}
 	یوں اگر ٹرانسفارمر کے ثانوی جانب  رکاوٹ \عددیء{Z_2} کا بوجھ ہو تو حساب کرتے وقت ہم یہ اخذ کر سکتے ہیں کہ  ٹرانسفارمر بمع رکاوٹ \عددیء{Z_2} کی  جگہ  صرف  \عددیء{Z_1} رکاوٹ لگی ہے، جہاں \عددیء{Z_1} مساوات \حوالہ{مساوات_ٹرانسفارمر_متبادل_رکاوٹ_تعریف}  سے حاصل ہوتی ہے۔ رکاوٹ کا یوں ٹرانسفارمر کی ایک جانب سے دوسری جانب تبادلہ کیا جاسکتا ہے۔ٹرانسفارمر کی اس خاصیت کو  \اصطلاح{تبادلہ رکاوٹ}\فرہنگ{تبادلہ!رکاوٹ}\حاشیہب{impedance transformation}\فرہنگ{impedance transformation} کی خصوصیت  کہتے ہیں۔
@@ -377,14 +599,94 @@ p=\hat{V_1} \cdot \hat{I_1}=\frac{V_1^2 \cos \theta_z}{\left(\frac{N_1}{N_2} \ri
 شکل \حوالہ{شکل_ٹرانسفارمر_برقی_طاقت_کی_منتقلی}-الف میں رکاوٹ \عددیء{Z_B} کا برقی بوجھ ایک جنریٹر پر لدا ہے۔بوجھ تک برقی طاقت دو برقی تاروں کے ذریعہ منتقل کیا گیا ہے۔ان تاروں کی مجموعہ رکاوٹ \عددیء{Z_t} ہے۔
 \begin{figure}
 \centering
-\includegraphics{figTransformersPowerTransmission}
+%\includegraphics{figTransformersPowerTransmission}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick](-3,-3) grid (7,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](-3,-3) grid (7,3);
+%
+\begin{scope}[yshift=2cm]
+%going clockwise from origin
+\draw(0,0) to [american voltage source,l=$\hat{V}$] (0,2) to [short,i^=$\hat{I}_t$] ++(1,0) to [resistor,l=$\SI{0.1}{\ohm}$] ++(2.5,0) to [inductor,l=$j\SI{0.15}{\ohm}$] ++(2.5,0) to [european resistor,l=${Z_B=2+j4}$] ++(0,-2) to [short] (0,0);
+%text
+\draw(5.4,1) node{$
+\begin{aligned}
+&+\\
+&V_B\\
+&-
+\end{aligned}
+$};
+\end{scope}
+%
+\draw (0,0) node [transformer core](T1){}  % reminded by @PaulGessler, thanks.
+ %     (T1.A1) node[above] {A1}
+   %   (T1.A2) node[below] {A2}
+     % (T1.B1) node[above] {B1} 
+    %  (T1.B2) node[below] {B2}
+      (T1.base) node[above]{$
+\begin{aligned}
+1&:10\\
+N_1&:N_2
+\end{aligned}
+$};
+\draw (6,0) node [transformer core](T2){}  % reminded by @PaulGessler, thanks.
+ %     (T2.A1) node[above] {A1}
+   %   (T2.A2) node[below] {A2}
+     % (T2.B1) node[above] {B1} 
+    %  (T2.B2) node[below] {B2}
+      (T2.base) node[above]{$
+\begin{aligned}
+10&:1\\
+N_3&:N_4
+\end{aligned}
+$};
+%going clockwise from origin
+\draw (T1.B1) to [short,i_=$\hat{I}_t$] ++(0.5,0) to [resistor,l=$\SI{0.1}{\ohm}$] ++(1.5,0) to [inductor,l=$j\SI{0.15}{\ohm}$] (T2.A1) ;
+\draw(T1.B2) to (T2.A2);
+%
+\draw(T1.A2)--++(-1,0) to [american voltage source,l=$\hat{V}$] ++(0,2.1) [short,i_=$\hat{I}_G$] to (T1.A1);
+%
+\draw(T2.B1) to [short,i_=$\hat{I}_B$] ++(1,0) to [european resistor,l=$Z_B$] ++(0,-2.1) to (T2.B2);
+\draw(0,-2.5) node{$T1$};
+\draw(6,-2.5) node{$T2$};
+\end{tikzpicture}
 \caption{برقی طاقت کی منتقلی۔}
 \label{شکل_ٹرانسفارمر_برقی_طاقت_کی_منتقلی}
 \end{figure}
 %
 \begin{figure}
 \centering
-\includegraphics{figTransformersStepByStepSolution}
+%\includegraphics{figTransformersStepByStepSolution}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-3,-3) grid (7,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (7,3);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\begin{scope}[xshift=0cm,yshift=3cm]
+\draw (0,0) node [transformer] (T1){};
+\draw (T1.base)node[above] {$1:10$};
+\draw(T1.A2) to [short] ++(-2,0) to [american voltage source,l=$\hat{V}_1$] ++(0,2.1) to  [short,i^=$\hat{I}_G$]  (T1.A1);
+\draw(T1.B1) to  [short,i>=$\hat{I}_t$] ++(0.5,0) to [european resistor,l=$\SI{0.1}{\ohm}$] ++(2,0) to [inductor,l=$j\SI{0.15}{\ohm}$] ++(2,0) to [european resistor,l=${Z_B'=200+j 400}$] ++(0,-2.1) to (T1.B2);
+%urdu
+\draw (7,-2.1) node {الف};
+\end{scope}
+%
+\begin{scope}[xshift=3.5cm,yshift=0cm]
+\draw (0,0) node [transformer] (T1){};
+\draw (T1.base)node[above] {$1:10$};
+\draw(T1.A2) to [short] ++(-1,0) to [american voltage source,l=$\hat{V}_1$] ++(0,2.1) to  [short,i^=$\hat{I}_G$]  (T1.A1);
+\draw(T1.B1) to  [short,i>=$\hat{I}_t$]++(1,0) to [european resistor,l=${Z'=200.1+j400.15}$] ++(0,-2.1) to (T1.B2);
+%urdu
+\draw (3.5,-2.1) node {ب};
+\end{scope}
+%
+\begin{scope}[xshift=-3cm,yshift=-2.1cm]
+\draw(0,0)  to [american voltage source,l=$\hat{V}_1$] ++(0,2.1) to  [short,i^=$\hat{I}_G$]  ++(1.5,0) to [european resistor,l=$Z''$] ++(0,-2.1) to [short] (0,0);
+%urdu
+\draw (2,0) node {پ};
+\end{scope}
+\end{tikzpicture}
 \caption{ٹرانسفارمر قدم با قدم حل کرنے کا طریقہ۔}
 \label{شکل_ٹرانسفارمر_قدم_با_قدم_حل}
 \end{figure}
@@ -509,7 +811,33 @@ I_1=\frac{25000}{11000}=\SI{2.27}{\ampere}
 شکل \حوالہ{شکل_ٹرانسفارمر_لچھے_کی_مزاحمت_اور_متعاملہ}-الف میں ایک لچھے پر بدلتی برقی دباو لاگو کا گیا ہے۔اگر لچھے کی برقی تار کو نہایت چھوٹے ٹکڑوں میں تقسیم کیا جائے تو اس کے ہر ٹکڑے کی نہایت کم مزاحمت  اور متعاملہ ہو گی۔ایسا ایک ٹکڑا شکل-ب میں دکھایا گیا ہے۔چونکہ لچھا ان سب ٹکڑوں کے سلسلہ وار جڑنے سے بنا ہے  لہٰذا شکل-الف کو ہم شکل-پ کی طرح بنا سکتے ہیں جہاں لچھے کے \عددیء{n} ٹکڑے  کیے گیے ہیں۔
 \begin{figure}
 \centering
-\includegraphics{figTransformersCoilResistanceAndReactance}
+%\includegraphics{figTransformersCoilResistanceAndReactance}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-3,-3) grid (7,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (7,3);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\begin{scope}[xshift=0cm,yshift=0cm]
+\draw(0,0) to [american voltage source,l=$\hat{V}_1$] ++(0,2.1) to  [short,i^=$\hat{I}_1$]  ++(0.5,0) to [inductor] ++(2,0) to [short] ++(0,-2.1)--(0,0);
+%urdu
+\draw (3,0.3) node {الف};
+\end{scope}
+%
+\begin{scope}[xshift=-6cm,yshift=2.1cm]
+\draw(0,0) to [european resistor,l=$\Delta R$]  ++(1.5,0) to [inductor,l=$j \Delta X$] ++(1.5,0);
+%urdu
+\draw (1.5,-1.8) node {ب};
+\end{scope}
+%
+\begin{scope}[xshift=-6cm,yshift=-3.5cm]
+\draw(0,0) to [american voltage source,l=$\hat{V}_1$] ++(0,2.1) to  [short,i^=$\hat{I}_1$]  ++(0.5,0) to [european resistor,l=$\Delta R_1$] ++(1.5,0)to [inductor,l=$j\Delta X_1$] ++(1.5,0) to [european resistor,l=$\Delta R_2$] ++(1.5,0)to [inductor,l=$j\Delta X_2$] ++(1.5,0)coordinate(a){};
+\draw[dashed](a)--++(1.5,0)coordinate(b){};
+ \draw(b) to [european resistor,l=$\Delta R_n$] ++(1.5,0)to [inductor,l=$j\Delta X_n$] ++(1.5,0) to [short] ++(0,-2.1)--(0,0);
+%urdu
+\draw (-0.6,0.2) node {پ};
+\end{scope}
+\end{tikzpicture}
 \caption{لچھے کی مزاحمت اور متعاملہ۔}
 \label{شکل_ٹرانسفارمر_لچھے_کی_مزاحمت_اور_متعاملہ}
 \end{figure}
@@ -528,7 +856,15 @@ X&=\Delta X_1 + \Delta X_2 +\cdots   \Delta X_n
 اس سے  شکل \حوالہ{شکل_ٹرانسفارمر_لچھے_کی_مزاحمت_اور_متعاملہ_کی_علیحدگی}  حاصل ہوتا ہے  جس سے  ثابت ہوتا ہے کہ حساب کتاب کی غرض سے لچھے کی مزاحمت اور متعاملہ علیحدہ کیے جا سکتے ہیں۔
 \begin{figure}
 \centering
-\includegraphics{figTransformersCoilResistanceAndReactanceSeparation}
+%\includegraphics{figTransformersCoilResistanceAndReactanceSeparation}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-3,-3) grid (7,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (7,3);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\draw(0,0) to [american voltage source,l=$\hat{V}_1$] ++(0,2.1) to  [short,i^=$\hat{I}_1$]  ++(0.5,0) to [resistor,l=$R$] ++(2,0) to [inductor,l=$j X$] ++(2,0) to [short] ++(0,-2.1)--(0,0);
+\end{tikzpicture}
 \caption{لچھے کی مزاحمت اور متعاملہ کی علیحدگی۔}
 \label{شکل_ٹرانسفارمر_لچھے_کی_مزاحمت_اور_متعاملہ_کی_علیحدگی}
 \end{figure}
@@ -546,7 +882,31 @@ X&=\Delta X_1 + \Delta X_2 +\cdots   \Delta X_n
 یوں ابتدائی لچھے  پر لاگو برقی دباو \عددیء{\hat{V}_1} میں سے کچھ برقی دباو \عددیء{R_1} میں کم ہو گا،  کچھ  متعاملہ \عددیء{X_1} میں کم ہو گا اور بقایا  \عددیء{\hat{E}_1} کے برابر ہو گا۔  یہ شکل \حوالہ{شکل_ٹرانسفارمر_ماڈل_حصہ_اول}  میں دکھایا گیا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figTransformersModelFirstPart}
+%\includegraphics{figTransformersModelFirstPart}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-3,-3) grid (5,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (5,3);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\draw(0,0)  to  [short,i^=$\hat{I}_1$]  ++(0.5,0) to [resistor,l=$R_1$] ++(2,0) to [inductor,l=$j X_1$] ++(2,0); 
+\draw(0,-2) to ++(4.5,0);
+\draw(0,-1) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1\\
+&-
+\end{aligned}
+$};
+%
+\draw(4.5,-1) node{$
+\begin{aligned}
+&+\\
+&\hat{E}_1\\
+&-
+\end{aligned}
+$};
+\end{tikzpicture}
 \caption{ٹرانسفارمر مساوی دور، حصہ اول۔}
 \label{شکل_ٹرانسفارمر_ماڈل_حصہ_اول}
 \end{figure}
@@ -565,7 +925,37 @@ X&=\Delta X_1 + \Delta X_2 +\cdots   \Delta X_n
 
 \begin{figure}
 \centering
-\includegraphics{figTransformersModelSecondPart}
+%\includegraphics{figTransformersModelSecondPart}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-3,-3) grid (7,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (7,1);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\def\ky{-3};
+\draw(0,0)  to  [short,i^=$\hat{I}_1$]  ++(0.5,0) to [resistor,l=$R_1$] ++(1.5,0) to [inductor,l=$j X_1$] ++(2.5,0)coordinate(a){} to [short,i=$\hat{I}_2'$] ++(2.5,0); 
+\draw(0,\ky) to ++(7,0);
+\draw(a) to [short,i=$\hat{I}_\varphi$] ++(0,-0.6);
+\draw(4,-0.6) to [short] ++(1,0);
+\draw(4,\ky) to [european resistor,l=$R_c$,i<=$\hat{I}_c$] ++(0,2.4);
+\draw(5,\ky) to [inductor,l_=$j X_m$,i_<=$\hat{I}_m$] ++(0,2.4);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1\\
+&-
+\end{aligned}
+$};
+%
+\draw(7,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{E}_1\\
+&-
+\end{aligned}
+$};
+\end{tikzpicture}
 \caption{ٹرانسفارمر مساوی دور، حصہ دوم۔}
 \label{شکل_ٹرانسفارمر_ماڈل_حصہ_دوم}
 \end{figure}
@@ -578,7 +968,52 @@ X&=\Delta X_1 + \Delta X_2 +\cdots   \Delta X_n
 مساوات \حوالہ{مساوات_ٹرانسفارمر_رو_ہیجان_ضیاع_اجزاع} اور مساوات \حوالہ{مساوات_ٹرانسفارمر_دباو_رو_شرح}  کو ایک کامل ٹرانسفارمر سے ظاہر کیا جا سکتا ہے۔ یہ شکل \حوالہ{شکل_ٹرانسفارمر_ماڈل_حصہ_ثوم}  میں دکھایا گیا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figTransformersModelThirdPart}
+%\includegraphics{figTransformersModelThirdPart}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,-3) grid (9,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-3) grid (9,1);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\def\ky{-3};
+\draw(0,0)  to  [short,i^=$\hat{I}_1$]  ++(0.5,0) to [resistor,l=$R_1$] ++(1.5,0) to [inductor,l=$j X_1$] ++(2.5,0)coordinate(a){} to [short,i=$\hat{I}_2'$] ++(2.5,0); 
+\draw(0,\ky) to ++(7,0);
+\draw(a) to [short,i=$\hat{I}_\varphi$] ++(0,-0.6);
+\draw(4,-0.6) to [short] ++(1,0);
+\draw(4,\ky) to [european resistor,l=$R_c$,i<=$\hat{I}_c$] ++(0,2.4);
+\draw(5,\ky) to [inductor,l_=$j X_m$,i_<=$\hat{I}_m$] ++(0,2.4);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1\\
+&-
+\end{aligned}
+$};
+%
+\draw(7,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{E}_1\\
+&-
+\end{aligned}
+$};
+%transformer
+\draw (8.5,-0.4) node[transformer](T){};
+\draw(T.A1) |- (7,0);
+\draw(T.A2) |- (7,-3);
+\draw(T.B1) |- (10,0) to [short,i=$\hat{I}_2$] ++(0.5,0);
+\draw(T.B2) |- (10,\ky) to [short] ++(0.5,0);
+%
+\draw(10,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{E}_2\\
+&-
+\end{aligned}
+$};
+\draw(T.base) node[above]{$N_1:N_2$};
+\end{tikzpicture}
 \caption{ٹرانسفارمر مساوی دور، حصہ ثوم۔}
 \label{شکل_ٹرانسفارمر_ماڈل_حصہ_ثوم}
 \end{figure}
@@ -591,7 +1026,60 @@ X&=\Delta X_1 + \Delta X_2 +\cdots   \Delta X_n
 	یوں حاصل ٹرانسفارمر کا مکمل مساوی دور یا \اصطلاح{ریاضی نمونہ}\فرہنگ{ریاضی نمونہ}\حاشیہب{mathematical model}\فرہنگ{model} شکل  \حوالہ{شکل_ٹرانسفارمر_مکمل_ماڈل} میں دکھایا گیا ہے۔
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figTransformersModelComplete}
+%\includegraphics[width=0.9\linewidth]{figTransformersModelComplete}
+\begin{tikzpicture}[xscale=0.75]
+%grid
+%\draw[gray,thick] (0,-3) grid (15,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-3) grid (15,1);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\def\ky{-3};
+\draw(0,0)  to  [short,i^=$\hat{I}_1$]  ++(0.5,0) to [resistor,l=$R_1$] ++(1.5,0) to [inductor,l=$j X_1$] ++(2.5,0)coordinate(a){} to [short,i=$\hat{I}_2'$] ++(2.5,0); 
+\draw(0,\ky) to ++(7,0);
+\draw(a) to [short,i=$\hat{I}_\varphi$] ++(0,-0.6);
+\draw(4,-0.6) to [short] ++(1,0);
+\draw(4,\ky) to [european resistor,l=$R_c$,i<=$\hat{I}_c$] ++(0,2.4);
+\draw(5,\ky) to [inductor,l_=$j X_m$,i_<=$\hat{I}_m$] ++(0,2.4);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1\\
+&-
+\end{aligned}
+$};
+%
+\draw(7,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{E}_1\\
+&-
+\end{aligned}
+$};
+%transformer
+\draw (8.5,-0.4) node[transformer](T){};
+\draw(T.base) node[above]{$N_1:N_2$};
+\draw(T.A1) |- (7,0);
+\draw(T.A2) |- (7,-3);
+\draw(T.B1) |- (10,0) to [short,i=$\hat{I}_2$] ++(0.5,0) to [european resistor,l=$R_2$] ++(2,0) to [inductor,l=$j X_2$] ++(2,0);
+\draw(T.B2) |- (10,\ky) to [short] ++(4.5,0);
+%
+\draw(10,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{E}_2\\
+&-
+\end{aligned}
+$};
+%
+\draw(14.5,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_2\\
+&-
+\end{aligned}
+$};
+\end{tikzpicture}
 \caption{ٹرانسفارمر کا مکمل مساوی دور یا ریاضی نمونہ۔}
 \label{شکل_ٹرانسفارمر_مکمل_ماڈل}
 \end{figure}
@@ -604,14 +1092,109 @@ X&=\Delta X_1 + \Delta X_2 +\cdots   \Delta X_n
 ایسا دور استعمال کرتے وقت یہ ذہن میں رکھنا ہوتا ہے کہ ٹرانسفارمر کے کس جانب دور حل کیا جا رہا ہے۔
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figTransformersModelShiftedToPrimarySide}
+%\includegraphics[width=0.9\linewidth]{figTransformersModelShiftedToPrimarySide}
+\begin{tikzpicture}[xscale=0.75]
+%grid
+%\draw[gray,thick] (0,-4) grid (15,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-4) grid (15,1);
+
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\def\ky{-3};
+\draw(0,0)  to  [short,i^=$\hat{I}_1$]  ++(0.5,0) to [resistor,l=$R_1$] ++(1.5,0) to [inductor,l=$j X_1$] ++(2.5,0)coordinate(a){} to [short,i=$\hat{I}_2'$] ++(2.5,0) to
+[european resistor,l=$R_2'$] ++(2,0) to [inductor,l=$j X_2'$] ++(2,0); 
+%\draw(0,\ky) to [short]++(11,0);
+\draw(a) to [short,i=$\hat{I}_\varphi$] ++(0,-0.6);
+\draw(4,-0.6) to [short] ++(1,0);
+\draw(4,\ky) to [european resistor,l=$R_c$,i<=$\hat{I}_c$] ++(0,2.4);
+\draw(5,\ky) to [inductor,l_=$j X_m$,i_<=$\hat{I}_m$] ++(0,2.4);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1\\
+&-
+\end{aligned}
+$};
+%
+\draw(7,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{E}_1\\
+&-
+\end{aligned}
+$};
+%transformer
+\draw (12.5,-0.4) node[transformer](T){};
+\draw(T.base) node[above]{$N_1:N_2$};
+\draw(T.A1) |- (11,0);
+\draw(T.A2) |- (0,-3);
+\draw(T.B1) |- (14,0) to [short,i=$\hat{I}_2$] ++(0.5,0);
+\draw(T.B2) |- (14,\ky) to [short] ++(0.5,0);
+%
+\draw(11,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_2'\\
+&-
+\end{aligned}
+$};
+%
+\draw(14.5,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_2\\
+&-
+\end{aligned}
+$};
+\end{tikzpicture}
 \caption{ثانوی جانب رکاوٹ کا ابتدائی جانب تبادلہ کیا گیا ہے۔}
 \label{شکل_ٹرانسفارمر_مکمل_ماڈل_ابتدائی_جانب}
 \end{figure}
 %
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figTransformersModelShiftedToSecondarySide}
+%\includegraphics[width=0.9\linewidth]{figTransformersModelShiftedToSecondarySide}
+\begin{tikzpicture}[xscale=0.75]
+%grid
+%\draw[gray,thick] (0,-4) grid (15,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-4) grid (15,1);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\def\ky{-3};
+\draw(0,0)  to  [short,i^=$\hat{I}_1'$]  ++(0.5,0) to [resistor,l=$R_1'$] ++(1.5,0) to [inductor,l=$j X_1'$] ++(2.5,0)coordinate(a){} to [short,i=$\hat{I}_2$] ++(2.5,0) to
+[european resistor,l=$R_2$] ++(2,0) to [inductor,l=$j X_2$] ++(2,0); 
+\draw(0,\ky) to [short]++(11,0);
+\draw(a) to [short,i=$\hat{I}_\varphi'$] ++(0,-0.6);
+\draw(4,-0.6) to [short] ++(1,0);
+\draw(4,\ky) to [european resistor,l=$R_c'$,i<=$\hat{I}_c'$] ++(0,2.4);
+\draw(5,\ky) to [inductor,l_=$j X_m'$,i_<=$\hat{I}_m'$] ++(0,2.4);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1'\\
+&-
+\end{aligned}
+$};
+%
+\draw(7,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{E}_1'\\
+&-
+\end{aligned}
+$};
+%
+\draw(11,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_2\\
+&-
+\end{aligned}
+$};
+%
+\end{tikzpicture}
 \caption{ابتدائی جانب رکاوٹ کا ثانوی جانب تبادلہ کیا گیا ہے۔}
 \label{شکل_ٹرانسفارمر_مکمل_ماڈل_ثانوی_جانب}
 \end{figure}
@@ -657,14 +1240,88 @@ X_m'&=\left(\frac{N_2}{N_1} \right)^2 X_m=470
 ایک انجنیئر کو جب ایک ٹرانسفارمر استعمال کرنا ہو تو وہ حساب کرتے وقت شکل \حوالہ{شکل_ٹرانسفارمر_مکمل_ماڈل_ابتدائی_جانب}  میں دیئے گئے دور کو استعمال کر سکتا ہے۔ یہ دور حقیقی ٹرانسفارمر کی بہت اچھی عکاسی کرتا ہے۔ البتہ جہاں ہمیں نہایت صحیح جواب مطلوب نہ ہوں وہاں اس دور کی سادہ اشکال بھی استعمال کی جا سکتیں ہیں۔ اس باب میں ہم ایسے ہی سادہ مساوی دوروں کا ذکر کریں گے۔
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figTransformersModelLeftHand}
+%\includegraphics[width=0.9\linewidth]{figTransformersModelLeftHand}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,-4) grid (8,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-4) grid (8,1);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\def\ky{-3};
+\draw(0,0)  to  [short]  ++(2.5,0)  to [european resistor,l=$R_{ms}$] ++(2,0) to [inductor,l=$j X_{ms}$] ++(3.5,0); 
+\draw(0,\ky) to [short]++(8,0);
+\draw(2,0) to [short] ++(0,-0.6);
+\draw(1.5,-0.6) to [short] ++(1,0);
+\draw(1.5,\ky) to [european resistor,l=$R_c$] ++(0,2.4);
+\draw(2.5,\ky) to [inductor,l_=$j X_m$] ++(0,2.4);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1\\
+&-
+\end{aligned}
+$};
+%
+\draw(8,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_2'\\
+&-
+\end{aligned}
+$};
+%
+\draw(4,-0.5)node[below right]{$
+\begin{aligned}
+R_{ms}&=R_1+R_2'\\
+X_{ms}&=X_1+X_2'
+\end{aligned}
+$};
+\end{tikzpicture}
 \caption{\عددیء{R_c} اور \عددیء{jX_m} کو بائیں جانب منتقل کیا گیا ہے۔}
 \label{شکل_ٹرانسفارمر_بائیں_جانب}
 \end{figure}
 %
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figTransformersModelRightHand}
+%\includegraphics[width=0.9\linewidth]{figTransformersModelRightHand}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,-4) grid (8,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-4) grid (8,1);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\def\ky{-3};
+\draw(0,0)  to  [short]  ++(0.5,0)  to [european resistor,l=$R_{ms}$] ++(2,0) to [inductor,l=$j X_{ms}$] ++(3,0) to [short] ++(2.5,0); 
+\draw(0,\ky) to [short]++(8,0);
+\draw(5.5,0) to [short] ++(0,-0.6);
+\draw(5,-0.6) to [short] ++(1,0);
+\draw(5,\ky) to [european resistor,l=$R_c$] ++(0,2.4);
+\draw(6,\ky) to [inductor,l_=$j X_m$] ++(0,2.4);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1\\
+&-
+\end{aligned}
+$};
+%
+\draw(8,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_2'\\
+&-
+\end{aligned}
+$};
+%
+\draw(0.5,-0.5)node[below right]{$
+\begin{aligned}
+R_{ms}&=R_1+R_2'\\
+X_{ms}&=X_1+X_2'
+\end{aligned}
+$};
+\end{tikzpicture}
 \caption{\عددیء{R_c} اور \عددیء{jX_m} کو دائیں جانب منتقل کیا گیا ہے۔}
 \label{شکل_ٹرانسفارمر_دائیں_جانب}
 \end{figure}
@@ -676,7 +1333,58 @@ X_m'&=\left(\frac{N_2}{N_1} \right)^2 X_m=470
 بیشتر وقت ہمیں اس سے بھی کم صحیح جواب مطلوب ہوتا ہے۔چونکہ \عددیء{X_m\gg R_c}  لہٰذا ہم  \عددیء{R_{ms}} کو بھی نظرانداز کر سکتے ہیں۔یوں شکل \حوالہ{شکل_ٹرانسفارمر_سادہ_ماڈل}-ب حاصل ہوتا ہے۔
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figTransformersModelCoreLossNeglected}
+%\includegraphics[width=0.9\linewidth]{figTransformersModelCoreLossNeglected}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,-4) grid (8,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-4) grid (8,1);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\def\ky{-3};
+\begin{scope}[xshift=4.5cm]
+\draw(0,0)  to  [short]  ++(0.5,0)  to [european resistor,l=$R_{ms}$] ++(2,0) to [inductor,l=$j X_{ms}$] ++(2.5,0); 
+\draw(0,\ky) to [short]++(5,0);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1\\
+&-
+\end{aligned}
+$};
+%
+\draw(5,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_2'\\
+&-
+\end{aligned}
+$};
+%
+\draw(6,\ky) node{الف};
+\end{scope}
+%
+\draw(0,0)   to [inductor,l=$j X_{ms}$] ++(2.5,0); 
+\draw(0,\ky) to [short]++(2.5,0);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1\\
+&-
+\end{aligned}
+$};
+%
+\draw(2.5,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_2'\\
+&-
+\end{aligned}
+$};
+%
+\draw(-1,\ky) node{ب};
+\end{tikzpicture}
 \caption{ٹرانسفارمر کے سادہ مساوی ادوار۔}
 \label{شکل_ٹرانسفارمر_سادہ_ماڈل}
 \end{figure}
@@ -700,7 +1408,29 @@ V_{X1}&=I_1 X_1=I_\varphi X_1 \approx 0
 یوں  \عددیء{R_c}  اور \عددیء{X_m} پر  تقریباً \عددیء{V_t} برقی دباو پایا جائے گا۔ یہ شکل \حوالہ{شکل_ٹرانسفارمر_مکمل_ماڈل_ابتدائی_جانب}  سے ظاہر ہے۔ان حقائق کو مد نظر رکھتے ہوئے شکل \حوالہ{شکل_ٹرانسفارمر_کھلے_سرے_معائنہ} حاصل ہوتا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figTransformersOpenCircuitTest}
+%\includegraphics{figTransformersOpenCircuitTest}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,-3) grid (15,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-3) grid (15,1);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\def\ky{-3};
+\draw(0,0)  to  [short,i^=$I_t$]  ++(2,0); 
+\draw(0,\ky) to ++(2.5,0);
+\draw(2,0) to [short]++(0,-0.6);
+\draw(1.5,-0.6) to [short] ++(1,0);
+\draw(1.5,\ky) to [european resistor,l=$R_c$] ++(0,2.4);
+\draw(2.5,\ky) to [inductor,l_=$j X_m$] ++(0,2.4);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_t\\
+&-
+\end{aligned}
+$};
+\end{tikzpicture}
 \caption{کھلے سرے معائنہ۔}
 \label{شکل_ٹرانسفارمر_کھلے_سرے_معائنہ}
 \end{figure}
@@ -740,7 +1470,31 @@ X_m=\frac{R_c \abs{Z_t}}{\sqrt{R_c^2-\abs{Z_t}^2}}
 یہ معائنہ بھی پچھلے معائنہ کی طرح ٹرانسفارمر کے کسی بھی طرف کیا جا سکتا ہے مگر حقیقت میں اسے زیادہ برقی دباو کے لچھے پر ہی کرنا زیادہ آسان ہوتا ہے۔ یہ معائنہ جتنے برقی رو کے لئے ٹرانسفارمر بنایا گیا ہو اتنی برقی رو یا اس کے قریب مقدار پر کیا جاتا ہے۔یعنی اس معائنہ میں کوشش ہوتی ہے کہ ٹرانسفارمر کے لچھے میں اتنی برقی رو گزرے جتنی کے لئے یہ بنایا گیا ہو۔ لہٰذا اگر ہم پچھلے معائنہ میں استعمال ہونے والے ٹرانسفارمر کی بات آگے بڑھائیں تو اس کا زیادہ برقی دباو کا لچھا \عددیء{\SI{2.2727}{\ampere}} اور کم برقی دباو کا لچھا \عددیء{\SI{113.63}{\ampere}} کے لئے بنایا گیا ہے۔ لہٰذا اگر یہ معائنہ کم برقی دباو لچھے پر کیا جائے تو اسے \عددیء{\SI{113.63}{\ampere}}  پر  کرنا ہو گا اور اگر زیادہ برقی دباو لچھے پر کیا جائے تو صرف \عددیء{\SI{2.2727}{\ampere}} پر کرنا ہو گا جو کہ زیادہ آسان ہے۔
 \begin{figure}
 \centering
-\includegraphics{figTransformersShortCircuitTest}
+%\includegraphics{figTransformersShortCircuitTest}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,-4) grid (6,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-4) grid (6,1);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\def\ky{-2};
+\draw(0,0)  to  [short,i=$I_t$]  ++(1.5,0)  to [european resistor,l=$R_{ms}$] ++(2,0) to [inductor,l=$j X_{ms}$]  ++(2.5,0) to [short] ++(0,\ky) to [short] ++(-6,0); 
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_t\\
+&-
+\end{aligned}
+$};
+%
+\draw(2,-0.5) node[below right]{$
+\begin{aligned}
+R_{ms}&=R_1'+R_2\\
+X_{ms}&=X_1'+X_2
+\end{aligned}
+$};
+\end{tikzpicture}
 \caption{کسر دور معائنہ۔}
 \label{شکل_ٹرانسفارمر_کسر_دور_معائنہ}
 \end{figure}
@@ -818,7 +1572,38 @@ X_1&=X_2'=\frac{\SI{64}{\milli \ohm}}{2}=\SI{32}{\milli \ohm}
 حاصل ہوتا ہے۔ان نتائج سے حاصل کم برقی دباو جانب مساوی دور شکل \حوالہ{شکل_ٹرانسفارمر_کھلے_سرے_کسر_دور_مثال} میں دکھایا گیا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figTransformersOpenAndShortTestExample}
+%\includegraphics{figTransformersOpenAndShortTestExample}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (0,-4) grid (15,1);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (0,-4) grid (15,1);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{2.5}
+\def\ky{-3};
+\draw(0,0)  to  [short]  ++(0.5,0) to [resistor,l=$0.027$] ++(1.5,0) to [inductor,l=$j 0.032$] ++(2.5,0)coordinate(a){} to
+[european resistor,l=$0.027$] ++(2,0) to [inductor,l=$j 0.032 $] ++(2,0); 
+\draw(0,\ky) to [short]++(8.5,0);
+\draw(a) to [short] ++(0,-0.6);
+\draw(4,-0.6) to [short] ++(1,0);
+\draw(4,\ky) to [european resistor,l=$80.67$] ++(0,2.4);
+\draw(5,\ky) to [inductor,l_=$j 5.56$] ++(0,2.4);
+%
+\draw(0,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_1\\
+&-
+\end{aligned}
+$};
+%
+\draw(8.5,\ky/2) node{$
+\begin{aligned}
+&+\\
+&\hat{V}_2'\\
+&-
+\end{aligned}
+$};
+\end{tikzpicture}
 \caption{کھلے دور اور کسرِ دور معائنہ سے کم برقی دباو جانب  مساوی دور۔}
 \label{شکل_ٹرانسفارمر_کھلے_سرے_کسر_دور_مثال}
 \end{figure}
@@ -828,7 +1613,127 @@ X_1&=X_2'=\frac{\SI{64}{\milli \ohm}}{2}=\SI{32}{\milli \ohm}
 اب تک ہم  \اصطلاح{ایک مرحلہ}\حاشیہب{single phase} ٹرانسفارمر پر غور کرتے رہے ہیں۔حقیقت میں برقی طاقت کی منتقلی میں عموماً \اصطلاح{تین مرحلہ}\فرہنگ{تین مرحلہ}\حاشیہب{three phase}\فرہنگ{three phase} ٹرانسفارمر استعمال ہوتے ہیں۔تین مرحلہ ٹرانسفارمر یکساں تین عدد  ایک مرحلہ  ٹرانسفارمر اکٹھے رکھ کر بنایا جا سکتا ہے۔یوں اگر ایک ٹرانسفارمر خراب ہو جائے تو اس کو ٹھیک ہونے کے لئے ہٹا کر بقایا دو ٹرانسفارمر دوبارہ چالو کئے جا سکتے ہیں۔تین مرحلہ ٹرانسفارمر بنانے کا اس سے بہتر طریقہ شکل \حوالہ{شکل_ٹرانسفارمر_ایک_مرکز_تین-ٹرانسفارمر} میں دکھایا گیا ہے جہاں ایک ہی مقناطیسی قالب پر تینوں ٹرانسفارمر کے لچھے لپٹے گئے ہیں۔اس شکل میں \عددیء{\hat{V}_{i1}} پہلے ٹرانسفارمر کا ابتدائی لچھا جبکہ \عددیء{\hat{V}_{s1}} اس کا ثانوی لچھا ہے۔اس طرح کے تین مرحلہ ٹرانسفارمر سستے، ہلکے اور چھوٹے ہونے کی وجہ سے عام ہو گئے ہیں اور آپ کو روز مرہ زندگی میں یہی نظر آئیں گے۔ان میں برقی ضیاع بھی قدرِ کم ہوتی ہے۔
 \begin{figure}
 \centering
-\includegraphics{figTransformersThreePhaseSingleCore}
+%\includegraphics{figTransformersThreePhaseSingleCore}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-1,-1) grid (5,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-1,-1) grid (5,3);
+%transformer outer dimensions
+\pgfmathsetmacro{\h}{3}
+\pgfmathsetmacro{\w}{4}
+\pgfmathsetmacro{\t}{0.4}
+\pgfmathsetmacro{\g}{0.3}   %gap between coil and edge of window
+\pgfmathsetmacro{\nL}{4}       %number of left hand turns
+\pgfmathsetmacro{\nR}{3}      %number of right hand turns
+%window size
+\pgfmathsetmacro{\winH}{\h-2*\t}
+\pgfmathsetmacro{\winW}{0.5*(\w-3*\t)}
+%coil step
+\pgfmathsetmacro{\stepHL}{0.5*(\h-2*\t-3*\g)/(\nL-0.5)}
+\pgfmathsetmacro{\stepHR}{0.5*(\h-2*\t-3*\g)/(\nR-0.5)}
+
+%transformer
+\draw(0,0) rectangle (\w,\h);
+\draw(\t,\t) rectangle ++(\winW,\winH);
+\draw(2*\t+\winW,\t) rectangle ++(\winW,\winH);
+%----------------------
+%========================
+%left leg TOP coil. top to bottom
+\def\leftEdge{0};
+\def\coilTop{\h-\t-\g};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TA.A1){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TA.A2){};
+%--------------------
+%left leg BOTTOM coil. top to bottom
+\def\leftEdge{0};
+\def\coilTop{\h-\t-2*\g-\nL*\stepHL+0.5*\stepHL};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TA.B1){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TA.B2){};
+%==========================
+%============================
+%middle leg TOP coil. top to bottom
+\def\leftEdge{\t+\winW};
+\def\coilTop{\h-\t-\g};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TB.A1){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TB.A2){};
+%--------------------
+%middle  leg BOTTOM coil. top to bottom
+\def\leftEdge{\t+\winW};
+\def\coilTop{\h-\t-2*\g-\nL*\stepHL+0.5*\stepHL};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TB.B1){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TB.B2){};
+%===========================
+%============================
+%right leg TOP coil. top to bottom
+%========================
+\def\leftEdge{\w-\t};
+\def\coilTop{\h-\t-\g};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TC.A1){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TC.A2){};
+%--------------------
+%right leg BOTTOM coil. top to bottom
+\def\leftEdge{\w-\t};
+\def\coilTop{\h-\t-2*\g-\nL*\stepHL+0.5*\stepHL};
+%
+\draw(\leftEdge+\t/4,\coilTop) to [out=0,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2}); %top half section
+%coil itself
+\pgfmathsetmacro{\nLend}{\nL-2}
+\foreach \y in { 0, ..., \nLend }{
+\draw (\leftEdge,{\coilTop-\stepHL/2-\y*\stepHL}) to [out=-135,in=45] (\leftEdge+\t,{\coilTop-\stepHL/2-\y*\stepHL-\stepHL});
+} 
+%left hand terminals
+\draw (\leftEdge+\t/4,\coilTop)--++(-1.25*\t,0) node(TC.B1){};
+\draw (\leftEdge,\coilTop-\nL*\stepHL+0.5*\stepHL)--++(-1*\t,0)node(TC.B2){};
+%==========================
+%===========================
+%text
+\draw (-0.4,1) node{$\hat{V}_{i1}$};
+\draw (-0.4,2) node{$\hat{V}_{s1}$};
+\draw (1.4,1) node{$\hat{V}_{i2}$};
+\draw (1.4,2) node{$\hat{V}_{s2}$};
+\draw (3.2,1) node{$\hat{V}_{i3}$};
+\draw (3.2,2) node{$\hat{V}_{s3}$};
+\end{tikzpicture}
 \caption{ایک ہی قالب پر تین ٹرانسفارمر۔}
 \label{شکل_ٹرانسفارمر_ایک_مرکز_تین-ٹرانسفارمر}
 \end{figure}
@@ -852,7 +1757,127 @@ X_1&=X_2'=\frac{\SI{64}{\milli \ohm}}{2}=\SI{32}{\milli \ohm}
 ٹرانسفارمر کے جوڑ بیان کرتے وقت بائیں جانب کے جوڑ کو پہلے اور دائیں جانب کی جوڑ کو بعد میں پکارتے ہیں۔یوں شکل میں ٹرانسفارمر کو ستارہ-تکونی جُڑا ٹرانسفارمر کہیں گے۔اسی طرح ابتدائی جانب کو بائیں اور ثانوی جانب کو دائیں ہاتھ بنایا جاتا ہے۔یوں اس شکل میں ابتدائی جانب ستارہ نما ہے جبکہ ثانوی جانب تکونی ہے۔
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{figTransformersStarDeltaConnections}
+%\includegraphics[width=\linewidth]{figTransformersStarDeltaConnections}
+\begin{tikzpicture}[scale=0.75]
+%grid
+%\draw[gray,thick] (-3,-3) grid (12,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (12,5);
+%transformer outer dimensions
+\pgfmathsetmacro{\l}{1.5}
+\pgfmathsetmacro{\s}{0.5}
+\pgfmathsetmacro{\arm}{2}
+\pgfmathsetmacro{\shiftX}{9cm}
+\pgfmathsetmacro{\shiftY}{1.25 cm}
+\pgfmathsetmacro{\gap}{3.5 cm}
+\pgfmathsetmacro{\startDelX}{-\arm/2}
+\pgfmathsetmacro{\startDelY}{-\arm/3}
+\draw node at (11.5,-2) {الف};
+\draw node at (0,-2) {ب};
+%
+\begin{scope}[xshift=\shiftX]
+\draw (0,0) node  [transformer core](T1){}; 
+\draw (0,2.5) node  [transformer core](T2){}; 
+\draw (0,5) node  [transformer core](T3){}; 
+\draw(T1.base) node {$\bullet \hspace{2mm} \bullet$};
+\draw(T2.base) node {$\bullet \hspace{2mm} \bullet$};
+\draw(T3.base) node {$\bullet \hspace{2mm} \bullet$};
+%
+\draw(T1.A1) to [short,-o] ++(-\l,0) node[left](c) {$c$};
+\draw(T2.A1) to [short,-o] ++(-\l,0) node[left](b) {$b$};
+\draw(T3.A1) to [short,-o] ++(-\l,0) node[left] (a){$a$};
+%
+\draw(T1.A2) to [short,-*] ++(-\s,0) coordinate (k1){};
+\draw(T2.A2) to [short,-*] ++(-\s,0)coordinate (k2){};
+\draw(T3.A2) to [short] ++(-\s,0)coordinate (k3){};
+%
+\draw(k3) to [short] (k2) to [short] (k1) to [short,-o] ++(-\l+\s,0)node[left](n){$n$};
+%text
+\node[right] at ($(a) ! 0.5 ! (b)$) {$
+\begin{aligned}
+&+\\
+&v_{ab}\\
+&-
+\end{aligned}
+$};
+%
+\node[right] at ($(b) ! 0.5 ! (c)$) {$
+\begin{aligned}
+&+\\
+&v_{bc}\\
+&-
+\end{aligned}
+$};
+%
+\node at ($(T1.A1) ! 0.5 ! (T1.A2)$){$
+\begin{aligned}
+&+\\
+&v_{cn}\\
+&-
+\end{aligned}
+$};
+%
+\node at ($(T2.A1) ! 0.5 ! (T2.A2)$){$
+\begin{aligned}
+&+\\
+&v_{bn}\\
+&-
+\end{aligned}
+$};
+%
+\node at ($(T3.A1) ! 0.5 ! (T3.A2)$){$
+\begin{aligned}
+&+\\
+&v_{an}\\
+&-
+\end{aligned}
+$};
+%right hand side
+\draw(T1.B1) to [short,-o] ++(\l,0)  node[right](c'){$c'$};
+\draw(T2.B1) to [short,-o] ++(\l,0)node[right](b'){$b'$};
+\draw(T3.B1) to [short,-o] ++(\l,0) node [right](a'){$a'$};
+%;
+\draw(T1.B2) to [short] ++(\s,0) to [short,-*] ++(0,7.1);
+\draw(T2.B2) to [short,-*] (T1.B1);
+\draw(T3.B2) to [short,-*] (T2.B1);
+%text
+\draw node at ($(a') ! 0.5 ! (b')$){$
+\begin{aligned}
+&+\\
+&v_{ab}'\\
+&-
+\end{aligned}
+$};
+%
+\draw node at ($(b') ! 0.5 ! (c')$){$
+\begin{aligned}
+&+\\
+&v_{bc}'\\
+&-
+\end{aligned}
+$};
+\end{scope}
+%=====================
+\begin{scope}[yshift=\shiftY]
+%star
+\draw (0,0) to [inductor,l={$- v_{an} +$}] ++(0:\arm)node [below left] {$\bullet$} to [short] ++(0,-2.2) to [short,-o]++(-4,0) node[left] {$a$};
+\draw (0,0) to [inductor,l={$+ v_{cn} -$}] ++(120:\arm) node [right]{$\bullet$} to [short,-o] ++(-1,0) node [left] {$c$};
+\draw (0,0) to [inductor,l={$+ v_{bn} -$}] ++(-120:\arm) node [above left] {$\bullet$} to [short,-o] ++(-1,0)node [left]{$b$};
+\draw (0,0) to [short,*-o] ++(-0.5,0) node [left]{$n$};
+\draw(2,2) node {$Y:\Delta$};
+%delta
+\begin{scope}[xshift=\gap]
+\draw (\startDelX,\startDelY) to [inductor,l_={$- v_{ab}'+$}] ++(0:\arm)coordinate(delA){} to [inductor] ++(120:\arm)coordinate(delB){}  to [inductor] ++(-120:\arm);
+\path  (30:0.6*\arm)  node[rotate=-60] {$+ v_{ca}' -$}; 
+\path  (150:0.6*\arm)  node[rotate=60] {$+ v_{bc}' -$}; 
+\draw (delA) to [short,-o] ++(\s,0) node[right]{$a'$};
+\draw (delB) to [short] ++(0,0.5) to [short,-o] ++(1.5,0) node[right]{$c'$};
+\draw (\startDelX,\startDelY) to [short] ++(0,-0.75) to [short,-o] ++(\l+1,0)node[right]{$b'$};
+\draw[below left]  node at (delA){$\bullet$};
+\draw[right]  node at (delB){$\bullet$};
+\draw[above]  node at (\startDelX,\startDelY){$\bullet$};
+\end{scope}
+\end{scope}
+\end{tikzpicture}
 \caption{تین مرحلہ ستارہ-تکونی ٹرانسفارمر}
 \label{شکل_ٹرانسفارمر_ستارہ_تکونی_جوڑ}
 \end{figure}
@@ -892,7 +1917,120 @@ V_{\textup{تار}} I_{\textup{تار}}=\sqrt{3} V_{\textup{یکمرحلہ}} I_{
 	ٹرانسفارمر کسی طرح بھی جوڑے جائیں وہ اپنی بنیادی کارکردگی تبدیل نہیں کرتے لہٰذا انہیں ستارہ نما یا تکونی جوڑنے کے بعد بھی ان میں ہر ایک ٹرانسفارمر انفرادی طور پر صفحہ \حوالہصفحہ{مساوات_ٹرانسفارمر_تبادلہ_دباو_رو} پر دئے مساوات \حوالہ{مساوات_ٹرانسفارمر_تبادلہ_دباو_رو}  اور صفحہ \حوالہصفحہ{مساوات_ٹرانسفارمر_متبادل_رکاوٹ_تعریف} پر دئے مساوات \حوالہ{مساوات_ٹرانسفارمر_متبادل_رکاوٹ_تعریف}  پر پورے اترے گا۔انہیں استعمال کر کے شکل \حوالہ{شکل_ٹرانسفارمر_تین_دور_ٹرانسفارمر_کے_مختلف_جوڑ}  میں دیئے گئے ٹرانسفارمروں کے ابتدائی اور ثانوی جانب کی یک مرحلہ اور تار کی مقداروں کے رشتے حاصل کئے جا سکتے ہیں۔اس شکل میں \عددیء{a=N_1/N_2} ہے جہاں  \عددیء{N_1:N_2} ان میں ایک مرحلہ ٹرانسفارمر کے چکر کی نسبت ہے۔تین مرحلہ ٹرانسفارمر پر لگی تختی پر دونوں جانب تار کی برقی دباو کی نسبت لکھی جاتی ہے۔
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{figTransformersAllPossibleConnections}
+%\includegraphics[width=\linewidth]{figTransformersAllPossibleConnections}
+\begin{tikzpicture}[scale=0.6]
+%grid
+%\draw[gray,thick] (-3,-3) grid (18,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (18,5);
+%transformer outer dimensions
+\pgfmathsetmacro{\shiftX}{12 cm}
+\pgfmathsetmacro{\shiftY}{5 cm}
+
+\pgfmathsetmacro{\arm}{2}
+\pgfmathsetmacro{\con}{2.5}
+\pgfmathsetmacro{\conStarS}{\con-\arm*cos(30)}                  %one arm of star is at ninty degree
+\pgfmathsetmacro{\conStarL}{\con+\arm*cos(30)}
+\pgfmathsetmacro{\h}{sqrt(3)/2*\arm}
+\pgfmathsetmacro{\conDeltaS}{\con-\arm/sqrt(3)}                      %one arm of delta is at 90 degree as h=sqrt{3}/2*\arm
+\pgfmathsetmacro{\conDeltaL}{\con+\arm/sqrt(12)}
+\pgfmathsetmacro{\conDeltaZeroS}{\con-\arm*cos(60)}    %one arm of delta is at 0 degree as h=sqrt{3}/2*\arm
+\pgfmathsetmacro{\conDeltaZeroM}{\con}
+\pgfmathsetmacro{\conDeltaZeroL}{\con+\arm*cos(60)}
+
+
+\pgfmathsetmacro{\gap}{4 cm}        %gap between star and delta centres
+\pgfmathsetmacro{\startNintyX}{-\h/3}    %start of delta if one arm is at 90 degrees
+\pgfmathsetmacro{\startNintyY}{-\arm/2}
+\pgfmathsetmacro{\startZeroX}{-\arm/2}   %start of delta if one arm is at 0 degrees
+\pgfmathsetmacro{\startZeroY}{-\h/3} 
+
+%===================
+%STAR-DELTA
+\begin{scope}[yshift=\shiftY]
+%star at 90 degrees
+\draw (0,0) to [short] ++(-90:\arm)coordinate (starA){} to [short,-o,i<={$I$}] ++(180:\con)coordinate (starAend){};
+\draw (0,0) to [short] ++(30:\arm)coordinate (starB){} to [short] ++(0,0.5) to [short,-o]++(180:\conStarL)coordinate (starBend){};
+\draw (0,0) to [short] ++(150:\arm)coordinate (starC){} to  [short,-o]++(180:\conStarS)coordinate (starCend){};
+%text
+\draw[<->](-2,1)--(-2,-2) node[fill=white,pos=0.5]{$V$};
+\draw[gray] (-0.1,0)--(-1,0);
+\draw[<->](-0.6,0)--(-0.6,-2) node[fill=white,pos=0.5]{$\frac{V}{\sqrt{3}}$};
+%=================
+%delta at 90 degrees
+\begin{scope}[xshift=\gap]
+\draw (\startNintyX,\startNintyY)coordinate (deltaNintyA){} to [short] ++(30:\arm)coordinate (deltaNintyB){} to [short] ++(150:\arm)coordinate (deltaNintyC){} to [short,i={$aI$}]++(-90:\arm);
+\draw (deltaNintyA) to [short]++(0,-0.5) to [short,-o,i={$\sqrt{3} a I$}] ++(\conDeltaL,0);
+\draw (deltaNintyB) to [short,-o] ++(\conDeltaS,0);
+\draw (deltaNintyC) to [short]++(0,0.5) to [short,-o] ++(\conDeltaL,0);
+\draw[<->](1.6,0)--(1.6,1.5) node [fill=white,pos=0.5]{$\frac{V}{\sqrt{3} a}$};
+\end{scope}
+%=================================
+%=================================
+%DELTA-STAR
+\begin{scope}[xshift=\shiftX+\gap, xscale=-1, yscale=1]
+%star at 90 degrees
+\draw (0,0) to [short] ++(-90:\arm)coordinate (starA){} to [short,-o,i<={$\frac{aI}{\sqrt{3}}$}] ++(180:\con)coordinate (starAend){};
+\draw (0,0) to [short] ++(30:\arm)coordinate (starB){} to [short] ++(0,0.5) to [short,-o]++(180:\conStarL)coordinate (starBend){};
+\draw (0,0) to [short] ++(150:\arm)coordinate (starC){} to  [short,-o]++(180:\conStarS)coordinate (starCend){};
+%text
+\draw[<->](-2,1)--(-2,-2) node[fill=white,pos=0.5]{$\frac{\sqrt{3}V}{a}$};
+\draw[gray] (-0.1,0)--(-1,0);
+\draw[<->](-0.5,0)--(-0.5,-2) node[fill=white,pos=0.5]{$\frac{V}{a}$};
+%=================
+%delta at 90 degrees
+\begin{scope}[xshift=\gap]
+\draw (\startNintyX,\startNintyY)coordinate (deltaNintyA){} to [short] ++(30:\arm)coordinate (deltaNintyB){} to [short] ++(150:\arm)coordinate (deltaNintyC){} to [short,i<={$\frac{I}{\sqrt{3}}$}]++(-90:\arm);
+\draw (deltaNintyA) to [short]++(0,-0.5) to [short,-o,i={$I$}] ++(\conDeltaL,0);
+\draw (deltaNintyB) to [short,-o] ++(\conDeltaS,0);
+\draw (deltaNintyC) to [short]++(0,0.5) to [short,-o] ++(\conDeltaL,0);
+\draw[<->](1.5,0)--(1.5,1.5) node [fill=white,pos=0.5]{$V$};
+\end{scope}
+\end{scope}
+%----======----
+\end{scope}
+%====================
+%===================
+%===================
+%LOWER TWO FIGURES
+%STAR-STAR
+%star at 90 degrees
+\draw (0,0) to [short] ++(-90:\arm)coordinate (starA){} to [short,-o,i<={$I$}] ++(180:\con)coordinate (starAend){};
+\draw (0,0) to [short] ++(30:\arm)coordinate (starB){} to [short] ++(0,0.5) to [short,-o]++(180:\conStarL)coordinate (starBend){};
+\draw (0,0) to [short] ++(150:\arm)coordinate (starC){} to  [short,-o]++(180:\conStarS)coordinate (starCend){};
+%text
+\draw[<->](-2,1)--(-2,-2) node[fill=white,pos=0.5]{$V$};
+\draw[gray] (-0.1,0)--(-1,0);
+\draw[<->](-0.6,0)--(-0.6,-2) node[fill=white,pos=0.5]{$\frac{V}{\sqrt{3}}$};
+%=================
+\begin{scope}[xshift=\gap,xscale=-1,yscale=1]
+%star at 90 degrees
+\draw (0,0) to [short] ++(-90:\arm)coordinate (starA){} to [short,-o,i<={$a I$}] ++(180:\con)coordinate (starAend){};
+\draw (0,0) to [short] ++(30:\arm)coordinate (starB){} to [short] ++(0,0.5) to [short,-o]++(180:\conStarL)coordinate (starBend){};
+\draw (0,0) to [short] ++(150:\arm)coordinate (starC){} to  [short,-o]++(180:\conStarS)coordinate (starCend){};
+%text
+\draw[<->](-2,1)--(-2,-2) node[fill=white,pos=0.5]{$\frac{V}{a}$};
+\draw[gray] (-0.1,0)--(-1,0);
+\draw[<->](-0.8,0)--(-0.8,-2) node[fill=white,pos=0.5]{$\frac{V}{a\sqrt{3}}$};
+\end{scope}
+%
+ % DELTA-DELTA
+%delta
+\begin{scope}[xshift=\shiftX]
+\draw(\startZeroX,\startZeroY)coordinate(deltA){} to [short,i={$\frac{I}{\sqrt{3}} $}] ++(0:\arm)coordinate(deltB){} to [short]++(120:\arm)coordinate(deltC){} to [short] ++(-120:\arm);
+\draw[short] (deltA) to [short,-o]++(180:\conDeltaZeroS);
+\draw[short] (deltB) to [short] ++(0,-0.5) to [short,-o]++(180:\conDeltaZeroL);
+\draw[short] (deltC) to [short] ++(0,0.5) to [short,-o,i<={$I$}]++(180:\conDeltaZeroM);
+\draw[<->] (-2,-0.65) --++(0,2.2)node[fill=white,pos=0.5]{$V$};
+%delta
+\begin{scope}[xshift=\gap,xscale=-1,yscale=1]
+\draw(\startZeroX,\startZeroY)coordinate(deltA){} to [short,i={$\frac{a I}{\sqrt{3}} $}] ++(0:\arm)coordinate(deltB){} to [short]++(120:\arm)coordinate(deltC){} to [short] ++(-120:\arm);
+\draw[short] (deltA) to [short,-o]++(180:\conDeltaZeroS);
+\draw[short] (deltB) to [short] ++(0,-0.5) to [short,-o]++(180:\conDeltaZeroL);
+\draw[short] (deltC) to [short] ++(0,0.5) to [short,-o,i<={$a I$}]++(180:\conDeltaZeroM);
+\draw[<->] (-2,-0.65) --++(0,2.2)node[fill=white,pos=0.5]{$\tfrac{V}{a}$};
+\end{scope}
+\end{scope}
+\end{tikzpicture}
 \caption{ابتدائی اور ثانوی جانب تار اور یک مرحلہ مقداروں کے رشتے۔}
 \label{شکل_ٹرانسفارمر_تین_دور_ٹرانسفارمر_کے_مختلف_جوڑ}
 \end{figure}
@@ -965,7 +2103,54 @@ V_{\textup{ثانوی}}=\frac{N_2}{N_1} V_{\textup{ابتدائی}}=\frac{440}{6
 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{figTransformersDeltaLoadedExample}
+%\includegraphics[width=\linewidth]{figTransformersDeltaLoadedExample}
+\begin{tikzpicture}[scale=0.75]
+%grid
+%\draw[gray,thick] (-3,-3) grid (18,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (18,5);
+%transformer outer dimensions
+\pgfmathsetmacro{\shiftX}{9 cm}
+\pgfmathsetmacro{\shiftY}{6.5 cm}
+
+\pgfmathsetmacro{\arm}{2}
+\pgfmathsetmacro{\con}{2.5}
+\pgfmathsetmacro{\conStarS}{\con-\arm*cos(30)}                  %one arm of star is at ninty degree
+\pgfmathsetmacro{\conStarL}{\con+\arm*cos(30)}
+\pgfmathsetmacro{\h}{sqrt(3)/2*\arm}
+\pgfmathsetmacro{\conDeltaS}{\con-\arm/sqrt(3)}                      %one arm of delta is at 90 degree as h=sqrt{3}/2*\arm
+\pgfmathsetmacro{\conDeltaL}{\con+\arm/sqrt(12)}
+\pgfmathsetmacro{\conDeltaZeroS}{\con-\arm*cos(60)}    %one arm of delta is at 0 degree as h=sqrt{3}/2*\arm
+\pgfmathsetmacro{\conDeltaZeroM}{\con}
+\pgfmathsetmacro{\conDeltaZeroL}{\con+\arm*cos(60)}
+
+
+\pgfmathsetmacro{\gap}{3 cm}        %gap between star and delta centres
+\pgfmathsetmacro{\startNintyX}{-\h/3}    %start of delta if one arm is at 90 degrees
+\pgfmathsetmacro{\startNintyY}{-\arm/2}
+\pgfmathsetmacro{\startZeroX}{-\arm/2}   %start of delta if one arm is at 0 degrees
+\pgfmathsetmacro{\startZeroY}{-\h/3} 
+
+
+\node at (0.6,2){$11000:600V$}; 
+%DELTA TRANSFORMER
+\draw (\startZeroX,\startZeroY)coordinate(delA){} to [inductor] ++(0:\arm)coordinate(delB){} to [inductor] ++(120:\arm)coordinate(delC){} to [inductor] ++(-120:\arm);
+\draw (delA) to [short,-o]++(180:\conDeltaZeroS);
+\draw (delB) to [short] ++(0,-0.5) to [short,-o]++(180:\conDeltaZeroL);
+\draw (delC) to [short,-o]++(180:\conDeltaZeroM);
+%STAR TRANSFORMER
+\begin{scope}[xshift=\gap]
+\draw (0,0)node[below right]{$n$} to [inductor] ++(0:\arm) coordinate(starA){};
+\draw (0,0) to [inductor] ++(120:\arm)  to [short] ++(0,0.5) coordinate(starB){};
+\draw (0,0) to [inductor] ++(-120:\arm) to [short] ++(0,-0.5)coordinate(starC){};
+\end{scope}
+%DELTA LOAD
+\begin{scope}[xshift=\shiftX]
+\draw(2*\startZeroX,2*\startZeroY) coordinate(loadAa){} to [resistor,l_={$0.504$}] ++(0:\arm) to [inductor,l_={$j 0.1917$}] ++(0:\arm)coordinate(loadBb){} to [resistor] ++(120:\arm) to [inductor] ++(120:\arm)coordinate(loadCc){} to [resistor] ++(-120:\arm) to [inductor] ++(-120:\arm);
+\end{scope}
+\draw (starA) -| (loadAa);
+\draw (starB) |- (loadCc);
+\draw (starC) -| (loadBb);
+\end{tikzpicture}
 \caption{ٹرانسفارمر تکونی متوازن بوجھ کو طاقت فراہم کر رہا ہے۔}
 \label{شکل_ٹرانسفارمر_تکونی_بار_کی_مثال}
 \end{figure}
@@ -978,7 +2163,58 @@ Z_Y= \frac{Z_\Delta}{3}=\frac{0.504+j0.1917}{3}=0.168+j0.0639
 اس بوجھ کو ستارہ نما جڑا شکل \حوالہ{شکل_ٹرانسفارمر_تکونی_بار_کو_ستارہ_تبادلہ} میں دکھایا گیا ہے۔اس شکل میں ایک برقی تار جسے نقطہ دار لکیر سے ظاہر کیا گیا ہے کو ٹرانسفارمر کی زمینی نقطہ سے بوجھ کے مشترکہ سرے کے درمیان جڑا دکھایا گیا ہے۔متوازن دور میں اس تار میں برقی رو صفر ہو گی۔حل کرنے کی نیت سے ہم اس متوازن دور سے ایک مرحلہ لے کر حل کرتے ہیں۔
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{figTransformersDeltaLoadedExampleTurnedStar}
+%\includegraphics[width=\linewidth]{figTransformersDeltaLoadedExampleTurnedStar}
+\begin{tikzpicture}[scale=0.75]
+%grid
+%\draw[gray,thick] (-3,-3) grid (18,5);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (18,5);
+%transformer outer dimensions
+\pgfmathsetmacro{\shiftX}{9 cm}
+\pgfmathsetmacro{\shiftY}{6.5 cm}
+
+\pgfmathsetmacro{\arm}{2}
+\pgfmathsetmacro{\con}{2.5}
+\pgfmathsetmacro{\conStarS}{\con-\arm*cos(30)}                  %one arm of star is at ninty degree
+\pgfmathsetmacro{\conStarL}{\con+\arm*cos(30)}
+\pgfmathsetmacro{\h}{sqrt(3)/2*\arm}
+\pgfmathsetmacro{\conDeltaS}{\con-\arm/sqrt(3)}                      %one arm of delta is at 90 degree as h=sqrt{3}/2*\arm
+\pgfmathsetmacro{\conDeltaL}{\con+\arm/sqrt(12)}
+\pgfmathsetmacro{\conDeltaZeroS}{\con-\arm*cos(60)}    %one arm of delta is at 0 degree as h=sqrt{3}/2*\arm
+\pgfmathsetmacro{\conDeltaZeroM}{\con}
+\pgfmathsetmacro{\conDeltaZeroL}{\con+\arm*cos(60)}
+
+
+\pgfmathsetmacro{\gap}{3 cm}        %gap between star and delta centres
+\pgfmathsetmacro{\startNintyX}{-\h/3}    %start of delta if one arm is at 90 degrees
+\pgfmathsetmacro{\startNintyY}{-\arm/2}
+\pgfmathsetmacro{\startZeroX}{-\arm/2}   %start of delta if one arm is at 0 degrees
+\pgfmathsetmacro{\startZeroY}{-\h/3} 
+
+%DELTA TRANSFORMER
+\draw (\startZeroX,\startZeroY)coordinate(delA){} to [inductor] ++(0:\arm)coordinate(delB){} to [inductor] ++(120:\arm)coordinate(delC){} to [inductor] ++(-120:\arm);
+\draw (delA) to [short,-o]++(180:\conDeltaZeroS);
+\draw (delB) to [short] ++(0,-0.5) to [short,-o]++(180:\conDeltaZeroL);
+\draw (delC) to [short,-o]++(180:\conDeltaZeroM);
+%STAR TRANSFORMER
+\begin{scope}[xshift=\gap]
+\draw (0,0)node[below right]{$n$} to [inductor] ++(0:\arm) coordinate(starA){};
+\draw (0,0) to [inductor,l={$\SI{346.41}{\volt}$}] ++(120:\arm)  to [short] ++(0,0.5) coordinate(starB){};
+\draw (0,0) to [inductor] ++(-120:\arm) to [short] ++(0,-0.5)coordinate(starC){};
+\node at (0,0) (starNN){};
+%----------
+%STAR LOAD
+\begin{scope}[xshift=0.7*\shiftX]
+\draw(0,0) to [resistor] ++(180:0.8*\arm) to [inductor] ++(180:0.8*\arm)coordinate(loadA){}; 
+\draw(0,0) to [resistor,l_={$0.168$}] ++(60:0.8*\arm) to [inductor,l_={$j 0.0639$}] ++(60:0.8*\arm) to [short] ++(0,0.2)coordinate(loadB){}; 
+\draw(0,0) to [resistor] ++(-60:0.8*\arm) to [inductor] ++(-60:0.8*\arm) to [short] ++(0,-0.2) coordinate(loadC){}; 
+\draw (starA) -| (loadA);
+\draw (starB) |- (loadB);
+\draw (starC) |- (loadC);
+\node at (0,0) (loadNN){};
+\draw[gray,dashed] (starNN) --++(45:1) --++(2.5*\arm,0) --(loadNN);
+\end{scope}
+\end{scope}
+\end{tikzpicture}
 \caption{تکونی بوجھ کو مساوی ستارہ بوجھ میں تبدیل کیا گیا ہے۔}
 \label{شکل_ٹرانسفارمر_تکونی_بار_کو_ستارہ_تبادلہ}
 \end{figure}

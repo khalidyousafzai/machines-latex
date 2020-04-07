@@ -11,7 +11,16 @@
 وہ متغیر جس کو مکمل طور پر بیان کرنے کے لئے اس کی مقدار (طول یا مطلق قیمت) اور سمت جاننا ضروری ہو،  \اصطلاح{سمتیہ}\فرہنگ{سمتیہ}\حاشیہب{vector}\فرہنگ{vector} کہلاتا ہے۔ سمتیہ کو انگریزی یا لاطینی زبان کے چھوٹے یا  بڑے حروف،  جن کو موٹے طرز کی لکھائی میں لکھا گیا ہو،  سے ظاہر کیا جائے گا، مثلاً قوت کو \سمتیہ{F} سے ظاہر کیا جائے گا۔یہاں شکل \حوالہ{شکل_حقائق_اکائی_سمتیہ}  سے رجوع کرنا بہتر ہو گا۔ وہ سمتیہ جس کا طول ایک کے برابر ہو، \اصطلاح{اکائی سمتیہ}\فرہنگ{اکائی سمتیہ}\حاشیہب{unit vector}\فرہنگ{unit vector} کہلائے گا۔ اس کتاب میں اکائی سمتیہ کو انگریزی زبان کے پہلے حرف کو موٹے طرز کی لکھائی میں لکھا جائے گا، مثلاً اکائی سمتیہ \عددیء{\ax,\ay,\az} خلاء کی تین عمودی سمتیات  کو ظاہر کرتے ہیں۔\عددیء{\ax} لکھتے ہوئے، زیر نوشت میں \عددیء{x}، اس بات کی نشاندہی  کرتا ہے کہ یہ اکائی سمتیہ خلاء کی \عددیء{x} سمت کو ظاہر کرتا ہے۔ اگر کسی سمتیہ  کا طول اور اس کی سمت کو علیحدہ علیحدہ لکھنا ہو تو اس کے طول کو ظاہر کرنے کے لئے سادہ طرز کی لکھائی میں وہی حرف استعمال کیا جائے گا جو اس سمتیہ کو ظاہر کرنے کے لئے، موٹے طرز کی لکھائی میں، استعمال کیا گیا ہو۔ یعنی سمتیہ \سمتیہ{F} کے طول کو \عددیء{F} سے ظاہر کیا جائے گا۔ شکل میں سمتیہ  \سمتیہ{F} کا طول \عددیء{F}، چار کے برابر ہے۔ اگر کسی سمتیہ کی سمت میں ایک اکائی سمتیہ بنایا جائے تو یہ اکائی سمتیہ اس سمتیہ کی سمت کو ظاہر کرتا ہے۔جیسے پہلے ذکر ہوا ہے  ایسے اکائی سمتیہ کو انگریزی کے پہلے حرف،  جس کو موٹے طرز کی لکھائی میں لکھا گیا ہو  سے ظاہر کیا جائے گا یعنی سمتیہ \سمتیہ{F} کی سمت کو \عددیء{\سمتیہ{a}_F} سے ظاہر کیا جائے گا۔یہاں،  زیر نوشت میں \عددیء{F} ، اس بات کی یاد دہانی کراتا ہے کہ یہ اکائی سمتیہ \سمتیہ{F} کی سمت کو ظاہر کرتا ہے۔ شکل \حوالہ{شکل_حقائق_اکائی_سمتیہ} میں قوت \سمتیہ{F} کا رخ دائیں  ہے لہٰذا  \عددیء{\سمتیہ{a}_F} اور  \عددیء{\ax} برابر ہوں گے۔
 \begin{figure}
 \centering
-\includegraphics{figBasicFactsUnitVectors}
+%\includegraphics{figBasicFactsUnitVectors}
+\begin{tikzpicture}
+\draw[help lines] (-1,-1) grid (5,3);
+\draw[thin, <->] (-1,0)--(5,0) node[below,black]{$x$};
+\draw[thin, <->] (0,-1)--(0,3) node[left,black]{$y$};
+\draw[thick,-latex] (0,0)--(1,0) node[below] {$\ax$};
+\draw[thick,-latex] (0,0)--(0,1) node[left] {$\ay$};
+
+\draw[thick,-latex](1,2)--(5,2)node[pos=0.4,above] {$\kvec{F}=4 \ax$};
+\end{tikzpicture}%
 \caption{کارتیسی محدد}
 \label{شکل_حقائق_اکائی_سمتیہ}
 \end{figure}
@@ -44,7 +53,62 @@
 %
 \begin{figure}
 \centering
-\includegraphics{figBasicFactsVectorCartesianCoordinates}
+%\includegraphics{figBasicFactsVectorCartesianCoordinates}
+\tdplotsetmaincoords{70}{110}
+\begin{tikzpicture}[scale=3,tdplot_main_coords]
+\def\kkkx{1}
+\def\kkky{1}
+\def\kkkz{0.75}
+\coordinate (O) at (0,0,0);
+\coordinate (P) at (\kkkx,\kkky,\kkkz);
+%axis
+\draw[gray] (0,0,0) -- (2,0,0);
+\draw[gray] (0,0,0) -- (0,1.5,0);
+\draw[gray] (0,0,0) -- (0,0,1);
+%equations
+\node[anchor=east] at (0,2.5,1) {$\begin{aligned}
+& P(x,y,z)\\
+\\
+\bf{A}&={\bf{A}}_x+{\bf{A}}_y+{\bf{A}}_z\\
+&=x \ax+y \ay+z \az
+     \end{aligned}$};
+%text
+\node[anchor=east] at (\kkkx,0,0) {$x$};
+\node[anchor=south west] at (0,\kkky,0) {$y$};
+\node[anchor=east] at (0,0,\kkkz) {$z$};
+\node[anchor=east] at (0,0,0) {$O$};
+\node[anchor=south] at (\kkkx,\kkky,\kkkz) {$P$};
+
+%dashed
+\draw[dashed] (\kkkx,\kkky,\kkkz)--(\kkkx,0,\kkkz);
+\draw[dashed] (\kkkx,0,\kkkz)--(\kkkx,0,0);
+
+\draw[dashed] (\kkkx,\kkky,0)--(0,\kkky,0);
+\draw[dashed] (0,\kkky,\kkkz)--(\kkkx,\kkky,\kkkz);
+\draw[dashed] (0,\kkky,\kkkz)--(0,\kkky,0);
+
+\draw[dashed] (0,\kkky,\kkkz)--(0,0,\kkkz);
+\draw[dashed] (0,0,\kkkz)--(\kkkx,0,\kkkz);
+%vectors
+\draw[thick,-latex] (0,0,0)--(\kkkx,\kkky,\kkkz) node[pos=0.4, above]{$\bf{A}$};
+\draw[thin,-latex] (0,0,0)--(\kkkx,0,0) node[pos=0.6, right]{${\bf{A}}_x$};
+\draw[thin,-latex] (\kkkx,0,0)--(\kkkx,\kkky,0)  node[pos=0.6, below]{${\bf{A}}_y$};
+\draw[thin,-latex] (\kkkx,\kkky,0)--(\kkkx,\kkky,\kkkz)  node[pos=0.7, right]{${\bf{A}}_z$};
+%
+%\draw[gray,-latex](O)--(N1)node[pos=0.4, right]{$\bf{r_1}$} node[below,black]{$Q_1$};
+%\draw[gray,-latex](O)--(N2)node[pos=0.4,right]{$\bf{r_2}$} node[above,black]{$Q_2$};
+%\draw[gray,-latex](O)--(N)node[pos=0.4,above]{$\bf{r_N}$};
+%
+%\draw[thin, gray,-latex](N1)--(N);
+%\draw[shorten <=2.3cm,shorten >=-.5cm,-latex](N1) --(N);
+%\draw[thin, gray,-latex](N2)--(N);
+%\draw[shorten <=3.1cm,shorten >=-.5cm,-latex](N2)--(N);
+
+%\draw[blue](current bounding box.south west) rectangle (current bounding box.north east);
+%\draw[help lines, step=10pt](0,0)grid(1,1);
+%\path[use as bounding box]( -1.2,-1.5,-1)rectangle(1,2,2);
+\end{tikzpicture}%
+
 \caption{کارتیسی محدد نظام میں ایک سمتیہ۔}
 \label{شکل_حقائق_کارتیسی_نظام_ایک_سمتیہ}
 \end{figure}
@@ -82,7 +146,50 @@
 %
 \begin{figure}
 \centering
-\includegraphics{figBasicFactsVectorCylindricalCoordinates}
+%\includegraphics{figBasicFactsVectorCylindricalCoordinates}
+\tdplotsetmaincoords{70}{110}
+\begin{tikzpicture}[scale=3,tdplot_main_coords]
+\def\kkkx{1}
+\def\kkky{1}
+\def\kkkz{0.75}
+\coordinate (O) at (0,0,0);
+\coordinate (P) at (\kkkx,\kkky,\kkkz);
+%axis
+\draw[gray] (0,0,0) -- (2,0,0);
+\draw[gray] (0,0,0) -- (0,1.5,0);
+\draw[gray] (0,0,0) -- (0,0,1);
+%equations
+\node[anchor=east] at (0,2.5,1) {$\begin{aligned}
+P(x,y,z)&=P(\rho,\theta,z)\\
+\\
+\bf{A}&={\kvec{\rho}}+{\bf{A}}_z\\
+&=\rho \arho+z \az
+     \end{aligned}$};
+%text
+\node[anchor=east] at (\kkkx,0,0) {$x$};
+\node[anchor=south west] at (0,\kkky,0) {$y$};
+\node[anchor=east] at (0,0,\kkkz) {$z$};
+\node[anchor=east] at (0,0,0) {$O$};
+\node[anchor=south] at (\kkkx,\kkky,\kkkz) {$P$};
+
+%dashed
+\draw[dashed] (\kkkx,0,0)--(\kkkx,\kkky,0);
+\draw[dashed] (\kkkx,\kkky,\kkkz)--(\kkkx,0,\kkkz);
+\draw[dashed] (\kkkx,0,\kkkz)--(\kkkx,0,0);
+
+\draw[dashed] (\kkkx,\kkky,0)--(0,\kkky,0);
+\draw[dashed] (0,\kkky,\kkkz)--(\kkkx,\kkky,\kkkz);
+\draw[dashed] (0,\kkky,\kkkz)--(0,\kkky,0);
+
+\draw[dashed] (0,\kkky,\kkkz)--(0,0,\kkkz);
+\draw[dashed] (0,0,\kkkz)--(\kkkx,0,\kkkz);
+%vectors
+\draw[thick,-latex] (0,0,0)--(\kkkx,\kkky,\kkkz) node[pos=0.4, above]{$\bf{A}$};
+\draw[thin,-latex] (0,0,0)--(\kkkx,\kkky,0)  node[pos=0.6, above]{${\kvec{\rho}}$};
+\draw[thin,-latex] (\kkkx,\kkky,0)--(\kkkx,\kkky,\kkkz)  node[pos=0.7, right]{${\bf{A}}_z$};
+%arc
+ \tdplotdrawarc[color=black,-latex,tdplot_main_coords]{(0,0,0)}{0.3}{0}{45}{anchor=north west}{$\theta$};
+\end{tikzpicture}%
 \caption{نلکی محددی نظام}
 \label{شکل_حقائق_نلکی_نظام_ایک_سمتیہ}
 \end{figure}
@@ -97,7 +204,53 @@ x=\rho \cos \theta,\quad y=\rho \sin \theta
 سطح \عددی{xy} میں مبدا پر، محدد \عددی{x} کے ساتھ  \عددی{\theta} زاویہ پر اکائی سمتیہ  $\arho$ ہو گا۔  سطح  \عددیء{xy} میں مبدا پر اکائی سمتیہ $\arho$ کے عمودی، بڑھتے  \عددی{\theta} رخ، اکائی   سمتیہ $\atheta$ ہو گا۔ کارتیسی محددی نظام کا اکائی سمتتیہ $\az$ ہی نلکی محدد کا اکائی سمتیہ $\az$ ہے۔ 
 \begin{figure}
 \centering
-\includegraphics[height=3.5cm]{figBasicFactsCylindricalCoordinates}
+%\includegraphics[height=3.5cm]{figBasicFactsCylindricalCoordinates}
+\tdplotsetmaincoords{70}{110}
+\begin{tikzpicture}[scale=3,tdplot_main_coords]
+\def\kkkx{1}
+\def\kkky{1}
+\def\kkkz{0.75}
+\coordinate (O) at (0,0,0);
+\coordinate (P) at (\kkkx,\kkky,\kkkz);
+%axis
+\draw[gray] (0,0,0) -- (2,0,0);
+\draw[gray] (0,0,0) -- (0,1.5,0);
+\draw[gray] (0,0,0) -- (0,0,1);
+
+%text
+\node[anchor=east] at (\kkkx,0,0) {$x$};
+\node[anchor=south west] at (0,\kkky,0) {$y$};
+\node[anchor=east] at (0,0,\kkkz) {$z$};
+\node[anchor=east] at (0,0,0) {$O$};
+\node[anchor=south west] at (\kkkx,\kkky,\kkkz) {$P(\rho,\theta,z)$};
+\node[anchor=north east]  at (\kkkx,\kkky,0) {$P(\rho,\theta,0)$};
+
+%dashed
+\draw[dashed] (\kkkx,0,0)--(\kkkx,\kkky,0);
+\draw[dashed] (\kkkx,\kkky,\kkkz)--(\kkkx,\kkky,0);
+\draw[dashed] (\kkkx,\kkky,\kkkz)--(0,0,\kkkz);
+\draw[dashed] (\kkkx,\kkky,0)--(0,\kkky,0);
+
+%\draw[dashed] (0,\kkky,\kkkz)--(\kkkx,\kkky,\kkkz);
+%\draw[dashed] (0,\kkky,\kkkz)--(0,\kkky,0);
+
+%\draw[dashed] (0,\kkky,\kkkz)--(0,0,\kkkz);
+%\draw[dashed] (0,0,\kkkz)--(\kkkx,0,\kkkz);
+%vectors
+\draw[thin,gray] (0,0,0)--(\kkkx,\kkky,0)  node[pos=0.6, above]{${\rho}$};
+\draw[thick,-latex] (0,0,0)--(\kkkx,\kkky,\kkkz) node[pos=0.4, above]{$\bf{A}$};
+%\draw[thin,-latex] (0,0,0)--(\kkkx,0,0) node[pos=0.6, right]{${\bf{A}}_x$};
+%\draw[thin,-latex] (\kkkx,0,0)--(\kkkx,\kkky,0)  node[pos=0.6, below]{${\bf{A}}_y$};
+
+%unit vectors
+\draw[thin,-latex] (\kkkx,\kkky,0)--(1.2*\kkkx,1.2*\kkky,0)  node[below right]{${\arho}$};
+\draw[thin,-latex] (\kkkx,\kkky,0)--(0.75*\kkkx,1.1*\kkky,0)  node[right]{${\atheta}$};
+\draw[thin,-latex] (\kkkx,\kkky,0)--(\kkkx,\kkky,0.2)  node[right]{${\az}$};
+%\draw[thin,-latex] (\kkkx,\kkky,0)--(\kkkx,\kkky,\kkkz)  node[pos=0.7, right]{${\bf{A}}_z$};
+
+%arc
+ \tdplotdrawarc[color=black,-latex,tdplot_main_coords]{(0,0,0)}{0.3}{0}{45}{anchor=north west}{$\theta$};
+\end{tikzpicture}%
 \caption{نلکی نما محدد کی تعریف}
 \label{شکل_حقائق_نلکی_نظام_تعریف}
 \end{figure}
@@ -105,7 +258,56 @@ x=\rho \cos \theta,\quad y=\rho \sin \theta
 واضح رہے کہ  نلکی محدد کے نظام  میں $\arho$ اور  $\atheta$ کی سمتیں ہر نقطہ پر مختلف ہیں جیسا کہ شکل \حوالہ{شکل_حقائق_نلکی_نظام_میں_اکائی_سمتیات_اٹل_نہیں} میں دکھایا گیا ہے۔
 \begin{figure}
 \centering
-\includegraphics[height=3.5cm]{figBasicFactsCylindricalCoordinatesVaryingUnitVectors}
+%\includegraphics[height=3.5cm]{figBasicFactsCylindricalCoordinatesVaryingUnitVectors}
+\tdplotsetmaincoords{70}{110}
+\begin{tikzpicture}[scale=3,tdplot_main_coords]
+\def\kkkx{1}
+\def\kkky{1}
+\def\kkkz{0.9}
+\def\kkx{2}
+\def\kky{0.5}
+\def\kkz{0.75}
+\coordinate (O) at (0,0,0);
+\coordinate (P) at (\kkkx,\kkky,\kkkz);
+\coordinate (PP) at (\kkx,\kky,\kkz);
+%axis
+\draw[gray] (0,0,0) -- (2,0,0);
+\draw[gray] (0,0,0) -- (0,1.5,0);
+\draw[gray] (0,0,0) -- (0,0,1);
+
+%text
+
+\node[anchor=south west] at (\kkkx,\kkky,\kkkz) {$P_1$};
+\node[anchor= east]  at (\kkx,\kky,\kkz) {$P_2$};
+
+%dashed
+\draw[dashed] (\kkkx,\kkky,\kkkz)--(\kkkx,\kkky,0);
+\draw[dashed] (\kkkx,\kkky,\kkkz)--(0,0,\kkkz) node[left] {$z_1$};
+
+\draw[dashed] (\kkx,\kky,\kkz)--(\kkx,\kky,0);
+\draw[dashed] (\kkx,\kky,\kkz)--(0,0,\kkz)node[left] {$z_2$};
+
+%vectors
+\draw[thin,gray] (0,0,0)--(\kkkx,\kkky,0)  node[pos=0.6, below]{${\rho_1}$};
+\draw[thick,-latex] (0,0,0)--(\kkkx,\kkky,\kkkz) node[pos=0.6, below]{${\bf{A}}_1$};
+
+\draw[thin,gray] (0,0,0)--(\kkx,\kky,0)  node[pos=0.6, right]{${\rho_2}$};
+\draw[thick,-latex] (0,0,0)--(\kkx,\kky,\kkz) node[pos=0.4, above]{${\bf{A}}_2$};
+
+
+%unit vectors
+\draw[thin,-latex] (\kkkx,\kkky,0)--(1.2*\kkkx,1.2*\kkky,0)  node[ below]{${\arho}_1$};
+\draw[thin,-latex] (\kkkx,\kkky,0)--(0.75*\kkkx,1.1*\kkky,0)  node[right]{${\atheta}_1$};
+\draw[thin,-latex] (\kkkx,\kkky,0)--(\kkkx,\kkky,0.2)  node[right]{${\az}$};
+
+\draw[thin,-latex] (\kkx,\kky,0)--(1.2*\kkx,1.2*\kky,0)  node[below right]{${\arho}_2$};
+\draw[thin,-latex] (\kkx,\kky,0)--(\kkx,1.3*\kky,0)  node[right]{${\atheta}_2$};
+\draw[thin,-latex] (\kkx,\kky,0)--(\kkx,\kky,0.2)  node[left]{${\az}$};
+%\draw[thin,-latex] (\kkkx,\kkky,0)--(\kkkx,\kkky,\kkkz)  node[pos=0.7, right]{${\bf{A}}_z$};
+%arc
+ \tdplotdrawarc[color=gray,-latex,tdplot_main_coords]{(0,0,0)}{0.3}{0}{45}{anchor=north west}{$\theta_1$};
+\tdplotdrawarc[color=gray,-latex,tdplot_main_coords]{(0,0,0)}{0.5}{0}{15}{anchor=north west}{$\theta_2$};
+\end{tikzpicture}
 \caption{نلکی محدد میں اکائی سمتیات \عددیء{\arho} اور \عددیء{\atheta} ہر نقطہ پر مختلف ہیں۔}
 \label{شکل_حقائق_نلکی_نظام_میں_اکائی_سمتیات_اٹل_نہیں}
 \end{figure}
@@ -131,7 +333,76 @@ x=\rho \cos \theta,\quad y=\rho \sin \theta
 %
 \begin{figure}
 \centering
-\includegraphics[height=2.5cm]{figBasicFactsCylindricalCoordinatesCircleAndCylinder}
+%\includegraphics[height=2.5cm]{figBasicFactsCylindricalCoordinatesCircleAndCylinder}
+\tdplotsetmaincoords{70}{110}
+\begin{tikzpicture}[scale=3,tdplot_main_coords]
+%CIRCLE
+\coordinate (O) at (0,0,0);
+\def\angleA{35};
+\def\angleB{130};
+\def\kradius{0.75};
+\def\height{0.4};
+%axis
+\draw[gray] (0,0,0) -- (1.3*\kradius,0,0) node[below] {$x$};
+\draw[gray] (0,0,0) -- (0,1.2*\kradius,0) node[right] {$y$};
+\draw[gray] (0,0,0) -- (0,0,0.75*\kradius) node[above] {$z$};
+
+%circle
+\tdplotdrawarc[gray, dashed]{(O)}{\kradius}{0}{360}{}{};
+%vectors
+\tdplotsinandcos{\sintheta}{\costheta}{\angleA}%
+\draw[thick,-latex] (0,0,0)--(\kradius * \costheta,\kradius * \sintheta,0);
+\tdplotsinandcos{\sintheta}{\costheta}{\angleB}%
+\draw[gray,-latex] (0,0,0)--(\kradius * \costheta,\kradius * \sintheta,0)  node[pos=0.5, above]{${\rho_0}$};
+%text
+\tdplotdrawarc[gray,->]{(0,0,0)}{0.35}{0}{\angleA}{anchor=north,color=black}{$\theta$};
+
+%CYLINDER
+%axis for cylinder
+\def\movey{1.8};
+\def\movex{-0.6};
+\coordinate (Oc) at (\movex,\movey,0);
+\coordinate (Occ) at (\movex,\movey,\height);
+
+\draw[gray,dashed] (Oc) -- ++(\kradius,0,0);  %hidden axis
+\draw[gray,dashed] (Oc) -- ++(0,\kradius,0);
+\draw[gray,dashed] (Oc) -- ++(0,0,\height);
+
+\draw[gray] (Oc)++(\kradius,0,0) -- ++(0.3,0,0)node[below ] {$x$};  %visible axis
+\draw[gray] (Oc)++(0,\kradius,0) -- ++(0,0.2,0)node[right ] {$y$};
+\draw[gray] (Oc)++(0,0,\height) -- ++(0,0,0.3)node[above] {$z$};
+
+%top and bottom of cylinder
+\tdplotdrawarc[gray, dashed]{(Oc)}{\kradius}{110}{290}{}{};   %bottom of cylinder
+\tdplotdrawarc[gray]{(Oc)}{\kradius}{-70}{110}{}{};
+\tdplotdrawarc[gray]{(Occ)}{\kradius}{0}{360}{}{};   %top of cylinder
+%left edge of cylinder
+\tdplotsinandcos{\sintheta}{\costheta}{-70}%
+\coordinate (leftLower) at (\movex+\kradius * \costheta,\movey+\kradius * \sintheta, 0);
+\coordinate (leftUpper) at (\movex+\kradius * \costheta,\movey+\kradius * \sintheta, \height);
+\draw[gray](leftLower)--(leftUpper);
+%showing height
+\coordinate (leftLowerL) at (\movex+\kradius * \costheta,0.95*\movey+\kradius * \sintheta, 0);
+\coordinate (leftUpperL) at (\movex+\kradius * \costheta,0.95*\movey+\kradius * \sintheta, \height);
+\draw[gray,<->](leftLowerL)--(leftUpperL) node[pos=0.5,left]{$z_0$};
+
+%right edge of cylinder
+\tdplotsinandcos{\sintheta}{\costheta}{110}%
+\coordinate (rightLower) at (\movex+\kradius * \costheta,\movey+\kradius * \sintheta, 0);
+\coordinate (rightUpper) at (\movex+\kradius * \costheta,\movey+\kradius * \sintheta, \height);
+\draw[gray](rightLower)--(rightUpper);
+%vector
+\tdplotsinandcos{\sintheta}{\costheta}{70}%
+\draw[thick,-latex](Oc)--++(\kradius * \costheta,\kradius * \sintheta, 0.8*\height); %main vector
+\draw[gray,dotted](Oc)--++(\kradius * \costheta,\kradius * \sintheta, 0)node[pos=0.5,black,below] {$\rho_0$}; %vector horizontal section lower
+\draw[gray,dotted](Oc)++(0,0,0.8*\height) --++(\kradius * \costheta,\kradius * \sintheta,0); %vector horizontal section upper
+\draw[gray,dotted](Oc)++(\kradius * \costheta,\kradius * \sintheta, 0)--++(0,0,0.8*\height); %vector vertical section
+%showing angle
+ \tdplotdrawarc[color=gray,-latex,tdplot_main_coords]{(Oc)}{0.3}{0}{70}{anchor=north,black}{$\theta$};
+%\tdplotdrawarc[color=gray,-latex,tdplot_main_coords]{(0,0,0)}{0.5}{0}{15}{anchor=north west}{$\theta_2$};
+
+\end{tikzpicture}%
+
 \caption{‫نلکی محدد میں دائرہ اور نلکی‬}
 \label{شکل_حقائق_نلکی_نظام_میں_دائرہ_اور_نلکی}
 \end{figure}
@@ -140,7 +411,60 @@ x=\rho \cos \theta,\quad y=\rho \sin \theta
 سطح پر کھڑا  اکائی سمتیہ سطح کا رخ دیتا ہے (شکل \حوالہ{شکل_حقائق_رقبہ_سمتیہ})۔  چونکہ کسی بھی سطح  کے دو اطراف ہوتے ہیں لہٰذا اس کے دو مخالف  رخ بیان کیے جا سکتے ہیں۔عموماً مسئلہ کو مدِ نظر رکھتے ہوئے  ان میں سے ایک رخ  کو سطح کا رخ  تصور کیا جاتا ہے۔ البتہ بند سطح، مثلاً  گیند، کے بیرونی رخ کو ہی سطح کا رخ تصور کیا جاتا ہے۔شکل \حوالہ{شکل_حقائق_رقبہ_سمتیہ} میں بالائی  سطح \سمتیہ{A_1}  کا رقبہ \عددیء{A_1} ہے اور اس کا رخ $\az$ ہے لہٰذا  \سمتیہ{A_1} سمتیہ کا طول  \عددیء{A_1}  اور رخ $\az$ ہو گا:
 \begin{figure}
 \centering
-\includegraphics[height=2.5cm]{figBasicFactsVectorArea}
+%\includegraphics[height=2.5cm]{figBasicFactsVectorArea}
+\begin{tikzpicture}
+\pgfmathsetmacro{\xst}{0.75}            %start points, lower left corner
+ \pgfmathsetmacro{\yst}{0.5}
+ \pgfmathsetmacro{\xdel}{0.75}           %change from start point
+ \pgfmathsetmacro{\ydel}{0.5}
+%front of cube
+\coordinate (n1) at (\xst,\yst);
+\coordinate (n2) at (\xst+\xdel,\yst);
+\coordinate (n3) at (\xst+\xdel,\yst+\ydel);
+\coordinate (n4) at (\xst,\yst+\ydel);
+%back of cube
+\coordinate (n5) at (\xst+0.5*\xdel,\yst+0.5*\ydel);
+\coordinate (n6) at (\xst+1.5*\xdel,\yst+0.5*\ydel);
+\coordinate (n7) at (\xst+1.5*\xdel,\yst+1.5*\ydel);
+\coordinate (n8) at (\xst+0.5*\xdel,\yst+1.5*\ydel);
+%
+%face's centres
+\coordinate (fr) at (\xst+1.25*\xdel,\yst+0.75*\ydel); %right face
+\coordinate (ft) at (\xst+0.75*\xdel,\yst+1.25*\ydel); %right face
+%axis
+\draw[-stealth,gray] (0,0)--(2,0) node[right]{$y$};
+\draw[-stealth,gray] (0,0)--(0,2) node[above]{$z$};
+\draw[-stealth,gray] (0,0)--(-0.5,-0.5) node[below]{$x$};
+
+%point charge at centre of cube
+%\draw[fill] (\xst+0.75*\xdel,\yst+0.75*\ydel) circle (0.2mm);
+%flux density
+%\node[right] at (1.75,1.75) {${\bf{D}}(x_0,y_0,z_0)=D_{x0}{\bf{a}}_x+D_{y0} {\bf{a}}_y+D_{z0} {\bf{a}}_z$};
+%\draw[-stealth] (1.75,1.75) to [out=180,in=90] (\xst+0.75*\xdel,\yst+0.75*\ydel);
+%back edges of cube
+\draw[very thin,gray!10] (n5)--(n6);
+\draw[very thin,gray!10] (n5)--(n1);
+\draw[very thin,gray!10] (n5)--(n8);
+%front,right and top of cube
+\shade[opacity=0.5,right color=gray!10, left color=black!50] (n1)--(n2) --(n3)--(n4)--cycle;
+\shade[opacity=0.5,right color=gray!70,left color=gray!10] (n2)--(n6)--(n7)--(n3)--cycle;
+\shade[opacity=0.5,bottom color=gray!10, top color=black!80] (n4)--(n3)--(n7)--(n8)--cycle;
+
+\path (n2)--(n6) node [black,right,pos=0.3]{$w$};
+\path (n1)--(n2) node[black,below,pos=0.5]{$l$};
+\path (n1)--(n4) node [black,left,pos=0.5]{$h$};
+
+%--top and right face vectors
+\draw[->] (fr)--++(1*\xdel,0) node [right] {${\bf{A}}_2$};
+\draw[->] (ft)--++(0,1.5*\ydel) node [right] {${\bf{A}}_1$};
+%aligned equations
+\node[anchor=east] at (7,0){$
+\begin{aligned}
+{\bf{A}}_1&=A_1 {\bf{a}}_{A1}=w l {\bf{a}}_z\\
+{\bf{A}}_2&=A_2 {\bf{a}}_{A2}=w h {\bf{a}}_y
+\end{aligned}$
+};
+\end{tikzpicture}
 \caption{سمتیہ رقبہ کا تعارف‬}
 \label{شکل_حقائق_رقبہ_سمتیہ}
 \end{figure}
@@ -181,7 +505,65 @@ A=wh
 %
 \begin{figure}
 \centering
-\includegraphics[height=2.5cm]{figBasicFactsCrossSectionalArea}
+%\includegraphics[height=2.5cm]{figBasicFactsCrossSectionalArea}
+\begin{tikzpicture}
+\pgfmathsetmacro{\xst}{0.75}            %start points, lower left corner
+ \pgfmathsetmacro{\yst}{0.5}
+ \pgfmathsetmacro{\xdel}{0.75}           %change from start point
+ \pgfmathsetmacro{\ydel}{0.5}
+\coordinate(O) at (3,0,0);
+%front of cube
+\coordinate (n1) at (\xst,\yst);
+\coordinate (n2) at (\xst+\xdel,\yst);
+\coordinate (n3) at (\xst+\xdel,\yst+\ydel);
+\coordinate (n4) at (\xst,\yst+\ydel);
+%side view
+\draw[gray](0,0,0)--(2,0,0)--(2,0.75,0)--(0,0.75,0)--cycle;
+\draw[gray,dashed](1.5,-0.25,0)--(1.5,1.4,0);
+%angle of cut
+\draw [<->,domain=0:90] plot ({1.5+0.2*cos(\x)}, {0.75+0.2*sin(\x)}) node [right] at (1.6,1.1){$90^\circ$};
+\node at (1.5,1.6,0) {تراش عمودی};
+%unit vectors
+\draw[-latex](0,0,0)--(0.5,0,0) node[below]{${\bf{a}}_y$};
+\draw[-latex](0,0,0)--(0,0.5,0) node[left]{${\bf{a}}_z$};
+%axis
+\draw[gray,dashed](O)--++(1.75,0);
+\draw[gray,dashed](O)--++(-0.25,-0.25);
+\draw[gray,dashed](O)--++(0,0.75);
+\draw[-stealth,gray] (O)++(1.75,0)--++(0.5,0) node[right]{$y$};
+\draw[-stealth,gray] (O)++(0,0.75)--++(0,0.5) node[above]{$z$};
+\draw[-stealth,gray] (O)++(-0.25,-0.25)--++(-0.25,-0.25) node[below]{$x$};
+%rod 3d
+\draw[black](O)++(-0.25,-0.25)--++(1.75,0)--++(0,0.75)node[pos=0.6,left]{$h$}--++(-1.75,0);
+\shade[opacity=0.5,right color=black!10, left color=black!80](O)++(-0.25,-0.25)++(1.75,0)--++(0.25,0.25) node[pos=0.3, right]{$w$}--++(0,0.75) --++(-0.25,-0.25)--cycle; %right face
+\draw(O)++(1.75,0.75)--++(-1.75,0);
+\draw(O)++(-0.25,-0.25)++(1.75,0)--++(0.25,0.25) node[pos=0.3, right]{$w$}--++(0,0.75) --++(-0.25,-0.25)--cycle; %right face
+\draw(O)++(1.75,0.75)--++(-1.75,0);
+
+\coordinate(textarea) at (5.75,0.75);
+\coordinate(textvector) at (5.5,1.5);
+\draw[gray,thin,<-] (O)++(1.625,0.16) to [out=0,in=270] (textarea);
+%text
+\node[anchor = south] at (textarea) {تراش عمودی سطح};
+\node at (textvector){${\bf{A}}=w h {\bf{a}}_y$};
+%\draw[black,dashed](O)++(-0.25,-0.25)--++(-0.5,0);
+%point charge at centre of cube
+%\draw[fill] (\xst+0.75*\xdel,\yst+0.75*\ydel) circle (0.2mm);
+%flux density
+%\node[right] at (1.75,1.75) {${\bf{D}}(x_0,y_0,z_0)=D_{x0}{\bf{a}}_x+D_{y0} {\bf{a}}_y+D_{z0} {\bf{a}}_z$};
+%\draw[-stealth] (1.75,1.75) to [out=180,in=90] (\xst+0.75*\xdel,\yst+0.75*\ydel);
+%back edges of cube
+
+%front,right and top of cube
+%\path (n2)--(n6) node [black,right,pos=0.3]{$w$};
+
+%\node[anchor=east] at (7,0){$
+%\begin{aligned}
+%{\bf{A}}_1&=A_1 {\bf{a}}_{A1}=w l {\bf{a}}_z\\
+%{\bf{A}}_2&=A_2 {\bf{a}}_{A2}=w h {\bf{a}}_y
+%\end{aligned}$
+%};
+\end{tikzpicture}
 \caption{رقبہ  عمودی تراش}
 \label{شکل_حقائق_رقبہ_عمودی}
 \end{figure}
@@ -351,7 +733,44 @@ $\az \times \arho=(1)(1) \sin 90 \atheta =\atheta $
 %
 \begin{figure}
 \centering
-\includegraphics[height=2.5cm]{figBasicFactsVectorCrossProduct}
+%\includegraphics[height=2.5cm]{figBasicFactsVectorCrossProduct}
+\begin{tikzpicture}
+\coordinate (O) at (4,0,0);
+%\coordinate (c) at  ($(a) ! 0.25 ! (b)$);
+%\coordinate (d) at  (c)--+($(c)-(O)$);
+ %
+%axis
+\draw[gray](3.5,0)--(4.5,0)node[right]{$x$};
+\draw[gray](4,-0.5)--(4,0.5)node[above]{$y$};
+%force and moment arm
+\draw[-latex] (O)--++(-45:2) node[pos=0.4, below] {${\bf{L}}$};
+%\draw[gray] (O)++(-45:2)--++(-45:0.3);
+\draw[-latex] (O)++(-45:2)--++(90:0.75) node[right]{${\bf{F}}=F{\bf{a}}_y$};
+%\draw (O)++(-45:2)++(0,-0.3) node[below left] {الف};
+%\draw (O)++(0,0.1) node[above] {محور};
+%
+\coordinate (O) at (0,0,0);
+%\coordinate (c) at  ($(a) ! 0.25 ! (b)$);
+%\coordinate (d) at  (c)--+($(c)-(O)$);
+ %
+ \pgfmathsetmacro{\SinValue}{2*sin(45)}
+\pgfmathsetmacro{\CosValue}{-2*cos(45)}
+%
+\draw[-latex] (O)--++(-45:2) node[pos=0.4, above right] {${\bf{L}}$};
+\draw[gray] (O)++(-45:2)--++(-45:0.75);                       %extending moment arm vector
+\draw[-latex] (O)++(-45:2)--++(90:0.75) node[right]{${\bf{F}}$};
+%
+\draw[gray,-latex] (O)--++(0,\CosValue) node[pos=0.5, left]{$L \cos \theta$};             %moment arm components
+\draw[gray,-latex] (O)++(0,\CosValue)--++(\SinValue,0)node[pos=0.5, below]{$L \sin \theta$};
+%
+\draw[domain=-90:-45] plot ({0.4*cos(\x) },{0.4*sin(\x)});
+\node at (0.2,-0.6) {$\theta$};
+%
+\coordinate (c1) at (-45:2);
+%($(<center>) + (<init angle>:<radius>)$) arc (start angle:end angle:radius);
+\draw[]  ($(c1) + (-45:0.3)$) arc (-45:90:0.3);
+\node at (2.2,-1.3) {$\theta_{LF}$};
+\end{tikzpicture}
 \caption{کارتیسی نظام میں قوت مروڑ کا حل}
 \label{شکل_حقائق_کارتیسی_مروڑ_کا_حل}
 \end{figure}
@@ -423,7 +842,52 @@ W &= (F \ax) \cdot (L \cos \theta \ax +L \sin \theta \ay)\\
 %
 \begin{figure}
 \centering
-\includegraphics[height=2.5cm]{figBasicFactsWorkAsDotProduct}
+%\includegraphics[height=2.5cm]{figBasicFactsWorkAsDotProduct}
+\begin{tikzpicture}
+%\draw[step=1,gray,thick] (0,0) grid (2,2);
+%\draw[step=0.1,gray,thin] (0,0) grid (2,2);
+\coordinate (O) at (0,0);
+\def\radius{2};
+\def\angle{30};
+%\coordinate (c) at  ($(a) ! 0.25 ! (b)$);
+%\coordinate (d) at  (c)--+($(c)-(O)$);
+ %
+\pgfmathsetmacro{\SinValue}{\radius*sin(\angle)}
+\pgfmathsetmacro{\CosValue}{\radius*cos(\angle)}
+
+\draw[-latex] (O)--(\angle:\radius) node[above left]{{\bf{L}}};
+\draw[gray,-latex] (O)--(0:\CosValue) node[pos=0.5,below]{$L \cos \theta$};
+\draw[gray,-latex] (O)++(0:\CosValue)--++(90:\SinValue) node[pos=0.5,right]{$L \sin \theta$};
+
+\draw[thick] (O)++(\angle:\radius/2)--++(\angle:0.3)--++(\angle+90:0.2)--++(\angle+90+90:0.3)--cycle;
+%\coordinate (p) at ${(O)++(\angle:\radius/2)}!0.5!{}
+%($(<center>) + (<init angle>:<radius>)$) arc (start angle:end angle:radius);
+\draw[gray]  ($(O) + (0:0.4)$) arc (0:30:0.4);
+\node[gray] at (0.7,0.2) {$\theta$};
+%force
+\draw[latex-](0.8,0.6)--(-0.4,0.6)node[left]{${\bf{F}}=F {\bf{a}}_x$};
+%load
+\node[above] at (0.3,1.3) {بار};
+\draw[thin,gray,->] (0.3,1.3) to [out=-90,in=120] (0.9,0.75);
+%unit vectors
+\coordinate(UV) at (-4,-0.3);
+\draw[-latex] (UV)--++(0.4,0) node[right]{${\bf{a}}_x$};
+\draw[-latex] (UV)--++(0,0.4)node[above]{${\bf{a}}_y$};
+ %--------------------------------------------
+ %\pgfmathsetmacro{\SinValue}{2*sin(45)}
+%\pgfmathsetmacro{\CosValue}{-2*cos(45)}
+%
+%\draw[gray,-latex] (O)--++(0,\CosValue) node[pos=0.5, left]{$L \cos \theta$};             %moment arm components
+%\draw[gray,-latex] (O)++(0,\CosValue)--++(\SinValue,0)node[pos=0.5, below]{$L \sin \theta$};
+%
+%\draw[domain=-90:-45] plot ({0.4*cos(\x) },{0.4*sin(\x)});
+%\node at (0.2,-0.6) {$\theta$};
+%
+%\coordinate (c1) at (-45:2);
+%($(<center>) + (<init angle>:<radius>)$) arc (start angle:end angle:radius);
+%\draw[]  ($(c1) + (-45:0.3)$) arc (-45:90:0.3);
+%\node at (2.2,-1.3) {$\theta_{LF}$};
+\end{tikzpicture}
 \caption{کارتیسی نظام میں کام}
 \label{شکل_حقائق_کارتیسی_کام}
 \end{figure}
@@ -470,7 +934,22 @@ B_{\textup{موثر}}=\sqrt{B^2_{\textup{اوسط}}}=\frac{B_0}{\sqrt{2}}
 %
 \begin{figure}
 \centering
-\includegraphics{figBasicFactsCosineWave}
+%\includegraphics{figBasicFactsCosineWave}
+\begin{tikzpicture}
+ \begin{axis}[
+     clip=false,
+     xmin=-3/2*pi,xmax=3/2*pi,
+     %axis lines=left,
+     %axis x line=middle,
+     %axis y line=left,
+     xtick={-6.28,-4.71,-3.14,-1.57,0,1.57,3.14,4.71,6.28},
+     xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{\pi}{2}$,$0$, $\frac{\pi}{2}$,$\pi$,$\frac{3}{2}\pi$,$2\pi$},
+  ytick={-1,0,1},
+     yticklabels={$-B_0$,$0$,$B_0$}
+     ]
+      \addplot[domain=-3/2*pi:3/2*pi,samples=200,black]{cos(deg(x))}node[right,pos=0.6]{$B_0 \cos \theta $};
+    \end{axis}
+\end{tikzpicture}
 \caption{کوسائن موج}
 \label{شکل_حقائق_کوسائن_موج}
 \end{figure}
@@ -480,7 +959,73 @@ B_{\textup{موثر}}=\sqrt{B^2_{\textup{اوسط}}}=\frac{B_0}{\sqrt{2}}
 	ہم نلکی کے بیرونی سطح پر رقبہ  \عددیء{\Delta A} لیتے ہیں جس کی چوڑائی \عددیء{\rho \Delta\theta}  اور لمبائی \عددیء{l} ہے۔یہ سطح \عددیء{abcd} ہے۔\عددیء{\Delta \theta} کو نہایت کم کرتے ہوئے سطح کا رقبہ \عددیء{\rho l \dif \theta} لکھا جا سکتا ہے۔اس سطح پر \عددیء{B} کی مقدار محوری لمبائی  کی جانب تبدیل نہیں ہو رہی۔سطح \عددیء{\Delta A}  پر \عددیء{\Delta \phi=B \Delta A} ہو گا اور کل \عددیء{\phi} تکمل کی مدد سے یوں حاصل ہو گا۔
 \begin{figure}
 \centering
-\includegraphics{figBasicFactsCylindricalSurfaceIntegral}
+%\includegraphics{figBasicFactsCylindricalSurfaceIntegral}
+\tdplotsetmaincoords{70}{110}
+\begin{tikzpicture}[scale=3,tdplot_main_coords]
+
+%CIRCLE
+\coordinate (O) at (0,0,0);
+\def\angleA{35};
+\def\angleB{45};
+\def\kradius{0.75};
+\def\height{0.75};
+
+%vectors
+%\tdplotsinandcos{\sintheta}{\costheta}{\angleA}%
+%\draw[thick,-latex] (0,0,0)--(\kradius * \costheta,\kradius * \sintheta,0);
+%\tdplotsinandcos{\sintheta}{\costheta}{\angleB}%
+%\draw[gray,-latex] (0,0,0)--(\kradius * \costheta,\kradius * \sintheta,0)  node[pos=0.5, above]{${\rho_0}$};
+%text
+%\tdplotdrawarc[gray,->]{(0,0,0)}{0.35}{0}{\angleA}{anchor=north,color=black}{$\theta$};
+
+%CYLINDER
+%axis for cylinder
+\coordinate (O) at (0,0,0);
+\coordinate (Otop) at (0,0,\height);
+
+\draw[gray,dashed] (O) -- ++(\kradius,0,0);  %hidden axis
+\draw[gray,dashed] (O) -- ++(0,\kradius,0);
+\draw[gray,dashed] (O) -- ++(0,0,\height);
+
+\draw[gray] (O)++(\kradius,0,0) -- ++(0.3,0,0)node[below ] {$x$};  %visible axis
+\draw[gray] (O)++(0,\kradius,0) -- ++(0,0.2,0)node[right ] {$y$};
+\draw[gray] (O)++(0,0,\height) -- ++(0,0,0.3)node[above] {$z$};
+
+%top and bottom of cylinder
+\tdplotdrawarc[gray, dashed]{(O)}{\kradius}{110}{290}{}{};   %bottom of cylinder
+\tdplotdrawarc[gray]{(O)}{\kradius}{-70}{110}{}{};
+\tdplotdrawarc[gray]{(Otop)}{\kradius}{0}{360}{}{};   %top of cylinder
+%left edge of cylinder
+\tdplotsinandcos{\sintheta}{\costheta}{-70}%
+\coordinate (leftLower) at (\kradius * \costheta,\kradius * \sintheta, 0);
+\coordinate (leftUpper) at (\kradius * \costheta,\kradius * \sintheta, \height);
+\draw[gray](leftLower)--(leftUpper);
+%radial solid line
+\tdplotsinandcos{\sinthetaA}{\costhetaA}{\angleA}%
+\draw[gray] (O)--++(\kradius * \costhetaA,\kradius * \sinthetaA,0)node[below left]{$c$};   %lower radial section
+\draw[gray] (Otop)--++(\kradius * \costhetaA,\kradius * \sinthetaA,0)node[below left]{$a$};  %upper radial section
+\draw[black](\kradius * \costhetaA,\kradius * \sinthetaA,0)--(\kradius * \costhetaA,\kradius * \sinthetaA,\height);     %vertical section
+\draw[gray,dashed] (O)++(\kradius * \costhetaA,\kradius * \sinthetaA,0)--++(0.8*\kradius * \costhetaA,0.8*\kradius * \sinthetaA,0);   %lower radial extension
+%radial dashed line
+\tdplotsinandcos{\sinthetaB}{\costhetaB}{\angleB}%
+\draw[gray,dashed] (O)--++(\kradius * \costhetaB,\kradius * \sinthetaB,0)node[above right]{$d$}; ; %lower radial section
+\draw[gray,dashed] (Otop)--++(\kradius * \costhetaB,\kradius * \sinthetaB,0) node[pos=0.5,above right,black]{$\rho$} node[below right,gray]{$b$}; %upper radial section
+\draw[black,dashed](\kradius * \costhetaB,\kradius * \sinthetaB,0)--(\kradius * \costhetaB,\kradius * \sinthetaB,\height);    %vertical section
+\draw[gray,dashed] (O)++(\kradius * \costhetaB,\kradius * \sinthetaB,0)--++(0.8*\kradius * \costhetaB,0.8*\kradius * \sinthetaB,0);   %lower radial extension
+%height is l
+\coordinate (leftLowerL) at (0,-1, 0);
+\coordinate (leftUpperL) at (0,-1, \height);
+\path (leftLowerL)--(leftUpperL) node[pos=0.4,right]{$l$};
+
+%right edge of cylinder
+\tdplotsinandcos{\sintheta}{\costheta}{110}%
+\coordinate (rightLower) at (\kradius * \costheta,\kradius * \sintheta, 0);
+\coordinate (rightUpper) at (\kradius * \costheta,\kradius * \sintheta, \height);
+\draw[gray](rightLower)--(rightUpper);
+%angles
+\tdplotdrawarc[color=gray,-latex,tdplot_main_coords]{(O)}{0.25}{0}{35}{anchor=north,black}{$\theta$};
+\tdplotdrawarc[color=gray,-latex,tdplot_main_coords]{(O)}{1.25}{35}{45}{anchor=north,black}{$\Delta \theta$};
+\end{tikzpicture}
 \caption{نلکی کی بیرونی سطح پر متغیرہ کا تکمل کل مقدار دے گی۔}
 \label{شکل_حقائق_نلکی_سطحی_تکمل}
 \end{figure}
@@ -501,7 +1046,40 @@ B_{\textup{موثر}}=\sqrt{B^2_{\textup{اوسط}}}=\frac{B_0}{\sqrt{2}}
 \حصہ{ مرحلی سمتیہ}
 \begin{figure}
 \centering
-\includegraphics{figBasicFactsPhasors}
+%\includegraphics{figBasicFactsPhasors}
+\begin{tikzpicture}[scale=3]
+\coordinate (Oa) at (0,0);
+%phasors
+\draw[-latex] (Oa)--++(0:1) node[right]{${\bf{\hat{V}}}=V e^{j 0}$};
+\draw[-latex] (Oa)--++(30:1.5) node[above]{${\bf{\hat{I}}}_1=I_1 e^{j \frac{\pi}{6}}$};
+\draw[-latex] (Oa)--++(-45:0.5) node[below]{${\bf{\hat{I}}}_2=I_2 e^{-j \frac{\pi}{4}}$};
+%
+\draw[gray]
+  % radius=0.3, initial=0, final=30
+  %([shift={(0:0.3)}]c1) arc (0:90:0.3)
+  ($(0,0) + (0:0.4)$) arc (0:30:0.4) node[black] at (15:0.55) {$30^\circ$};
+\draw[gray]
+  % radius=0.3, initial=0, final=90
+  %([shift={(0:3mm)}]c1) arc (0:90:3mm)
+  ($(0,0) + (0:0.3)$) arc (0:-45:0.3) node[black] at (-20:0.45){$45^\circ$};
+%-------
+\coordinate (Ob) at (2,0);
+%phasors
+\draw[gray,dashed] (Ob)--++(0:1) node [right] {لکیر افقی};
+\draw[-latex] (Ob)--++(60:1) node[above]{${\bf{\hat{V}}}=20 e^{j \frac{\pi}{3}}$};
+\draw[-latex] (Ob)--++(-90:0.75) node[below]{${\bf{\hat{I}}}=15 e^{-j \frac{\pi}{2}}$};
+%angles
+\draw[gray]
+  % radius=0.3, initial=0, final=30
+  %([shift={(0:0.3)}]c1) arc (0:90:0.3)
+  ($(Ob) + (0:0.4)$) arc (0:60:0.4);
+\draw  (Ob)++(30:0.5)node {$\frac{\pi}{3}$};
+\draw[gray]
+  % radius=0.3, initial=0, final=90
+  %([shift={(0:3mm)}]c1) arc (0:90:3mm)
+  ($(Ob) + (0:0.3)$) arc (0:-90:0.3);
+\draw  (Ob)++(-45:0.4)node {$\frac{\pi}{2}$};
+\end{tikzpicture}
 \caption{مرحلی سمتیہ}
 \label{شکل_حقائق_دوری_سمتیات}
 \end{figure}
