@@ -19,7 +19,78 @@
 بڑے معاصر مشین میں میدانی یک سمتی برقی رو عموماً ایک بدلتی رو برقی جنریٹر سے حاصل کی جاتی ہے جو معاصر مشین کے دھرے پر ہی نسب ہوتی ہے اور اس کے ساتھ یکساں طور پر گھومتی ہے۔اس چھوٹے جنریٹر کی برقی دباو کو دھرے پر ہی نسب الیکٹرانکس کی مدد سے یک سمتی برقی دباو میں تبدیل کیا جاتا ہے۔ یوں سرک چھلے کی ضرورت نہیں رہتی۔سرک چھلے رگڑ کی وجہ سے خراب ہوتے ہیں جس کی وجہ سے معاصر مشین کو مرمت کی خاطر بند کرنا پڑتا ہے جو بہت مہنگا پڑتا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figSynchronousSlipRings}
+%\includegraphics{figSynchronousSlipRings}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%
+\pgfmathsetmacro{\sY}{1}
+\pgfmathsetmacro{\sX}{0.4}
+\pgfmathsetmacro{\sW}{0.5}
+\pgfmathsetmacro{\bH}{1}
+\pgfmathsetmacro{\g}{0.05}
+\pgfmathsetmacro{\cH}{1.5}
+\pgfmathsetmacro{\cW}{3}
+\pgfmathsetmacro{\cG}{0.1}
+\pgfmathsetmacro{\cArm}{1}
+%
+\pgfmathsetmacro{\shiftX}{2cm}
+%
+%SLIP RING
+%\draw (0,0) ellipse (\sX cm and \sY cm);        %moved to end to cover part of bush
+%\draw (0,0) ellipse (0.7*\sX cm and 0.7*\sY cm);
+\draw(\sW,0)++(-90:\sX cm and \sY cm) arc (-90:90:\sX cm and \sY cm);
+\draw(0,\sY)--++(\sW,0);
+\draw(0,-\sY)--++(\sW,0);
+%%BUSH
+\path(-135:\sX cm +\g cm and \sY cm+\g cm)++(0,-\bH)coordinate(bushLowerLeft);
+\draw[fill=white](-135:\sX cm +\g cm and \sY cm+\g cm)coordinate(arcS) arc (-135:-45:\sX cm +\g cm and \sY cm+\g cm)coordinate(arcE) --++(\sW,0)--++(0,-\bH)coordinate(bushConnectionA)--++(-\sW,0)--(bushLowerLeft)--cycle;
+\draw(arcE)--++(0,-\bH);
+\draw(arcS)--++(\sW,0);   %this is the invisible side and needs to be covered
+%SLIP RING
+\draw[fill=white] (0,0) ellipse (\sX cm and \sY cm);   %shade a portion of the bush
+\draw (0,0) ellipse (0.7*\sX cm and 0.7*\sY cm);
+%ONE TURN COIL
+\draw (0,0)++(0,\cG/2)coordinate(coilS) --++(-\cArm-\sX,0)--++(0,\cH/2-\cG) to [short,i_={$I_r$}] ++(-\cW,0)--++(0,-\cH)  to [short,i_={$I_r$}] ++(\cW,0)--++(0,\cH/2-\cG/2)--++(\cArm+0.13,0)coordinate(coilE);
+\draw[fill] (coilE) circle (1pt);
+\draw(coilS)--++(0.29,0)coordinate(coilSS);
+\draw[gray,dashed] (coilSS)--++(\sW+0.1,0)coordinate(coilSSS);
+%\draw(coilSSS)--++(1 cm,0);    %gets covered by the second slip ring so moved to end
+%
+%external wire to bush
+\draw[fill] (bushConnectionA) circle (1pt);
+\draw[thick] (bushConnectionA) to [out=-35,in=180] ++(3,-0.75)coordinate(negCon) to [short,i_={$I_r$,-o}]++(1,0);
+%urdu text
+\draw node at (-3,0){\RL{گھومتا لچھا}};
+%===============
+\begin{scope}[xshift=\shiftX]
+%\draw[gray,thick](-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](-2,-2) grid (2,2);
+%SLIP RING
+\draw(\sW,0)++(-90:\sX cm and \sY cm) arc (-90:90:\sX cm and \sY cm);
+\draw(0,\sY)--++(\sW,0);
+\draw(0,-\sY)--++(\sW,0);
+%BUSH
+\path(-135:\sX cm +\g cm and \sY cm+\g cm)++(0,-\bH)coordinate(bushLowerLeft);
+\draw[fill=white](-135:\sX cm +\g cm and \sY cm+\g cm)coordinate(arcS) arc (-135:-45:\sX cm +\g cm and \sY cm+\g cm)coordinate(arcE) --++(\sW,0)--++(0,-\bH)coordinate(bushConnectionB)--++(-\sW,0)--(bushLowerLeft)--cycle;
+\draw(arcE)--++(0,-\bH);
+\draw(arcS)--++(\sW,0);   %this is the invisible side and needs to be covered
+%SLIP RING
+\draw[fill=white] (0,0) ellipse (\sX cm and \sY cm);   %shade a portion of the bush
+\draw (0,0) ellipse (0.7*\sX cm and 0.7*\sY cm);
+%external wire to bush
+\draw[fill] (bushConnectionB) circle (1pt);
+\draw[thick] (bushConnectionB) to [out=-35,in=0] ++(1,-0.25) to [short,i<={$I_r$},-o]++(1,0);
+
+\draw[stealth-](0.8,0.7) to [out=0,in=210] ++(1,-0.5)node[right]{\RL{سرک چھلا}};
+\end{scope}
+%
+\draw(coilSSS)--++(0.84 cm,0)coordinate(coilSSSS);
+\draw[fill] (coilSSSS) circle (1pt) ;
+%urdu text
+\draw[stealth-] (bushConnectionB)++(0,\bH/2) to [out=0,in=210] ++(1,0.5)node[right]{\RL{کاربن بش}};
+\end{tikzpicture}%
 \caption{کاربن بُش اور سرک چھلوں سے لچھے تک برقی رو پہنچایا گیا ہے۔}
 \label{شکل_معاصر_سرک_چھلے}
 \end{figure}
@@ -48,7 +119,46 @@
 ہم فرض کرتے ہیں کہ مشین معاصر رفتار \عددیء{\omega} سے گھوم رہی ہے۔ اس طرح اگر لمحہ \عددیء{t=0} پر مرحلہ\حاشیہب{phase} \عددیء{a} اور گھومتے لچھے کے مقناطیسی محور ایک ہی سمت میں ہوں تب کسی بھی لمحہ \عددیء{ت} پر ان کے مابین زاویہ \عددیء{\theta=\omega t} ہو گا۔
 \begin{figure}
 \centering
-\includegraphics{figSynchronousThreePhaseTwoPole}
+%\includegraphics{figSynchronousThreePhaseTwoPole}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%STATOR
+\stator{6}{30}
+\slotDot{90,210,330}
+\slotCross{-90,-210,-330}
+\slotName{90/a/right,210/b/left,330/c/right}
+\slotName{-90/a'/right,-210/c'/left,-330/b'/right}
+%ROTOR
+\pgfmathsetmacro{\pTheta}{160}
+\pgfmathsetmacro{\pX}{0}
+\pgfmathsetmacro{\pY}{0.3}
+\pgfmathsetmacro{\pTilt}{20}
+\rotor{2}{\pTilt}
+%dot
+\draw (90+\pTilt:\rR-2/3*\delR) circle (2.5pt);
+\draw[fill] (90+\pTilt:\rR-2/3*\delR) circle (1.5pt);
+%cross
+\draw (-90+\pTilt:\rR-2/3*\delR) circle (2.5pt);
+\draw (-90+\pTilt:\rR-2/3*\delR)++(45:2.2pt)--++(-135:4.4pt);
+\draw (-90+\pTilt:\rR-2/3*\delR)++(-45:2.2pt)--++(135:4.4pt);
+%rotor name
+\draw (90+\pTilt:\rR-2.2*\delR) node {$m$};
+\draw (-90+\pTilt:\rR-2.2*\delR) node {$m'$};
+%arrows
+\draw[-latex](\pTilt:1.2*\sRo)--++(\pTilt:2cm) node[right] {\RL{میدانی لچھے کا مقناطیسی محور}};
+\draw[-latex](0:1.2*\sRo)--++(0:1.5 cm)node[right] {\RL{$a$ لچھے کا مقناطیسی محور}};
+\draw node[align=right,right] at (2.5,-1.5){\RL{$\rho$ خلائی درز کا اوسط رداس اور} \\ \RL{$l$ مشین کی محوری لمبائی ہے}};
+\draw[gray,-stealth](0:1.2*\sRo)++(0:0.5cm) arc (0:\pTilt:1.2*\sRo cm+0.5cm);
+\draw(\pTilt/2:1.2*\sRo cm+0.5cm) node[gray,fill=white]{$\theta=\omega t$};
+\draw[gray,-stealth](\pTilt:1.2*\sRo cm+0.75cm) arc (\pTilt:\pTilt+30:1.2*\sRo cm +0.75 cm);
+\draw (\pTilt+15:1.2*\sRo cm +0.75 cm) node[gray,fill=white]{$\theta_p$};
+%text
+\draw[gray,stealth-stealth](0,0)--++(180:\rR+\gap/2)node[pos=0.5,fill=white]{$\rho$};
+\draw[gray,stealth-] (240:\rR)--++(60:0.3 cm);
+\draw[gray,stealth-] (240:\rR+\gap)--++(240:0.3 cm)--+(-1,-0.5)node[left]{$l_g$};
+\end{tikzpicture}%
 \caption{تین مرحلہ، دو قطب معاصر مشین۔}
 \label{شکل_معاصر_تین_دور_دو_قطب}
 \end{figure}
@@ -196,14 +306,54 @@ E_{am,rms}=\frac{\omega L_{am0} I_m}{\sqrt{2}}=4.44 f L_{am0} I_m
 مساوات  \حوالہ{مساوات_معاصر_دباو_مساوی_مزاحمت_گھتاو_اور_پیدا_دباو} کو ایک برقی دور سے ظاہر کیا جا سکتا ہے جسے شکل \حوالہ{شکل_معاصر_موٹر_کا_مساوی_دور}  میں دکھایا گیا ہے۔کسی بھی برقی آلہ پر جب برقی دباو لاگو کیا جائے تو برقی رو کی مثبت سمت لاگو برقی دباو کے مثبت سرے سے باہر کی جانب کو ہوتی ہے۔لہٰذا اس شکل میں برقی رو \عددیء{i_a} لاگو برقی دباو \عددیء{v_a} کی مثبت سرے سے باہر کی جانب کو ہے۔یہ شکل ایک موٹر کو ظاہر کرتی ہے جہاں موٹر کے مثبت سرے پر برقی رو اندر کی جانب کو ہوتا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figSynchronousMotorModel}
+%\includegraphics{figSynchronousMotorModel}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+\draw (0,0) to [short,i={$i_a$},o-] ++(1,0) to [resistor,l={$R_a$}] ++(2,0) to [inductor,l={$L_s$}] ++(2,0) to [sinusoidal voltage source] ++(0,-2) to [short,-o](0,-2);
+\draw node at (0,-1){$
+\begin{aligned}
+&+\\
+&v_a\\
+&-
+\end{aligned} $};
+%
+\draw node at (6,-1){$
+\begin{aligned}
+&+\\
+&e_{am}\\
+&-
+\end{aligned} $};
+\end{tikzpicture}
 \caption{معاصر موٹر کا مساوی دور یا ریاضی نمونہ۔}
 \label{شکل_معاصر_موٹر_کا_مساوی_دور}
 \end{figure}
 اگر موٹر کی بجائے ایک معاصر جنریٹر کی بات ہوتی تو یہ جنریٹر برقی دباو پیدا کرتا اور برقی رو اس جنریٹر کی مثبت سرے سے باہر کی جانب کو ہوتی۔ اس صورت میں ہمیں شکل \حوالہ{شکل_معاصر_موٹر_کا_مساوی_دور}  کی جگہ شکل \حوالہ{شکل_معاصر_جنریٹر_کا_مساوی_دور}  ملے گا۔اس شکل کی مساوات اسی شکل سے یوں حاصل ہوتی ہے۔
 \begin{figure}
 \centering
-\includegraphics{figSynchronousGeneratorModel}
+%\includegraphics{figSynchronousGeneratorModel}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+\draw (0,0) to [resistor,l={$R_a$}] ++(2,0) to [inductor,l={$L_s$}] ++(2,0) to [short,,i={$i_a$},-o] ++(1,0); 
+\draw (5,-2) to [short,o-] (0,-2) to [sinusoidal voltage source] (0,0);
+
+\draw node at (-1,-1){$
+\begin{aligned}
+&+\\
+&e_{am}\\
+&-
+\end{aligned} $};
+%
+\draw node at (5,-1){$
+\begin{aligned}
+&+\\
+&v_a\\
+&-
+\end{aligned} $};
+\end{tikzpicture}
 \caption{معاصر جنریٹر کا مساوی دور یا ریاضی نمونہ۔}
 \label{شکل_معاصر_جنریٹر_کا_مساوی_دور}
 \end{figure}
@@ -218,8 +368,53 @@ e_{am}=i_a R_a+L_s \frac{\dif i_a}{\dif t}+v_a
 اس مرحلی سمتیہ کے مساوات کو شکل \حوالہ{شکل_معاصر_جنریٹر_کے_سادہ_مساوی_دور}-الف میں دکھایا گیا ہے۔عام حالات میں \عددیء{X_s} کی مقدار  \عددیء{R_a} سے سو سے دو سو گنا زیادہ ہوتی ہے۔ 
 \begin{figure}
 \centering
-\includegraphics{figSynchronousGeneratorEquivalentCircuits}
-\caption{معاصر جنریٹر کے مساوی دور۔}
+%\includegraphics{figSynchronousGeneratorEquivalentCircuits}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
+\draw (0,0) to  [short,o-] (0.5,0) to[resistor,l={$R_a$}] ++(2,0) to [inductor,l={$j X_s$}] ++(2,0) to [short,,i={$\hat{I}_a$},-o] ++(1,0); 
+\draw (5.5,-2) to [short,o-o] (0,-2);
+
+\draw node at (0.2,-1){$
+\begin{aligned}
+&+\\
+&\hat{E}_{am}\\
+&-
+\end{aligned} $};
+%
+\draw node at (5.5,-1){$
+\begin{aligned}
+&+\\
+&\hat{V}_a\\
+&-
+\end{aligned} $};
+%text
+\draw node at (2.25,-2.5){\RL{الف}};
+%=============
+\begin{scope}[xshift=-6cm]
+\draw (0,0) to  [short,o-] (0.5,0) to [inductor,l={$j X_s$}] ++(2,0) to [short,,i={$\hat{I}_a$},-o] ++(1,0); 
+\draw (3.5,-2) to [short,o-o] (0,-2);
+
+\draw node at (0.2,-1){$
+\begin{aligned}
+&+\\
+&\hat{E}_{am}\\
+&-
+\end{aligned} $};
+%
+\draw node at (3.5,-1){$
+\begin{aligned}
+&+\\
+&\hat{V}_a\\
+&-
+\end{aligned} $};
+%text
+\draw node at (1.5,-0.5) {$X_s \gg R_a$};
+\draw node at (1.55,-2.5){\RL{ب}};
+\end{scope}
+\end{tikzpicture}%
+\caption{معاصر جنریٹر کے مساوی ادوار۔}
 \label{شکل_معاصر_جنریٹر_کے_سادہ_مساوی_دور}
 \end{figure}
 
@@ -243,7 +438,46 @@ L_{am}=\frac{\sqrt{2} E_{am}}{\omega I_m}=\frac{\sqrt{2}  \times 2100}{2 \times 
  شکل \حوالہ{شکل_معاصر_جنریٹر_کے_سادہ_مساوی_دور}-ب کی مرحلی سمتیہ شکل \حوالہ{شکل_معاصر_جنریٹر_دوری_سمتیہ}  میں دی گئی ہے۔شکل \حوالہ{شکل_معاصر_جنریٹر_دوری_سمتیہ}-الف میں  برقی رو \عددیء{\hat{I}_a} برقی دباو \عددیء{\hat{V}_a} سے  \عددیء{\phi} زاویہ  پیچھے  ہے اور شکل \حوالہ{شکل_معاصر_جنریٹر_دوری_سمتیہ}-ب میں برقی رو \عددیء{\phi} زاویہ برقی دباو سے  آگے  ہے۔ چونکہ زاویہ اُفقی سمت سے گھڑی کی اُلٹی سمت ناپا جاتا ہے لہٰذا شکل-الف میں \عددیء{\phi} منفی زاویہ ہے اور \عددیء{\sigma} مثبت زاویہ ہے جبکہ شکل-ب میں دونوں زاویے مثبت ہیں۔
 \begin{figure}
 \centering
-\includegraphics{figSynchronousGeneratorPhasorDiagram}
+%\includegraphics{figSynchronousGeneratorPhasorDiagram}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (5,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (5,2);
+%
+\draw[-latex](0,0)--(3,0)node[below,pos=0.7]{$\hat{V}_a$}coordinate(vEnd);
+\draw[-latex](0,0)--++(-30:1)node[below]{$\hat{I}_a$};
+\draw[gray] (0:0.5) arc (0:-30:0.5);
+\draw[gray] (-15:0.8) node {$\phi$};
+%
+\draw[gray,-latex](vEnd)--++(-30:1)node[below]{$\hat{I}_a$};
+\draw[-latex](vEnd)--++(60:1.5)coordinate(vTip)node[right,pos=0.7]{$j \hat{I}_a X_s$};
+\draw[-latex,thick](0,0)--(vTip)node[above,pos=0.7]{$\hat{E}_{am}$};
+\draw[gray] (vEnd)++(-30:0.3)--++(60:0.4)--++(150:0.3);
+\draw[gray,dashed](vEnd)--++(0:1.5);
+\draw[gray](vEnd)++(-30:0.7) arc (-30:0:0.7);
+\draw[gray](vEnd)++(-15:0.9)node {$\phi$};
+\draw (0.8,0) arc (0:19:0.8);
+\draw (10:1) node{$\sigma$};
+\draw node at (2.25,-1.5){\RL{الف}};
+%==================
+\begin{scope}[xshift=-5cm]
+\draw[-latex](0,0)--(3,0)node[below,pos=0.7]{$\hat{V}_a$}coordinate(vEnd);
+\draw[-latex](0,0)--++(60:1)node[left]{$\hat{I}_a$};
+\draw[gray] (0:0.5) arc (0:60:0.5);
+\draw[gray] (45:0.7) node {$\phi$};
+%
+\draw[gray,-latex](vEnd)--++(60:1)node[right]{$\hat{I}_a$};
+\draw[-latex](vEnd)--++(150:1.5)coordinate(vTip)node[shift={(0:1)}]{$j \hat{I}_a X_s$};
+\draw[-latex,thick](0,0)--(vTip)node[shift={(160:0.6)}]{$\hat{E}_{am}$};
+\draw[gray] (vEnd)++(60:0.3)--++(150:0.4)--++(-120:0.3);
+\draw[gray,dashed](vEnd)--++(0:1);
+\draw[gray](vEnd)++(0:0.4) arc (0:60:0.4);
+\draw[gray](vEnd)++(30:0.6)node {$\phi$};
+\draw (0.8,0) arc (0:23:0.8);
+\draw (11:1) node{$\sigma$};
+\draw node at (2.25,-1.5){\RL{ب}};
+\end{scope}
+\end{tikzpicture}
 \caption{معاصر جنریٹر کا مرحلی سمتیہ۔}
 \label{شکل_معاصر_جنریٹر_دوری_سمتیہ}
 \end{figure}
@@ -283,7 +517,85 @@ p_{v,\textup{انتہا}}=\frac{3 V_a E_{am}}{X_s}
 %
 \begin{figure}
 \centering
-\includegraphics{figSynchronousGeneratorConnectedToMotor}
+%\includegraphics{figSynchronousGeneratorConnectedToMotor}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (5,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (5,2);
+%
+\draw(0,0) to [short,o-,i={$\hat{I}_a$}] ++(0.5,0) to [inductor,l={$j X_{sm}$}]++(2,0) to [sinusoidal voltage source] ++(0,-2) to [short,-o] (0,-2);
+\draw node at (3.5,-1){$
+\begin{aligned}
+&+\\
+&{E}_{am}\\
+&-
+\end{aligned}$};
+\draw node at (0,-1){$\begin{aligned}
+&+\\
+&\hat{V}_s\\
+&-
+\end{aligned} $};
+%
+\draw node at (1.25,-2.25){\RL{الف}};
+%===========
+%===========
+\begin{scope}[xshift=-6cm]
+\draw[gray,thick,-latex](0,0)--++(0:1)node[above]{$\hat{I}_a$};
+\draw[-latex](0,0)--++(0:3)node[above,pos=0.8]{$\hat{V}_{s}$}coordinate(vTip);
+\draw[latex-](vTip)--++(-90:1.5)node[pos=0.5,right]{$j \hat{I}_aX_{sm}$}coordinate(ixStart);
+\draw[-latex,thick](0,0)--(ixStart)node[below,pos=0.6]{$\hat{E}_{am,m}$};
+%
+\draw node at (1.5,-2.25){\RL{ب}};
+\end{scope}
+%==========================
+%===========================
+\begin{scope}[xshift=-3.5cm,yshift=-6cm]
+\draw(0,0) to [sinusoidal voltage source] ++(0,2) to [inductor,l={$j X_{sg}$}]++(2,0) to [short,i={$\hat{I}_a$}] ++(0.5,0) to [inductor,l={$j X_{sm}$}] ++(2,0) to [sinusoidal voltage source]++(0,-2) to (0,0);
+\draw node at (2.25,1){$\begin{aligned}
+&+\\
+&\hat{V}_s\\
+&-
+\end{aligned} $};
+\draw node at (-1,1){$\begin{aligned}
+&+\\
+&\hat{E}_{am,g}\\
+&-
+\end{aligned} $};
+\draw node at (5.5,1){$\begin{aligned}
+&+\\
+&\hat{E}_{am,m}\\
+&-
+\end{aligned} $};
+\draw node at (7,1){\RL{پ}};
+\end{scope}
+%===============================
+%======================
+\begin{scope}[yshift=-9cm]
+\draw[gray,thick,-latex](0,0)--++(0:1.5)node[above]{$\hat{I}_a$};
+\draw[-latex](0,0)--++(0:3)node[above,pos=0.8]{$\hat{V}_{s}$}coordinate(vTip);
+\draw[latex-](vTip)--++(-90:1.5)node[pos=0.5,right]{$j \hat{I}_aX_{sm}$}coordinate(ixStart);
+\draw[-latex,thick](0,0)--(ixStart)node[below,pos=0.6]{$\hat{E}_{am,m}$};
+\draw[-latex](vTip)--++(90:2)node[pos=0.5,right]{$j \hat{I}_aX_{sg}$}coordinate(ixStartA);
+\draw[-latex,thick](0,0)--(ixStartA)node[above left,pos=0.6]{$\hat{E}_{am,g}$};
+%
+\draw node at (1.5,-2.25){\RL{ت}};
+\end{scope}
+%========================
+%=========================
+%======================
+\begin{scope}[xshift=-5cm ,yshift=-10cm]
+\pgfmathsetmacro{\phaseI}{45}
+\pgfmathsetmacro{\phaseV}{30}
+\draw[gray,thick,-latex](0,0)--++(\phaseI:4)node[right]{$\hat{I}_a$};
+\draw[-latex](0,0)--++(\phaseV:3)node[below,pos=0.8]{$\hat{V}_{s}$}coordinate(vTip);
+\draw[latex-](vTip)--++(-90+\phaseI:1.5)node[pos=0.3,above right]{$j \hat{I}_aX_{sm}$}coordinate(ixStart);
+\draw[-latex,thick](0,0)--(ixStart)node[below,pos=0.6]{$\hat{E}_{am,m}$};
+\draw[-latex](vTip)--++(90+\phaseI:2)node[above right]{$j \hat{I}_aX_{sg}$}coordinate(ixStartA);
+\draw[-latex,thick](0,0)--(ixStartA)node[above left,pos=0.6]{$\hat{E}_{am,g}$};
+%
+\draw node at (1.5,-1){\RL{ٹ}};
+\end{scope}
+\end{tikzpicture}
 \caption{معاصر جنریٹر معاصر موٹر چلا رہی ہے۔}
 \label{شکل_معاصر_جنریٹر_موٹر_چلاتا_ہوا}
 5\end{figure}
@@ -371,7 +683,60 @@ E_{am} \cos \sigma +j E_{am} \sin \sigma&=V_a \cos 0+j V_a \sin 0 + I_a X_s \cos
 جنریٹر کے سروں پر معین \عددیء{V_a} رکھتے ہوئے مختلف \عددیء{\phi} کے لئے \عددیء{E_{am}} بالمقابل \عددیء{I_a} کے خط شکل \حوالہ{شکل_معاصر_بار_بالمقابل_میدانی_رو}  میں دکھائے گئے ہیں۔ چونکہ \عددیء{E_{am}}  اور  \عددیء{I_m} براہِ راست متناسب ہیں اور اسی طرح کسی ایک مخصوص جزو طاقت اور معین \عددیء{V_a} کے لئے جنریٹر کا طاقت \عددیء{I_a} کے  براہِ راست متناسب ہوتا ہے لہٰذا یہی ترسیم \عددیء{I_m} بالمقابل جنریٹر کے طاقت کو بھی ظاہر کرتا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figSynchronousCompoundingCurves}
+%\includegraphics{figSynchronousCompoundingCurves}
+\begin{tikzpicture}
+%
+\begin{axis}[
+	ticks=none,
+	xmin=0,
+	xmax=1.35,
+	ymin=0,
+%	axis lines=middle,
+%	axis y line=middle,
+	axis line style=-,
+%	ytick={0.25,0.5},
+%	yticklabels={50,100},
+%	xtick style={draw=none},
+	ylabel style={align=right},
+	ylabel={\RL{ $V_a$ برقرار رکھنے کے لئے} \\ \RL{ درکار میدانی برقی رو $I_m$}},
+	xlabel style={align=right},
+	xlabel={\RL{برقی بار یا قوی لچھے کی برقی رو $I_a$}},
+%	every axis x label/.style={
+  %  at={(ticklabel* cs:1.05)},
+   % anchor=west,
+%},
+%every axis y label/.style={
+  %  at={(ticklabel* cs:1.05)},
+    %anchor=south,
+%},
+]
+\newcommand\tka{0}
+\addplot[
+black,
+domain=0:1.1,
+samples=100,
+]
+{sqrt(1+x*x+2*x*sin(\tka))} node[right] {ہم قدم} ;
+%==
+\newcommand\tkb{36}
+\addplot[
+black,
+domain=0:1.1,
+samples=100,
+]
+{sqrt(1+x*x+2*x*sin(\tkb))} node[right] {پیچے} ;
+%=====
+\newcommand\tkc{-36}
+\addplot[
+black,
+domain=0:1.1,
+samples=100,
+]
+{sqrt(1+x*x+2*x*sin(\tkc))} node[right] {آگے} ;
+\end{axis}
+%===========
+\draw[gray,dashed] (5,0)--(5,5.5) node[pos=0.2,left]{\RL{پورا بار}};
+\end{tikzpicture}
 \caption{جنریٹر: برقی بوجھ بالمقابل \عددیء{I_m} کے خط}
 \label{شکل_معاصر_بار_بالمقابل_میدانی_رو}
 \end{figure}
@@ -404,7 +769,47 @@ p=V_a I_a \cos \phi
 %
 \begin{figure}
 \centering
-\includegraphics{figSynchronousMotorPhasorDiagram}
+%\includegraphics{figSynchronousMotorPhasorDiagram}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (5,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (5,2);
+%
+
+%======================
+\pgfmathsetmacro{\phaseI}{-45}
+\pgfmathsetmacro{\phaseV}{0}
+\draw[gray,thick,-latex](0,0)--++(\phaseI:1.5)node[left]{$\hat{I}_a$};
+\draw[-latex](0,0)--++(\phaseV:3)node[above,pos=0.8]{$\hat{V}_{s}$}coordinate(vTip);
+\draw[latex-](vTip)--++(-90+\phaseI:1.5)node[pos=0.5,right]{$j \hat{I}_aX_{s}$}coordinate(ixStart);
+\draw[-latex,thick](0,0)--(ixStart)node[below]{$\hat{E}_{am}$};
+%text
+\draw[gray](0:0.6) arc (0:\phaseI:0.6);
+\draw[gray](-13:0.85)node{$\phi$};
+%
+\draw(0:1.2) arc (0:-28:1.2);
+\draw(-14:1.4)node{$\sigma$};
+\draw node[right] at (0,1.5){\RL{برقی رو پیچھے ہے}};
+\draw node at (3,-1.5){\RL{الف}};
+%=====================
+%=====================
+\begin{scope}[xshift=-6.5cm]
+\pgfmathsetmacro{\phaseI}{45}
+\pgfmathsetmacro{\phaseV}{0}
+\draw[gray,thick,-latex](0,0)--++(\phaseI:1.5)node[above left]{$\hat{I}_a$};
+\draw[-latex](0,0)--++(\phaseV:3)node[above,pos=0.8]{$\hat{V}_{s}$}coordinate(vTip);
+\draw[latex-](vTip)--++(-90+\phaseI:1.5)node[pos=0.5,above right]{$j \hat{I}_aX_{s}$}coordinate(ixStart);
+\draw[-latex,thick](0,0)--(ixStart)node[below,pos=0.7]{$\hat{E}_{am}$};
+%text
+\draw[gray](0:0.6) arc (0:\phaseI:0.6);
+\draw[gray](22.5:0.85)node{$\phi$};
+%
+\draw(0:1.2) arc (0:-14:1.2);
+\draw(-7:1.4)node{$\sigma$};
+\draw node[right] at (2,1.5){\RL{برقی رو آگے ہے}};
+\draw node at (1,-1.5){\RL{ب}};
+\end{scope}
+\end{tikzpicture}%
 \caption{موٹر کا مرحلی سمتیہ۔}
 \label{شکل_معاصر_موٹر_کی_دوری_سمتیہ}
 5\end{figure}
@@ -414,7 +819,51 @@ p=V_a I_a \cos \phi
 موٹر کی ان خطوط سے واضح ہے کہ \عددیء{I_m} کو تبدیل کر کے موٹر کی جزو طاقت تبدیل کی جا سکتی ہے۔ لہٰذا موٹر کو \اصطلاح{پیش} زاویہ یا \اصطلاح{تاخیری} زاویہ  پر چلایا جا سکتا ہے۔ اگر اسے پیش زاویہ پر رکھا جائے تو یہ ایک کپیسٹر\فرہنگ{کپیسٹر}\حاشیہب{capacitor}  کے طور پر استعمال ہو سکتا ہے اگرچہ ایسا کیا نہیں جاتا چونکہ کپیسٹر از خود  زیادہ سستا ہوتا ہے۔ 
 \begin{figure}
 \centering
-\includegraphics{figSynchronousVcurves}
+%\includegraphics{figSynchronousVcurves}
+\begin{tikzpicture}
+%
+\begin{axis}[
+	ticks=none,
+%	xmin=0,
+%	xmax=1.35,
+	ymin=0,
+%	axis lines=middle,
+%	axis y line=middle,
+	axis line style=-,
+%	ytick={0.25,0.5},
+%	yticklabels={50,100},
+%	xtick style={draw=none},
+	ylabel style={align=right},
+	ylabel={\RL{قوی لچھے کی برقی رو $I_a$}},
+	xlabel style={align=right},
+	xlabel={\RL{میدانی لچھے کی برقی رو $I_m$}},
+%	every axis x label/.style={
+  %  at={(ticklabel* cs:1.05)},
+   % anchor=west,
+%},
+%every axis y label/.style={
+  %  at={(ticklabel* cs:1.05)},
+    %anchor=south,
+%},
+]
+%\foreach \p in {0,0.25,0.75,1}{
+\def\p{0}
+\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100-2*sqrt(x/100*x/100-\p*\p))},{x}) node [above]{$\SI{0}{\percent}$} ;
+\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100+2*sqrt(x/100*x/100-\p*\p))},{x}) ;   %}
+%
+\def\p{0.25}
+\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100-2*sqrt(x/100*x/100-\p*\p))},{x}) node [right]{$\SI{25}{\percent}$} ;
+\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100+2*sqrt(x/100*x/100-\p*\p))},{x}) ; 
+%
+\def\p{0.75}
+\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100-2*sqrt(x/100*x/100-\p*\p))},{x}) node [right]{$\SI{75}{\percent}$} ;
+\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100+2*sqrt(x/100*x/100-\p*\p))},{x}) ; 
+%
+%\def\p{1}
+%\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100-2*sqrt(x/100*x/100-\p*\p))},{x}) node [above]{100} ;
+%\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100+2*sqrt(x/100*x/100-\p*\p))},{x}) ; 
+\end{axis}
+\end{tikzpicture}
 \caption{موٹر:$I_{m}$ بالمقابل $I_a$ کے خط}
 \label{شکل_معاصر_برقی_رو_بالمقابل_برقی_دباو}
 \end{figure}
@@ -427,7 +876,34 @@ p=V_a I_a \cos \phi
 اس کتاب کے حصہ \حوالہ{حصہ_مقناطیسی_دور_مقناطیسی_مادہ_کے_خصوصیات} میں بتلایا گیا تھا کہ قالب پر لاگو مقناطیسی دباو اگر بڑھایا جائے تو اس میں مقناطیسی بہاو بڑھتی ہے البتہ جلد ہی قالب سیراب ہونے لگتا ہے۔اس کا اثر شکل-الف میں خط کے جھکنے سے واضح ہے۔اگر قالب سیراب نہ ہوتا تو یہ خط شکل میں دیئے سیدھی لکیر کی پیروی کرتا۔شکل میں مشین کا پورا برقی دباو اور اس  پر درکار برقی رو \عددیء{I_{m0}} دکھلایا گیا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figSynchronousOpenCircuitCharacteristic}
+%\includegraphics{figSynchronousOpenCircuitCharacteristic}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%
+%axis
+\draw[gray] (0,0)--(2.5,0)node[right]{$I_m$};
+\draw[gray] (0,0)--(0,2)node[above]{$V_{a}$};
+%curves
+\draw (0,0)--++(60:2.2);
+\draw(0,0)++(60:1.3) to [out=60,in=190] ++(1.4,0.75)node[below right,align=right,gray]{\RL{قالب سیراب ہونے}\\ \RL{ کی نشانی}};
+\draw[stealth-,gray] (1.4,1.7) to [out=-45,in=180] (2,1.5);
+\draw[gray](1.1,1.6)--(0,1.6)node[left,black]{$V_{\textup{پوری}}$};
+\draw node[gray,rotate=90] at (-1.2,1){\RL{کھلے سرے برقی دباو}};
+\draw[gray](1.1,1.6)--(1.1,0)node[below,black]{$I_{m0}$};
+\draw node at (4.5,-0.5){الف};
+%======================
+\begin{scope}[xshift=-5.5cm]
+%axis
+\draw[gray] (0,0)--(3,0)node[right]{$V_a$};
+\draw[gray] node at (1.5,-0.3){\RL{کھلے سرے برقی دباو}};
+\draw[gray] (0,0)--(0,2)node[xshift=-0.35cm,rotate=90,pos=0.5]{\RL{قالبی ضیاع}};
+%curves
+\draw (0,0)--++(0.4,0) to [out=0,in=-115] (2.2,1.8);
+\draw node at (-1.5,-0.5){ب};
+\end{scope}
+\end{tikzpicture}%
 \caption{کُھلے دور خط اور قالبی ضیاع۔}
 \label{شکل_معاصر_کھلے_دور_خط}
 \end{figure}
@@ -438,7 +914,40 @@ p=V_a I_a \cos \phi
 معاصر مشین کو معاصر رفتار پر جنریٹر کے طور چلاتے ہوئے اس کے ساکن لچھے کے سرے کسرِ دور کر کے مختلف \عددیء{I_m} پر کسرِ دور برقی رو \عددیء{I_a} ناپی جاتی ہے۔ ان دو کا ترسیم شکل \حوالہ{شکل_معاصر_کسر_دور_اور_کھلے_دور_خط}-الف میں دکھایا گیا ہے۔یہ خط کسرِ دور مشین کی خاصیت دکھلاتا ہے۔  یہ معائنہ کرتے وقت یہ دھیان رکھنا بہت اہم ہے کہ \عددیء{I_a} کی مقدار کہیں خطرناک حد تک نہ بڑھ جائے لہٰذا اسے جنریٹر کے پورے برقی بوجھ\فرہنگ{پورا بوجھ}\حاشیہب{full load} پر \عددیء{I_{a}} کی مقدار  یا اس کی دگنی مقدار سے کم رکھنا ضروری ہے ورنہ مشین گرم ہو کر تباہ ہو سکتی ہے۔کسرِ دور مشین میں، ڈیزائن کردہ برقی دباو کے، صرف دس سے پندرہ فی صد برقی دباو پر ہی اس میں سو فی صد برقی رو شروع ہو جاتی ہے۔ اتنا کم برقی دباو حاصل کرنے کے لئے خلائی درز میں اسی تناسب سے  کم مقناطیسی بہاو درکار ہوتا ہے۔ 
 \begin{figure}
 \centering
-\includegraphics{figSynchronousShortCircuitCharacteristic}
+%\includegraphics{figSynchronousShortCircuitCharacteristic}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%
+%axis
+\draw[gray] (0,0)--(1.5,0)node[right]{$I_m$};
+\draw[gray] (0,0)--(0,2)node[above]{$I_{a }$};
+\draw[gray] node[rotate=90] at (-1,1){\RL{کسر دور برقی رو}};
+%curves
+\draw (0,0)--++(60:2.2)coordinate[pos=0.7](pointE);
+%
+\draw[gray](pointE)--($(0,0)! (pointE)!(1.5,0)$)node[below,black]{$I_{m0}$};
+\draw[gray](pointE)--($(0,0)! (pointE)!(0,2)$)node[left,black]{$I_{a0}$};
+\draw node at (3,-0.5){الف};
+%======================
+\begin{scope}[xshift=-5cm]
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+\draw[gray](1.1,1.6)--(1.1,0)node[below,black]{$I_{m0}$};
+\draw[gray](1.1,1.6)--(0,1.59)node[left,black]{$V_{a0}$};
+\draw[gray] node[rotate=90] at (-1,1){\RL{کھلے سر برقی دباو}};
+%axis
+\draw[gray] (0,0)--(2.5,0)node[right]{$I_m$};
+\draw[gray] (0,0)--(0,2)node[above]{$V_a$};
+%curves
+\draw (0,0)--++(60:2.2);
+\draw(0,0)++(60:1.3) to [out=60,in=190] ++(1.4,0.75);
+\draw[gray](pointE)--($(0,0)!(pointE)!(2.5,0)$);
+\draw node at (-2,-0.5){ب};
+\end{scope}
+\end{tikzpicture}
 \caption{کسرِ دور خط اور کھلے دور خط۔}
 \label{شکل_معاصر_کسر_دور_اور_کھلے_دور_خط}
 \end{figure}
@@ -454,7 +963,28 @@ X_s=\frac{\abs{\hat{E}_{am}}}{\abs{\hat{I}_a}}=\frac{E_{am}}{I_a}
 %
 \begin{figure}
 \centering
-\includegraphics{figSynchronousReactanceSynchronous}
+%\includegraphics{figSynchronousReactanceSynchronous}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%
+ \draw(0,0) to [short,o-,i={$\hat{I}_a$}] ++(1,0) to [resistor,l={$R_a$}] ++(2,0) to [inductor,l={$j X_s$}] ++(2,0) to ++(0,-2) to [short,-o] (0,-2);
+\draw node at (0,-1){$
+\begin{aligned}
+&+\\
+&\hat{E}_{am}\\
+&-
+\end{aligned} $};
+%txt
+\draw node[right] at (6,-1){$
+\begin{aligned}
+\hat{E}_{am}&=\hat{I}_a R_a +j \hat{I}_a X_s\\
+&\approx j \hat{I}_a X_s \quad \quad \quad X_s \gg R_a\\
+X_s&=\frac{|\hat{E}_{am}|}{|\hat{I}_a|}
+\end{aligned}
+$};
+\end{tikzpicture}
 \caption{معاصر امالہ۔}
 \label{شکل_معاصر_امالہ_معاصر}
 \end{figure}
@@ -502,7 +1032,18 @@ R_a=\frac{p_3-p_2}{I_{a,3}^2}
 %
 \begin{figure}
 \centering
-\includegraphics{figSynchronousShortCircuitedLoss}
+%\includegraphics{figSynchronousShortCircuitedLoss}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%axis
+\draw[] (0,0)--(3,0)node[right]{$ I_a$};
+\draw[] node at (1.5,-0.3){\RL{کسر دور برقی رو}};
+\draw[] (0,0)--(0,2)node[xshift=-0.35cm,rotate=90,pos=0.5]{\RL{طاقت کا ضیاع}};
+%curves
+\draw (0,0) to [out=0,in=-115] (2.2,1.8);
+\end{tikzpicture}
 \caption{کسرِ دور معاصر مشین میں طاقت کا ضیاع۔}
 \label{شکل_معاصر_کسر_دور_ضیاع}
 \end{figure}
@@ -541,7 +1082,41 @@ R_a=\frac{733.33}{104.34^2}=\SI{0.067}{\ohm}
 %
 \begin{figure}
 \centering
-\includegraphics{figSynchronousOpenCircuitCharacteristicsBrillouinFunction}
+%\includegraphics{figSynchronousOpenCircuitCharacteristicsBrillouinFunction}
+\pgfmathsetmacro{\J}{0.5}
+\pgfmathsetmacro{\k}{(2*\J+1)/(2*\J)}
+\begin{tikzpicture}[
+  declare function={
+    kBJ(\x)= and(\x>-0.001, \x< 0.001)*(0)+or(\x<-0.001, \x>0.001)*(\k*(e^(\k*\x)+e^(-\k*\x))/(e^(\k*\x)-e^(-\k*\x))-1/(2*\J)*(e^(\x/(2*\J))+e^(-\x/(2*\J)))/(e^(\x/(2*\J))-e^(-\x/(2*\J))));
+  }
+]
+\begin{axis}[yscale=0.5,
+ymax=1.05,
+  axis x line=middle, axis y line=middle,
+ % ymin=-5, ymax=5, ytick={-5,...,5}, 
+axis line style=-,
+ylabel=$V$,
+  %xmin=-5, xmax=5, xtick={-5,...,5}, 
+xlabel=$A$,
+xlabel style={below right,xshift=0.5cm},
+ylabel style={above left,xshift=-0.2cm},
+xtick={0.625,1.25,1.875,2.5},
+xticklabels={$2$,$4$,$6$,$8$},
+ytick={0.286,0.571,0.857},
+yticklabels={200,400,600},
+]
+\addplot[domain=0:2.5]{kBJ(x)};
+\end{axis}
+%
+%grid
+%\draw[gray,thick](0,0) grid (7,3);
+%\draw[gray,thin,xstep=0.1,ystep=0.1](0,0) grid (7,3);
+%\draw (0,1.852)--++(5,0);
+%\draw (3.55,0)--++(0,3);
+%
+\draw node at (4,-1){\RL{میدانی برقی رو}};
+\draw node[rotate=90] at (-1.5,1.5){\RL{کھلے دور برقی دباو}};
+\end{tikzpicture} 
 \caption{کھلے دور خط۔}
 \label{شکل_معاصر_کھلے_دور_بریلووین_خط}
 \end{figure}
@@ -626,7 +1201,21 @@ I_t&=\frac{p}{\sqrt{3} V_{t} \cos \theta}\\
 ہو گی۔یہ تمام صورت حال شکل \حوالہ{شکل_معاصر_بار_بردار_جنریٹر_مثال}  میں مرحلی سمتیات کی مدد سے دکھایا گیا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figSynchronousLoadedGeneratorExample}
+%\includegraphics{figSynchronousLoadedGeneratorExample}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%
+\draw[-latex] (0,0)--++(2.396,0)node[pos=0.8,above]{$\hat{V}_{sa}$}coordinate(vTip);
+\draw[-latex](0,0)--++(36.87:1.4)node[left,xshift=-0.2cm]{$\hat{I}_a$};
+\draw [gray] (0.4,0) arc (0:36.87:0.4);
+\draw [gray] node at (13:1){$36.87^\circ$};
+\draw[gray,-latex] (vTip)--++(36.87:1.4)node[left,xshift=-0.2cm]{$\hat{I}_a$};
+\draw[latex-] (vTip)--++(-53.13:0.5356)node[pos=0.4,right,xshift=0.2cm]{$j \hat{I}_a X_s$}coordinate(loadTip);
+\draw[-latex,thick] (0,0)--(loadTip)node[below,pos=0.8]{$\hat{E}_a$};
+\draw[gray](1,0) arc (0:-8.96:1)node[below]{$8.96^\circ$};
+\end{tikzpicture}%
 \caption{بوجھ بردار معاصر موٹر۔}
 \label{شکل_معاصر_بار_بردار_جنریٹر_مثال}
 \end{figure}
@@ -635,7 +1224,27 @@ I_t&=\frac{p}{\sqrt{3} V_{t} \cos \theta}\\
 میکانی بوجھ بڑھنے سے موٹر کو زیادہ برقی طاقت درکار ہو گی۔ یہ اس صورت ممکن ہو گا جب موٹر کے قوی لچھے کی برقی رو بڑھ سکے۔میدانی برقی رو معین ہونے کی وجہ سے موٹر کی اندرونی ہیجانی برقی دباو \عددیء{\hat{E}_a} کی مقدار تبدیل نہیں ہو سکتی البتہ اس کا زاویہ تبدیل ہو سکتا ہے۔موٹر  \عددیء{\hat{E}_a}  کی مقدار تبدیل کئے بغیر  برقی سروں پر لاگو برقی دباو  \عددیء{\hat{V}_a}  اور \عددیء{\hat{E}_a}  کے مابین زاویہ بڑھا کر قوی لچھے کی برقی رو اور یوں حاصل برقی طاقت بڑھائے گا۔ایسا شکل \حوالہ{شکل_معاصر_بار_بڑھانے_کا_اثر}  میں دکھایا گیا ہے۔شکل میں \عددیء{\hat{E}_a} مرحلی سمتیہ کی نوک نقطہ دار گول دائرہ پر رہتی ہے۔یوں اس کا طول تبدیل نہیں ہوتا۔زاویہ بڑھنے سے \عددیء{\abs{j\hat{I}_a X_s}} بڑھتا ہے۔چونکہ \عددیء{X_s} نہیں بڑھ رہا لہٰذا درحقیقت قوی لچھے کی برقی رو بڑھ گئی ہے۔زیادہ بوجھ کے متغیرات کو ہلکی سیاہی میں دکھایا گیا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figSynchronousLoadedGeneratorIncreasingLoad}
+%\includegraphics{figSynchronousLoadedGeneratorIncreasingLoad}
+\begin{tikzpicture}
+%grid
+%\draw[gray,thick] (-2,-2) grid (2,2);
+%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2,-2) grid (2,2);
+%
+\draw[-latex] (0,0)--++(4.14,0)node[pos=0.8,above]{$\hat{V}_{sa}$}coordinate(vTip);
+\draw[-latex](0,0)--++(36.87:1)node[above left]{$\hat{I}_a$};
+%
+\draw[-latex] (0,0)--(-3.266:4.34)coordinate(genVtip)node[below,pos=0.8]{$\hat{E}_a$};
+\draw[-latex] (genVtip)--(vTip)coordinate[pos=0.3](load);
+\draw[gray,stealth-] (load) to [out=20,in=180] ++(1,0.5) node[right]{$j \hat{I}_a X_s$};
+%
+\draw[gray,dashed] (10:4.34) arc (10:-25:4.34);
+%
+\draw[-latex,gray](0,0)--++(-15:4.34)coordinate(genVtipA)node[below,pos=0.8]{$\hat{E}_a'$}coordinate[pos=0.3](greaterLoad);
+\draw[-latex,gray] (genVtipA)--(vTip)coordinate[pos=0.5](loadA);
+\draw[-latex,gray](0,0)--(5:2.5)node[pos=0.8,above]{$\hat{I}_a'$};
+\draw[gray,stealth-] (loadA) to [out=-20,in=180] ++(1,-0.5) node[right]{$j \hat{I}_a' X_s$};
+\draw[gray,stealth-] (greaterLoad) to [out=-90,in=0] ++(-1,-1)node[left]{\RL{زیادہ میکانی بوجھ}};
+\end{tikzpicture}%
 \caption{بوجھ بڑھنے کا اثر۔}
 \label{شکل_معاصر_بار_بڑھانے_کا_اثر}
 \end{figure}

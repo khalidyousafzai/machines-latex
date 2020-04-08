@@ -95,7 +95,58 @@ E_s=\omega_e N_s \phi_0
 مساوات \حوالہ{مساوات_امالی_گھومتا_مقناطیسی_دباو_الف}  کا پہلا جُز، ساکن لچھوں کی پیدا کردہ، گھومتے مقناطیسی دباو کی موج کو ظاہر کرتا ہے۔اس موج کی چوٹی\فرہنگ{چوٹی}\حاشیہب{peak} اس مقام پر ہوتی ہے جہاں \عددیء{(\theta-\omega_e t)} صفر کے برابر ہو۔ یوں لمحہ صفر پر اس کی چوٹی صفر زاویہ پر ہو گی اور لمحہ \عددیء{t} پر اس موج کی چوٹی زاویہ \عددیء{\omega_e t} پر ہو گی۔ ساکن لچھوں کی مقناطیسی دباو کی موج کا زاویہ کسی بھی نقطہ کے حوالے سے کیا جا سکتا ہے۔ اس کتاب میں صفر زاویہ ساکن لچھا \عددیء{a} کو لیا جاتا ہے۔اس طرح یہ زاویہ نقطہ دار اُفقی لکیر سے ناپا جاتا ہے۔شکل \حوالہ{شکل_امالی_گھومتی_موجیں}  میں ایسا ہی دکھایا گیا ہے۔اس شکل میں ایک امالی موٹر دکھائی گئی ہے جس کے تین مرحلہ ساکن لچھے ہیں۔
 \begin{figure}
 \centering
-\includegraphics{figInductionStatorAndRotorWaves}
+%\includegraphics{figInductionStatorAndRotorWaves}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\stator{6}{30}
+\slotDot{90,-30,210}
+\slotCross{-90,30,150}
+\pgfmathsetmacro{\pTheta}{150}
+\pgfmathsetmacro{\pY}{0.2}
+\pgfmathsetmacro{\rTilt}{20}
+\rotor{2}{\rTilt}
+\draw node at (\rTilt+90+15:\rR-0.4){$r$};
+\draw node at (\rTilt+90+180-15:\rR-0.4){$r'$};
+%dot on rotot
+\draw (90+\rTilt:\rR-\pX) circle (2.5pt);
+\draw[fill] (90+\rTilt:\rR-\pX) circle (1.5pt);
+%CROSS on rotor
+\draw (\rTilt-90:\rR-\pX) circle (2.5pt);
+\draw (\rTilt-90:\rR-\pX)++(45:2.2pt)--++(-135:4.4pt);
+\draw (\rTilt-90:\rR-\pX)++(-45:2.2pt)--++(135:4.4pt);
+%mmf vector and angles
+\draw[-latex,gray] (0,0)--(\rTilt:0.8*\rR);
+\draw[-latex](0,0)-- (\rTilt+30:0.8*\rR)coordinate[pos=0.5](statorMMF)node[above,pos=0.6]{$\tau_s^+$};
+\draw[gray](0:1.2*\sRo)--++(0:1.5cm);
+\draw[gray](\rTilt:1.2*\sRo cm +0.5cm)--++(\rTilt:1cm)node [right,rotate=\rTilt]{\RL{گھومتا لچھا}};
+\draw[gray] (\rTilt+30:1.2*\sRo) --++(\rTilt+30:1cm) ;
+\draw[gray,stealth-](statorMMF) to [out=180,in=0] ++(-3,1)node[left]{\RL{گھومتے لچھے کی موج}};
+\draw node[left] at (-3,-0.5){$
+\begin{aligned}
+\theta_z&=\omega_e t - \omega t\\
+\frac{\textup{d} \theta_z}{\textup{d} t}&=\omega_e-\omega\\
+&=\omega_z
+\end{aligned}
+$};
+%
+\draw[-stealth] (0:1.2*\sRo cm +0.75 cm)  arc (0:\rTilt:1.2*\sRo cm +0.75 cm);
+\draw node[right,fill=white] at (\rTilt/2:1.2*\sRo cm+0.5 cm){$\omega t$}; 
+%
+\draw[-stealth] (\rTilt:1.2*\sRo cm +1 cm)  arc (\rTilt:\rTilt+30:1.2*\sRo cm +1 cm);
+\draw node[fill=white] at (\rTilt+15:1.2*\sRo+1){$\theta_z$};
+%
+\draw[-stealth] (0:1.2*\sRo cm +0.25 cm)  arc (0:\rTilt+30:1.2*\sRo cm +0.25 cm);
+\draw node[fill=white] at (\rTilt/2+20:1.2*\sRo cm+0.25 cm){$\omega_e t$};
+%\slotName{45/a_1/,-45/a_1'/below,135/a_2'/,-135/a_2/below}
+\draw (90-15:\sRi+1.25*\delR)node[]{$a$};
+\draw (270-15:\sRi+1.25*\delR)node[]{$a'$};
+\draw (210-15:\sRi+1.25*\delR)node[]{$b$};
+\draw (30-15:\sRi+1.25*\delR)node[]{$b'$};
+\draw (-30-15:\sRi+1.25*\delR)node[]{$c$};
+\draw (150-15:\sRi+1.25*\delR)node[]{$c'$};
+\end{tikzpicture}
 \caption{امالی موٹر اور اس کے گھومتے مقناطیسی دباو کی موجیں۔}
 \label{شکل_امالی_گھومتی_موجیں}
 \end{figure}
@@ -138,7 +189,26 @@ j s \omega_e L_r = j s  X_r
 جہاں \عددیء{j X_r} کو \عددیء{j \omega_e L_r} کے برابر لیا گیا ہے، یعنی \عددیء{j X_r} اس لچھے کی ساکن حالت میں متعاملیت ہے جب سرک ایک کے برابر ہو۔گھومتے لچھوں میں برقی رو \عددیء{i_{arz}} شکل \حوالہ{شکل_امالی_گھومتی_لچھوں_کا_مساوی_دور}  کی مدد سے حاصل کی جا سکتی ہے جہاں گھومتے  لچھے میں امالی برقی دباو \عددیء{e_{arz}(t)} مساوات \حوالہ{مساوات_امالی_گھومتا_حصہ_تین_دور_سائن_نما_برقی_دباو}  میں دیا گیا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figInductionRotorEquivalentCircuit}
+%\includegraphics{figInductionRotorEquivalentCircuit}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\draw (0,0) to [short,o-,i={$i_{arz}$}] ++(0.5,0) to [resistor,l={$R_r$}]++(2,0) to [inductor,l={$j s X_{r}$}] ++(2,0) to ++(0,-2) to [short,-o] (0,-2);
+\draw node at (0,-1){$\begin{aligned} &+\\ & e_{arz}\\ &- \end{aligned}$};
+\draw node[below right] at (6,0.5){$
+\begin{aligned}
+Z_r&=R_r+j s X_r\\
+\phi_z&=\tan^{-1} \frac{s X_r}{R_r}\\
+\hat{I}_{arz}&=\frac{\hat{E}_{arz}}{Z_r}
+\end{aligned}$};
+%
+\draw node[below right] at (0,-2.5){$
+\begin{aligned}
+i_{arz}(t)&=\tfrac{s E_r}{|Z|} \cos (s \omega_e t -90^\circ-\phi_z) \\ 
+& =I_{0r} \cos (s \omega_e t -90^\circ-\phi_z) 
+\end{aligned}$}; 
+\end{tikzpicture}%
 \caption{گھومتے لچھے کی مساوی دور اور اس میں اضافی تعدد کی رو۔}
 \label{شکل_امالی_گھومتی_لچھوں_کا_مساوی_دور}
 \end{figure}
@@ -193,8 +263,21 @@ e_{cfs}(t)&=\omega_e N_r \phi_0 \cos \left(\omega_e t +30\degree \right)=E_r \co
 %
 \begin{figure}
 \centering
-\includegraphics{figInductionRotorEquivalentStaticCircuit}
-\caption{گھومتے لچھوں کی جگہ فرضی ساکن لچھے کی دور۔}
+%\includegraphics{figInductionRotorEquivalentStaticCircuit}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\draw (0,0) to [short,o-,i={$i_{fs}(t)$}] ++(0.5,0) to [resistor,l={$\tfrac{R_r}{s}$}]++(2,0) to [inductor,l={$j X_{r}$}] ++(2,0) to ++(0,-2) to [short,-o] (0,-2);
+\draw node at (0,-1){$\begin{aligned} &+\\ & e_{fs}(t)\\ &- \end{aligned}$};
+\draw node[below right] at (6,0.5){$
+\begin{aligned}
+Z_{fs}&=\tfrac{R_r}{s}+j X_r\\
+\phi_z&=\tan^{-1} \left( \frac{X_r}{\tfrac{R_r}{s}}\right)\\
+&=\tan^{-1} \frac{s X_r}{R_r}
+\end{aligned}$};
+\end{tikzpicture}
+\caption{گھومتے لچھوں کی جگہ فرضی ساکن لچھے کا دور۔}
 \label{شکل_امالی_گھومتی_لچھوں_کا_فرضی_مساوی_ساکن_دور}
 \end{figure}
 
@@ -228,7 +311,18 @@ i_{cfs}(t)&=\frac{E_r}{\sqrt{\left(\frac{R_r}{s} \right)^2+X_r^2}} \cos \left(\o
 لکھا جا سکتا ہے  جہاں \عددیء{\hat{V}_1} ابتدائی لچھے پر لاگو بیرونی برقی دباو ہے۔ہم دیکھیں گے کہ امالی موٹر کے ساکن لچھے کے لئے بھی یہی مساوات حاصل ہو گی۔
 \begin{figure}
 \centering
-\includegraphics{figInductionStatorEquivalentCircuit}
+%\includegraphics{figInductionStatorEquivalentCircuit}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\draw (0,0) to [short,o-,i={$\hat{I}_s $}] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0) to [short,-*,i={$\hat{I}_\varphi$}] ++(0,-0.6)coordinate(upperJunction) to [short] ++(-0.5,0) to [short,i_={$\hat{I}_c$}] ++(0,-0.5) to  [resistor,l_={$R_c$}] ++(0,-2) to [short,-o] ++(-4,0)coordinate(lowerLeftTerminal);
+\draw (upperJunction) to [short] ++(0.5,0) to [short,i={$\hat{I}_m$}] ++(0,-0.5) to  [inductor,l={$jX_m$}] ++(0,-2) to [short,-*] ++(-1,0);
+%
+\draw node at (0,-1.5){$\begin{aligned} &+\\ & \hat{V}_s\\ &- \end{aligned}$};
+\draw node at (7,-1.5){$\begin{aligned} &+\\ & \hat{E}_s\\ &- \end{aligned}$};
+\draw node[right] at (7.5,0){$\begin{aligned}  \hat{I}_s&=\hat{I}_\varphi\\ \hat{I}_\varphi&=\hat{I}_c+\hat{I}_m \end{aligned}$};
+\end{tikzpicture}
 \caption{امالی موٹر کے ساکن لچھوں کا مساوی برقی دور۔}
 \label{شکل_امالی_ساکن_لچھوں_کی_مساوی_دور}
 \end{figure}
@@ -279,7 +373,19 @@ I_{0r}'&=\left(\frac{N_r}{N_s}\right) I_{0r}=\left(\frac{N_r}{N_s}\right) \frac{
 آپ نے دیکھا کہ گھومتے لچھے مقناطیسی دباو کی موج پیدا کرتے ہیں جن کے ذریعہ ساکن لچھوں کو معلوم ہوتا ہے کہ موٹر پر بوجھ لدا ہے اور وہ اس کے مطابق لاگو برقی دباو سے برقی رو لیتی ہیں۔یہاں تک امالی موٹر کی مساوی برقی دور شکل \حوالہ{شکل_امالی_ساکن_کا_مساوی_دور_بمع_گھومتے_لچھے_کی_رو}  میں دکھائی گئی ہے۔
 \begin{figure}
 \centering
-\includegraphics{figInductionStatorEquivalentCircuitWithRotorCurrent}
+%\includegraphics{figInductionStatorEquivalentCircuitWithRotorCurrent}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\draw (0,0) to [short,o-,i={$\hat{I}_s $}] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUp) to [short,-*,i={$\hat{I}_\varphi$}] ++(0,-0.6)coordinate(upperJunction) to [short] ++(-0.5,0) to [short,i_={$\hat{I}_c$}] ++(0,-0.5) to  [resistor,l_={$R_c$}] ++(0,-2) to [short,-o] ++(-4,0)coordinate(lowerLeftTerminal);
+\draw (upperJunction) to [short] ++(0.5,0) to [short,i={$\hat{I}_m$}] ++(0,-0.5) to  [inductor,l={$jX_m$}] ++(0,-2)coordinate(rotorStartLow) to [short,-*] ++(-1,0);
+\draw (rotorStartUp) to [short,*-o,i={$\hat{I}_r'$}] ++(2,0);
+\draw (rotorStartLow) to [short,*-o] ++(1.5,0);
+%
+\draw node at (0,-1.5){$\begin{aligned} &+\\ & \hat{V}_s\\ &- \end{aligned}$};
+\draw node at (6.5,-1.5){$\begin{aligned} &+\\ & \hat{E}_s\\ &- \end{aligned}$};
+\end{tikzpicture}
 \caption{مساوی دور اضافی برقی رو کے ساتھ۔}
 \label{شکل_امالی_ساکن_کا_مساوی_دور_بمع_گھومتے_لچھے_کی_رو}
 \end{figure}
@@ -287,7 +393,22 @@ I_{0r}'&=\left(\frac{N_r}{N_s}\right) I_{0r}=\left(\frac{N_r}{N_s}\right) \frac{
 یہاں ذرہ شکل \حوالہ{شکل_امالی_گھومتے_لچھے_کا_دوسرا_مساوی_دور}  سے رجوع کریں۔ اس شکل میں
 \begin{figure}
 \centering
-\includegraphics{figInductionRotorEquivalentAnotherCircuit}
+%\includegraphics{figInductionRotorEquivalentAnotherCircuit}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\draw (0,0) to [short,o-,i={$\hat{I}_r'$}] ++(0.5,0) to [resistor,l={$\tfrac{R_r'}{s}$}]++(2,0) to [inductor,l={$jX_{r}'$}] ++(2,0) to ++(0,-2) to [short,-o] (0,-2);
+\draw node at (0,-1){$\begin{aligned} &+\\ & \hat{E}_s\\ &- \end{aligned}$};
+\draw node[below right] at (6,0.5){$
+\begin{aligned}
+R_r'&=\left(\tfrac{N_s}{N_r} \right)^2 R_r\\
+X_r'&=\left(\tfrac{N_s}{N_r} \right)^2 X_r
+\end{aligned}$};
+%
+\draw node[below right] at (0,-2.5){$
+i_a'(t)=\tfrac{s E_s}{\sqrt{R_r'^2+s^2X_r'^2}} \cos (s \omega_e t -\theta_0-\phi_z)  $}; 
+\end{tikzpicture}
 \caption{گھومتے لچھے کا ایک اور مساوی دور۔}
 \label{شکل_امالی_گھومتے_لچھے_کا_دوسرا_مساوی_دور}
 \end{figure}
@@ -321,7 +442,19 @@ i_c'(t)&=I_{0r}' \cos (\omega_e t +30\degree -\phi_Z)
 یہ مساوات بالکل مساوات \حوالہ{مساوات_امالی_تین_رو_الف}  کی طرح ہے۔ لہٰذا اگر شکل \حوالہ{شکل_امالی_ساکن_کا_مساوی_دور_بمع_گھومتے_لچھے_کی_رو}  میں ساکن لچھوں کی امالی برقی دباو \عددیء{\hat{E}_s} کے متوازی شکل \حوالہ{شکل_امالی_گھومتے_لچھے_کا_دوسرا_مساوی_دور}  جوڑا جائے تو ایسا کرنے سے ساکن لچھوں میں اُتنا ہی اضافی برقی رو رواں ہو گا جو اصل موٹر میں گھومتے لچھوں کی وجہ سے ہوتا ہے۔ شکل \حوالہ{شکل_امالی_مشین_کا_مکمل_مساوی_دور}  میں ایسا ہی کیا گیا ہے لہٰذا شکل میں دیا برقی دور، امالی موٹر کی صحیح عکاسی کرتی ہے۔ یہی امالی موٹر کی مساوی برقی دور ہے۔
 \begin{figure}
 \centering
-\includegraphics{figInductionMachineEquivalentCircuit}
+%\includegraphics{figInductionMachineEquivalentCircuit}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\draw (0,0) to [short,o-,i={$\hat{I}_s $}] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUp) to [short,-*,i={$\hat{I}_\varphi$}] ++(0,-0.6)coordinate(upperJunction) to [short] ++(-0.5,0) to [short,i_={$\hat{I}_c$}] ++(0,-0.5) to  [resistor,l_={$R_c$}] ++(0,-2) to [short,-o] ++(-4,0)coordinate(lowerLeftTerminal);
+\draw (upperJunction) to [short] ++(0.5,0) to [short,i={$\hat{I}_m$}] ++(0,-0.5) to  [inductor,l={$j X_m$}] ++(0,-2)coordinate(rotorStartLow) to [short,-*] ++(-1,0);
+\draw (rotorStartUp) to [short,*-,i={$\hat{I}_r'$}] ++(2,0) to [inductor,l={$j X_r'$}] ++(2,0) to [resistor,l={$\tfrac{R_r'}{s}$}] ++(0,-3.1) to [short] ++(-2,0);
+\draw (rotorStartLow) to [short,*-] ++(1.5,0);
+%
+\draw node at (0,-1.5){$\begin{aligned} &+\\ & \hat{V}_s\\ &- \end{aligned}$};
+\draw node at (6.5,-1.5){$\begin{aligned} &+\\ & \hat{E}_s\\ &- \end{aligned}$};
+\end{tikzpicture}
 \caption{امالی موٹر کی مساوی برقی دور۔}
 \label{شکل_امالی_مشین_کا_مکمل_مساوی_دور}
 \end{figure}
@@ -351,8 +484,23 @@ p_{\textup{میکانی}} =3 I_{0r}'^2 \frac{R_r'}{s} (1-s)=3 p_r (1-s)
 یوں شکل \حوالہ{شکل_امالی_مشین_کا_مکمل_مساوی_دور}  میں مزاحمت  \عددیء{R_r'} میں برقی طاقت کی ضیاع \عددیء{I_{0r}'^2 R_r'} گھومتے لچھے کی ضیاع ہے جبکہ مزاحمت \عددیء{R_r' \left(\tfrac{1-s}{s} \right)} میں برقی طاقت کی ضیاع \عددیء{I_{0r}'^2 R_r' \left(\tfrac{1-s}{s} \right)} دراصل میکانی طاقت  ہے۔یاد رہے کہ تین مرحلہ  مشین کے لئے یہاں سے حاصل نتائج کو تین سے ضرب دینا ہو گا۔
 \begin{figure}
 \centering
-\includegraphics{figInductionMachineAnotherEquivalentCircuit}
-\caption{امالی موٹر کی ایک اور مساوی برقی دور۔}
+%\includegraphics{figInductionMachineAnotherEquivalentCircuit}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\draw (0,0) to [short,o-,i={$\hat{I}_s $}] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUp) to [short,-*,i={$\hat{I}_\varphi$}] ++(0,-0.6)coordinate(upperJunction) to [short] ++(-0.5,0) to [short,i_={$\hat{I}_c$}] ++(0,-0.5) to  [resistor,l_={$R_c$}] ++(0,-2) to [short,-o] ++(-4,0)coordinate(lowerLeftTerminal);
+\draw (upperJunction) to [short] ++(0.5,0) to [short,i={$\hat{I}_m$}] ++(0,-0.5) to  [inductor,l={$jX_m$}] ++(0,-2)coordinate(rotorStartLow) to [short,-*] ++(-1,0);
+\draw (rotorStartUp) to [short,*-,i={$\hat{I}_r'$}] ++(2,0) to [inductor,l={$j X_r'$}] ++(2,0) to [resistor,l={$R_r'$}] ++(2,0) to [resistor,l={$R_r' \left( \tfrac{1-s}{s}\right)$}] ++(0,-3.1) to [short] ++(-4,0);
+\draw (rotorStartLow) to [short,*-] ++(1.5,0);
+%text
+\node at (9.5,1.2){\RL{برقی ضیاع}};
+\node at (11.75,-0.7){\RL{میکانی طاقت}};
+%
+\draw node at (0,-1.5){$\begin{aligned} &+\\ & \hat{V}_s\\ &- \end{aligned}$};
+\draw node at (6.5,-1.5){$\begin{aligned} &+\\ & \hat{E}_s\\ &- \end{aligned}$};
+\end{tikzpicture}
+\caption{امالی موٹر کا دوسرا مساوی برقی دور۔}
 \label{شکل_امالی_مشین_کا_دوسرا_مکمل_مساوی_دور}
 \end{figure}
 
@@ -369,7 +517,20 @@ T_m=\frac{p}{(1-s) \omega_{sm}}=\frac{3 I_{0r}'^2}{\omega_{sm}} \frac{R_r'}{s}
 ٹرانسفارمر کے سادہ ترین مساوی دور بناتے وقت \عددیء{R_c} اور \عددیء{X_m} کو نظرانداز کیا گیا تھا۔ امالی موٹر میں ایسا کرنا ممکن نہیں ہوتا چونکہ موٹروں میں خلائی درز ہوتی ہے جس میں مقناطیسی بہاو پیدا کرنے کے لئے بہت زیادہ مقناطیسی دباو درکار ہوتی ہے۔حقیقت میں بے بوجھ امالی موٹر کو اپنے پورے برقی رو کے تیس سے پچاس فی صد برقی رو قالب کو ہیجان کرنے کے لئے درکار ہوتی ہے۔ مزید یہ کہ خلائی درز کی وجہ سے اس کی رِستا امالہ بھی زیادہ ہوتی ہے اور اسے نظر انداز کرنا ممکن نہیں ہوتا۔ البتہ مساوی دور میں \عددیء{R_c} کو نظرانداز کیا جا سکتا ہے جیسے شکل \حوالہ{شکل_امالی_ساکن_حصے_کا_تھونن_دور} میں دکھایا گیا ہے۔ اس شکل میں نقطہ دار لکیر کی بائیں جانب کا مساوی تھوِنن دور بنایا جا سکتا ہے۔ایسا کرنے سے امالی موٹر پر غور کرنا نہایت آسان ہو جاتا ہے۔ اب ہم ایسا ہی کرتے ہیں۔
 \begin{figure}
 \centering
-\includegraphics{figInductionMachineTheveninNeededOfStatorSide}
+%\includegraphics{figInductionMachineTheveninNeededOfStatorSide}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\draw (0,0) to [short,o-] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUp) to [inductor,*-,l={$j X_m$}] ++(0,-2)coordinate(statorLowerRight) to [short,-o](0,-2);
+\draw (rotorStartUp)  to ++(1.5,0) to [inductor,l={$j X_r'$}] ++(2,0) to [resistor,l={$R_r'$}] ++(2,0) to [resistor,l={$R_r' \left( \tfrac{1-s}{s}\right)$}] ++(0,-2) to [short,-*] (statorLowerRight);
+%text
+\draw node[right] at (0,-3){\RL{اس کا مساوی تھونن دور بنائیں}};
+\draw[gray,dashed] (rotorStartUp)++(1.5,0.5)node[left]{الف}--++(0,-3)node[left]{ب};
+%text
+%
+\draw node at (0,-1){$\begin{aligned} &+\\ & \hat{V}_s\\ &- \end{aligned}$};
+\end{tikzpicture}
 \caption{امالی موٹر کا سادہ دور۔ قالبی ضیاع کو نظرانداز کیا گیا ہے۔}
 \label{شکل_امالی_ساکن_حصے_کا_تھونن_دور}
 \end{figure}
@@ -423,7 +584,29 @@ T=\frac{8741}{2 \times \pi \times 16.33}=\SI{85.1}{\newton \meter}
 برقی دور کے دو برقی سروں کے مابین تھوِنن رکاوٹ حاصل کرنے کے لئے  اس برقی دور کے اندرونی برقی دباو کسرِ دور کر کے ان دو برقی سروں کے مابین رکاوٹ معلوم کی جاتی ہے۔یہی رکاوٹ، تھوِنن رکاوٹ ہے۔انہیں برقی سروں پر تھوِنن برقی دباو حاصل کرنے کے لئے دیئے گئے برقی دور کے اندرونی برقی دباو برقرار رکھ کر ان دو سروں پر برقی دباو معلوم کی جاتی ہے۔ یہی برقی دباو در حقیقت تھوِنن برقی دباو ہے۔بعض اوقات ہم ایک برقی دور کے ایک خاص حصے کا مساوی تھوِنن دور بنانا چاہتے ہیں۔ایسا کرتے وقت بقایا برقی دور کو اس حصے سے مکمل طور پر منقطع کیا جاتا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figInductionMachineTheveninImpedanceAndVoltage}
+%\includegraphics{figInductionMachineTheveninImpedanceAndVoltage}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\draw (0,0)  to [resistor,o-,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUp) to [inductor,l_={$j X_m$}] ++(0,-2)coordinate(statorLowerRight) to [short,-o](0,-2);
+\draw(rotorStartUp) to [short,*-o] ++(1,0)node[above,gray]{الف};
+\draw(statorLowerRight) to [short,*-o] ++(1,0)node[below,gray]{ب};
+%
+\draw node at (0,-1){$\begin{aligned} &+\\ & \hat{V}_s\\ &- \end{aligned}$};
+\draw node at (5,-1){$\begin{aligned} &+\\ & \hat{V}_{t}\\ &- \end{aligned}$};
+%text
+\draw node[right] at (0,-2.5){\RL{تھونن برقی دباو حاصل کریں}};
+%
+\begin{scope}[xshift=6cm]
+\draw (0,0)  to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUp) to [inductor,l_={$j X_m$}] ++(0,-2)coordinate(statorLowerRight) to (0,-2) to (0,0);
+\draw(rotorStartUp) to [short,*-o] ++(1,0)node[above,gray]{الف};
+\draw(statorLowerRight) to [short,*-o] ++(1,0)node[below,gray]{ب};
+%text
+\draw node[right] at (0,-2.5){\RL{تھونن رکاوٹ حاصل کریں}};
+\draw node at (5,-1){$Z_{t}$};
+\end{scope}
+\end{tikzpicture}
 \caption{تھوِنن رکاوٹ اور تھوِنن برقی دباو حاصل کرنے کے دور۔}
 \label{شکل_امالی_تھونن_رکاوٹ_اور_دباو}
 \end{figure}
@@ -437,7 +620,17 @@ Z_t&=\frac{\left(R_s+j X_s \right) j X_m}{R_s +j X_s + j X_m}=R_t+j X_t\\
 %
 \begin{figure}
 \centering
-\includegraphics{figInductionMachineUsingThevenin}
+%\includegraphics{figInductionMachineUsingThevenin}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\draw (0,0) to [short,o-] ++(0.5,0) to [resistor,l={$R_{t}$}]++(2,0) to [inductor,l={$j X_{t}$}] ++(2,0)coordinate(dashedUP) to [short,i_={$\hat{I}_r'$}] ++(0.5,0) to [inductor,l={$j X_r'$}] ++(2,0)  to [resistor,l={$\frac{R_r'}{s}$}] ++(0,-2) to [short,-*] (0,-2);
+\draw[gray,dashed] (dashedUP)++(0,0.5)node[above]{الف} --++(0,-3)node[below]{ب};
+%text
+\draw node at (0,-1){$\begin{aligned} &+\\ & \hat{V}_{t}\\ &- \end{aligned}$};
+\draw node[gray,right,align=right]  at (0.5,-1){\RL{نقطہ دار لکیر کی اس} \\ \RL{جانب مساوی تھونن} \\  \RL{دور استعمال ہوا ہے}};
+\end{tikzpicture}%
 \caption{تھوِنن دور استعمال کرنے کے بعد امالی موٹر کا مساوی دور۔}
 \label{شکل_امالی_تھونن_استعمال_کرتے_ہوئے}
 \end{figure}
@@ -465,8 +658,33 @@ T&=\frac{1}{\omega_{sm}} \frac{3 V_t^2 \left(\frac{R_r'}{s} \right)}{\left(R_t+\
 اگر موٹر کو زبردستی ساکن لچھوں کی گھومتے مقناطیسی موج کی سمت میں معاصر رفتار سے زیادہ رفتار پر گھمایا جائے تو یہ ایک جنریٹر کے طور پر کام کرنے شروع ہو جائے گی۔ایسا کرنے کے لئے بیرونی میکانی طاقت درکار ہو گی ۔اگرچہ امالی مشین عام طور پر جنریٹر کے طور پر استعمال نہیں ہوتے البتہ ہوا سے برقی طاقت پیدا کرنے میں یہ جنریٹر کے طور پر کار آمد ثابت ہوتے ہیں۔
 \begin{figure}
 \centering
-\includegraphics{figInductionTorqueSlip}
-\caption{امالی موٹر کی قوت مروڑ بالمقابل سرک کا خط۔}
+%\includegraphics{figInductionTorqueSlip}
+\begin{tikzpicture}[x=5cm,y=5cm]
+%grid
+%\draw[gray,xstep=0.1,ystep=0.1] (-0.5,-0.5) grid (1,0.4);
+\pgfmathsetmacro{\shiftX}{5cm}
+%axis
+\draw(0,0.3)node[left]{$T$}--(0,-0.4);
+\draw(-0.55,0)--(1.2,0);
+\draw (0,0.2)--++(-0.01,0)node[left]{$\SI{100}{\percent}$};
+%
+\foreach \a in {-0.5,0,0.5,1}{
+\draw (\a,0.02)--++(0,-0.04); }
+\foreach \a/\b in {-0.52/-1,0.02/0,0.5/1,1/2}{
+\draw node at (\a,-0.08){$\b$};}
+\foreach \a/\b in {-0.5/2,0.02/1,0.5/0,0.98/-1}{
+\draw node[gray] at (\a,0.08){$\b$}; }
+%
+\draw node at (1.2,-0.08){$\tfrac{\omega}{\omega_s}$};
+\draw node[gray] at (1.2,0.08){$s$};
+\draw node[gray] at (0.8,-0.05){جنریٹر};
+\draw node[gray] at (0.25,0.05){موٹر};
+\draw node[gray] at (-0.2,0.05){بریک};
+%
+\def\Rr{0.144}
+\draw[scale=0.5,domain=-0.8:2,samples=50,smooth,variable=\x] plot ({\x},{(\Rr/(1-\x))/((0.113+\Rr/(1-\x))^2+(0.49+0.209)^2)});
+\end{tikzpicture}
+\caption{امالی موٹر کی قوت مروڑ بالمقابل سرک۔}
 \label{شکل_امالی_مروڑ_بالمقابل_رفتار}
 \end{figure}
 
@@ -495,7 +713,46 @@ T_z&=\frac{1}{\omega_{sm}} \frac{3 V_t^2 \left(\frac{R_r'}{s} \right)}{\frac{R_r
 اس مساوات کے مطابق امالی موٹر کی زیادہ سے زیادہ قوت مروڑ اس کے گھومتے لچھوں کی  مزاحمت پر منحصر نہیں۔ یہ ایک اہم معلومات ہے جسے استعمال کر کے امالی موٹر کی زیادہ سے زیادہ قوت مروڑ درکار رفتار پر  حاصل کی جا سکتی ہے۔آئیں دیکھیں کہ یہ کیسا کیا جاتا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figInductionTorqueSlipRotorResistanceIncreased}
+%\includegraphics{figInductionTorqueSlipRotorResistanceIncreased}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+%
+\begin{axis}[
+	axis lines=middle,
+%	axis y line=middle,
+	axis line style=-,
+	xmax=1.15,
+	ymax=0.75,
+	ytick={0.25,0.5},
+	yticklabels={$\SI{100}{\percent}$,$\SI{200}{\percent}$},
+	xtick style={draw=none},
+	ylabel={$T$},
+	xlabel={$\tfrac{\omega}{\omega_s}$},
+	every axis x label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=west,
+},
+every axis y label/.style={
+    at={(ticklabel* cs:1.00)},
+    anchor=east,
+},
+]
+\foreach \Rr in {0.144,0.288,0.72}{
+\addplot[black,domain=0:1,samples=100,]{(\Rr/(1-x))/((0.113+\Rr/(1-x))^2+(0.49+0.209)^2)};}
+%
+\end{axis}
+%grid
+%\draw [gray,thick](0,0) grid (8,5);
+%\draw [gray,thin,xstep=0.1,ystep=0.1](0,0) grid (8,5);
+%
+\draw [gray,dashed] (0,4.63)--++(6,0);
+\draw[gray,<-] (2.5,4.63) to [out=90,in=180]++(1,0.5)node[right]{\RL{زیادہ سے زیادہ مروڑ}};
+\draw[<-] (5.6,3) to [out=0,in=180]++(1,0.5)node[right]{$R_{r,\textup{الف}}$};
+\draw[<-] (5.5,2) to [out=0,in=180]++(1,0.5)node[right]{$R_{r,\textup{ب}}$};
+\draw[<-] (5.4,1) to [out=0,in=180]++(1,0.5)node[right]{$R_{r,\textup{پ}}$};
+\draw node at (2.5,1){$R_{r,\textup{پ}} > R_{r,\textup{ب}} > R_{r,\textup{الف}}$};
+\end{tikzpicture}%
 \caption{بیرونی مزاحمت لگانے کے قوت مروڑ بالمقابل سرک کے خطوط پر اثرات۔}
 \label{شکل_امالی_بیرونی_مزاحمت_اور_مروٹ}
 \end{figure}
@@ -592,7 +849,26 @@ p_{\textup{ضیاع}}=p_{bb}-3 I_{s,bb}^2 R_s
 میکانی طاقت کا ضیاع بے بوجھ اور بوجھ بردار موٹر کے لئے یکساں تصور کیا جاتا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figInductionUnloaded}
+%\includegraphics{figInductionUnloaded}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\draw (0,0) to [short,o-,i={$\hat{I}_{s,bb} $}] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUp) to [short] ++(0,-0.5)coordinate(upperJunction) to [short] ++(-0.5,0) to [] ++(0,-0.5) to  [resistor,l_={$R_c$}] ++(0,-2) to [short,-o] ++(-4,0)coordinate(lowerLeftTerminal);
+\draw (upperJunction) to [short] ++(0.5,0) to [short] ++(0,-0.5) to  [inductor,l={$j X_m$}] ++(0,-2)coordinate(rotorStartLow) to [short,-*] ++(-1,0);
+%
+\draw node at (0,-1.5){$\begin{aligned} &+\\ & \hat{V}_{bb}\\ &- \end{aligned}$};
+\draw node at (2,-3.5){$R_c \gg X_m$};
+\draw node at (0.5,-4){الف};
+%
+\begin{scope}[xshift=-7cm]
+\draw (0,0) to [short,o-,i={$\hat{I}_{s,bb} $}] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0) to  [resistor,l_={$R_c^{*}$}] ++(0,-1.5) to [inductor,l_={$jX_m$}] ++(0,-1.5) to [short,-o] (0,-3)coordinate(lowerLeftTerminal);
+%
+\draw node at (0,-1.5){$\begin{aligned} &+\\ & \hat{V}_{bb}\\ &- \end{aligned}$};
+\draw node[below right] at (-0.4,-3){$\begin{aligned} Z_{bb}&=R_{s}+j X_s+R_c^*+j X_m \\ &=R_{bb} +j X_{bb}  \end{aligned}$};
+\draw node at (4.5,-4){ب};
+\end{scope}
+\end{tikzpicture}%
 \caption{بے بوجھ امالی موٹر کا معائنہ۔}
 \label{شکل_امالی_بے_بار_معائنہ}
 \end{figure}
@@ -618,7 +894,25 @@ X_{bb}&=X_s+X_m
 یہاں صفحہ \حوالہصفحہ{شکل_امالی_مشین_کا_مکمل_مساوی_دور} پر دکھائے شکل \حوالہ{شکل_امالی_مشین_کا_مکمل_مساوی_دور}  کو رکے موٹر کے معائنہ کی نقطہ نظر سے دوبارہ بناتے ہیں۔رکے موٹر کی سرک ایک کے برابر ہوتی ہے۔مزید یہ کہ اس معائنہ میں لاگو برقی دباو عام چالو موٹر پر لاگو برقی دباو سے خاصی کم ہوتی ہے۔اتنی کم لاگو برقی دباو پر قالبی ضیاع کو نظرانداز کیا جا سکتا ہے۔شکل میں  \عددیء{R_c} کو کھلے دور کرنا قالبی ضیاع کو نظرانداز کرنے کے مترادف ہے۔ایسا کرنے سے شکل \حوالہ{شکل_امالی_رکے_موٹر_معائنہ}-الف ملتا ہے۔چونکہ \عددیء{s=1} ہے لہٰذا اس شکل میں \عددیء{\tfrac{R_r'}{s}}  کو \عددیء{R_r'} لیا گیا ہے۔
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{figInductionBlockedRotorTest}
+%\includegraphics[width=\linewidth]{figInductionBlockedRotorTest}
+\begin{tikzpicture}[scale=0.85]
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\draw (0,0) to [short,o-,i={$\hat{I}_{s,rk} $}] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0)coordinate(rotorStartUpper) to  [inductor,l_={$j X_m$}] ++(0,-3)coordinate(rotorStartLow) to [short,-*] (0,-3);
+\draw (rotorStartUpper) to [inductor,l={$j X_r'$},*-]++(2,0) to [resistor,l_={$\tfrac{R_r'}{1}$}] ++(0,-3) to [short,-*] (rotorStartLow);
+%
+\draw node at (0,-1.5){$\begin{aligned} &+\\ & \hat{V}_{rk}\\ &- \end{aligned}$};
+\draw node at (0.5,-4){الف};
+%
+\begin{scope}[xshift=-7cm]
+\draw (0,0) to [short,o-,i={$\hat{I}_{s,rk} $}] ++(0.5,0) to [resistor,l={$R_s$}]++(2,0) to [inductor,l={$j X_{s}$}] ++(2,0) to  [resistor,l_={$R^*$}] ++(0,-1.5) to [inductor,l_={$jX_r'$}] ++(0,-1.5) to [short,-o] (0,-3)coordinate(lowerLeftTerminal);
+%
+\draw node at (0,-1.5){$\begin{aligned} &+\\ & \hat{V}_{rk}\\ &- \end{aligned}$};
+\draw node[below right] at (-0.4,-3){$\begin{aligned} Z_{rk}&=R_{s}+j X_s+R^*+j X_r' \\ &=R_{rk} +j X_{rk}  \end{aligned}$};
+\draw node at (4.5,-4){ب};
+\end{scope}
+\end{tikzpicture}
 \caption{رکے امالی موٹر کا معائنہ۔}
 \label{شکل_امالی_رکے_موٹر_معائنہ}
 \end{figure}
@@ -676,7 +970,35 @@ R^*=R_{rk}-R_s
 اوہم میٹر کی مدد سے ساکن لچھے کی مزاحمت ناپتے وقت یہ جاننا ضروری ہے کہ موٹر ستارہ یا تکونی جڑی ہے۔شکل \حوالہ{شکل_امالی_ساکن_مزاحمت_کا_حصول}  میں لچھے کو دونوں طرح جڑا دکھایا گیا ہے۔ اگر یک مرحلہ مزاحمت \عددیء{R_s}  ہو تو ستارہ جڑی موٹر میں اوہم میٹر  \عددیء{2 R_s} مزاحمت دے گی جبکہ تکونی جڑی موٹر کے لئے یہ \عددیء{\tfrac{2}{3} R_s} مزاحمت دے گی۔
 \begin{figure}
 \centering
-\includegraphics{figInductionStarDeltaStator}
+%\includegraphics{figInductionStarDeltaStator}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\pgfmathsetmacro{\h}{sqrt(3)/2*2}
+\pgfmathsetmacro{\hc}{\h/3}
+\pgfmathsetmacro{\x}{(2/3*\h+0.5)*cos (30)}
+
+\pgfmathsetmacro{\xsize}{2*cos(30)}
+\pgfmathsetmacro{\ysize}{2*sin(30)}
+\draw (0,0) to [resistor,*-,l={$R_s$}] ++(-90:2) to [short,-o] ++(180:3);
+\draw (0,0) to [resistor,l={$R_s$}] ++(30:2);
+\draw (0,0) to [resistor,l={$R_s$}] ++(150:2) to [short,-o]++(180:3-\xsize);
+%
+\draw node at (-3,+\ysize/2-1){$R$};
+\draw  node at (0,-2.5){$R=R_s+R_s=2R_s$};
+%
+\begin{scope}[xshift=-6cm,yshift=-1cm]
+\draw (0,0)++(-150:2/3*\h) to [resistor,*-]++(0:2) coordinate(a) to [resistor]++(120:2)coordinate(b) to [resistor]++(-120:2);
+\draw node at (-90:\hc+0.5){$R_s$};
+\draw node at (30:\hc+0.5){$R_s$};
+\draw node at (150:\hc+0.5){$R_s$};
+\draw (-150:2/3*\h) to [short]++(-150:0.5) to [short,-o]++(180:1);
+\draw (b) to [short,*-] ++(90:0.5) to [short,-o] ++(180:2.433);
+\draw node at (-2.433,0.5){$R$};
+\draw node at (-90:\hc+1){$\tfrac{1}{R}=\tfrac{1}{R_s}+\tfrac{1}{2R_s}$};
+\end{scope}
+\end{tikzpicture}
 \caption{ستارہ اور تکونی جڑی موٹروں کی ساکن لچھوں کی مزاحمت کا اوہم میٹر کی مدد سے حصول۔}
 \label{شکل_امالی_ساکن_مزاحمت_کا_حصول}
 \end{figure}
@@ -724,7 +1046,14 @@ R_r'=R_{rk}-R_s=1.464-0.275=\SI{1.189}{\ohm}
 ہو گا۔یہ مساوی برقی دور شکل \حوالہ{شکل_امالی_موٹر_مثال_کا_دور} میں دکھایا گیا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figInductionMachineEquivalentCircuitExample}
+%\includegraphics{figInductionMachineEquivalentCircuitExample}
+\begin{tikzpicture}
+%grid
+%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
+\pgfmathsetmacro{\shiftX}{5cm}
+\draw (0,0)  to [resistor,o-,l={$0.275$}]++(2,0) to [inductor,l={$j 2.45$}] ++(2,0)coordinate(rotorStartUp) to  [inductor,l_={$j 53$}] ++(0,-2)coordinate(rotorStartLow) to [short,*-o] ++(-4,0);
+\draw (rotorStartUp)  to [inductor,*-,l={$j 2.45$}] ++(2,0) to [resistor,l={$\tfrac{1.189}{s}$}] ++(0,-2) to [short] (rotorStartLow);
+\end{tikzpicture}
 \caption{امالی موٹر کی مساوی برقی دور۔}
 \label{شکل_امالی_موٹر_مثال_کا_دور}
 \end{figure}

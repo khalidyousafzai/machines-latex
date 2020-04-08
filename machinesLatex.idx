@@ -10,30 +10,30 @@
 \indexentry{محدد!کارتیسی}{4}
 \indexentry{cylindrical coordinates}{5}
 \indexentry{محدد!نلکی}{5}
-\indexentry{cross section}{8}
-\indexentry{عمودی تراش}{8}
-\indexentry{عمودی تراش!رقبہ}{8}
-\indexentry{charge}{9}
-\indexentry{برقی بار}{9}
-\indexentry{Coulomb's law}{9}
-\indexentry{قانون!کولمب}{9}
+\indexentry{cross section}{9}
+\indexentry{عمودی تراش}{9}
+\indexentry{عمودی تراش!رقبہ}{9}
+\indexentry{charge}{10}
+\indexentry{برقی بار}{10}
+\indexentry{Coulomb's law}{10}
+\indexentry{قانون!کولمب}{10}
 \indexentry{برقی میدان}{10}
 \indexentry{electric field!intensity}{10}
 \indexentry{برقی میدان!شدت}{10}
-\indexentry{magnetic field!intensity}{10}
-\indexentry{مقناطیسی میدان!شدت}{10}
+\indexentry{magnetic field!intensity}{11}
+\indexentry{مقناطیسی میدان!شدت}{11}
 \indexentry{surface density}{11}
 \indexentry{سطحی کثافت}{11}
 \indexentry{cross product}{13}
 \indexentry{ضرب صلیبی}{13}
 \indexentry{dot product}{15}
 \indexentry{ضرب!نقطہ}{15}
-\indexentry{differentiation}{17}
-\indexentry{تفرق}{17}
-\indexentry{تفرق!جزوی}{17}
-\indexentry{طول موج}{17}
-\indexentry{تکمل}{17}
-\indexentry{موثر}{18}
+\indexentry{differentiation}{18}
+\indexentry{تفرق}{18}
+\indexentry{تفرق!جزوی}{18}
+\indexentry{طول موج}{18}
+\indexentry{تکمل}{18}
+\indexentry{موثر}{19}
 \indexentry{Euler}{21}
 \indexentry{یولر مساوات}{21}
 \indexentry{phasor}{21}
@@ -42,16 +42,16 @@
 \indexentry{تاخیری زاویہ}{22}
 \indexentry{leading}{22}
 \indexentry{پیش زاویہ}{22}
-\indexentry{phase difference}{22}
-\indexentry{مرحلی فرق}{22}
-\indexentry{power factor angle}{22}
-\indexentry{زاویہ جزو طاقت}{22}
-\indexentry{power factor}{22}
-\indexentry{جزو طاقت}{22}
-\indexentry{power factor!leading}{22}
-\indexentry{جزو طاقت!پیش}{22}
-\indexentry{power factor!lagging}{22}
-\indexentry{جزو طاقت!تاخیری}{22}
+\indexentry{phase difference}{23}
+\indexentry{مرحلی فرق}{23}
+\indexentry{power factor angle}{23}
+\indexentry{زاویہ جزو طاقت}{23}
+\indexentry{power factor}{23}
+\indexentry{جزو طاقت}{23}
+\indexentry{power factor!leading}{23}
+\indexentry{جزو طاقت!پیش}{23}
+\indexentry{power factor!lagging}{23}
+\indexentry{جزو طاقت!تاخیری}{23}
 \indexentry{single phase}{23}
 \indexentry{یک مرحلہ}{23}
 \indexentry{resistance}{25}
@@ -270,95 +270,95 @@
 \indexentry{برقرار چالو}{100}
 \indexentry{time period}{100}
 \indexentry{دوری عرصہ}{100}
-\indexentry{relay}{103}
-\indexentry{رِیلے}{103}
-\indexentry{سمتی رفتار}{104}
-\indexentry{Lorenz equation}{104}
-\indexentry{مساوات لورینز}{104}
-\indexentry{stator coil}{106}
-\indexentry{لچھا! ساکن}{106}
-\indexentry{ساکن لچھا}{106}
-\indexentry{rotor coli}{106}
-\indexentry{لچھا!گھومتا}{106}
-\indexentry{گھومتا لچھا}{106}
-\indexentry{conservative field}{110}
-\indexentry{قدامت پسند میدان}{110}
-\indexentry{تدریجی تفرق}{115}
-\indexentry{بھٹی}{116}
-\indexentry{Faraday's law}{127}
-\indexentry{فیراڈے!قانون}{127}
-\indexentry{core}{128}
-\indexentry{قالب}{128}
-\indexentry{برقی رو!بھنور نما}{128}
-\indexentry{بھنور نما برقی رو}{128}
-\indexentry{laminations}{128}
-\indexentry{پتری}{128}
-\indexentry{eddy currents}{128}
-\indexentry{چکر فی منٹ}{128}
-\indexentry{stator coil}{129}
-\indexentry{ساکن لچھا}{129}
-\indexentry{frequency}{132}
-\indexentry{تعدد}{132}
-\indexentry{synchronous}{132}
-\indexentry{معاصر}{132}
-\indexentry{electromagnet}{133}
-\indexentry{مقناطیس!برقی}{133}
-\indexentry{armature coil}{133}
-\indexentry{لچھا!قوی}{133}
-\indexentry{field coil}{133}
-\indexentry{لچھا!میدانی}{133}
-\indexentry{لچھا!سمت}{135}
-\indexentry{charge}{138}
-\indexentry{بار}{138}
-\indexentry{برقی بار}{138}
-\indexentry{Lorentz law}{138}
-\indexentry{قانون!لورینز}{138}
-\indexentry{برقی دباو}{139}
-\indexentry{volt}{139}
-\indexentry{وولٹ}{139}
-\indexentry{voltage}{139}
-\indexentry{emf}{139}
-\indexentry{electromotive force}{139}
-\indexentry{برقی دباو!محرک}{139}
-\indexentry{لچھا!پھیلے}{142}
-\indexentry{pole!non-salient}{142}
-\indexentry{قطب!ہموار}{142}
-\indexentry{pole!salient}{142}
-\indexentry{قطب!ابھرے}{142}
-\indexentry{winding!distributed}{142}
-\indexentry{مقناطیسی دباو!سمت}{143}
-\indexentry{Fourier series}{144}
-\indexentry{فوریئر تسلسل}{144}
-\indexentry{time period}{144}
-\indexentry{دوری عرصہ}{144}
-\indexentry{fundamental}{144}
-\indexentry{بنیادی جزو}{144}
-\indexentry{harmonic}{144}
-\indexentry{موسیقائی جزو}{144}
-\indexentry{سلسلہ وار}{147}
-\indexentry{winding factor}{149}
-\indexentry{جزو!پھیلاو}{149}
-\indexentry{synchronous speed}{157}
-\indexentry{معاصر رفتار}{157}
-\indexentry{synchronous speed}{157}
-\indexentry{معاصر رفتار}{157}
-\indexentry{rpm}{157}
-\indexentry{generator!ac}{161}
-\indexentry{جنریٹر!بدلتی رو}{161}
-\indexentry{محور}{162}
-\indexentry{axle}{162}
-\indexentry{دھرا}{162}
-\indexentry{rms}{165}
-\indexentry{موثر قیمت}{165}
-\indexentry{voltage!DC}{166}
-\indexentry{برقی دباو!یک سمتی}{166}
-\indexentry{commutator}{166}
-\indexentry{سمت کار!میکانی}{166}
-\indexentry{rectifier}{166}
-\indexentry{سمت کار!برقیاتی}{166}
-\indexentry{torque}{167}
-\indexentry{قوت مروڑ}{167}
-\indexentry{مقناطیسی مستقل}{167}
+\indexentry{relay}{101}
+\indexentry{رِیلے}{101}
+\indexentry{سمتی رفتار}{102}
+\indexentry{Lorenz equation}{102}
+\indexentry{مساوات لورینز}{102}
+\indexentry{stator coil}{104}
+\indexentry{لچھا! ساکن}{104}
+\indexentry{ساکن لچھا}{104}
+\indexentry{rotor coli}{104}
+\indexentry{لچھا!گھومتا}{104}
+\indexentry{گھومتا لچھا}{104}
+\indexentry{conservative field}{108}
+\indexentry{قدامت پسند میدان}{108}
+\indexentry{تدریجی تفرق}{113}
+\indexentry{بھٹی}{114}
+\indexentry{Faraday's law}{125}
+\indexentry{فیراڈے!قانون}{125}
+\indexentry{core}{126}
+\indexentry{قالب}{126}
+\indexentry{برقی رو!بھنور نما}{126}
+\indexentry{بھنور نما برقی رو}{126}
+\indexentry{laminations}{126}
+\indexentry{پتری}{126}
+\indexentry{eddy currents}{126}
+\indexentry{چکر فی منٹ}{126}
+\indexentry{stator coil}{127}
+\indexentry{ساکن لچھا}{127}
+\indexentry{frequency}{130}
+\indexentry{تعدد}{130}
+\indexentry{synchronous}{130}
+\indexentry{معاصر}{130}
+\indexentry{electromagnet}{131}
+\indexentry{مقناطیس!برقی}{131}
+\indexentry{armature coil}{131}
+\indexentry{لچھا!قوی}{131}
+\indexentry{field coil}{131}
+\indexentry{لچھا!میدانی}{131}
+\indexentry{لچھا!سمت}{133}
+\indexentry{charge}{136}
+\indexentry{بار}{136}
+\indexentry{برقی بار}{136}
+\indexentry{Lorentz law}{136}
+\indexentry{قانون!لورینز}{136}
+\indexentry{برقی دباو}{137}
+\indexentry{volt}{137}
+\indexentry{وولٹ}{137}
+\indexentry{voltage}{137}
+\indexentry{emf}{137}
+\indexentry{electromotive force}{137}
+\indexentry{برقی دباو!محرک}{137}
+\indexentry{لچھا!پھیلے}{140}
+\indexentry{pole!non-salient}{140}
+\indexentry{قطب!ہموار}{140}
+\indexentry{pole!salient}{140}
+\indexentry{قطب!ابھرے}{140}
+\indexentry{winding!distributed}{140}
+\indexentry{مقناطیسی دباو!سمت}{141}
+\indexentry{Fourier series}{142}
+\indexentry{فوریئر تسلسل}{142}
+\indexentry{time period}{142}
+\indexentry{دوری عرصہ}{142}
+\indexentry{fundamental}{142}
+\indexentry{بنیادی جزو}{142}
+\indexentry{harmonic}{142}
+\indexentry{موسیقائی جزو}{142}
+\indexentry{سلسلہ وار}{145}
+\indexentry{winding factor}{147}
+\indexentry{جزو!پھیلاو}{147}
+\indexentry{synchronous speed}{155}
+\indexentry{معاصر رفتار}{155}
+\indexentry{synchronous speed}{155}
+\indexentry{معاصر رفتار}{155}
+\indexentry{rpm}{155}
+\indexentry{generator!ac}{159}
+\indexentry{جنریٹر!بدلتی رو}{159}
+\indexentry{محور}{161}
+\indexentry{axle}{161}
+\indexentry{دھرا}{161}
+\indexentry{rms}{164}
+\indexentry{موثر قیمت}{164}
+\indexentry{voltage!DC}{164}
+\indexentry{برقی دباو!یک سمتی}{164}
+\indexentry{commutator}{164}
+\indexentry{سمت کار!میکانی}{164}
+\indexentry{rectifier}{164}
+\indexentry{سمت کار!برقیاتی}{164}
+\indexentry{torque}{165}
+\indexentry{قوت مروڑ}{165}
+\indexentry{مقناطیسی مستقل}{166}
 \indexentry{steady state}{175}
 \indexentry{برقرار چالو}{175}
 \indexentry{transient state}{175}
