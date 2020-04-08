@@ -116,3 +116,5 @@
 \contentsline {subsection}{\numberline {8.5.1}حاصل برقی دباو بالمقابل برقی بوجھ}{255}% 
 \contentsline {subsection}{\numberline {8.5.2}رفتار بالمقابل قوت مروڑ}{257}% 
 \contentsline {chapter}{فرہنگ}{265}% 
+\select@language {english}
+\select@language {arabic}

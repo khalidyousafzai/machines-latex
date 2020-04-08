@@ -1107,7 +1107,25 @@ V&=20
 اس مساوات میں پہلا جزو ایک عام کوسائن موج ہے۔ دوسرا جزو اِسی کو مرحلی سمتیہ سے ظاہر کر رہا ہے۔ تیسرا اس مرحلی سمتیہ کا طول اور چوتھا اس کا زاویہ بتلا رہا ہے۔
 \begin{figure}
 \centering
-\includegraphics{figBasicFactsRLcircuit}
+%\includegraphics{figBasicFactsRLcircuit}
+\begin{tikzpicture}%[circuit ee IEC]
+%grid 
+%\draw[gray,thick] (0,0) grid (12,3);
+%
+\draw(0,0)to [short]++(3,0)  to [inductor,l={$jX$}]++(0,2) to [resistor,l_={$R$}]++(-2,0) to [short,i_<=$i(t)$]++ (-1,0) to [sinusoidal voltage source] (0,0); 
+\draw node at (-0.8,1){$\begin{aligned} &+ \\  v&(t)\\ &- \end{aligned}$};
+%text
+\draw node[right] at (4,1){$
+\begin{aligned}
+Z&=R+j X\\
+\left |Z \right|&=\sqrt{R^2+X^2}\\
+\phi_Z&=\tan^{-1} \frac{X}{R}\\
+v(t)&=V_0 \cos (\omega t +\alpha)\\
+i(t)&=\frac{V_0}{\left| Z \right |} \cos (\omega t +\alpha-\phi_Z)\\
+&=I_0 \cos (\omega t +\alpha-\phi_Z)
+\end{aligned}
+$};
+\end{tikzpicture}
 \caption{مرحلی سمتیہ کی مدد سے \عددیء{RL} دور کا حل۔}
 \label{شکل_حقائق_دوری_سمتیہ_سے_دور_حل}
 \end{figure}
