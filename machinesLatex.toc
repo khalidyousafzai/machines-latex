@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {1.11}تفرق اور جزوی تفرق}{18}% 
 \contentsline {section}{\numberline {1.12}خطی تکمل}{18}% 
 \contentsline {section}{\numberline {1.13}سطحی تکمل}{19}% 
-\contentsline {section}{\numberline {1.14} مرحلی سمتیہ}{21}% 
+\contentsline {section}{\numberline {1.14} مرحلی سمتیہ}{20}% 
 \contentsline {chapter}{\numberline {2}مقناطیسی ادوار}{25}% 
 \contentsline {section}{\numberline {2.1}مزاحمت اور ہچکچاہٹ}{25}% 
 \contentsline {section}{\numberline {2.2}کثافتِ برقی رو اور برقی میدان کی شدت}{26}% 
@@ -60,8 +60,8 @@
 \contentsline {chapter}{\numberline {4}برقی اور میکانی توانائی کا باہمی تبادلہ}{101}% 
 \contentsline {section}{\numberline {4.1}مقناطیسی نظام میں قوت اور قوت مروڑ}{102}% 
 \contentsline {section}{\numberline {4.2}تبادلہ توانائی والا ایک لچھے کا نظام}{107}% 
-\contentsline {section}{\numberline {4.3}توانائی اور کو-توانائی}{112}% 
-\contentsline {section}{\numberline {4.4}زیادہ لچھوں کا مقناطیسی نظام}{117}% 
+\contentsline {section}{\numberline {4.3}توانائی اور ہمہ توانائی}{112}% 
+\contentsline {section}{\numberline {4.4}زیادہ لچھوں کا مقناطیسی نظام}{116}% 
 \contentsline {chapter}{\numberline {5}گھومتے مشین کے بنیادی اصول}{125}% 
 \contentsline {section}{\numberline {5.1}قانونِ فیراڈے}{125}% 
 \contentsline {section}{\numberline {5.2}معاصر مشین}{126}% 
