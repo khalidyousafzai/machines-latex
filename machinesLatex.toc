@@ -61,7 +61,7 @@
 \contentsline {section}{\numberline {4.1}مقناطیسی نظام میں قوت اور قوت مروڑ}{101}% 
 \contentsline {section}{\numberline {4.2}تبادلہ توانائی والا ایک لچھے کا نظام}{107}% 
 \contentsline {section}{\numberline {4.3}توانائی اور ہمہ توانائی}{113}% 
-\contentsline {section}{\numberline {4.4}زیادہ لچھوں کا مقناطیسی نظام}{117}% 
+\contentsline {section}{\numberline {4.4}متعدد لچھوں کا مقناطیسی نظام}{117}% 
 \contentsline {chapter}{\numberline {5}گھومتے مشین کے بنیادی اصول}{125}% 
 \contentsline {section}{\numberline {5.1}قانونِ فیراڈے}{125}% 
 \contentsline {section}{\numberline {5.2}معاصر مشین}{126}% 
