@@ -29,10 +29,10 @@
 \contentsline {section}{\numberline {2.2}کثافتِ برقی رو اور برقی میدان کی شدت}{26}% 
 \contentsline {section}{\numberline {2.3}برقی ادوار}{28}% 
 \contentsline {section}{\numberline {2.4}مقناطیسی دور حصہ اول}{30}% 
-\contentsline {section}{\numberline {2.5}کثافتِ مقناطیسی بہاو اور مقناطیسی میدان کی شدت}{31}% 
+\contentsline {section}{\numberline {2.5}کثافتِ مقناطیسی بہاو اور مقناطیسی میدان کی شدت}{32}% 
 \contentsline {section}{\numberline {2.6}مقناطیسی دور حصہ دوم}{34}% 
 \contentsline {section}{\numberline {2.7}خود امالہ ، مشترکہ امالہ اور توانائی}{38}% 
-\contentsline {section}{\numberline {2.8}مقناطیسی مادہ کے خصوصیات}{44}% 
+\contentsline {section}{\numberline {2.8}مقناطیسی مادہ کے خواص}{45}% 
 \contentsline {section}{\numberline {2.9}ہیجان شدہ لچھا}{49}% 
 \contentsline {chapter}{\numberline {3}ٹرانسفارمر}{55}% 
 \contentsline {section}{\numberline {3.1}ٹرانسفارمر کی اہمیت}{56}% 
