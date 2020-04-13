@@ -2,8 +2,7 @@
 %\usepackage{fancyhdr}   %put fancyhdr on jan-01-2015 and it worked
 %\pagestyle{fancy}
 %\usepackage[hidelinks]{hyperref}   %messes with equation numbers and their reference calls (RTL issues)
-
-\usepackage{./tex/khalidUrduBooksEMT}                     %my sty file
+\usepackage{./tex/khalidUrduBooksMachines}                     %my sty file
 \usepackage{pgfplots}
 
 %\input{./tex/myUrduCommandsEMT.tex}                  %turning latex into urdu
@@ -20,7 +19,7 @@
 %
 
 %\includeonly{./tex/machinesPreface,./tex/machBasicFacts,./tex/machMagneticCircuits,./tex/machTransformers,./tex/machElectroMechConv,./tex/machRotatingMachPrinciples,./tex/machSynchronous,./tex/machInduction,./tex/machDCmachines}
-\includeonly{./tex/prefaceFirstBook,./tex/machMagneticCircuits}
+\includeonly{./tex/prefaceFirstBook,./tex/machMagneticCircuits,./tex/machTransformers}
 %\includeonly{./tex/emtSymbols,./tex/emtPreface,./tex/prefaceFirstBook,./tex/tikztest,./tex/k}
 
 
@@ -43,6 +42,7 @@
 \makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %\makeindex
 %====================
@@ -70,6 +70,7 @@
 
 \pagestyle{headings}
 
+\pgfcircversion
 
 \include{./tex/machBasicFacts}
 \include{./tex/machMagneticCircuits}

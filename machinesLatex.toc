@@ -37,9 +37,9 @@
 \contentsline {chapter}{\numberline {3}ٹرانسفارمر}{55}% 
 \contentsline {section}{\numberline {3.1}ٹرانسفارمر کی اہمیت}{56}% 
 \contentsline {section}{\numberline {3.2}ٹرانسفارمر کے اقسام}{59}% 
-\contentsline {section}{\numberline {3.3}امالی برقی دباو}{60}% 
-\contentsline {section}{\numberline {3.4}ہیجان انگیز برقی رو اور قالبی ضیاع}{62}% 
-\contentsline {section}{\numberline {3.5}تبادلہ برقی دباو اور تبادلہ برقی رو کے خصوصیات}{65}% 
+\contentsline {section}{\numberline {3.3}امالی برقی دباو}{59}% 
+\contentsline {section}{\numberline {3.4}ہیجان انگیز برقی رو اور قالبی ضیاع}{61}% 
+\contentsline {section}{\numberline {3.5}تبادلہ برقی دباو اور تبادلہ برقی رو کے خصوصیات}{64}% 
 \contentsline {section}{\numberline {3.6}ثانوی جانب بوجھ کا ابتدائی جانب اثر}{68}% 
 \contentsline {section}{\numberline {3.7}ٹرانسفارمر کی علامت پر نقطوں کا مطلب}{69}% 
 \contentsline {section}{\numberline {3.8}رکاوٹ کا تبادلہ}{70}% 

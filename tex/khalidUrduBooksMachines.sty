@@ -45,8 +45,12 @@
 %
 \usepackage{tikz}   %these four for inclusion of tikpictures
 \usepackage{ifthen}    
+
 \usepackage{tikz-3dplot}
-\usepackage[oldvoltagedirection]{circuitikz}
+\usepackage[oldvoltagedirection]{circuitikz} 		%messes fig 2.3 where external voltages are marked
+%\usepackage[]{circuitikz}						%whereas this messes the voltagesource polarities
+%\usepackage[siunitx, RPvoltages]{circuitikz}		%this will solve all these issues if version >1.0 is installed
+
 \usetikzlibrary{calc,decorations.markings,decorations.pathreplacing}
 %
 %\usepackage{hyperref}          ,         %loaded second last just before polyglossia. still giving problems
