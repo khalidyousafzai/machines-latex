@@ -5,6 +5,17 @@
 \usepackage{./tex/khalidUrduBooksMachines}                     %my sty file
 \usepackage{pgfplots}
 
+%============================
+%\usepackage{newfile}                                                                  %collecting techniacalterms
+%\newwrite\tempfileTerms
+%\immediate\openout\tempfileTerms=technicalTerms.tex
+%\newcommand*\wf[1]{\immediate\write\tempfileTerms{#1}}
+%			%%collecting techinal terms
+%\newcommand*{\اصطلاح}[1]{\wf{\unexpanded{ur, #1 ,}}}
+%\newcommand*{\حاشیہب}[1]{ \wf{\unexpanded{en, #1,}}}
+%================================
+%=================================
+
 %\input{./tex/myUrduCommandsEMT.tex}                  %turning latex into urdu
 \input{./tex/myUrduCommandsMachines.tex}                  %turning latex into urdu
 \input{./tex/myUrduGreek.tex}
@@ -18,8 +29,8 @@
 %
 %
 
-%\includeonly{./tex/machinesPreface,./tex/machBasicFacts,./tex/machMagneticCircuits,./tex/machTransformers,./tex/machElectroMechConv,./tex/machRotatingMachPrinciples,./tex/machSynchronous,./tex/machInduction,./tex/machDCmachines}
-\includeonly{./tex/prefaceFirstBook,./tex/machMagneticCircuits,./tex/machTransformers}
+\includeonly{./tex/machinesPreface,./tex/machBasicFacts,./tex/machMagneticCircuits,./tex/machTransformers,./tex/machElectroMechConv,./tex/machRotatingMachPrinciples,./tex/machSynchronous,./tex/machInduction,./tex/machDCmachines}
+%\includeonly{./tex/prefaceFirstBook,./tex/machMagneticCircuits,./tex/machTransformers}
 %\includeonly{./tex/emtSymbols,./tex/emtPreface,./tex/prefaceFirstBook,./tex/tikztest,./tex/k}
 
 
@@ -80,6 +91,8 @@
 \include{./tex/machSynchronous}
 \include{./tex/machInduction}
 \include{./tex/machDCmachines}
+
+%\immediate\closeout\tempfileTerms
 
 \backmatter
 
