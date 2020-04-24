@@ -43,10 +43,10 @@
 \contentsline {section}{\numberline {3.6}ثانوی جانب بوجھ کا ابتدائی جانب اثر}{70}% 
 \contentsline {section}{\numberline {3.7}ٹرانسفارمر کی علامت پر نقطوں کا مطلب}{71}% 
 \contentsline {section}{\numberline {3.8}رکاوٹ کا تبادلہ}{71}% 
-\contentsline {section}{\numberline {3.9}ٹرانسفارمر کے وولٹ-ایمپیئر}{76}% 
+\contentsline {section}{\numberline {3.9}ٹرانسفارمر کا وولٹ-ایمپیئر}{76}% 
 \contentsline {section}{\numberline {3.10}ٹرانسفارمر کے امالہ اور اس کے مساوی دور}{78}% 
 \contentsline {subsection}{\numberline {3.10.1}لچھے کی مزاحمت اور اس کی متعاملہ علیحدہ کرنا}{78}% 
-\contentsline {subsection}{\numberline {3.10.2}رِستا امالہ}{79}% 
+\contentsline {subsection}{\numberline {3.10.2}رِستا امالہ}{80}% 
 \contentsline {subsection}{\numberline {3.10.3}ثانوی برقی رو اور قالب کے اثرات}{80}% 
 \contentsline {subsection}{\numberline {3.10.4}ثانوی لچھے کی امالی برقی دباو}{82}% 
 \contentsline {subsection}{\numberline {3.10.5}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{83}% 
