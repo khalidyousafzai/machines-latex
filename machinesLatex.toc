@@ -51,12 +51,12 @@
 \contentsline {subsection}{\numberline {3.10.4}ثانوی لچھے کا امالی برقی دباو}{83}% 
 \contentsline {subsection}{\numberline {3.10.5}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{83}% 
 \contentsline {subsection}{\numberline {3.10.6}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{85}% 
-\contentsline {subsection}{\numberline {3.10.7}ٹرانسفارمر کے سادہ ترین مساوی دور}{87}% 
-\contentsline {section}{\numberline {3.11}کھلے دور معائنہ اور کسرِ دور معائنہ}{88}% 
-\contentsline {subsection}{\numberline {3.11.1}کھلے دور معائنہ}{88}% 
-\contentsline {subsection}{\numberline {3.11.2} کسرِ دور معائنہ}{91}% 
+\contentsline {subsection}{\numberline {3.10.7}ٹرانسفارمر کے سادہ ترین مساوی ادوار}{87}% 
+\contentsline {section}{\numberline {3.11}کھلے دور معائنہ اور کسر دور معائنہ}{88}% 
+\contentsline {subsection}{\numberline {3.11.1}کھلا دور معائنہ}{89}% 
+\contentsline {subsection}{\numberline {3.11.2} کسر دور معائنہ}{91}% 
 \contentsline {section}{\numberline {3.12}تین مرحلہ ٹرانسفارمر}{95}% 
-\contentsline {section}{\numberline {3.13}ٹرانسفارمر چالو کرتے لمحہ زیادہ محرکی برقی رو کا گزر}{102}% 
+\contentsline {section}{\numberline {3.13}ٹرانسفارمر چالو کرتے لمحہ زیادہ محرکی برقی رو کا گزر}{103}% 
 \contentsline {chapter}{\numberline {4}برقی اور میکانی توانائی کا باہمی تبادلہ}{105}% 
 \contentsline {section}{\numberline {4.1}مقناطیسی نظام میں قوت اور قوت مروڑ}{105}% 
 \contentsline {section}{\numberline {4.2}تبادلہ توانائی والا ایک لچھے کا نظام}{111}% 
