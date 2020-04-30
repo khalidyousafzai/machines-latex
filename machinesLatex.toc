@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {1.11}تفرق اور جزوی تفرق}{20}% 
 \contentsline {section}{\numberline {1.12}خطی تکمل}{20}% 
 \contentsline {section}{\numberline {1.13}سطحی تکمل}{21}% 
-\contentsline {section}{\numberline {1.14} مرحلی سمتیہ}{22}% 
+\contentsline {section}{\numberline {1.14} دوری سمتیہ}{22}% 
 \contentsline {chapter}{\numberline {2}مقناطیسی ادوار}{27}% 
 \contentsline {section}{\numberline {2.1}مزاحمت اور ہچکچاہٹ}{27}% 
 \contentsline {section}{\numberline {2.2}کثافتِ برقی رو اور برقی میدان کی شدت}{28}% 
@@ -55,7 +55,7 @@
 \contentsline {section}{\numberline {3.11}کھلے دور معائنہ اور کسر دور معائنہ}{88}% 
 \contentsline {subsection}{\numberline {3.11.1}کھلا دور معائنہ}{89}% 
 \contentsline {subsection}{\numberline {3.11.2} کسر دور معائنہ}{91}% 
-\contentsline {section}{\numberline {3.12}تین مرحلہ ٹرانسفارمر}{95}% 
+\contentsline {section}{\numberline {3.12}تین دوری ٹرانسفارمر}{95}% 
 \contentsline {section}{\numberline {3.13}ٹرانسفارمر چالو کرتے لمحہ زیادہ محرکی برقی رو کا گزر}{103}% 
 \contentsline {chapter}{\numberline {4}برقی اور میکانی توانائی کا باہمی تبادلہ}{105}% 
 \contentsline {section}{\numberline {4.1}مقناطیسی نظام میں قوت اور قوت مروڑ}{105}% 
@@ -69,9 +69,9 @@
 \contentsline {section}{\numberline {5.4}پھیلے لچھے اور سائن نما مقناطیسی دباو}{143}% 
 \contentsline {subsection}{\numberline {5.4.1}بدلتی رو والے مشین}{145}% 
 \contentsline {section}{\numberline {5.5}مقناطیسی دباو کی گھومتی موجیں}{153}% 
-\contentsline {subsection}{\numberline {5.5.1}یک مرحلہ کی لپٹی مشین}{154}% 
-\contentsline {subsection}{\numberline {5.5.2}تین مرحلہ کی لپٹی مشین کا تحلیلی تجزیہ}{155}% 
-\contentsline {subsection}{\numberline {5.5.3}تین مرحلہ کی لپٹی مشین کا ترسیمی تجزیہ}{160}% 
+\contentsline {subsection}{\numberline {5.5.1}یک دوری کی لپٹی مشین}{154}% 
+\contentsline {subsection}{\numberline {5.5.2}تین دور کی لپٹی مشین کا تحلیلی تجزیہ}{155}% 
+\contentsline {subsection}{\numberline {5.5.3}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{160}% 
 \contentsline {section}{\numberline {5.6}محرک برقی دباو}{163}% 
 \contentsline {subsection}{\numberline {5.6.1}بدلتی رو برقی جنریٹر}{163}% 
 \contentsline {subsection}{\numberline {5.6.2}یک سمتی رو برقی جنریٹر}{168}% 
@@ -102,7 +102,7 @@
 \contentsline {section}{\numberline {7.7}امالی موٹر کا مساوی برقی دور}{221}% 
 \contentsline {section}{\numberline {7.8}مساوی برقی دور پر غور}{226}% 
 \contentsline {section}{\numberline {7.9}امالی موٹر کا مساوی تھونن دور یا ریاضی نمونہ}{230}% 
-\contentsline {section}{\numberline {7.10}پنجرا نما امالی موٹر}{236}% 
+\contentsline {section}{\numberline {7.10}پنجرا نما امالی موٹر}{237}% 
 \contentsline {section}{\numberline {7.11}بے بوجھ موٹر اور جامد موٹر کے معائنہ }{237}% 
 \contentsline {subsection}{\numberline {7.11.1}بے بوجھ موٹر کا معائنہ}{237}% 
 \contentsline {subsection}{\numberline {7.11.2}جامد موٹر کا معائنہ}{239}% 
