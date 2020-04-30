@@ -68,7 +68,7 @@
 \contentsline {section}{\numberline {5.3}محرک برقی دباو}{140}% 
 \contentsline {section}{\numberline {5.4}پھیلے لچھے اور سائن نما مقناطیسی دباو}{143}% 
 \contentsline {subsection}{\numberline {5.4.1}بدلتی رو والے مشین}{145}% 
-\contentsline {section}{\numberline {5.5}مقناطیسی دباو کی گھومتی موجیں}{154}% 
+\contentsline {section}{\numberline {5.5}مقناطیسی دباو کی گھومتی موجیں}{153}% 
 \contentsline {subsection}{\numberline {5.5.1}یک دوری کی لپٹی مشین}{154}% 
 \contentsline {subsection}{\numberline {5.5.2}تین دور کی لپٹی مشین کا تحلیلی تجزیہ}{155}% 
 \contentsline {subsection}{\numberline {5.5.3}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{160}% 
