@@ -73,11 +73,11 @@
 \contentsline {subsection}{\numberline {5.5.2}تین دور کی لپٹی مشین کا تحلیلی تجزیہ}{155}% 
 \contentsline {subsection}{\numberline {5.5.3}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{159}% 
 \contentsline {section}{\numberline {5.6}محرک برقی دباو}{163}% 
-\contentsline {subsection}{\numberline {5.6.1}بدلتی رو برقی جنریٹر}{163}% 
+\contentsline {subsection}{\numberline {5.6.1}بدلتا رو برقی جنریٹر}{163}% 
 \contentsline {subsection}{\numberline {5.6.2}یک سمتی رو برقی جنریٹر}{168}% 
 \contentsline {section}{\numberline {5.7}ہموار قطب مشینوں میں قوت مروڑ}{169}% 
-\contentsline {subsection}{\numberline {5.7.1}توانائی کے طریقے سے میکانی قوت مروڑ کا حساب}{169}% 
-\contentsline {subsection}{\numberline {5.7.2}مقناطیسی بہاو سے میکانی قوت مروڑ کا حساب}{171}% 
+\contentsline {subsection}{\numberline {5.7.1}توانائی کے طریقے سے میکانی قوت مروڑ کا حساب}{170}% 
+\contentsline {subsection}{\numberline {5.7.2}مقناطیسی بہاو سے میکانی قوت مروڑ کا حساب}{172}% 
 \contentsline {chapter}{\numberline {6}یکساں حال، برقرار چالو معاصر مشین}{179}% 
 \contentsline {section}{\numberline {6.1}متعدد مرحلہ معاصر مشین}{180}% 
 \contentsline {section}{\numberline {6.2}معاصر مشین کے امالہ}{183}% 
