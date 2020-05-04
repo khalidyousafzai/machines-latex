@@ -74,10 +74,10 @@
 \contentsline {subsection}{\numberline {5.5.3}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{159}% 
 \contentsline {section}{\numberline {5.6}محرک برقی دباو}{163}% 
 \contentsline {subsection}{\numberline {5.6.1}بدلتا رو برقی جنریٹر}{163}% 
-\contentsline {subsection}{\numberline {5.6.2}یک سمتی رو برقی جنریٹر}{168}% 
+\contentsline {subsection}{\numberline {5.6.2}یک سمت رو برقی جنریٹر}{168}% 
 \contentsline {section}{\numberline {5.7}ہموار قطب مشینوں میں قوت مروڑ}{169}% 
-\contentsline {subsection}{\numberline {5.7.1}توانائی کے طریقے سے میکانی قوت مروڑ کا حساب}{170}% 
-\contentsline {subsection}{\numberline {5.7.2}مقناطیسی بہاو سے میکانی قوت مروڑ کا حساب}{172}% 
+\contentsline {subsection}{\numberline {5.7.1}میکانی قوت مروڑ بذریعہ ترکیب توانائی}{170}% 
+\contentsline {subsection}{\numberline {5.7.2}میکانی قوت مروڑ بذریعہ مقناطیسی بہاو}{172}% 
 \contentsline {chapter}{\numberline {6}یکساں حال، برقرار چالو معاصر مشین}{179}% 
 \contentsline {section}{\numberline {6.1}متعدد مرحلہ معاصر مشین}{180}% 
 \contentsline {section}{\numberline {6.2}معاصر مشین کے امالہ}{183}% 
@@ -106,13 +106,13 @@
 \contentsline {section}{\numberline {7.11}بے بوجھ موٹر اور جامد موٹر کے معائنہ }{237}% 
 \contentsline {subsection}{\numberline {7.11.1}بے بوجھ موٹر کا معائنہ}{237}% 
 \contentsline {subsection}{\numberline {7.11.2}جامد موٹر کا معائنہ}{239}% 
-\contentsline {chapter}{\numberline {8}یک سمتی رو مشین}{245}% 
+\contentsline {chapter}{\numberline {8}یک سمت رو مشین}{245}% 
 \contentsline {section}{\numberline {8.1}میکانی سمت کار کی بنیادی کارکردگی}{245}% 
 \contentsline {subsection}{\numberline {8.1.1}میکانی سمت کار کی تفصیل}{247}% 
-\contentsline {section}{\numberline {8.2}یک سمتی جنریٹر کی برقی دباو}{251}% 
+\contentsline {section}{\numberline {8.2}یک سمت جنریٹر کی برقی دباو}{251}% 
 \contentsline {section}{\numberline {8.3}قوت مروڑ}{253}% 
-\contentsline {section}{\numberline {8.4}بیرونی ہیجان اور خود ہیجان یک سمتی جنریٹر}{255}% 
-\contentsline {section}{\numberline {8.5}یک سمتی مشین کی کارکردگی کے خط}{259}% 
+\contentsline {section}{\numberline {8.4}بیرونی ہیجان اور خود ہیجان یک سمت جنریٹر}{255}% 
+\contentsline {section}{\numberline {8.5}یک سمت مشین کی کارکردگی کے خط}{259}% 
 \contentsline {subsection}{\numberline {8.5.1}حاصل برقی دباو بالمقابل برقی بوجھ}{259}% 
 \contentsline {subsection}{\numberline {8.5.2}رفتار بالمقابل قوت مروڑ}{261}% 
 \contentsline {chapter}{فرہنگ}{269}% 
