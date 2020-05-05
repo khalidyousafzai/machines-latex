@@ -130,6 +130,11 @@
 \foreach \slotTheta/\slName/\position in {#1}{
 \draw (\slotTheta:\sRi+2*\delR/3)node[\position]{$\slName$}; } }
 %====================================
+%SLOT NAME
+%\slotNameAtRadial{comma separated angles/name}
+\newcommand{\slotNameAtRadial}[1]{
+\foreach \slotTheta/\slName in {#1}{
+\draw (\slotTheta:\sRi+2*\delR/3+0.4)node[]{$\slName$}; } }
 %====================================
 %====================================
 %LINEAR FIGURES

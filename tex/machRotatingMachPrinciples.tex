@@ -263,8 +263,6 @@ f_e=f_m
 \centering
 %\includegraphics{figRotatingMachPrinciplesFourPoleTwoCoilFlux}
 \begin{tikzpicture}
-%grid
-%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
 \pgfmathsetmacro{\shiftX}{5cm}
 \stator{4}{45}
 \rotor{4}{0}
@@ -378,10 +376,9 @@ f_e&=\frac{P}{2} f_m  \label{مساوات_گھومتے_مشین_برقی_میک�
 \begin{figure}
 \centering
 %\includegraphics{figRotatingMachPrinciplesTwoPoleThreePhase}
+\begin{subfigure}{0.60\textwidth}
+\centering
 \begin{tikzpicture}
-%grid
-%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
-\pgfmathsetmacro{\shiftX}{5cm}
 \stator{6}{30}
 \slotDot{90,-30,210}
 \slotCross{-90,30,150}
@@ -406,8 +403,11 @@ f_e&=\frac{P}{2} f_m  \label{مساوات_گھومتے_مشین_برقی_میک�
 \draw[thin,gray,dashed] (0:2*\sRo)--++(0.25,0)coordinate(zeroAngle)--++(0.25,0);
 \draw[gray,-stealth] (zeroAngle) arc (0:20:2*\sRo+0.25);
 \node[fill=white,text=gray] at (10:2*\sRo+0.25){$\theta$};
-%=============
-\begin{scope}[xshift=-\shiftX]
+\end{tikzpicture}
+\end{subfigure}%
+\begin{subfigure}{0.35\textwidth}
+\centering
+\begin{tikzpicture}
 \draw[-latex](0,0)--(0:1*\sRo)node[shift={(0:1*\sRo+0.2cm)}]{$a$};
 \draw[-latex](0,0)--(120:1*\sRo)node[shift={(120:1*\sRo+0.2cm)}]{$b$};
 \draw[-latex](0,0)--(-120:1*\sRo)node[shift={(-120:1*\sRo+0.2cm)}]{$c$};
@@ -418,8 +418,8 @@ f_e&=\frac{P}{2} f_m  \label{مساوات_گھومتے_مشین_برقی_میک�
 \draw node at (-60:0.8)[fill=white]{$120\degree$};
 \draw[stealth-stealth]([shift={(120:0.8)}]0,0)  arc (120:240:0.8);
 \draw node at (180:0.8)[fill=white]{$120\degree$};
-\end{scope}
 \end{tikzpicture}
+\end{subfigure}%
 \caption{دو قطب، تین دوری معاصر مشین۔}
 \label{شکل_گھومتے_مشین_دو_قطب_تین_دور_معاصر}
 \end{figure}
@@ -439,11 +439,9 @@ f_e&=\frac{P}{2} f_m  \label{مساوات_گھومتے_مشین_برقی_میک�
 \begin{figure}
 \centering
 %\includegraphics{figRotatingMachPrinciplesTwoPoleThreePhaseTwoMoments}
+\begin{subfigure}{0.40\textwidth}
+\centering
 \begin{tikzpicture}
-%grid
-%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
-\pgfmathsetmacro{\shiftX}{5cm}
-\begin{scope}[xshift=0.8*\shiftX]
 \stator{6}{30}
 \slotDot{90,-30,210}
 \slotCross{-90,30,150}
@@ -462,15 +460,19 @@ f_e&=\frac{P}{2} f_m  \label{مساوات_گھومتے_مشین_برقی_میک�
 \draw (150-15:\sRi+1.25*\delR)node[]{$c'$};
 %text
 \node at (-90:\sRo+0.4){\RL{لمحہ $t_1$}};
-\end{scope}
-%=============
-%\begin{scope}[xshift=-\shiftX]
+\end{tikzpicture}
+\end{subfigure}%
+\begin{subfigure}{0.20\textwidth}
+\centering
+\begin{tikzpicture}
 \draw[-latex](0,0)--(0:0.5*\sRo)node[shift={(0:0.5*\sRo+0.2cm)}]{$a$};
 \draw[-latex](0,0)--(120:0.5*\sRo)node[shift={(120:0.5*\sRo+0.2cm)}]{$b$};
 \draw[-latex](0,0)--(-120:0.5*\sRo)node[shift={(-120:0.5*\sRo+0.2cm)}]{$c$};
-%\end{scope}
-%================
-\begin{scope}[xshift=-0.8*\shiftX]
+\end{tikzpicture}
+\end{subfigure}%
+\begin{subfigure}{0.40\textwidth}
+\centering
+\begin{tikzpicture}
 \stator{6}{30}
 \slotDot{90,-30,210}
 \slotCross{-90,30,150}
@@ -489,8 +491,8 @@ f_e&=\frac{P}{2} f_m  \label{مساوات_گھومتے_مشین_برقی_میک�
 \draw (150-15:\sRi+1.25*\delR)node[]{$c'$};
 %text
 \node at (-90:\sRo+0.4){\RL{لمحہ $t_2$}};
-\end{scope}
-\end{tikzpicture}%
+\end{tikzpicture}
+\end{subfigure}%
 \caption{دو قطب تین دوری مشین۔}
 \label{شکل_گھومتے_مشین_دو_قطب_تین_دور_مختلف_لمحات}
 \end{figure}
@@ -519,7 +521,51 @@ e_a(t_1)=e_b(t_2)=e_c(t_3)
 
 \begin{figure}
 \centering
-\includegraphics{figRotatingMachPrinciplesThreePhaseFourPole}
+%\includegraphics{figRotatingMachPrinciplesThreePhaseFourPole}
+\begin{subfigure}{0.40\textwidth}
+\centering
+\begin{tikzpicture}
+\pgfmathsetmacro{\shiftX}{5cm}
+\pgfmathsetmacro{\sRo}{2.1}  %stator outer radius needs to be increased to accomodate the slot names
+\pgfmathsetmacro{\sTilt}{45}  %stator tilt
+\stator{12}{\sTilt}
+%
+\slotDot{\sTilt,\sTilt+60,\sTilt+120}       %a1,b1,c1
+\slotCross{\sTilt+90,\sTilt+60+90,\sTilt+30}   %a1',b1',c1'
+%\slotNameAtRadial{comma separated angles/name}
+\slotNameAtRadial{\sTilt/a1,\sTilt+60/b1,\sTilt+120/c1}       %a1,b1,c1
+\slotNameAtRadial{\sTilt+90/a1',\sTilt+60+90/b1',\sTilt+30/c1'}    %a1',b1',c1'
+%
+\pgfmathsetmacro{\sTilt}{45+180}  %stator tilt
+\slotDot{\sTilt,\sTilt+60,\sTilt+120}       %a2,b2,c2
+\slotCross{\sTilt+90,\sTilt+60+90,\sTilt+30}   %a2',b2',c2'
+%\slotNameAtRadial{comma separated angles/name}
+\slotNameAtRadial{\sTilt/a2,\sTilt+60/b2,\sTilt+120/c2}       %a2,b2,c2
+\slotNameAtRadial{\sTilt+90/a2',\sTilt+60+90/b2',\sTilt+30/c2'}    %a2',b2',c2'
+
+\rotor{4}{15}
+%\dotCrossEachPole{comma separated poles}
+\dotCrossEachPole{15,15+180}
+\crossDotEachPole{15+90,15+90+180}
+\draw node at (15:0.7*\rR){$N$};
+\draw node at (15+180:0.7*\rR){$N$};
+\draw node at (15+90:0.7*\rR){$S$};
+\draw node at (15+90+180:0.7*\rR){$S$};
+\end{tikzpicture}%
+\end{subfigure}%
+\begin{subfigure}{0.50\textwidth}
+\centering
+\begin{tikzpicture}
+\draw (0,0) to [short,*-*] ++(0:0.75) to [short] ++(0,0.25)node[shift={(0+90:0.3)}]{a1'} to [inductor] ++(0:2)node[shift={(0+90:0.3)}]{a1} to [short,-*] ++(0,-0.25) to [short,-o] ++(0:0.5) node[right] {$a$};
+\draw (0:0.75) to [short] ++(0,-0.25)node[shift={(0-90:0.3)}]{a2'} to [inductor] ++(0:2)node[shift={(0-90:0.3)}]{a2} to [short] ++(0,0.25);
+%
+\draw (0,0) to [short,-*] ++(120:0.75) to [short] ++(120+90:0.25)node[shift={(120+90:0.3)}]{b1'} to [inductor] ++(120:2)node[shift={(120+90:0.3)}]{b1} to [short,-*] ++(120-90:0.25) to [short,-o] ++(120:0.5) node [above]{$b$};
+\draw (120:0.75) to [short] ++(120-90:0.25)node[shift={(120-90:0.3)}]{b2'} to [inductor] ++(120:2)node[shift={(120-90:0.3)}]{b2} to [short] ++(120+90:0.25);
+%
+\draw (0,0) to [short,-*] ++(240:0.75) to [short] ++(240+90:0.25)node[shift={(240+90:0.3)}]{c1'} to [inductor] ++(240:2)node[shift={(240+90:0.3)}]{c1} to [short,-*] ++(240-90:0.25) to [short,-o] ++(240:0.5)node[below]{$c$};
+\draw (240:0.75) to [short] ++(240-90:0.25)node[shift={(240-90:0.3)}]{c2'} to [inductor] ++(240:2)node[shift={(240-90:0.3)}]{c2} to [short] ++(240+90:0.25);
+\end{tikzpicture}
+\end{subfigure}%
 \caption{چار قطب، تین دوری معاصر مشین۔}
 \label{شکل_گھومتے_مشین_چار_قطب_تین_دور_معاصر}
 \end{figure}
@@ -563,24 +609,24 @@ e=\frac{W}{q}= (\kvec{v} \times \kvec{B}) \cdot \kvec{l}\quad \text{وولٹ}
 \draw ([shift={(-85:\sRi+\gap)}]0,0) arc (-85:85:\sRi+\gap);
 \draw(85:\sRi+\gap)--++(0:1.2*\sRo);
 \draw(-85:\sRi+\gap)--++(0:1.2*\sRo);
-\node[very thick,gray] at (0:1.1*\sRo){$S$};
+\node[very thick] at (0:1.1*\sRo){$S$};
 \draw ([shift={(95:\sRi+\gap)}]0,0) arc (95:270-5:\sRi+\gap);
 \draw(95:\sRi+\gap)--++(180:1.2*\sRo);
 \draw(-95:\sRi+\gap)--++(180:1.2*\sRo);
-\node[very thick,gray] at (180:1.1*\sRo){$N$};
+\node[very thick] at (180:1.1*\sRo){$N$};
 %flux at south pole
 \foreach \angle in {-60,-40,40,60}{
-\draw[gray,-latex] (0,0)++(\angle:\rR-2*\gap)--++(\angle:6*\gap);  }
+\draw[-latex] (0,0)++(\angle:\rR-2*\gap)--++(\angle:6*\gap);  }
 %
-\draw[gray] (0,0)++(-40:\rR+4*\gap) to [out=45,in=180] ++(1,0.3)node[right]{$B_S$};
+\draw[] (0,0)++(-40:\rR+4*\gap) to [out=45,in=180] ++(1,0.3)node[right]{$B_S$};
 %flux at north pole
 \foreach \angle in {120,140,160,200,220,240}{
-\draw[gray,latex-] (0,0)++(\angle:\rR-2*\gap)--++(\angle:6*\gap);  }
+\draw[latex-] (0,0)++(\angle:\rR-2*\gap)--++(\angle:6*\gap);  }
 %
-\draw[gray] (0,0)++(220:\rR+4*\gap)++(-0.1,0) to [out=135,in=0] ++(-1,0.3)node[left]{$B_N$};
+\draw[] (0,0)++(220:\rR+4*\gap)++(-0.1,0) to [out=135,in=0] ++(-1,0.3)node[left]{$B_N$};
 %velocity
 \draw[thick,-latex](0:\rR-\pX)--++(0,-0.7)--++(0,1.4)coordinate (velocityTip);
-\draw[gray] (velocityTip) to [out=45,in=180] ++(0.5,0.3) node[right,text=black] {$v_S$};
+\draw[] (velocityTip) to [out=45,in=180] ++(0.5,0.3) node[right,text=black] {$v_S$};
 %text
 \draw[-stealth](0,0)--++(0:\rR-\pX) node[fill=white,pos=0.5]{$r$};
 \draw[-latex]([shift={(30:0.7*\rR)}]0,0) arc (30:110:0.7*\rR);
@@ -662,41 +708,40 @@ e&=\omega N A B\\
 \centering
 %\includegraphics{figRotatingMachPrinciplesStatorCoilNotDistributed}
 \begin{tikzpicture}
-%
 \stator{2}{90}
 \slotDot{90}
 \slotCross{270}
 \draw (0,0) circle (\rR);
 %FLUX
 \foreach \angle in {-80,-60,-40,-20,0,20,40,60,80}{
-\draw[gray,-latex] (\angle:0.8*\rR) --++(\angle:0.7); }
+\draw[-latex] (\angle:0.8*\rR) --++(\angle:0.7); }
 \foreach \angle in {100,120,140,160,180,200,220,240,260,280}{
-\draw[gray,latex-] (\angle:0.8*\rR) --++(\angle:0.7); }
+\draw[latex-] (\angle:0.8*\rR) --++(\angle:0.7); }
 %text
-\draw[gray,-latex] (0:1.1*\sRo)--++(0:1)node[right] {\RL{لچھے کا رخ}};
-\draw[gray,-stealth]([shift={(0:1.1*\sRo+0.5)}]0,0) arc (0:30:1.1*\sRo+0.5);
-\draw node[fill=white,text=gray] at (15:1.1*\sRo+0.5){$\theta$};
-\draw[gray,dashed] (-90:\sRo+0.1)--++(0,-0.6);
+\draw[-latex] (0:1.1*\sRo)--++(0:1)node[right] {\RL{لچھے کا رخ}};
+\draw[-stealth]([shift={(0:1.1*\sRo+0.5)}]0,0) arc (0:30:1.1*\sRo+0.5);
+\draw node[fill=white] at (15:1.1*\sRo+0.5){$\theta$};
+\draw[dashed] (-90:\sRo+0.1)--++(0,-0.6);
 %radial direction and flux
-\draw[gray,-latex] (0,0) --(40:0.7*\rR)coordinate[pos=0.5](kradial);
+\draw[-latex] (0,0) --(40:0.7*\rR)coordinate[pos=0.5](kradial);
 \draw[-latex] (0,0) --(160:0.7*\rR)coordinate[pos=0.5](kradialO);
 \draw[-latex] (40:0.8*\rR) --++(40:0.7)coordinate[pos=0.6](kflux); 
 \draw[latex-] (160:0.8*\rR) --++(160:0.7)coordinate[pos=0.8](kfluxO); 
 %text
-\draw[gray,-stealth] (-90:\sRo+0.4)++(0.2,0) --++(2,0)node[xshift=0.4cm,right,align=right](kNOTopposing){\RL{اس جانب خلائی درز میں} \\ \RL{مقناطیسی بہاو رداسی} \\ \RL{رخ ہے}};
-\draw[gray,-stealth] (-90:\sRo+0.4)++(-0.2,0) --++(-2,0)node[xshift=-0.5cm,left,align=right](kOpposing){\RL{اس جانب خلائی درز میں} \\ \RL{مقناطیسی بہاو رداسی} \\ \RL{رخ کے مخالف ہے}};
+\draw[-stealth] (-90:\sRo+0.4)++(0.2,0) --++(2,0)node[xshift=0.4cm,right,align=right](kNOTopposing){\RL{اس جانب خلائی درز میں} \\ \RL{مقناطیسی بہاو رداسی} \\ \RL{رخ ہے۔}};
+\draw[-stealth] (-90:\sRo+0.4)++(-0.2,0) --++(-2,0)node[xshift=-0.5cm,left,align=right](kOpposing){\RL{اس جانب خلائی درز میں} \\ \RL{مقناطیسی بہاو رداسی} \\ \RL{رخ کے مخالف ہے۔}};
 \draw[<-](kradial) to [out=-45,in=130] (kNOTopposing);
 \draw[<-](kflux) to [out=-45,in=130] (kNOTopposing);
 \draw[<-](kradialO) to [out=220,in=30] (kOpposing);
 \draw[<-](kfluxO) to [out=220,in=30] (kOpposing);
-\draw node[left,gray] at (160:2*\sRo)(kmu){$\mu_r \to \infty$};
-\draw[<-,gray] (160:\sRo) to [out=160,in=0] (kmu);
-\draw[<-,gray] (150:\rR) to [out=150,in=0] (kmu);
+\draw node[left] at (160:2*\sRo)(kmu){$\mu_r \to \infty$};
+\draw[<-] (160:\sRo) to [out=160,in=0] (kmu);
+\draw[<-] (150:\rR) to [out=150,in=0] (kmu);
 %brace
 \draw[decorate,decoration={brace,amplitude=5pt}] (-90:\sRo+0.4)++(-0.5,0) ++(-2,0)++(0,0.8) -- ++(0,-1.6) node [black,midway,xshift=9pt] {};
 \draw[decorate,decoration={brace,amplitude=5pt}] (-90:\sRo+0.4)++(0.5,0) ++(2,0)++(0,-0.8) -- ++(0,1.6) node [black,midway,xshift=9pt] {};
 \end{tikzpicture}
-\caption{ساکن لچھا گچھ  شکل کا ہے۔}
+\caption{ساکن لچھا گچھ ہے۔}
 \label{شکل_گھومتے_مشین_گچھ_لچھا}
 \end{figure}
 
@@ -709,19 +754,18 @@ e&=\omega N A B\\
 \centering
 %\includegraphics{figRotatingMachPrinciplesMMFjumpsAtDotAndCross}
 \begin{tikzpicture}
-%
 \begin{scope}[yshift=-2cm]
 \dotLinear{1,5}
 \crossLinear{-1,3}
 \slotSegment{-1/1,1/3,3/5}
 \slotTop{-1/5}
-\draw[gray,stealth-] (5.5,0) to [out=0,in=180] (6,0.5)node[right]{\RL{ساکن حصہ}};
+\draw[stealth-] (5.5,0) to [out=0,in=180] (6,0.5)node[right]{\RL{ساکن حصہ}};
 \end{scope}
 %
-\draw[gray](-1.5,0)--(5.5,0)node[right]{$\theta$};
-\draw[gray](0,0)--(0,1.5)node[above]{$\tau$};
+\draw[](-1.5,0)--(5.5,0)node[right]{$\theta$};
+\draw[](0,0)--(0,1.5)node[above]{$\tau$};
 \foreach \x/\labelText in {0/0,2/\pi,4/2\pi}{
-\draw[gray](\x,0)--++(0,-0.2) node[below]{$\labelText$};}
+\draw[](\x,0)--++(0,-0.2) node[below]{$\labelText$};}
 \draw(-1.5,-1)--(-1,-1)--(-1,1)--(1,1)--(1,-1)--(3,-1)--(3,1)--(5,1)--(5,-1)--(5.5,-1);
 %text
 \draw node[left] at (-1.5,1){$+\tfrac{Ni}{2}$};
@@ -816,9 +860,6 @@ b_n&=\frac{2}{2\pi} \frac{Ni}{2} \left[\int_{-\pi}^{-\pi/2} -\sin n \theta_p \di
 \centering
 %\includegraphics{figRotatingMachPrinciplesThreePhaseSynchronousMachine}
 \begin{tikzpicture}
-%grid
-%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
-\pgfmathsetmacro{\shiftX}{5cm}
 \stator{6}{30}
 \slotDot{90,210,330}
 \slotCross{30,150,270}
@@ -831,9 +872,9 @@ b_n&=\frac{2}{2\pi} \frac{Ni}{2} \left[\int_{-\pi}^{-\pi/2} -\sin n \theta_p \di
 \draw[-latex] (0,0)--++(120:0.7*\rR)node [below left]{$b$};
 \draw[-latex] (0,0)--++(-120:0.7*\rR)node [right]{$c$};
 %
-\draw[gray](0:\sRo+0.2)--++(0:0.5 )coordinate[pos=0.5] (angleZero);
-\draw[gray,-stealth](angleZero) arc (0:40:\sRo+0.2+0.25);
-\draw node[gray,fill=white] at (20:\sRo+0.2+0.25){$\theta$};
+\draw[](0:\sRo+0.2)--++(0:0.5 )coordinate[pos=0.5] (angleZero);
+\draw[-stealth](angleZero) arc (0:40:\sRo+0.2+0.25);
+\draw node[fill=white] at (20:\sRo+0.2+0.25){$\theta$};
 \end{tikzpicture}
 \caption{تین دور لچھے۔}
 \label{شکل_گھومتے_مشین_تین_دور_لچھے}
@@ -883,10 +924,10 @@ b_n&=\frac{2}{2\pi} \frac{Ni}{2} \left[\int_{-\pi}^{-\pi/2} -\sin n \theta_p \di
 \draw node at (270:\sRo+0.3) {$a_{90}'$};
 \draw node at (315:\sRo+0.3) {$a_{135}'$};
 %text
-\draw[gray] (0:\sRo+0.6)--++(0:0.7*\rR);
-\draw[gray](45:\sRo+0.6)--++(45:0.7*\rR);
-\draw[gray,-stealth] (0:\sRo+0.6+0.4*\rR) arc (0:45:\sRo+0.6+0.4*\rR);
-\draw node[fill=white,text=gray] at (22.5:\sRo+0.6+0.4*\rR){$45\degree$};
+\draw[] (0:\sRo+0.6)--++(0:0.7*\rR);
+\draw[](45:\sRo+0.6)--++(45:0.7*\rR);
+\draw[-stealth] (0:\sRo+0.6+0.4*\rR) arc (0:45:\sRo+0.6+0.4*\rR);
+\draw node[fill=white] at (22.5:\sRo+0.6+0.4*\rR){$45\degree$};
 \end{tikzpicture}%
 \caption{پھیلا لچھا۔}
 \label{شکل_گھومتے_مشین_پھیلا_لچھا}
@@ -966,11 +1007,8 @@ b_n&=\frac{2}{2\pi} \frac{Ni}{2} \left[\int_{-\pi}^{-\pi/2} -\sin n \theta_p \di
 \centering
 %\includegraphics{figRotatingMachPrinciplesDistributedWindingDotAndCross}
 \begin{tikzpicture}
-%
 \pgfmathsetmacro{\j}{0.25}
 \pgfmathsetmacro{\shiftY}{-1.5 cm}
-%
-
 \begin{scope}[xscale=1/90]   %,xscale=1/3 cm
 %axis
 \draw[](-2*90,0)--(6*90,0)node[right]{$\theta$};
@@ -990,7 +1028,6 @@ b_n&=\frac{2}{2\pi} \frac{Ni}{2} \left[\int_{-\pi}^{-\pi/2} -\sin n \theta_p \di
 \draw[stealth-](67.5,-\j)--++(0,-0.3);
 \draw[](67.5,-\j)++(-15,0)--++(30,0);
 \end{scope}
-%
 \begin{scope}[yshift=\shiftY]
 \dotLinear{0.5,1,1.5,4.5,5,5.5}
 \crossLinear{-1.5,-1,-0.5,2.5,3,3.5}
@@ -1027,8 +1064,9 @@ b_n&=\frac{2}{2\pi} \frac{Ni}{2} \left[\int_{-\pi}^{-\pi/2} -\sin n \theta_p \di
 \begin{figure}
 \centering
 %\includegraphics{figRotatingMachPrinciplesDistributedWindingFactor}
+\begin{subfigure}{0.45\textwidth}
+\centering
 \begin{tikzpicture}
-%
 \draw[-latex](0,0)--(0:\sRo)node[right]{${\bm{\tau}}_{a90}$};
 \draw[-latex](0,0)--(45:\sRo)node[right]{${\bm{\tau}}_{a135}$}node[pos=0.7,above left]{$\tau_n$};
 \draw[-latex](0,0)--(-45:\sRo)node[right]{${\bm{\tau}}_{a45}$};
@@ -1036,8 +1074,11 @@ b_n&=\frac{2}{2\pi} \frac{Ni}{2} \left[\int_{-\pi}^{-\pi/2} -\sin n \theta_p \di
 \draw node at (22.5:0.6*\sRo){$45\degree$};
 \draw[gray,<->] (0:0.4*\sRo) arc (0:-45:0.4*\sRo);
 \draw node at (-22.5:0.6*\sRo){$45\degree$};
-%
-\begin{scope}[xshift=2*\sRo cm]
+\end{tikzpicture}
+\end{subfigure}%
+\begin{subfigure}{0.45\textwidth}
+\centering
+\begin{tikzpicture}
 \draw[-latex](0,0)--(-45:\sRo)node[below left,pos=0.5]{${\bm{\tau}}_{45}$};
 \draw[-latex](-45:\sRo)--++(0:\sRo)node[below,pos=0.5]{${\bm{\tau}}_{90}$};
 \draw[-latex] (-45:\sRo)++(0:\sRo)--++(45:\sRo)node[below right,pos=0.5]{${\bm{\tau}}_{135}$} coordinate(netFlux);
@@ -1046,8 +1087,8 @@ b_n&=\frac{2}{2\pi} \frac{Ni}{2} \left[\int_{-\pi}^{-\pi/2} -\sin n \theta_p \di
 \draw node at (-20:0.6*\sRo){$45\degree$};
 \draw(netFlux)--++(180:0.4*\sRo) arc (180:225:0.4*\sRo);
 \draw (netFlux)++(200:0.6*\sRo)node{$45\degree$};
-\end{scope}
 \end{tikzpicture}
+\end{subfigure}%
 \caption{پھیلے لچھے کا جزو پھیلاو۔}
 \label{شکل_گھومتے_مشین_جزو_پھیلاو}
 \end{figure}
@@ -1162,8 +1203,6 @@ i_a&=I_0 \cos \omega t
 \centering
 %\includegraphics{figRotatingMachPrinciplesThreePhaseSynchronousMachine}
 \begin{tikzpicture}
-%grid
-%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
 \pgfmathsetmacro{\shiftX}{5cm}
 \stator{6}{30}
 \slotDot{90,210,330}
@@ -1177,18 +1216,16 @@ i_a&=I_0 \cos \omega t
 \draw[-latex] (0,0)--++(120:0.7*\rR)node [below left]{$b$};
 \draw[-latex] (0,0)--++(-120:0.7*\rR)node [right]{$c$};
 %
-\draw[gray](0:\sRo+0.2)--++(0:0.5 )coordinate[pos=0.5] (angleZero);
-\draw[gray,-stealth](angleZero) arc (0:40:\sRo+0.2+0.25);
-\draw node[gray,fill=white] at (20:\sRo+0.2+0.25){$\theta$};
+\draw[](0:\sRo+0.2)--++(0:0.5 )coordinate[pos=0.5] (angleZero);
+\draw[-stealth](angleZero) arc (0:40:\sRo+0.2+0.25);
+\draw node[fill=white] at (20:\sRo+0.2+0.25){$\theta$};
 %
-\begin{scope}[xshift=3 cm ]
-\draw node[right] at (0,0){$\begin{aligned}
+\draw node[right] at (3,0){$\begin{aligned}
 \tau_a&=\tau_0 \cos (\omega t+\theta_0) \cos (\theta)\\
 \tau_b&=\tau_0 \cos (\omega t+\theta_0-120\degree) \cos (\theta-120\degree)\\
 \tau_c&=\tau_0 \cos (\omega t+\theta_0+120\degree) \cos (\theta+120\degree)
 \end{aligned}
 $};
-\end{scope}
 \end{tikzpicture}
 \caption{تین دور کی لپٹی مشین۔}
 \label{شکل_گھومتے_مشین_تین_دور_کے_لئے_لپٹی}
@@ -1348,9 +1385,9 @@ n&=\frac{120 f_e}{P} \quad  \text{\RL{چکر فی سیکنڈ}}
 \draw[-latex] (0,0)--++(120:0.7*\rR)node [below left]{$\tau_b$};
 \draw[-latex] (0,0)--++(-120:0.7*\rR)node [right]{$\tau_c$};
 %
-\draw[gray](0:\sRo+0.2)--++(0:0.5 )coordinate[pos=0.5] (angleZero);
-\draw[gray,-stealth](angleZero) arc (0:40:\sRo+0.2+0.25);
-\draw node[gray,fill=white] at (20:\sRo+0.2+0.25){$\theta$};
+\draw[](0:\sRo+0.2)--++(0:0.5 )coordinate[pos=0.5] (angleZero);
+\draw[-stealth](angleZero) arc (0:40:\sRo+0.2+0.25);
+\draw node[fill=white] at (20:\sRo+0.2+0.25){$\theta$};
 \end{tikzpicture}
 \caption{تین دور کی لپٹی مشین میں مثبت برقی رو اور ان سے حاصل مقناطیسی دباو کے رخ۔}
 \label{شکل_گھومتے_مشین_تین_دوری}
@@ -1393,15 +1430,13 @@ i_c&=I_0 \cos (0+120\degree)=-0.5 I_0
 \begin{figure}
 \centering
 %\includegraphics{figRotatingMachPrinciplesThreePhaseFluxAtTimeZero}
+\begin{subfigure}{0.50\textwidth}
+\centering
 \begin{tikzpicture}
-%grid
-%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
-\pgfmathsetmacro{\shiftX}{5cm}
 \stator{6}{30}
 \slotDot{90,30,150}
 \slotCross{-30,-90,-150}
 \draw (0,0) circle (\rR);
-%
 %\slotName{45/a_1/,-45/a_1'/below,135/a_2'/,-135/a_2/below}
 \draw (90-15:\sRi+1.25*\delR)node[]{$a$};
 \draw (270-15:\sRi+1.25*\delR)node[]{$a'$};
@@ -1411,23 +1446,24 @@ i_c&=I_0 \cos (0+120\degree)=-0.5 I_0
 \draw (150-15:\sRi+1.25*\delR)node[]{$c'$};
 %
 \draw[-latex](0,0)--(0:1.8*\rR)node[right]{$\tau_a$};
-\draw[gray,dashed,-latex](0,0)--(120:1.8*\rR)node[above]{$\tau_b$};
-\draw[gray,dashed,-latex](0,0)--(-120:1.8*\rR)node[below]{$\tau_c$};
+\draw[dashed,-latex](0,0)--(120:1.8*\rR)node[above]{$\tau_b$};
+\draw[dashed,-latex](0,0)--(-120:1.8*\rR)node[below]{$\tau_c$};
 \draw[-latex](0,0)--(-60:0.9*\rR)node[left]{$\tau_b$};
 \draw[-latex](0,0)--(60:0.9*\rR)node[left]{$\tau_c$};
 \draw (-60:0.3*\rR) arc (-60:0:0.3*\rR);
 \draw node at (-25:0.6*\rR){$60\degree$};
-%text
-\draw node[right] at (2.2*\rR,1.2*\rR){$\begin{aligned}
+\draw[stealth-] (-30:\sRi cm+\delR cm )++(0,0) to [out=-30,in=135]++(-30:0.6*\sRi)coordinate(reversedText);
+\draw[stealth-] (30:\sRi cm+\delR cm )++(0,-0.15cm) to [out=-90,in=135](reversedText)node[below right,align=right]{\RL{ان لچھوں میں برقی رو} \\ \RL{ کے رخ ایک دوسرے}\\  \RL{کے مخالف ہیں}};
+\end{tikzpicture}
+\end{subfigure}%
+\begin{subfigure}{0.40\textwidth}
+\centering
+\begin{tikzpicture}
+\draw node[above] at (2*\rR,1){$\begin{aligned}
 \tau_a&=\tau_0\\
 \tau_b&=-0.5 \tau_0\\
 \tau_c&=-0.5 \tau_0
 \end{aligned}$};
-%
-\draw[gray,stealth-] (-30:\sRi cm+\delR cm )++(0,0) to [out=-30,in=135]++(-30:0.6*\sRi)coordinate(reversedText);
-\draw[gray,stealth-] (30:\sRi cm+\delR cm )++(0,-0.15cm) to [out=-90,in=135](reversedText)node[below right,align=right]{\RL{ان لچھوں میں برقی رو} \\ \RL{ کے رخ ایک دوسرے}\\  \RL{کے مخالف ہیں}};
-%=============
-\begin{scope}[xshift=\shiftX]
 \draw[-latex](0,0)--++(-60:0.9*\rR)node[pos=0.6,left]{$\tau_b$}coordinate(tipB);
 \draw[-latex](tipB)--++(0:1.8*\rR)node[pos=0.5,below]{$\tau_a$}coordinate(tipA);
 \draw[-latex](tipA)--++(60:0.9*\rR)node[pos=0.4,right]{$\tau_c$}coordinate(tipC);
@@ -1436,8 +1472,8 @@ i_c&=I_0 \cos (0+120\degree)=-0.5 I_0
 \draw node at (-25:0.6*\rR){$60\degree$};
 \draw (tipC)++(180:0.3*\rR) arc (180:240:0.3*\rR);
 \draw (tipC)++(210:0.6*\rR)node{$60\degree$};
-\end{scope}
 \end{tikzpicture}
+\end{subfigure}%
 \caption{ لمحہ \عددیء{t_0=0} پر برقی رو اور مقناطیسی دباو۔}
 \label{شکل_گھومتے_مشین_لمحہ_صفر_پر_کل_دباو}
 \end{figure}
@@ -1460,10 +1496,9 @@ i_c&=I_0 \cos (0+120\degree)=-0.5 I_0
 \begin{figure}
 \centering
 %\includegraphics{figRotatingMachPrinciplesThreePhaseFluxAtTimeThirtyDegrees}
+\begin{subfigure}{0.50\textwidth}
+\centering
 \begin{tikzpicture}
-%grid
-%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
-\pgfmathsetmacro{\shiftX}{5cm}
 \stator{6}{30}
 \slotDot{90,150}
 \slotCross{-30,-90}
@@ -1478,14 +1513,16 @@ i_c&=I_0 \cos (0+120\degree)=-0.5 I_0
 \draw (-30-15:\sRi+1.25*\delR)node[]{$c$};
 \draw (150-15:\sRi+1.25*\delR)node[]{$c'$};
 %
-\draw[gray,-latex](0,0)--(0:1.8*\rR);
-\draw[gray,dashed,-latex](0,0)--(120:1.8*\rR)node[above]{$\tau_b$};
-\draw[gray,dashed,-latex](0,0)--(-120:1.8*\rR)node[below]{$\tau_c$};
+\draw[dashed,-latex](0,0)--(120:1.8*\rR)node[above]{$\tau_b$};
+\draw[dashed,-latex](0,0)--(-120:1.8*\rR)node[below]{$\tau_c$};
 \draw[-latex](0,0)--(0:1.8*0.866*\rR)node[pos=0.4,below]{$\tau_a$};
 %\draw[-latex](0,0)--(-60:0.9*\rR)node[left]{$\tau_b$};
 \draw[-latex](0,0)--(60:1.8*0.866*\rR)node[pos=0.4,left]{$\tau_c$};
-%=============
-\begin{scope}[xshift=0.75*\shiftX]
+\end{tikzpicture}
+\end{subfigure}%
+\begin{subfigure}{0.40\textwidth}
+\centering
+\begin{tikzpicture}
 \draw[-latex](0,0)--++(0:1.8*0.866*\rR)node[pos=0.5,below]{$\tau_a$}coordinate(tipA);
 \draw[-latex](tipA)--++(60:1.8*0.866*\rR)node[pos=0.4,right]{$\tau_c$}coordinate(tipC);
 \draw[-latex,thick](0,0)--(tipC)node[pos=0.5,above left]{ $\tau=\tfrac{3}{2}\tau_0$};
@@ -1494,8 +1531,8 @@ i_c&=I_0 \cos (0+120\degree)=-0.5 I_0
 %\draw (tipA)++(120:0.4*\rR)node{$120\degree$};
 \draw(0:0.5*\rR) arc (0:30:0.5*\rR);
 \draw node at (12:0.9*\rR){$30\degree$};
-\end{scope}
 \end{tikzpicture}
+\end{subfigure}%
 \caption{ لمحہ \عددیء{\omega t_1=30\degree} پر برقی رو اور مقناطیسی دباو۔}
 \label{شکل_گھموتے_مشین_وقت_تیس_پر_دباو}
 \end{figure}
@@ -1532,9 +1569,6 @@ i_c&=I_0 \cos (30\degree+120\degree)=-\frac{\sqrt{3}}{2} I_0
 \centering
 %\includegraphics{figRotatingMachPrinciplesBasicACgenerator}
 \begin{tikzpicture}
-%grid
-%\draw[gray] (-\sRo,-\sRo) grid (\sRo,\sRo);
-\pgfmathsetmacro{\shiftX}{5cm}
 \stator{6}{30}
 \slotDot{90,-30,210}
 \slotCross{-90,30,150}
@@ -1570,7 +1604,7 @@ i_c&=I_0 \cos (30\degree+120\degree)=-\frac{\sqrt{3}}{2} I_0
 \draw (-30-15:\sRi+1.25*\delR)node[]{$c$};
 \draw (150-15:\sRi+1.25*\delR)node[]{$c'$};
 %text
-\draw node[left] at (-2*\sRo,0){$
+\draw node[left] at (-1.5*\sRo,0){$
 \begin{aligned}
 B&=B_0 \cos \theta_p\\
 &=B_0 \cos(\theta-\theta_m)\\
@@ -1774,14 +1808,9 @@ E_{\textup{موثر}} =4.44 k_w f N \phi_0
 \centering
 %\includegraphics{figRotatingMachPrinciplesFullWaveDCvoltage}
 \begin{tikzpicture}
-%grid
-%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
-%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
-%
-
 %axis
-\draw[gray] (0,0)--(6.2,0);
-\draw[gray](0,0)--(0,1.25) node[left]{$e_a$};
+\draw[] (0,0)--(6.2,0);
+\draw[](0,0)--(0,1.25) node[left]{$e_a$};
 %cosine DARK
 \draw (1,1) cos (0,0);
 \draw (1,1) cos (2,0);
@@ -1789,7 +1818,7 @@ E_{\textup{موثر}} =4.44 k_w f N \phi_0
 \draw(3,1) cos (4,0);
 \draw (5,1) cos (4,0);
 \draw (5,1) cos (6,0);
-\draw node[below] at (2,0){$1\pi$};
+\draw node[below] at (2,0){$\pi$};
 \draw node[below] at (4,0){$2\pi$};
 \draw node[below] at (6,0){$3\pi$};
 \end{tikzpicture}
@@ -1808,7 +1837,7 @@ E_{\textup{اوسط}}=\frac{1}{\pi} \int_{0}^{\pi} \omega N \phi_0 \sin \omega t
 یک سمت جنریٹر پر  باب  \حوالہ{باب_یک_سمتی_رو_مشین} میں غور کیا جائے گا۔
 
 \حصہ{ہموار قطب مشینوں میں قوت مروڑ}
-اس حصہ میں  کامل مشین میں \اصطلاح{قوت مروڑ}\فرہنگ{قوت مروڑ}\حاشیہب{torque}\فرہنگ{torque} کے حصول کے دو تراکیب پر غور کیا جائے گا۔ ایک ترکیب میں مشین کو دو مقناطیس تصور کر کے  ان  مقناطیسوں کے بیچ قوت کشش، قوت دفع اور قوت مروڑ حاصل کیے جائیں گے  جبکہ دوسری ترکیب  میں  مشین کے ساکن اور گھومتے لچھوں کو امالہ تصور کر کے  (باب چار کی طرح)  توانائی اور ہمہ توانائی سے ان کا حساب لگایا جائے گا۔ پہلے توانائی کی ترکیب پر غور کرتے ہیں۔
+اس حصہ میں  کامل مشین میں \اصطلاح{قوت مروڑ}\فرہنگ{قوت مروڑ}\حاشیہب{torque}\فرہنگ{torque} کے حصول کے دو تراکیب پر غور کیا جائے گا۔ ایک ترکیب میں مشین کو دو مقناطیس تصور کر کے  ان  مقناطیسوں کے بیچ قوت کشش، قوت دفع اور قوت مروڑ حاصل کیے جائیں گے  جبکہ دوسری ترکیب  میں  مشین کے ساکن اور گھومتے لچھوں کو امالہ تصور کر کے  (باب چار کی طرح)  توانائی اور ہم-توانائی سے ان کا حساب لگایا جائے گا۔ پہلے توانائی کی ترکیب پر غور کرتے ہیں۔
 
 \جزوحصہ{میکانی قوت مروڑ بذریعہ ترکیب توانائی}
 یہاں یک دوری مشین  پر غور کیا جائے گا جس سے  حاصل نتائج  با آسانی زیادہ دور کی مشینوں  پر لاگو کیے جا سکتے ہیں۔ شکل \حوالہ{شکل_گھومتے_مشین_ساکن_گھومتا_امالہ} میں یک دوری  کامل مشین دکھائی گئی ہے۔ کسی بھی لمحہ اس مشین کے دو لچھوں کے بیچ  کوئی زاویہ ہو گا جسے \عددیء{\theta} سے ظاہر کیا گیا ہے۔ خلائی درز ہر مقام پر یکساں ہے لہٰذا ابھرے قطب کے اثرات کو نظر انداز کیا جاتا ہے۔ مزید قالب کا جزو مقناطیس مستقل لامتناہی  (\عددیء{\mu_r \to \infty})  تصور کیا گیا ہے لہٰذا لچھوں کا امالہ صرف خلائی درز کے مقناطیسی مستقل\فرہنگ{مقناطیسی مستقل}\حاشیہب{magnetic constant, permeability} \عددیء{\mu_0} پر منحصر ہو گا۔
@@ -1816,10 +1845,6 @@ E_{\textup{اوسط}}=\frac{1}{\pi} \int_{0}^{\pi} \omega N \phi_0 \sin \omega t
 \centering
 %\includegraphics{figRotatingMachPrinciplesStatorAndRotorInductances}
 \begin{tikzpicture}
-%grid
-%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
-%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
-%
 \stator{2}{90}
 \slotDot{90}
 \slotCross{270}
@@ -1873,7 +1898,7 @@ v_r&=i_r R_r +\frac{\dif \lambda_r}{\dif t}=i_r R_r+L_{ar0} \cos \theta \frac{\d
 \begin{align}
 \frac{\dif \theta}{\dif t}=\omega
 \end{align}
-میکانی قوت مروڑ بذریعہ ہمہ توانائی حاصل کی جا سکتی ہے۔ ہمہ توانائی صفحہ \حوالہصفحہ{مساوات_تبادلہ_کوتوانائی_از_خود} پر مساوات \حوالہ{مساوات_تبادلہ_کوتوانائی_از_خود}  سے حاصل ہو گی۔یہ مساوات موجودہ استعمال کے لئے درج ذیل صورت اختیار کرتی ہے۔
+میکانی قوت مروڑ بذریعہ ہم-توانائی حاصل کی جا سکتی ہے۔ ہم-توانائی صفحہ \حوالہصفحہ{مساوات_تبادلہ_کوتوانائی_از_خود} پر مساوات \حوالہ{مساوات_تبادلہ_کوتوانائی_از_خود}  سے حاصل ہو گی۔یہ مساوات موجودہ استعمال کے لئے درج ذیل صورت اختیار کرتی ہے۔
 \begin{align}
 W_m'=\frac{1}{2} L_{aa} i_a^2+\frac{1}{2} L_{rr} i_r^2+L_{ar0} i_a i_r \cos \theta
 \end{align}
@@ -1932,13 +1957,8 @@ T_m=-\frac{P}{2} L_{ar0} i_a i_r \sin \left(\frac{P}{2} \theta_m\right)
 \begin{subfigure}{0.45\textwidth}
 \centering
 \begin{tikzpicture}
-%grid
-%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
-%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
-%
 \pgfmathsetmacro{\sRi}{0.8*\sRi}
 \pgfmathsetmacro{\rR}{\sRi-\gap}
-
 \stator{2}{90}
 \slotDot{90}
 \slotCross{270}
@@ -1973,10 +1993,6 @@ T_m=-\frac{P}{2} L_{ar0} i_a i_r \sin \left(\frac{P}{2} \theta_m\right)
 \centering
 %\includegraphics{figRotatingMachPrinciplesCombinedStatorAndRotorMMF}
 \begin{tikzpicture}
-%grid
-%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
-%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
-%
 \stator{2}{90}
 \slotDot{90}
 \slotCross{270}
@@ -2038,8 +2054,8 @@ $};
 \begin{align}
 \tau_{ar}=H_{ar} l_g
 \end{align}
-%%%%%%%%%%%%%%%%%%%%%%%%%
-\عددیء{H_{ar}} مقناطیسی شدت کی چوٹی کو ظاہر کرتا ہے۔ اب جہاں خلاء میں مقناطیسی شدت \عددیء{H} ہو وہاں مقناطیسی ہمہ توانائی کی کثافت \عددیء{\tfrac{\mu_0}{2}H^2} ہوتی ہے۔ خلائی درز میں اوسط ہمہ توانائی کی کثافت اس خلائی درز میں \عددیء{H^2} کی اوسط ضربِ \عددیء{\tfrac{\mu_0}{2}} ہو گی۔ کسی بھی سائن نما موج \عددیء{H=H_0 \cos \theta} کے \عددیء{H^2} کا اوسط \عددیء{H_{\textup{اوسط}}^2} یوں حاصل کیا جاتا ہے۔
+
+\عددیء{H_{ar}} مقناطیسی شدت کی چوٹی کو ظاہر کرتا ہے۔  خلاء میں جس مقام پر مقناطیسی شدت \عددیء{H} ہو وہاں مقناطیسی ہم-توانائی کی کثافت \عددیء{\tfrac{\mu_0}{2}H^2} ہوتی ہے۔ خلائی درز میں اوسط ہم-توانائی کی کثافت،  درز میں \عددیء{H^2} کی اوسط کو \عددیء{\tfrac{\mu_0}{2}} سے ضرب کر کے حاصل ہو گا۔ کسی بھی سائن نما موج \عددیء{H=H_0 \cos \theta} کے \عددیء{H^2} کا اوسط \عددیء{H_{\textup{اوسط}}^2}  حاصل کرتے ہیں:
 \begin{gather}
 \begin{aligned}
 H_{\textup{اوسط}}^2&=\frac{1}{\pi} \int_{-\frac{\pi}{2}}^{+\frac{\pi}{2}} H^2 \dif \theta\\
@@ -2049,31 +2065,31 @@ H_{\textup{اوسط}}^2&=\frac{1}{\pi} \int_{-\frac{\pi}{2}}^{+\frac{\pi}{2}} H^
 &=\frac{H_0^2}{2}
 \end{aligned}
 \end{gather}
-لہٰذا خلائی درز میں اوسط ہمہ توانائی کی کثافت \عددیء{\tfrac{\mu_0}{2}\tfrac{H_{ar}^2}{2}} ہو گی اور اس خلاء میں کُل ہمہ توانائی اس اوسط ہمہ توانائی ضربِ خلاء کی حجم کے برابر ہو گا یعنی
+یوں خلائی درز میں اوسط ہم-توانائی کی کثافت \عددیء{\tfrac{\mu_0}{2}\tfrac{H_{ar}^2}{2}} ہو گی۔ خلائی درز میں اوسط ہم-توانائی کو خلاء کے حجم سے ضرب کر کے درز میں  کل ہم-توانائی \عددی{W_m'}  حاصل ہو گی:
 \begin{align}
 W_m'=\frac{\mu_0}{2} \frac{H_{ar}^2}{2} 2 \pi r l_g l=\frac{\mu_0 \pi r l}{2l_g} \tau_{ar}^2
 \end{align}
-اس مساوات میں خلائی درز کی رداسی لمبائی \عددیء{l_g} ہے اور اس کی دھرے\حاشیہب{axis} کی سمت میں محوری لمبائی\حاشیہب{axial length} \عددیء{l} ہے۔ محور سے خلاء کی اوسط رداسی فاصلہ \عددیء{r} ہے۔ مزید یہ کہ \عددیء{r\gg l_g} ہے۔ اس طرح خلاء میں رداسی سمت میں کثافتِ مقناطیسی بہاو کی تبدیلی کو نظر انداز کیا جا سکتا ہے۔ اس مساوات کو ہم مساوات \حوالہ{مساوات_گھومتے_مشین_مربع_کل_دباو}  کی مدد سے یوں لکھ سکتے ہیں۔
+اس مساوات میں خلائی درز کی رداسی لمبائی \عددیء{l_g}  اور دھرے\حاشیہب{axis} کے رخ محوری لمبائی\حاشیہب{axial length} \عددیء{l} ہے۔ محور سے خلائی درز  کا اوسط رداسی فاصلہ \عددیء{r} ہے۔ مزید \عددیء{r\gg l_g} تصور کیا گیا ہے جس کی بنا درز میں رداسی رخ،  کثافت مقناطیسی بہاو کی تبدیلی  نظر انداز کی جا سکتی ہے۔ اس مساوات کو ہم مساوات \حوالہ{مساوات_گھومتے_مشین_مربع_کل_دباو}  کی مدد سے درج ذیل لکھ سکتے ہیں۔
 \begin{align}
 W_m'=\frac{\mu_0 \pi r l}{2 l_g} \left(\tau_a^2+\tau_r^2+2\tau_a \tau_r \cos \theta_{ar} \right) 
 \end{align}
-اس سے میکانی قوت مروڑ یوں حاصل کیا جا سکتا ہے
+یوں میکانی قوت مروڑ درج ذیل ہو گا۔
 \begin{align}\label{مساوات_گھومتے_مشین_مروڑ_کوتوانائی_سے}
 T_m=\frac{\partial W_m'}{\partial \theta_{ar}}=-\frac{\mu_0 \pi r l}{l_g} \tau_a \tau_r \sin \theta_{ar}
 \end{align}
-یہ حساب دو قطب والی مشین کے لئے لگایا گیا ہے۔\عددیء{P} قطب والے مشین کے لئے یہ مساوات ہر جوڑی قطب کا میکانی قوت مروڑ دیتا ہے لہٰذا ایسے مشین کے لئے ہم لکھ سکتے ہیں
+مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_کوتوانائی_سے} میں قوت مروڑ  دو قطبی مشین کے لئے حاصل کی گئی۔\عددیء{P} قطبی مشین کے لئے یہ مساوات ہر جوڑی قطب کی میکانی قوت مروڑ دیتی ہے لہٰذا \عددی{P} قطبی مشین کی قوت مروڑ \عددی{\tfrac{P}{2}} گنّا ہو گی:
 \begin{align}\label{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_الف}
 T_m=-\frac{P}{2}\frac{\mu_0 \pi r l}{l_g} \tau_a \tau_r \sin \theta_{ar}
 \end{align}
-یہ ایک بہت اہم مساوات ہے۔ اس کے مطابق مشین کا میکانی قوت مروڑ اس کے ساکن اور گھومتے لچھوں کے مقناطیسی دباو کے چوٹی کے براہ راست متناسب ہے۔ اسی طرح یہ ان دونوں کے درمیان برقی زاویہ \عددیء{\theta_{ar}} کے سائن کے بھی براہ راست متناسب ہے۔ منفی میکانی قوت مروڑ کا مطلب ہے کہ یہ زاویہ  \عددیء{\theta_{ar}} کے الٹ جانب ہے یعنی یہ میکانی قوت مروڑ اس زاویہ کو کم کرنے کی جانب کو ہے۔ مشین کے ساکن اور گھومتے حصوں پر ایک برابر مگر الٹ سمتوں میں میکانی قوت مروڑ ہوتا ہے البتہ ساکن حصے کا قوت مروڑ مشین کے وجود کے ذریعہ زمین تک منتقل ہو جاتا ہے جبکہ گھومتے حصے کا میکانی قوت مروڑ اس حصے کو گھماتا ہے۔
+مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_الف} ایک اہم مساوات ہے جس کے مطابق مشین کی میکانی قوت مروڑ، ساکن اور گھومتے لچھوں کے مقناطیسی دباو کی چوٹیوں اور  دونوں کے بیچ برقی زاویہ \عددیء{\theta_{ar}} کے سائن کی  راست متناسب ہو گی۔ منفی میکانی قوت مروڑ کا مطلب ہے کہ یہ زاویہ  \عددیء{\theta_{ar}} کے مخالف رخ ہو گی یعنی میکانی قوت مروڑ اس زاویہ کو کم کرنے کی کوشش کرے گی۔ مشین کے ساکن اور گھومتے حصوں پر ایک دوسرے کے  برابر لیکن مخالف رخ  میکانی قوت مروڑ ہو گی البتہ ساکن حصے کی قوت مروڑ مشین کے وجود کے ذریعہ زمین تک منتقل ہو گی جبکہ گھومتے حصے کی میکانی قوت مروڑ اس حصہ کو متحرک  کرتی  ہے۔
 
-چونکہ مقناطیسی دباو برقی رو کے براہ راست متناسب ہے لہٰذا  \عددیء{\tau_a} اور \عددیء{i_a} آپس میں براہ راست متناسب ہیں جبکہ \عددیء{\tau_r} اور \عددیء{i_r} آپس میں براہ راست متناسب ہیں۔ اس سے یہ ظاہر ہوتا ہے کہ مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی}  اور \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_الف}  ایک جیسے ہیں۔ درحقیقت یہ ثابت کیا جا سکتا ہے کہ یہ دونوں بالکل برابر ہیں۔
+چونکہ مقناطیسی دباو لچھے کے  برقی رو کا راست متناسب ہے لہٰذا  \عددیء{\tau_a} اور \عددیء{i_a} آپس میں  راست متناسب ہوں گے  جبکہ \عددیء{\tau_r} اور \عددیء{i_r} آپس میں  راست متناسب ہوں گے۔ یوں ظاہر ہوتا ہے کہ مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی}  اور \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_الف}  ایک دوسرے جیسے ہیں۔ درحقیقت یہ ثابت کیا جا سکتا ہے کہ یہ دونوں بالکل ایک جیسے  ہیں۔
 
-شکل \حوالہ{شکل_گھومتے_مشین_بہاو_کے_زاویے}  میں ایک مرتبہ پھر ساکن اور گھومتے لچھوں کے مقناطیسی دباو دکھائے گئے ہیں۔ شکل میں بائیں جانب تکون \عددیء{\Delta AEC} اور \عددیء{\Delta BEC} میں \عددیء{CE} مشترکہ ہے اور ان دو تکونوں سے واضح ہے کہ
+شکل \حوالہ{شکل_گھومتے_مشین_بہاو_کے_زاویے}  میں دوبارہ ساکن اور گھومتے لچھوں کے مقناطیسی دباو دکھائے گئے ہیں۔ شکل-ا کی تکون \عددیء{\Delta AEC} اور \عددیء{\Delta BEC} میں \عددیء{CE} مشترک ہے جو  درج ذیل ہو گا۔
 \begin{align}
 CE=\tau_r \sin \theta_{ar}=\tau_{ar} \sin \theta_a
 \end{align}
-اس مساوات کی مدد سے مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_الف}  یوں لکھا جا سکتا ہے۔
+اس مساوات کی مدد سے مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_الف}  کو درج ذیل لکھا جا سکتا ہے۔
 \begin{align}\label{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_ب}
 T_m=-\frac{P}{2}\frac{\mu_0 \pi r l}{l_g} \tau_a \tau_{ar}  \sin \theta_a
 \end{align}
@@ -2081,11 +2097,9 @@ T_m=-\frac{P}{2}\frac{\mu_0 \pi r l}{l_g} \tau_a \tau_{ar}  \sin \theta_a
 \begin{figure}
 \centering
 %\includegraphics{figRotatingMachPrinciplesFluxAngles}
+\begin{subfigure}{0.45\textwidth}
+\centering
 \begin{tikzpicture}
-%grid
-%\draw[gray,thick] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
-%\draw[gray,thin,xstep=0.1,ystep=0.1] (-2*\sRo,-2*\sRo) grid (2*\sRo,3*\sRo);
-%
 \draw[-latex](0,0)node[shift={(210:0.3cm)}]{$A$}--++(0:3 cm)coordinate(aTip)node[above,pos=0.8]{$\tau_a$}node[below]{$B$};
 \draw[gray,-latex](0,0)--++(60:2 cm)node[above left,pos=0.5]{$\tau_r$}node[shift={(60:0.3 cm)}]{D};
 \draw[-latex](aTip)--++(60:2cm)coordinate(rTip)node[left,pos=0.4]{$\tau_r$};
@@ -2102,8 +2116,12 @@ T_m=-\frac{P}{2}\frac{\mu_0 \pi r l}{l_g} \tau_a \tau_{ar}  \sin \theta_a
 %
 \draw[dashed](0:1.7 cm) arc (0:60:1.7cm);
 \draw (40:2cm) node{$\theta_{ar}$};
-%========
-\begin{scope}[xshift=7cm]
+\end{tikzpicture}
+\caption{}
+\end{subfigure}%
+\begin{subfigure}{0.45\textwidth}
+\centering
+\begin{tikzpicture}
 \draw[gray,-latex](0,0)node[black,shift={(210:0.3cm)}]{$M$}--++(0:3 cm)coordinate(aTip)node[gray,above,pos=0.8]{$\tau_a$}node[below]{$N$};
 \draw[-latex](0,0)--++(60:2 cm)node[above left,pos=0.5]{$\tau_r$}coordinate(rTipR)node[shift={(180:0.3 cm)}]{S};
 \draw[-latex](rTipR)--++(0:3 cm)coordinate(aTip)node[below,pos=0.4]{$\tau_a$};
@@ -2121,20 +2139,21 @@ T_m=-\frac{P}{2}\frac{\mu_0 \pi r l}{l_g} \tau_a \tau_{ar}  \sin \theta_a
 %
 \draw[gray](rTipR)++(0.5,0) arc (0:60:0.5);
 \draw[gray](rTipR)++(25:0.9)node{$\theta_{ar}$};
-\end{scope}
 \end{tikzpicture}
+\caption{}
+\end{subfigure}%
 \caption{مقناطیسی بہاو اور ان کے زاویے۔}
 \label{شکل_گھومتے_مشین_بہاو_کے_زاویے}
 \end{figure}
-اسی طرح شکل \حوالہ{شکل_گھومتے_مشین_بہاو_کے_زاویے}  کے دائیں جانب تکون \عددیء{\Delta MWQ} اور تکون \عددیء{\Delta SWQ} میں \عددیء{WQ} کا طرف مشترکہ ہے اور ان دو تکونوں سے واضح ہے کہ
+اسی طرح شکل \حوالہ{شکل_گھومتے_مشین_بہاو_کے_زاویے}-ب  کی تکون \عددیء{\Delta MWQ} اور تکون \عددیء{\Delta SWQ} میں \عددیء{WQ}  مشترک ہے جو درج ذیل ہو گا۔
 \begin{align}
 WQ=\tau_a \sin \theta_{ar}=\tau_{ar} \sin \theta_r
 \end{align}
-اب اس مساوات کی مدد سے مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_الف}  یوں لکھا جا سکتا ہے۔
+اس مساوات کی مدد سے مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_الف}  کو درج ذیل لکھا جا سکتا ہے۔
 \begin{align}\label{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_پ}
 T_m=-\frac{P}{2}\frac{\mu_0 \pi r l}{l_g} \tau_r \tau_{ar}  \sin \theta_r
 \end{align}
-مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_الف}  مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_ب}  اور مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_پ}  کو ایک جگہ لکھتے ہیں۔
+مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_الف}،  مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_ب}  اور مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_پ}  کو ایک ساتھ لکھتے ہیں۔
 \begin{gather}
 \begin{aligned}\label{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_ت}
 T_m&=-\frac{P}{2}\frac{\mu_0 \pi r l}{l_g} \tau_a \tau_r \sin \theta_{ar}\\
@@ -2142,26 +2161,26 @@ T_m&=-\frac{P}{2}\frac{\mu_0 \pi r l}{l_g} \tau_a \tau_{ar}  \sin \theta_a\\
 T_m&=-\frac{P}{2}\frac{\mu_0 \pi r l}{l_g} \tau_r \tau_{ar}  \sin \theta_r
 \end{aligned}
 \end{gather}
-ان مساوات سے یہ واضح ہے کہ میکانی قوت مروڑ کو دونوں لچھوں کے مقناطیسی دباو اور ان کے مابین زاویہ کی شکل میں لکھا جا سکتا ہے یا پھر ایک لچھے کی مقناطیسی دباو اور کُل مقناطیسی دباو اور ان دو کے مابین زاویہ کی شکل میں لکھا جا سکتا ہے۔
+ان مساوات سے  واضح ہے کہ میکانی قوت مروڑ کو دونوں لچھوں کے مقناطیسی دباو اور ان کے بیچ زاویہ کی صورت میں،  یا کسی ایک لچھے کے مقناطیسی دباو، کل مقناطیسی دباو اور ان کے بیچ زاویہ کی صورت میں لکھا جا سکتا ہے۔
 
-اس بات کو یوں بیان کیا جاسکتا ہے کہ میکانی قوت مروڑ دو مقناطیسی دباو کے آپس میں ردعمل کی وجہ سے وجود میں آتا ہے اور یہ ان مقناطیسی دباو کی چوٹی اور ان کے مابین زاویہ پر منحصر ہوتا ہے۔
+اس بات کو یوں بیان کیا جا سکتا ہے کہ میکانی قوت مروڑ دو مقناطیسی دباو کی آپس میں ردعمل کی وجہ سے پیدا اور مقناطیسی دباو کی چوٹیوں اور ان کے بیچ زاویہ پر منحصر ہوتا ہے۔
 
-مقناطیسی دباو، مقناطیسی شدت، کثافت مقناطیسی بہاو اور مقناطیسی بہاو سب کا آپس میں تعلق رکھتے ہیں لہٰذا ان مساوات کو کئی مختلف طریقوں سے لکھا جا سکتا ہے۔ مثلاً خلائی درز میں کُل مقناطیسی دباو \عددیء{\tau_{ar}} اور  وہاں کثافت مقناطیسی بہاو \عددیء{B_{ar}} کا تعلق
+مقناطیسی دباو، مقناطیسی شدت، کثافت مقناطیسی بہاو اور مقناطیسی بہاو  آپس میں تعلق رکھتے ہیں جنہیں مختلف طریقوں سے لکھا جا سکتا ہے۔ مثلاً خلائی درز میں کل مقناطیسی دباو \عددیء{\tau_{ar}} اور  درز میں  کثافت مقناطیسی بہاو \عددیء{B_{ar}} کا تعلق
 \begin{align}
 B_{ar}=\frac{\mu_0 \tau_{ar}}{l_g}
 \end{align}
-استعمال کر کے مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_ت}  کے آخری جزو کو یوں لکھا جا سکتا ہے
-\begin{align}
+استعمال کر کے مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_بذریعہ_کوتوانائی_ت}  کے آخری جزو کو درج ذیل لکھا جا سکتا ہے۔
+\begin{align}\label{مساوات_گھومنے_مووڑ_بناوٹی_حدیں}
 T_m=-\frac{P}{2} \pi r l \tau_r B_{ar} \sin \theta_r
 \end{align}
-مقناطیسی آلوں میں مقناطیسی قالب کی مقناطیسی مستقل \عددیء{\mu}  کی محدود صلاحیت کی وجہ سے قالب میں کثافت مقناطیسی بہاو تقریباً ایک ٹسلا تک ہی بڑھائی جا سکتی ہے۔ لہٰذا مشین بناتے وقت اس حد کو مد نظر رکھنا پڑتا ہے۔ اسی طرح گھومتے لچھے کا مقناطیسی دباو اس لچھے میں برقی رو پر منحصر ہوتا ہے۔ اس برقی رو سے لچھے کی مزاحمت میں برقی توانائی ضائع ہوتی ہے جس سے یہ لچھا گرم ہوتا ہے۔ برقی رو کو اس حد تک بڑھایا جا سکتا ہے جہاں تک اس لچھے کو ٹھنڈا کرنا ممکن ہو۔ لہٰذا مقناطیسی دباو کو اس حد کے اندر رکھنا پڑتا ہے۔ چونکہ اس مساوات میں یہ دو بہت ضروری حدیں واضح طور پر سامنے ہیں اس لئے یہ مساوات مشین بنانے کی غرض سے بہت اہم ہے۔
+مقناطیسی مشینوں کی  قالبی مقناطیسی مستقل \عددیء{\mu}  کی محدود قیمت کی بنا قالب میں کثافت مقناطیسی بہاو تقریباً ایک ٹسلا تک ہی بڑھائی جا سکتی ہے۔  مشین کی بناوٹ کے  وقت اس حد کو مد نظر رکھنا ہو گا۔ اسی طرح گھومتے لچھے کا مقناطیسی دباو اس لچھے میں برقی رو پر منحصر ہوتا ہے۔ اس برقی رو سے لچھے کی مزاحمت میں برقی توانائی ضائع ہوتی ہے جس سے لچھا گرم ہوتا ہے۔ برقی رو کو اس حد تک بڑھایا جا سکتا ہے جہاں تک لچھے کو ٹھنڈا رکھنا ممکن ہو۔ یوں مقناطیسی دباو کو ایک حد  سے نیچے رکھنا ہو گا۔ مساوات \حوالہ{مساوات_گھومنے_مووڑ_بناوٹی_حدیں} میں  \عددی{B_{ar}} اور \عددی{\tau_r} دونوں صریحاً موجود ہیں لہٰذا مشین کی بناوٹ کے نقطہ نظر سے یہ ایک اہم مساوات ہے۔ 
 
-اس مساوات کی ایک اور بہت اہم شکل اب دیکھتے ہیں۔ ایک قطب پر مقناطیسی بہاو \عددیء{\phi_P}  ایک قطب پر اوسط کثافت مقناطیسی بہاو \عددیء{B_{\textup{اوسط}}} ضربِ ایک قطب کا رقبہ  \عددیء{A_P} ہوتا ہے۔ جہاں
+ مساوات \حوالہ{مساوات_گھومنے_مووڑ_بناوٹی_حدیں} کی دوسری اہم صورت دیکھتے ہیں۔  قطب پر اوسط کثافت مقناطیسی بہاو \عددیء{B_{\textup{اوسط}}} اور قطب کے رقبہ  \عددیء{A_P}
 \begin{align}
 B_{\textup{اوسط}}&=\frac{1}{\pi} \int_{-\frac{\pi}{2}}^{+\frac{\pi}{2}} B_0 \cos \theta \dif \theta=\frac{2 B_0}{\pi}\\
 A_P&=\frac{2\pi rl}{P}
 \end{align}
-لہٰذا
+ کا حاصل ضرب قطب پر مقناطیسی بہاو \عددیء{\phi_P} ہوتا ہے لہٰذا
 \begin{align}
 \phi_P=\frac{2 B_0}{\pi}\frac{2\pi rl}{P}
 \end{align}
@@ -2169,4 +2188,4 @@ A_P&=\frac{2\pi rl}{P}
 \begin{align}\label{مساوات_گھومتے_مشین_مروڑ_اور_بہاو}
 T_m=-\frac{\pi}{2} \left(\frac{P}{2} \right)^2 \phi_{ar} \tau_r \sin \theta_r
 \end{align}
-یہ مساوات معاصر مشینوں  کے لئے بہت کار آمد ہے۔
+ہوں گے۔ مساوات \حوالہ{مساوات_گھومتے_مشین_مروڑ_اور_بہاو} معاصر مشینوں  کے لئے بہت کار آمد ہے۔
