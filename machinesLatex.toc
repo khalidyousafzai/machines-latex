@@ -89,9 +89,9 @@
 \contentsline {section}{\numberline {6.5}یکساں حال، برقرار چالو مشین کے خواص}{195}% 
 \contentsline {subsection}{\numberline {6.5.1}معاصر جنریٹر: برقی بوجھ بالمقابل \ensuremath {I_m} کے خط}{195}% 
 \contentsline {subsection}{\numberline {6.5.2}معاصر موٹر:\ensuremath {I_a} بالمقابل \ensuremath {I_m} کے خط}{196}% 
-\contentsline {section}{\numberline {6.6}کھلا دور اور کسر دور معائنہ}{198}% 
-\contentsline {subsection}{\numberline {6.6.1}کُھلے دور معائنہ}{199}% 
-\contentsline {subsection}{\numberline {6.6.2}کسرِ دور معائنہ}{200}% 
+\contentsline {section}{\numberline {6.6}کھلا دور اور کسر دور معائنہ}{199}% 
+\contentsline {subsection}{\numberline {6.6.1}کھلا دور معائنہ}{199}% 
+\contentsline {subsection}{\numberline {6.6.2}کسر دور معائنہ}{200}% 
 \contentsline {chapter}{\numberline {7}امالی مشین}{211}% 
 \contentsline {section}{\numberline {7.1}ساکن لچھوں کی گھومتی مقناطیسی موج}{212}% 
 \contentsline {section}{\numberline {7.2}مشین کی سرکنے اور گھومتی موجوں پر تبصرہ}{212}% 
