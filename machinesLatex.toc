@@ -94,15 +94,15 @@
 \contentsline {subsection}{\numberline {6.6.2}کسر دور معائنہ}{200}% 
 \contentsline {chapter}{\numberline {7}امالی مشین}{211}% 
 \contentsline {section}{\numberline {7.1}ساکن لچھوں کی گھومتی مقناطیسی موج}{212}% 
-\contentsline {section}{\numberline {7.2}مشین کی سرکنے اور گھومتی موجوں پر تبصرہ}{212}% 
+\contentsline {section}{\numberline {7.2}مشین کی سرک اور گھومتی امواج پر تبصرہ}{212}% 
 \contentsline {section}{\numberline {7.3}ساکن لچھوں میں امالی برقی دباو}{215}% 
 \contentsline {section}{\numberline {7.4}ساکن لچھوں کی موج کا گھومتے لچھوں کے ساتھ اضافی رفتار اور ان میں پیدا امالی برقی دباو}{215}% 
-\contentsline {section}{\numberline {7.5}گھومتے لچھوں کی گھومتی مقناطیسی دباو کی موج}{219}% 
+\contentsline {section}{\numberline {7.5}گھومتے لچھوں کی گھومتے مقناطیسی دباو کی موج}{219}% 
 \contentsline {section}{\numberline {7.6}گھومتے لچھوں کے مساوی فرضی ساکن لچھے}{220}% 
 \contentsline {section}{\numberline {7.7}امالی موٹر کا مساوی برقی دور}{221}% 
 \contentsline {section}{\numberline {7.8}مساوی برقی دور پر غور}{226}% 
 \contentsline {section}{\numberline {7.9}امالی موٹر کا مساوی تھونن دور یا ریاضی نمونہ}{230}% 
-\contentsline {section}{\numberline {7.10}پنجرا نما امالی موٹر}{237}% 
+\contentsline {section}{\numberline {7.10}پنجرا نما امالی موٹر}{236}% 
 \contentsline {section}{\numberline {7.11}بے بوجھ موٹر اور جامد موٹر کے معائنہ }{237}% 
 \contentsline {subsection}{\numberline {7.11.1}بے بوجھ موٹر کا معائنہ}{237}% 
 \contentsline {subsection}{\numberline {7.11.2}جامد موٹر کا معائنہ}{239}% 
