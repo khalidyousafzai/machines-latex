@@ -109,11 +109,11 @@
 \contentsline {chapter}{\numberline {8}یک سمت رو مشین}{245}% 
 \contentsline {section}{\numberline {8.1}میکانی سمت کار کی بنیادی کارکردگی}{245}% 
 \contentsline {subsection}{\numberline {8.1.1}میکانی سمت کار کی تفصیل}{247}% 
-\contentsline {section}{\numberline {8.2}یک سمت جنریٹر کی برقی دباو}{252}% 
+\contentsline {section}{\numberline {8.2}یک سمت جنریٹر کا برقی دباو}{252}% 
 \contentsline {section}{\numberline {8.3}قوت مروڑ}{254}% 
 \contentsline {section}{\numberline {8.4}بیرونی ہیجان اور خود ہیجان یک سمت جنریٹر}{255}% 
-\contentsline {section}{\numberline {8.5}یک سمت مشین کی کارکردگی کے خط}{260}% 
-\contentsline {subsection}{\numberline {8.5.1}حاصل برقی دباو بالمقابل برقی بوجھ}{260}% 
+\contentsline {section}{\numberline {8.5}یک سمت مشین کی کارکردگی کے خط}{259}% 
+\contentsline {subsection}{\numberline {8.5.1}حاصل برقی دباو بالمقابل برقی بوجھ}{259}% 
 \contentsline {subsection}{\numberline {8.5.2}رفتار بالمقابل قوت مروڑ}{262}% 
 \contentsline {chapter}{فرہنگ}{269}% 
 \select@language {english}
