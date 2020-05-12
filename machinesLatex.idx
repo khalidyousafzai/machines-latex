@@ -392,15 +392,17 @@
 \indexentry{power-angle law}{192}
 \indexentry{طاقت بالمقابل زاویہ}{192}
 \indexentry{مخلوط عدد}{196}
-\indexentry{کپیسٹر}{198}
-\indexentry{design}{199}
-\indexentry{پورا بوجھ}{201}
+\indexentry{capacitor}{199}
+\indexentry{برق گھیر}{199}
 \indexentry{کارگزاری}{204}
-\indexentry{قوی الیکٹرانکس}{211}
+\indexentry{electronics!power}{211}
+\indexentry{برقیات!قوی}{211}
+\indexentry{موٹر!امالی}{211}
+\indexentry{induction!motor}{211}
 \indexentry{model}{211}
 \indexentry{ریاضی نمونہ}{211}
 \indexentry{slip}{213}
-\indexentry{سرک}{213}
+\indexentry{سرکاو}{213}
 \indexentry{torque}{213}
 \indexentry{قوت مروڑ}{213}
 \indexentry{چوٹی}{215}
@@ -411,16 +413,19 @@
 \indexentry{خطی!برقی دور}{230}
 \indexentry{Thevenin theorem}{230}
 \indexentry{مسئلہ!تھونن}{230}
-\indexentry{مسئلہ!زیادہ سے زیادہ طاقت کی منتقلی}{233}
+\indexentry{روک}{232}
 \indexentry{theorem!maximum power transfer}{233}
-\indexentry{slip rings}{235}
-\indexentry{سرک چھلے}{235}
-\indexentry{اوہم میٹر}{242}
+\indexentry{مسئلہ!زیادہ سے زیادہ طاقت کی منتقلی}{233}
+\indexentry{slip rings}{233}
+\indexentry{سرک چھلے}{233}
+\indexentry{squirrel cage}{236}
+\indexentry{موٹر!پنجرہ نما}{236}
+\indexentry{مزاحمت پیما}{241}
 \indexentry{یک سمت رو!مشین}{245}
-\indexentry{قوی الیکٹرانکس}{245}
+\indexentry{قوی برقیات}{245}
 \indexentry{commutator}{245}
 \indexentry{سمت کار}{245}
-\indexentry{فورئیر}{254}
+\indexentry{فوریئر}{254}
 \indexentry{self excited}{255}
 \indexentry{ہیجان!خود}{255}
 \indexentry{separately excited}{255}
@@ -429,10 +434,10 @@
 \indexentry{میدانی لچھے}{255}
 \indexentry{armature coil}{255}
 \indexentry{قوی لچھے}{255}
-\indexentry{parallel connected}{257}
-\indexentry{داخلی ہیجان!متوازی}{257}
-\indexentry{داخلی ہیجان!سلسلہ وار}{257}
-\indexentry{مرکب جنریٹر}{257}
-\indexentry{داخلی ہیجان!مرکب}{257}
-\indexentry{دور جڑی مرکب}{257}
-\indexentry{قریب جڑی مرکب}{257}
+\indexentry{parallel connected}{258}
+\indexentry{داخلی ہیجان!متوازی}{258}
+\indexentry{داخلی ہیجان!سلسلہ وار}{258}
+\indexentry{مرکب جنریٹر}{258}
+\indexentry{داخلی ہیجان!مرکب}{258}
+\indexentry{دور جڑا مرکب}{258}
+\indexentry{قریب جڑا مرکب}{258}

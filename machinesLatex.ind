@@ -5,6 +5,7 @@
 
   \indexspace
 
+  \item capacitor, 199
   \item carbon bush, 181
   \item cartesian system, 6
   \item charge, 12, 140
@@ -31,7 +32,6 @@
   \indexspace
 
   \item delta connected, 96
-  \item design, 199
   \item differentiation, 20
   \item dot product, 17
 
@@ -46,6 +46,8 @@
   \item electrical rating, 61
   \item electromagnet, 135
   \item electromotive force, 63, 141
+  \item electronics
+    \subitem power, 211
   \item emf, 141
   \item enamel, 64
   \item energy, 46
@@ -87,6 +89,8 @@
   \item induced voltage, 40, 51, 63
   \item inductance, 41
     \subitem leakage, 187
+  \item induction
+    \subitem motor, 211
 
   \indexspace
 
@@ -134,7 +138,7 @@
 
   \indexspace
 
-  \item parallel connected, 257
+  \item parallel connected, 258
   \item permeability, 28
     \subitem relative, 28
   \item phase current, 97
@@ -179,7 +183,8 @@
     \subitem secondary, 57
   \item single phase, 25, 61
   \item slip, 213
-  \item slip rings, 180, 235
+  \item slip rings, 180, 233
+  \item squirrel cage, 236
   \item star connected, 96
   \item stator, 39
   \item stator coil, 108, 131
@@ -229,10 +234,10 @@
   \item winding
     \subitem distributed, 143
   \item winding factor, 151
-
 \end{otherlanguage}
   \newpage
 
+ \indexspace
 \item ابتدائی
    \subitem جانب، 57
    \subitem لچھا، 57
@@ -240,17 +245,19 @@
 \item اضافی
    \subitem زاویائی رفتار، 216
 \item اکائی سمتیہ، 4
-\item امالہ، 41
-   \subitem رستا، 187
 \item امالی
    \subitem برقی دباو، 51
+\item امالہ، 41
+   \subitem رستا، 187
 \item امالی برقی دباو، 40، 63
-\item اوہم میٹر، 242
 \item ایک، تین پتریاں، 64
 \item ایمپیئر-چکر، 35
 \indexspace
 \item بار، 140
 \item برقرار چالو، 103، 179
+\item برق گھیر، 199
+\item برقیات
+   \subitem قوی، 211
 \item برقی بار، 12، 140
 \item برقی دباو، 30، 140
    \subitem تبادلہ، 58، 67
@@ -277,7 +284,6 @@
 \indexspace
 \item پتری، 33، 130
 \item پتریاں، 64
-\item پورا بوجھ، 201
 \item پیش زاویہ، 24
 \indexspace
 \item تاخیری، 82
@@ -337,10 +343,10 @@
 \item خود امالہ، 45
 \indexspace
 \item داخلی ہیجان
-   \subitem سلسلہ وار، 257
-   \subitem متوازی، 257
-   \subitem مرکب، 257
-\item دور جڑی مرکب، 257
+   \subitem سلسلہ وار، 258
+   \subitem متوازی، 258
+   \subitem مرکب، 258
+\item دور جڑا مرکب، 258
 \item دور شکن، 183
 \item دوری سمتیہ، 23، 190
 \item دوری عرصہ، 103، 145
@@ -352,6 +358,7 @@
 \item رفتار
    \subitem اضافی زاویائی، 216
 \item روغن، 64
+\item روک، 232
 \item ریاضی نمونہ، 83، 211
 \item ریلے، 105
 \indexspace
@@ -364,8 +371,8 @@
 \item ساکن حصہ، 39
 \item ساکن لچھا، 108، 131
 \item ستارہ نما جوڑ، 96
-\item سرک، 213
-\item سرک چھلے، 180، 235
+\item سرکاو، 213
+\item سرک چھلے، 180، 233
 \item سطحی تکمل، 185
 \item سطحی کثافت، 13
 \item سکت، 99، 100
@@ -392,7 +399,7 @@
 \item غیر سمتی، 3
 \item غیر معاصر، 182
 \indexspace
-\item فورئیر، 254
+\item فوریئر، 254
 \item فوریئر تسلسل، 65، 145
 \item فیراڈے
    \subitem قانون، 40، 129
@@ -405,18 +412,17 @@
    \subitem کولمب، 12
    \subitem لورینز، 140
 \item قدامت پسند میدان، 113
-\item قریب جڑی مرکب، 257
+\item قریب جڑا مرکب، 258
 \item قطب
    \subitem ابھرے، 143، 181
    \subitem ہموار، 143، 181
 \item قوت مروڑ، 169، 213
    \subitem انتہائی، 182
-\item قوی الیکٹرانکس، 211، 245
+\item قوی برقیات، 245
 \item قوی لچھے، 255
 \indexspace
 \item کاربن بش، 181
 \item کارگزاری، 204
-\item کپیسٹر، 198
 \item کثافت
    \subitem برقی رو، 30
 \item کثافت مقناطیسی بہاو
@@ -447,8 +453,9 @@
 \item محوری
    \subitem لمبائی، 165
 \item مخلوط عدد، 196
-\item مرکب جنریٹر، 257
+\item مرکب جنریٹر، 258
 \item مزاحمت، 27
+\item مزاحمت پیما، 241
 \item مساوات لورینز، 106
 \item مسئلہ
    \subitem تھونن، 230
@@ -477,6 +484,9 @@
    \subitem جزو، 28، 33
 \item مقناطیسی میدان
    \subitem شدت، 13، 35
+\item موٹر
+   \subitem امالی، 211
+   \subitem پنجرہ نما، 236
 \item موثر، 21، 52
 \item موثر قیمت، 168
 \item موسیقائی جزو، 66، 146
