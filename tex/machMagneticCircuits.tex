@@ -150,8 +150,8 @@ v&=v_L
 \begin{subfigure}[b]{0.45\textwidth}
 \centering
 \begin{tikzpicture}[american voltages]
-\draw (0,0)--(1.5*\xx,0) to [european resistor,l={$R_L$},v<={$v_L$}] ++(0,\xx) to
- [resistor,v<={$\Delta v$},l={$R_{\textup{تار}}$}]++(-\xx,0) to [short,i<=$i$]++(-0.5*\xx,0) to [battery,l_={$v$}] (0,0);
+\draw (0,0)--(1.5*\xx,0) to [european resistor,l={$R_L$},a={$\begin{aligned}&+\\  &v_L\\  &- \end{aligned}$}] ++(0,\xx) to
+ [resistor,a={$+\,\Delta v\,-$},l={$R_{\textup{تار}}$}]++(-\xx,0) to [short,i<=$i$]++(-0.5*\xx,0) to [battery,l_={$v$}] (0,0);
 \end{tikzpicture}%
 \caption{}
 \end{subfigure}\hfill
@@ -214,7 +214,7 @@ $};
 \begin{subfigure}[b]{0.40\textwidth}
 \centering
 \begin{tikzpicture}[american voltages]
-\draw (0,0)--(1.5*\xx,0) to [european resistor,l_={$\Re_a$}]++(0,\yy) to [european resistor,l={$\Re_c$},v<={$\Delta \tau$}]++ (-\xx,0) to [short,i<=$\phi$]++(-0.5*\xx,0) to [battery,l_={$\tau$}] (0,0); 
+\draw (0,0)--(1.5*\xx,0) to [european resistor,l_={$\Re_a$}]++(0,\yy) to [european resistor,l={$\Re_c$},a={$+\, \Delta \tau\, -$}]++ (-\xx,0) to [short,i<=$\phi$]++(-0.5*\xx,0) to [battery,l_={$\tau$}] (0,0); 
 \end{tikzpicture}%
 \caption{}
 \end{subfigure}\hfill
