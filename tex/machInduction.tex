@@ -80,9 +80,9 @@ B^+(\theta)=\mu_0 H^+(\theta)&=\mu_0 \frac{\tau^+(\theta)}{l_g}\\
 جو بالکل مساوات \حوالہ{مساوات_گھومتے_مشین_کثافت_بالمقابل_میکانی_زاویہ}  کی طرح ہے۔ یوں مساوات \حوالہ{مساوات_گھومتے_مشین_تین_دور_سائن_نما_برقی_دباو}   مقناطیسی موج \عددیء{B^+(\theta)} کی ساکن لچھوں میں پیدا کردہ امالی برقی دباو کو ظاہر کرے گی ۔اس مساوات کو یہاں دوبارہ پیش کیا جاتا ہے
 \begin{gather}
 \begin{aligned}\label{مساوات_امالی_تین_دور_سائن_نما_برقی_دباو}
-e_{as}(t)&=\omega_e N_s \phi_0 \cos (\omega_t -90\degree)=E_s \cos (\omega_t -90\degree)\\
-e_{bs}(t)&=\omega_e N_s \phi_0 \cos (\omega_t +150\degree)=E_s \cos (\omega_t +150\degree)\\
-e_{cs}(t)&=\omega_e N_s \phi_0 \cos (\omega_t +30\degree)=E_s \cos (\omega_t +30\degree)
+e_{as}(t)&=\omega_e N_s \phi_0 \cos (\omega_t +90\degree)=E_s \cos (\omega_t +90\degree)\\
+e_{bs}(t)&=\omega_e N_s \phi_0 \cos (\omega_t -30\degree)=E_s \cos (\omega_t -90\degree)\\
+e_{cs}(t)&=\omega_e N_s \phi_0 \cos (\omega_t +210\degree)=E_s \cos (\omega_t +210\degree)
 \end{aligned}
 \end{gather}
 جہاں \عددیء{N_s} ساکن لچھے کے چکر  اور \عددی{E_s} درج ذیل ہے۔
@@ -172,9 +172,9 @@ B_{s,rz}^+(\theta,t)&=B_0 \cos (\theta-\omega_z t)=B_0 \cos (\theta -s \omega_e 
 یوں گھومتے لچھوں میں امالی برقی دباو مساوات \حوالہ{مساوات_امالی_تین_دور_سائن_نما_برقی_دباو}  کی طرح  ہوں گے لیکن  ان میں تعدد \عددیء{\omega_z=s \omega_e t} ہو گا:\حاشیہد{\عددیء{e_{arz}} میں   دور \عددیء{a} ہے۔گھومتے لچھے کو \عددیء{r}  اور اضافی کو \عددیء{z} ظاہر کرتا ہے۔}
 \begin{gather}
 \begin{aligned}\label{مساوات_امالی_گھومتا_حصہ_تین_دور_سائن_نما_برقی_دباو}
-e_{arz}(t)&=s \omega_e N_r \phi_0 \cos (s \omega_e t -90\degree)=s E_r \cos (s \omega_e t -90\degree)\\
-e_{brz}(t)&=s \omega_e N_r \phi_0 \cos (s \omega_e t +150\degree)= s E_r \cos (s \omega_e t +150\degree)\\
-e_{crz}(t)&=s \omega_e N_r \phi_0 \cos (s \omega_e t +30\degree)= s E_r \cos (s \omega_e t +30\degree)
+e_{arz}(t)&=s \omega_e N_r \phi_0 \cos (s \omega_e t +90\degree)=s E_r \cos (s \omega_e t =90\degree)\\
+e_{brz}(t)&=s \omega_e N_r \phi_0 \cos (s \omega_e t -30\degree)= s E_r \cos (s \omega_e t -30\degree)\\
+e_{crz}(t)&=s \omega_e N_r \phi_0 \cos (s \omega_e t +210\degree)= s E_r \cos (s \omega_e t +210\degree)
 \end{aligned}
 \end{gather}
 ان مساوات میں \عددیء{N_r}  گھومتے لچھے کے چکر ہیں اور \عددی{E_r} درج ذیل ہے۔
@@ -205,8 +205,8 @@ Z_r&=R_r+j s X_r\\
 %
 \draw node[below right] at (0,-2.5){$
 \begin{aligned}
-i_{arz}(t)&=\tfrac{s E_r}{|Z|} \cos (s \omega_e t -90^\circ-\phi_z) \\ 
-& =I_{0r} \cos (s \omega_e t -90^\circ-\phi_z) 
+i_{arz}(t)&=\tfrac{s E_r}{|Z|} \cos (s \omega_e t +90^\circ-\phi_z) \\ 
+& =I_{0r} \cos (s \omega_e t +90^\circ-\phi_z) 
 \end{aligned}$}; 
 \end{tikzpicture}%
 \caption{گھومتے لچھا کا مساوی دور اور اس میں اضافی تعدد کا رو۔}
@@ -216,15 +216,15 @@ i_{arz}(t)&=\tfrac{s E_r}{|Z|} \cos (s \omega_e t -90^\circ-\phi_z) \\
 شکل \حوالہ{شکل_امالی_گھومتی_لچھوں_کا_مساوی_دور} بالکل شکل \حوالہ{شکل_حقائق_دوری_سمتیہ_سے_دور_حل}  کی طرح ہے لہٰذا مساوات \حوالہ{مساوات_بنیادی_حقائق_دوری_سمتیہ_سے_مزاحمت_امالہ_دور_حل}  سے برقی رو حاصل کیے جا سکتے ہیں:
 \begin{gather}
 \begin{aligned}
-i_{arz}(t)&=\frac{s E_r}{\sqrt{R_r^2+s^2 X_r^2}} \cos \left(s \omega_e t -90\degree-\phi_z \right)=I_{0r} \cos (s \omega_e t +\theta_0)\\
-i_{brz}(t)&=\frac{s E_r}{\sqrt{R_r^2+s^2 X_r^2}} \cos \left(s \omega_e t +150\degree-\phi_z \right)=I_{0r} \cos (s \omega_e t -120 \degree+\theta_0)\\
-i_{crz}(t)&=\frac{s E_r}{\sqrt{R_r^2+s^2 X_r^2}} \cos \left(s \omega_e t +30\degree-\phi_z \right)=I_{0r} \cos (s \omega_e t+120\degree +\theta_0)
+i_{arz}(t)&=\frac{s E_r}{\sqrt{R_r^2+s^2 X_r^2}} \cos \left(s \omega_e t +90\degree-\phi_z \right)=I_{0r} \cos (s \omega_e t +\theta_0)\\
+i_{brz}(t)&=\frac{s E_r}{\sqrt{R_r^2+s^2 X_r^2}} \cos \left(s \omega_e t -30\degree-\phi_z \right)=I_{0r} \cos (s \omega_e t -120 \degree+\theta_0)\\
+i_{crz}(t)&=\frac{s E_r}{\sqrt{R_r^2+s^2 X_r^2}} \cos \left(s \omega_e t +210\degree-\phi_z \right)=I_{0r} \cos (s \omega_e t+120\degree +\theta_0)
 \end{aligned}
 \end{gather}
 یہ تین دوری برقی رو ہیں جو آپس میں \عددیء{120\degree}  زاویہ رکھتے ہیں۔یہاں \عددیء{\phi_z} رکاوٹ کا زاویہ\حاشیہد{تکنیکی دنیا میں رکاوٹ کے زاویہ کے لئے \عددیء{\phi_z} استعمال ہوتا ہے۔یہاں یہی کیا گیا ہے۔} ہے۔امید کی جاتی ہے کہ اسے آپ مقناطیسی بہاو نہیں سمجھیں گے۔درج بالا مساوات میں درج ذیل ہوں گے۔
 \begin{gather}
 \begin{aligned}\label{مساوات_امالی_گھومتا_رو}
-\theta_0&=-90-\phi_z \\
+\theta_0&=90-\phi_z \\
 I_{0r}&=\frac{s E_r}{\sqrt{R_r^2+s^2 X_r^2}}
 \end{aligned}
 \end{gather}
@@ -256,8 +256,8 @@ f+s f_e= f_e (1-s)+ s f_e=f_e
 \begin{gather}
 \begin{aligned}\label{مساوات_امالی_تین_دباو}
 e_{afs}(t)&=\omega_e N_r \phi_0 \cos \left(\omega_e t -90\degree \right)=E_r \cos \left(\omega_e t -90\degree \right)\\
-e_{bfs}(t)&=\omega_e N_r \phi_0 \cos \left(\omega_e t +150\degree \right)=E_r \cos \left(\omega_e t +150\degree \right)\\
-e_{cfs}(t)&=\omega_e N_r \phi_0 \cos \left(\omega_e t +30\degree \right)=E_r \cos \left(\omega_e t +30\degree \right)
+e_{bfs}(t)&=\omega_e N_r \phi_0 \cos \left(\omega_e t -30\degree \right)=E_r \cos \left(\omega_e t -30\degree \right)\\
+e_{cfs}(t)&=\omega_e N_r \phi_0 \cos \left(\omega_e t +210\degree \right)=E_r \cos \left(\omega_e t +210\degree \right)
 \end{aligned}
 \end{gather}
 %
@@ -288,9 +288,9 @@ Z_{fs}=\frac{R_r}{s}+j X_r
 اگر ان فرضی ساکن لچھوں پر مساوات \حوالہ{مساوات_امالی_تین_دباو}  کے برقی دباو لاگو کیے جائیں جیسا شکل \حوالہ{شکل_امالی_گھومتی_لچھوں_کا_فرضی_مساوی_ساکن_دور}  میں دکھایا گیا ہے تب ان میں درج ذیل برقی رو ہوں گے۔
 \begin{gather}
 \begin{aligned}
-i_{afs}(t)&=\frac{E_r}{\sqrt{\left(\frac{R_r}{s} \right)^2+X_r^2}} \cos \left(\omega_e t-90\degree -\phi_Z  \right)=I_{or} \cos \left(\omega_e t+\theta_0 \right)\\
-i_{bfs}(t)&=\frac{E_r}{\sqrt{\left(\frac{R_r}{s} \right)^2+X_r^2}} \cos \left(\omega_e t+150\degree -\phi_Z  \right)=I_{or}\cos \left(\omega_e t-120\degree +\theta_0 \right)\\
-i_{cfs}(t)&=\frac{E_r}{\sqrt{\left(\frac{R_r}{s} \right)^2+X_r^2}} \cos \left(\omega_e t+300\degree -\phi_Z  \right)=I_{or} \cos \left(\omega_e t+120\degree+\theta_0 \right)
+i_{afs}(t)&=\frac{E_r}{\sqrt{\left(\frac{R_r}{s} \right)^2+X_r^2}} \cos \left(\omega_e t+90\degree -\phi_Z  \right)=I_{or} \cos \left(\omega_e t+\theta_0 \right)\\
+i_{bfs}(t)&=\frac{E_r}{\sqrt{\left(\frac{R_r}{s} \right)^2+X_r^2}} \cos \left(\omega_e t-0\degree -\phi_Z  \right)=I_{or}\cos \left(\omega_e t-120\degree +\theta_0 \right)\\
+i_{cfs}(t)&=\frac{E_r}{\sqrt{\left(\frac{R_r}{s} \right)^2+X_r^2}} \cos \left(\omega_e t+210\degree -\phi_Z  \right)=I_{or} \cos \left(\omega_e t+120\degree+\theta_0 \right)
 \end{aligned}
 \end{gather}
 یہاں مساوات \حوالہ{مساوات_امالی_گھومتا_رو}  استعمال کی گئی ہے۔دھیان رہے کہ ان مساوات میں  رکاوٹ کا زاویہ \عددیء{\phi_{fZ}}  وہی ہے جو گھومتے لچھے کا تھا:
@@ -410,7 +410,7 @@ i_a'(t)=\tfrac{s E_s}{\sqrt{R_r'^2+s^2X_r'^2}} \cos (s \omega_e t -\theta_0-\phi
 \caption{گھومتے لچھے کا ایک  مساوی دور۔}
 \label{شکل_امالی_گھومتے_لچھے_کا_دوسرا_مساوی_دور}
 \end{figure}
-یہاں ذرہ شکل \حوالہ{شکل_امالی_گھومتے_لچھے_کا_دوسرا_مساوی_دور}  سے رجوع کریں جہاں
+یہاں ذرہ شکل \حوالہ{شکل_امالی_گھومتے_لچھے_کا_دوسرا_مساوی_دور}  سے رجوع کریں جہاں 
 \begin{gather}
 \begin{aligned}\label{مساوات_امالی_گھومتے_مزاحمت_امالہ_دوسری_جانب}
 R_r'&=\left(\frac{N_s}{N_r} \right)^2 R_r\\
@@ -420,9 +420,9 @@ X_r'&=\left(\frac{N_s}{N_r} \right)^2 X_r
 پر ساکن لچھوں کا امالی برقی دباو \عددیء{\hat{E}_s} لاگو ہے لہٰذا  برقی رو درج ذیل ہوں گے۔
 \begin{gather}
 \begin{aligned}\label{مساوات_امالی_تین_رو}
-i_a'(t)&=\frac{s E_s}{\sqrt{R_r'^2+s^2 X_r'^2}} \cos (\omega_e t -90\degree -\phi_Z)\\
-i_b'(t)&=\frac{s E_s}{\sqrt{R_r'^2+s^2 X_r'^2}} \cos (\omega_e t +150\degree -\phi_Z)\\
-i_c'(t)&=\frac{s E_s}{\sqrt{R_r'^2+s^2 X_r'^2}} \cos (\omega_e t +30\degree -\phi_Z)
+i_a'(t)&=\frac{s E_s}{\sqrt{R_r'^2+s^2 X_r'^2}} \cos (\omega_e t +90\degree -\phi_Z)\\
+i_b'(t)&=\frac{s E_s}{\sqrt{R_r'^2+s^2 X_r'^2}} \cos (\omega_e t -30\degree -\phi_Z)\\
+i_c'(t)&=\frac{s E_s}{\sqrt{R_r'^2+s^2 X_r'^2}} \cos (\omega_e t +210\degree -\phi_Z)
 \end{aligned}
 \end{gather}
 ان سب  کے حیطے ایک دوسرے کے برابر ہیں۔اس حیطہ کو 
@@ -432,12 +432,12 @@ i_c'(t)&=\frac{s E_s}{\sqrt{R_r'^2+s^2 X_r'^2}} \cos (\omega_e t +30\degree -\ph
 لکھ کر مساوات \حوالہ{مساوات_امالی_تین_رو}  کو درج ذیل صورت میں لکھا جا سکتا ہے۔
 \begin{gather}
 \begin{aligned}
-i_a'(t)&=I_{0r}' \cos (\omega_e t -90\degree -\phi_Z)\\
-i_b'(t)&=I_{0r}' \cos (\omega_e t +150\degree -\phi_Z)\\
-i_c'(t)&=I_{0r}' \cos (\omega_e t +30\degree -\phi_Z)
+i_a'(t)&=I_{0r}' \cos (\omega_e t +90\degree -\phi_Z)\\
+i_b'(t)&=I_{0r}' \cos (\omega_e t -30\degree -\phi_Z)\\
+i_c'(t)&=I_{0r}' \cos (\omega_e t +210\degree -\phi_Z)
 \end{aligned}
 \end{gather}
-یہ مساوات بالکل مساوات \حوالہ{مساوات_امالی_تین_رو_الف}  کی طرح ہے۔ یوں شکل \حوالہ{شکل_امالی_ساکن_کا_مساوی_دور_بمع_گھومتے_لچھے_کی_رو}  میں ساکن لچھوں کے امالی برقی دباو \عددیء{\hat{E}_s} کے متوازی شکل \حوالہ{شکل_امالی_گھومتے_لچھے_کا_دوسرا_مساوی_دور}  جوڑنے سے ساکن لچھوں میں  اضافی برقی رو  اتنا ہی ہو گا جتنا اصل موٹر میں گھومتے لچھوں کی بنا ہو گا۔ شکل \حوالہ{شکل_امالی_مشین_کا_مکمل_مساوی_دور}  میں ایسا کرتے ہوئے امالی موٹر کا مساوی برقی دور حاصل کیا گیا ہے جو امالی موٹر  کی صحیح عکاسی کرتا ہے۔
+یہ مساوات بالکل مساوات \حوالہ{مساوات_امالی_تین_رو_الف}  کی طرح ہے جہاں \عددی{\theta_0=90-\phi_Z} ہو گا۔ یوں شکل \حوالہ{شکل_امالی_ساکن_کا_مساوی_دور_بمع_گھومتے_لچھے_کی_رو}  میں ساکن لچھوں کے امالی برقی دباو \عددیء{\hat{E}_s} کے متوازی شکل \حوالہ{شکل_امالی_گھومتے_لچھے_کا_دوسرا_مساوی_دور}  جوڑنے سے ساکن لچھوں میں  اضافی برقی رو  اتنا ہی ہو گا جتنا اصل موٹر میں گھومتے لچھوں کی بنا ہو گا۔ شکل \حوالہ{شکل_امالی_مشین_کا_مکمل_مساوی_دور}  میں ایسا کرتے ہوئے امالی موٹر کا مساوی برقی دور حاصل کیا گیا ہے جو امالی موٹر  کی صحیح عکاسی کرتا ہے۔
 \begin{figure}
 \centering
 %\includegraphics{figInductionMachineEquivalentCircuit}
