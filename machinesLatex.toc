@@ -65,13 +65,13 @@
 \contentsline {chapter}{\numberline {5}گھومتے مشین کے بنیادی اصول}{129}% 
 \contentsline {section}{\numberline {5.1}قانون فیراڈے}{129}% 
 \contentsline {section}{\numberline {5.2}معاصر مشین}{130}% 
-\contentsline {section}{\numberline {5.3}محرک برقی دباو}{140}% 
-\contentsline {section}{\numberline {5.4}پھیلے لچھے اور سائن نما مقناطیسی دباو}{143}% 
+\contentsline {section}{\numberline {5.3}محرک برقی دباو}{141}% 
+\contentsline {section}{\numberline {5.4}پھیلے لچھے اور سائن نما مقناطیسی دباو}{144}% 
 \contentsline {subsection}{\numberline {5.4.1}بدلتا رو والے مشین}{145}% 
-\contentsline {section}{\numberline {5.5}مقناطیسی دباو کی گھومتی امواج}{153}% 
-\contentsline {subsection}{\numberline {5.5.1}ایک دور کی لپٹی مشین}{153}% 
+\contentsline {section}{\numberline {5.5}مقناطیسی دباو کی گھومتی امواج}{154}% 
+\contentsline {subsection}{\numberline {5.5.1}ایک دور کی لپٹی مشین}{154}% 
 \contentsline {subsection}{\numberline {5.5.2}تین دور کی لپٹی مشین کا تحلیلی تجزیہ}{155}% 
-\contentsline {subsection}{\numberline {5.5.3}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{159}% 
+\contentsline {subsection}{\numberline {5.5.3}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{160}% 
 \contentsline {section}{\numberline {5.6}محرک برقی دباو}{163}% 
 \contentsline {subsection}{\numberline {5.6.1}بدلتا رو برقی جنریٹر}{163}% 
 \contentsline {subsection}{\numberline {5.6.2}یک سمت رو برقی جنریٹر}{168}% 
