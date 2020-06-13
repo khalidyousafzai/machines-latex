@@ -38,7 +38,16 @@
 
 \begin{figure}
 \centering
-\includegraphics[height=3.5cm]{figRightHandRule}
+\begin{tikzpicture}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[height=3.5cm]{figRightHandRule}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+ %\draw[red,step=0.1] (0,0) grid (1,1);
+\draw[-latex](0.3,0.9)--(0.2,1)node[left]{$\kvec{a}_x$};
+\draw[-latex](0,0.4)--(-0.15,0.35)node[left]{$\kvec{a}_y$};
+\draw[-latex](0.9,0.9)--(1,1)node[right]{$\kvec{a}_z$};
+    \end{scope}
+\end{tikzpicture}
+%\includegraphics[height=3.5cm]{figRightHandRule}
 \caption{دائیں ہاتھ کا نظام۔}
 \label{شکل_حقائق_دائیں_ہاتھ}
 \end{figure}
