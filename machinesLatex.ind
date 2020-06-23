@@ -1,5 +1,6 @@
 \begin{theindex}
 \begin{otherlanguage}{english}
+
   \item ampere-turn, 33
   \item armature coil, 135, 255
 
@@ -169,7 +170,7 @@
   \item rms, 19, 50, 169
   \item rotor, 37
   \item rotor coil, 106
-  \item rpm, 160
+  \item rpm, 161
 
   \indexspace
 
@@ -194,7 +195,7 @@
   \item surface density, 11
   \item synchronous, 134
   \item synchronous inductance, 188
-  \item synchronous speed, 160, 180
+  \item synchronous speed, 160, 161, 180
 
   \indexspace
 
@@ -207,7 +208,6 @@
   \item torque, 170, 213
     \subitem pull out, 182
 \newpage
-
   \item transformer
     \subitem air core, 59
     \subitem communication, 59
@@ -236,11 +236,9 @@
   \item winding
     \subitem distributed, 144
   \item winding factor, 152
+\end{otherlanguage}
+  \newpage
 
-  \end{otherlanguage}
-
-\newpage
-\indexspace
 \item ابتدائی
    \subitem جانب، 55
    \subitem لچھا، 55
@@ -468,7 +466,7 @@
 \item معاصر، 134
    \subitem مشین، 180
 \item معاصر امالہ، 188
-\item معاصر رفتار، 160، 180
+\item معاصر رفتار، 160، 161، 180
 \item معائنہ
    \subitem کھلا دور، 87
 \item مقناطیس
