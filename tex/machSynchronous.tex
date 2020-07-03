@@ -587,32 +587,43 @@ p_{v,\textup{انتہا}}=\frac{3 V_a E_{am}}{X_s}&& (\sin 90^{\circ}=1)
 \begin{subfigure}{0.45\textwidth}
 \centering
 \begin{tikzpicture}
-\draw[gray,thick,-latex](0,0)--++(0:1.5)node[above]{$\hat{I}_a$};
-\draw[-latex](0,0)--++(0:3)node[above,pos=0.8]{$\hat{V}_{s}$}coordinate(vTip);
-\draw[latex-](vTip)--++(-90:1.5)node[pos=0.5,right]{$j \hat{I}_aX_{sm}$}coordinate(ixStart);
-\draw[-latex,thick](0,0)--(ixStart)node[below,pos=0.6]{$\hat{E}_{am,m}$};
-\draw[-latex](vTip)--++(90:2)node[pos=0.5,right]{$j \hat{I}_aX_{sg}$}coordinate(ixStartA);
-\draw[-latex,thick](0,0)--(ixStartA)node[above left,pos=0.6]{$\hat{E}_{am,g}$};
+\pgfmathsetmacro{\Em}{2}
+\pgfmathsetmacro{\Eg}{1686/1632*\Em}
+\pgfmathsetmacro{\angM}{-35.548}
+\pgfmathsetmacro{\angG}{38.047}
+\draw[gray,thick,-latex](0,0)--++(0:1)node[above]{$\hat{I}_a$};
+\draw[-latex,thick](0,0)--++(\angM:\Em)coordinate(kL)node[pos=0.75,below left]{$\hat{E}_{am,a}$};
+\draw[-latex,thick](0,0)--++(\angG:\Eg)coordinate(kT)node[pos=0.75,above left]{$\hat{E}_{am,g}$};
+\path(kL)--(kT)coordinate[pos=0.4773](kV)coordinate[pos=1](kE);
+\draw[-latex](kL)--(kV)node[pos=0.5,right]{$j\hat{I}_aX_{sm}$};
+\draw[-latex](kV)--(kE)node[pos=0.5,right]{$j\hat{I}_aX_{sg}$};
+\draw[-latex](0,0)--(kV)node[pos=0.75,below]{$\hat{V}_s$};
 \end{tikzpicture}
 \caption{}
 \end{subfigure}%
 \begin{subfigure}{0.45\textwidth}
 \centering
 \begin{tikzpicture}
-\pgfmathsetmacro{\phaseI}{45}
-\pgfmathsetmacro{\phaseV}{30}
-\draw[gray,thick,-latex](0,0)--++(\phaseI:4)node[right]{$\hat{I}_a$};
-\draw[-latex](0,0)--++(\phaseV:3)node[below,pos=0.8]{$\hat{V}_{s}$}coordinate(vTip);
-\draw[latex-](vTip)--++(-90+\phaseI:1.5)node[pos=0.3,above right]{$j \hat{I}_aX_{sm}$}coordinate(ixStart);
-\draw[-latex,thick](0,0)--(ixStart)node[below,pos=0.6]{$\hat{E}_{am,m}$};
-\draw[-latex](vTip)--++(90+\phaseI:2)node[above right]{$j \hat{I}_aX_{sg}$}coordinate(ixStartA);
-\draw[-latex,thick](0,0)--(ixStartA)node[above left,pos=0.6]{$\hat{E}_{am,g}$};
+\pgfmathsetmacro{\Em}{2}
+\pgfmathsetmacro{\Eg}{1686/1632*\Em}
+\pgfmathsetmacro{\ang}{-43.327}
+\pgfmathsetmacro{\angA}{90-43.327+\ang}
+\draw[-latex,thick](0,0)--++(\ang:\Em)coordinate(kL)node[pos=0.75,below left]{$\hat{E}_{am,a}$};
+\draw[-latex,thick](0,0)--++(90+\ang:\Eg)coordinate(kT)node[pos=0.75,above left]{$\hat{E}_{am,g}$};
+\path(kL)--(kT)coordinate[pos=0.4773](kV)coordinate[pos=1](kE);
+\draw[-latex](kL)--(kV)node[pos=0.5,right]{$j\hat{I}_aX_{sm}$};
+\draw[-latex](kV)--(kE)node[pos=0.5,right]{$j\hat{I}_aX_{sg}$};
+\draw[-latex](0,0)--(kV)node[pos=0.75,below]{$\hat{V}_s$};
+\draw[-latex,gray](0,0)--++(\angA:1.25)node[above,xshift=-1ex]{$I_a$};
+\draw(kL)++(0,0.3) arc (90:90+45:0.3);
+\draw(kL)++(-0.25,0.5)node[]{$\alpha$};
 \end{tikzpicture}
 \caption{}
 \end{subfigure}
-\caption{معاصر جنریٹر معاصر موٹر چلا رہی ہے۔}
+\caption{معاصر جنریٹر معاصر موٹر چلا رہا ہے۔}
 \label{شکل_معاصر_جنریٹر_موٹر_چلاتا_ہوا}
 \end{figure}
+
 \ابتدا{مثال}
 ایک \عددیء{50} قطبی، ستارہ، تین دوری \عددیء{50} ہرٹز، \عددیء{2300} وولٹ دباو تار  پر چلنے والی \عددیء{1800} کلو وولٹ-ایمپیئر  معاصر مشین کا یک دوری  معاصر امالہ \عددیء{2.1} اوہم ہے۔
 \begin{itemize}
@@ -645,7 +656,7 @@ p_{\textup{انتہا}}=\frac{1327.9 \times 1632}{2.1}=\SI{1031968}{\watt}
 \begin{align*}
 T_{\textup{انتہا}}=\frac{p_{\textup{انتہا}}}{2 \pi f_m}=\frac{3095904}{2 \times \pi \times 2}=\SI{246364}{\newton \meter}
 \end{align*}
-%
+موٹر پر اس سے زیادہ قوت مروڑ کا بوجھ مسلط کرنے سے موٹر  رک جائے گی جبکہ جنریٹر کی رفتار بے قابو بڑھنے شروع ہو جائے گی۔ خود کار منقطع کار  اس لمحہ پر نظام کو روک دیگا۔
 \item
 شکل \حوالہ{شکل_معاصر_جنریٹر_موٹر_چلاتا_ہوا}-ج سے رجوع کریں۔پہلا جزو کی طرح یہاں بھی موٹر کے برقی سروں پر دباو تار  \عددیء{2300} وولٹ اور  محرک برقی دباو \عددیء{1632} وولٹ ہوں گے۔ جنریٹر کا محرک برقی دباو درج ذیل ہو گا۔
 \begin{align*}
@@ -656,7 +667,7 @@ T_{\textup{انتہا}}=\frac{p_{\textup{انتہا}}}{2 \pi f_m}=\frac{3095904}
 \end{align*}
 یہ صورت شکل \حوالہ{شکل_معاصر_جنریٹر_موٹر_چلاتا_ہوا}-د میں دکھائی گئی ہے۔
 
-معاصر موٹر اس وقت زیادہ سے زیادہ طاقت پیدا کرے گی جب  \عددیء{\hat{E}_{am,g}} اور \عددیء{\hat{E}_{am,m}} آپس میں \عددیء{90\degree} زاویہ پر ہوں جیسا شکل \حوالہ{شکل_معاصر_جنریٹر_موٹر_چلاتا_ہوا}-ھ میں دکھایا گیا ہے ۔
+معاصر موٹر پر بوجھ بڑھانے کا اثر شکل \حوالہ{شکل_معاصر_جنریٹر_موٹر_چلاتا_ہوا}-ھ میں دکھایا گیا ہے۔ موٹر اس  وقت زیادہ سے زیادہ طاقت پیدا کرے گی جب  \عددیء{\hat{E}_{am,g}} اور \عددیء{\hat{E}_{am,m}} آپس میں \عددیء{90\degree} زاویہ پر ہوں۔
 
 یہاں  مساوات \حوالہ{مساوات_معاصر_طاقت_انتہا}  میں ایک معاصر امالہ کی بجائے موٹر اور جنریٹر کے  سلسلہ وار جڑے امالہ ہوں گے  اور دو برقی دباو اب موٹر اور جنریٹر کے محرک برقی دباو ہوں گے۔یوں موٹر کی یک دوری  زیادہ سے زیادہ طاقت درج ذیل ہو گی۔
 \begin{align*}
@@ -667,6 +678,18 @@ p_{\textup{انتہا}}=\frac{1686 \times 1632}{2.3+2.1}=\SI{625352}{\watt}
 T_{\textup{انتہا}}=\frac{1876056}{2 \times \pi \times 2}=\SI{149291}{\newton \meter}
 \end{align*}
 \end{itemize}
+شکل \حوالہ{شکل_معاصر_جنریٹر_موٹر_چلاتا_ہوا}-ھ میں \عددی{\hat{E}_{am,m}} اور \عددی{\hat{E}_{am,g}} آپس میں عمودی ہیں لہٰذا درج ذیل ہو گا۔
+\begin{align*}
+I_a(X_{s,g}+X_{s,m})&=\sqrt{E^2_{am,m}+E^2_{am,g}}=\SI{2346}{\volt}\\
+I_a&=\frac{2346}{2.1+2.3}=\SI{533}{\ampere}\\
+I_aX_{sg}&=533\times 2.1=\SI{1119.9}{\volt}\\
+\alpha&=\tan^{-1}\frac{1686}{1632}=45.93^{\circ}
+\end{align*} 
+یوں دوری دباو \عددی{V_s}، جو صفر زاویہ پر تصور کیا جاتا ہے،  درج ذیل ہو گا۔
+\begin{align*}
+V_s=\sqrt{1632^2+1119.9^2-2\times 1632\times1119.9\times\cos 45.93^{\circ}}=\SI{1172.7}{\volt}
+\end{align*}
+لامتناہی نظام کی بجائے موٹر کو جنریٹر سے طاقت مہیا کرتے ہوئے، موٹر پر بوجھ بڑھانے  سے موٹر کے سروں پر برقی دباو گھٹتا ہے جس کی بنا زیادہ سے زیادہ ممکنہ طاقت \عددی{\SI{3095}{\kilo\watt}} سے گھٹ کر \عددی{\SI{1876}{\kilo\watt}} رہ جاتی ہے۔
 \انتہا{مثال}
 %
 \حصہ{یکساں حال، برقرار چالو مشین کے خواص}
