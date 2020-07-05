@@ -706,6 +706,7 @@ E_{am}\phase{\sigma}=V_a \phase{0} +I_a X_s \phase{\frac{\pi}{2}+\phi}
 \begin{small}
 \begin{align*}
 E_{am} \cos \sigma +j E_{am} \sin \sigma&=V_a \cos 0+j V_a \sin 0 + I_a X_s \cos \left(\frac{\pi}{2}+\phi \right)+j I_a X_s \sin \left(\frac{\pi}{2}+\phi \right)\\
+&=V_a  - I_a X_s \sin \phi+j I_a X_s \cos \phi\\
 &=E_{am,x}+j E_{am,y}
 \end{align*}
 \end{small}
@@ -713,7 +714,8 @@ E_{am} \cos \sigma +j E_{am} \sin \sigma&=V_a \cos 0+j V_a \sin 0 + I_a X_s \cos
 \begin{gather}
 \begin{aligned}\label{مساوات_معاصر_رو_بالمقابل_دباو}
 \abs{\hat{E}_{am}}=E_{am}&=\sqrt{E_{am,x}^2+E_{am,y}^2}\\
-&=\sqrt{V_a^2+\left(I_a X_s\right)^2 +2 V_a I_a X_s \sin \phi}
+&=\sqrt{(V_a  - I_a X_s \sin \phi)^2+(I_a X_s \cos \phi)^2}\\
+&=\sqrt{V_a^2+\left(I_a X_s\right)^2 -2 V_a I_a X_s \sin \phi}
 \end{aligned}
 \end{gather}
 جنریٹر کے سروں پر  \عددیء{V_a} اٹل رکھتے ہوئے مختلف \عددیء{\phi} کے لئے \عددیء{E_{am}} بالمقابل \عددیء{I_a} کے خط شکل \حوالہ{شکل_معاصر_بار_بالمقابل_میدانی_رو}  میں دکھائے گئے ہیں۔یہ خطوط مساوات \حوالہ{مساوات_معاصر_رو_بالمقابل_دباو} دیتی ہے۔ چونکہ \عددیء{E_{am}}  اور  \عددیء{I_m}  راست متناسب ہیں اور کسی  مخصوص جزو طاقت اور معین \عددیء{V_a} کے لئے جنریٹر کی طاقت \عددیء{I_a} کے   راست متناسب ہوتی ہے لہٰذا یہی ترسیمات \عددیء{I_m} بالمقابل جنریٹر کی طاقت کو بھی ظاہر کرتی ہیں۔
@@ -743,23 +745,23 @@ black,
 domain=0:1.1,
 samples=100,
 ]
-{sqrt(1+x*x+2*x*sin(\tka))} node[right] {\RL{ہم قدم}} ;
+{sqrt(1+x*x-2*x*sin(\tka))} node[right] {\RL{ہم قدم}} ;
 %==
-\newcommand\tkb{36}
+\newcommand\tkb{-36}
 \addplot[
 black,
 domain=0:1.1,
 samples=100,
 ]
-{sqrt(1+x*x+2*x*sin(\tkb))} node[right] {پیچھے} ;
+{sqrt(1+x*x-2*x*sin(\tkb))} node[right] {تاخیری} ;
 %=====
-\newcommand\tkc{-36}
+\newcommand\tkc{36}
 \addplot[
 black,
 domain=0:1.1,
 samples=100,
 ]
-{sqrt(1+x*x+2*x*sin(\tkc))} node[right] {آگے} ;
+{sqrt(1+x*x-2*x*sin(\tkc))} node[right] {پیش قدم} ;
 \addplot[dashed]coordinates {(1,0)(1,2)}node[pos=0.2,left]{\RL{پورا بوجھ}};
 \end{axis}
 \end{tikzpicture}
@@ -811,7 +813,7 @@ p=V_a I_a \cos \phi
 %
 \draw(0:1.2) arc (0:-28:1.2);
 \draw(-14:1.4)node{$\sigma$};
-\draw node[right] at (0,1.5){\RL{برقی رو پیچھے ہے}};
+\draw node[right] at (0,1.5){\RL{برقی رو تاخیری ہے}};
 \end{tikzpicture}
 \caption{}
 \end{subfigure}%
@@ -830,7 +832,7 @@ p=V_a I_a \cos \phi
 %
 \draw(0:1.2) arc (0:-14:1.2);
 \draw(-7:1.4)node{$\sigma$};
-\draw node[right] at (2,1.5){\RL{برقی رو آگے ہے}};
+\draw node[right] at (2,1.5){\RL{برقی رو پیش قدم ہے}};
 \end{tikzpicture}
 \caption{}
 \end{subfigure}%
@@ -860,17 +862,23 @@ p=V_a I_a \cos \phi
 ]
 %
 \def\p{0}
-\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100-2*sqrt(x/100*x/100-\p*\p))},{x}) node [above]{$\SI{0}{\percent}$} ;
+\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100-2*sqrt(x/100*x/100-\p*\p))},{x}) node [above,xshift=-1ex]{$\SI{0}{\percent}$} ;
 \addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100+2*sqrt(x/100*x/100-\p*\p))},{x}) ;   %}
 %
 \def\p{0.25}
-\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100-2*sqrt(x/100*x/100-\p*\p))},{x}) node [right]{$\SI{25}{\percent}$} ;
+\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100-2*sqrt(x/100*x/100-\p*\p))},{x}) node [above]{$\SI{25}{\percent}$} ;
 \addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100+2*sqrt(x/100*x/100-\p*\p))},{x}) ; 
 %
 \def\p{0.75}
-\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100-2*sqrt(x/100*x/100-\p*\p))},{x}) node [right]{$\SI{75}{\percent}$} ;
+\addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100-2*sqrt(x/100*x/100-\p*\p))},{x}) node [above]{$\SI{75}{\percent}$} ;
 \addplot[black,domain=\p*100:101,samples=100,]({sqrt(1+x/100*x/100+2*sqrt(x/100*x/100-\p*\p))},{x}) ; 
 \end{axis}
+\draw[dashed] (3.41,0) to [out=100,in=-100] node[pos=0.65,sloped,above,font=\small]{\RL{جزو طاقت \عددی{0.8} تاخیری}}
+(3.41,5);
+\draw[dashed] (3.41,0) to [out=90,in=-110] node[pos=0.60,sloped,above,font=\small]{\RL{جزو طاقت  \عددی{1}ہم قدم}}
+(4.5,5);
+\draw[dashed] (3.41,0) to [out=80,in=-120] node[pos=0.70,sloped,below,font=\small]{\RL{جزو طاقت \عددی{0.8} پیش قدم}}
+(5.5,5);
 \end{tikzpicture}
 \caption{موٹر کی $I_{m}$ بالمقابل $I_a$ ترسیم۔}
 \label{شکل_معاصر_برقی_رو_بالمقابل_برقی_دباو}
