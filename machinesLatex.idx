@@ -344,17 +344,17 @@
 \indexentry{synchronous speed}{161}
 \indexentry{معاصر رفتار}{161}
 \indexentry{rpm}{161}
-\indexentry{generator!ac}{164}
-\indexentry{جنریٹر!بدلتا رو}{164}
+\indexentry{generator!ac}{165}
+\indexentry{جنریٹر!بدلتا رو}{165}
 \indexentry{محوری!لمبائی}{166}
 \indexentry{rms}{169}
 \indexentry{موثر قیمت}{169}
-\indexentry{voltage!DC}{169}
-\indexentry{برقی دباو!یک سمت}{169}
-\indexentry{rectifier}{169}
-\indexentry{سمت کار!برقیاتی}{169}
-\indexentry{commutator}{169}
-\indexentry{سمت کار!میکانی}{169}
+\indexentry{voltage!DC}{170}
+\indexentry{برقی دباو!یک سمت}{170}
+\indexentry{rectifier}{170}
+\indexentry{سمت کار!برقیاتی}{170}
+\indexentry{commutator}{170}
+\indexentry{سمت کار!میکانی}{170}
 \indexentry{torque}{170}
 \indexentry{قوت مروڑ}{170}
 \indexentry{مقناطیسی مستقل}{171}
@@ -366,12 +366,14 @@
 \indexentry{synchronous speed}{180}
 \indexentry{معاصر رفتار}{180}
 \indexentry{معاصر!مشین}{180}
-\indexentry{سرک چھلے}{180}
-\indexentry{slip rings}{180}
+\indexentry{slip rings}{181}
+\indexentry{سرک چھلے}{181}
 \indexentry{carbon bush}{181}
 \indexentry{بش}{181}
 \indexentry{کاربن بش}{181}
 \indexentry{قطب!ابھرے}{181}
+\indexentry{turbine}{181}
+\indexentry{چرخاب}{181}
 \indexentry{non-salient poles}{181}
 \indexentry{قطب!ہموار}{181}
 \indexentry{hunting}{182}
@@ -392,13 +394,13 @@
 \indexentry{power-angle law}{192}
 \indexentry{طاقت بالمقابل زاویہ}{192}
 \indexentry{مخلوط عدد}{196}
-\indexentry{capacitor}{199}
-\indexentry{برق گھیر}{199}
+\indexentry{capacitor}{198}
+\indexentry{برق گھیر}{198}
 \indexentry{کارگزاری}{204}
 \indexentry{electronics!power}{211}
 \indexentry{برقیات!قوی}{211}
-\indexentry{موٹر!امالی}{211}
 \indexentry{induction!motor}{211}
+\indexentry{موٹر!امالی}{211}
 \indexentry{model}{211}
 \indexentry{ریاضی نمونہ}{211}
 \indexentry{slip}{213}

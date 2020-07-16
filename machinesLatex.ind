@@ -1,12 +1,11 @@
 \begin{theindex}
 \begin{otherlanguage}{english}
-
   \item ampere-turn, 33
   \item armature coil, 135, 255
 
   \indexspace
 
-  \item capacitor, 199
+  \item capacitor, 198
   \item carbon bush, 181
   \item cartesian system, 4
   \item charge, 10, 141
@@ -17,7 +16,7 @@
     \subitem low voltage, 56
     \subitem primary, 55
     \subitem secondary, 55
-  \item commutator, 169, 245
+  \item commutator, 170, 245
   \item conductivity, 25
   \item conservative field, 111
   \item core, 55, 130
@@ -72,7 +71,7 @@
   \indexspace
 
   \item generator
-    \subitem ac, 164
+    \subitem ac, 165
   \item ground current, 95
   \item ground wire, 95
 
@@ -161,7 +160,7 @@
   \indexspace
 
   \item rating, 97, 98
-  \item rectifier, 169
+  \item rectifier, 170
   \item relative permeability, 26
   \item relay, 103
   \item reluctance, 25
@@ -184,7 +183,7 @@
     \subitem secondary, 55
   \item single phase, 23, 59
   \item slip, 213
-  \item slip rings, 180, 233
+  \item slip rings, 181, 233
   \item squirrel cage, 236
   \item star connected, 94
   \item stator, 37
@@ -208,12 +207,14 @@
   \item torque, 170, 213
     \subitem pull out, 182
 \newpage
+
   \item transformer
     \subitem air core, 59
     \subitem communication, 59
     \subitem ideal, 65
     \subitem oil, 77
   \item transient state, 179
+  \item turbine, 181
 
   \indexspace
 
@@ -226,7 +227,7 @@
   \item volt, 141
   \item volt-ampere, 76
   \item voltage, 141
-    \subitem DC, 169
+    \subitem DC, 170
     \subitem transformation, 65
 
   \indexspace
@@ -236,8 +237,9 @@
   \item winding
     \subitem distributed, 144
   \item winding factor, 152
-\end{otherlanguage}
-  \newpage
+
+  \end{otherlanguage}
+\newpage
 
 \item ابتدائی
    \subitem جانب، 55
@@ -246,17 +248,17 @@
 \item اضافی
    \subitem زاویائی رفتار، 216
 \item اکائی سمتیہ، 2
-\item امالہ، 40
-   \subitem رستا، 187
 \item امالی
    \subitem برقی دباو، 50
+\item امالہ، 40
+   \subitem رستا، 187
 \item امالی برقی دباو، 38، 61
 \item ایک، تین پتریاں، 62
 \item ایمپیئر-چکر، 33
 \indexspace
 \item بار، 141
 \item برقرار چالو، 101، 179
-\item برق گھیر، 199
+\item برق گھیر، 198
 \item برقیات
    \subitem قوی، 211
 \item برقی بار، 10، 141
@@ -264,7 +266,7 @@
    \subitem تبادلہ، 56، 65
    \subitem محرک، 142
    \subitem ہیجانی، 189
-   \subitem یک سمت، 169
+   \subitem یک سمت، 170
 \item برقی رو، 28
    \subitem بھنور نما، 130
    \subitem تبادلہ، 66
@@ -326,11 +328,12 @@
    \subitem پیش، 22
    \subitem تاخیری، 22
 \item جنریٹر
-   \subitem بدلتا رو، 164
+   \subitem بدلتا رو، 165
 \item جوڑ
    \subitem تکونی، 94
    \subitem ستارہ نما، 94
 \indexspace
+\item چرخاب، 181
 \item چکر فی منٹ، 130
 \item چوٹی، 215
 \indexspace
@@ -373,14 +376,14 @@
 \item ساکن لچھا، 106، 131
 \item ستارہ نما جوڑ، 94
 \item سرکاو، 213
-\item سرک چھلے، 180، 233
+\item سرک چھلے، 181، 233
 \item سطحی تکمل، 185
 \item سطحی کثافت، 11
 \item سکت، 97، 98
 \item سلسلہ وار، 150
 \item سمت کار، 245
-   \subitem برقیاتی، 169
-   \subitem میکانی، 169
+   \subitem برقیاتی، 170
+   \subitem میکانی، 170
 \item سمتیہ، 2
    \subitem عمودی اکائی، 3
 \item سمتی رفتار، 104

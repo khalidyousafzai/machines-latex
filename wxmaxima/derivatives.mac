@@ -1,0 +1,42 @@
+
+Print("======================================");
+kill(all);
+print("ex 7.2");
+
+Rs:0.5;
+Rr:0.31;
+Xs:0.99;
+Xr:0.34;
+Xm:22;
+
+s:0.02;
+Vt:415;
+
+Vph:Vt/sqrt(3);
+
+Z: rectform(1*%i*Xm*(Rr/s+1*%i*Xr)/(Rr/s+1*%i*(Xm+Xr)));
+IsPolar: float(polarform(Vph/(Rs+%i*Xs+Z)));
+
+p:(cabs(IsPolar))^2*realpart(Z);
+
+
+
+Print("======================================");
+kill(all);
+print("ex 7.3");
+
+Rs:0.5;
+Rr:0.31;
+Xs:0.99;
+Xr:0.34;
+Xm:22;
+
+s:0.03;
+Vt:415;
+
+Vph:Vt/sqrt(3);
+
+Vth: rectform(%i*Xm*(Rs+%i*Xs)/(Rs+%i*(Xs+Xm)));
+Vth:float(polarform(Vph*%i*Xm/(Rs+%i*(Xs+Xm))));
+
+
