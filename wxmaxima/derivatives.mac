@@ -40,3 +40,26 @@ Vth: rectform(%i*Xm*(Rs+%i*Xs)/(Rs+%i*(Xs+Xm)));
 Vth:float(polarform(Vph*%i*Xm/(Rs+%i*(Xs+Xm))));
 
 
+
+Print("======================================");
+kill(all);
+print("ex 7.5");
+
+Rs:0.275;
+Rr:1.189;
+Xs:2.45;
+Xr:2.45;
+Xm:53;
+
+s:0.05;
+Vt:415;
+
+Vph:Vt/sqrt(3);
+
+Vth:float(polarform(Vph*%i*Xm/(Rs+%i*(Xs+Xm))));
+
+Zth:rectform(%i*Xm*(%i*Xs+Rs)/(Rs+%i*(Xm+Xs)));
+
+I:cabs(Vth/(Zth+Rr/s+%i*Xr));
+
+Pm:3*I^2*Rr*(1-s)/s;
