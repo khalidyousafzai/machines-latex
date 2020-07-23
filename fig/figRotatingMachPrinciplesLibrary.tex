@@ -148,12 +148,33 @@
 \draw (\x,0) circle (2.5pt);
 \draw[fill] (\x,0) circle (1.5pt); }}
 %====================================
+%LINEAR FIGURES
+%DOTONLY
+%\dotOnly{comma separated x-locations}     %draws the stator as a linear stator.
+\newcommand{\dotOnly}[1]{
+\pgfmathsetmacro{\delSlotX}{3.5}
+\foreach \x in {#1}{
+%\draw(\x cm-\delSlotX pt,-\delSlotX pt)--++(0,2*\delSlotX pt)--++(2*\delSlotX pt,0)--++(0,-2*\delSlotX pt);
+\draw (\x,0) circle (2.5pt);
+\draw[fill] (\x,0) circle (1.5pt); }}
+%====================================
 %CROSS LINEAR
 %\crossLinear{comma separated x-locations}
 \newcommand{\crossLinear}[1]{
 \pgfmathsetmacro{\delSlotX}{3.5}
 \foreach \x in {#1}{
 \draw(\x cm-\delSlotX pt,-\delSlotX pt)--++(0,2*\delSlotX pt)--++(2*\delSlotX pt,0)--++(0,-2*\delSlotX pt);
+\draw (\x,0) circle (2.5pt);
+\draw (\x,0)++(45:2.2pt)--++(-135:4.4pt);
+\draw (\x,0)++(-45:2.2pt)--++(135:4.4pt);  }}
+%==================================
+%====================================
+%CROSS ONLY
+%\crossOnly{comma separated x-locations}
+\newcommand{\crossOnly}[1]{
+\pgfmathsetmacro{\delSlotX}{3.5}
+\foreach \x in {#1}{
+%\draw(\x cm-\delSlotX pt,-\delSlotX pt)--++(0,2*\delSlotX pt)--++(2*\delSlotX pt,0)--++(0,-2*\delSlotX pt);
 \draw (\x,0) circle (2.5pt);
 \draw (\x,0)++(45:2.2pt)--++(-135:4.4pt);
 \draw (\x,0)++(-45:2.2pt)--++(135:4.4pt);  }}
