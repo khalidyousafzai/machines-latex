@@ -63,3 +63,27 @@ Zth:rectform(%i*Xm*(%i*Xs+Rs)/(Rs+%i*(Xm+Xs)));
 I:cabs(Vth/(Zth+Rr/s+%i*Xr));
 
 Pm:3*I^2*Rr*(1-s)/s;
+
+
+Print("======================================");
+kill(all);
+print("ex 2.3");
+
+h:0.2;
+m:0.1;
+n:0.08;
+w:0.02;
+la:0.001;
+ua:4*%pi*10^(-7);
+ur:40000;
+
+b:(m-n)/2;
+A:b*w;
+
+lc:2*(h-b)+2*(m-b)-la;
+
+Ra:la/(ua*A);
+float(%);
+Rc:lc/(ur*ua*A);
+float(%);
+
