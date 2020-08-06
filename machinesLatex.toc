@@ -52,9 +52,9 @@
 \contentsline {subsection}{\numberline {3.10.5}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{81}% 
 \contentsline {subsection}{\numberline {3.10.6}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{83}% 
 \contentsline {subsection}{\numberline {3.10.7}ٹرانسفارمر کے سادہ ترین مساوی ادوار}{85}% 
-\contentsline {section}{\numberline {3.11}کھلے دور معائنہ اور کسر دور معائنہ}{86}% 
+\contentsline {section}{\numberline {3.11}کھلے دور معائنہ اور قصر دور معائنہ}{86}% 
 \contentsline {subsection}{\numberline {3.11.1}کھلا دور معائنہ}{87}% 
-\contentsline {subsection}{\numberline {3.11.2} کسر دور معائنہ}{89}% 
+\contentsline {subsection}{\numberline {3.11.2} قصر دور معائنہ}{89}% 
 \contentsline {section}{\numberline {3.12}تین دوری ٹرانسفارمر}{93}% 
 \contentsline {section}{\numberline {3.13}ٹرانسفارمر چالو کرتے لمحہ زیادہ محرکی برقی رو کا گزر}{101}% 
 \contentsline {chapter}{\numberline {4}برقی اور میکانی توانائی کا باہمی تبادلہ}{103}% 
@@ -89,9 +89,9 @@
 \contentsline {section}{\numberline {6.5}یکساں حال، برقرار چالو مشین کے خواص}{196}% 
 \contentsline {subsection}{\numberline {6.5.1}معاصر جنریٹر: برقی بوجھ بالمقابل \ensuremath {I_m} کے خط}{196}% 
 \contentsline {subsection}{\numberline {6.5.2}معاصر موٹر:\ensuremath {I_a} بالمقابل \ensuremath {I_m} کے خط}{197}% 
-\contentsline {section}{\numberline {6.6}کھلا دور اور کسر دور معائنہ}{199}% 
+\contentsline {section}{\numberline {6.6}کھلا دور اور قصر دور معائنہ}{199}% 
 \contentsline {subsection}{\numberline {6.6.1}کھلا دور معائنہ}{199}% 
-\contentsline {subsection}{\numberline {6.6.2}کسر دور معائنہ}{200}% 
+\contentsline {subsection}{\numberline {6.6.2}قصر دور معائنہ}{200}% 
 \contentsline {chapter}{\numberline {7}امالی مشین}{211}% 
 \contentsline {section}{\numberline {7.1}ساکن لچھوں کی گھومتی مقناطیسی موج}{212}% 
 \contentsline {section}{\numberline {7.2}مشین کا سرکاو اور گھومتی امواج پر تبصرہ}{212}% 
