@@ -101,11 +101,11 @@
 \indexentry{فیراڈے!قانون}{38}
 \indexentry{induced voltage}{38}
 \indexentry{امالی برقی دباو}{38}
-\indexentry{کسر دور}{39}
+\indexentry{ْسر دور}{39}
 \indexentry{ویبر-چکر}{39}
 \indexentry{ارتباط بہاو}{39}
-\indexentry{inductance}{40}
-\indexentry{امالہ}{40}
+\indexentry{inductance}{39}
+\indexentry{امالہ}{39}
 \indexentry{Henry}{40}
 \indexentry{Henry}{40}
 \indexentry{لچھا!پیچدار}{41}
@@ -125,14 +125,14 @@
 \indexentry{جاول}{44}
 \indexentry{energy}{44}
 \indexentry{توانائی}{44}
-\indexentry{residual magnetic flux}{46}
+\indexentry{magnetic flux!residual}{46}
 \indexentry{کثافت مقناطیسی بہاو!بقایا}{46}
 \indexentry{coercivity}{46}
 \indexentry{مقناطیس!خاتم شدت}{46}
 \indexentry{hysteresis loop}{47}
 \indexentry{مقناطیس!چال کا دائرہ}{47}
-\indexentry{saturation}{47}
 \indexentry{سیرابیت}{47}
+\indexentry{saturation}{47}
 \indexentry{induced voltage}{50}
 \indexentry{امالی!برقی دباو}{50}
 \indexentry{rms}{50}
@@ -201,16 +201,16 @@
 \indexentry{ایک، تین پتریاں}{62}
 \indexentry{Fourier series}{63}
 \indexentry{فوریئر تسلسل}{63}
-\indexentry{harmonic components}{64}
-\indexentry{موسیقائی جزو}{64}
-\indexentry{fundamental component}{64}
-\indexentry{بنیادی جزو}{64}
-\indexentry{قالبی ضیاع!جزو}{64}
+\indexentry{harmonic components}{63}
+\indexentry{موسیقائی اجزاء}{63}
+\indexentry{fundamental component}{63}
+\indexentry{بنیادی جزو}{63}
+\indexentry{قالبی ضیاع!جزو}{63}
 \indexentry{magnetizing current}{64}
 \indexentry{مقناطیسی برقی رو}{64}
 \indexentry{core loss component}{64}
-\indexentry{ٹرانسفارمر!کامل}{65}
 \indexentry{transformer!ideal}{65}
+\indexentry{ٹرانسفارمر!کامل}{65}
 \indexentry{voltage!transformation}{65}
 \indexentry{برقی دباو!تبادلہ}{65}
 \indexentry{current!transformation}{66}
@@ -218,9 +218,9 @@
 \indexentry{ٹرانسفارمر!بوجھ بردار}{68}
 \indexentry{impedance transformation}{71}
 \indexentry{تبادلہ!رکاوٹ}{71}
-\indexentry{وولٹ-ایمپیئر}{76}
 \indexentry{VA}{76}
 \indexentry{volt-ampere}{76}
+\indexentry{وولٹ-ایمپیئر}{76}
 \indexentry{ٹرانسفارمر!تیل}{77}
 \indexentry{transformer!oil}{77}
 \indexentry{magnetic flux!leakage}{79}
@@ -427,19 +427,19 @@
 \indexentry{قوی برقیات}{245}
 \indexentry{commutator}{245}
 \indexentry{سمت کار}{245}
-\indexentry{فوریئر}{254}
-\indexentry{self excited}{255}
-\indexentry{ہیجان!خود}{255}
-\indexentry{separately excited}{255}
-\indexentry{ہیجان!بیرونی}{255}
-\indexentry{field coil}{255}
-\indexentry{میدانی لچھے}{255}
-\indexentry{armature coil}{255}
-\indexentry{قوی لچھے}{255}
+\indexentry{فوریئر}{255}
+\indexentry{self excited}{256}
+\indexentry{ہیجان!خود}{256}
+\indexentry{separately excited}{256}
+\indexentry{ہیجان!بیرونی}{256}
+\indexentry{field coil}{256}
+\indexentry{میدانی لچھے}{256}
+\indexentry{armature coil}{256}
+\indexentry{قوی لچھے}{256}
 \indexentry{parallel connected}{258}
 \indexentry{داخلی ہیجان!متوازی}{258}
-\indexentry{داخلی ہیجان!سلسلہ وار}{258}
-\indexentry{مرکب جنریٹر}{258}
-\indexentry{داخلی ہیجان!مرکب}{258}
-\indexentry{دور جڑا مرکب}{258}
-\indexentry{قریب جڑا مرکب}{258}
+\indexentry{داخلی ہیجان!سلسلہ وار}{259}
+\indexentry{مرکب جنریٹر}{259}
+\indexentry{داخلی ہیجان!مرکب}{259}
+\indexentry{دور جڑا مرکب}{259}
+\indexentry{قریب جڑا مرکب}{259}

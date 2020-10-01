@@ -1,7 +1,7 @@
 \begin{theindex}
 \begin{otherlanguage}{english}
   \item ampere-turn, 33
-  \item armature coil, 135, 255
+  \item armature coil, 135, 256
 
   \indexspace
 
@@ -61,12 +61,12 @@
   \indexspace
 
   \item Faraday's law, 38, 129
-  \item field coil, 135, 255
+  \item field coil, 135, 256
   \item flux, 30
   \item Fourier series, 63, 146
   \item frequency, 134
   \item fundamental, 147
-  \item fundamental component, 64
+  \item fundamental component, 63
 
   \indexspace
 
@@ -78,7 +78,7 @@
   \indexspace
 
   \item harmonic, 147
-  \item harmonic components, 64
+  \item harmonic components, 63
   \item Henry, 40
   \item hunting, 182
   \item hysteresis loop, 47
@@ -87,7 +87,7 @@
 
   \item impedance transformation, 71
   \item induced voltage, 38, 50, 61
-  \item inductance, 40
+  \item inductance, 39
     \subitem leakage, 187
   \item induction
     \subitem motor, 211
@@ -119,6 +119,7 @@
   \item magnetic flux
     \subitem density, 33
     \subitem leakage, 79
+    \subitem residual, 46
   \item magnetizing current, 64
   \item mmf, 30
   \item model, 81, 211
@@ -164,7 +165,6 @@
   \item relative permeability, 26
   \item relay, 103
   \item reluctance, 25
-  \item residual magnetic flux, 46
   \item resistance, 25
   \item rms, 19, 50, 169
   \item rotor, 37
@@ -175,10 +175,10 @@
 
   \item saturation, 47
   \item scalar, 1
-  \item self excited, 255
+  \item self excited, 256
   \item self flux linkage, 43
   \item self inductance, 43
-  \item separately excited, 255
+  \item separately excited, 256
   \item side
     \subitem secondary, 55
   \item single phase, 23, 59
@@ -239,6 +239,7 @@
   \item winding factor, 152
 
   \end{otherlanguage}
+
 \newpage
 
 \item ابتدائی
@@ -248,10 +249,10 @@
 \item اضافی
    \subitem زاویائی رفتار، 216
 \item اکائی سمتیہ، 2
+\item امالہ، 39
+   \subitem رستا، 187
 \item امالی
    \subitem برقی دباو، 50
-\item امالہ، 40
-   \subitem رستا، 187
 \item امالی برقی دباو، 38، 61
 \item ایک، تین پتریاں، 62
 \item ایمپیئر-چکر، 33
@@ -276,7 +277,7 @@
    \subitem شدت، 10، 28
 \item بش، 181
 \item بناوٹ، 87
-\item بنیادی جزو، 64، 147
+\item بنیادی جزو، 63، 147
 \item بوجھ، 99
 \item بھٹی، 117
 \item بھنور نما
@@ -347,10 +348,10 @@
 \item خود امالہ، 43
 \indexspace
 \item داخلی ہیجان
-   \subitem سلسلہ وار، 258
+   \subitem سلسلہ وار، 259
    \subitem متوازی، 258
-   \subitem مرکب، 258
-\item دور جڑا مرکب، 258
+   \subitem مرکب، 259
+\item دور جڑا مرکب، 259
 \item دور شکن، 183
 \item دوری سمتیہ، 21، 190
 \item دوری عرصہ، 101، 146
@@ -375,6 +376,9 @@
 \item ساکن حصہ، 37
 \item ساکن لچھا، 106، 131
 \item ستارہ نما جوڑ، 94
+\indexspace
+\item ْسر دور، 39
+\indexspace
 \item سرکاو، 213
 \item سرک چھلے، 181، 233
 \item سطحی تکمل، 185
@@ -403,28 +407,27 @@
 \item غیر سمتی، 1
 \item غیر معاصر، 182
 \indexspace
-\item فوریئر، 254
+\item فوریئر، 255
 \item فوریئر تسلسل، 63، 146
 \item فیراڈے
    \subitem قانون، 38، 129
 \indexspace
 \item قالب، 130
 \item قالبی ضیاع، 62
-   \subitem جزو، 64
+   \subitem جزو، 63
 \item قانون
    \subitem اوہم، 26
    \subitem کولمب، 10
    \subitem لورینز، 141
 \item قدامت پسند میدان، 111
-\item قریب جڑا مرکب، 258
-\item قصر دور، 39
+\item قریب جڑا مرکب، 259
 \item قطب
    \subitem ابھرے، 144، 181
    \subitem ہموار، 144، 181
 \item قوت مروڑ، 170، 213
    \subitem انتہائی، 182
 \item قوی برقیات، 245
-\item قوی لچھے، 255
+\item قوی لچھے، 256
 \indexspace
 \item کاربن بش، 181
 \item کارگزاری، 204
@@ -432,7 +435,6 @@
    \subitem برقی رو، 28
 \item کثافت مقناطیسی بہاو
    \subitem بقایا، 46
-
 \indexspace
 \item گرم تار، 95
 \item گھومتا حصہ، 37
@@ -458,7 +460,7 @@
 \item محوری
    \subitem لمبائی، 166
 \item مخلوط عدد، 196
-\item مرکب جنریٹر، 258
+\item مرکب جنریٹر، 259
 \item مزاحمت، 25
 \item مزاحمت پیما، 241
 \item مساوات لورینز، 104
@@ -494,9 +496,10 @@
    \subitem پنجرہ نما، 236
 \item موثر، 19، 50
 \item موثر قیمت، 169
-\item موسیقائی جزو، 64، 147
+\item موسیقائی اجزاء، 63
+\item موسیقائی جزو، 147
 \item موصلیت، 25
-\item میدانی لچھے، 255
+\item میدانی لچھے، 256
 \indexspace
 \item واٹ، 44
 \item وولٹ، 141
@@ -506,8 +509,8 @@
 \indexspace
 \item ہچکچاہٹ، 25، 30
 \item ہیجان، 61
-   \subitem بیرونی، 255
-   \subitem خود، 255
+   \subitem بیرونی، 256
+   \subitem خود، 256
    \subitem لچھا، 61
 \newpage
 

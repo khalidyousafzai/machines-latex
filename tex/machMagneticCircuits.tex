@@ -1068,23 +1068,49 @@ B_a&=0
 \begin{figure}
 \centering
 %\includegraphics{figMagneticCircuitsM5curve}
-\begin{tikzpicture}[xscale=2]
-%grid
-%\draw[gray,thick] (-3,-3) grid (3,3);
-%\draw[gray,thin,xstep=0.1,ystep=0.1] (-3,-3) grid (3,3);
-\draw [black] plot [smooth] coordinates {( 1.68,0.061)(1.85,0.089)(2.01,0.132)(2.19,0.194)(2.36,0.284)(2.53,0.416)(2.69,0.603)(2.86,0.857)(3.03,1.177)(3.2,1.52)(3.36,1.8)(3.54,1.952)(3.7,1.999)(3.87,2.009)(4.04,2.014)(4.21,2.02)};
-%axis
-\draw (1.68,0.061)--(1.68,2.3) node[above left]{$B \,(\si{\tesla})$};
-\draw (1.68,0.061)--(4.4,0.061) node [below right,yshift=-0.05cm]{$H(\si{\ampere t / \meter})$};
-%ticks
-\foreach \x/\d in {2/10^2,3/10^3,4/10^4}{
-\draw(\x,0.061)--(\x,0)node [below]{$\d$};
-}
-\foreach \y in {0.5,1.0,1.5,2.0}{
-\draw(1.68,\y)--(1.6,\y) node [left]{$\y$};
-}
+\begin{tikzpicture}
+\begin{semilogxaxis}[small,axis lines*=middle,xlabel={$H(\si{\ampere t\per\meter})$},ylabel={$B(\si{\tesla})$},xlabel style={at={(current axis.right of origin)},anchor=west},ylabel style={rotate={-90},at={(current axis.above origin)},anchor=south west}]
+\addplot [mark=none]coordinates {
+(2,0.04)
+(3,0.095)
+(4,0.16)
+(5,0.24)
+(6,0.33)
+(7,0.44)
+(8,0.56)
+(9,0.7)
+(10,0.835)
+(11.22,1)
+(12.59,1.1)
+(14.96,1.2)
+(17.78,1.3)
+(20,1.34)
+(23.77,1.4)
+(30,1.48)
+(40,1.54)
+(50,1.58)
+(60,1.601)
+(70,1.626)
+(80,1.64)
+(90,1.655)
+(100,1.662)
+(200,1.72)
+(300,1.752)
+(400,1.78)
+(500,1.8)
+(600,1.81)
+(700,1.824)
+(800,1.835)
+(900,1.846)
+(1000,1.852)
+(2000,1.9)
+(10000,2)
+(40000,2.06)
+(70000,2.08)
+};
+\end{semilogxaxis}
 \end{tikzpicture}%
-\caption{$M5$ فولاد کی $0.3048$ ملی میٹر موٹی پتری کی ترسیم۔ میدانی شدت کا پیمانہ لاگ ہے۔}
+\caption{فولاد $M5$ کی $0.3048$ ملی میٹر موٹی پتری کی ترسیم۔ میدانی شدت کا پیمانہ لاگ ہے۔}
 \label{شکل_مقناطیسی_ادوار_ایم_پانچ_پتری_کا_خط}
 \end{figure}
 
