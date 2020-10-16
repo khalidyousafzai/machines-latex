@@ -39,18 +39,18 @@
 \contentsline {section}{\numberline {3.2}ٹرانسفارمر کے اقسام}{59}% 
 \contentsline {section}{\numberline {3.3}امالی برقی دباو}{59}% 
 \contentsline {section}{\numberline {3.4}ہیجان انگیز برقی رو اور قالبی ضیاع}{61}% 
-\contentsline {section}{\numberline {3.5}تبادلہ برقی دباو اور تبادلہ برقی رو کے خواص}{64}% 
+\contentsline {section}{\numberline {3.5}تبادلہ برقی دباو اور تبادلہ برقی رو کے خواص}{65}% 
 \contentsline {section}{\numberline {3.6}ثانوی جانب بوجھ کا ابتدائی جانب اثر}{68}% 
-\contentsline {section}{\numberline {3.7}ٹرانسفارمر کی علامت پر نقطوں کا مطلب}{69}% 
-\contentsline {section}{\numberline {3.8}رکاوٹ کا تبادلہ}{70}% 
-\contentsline {section}{\numberline {3.9}ٹرانسفارمر کے وولٹ-ایمپیئر}{75}% 
-\contentsline {section}{\numberline {3.10}ٹرانسفارمر کے امالہ اور مساوی ادوار}{77}% 
-\contentsline {subsection}{\numberline {3.10.1}لچھے کی مزاحمت اور اس کی متعاملہ علیحدہ کرنا}{77}% 
+\contentsline {section}{\numberline {3.7}ٹرانسفارمر کی علامت پر نقطوں کا مطلب}{70}% 
+\contentsline {section}{\numberline {3.8}رکاوٹ کا تبادلہ}{71}% 
+\contentsline {section}{\numberline {3.9}ٹرانسفارمر کے وولٹ-ایمپیئر}{76}% 
+\contentsline {section}{\numberline {3.10}ٹرانسفارمر کے امالہ اور مساوی ادوار}{78}% 
+\contentsline {subsection}{\numberline {3.10.1}لچھے کی مزاحمت اور اس کی متعاملہ علیحدہ کرنا}{78}% 
 \contentsline {subsection}{\numberline {3.10.2}رِستا امالہ}{79}% 
 \contentsline {subsection}{\numberline {3.10.3}ثانوی برقی رو اور قالب کے اثرات}{80}% 
 \contentsline {subsection}{\numberline {3.10.4}ثانوی لچھے کا امالی برقی دباو}{81}% 
-\contentsline {subsection}{\numberline {3.10.5}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{81}% 
-\contentsline {subsection}{\numberline {3.10.6}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{83}% 
+\contentsline {subsection}{\numberline {3.10.5}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{82}% 
+\contentsline {subsection}{\numberline {3.10.6}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{82}% 
 \contentsline {subsection}{\numberline {3.10.7}ٹرانسفارمر کے سادہ ترین مساوی ادوار}{85}% 
 \contentsline {section}{\numberline {3.11}کھلے دور معائنہ اور قصر دور معائنہ}{86}% 
 \contentsline {subsection}{\numberline {3.11.1}کھلا دور معائنہ}{87}% 

@@ -66,7 +66,7 @@
   \item Fourier series, 63, 146
   \item frequency, 134
   \item fundamental, 147
-  \item fundamental component, 63
+  \item fundamental component, 64
 
   \indexspace
 
@@ -78,14 +78,14 @@
   \indexspace
 
   \item harmonic, 147
-  \item harmonic components, 63
+  \item harmonic components, 64
   \item Henry, 40
   \item hunting, 182
   \item hysteresis loop, 47
 
   \indexspace
 
-  \item impedance transformation, 71
+  \item impedance transformation, 72
   \item induced voltage, 38, 50, 61
   \item inductance, 39
     \subitem leakage, 187
@@ -101,8 +101,8 @@
   \item lagging, 22
   \item laminations, 31, 62, 130
   \item leading, 22
-  \item leakage inductance, 79
-  \item leakage reactance, 79
+  \item leakage inductance, 80
+  \item leakage reactance, 80
   \item line current, 95
   \item line voltage, 95
   \item linear circuit, 230
@@ -122,7 +122,7 @@
     \subitem residual, 46
   \item magnetizing current, 64
   \item mmf, 30
-  \item model, 81, 211
+  \item model, 82, 211
   \item mutual flux linkage, 43
   \item mutual inductance, 43
 
@@ -228,7 +228,7 @@
   \item volt-ampere, 76
   \item voltage, 141
     \subitem DC, 170
-    \subitem transformation, 65
+    \subitem transformation, 66
 
   \indexspace
 
@@ -239,9 +239,8 @@
   \item winding factor, 152
 
   \end{otherlanguage}
-
 \newpage
-
+\indexspace
 \item ابتدائی
    \subitem جانب، 55
    \subitem لچھا، 55
@@ -264,7 +263,7 @@
    \subitem قوی، 211
 \item برقی بار، 10، 141
 \item برقی دباو، 28، 141
-   \subitem تبادلہ، 56، 65
+   \subitem تبادلہ، 56، 66
    \subitem محرک، 142
    \subitem ہیجانی، 189
    \subitem یک سمت، 170
@@ -277,7 +276,7 @@
    \subitem شدت، 10، 28
 \item بش، 181
 \item بناوٹ، 87
-\item بنیادی جزو، 63، 147
+\item بنیادی جزو، 64، 147
 \item بوجھ، 99
 \item بھٹی، 117
 \item بھنور نما
@@ -290,13 +289,13 @@
 \item پتریاں، 62
 \item پیش زاویہ، 22
 \indexspace
-\item تاخیری، 80
+\item تاخیری، 81
 \item تاخیری زاویہ، 22
 \item تار کا برقی دباو، 95
 \item تار کا برقی رو، 95
 \item تانبا، 28
 \item تبادلہ
-   \subitem رکاوٹ، 71
+   \subitem رکاوٹ، 72
 \item تختی، 98
 \item تعدد، 134
 \item تعقب، 182
@@ -309,7 +308,7 @@
 \indexspace
 \item ٹرانسفارمر
    \subitem برقی دباو والا، 59
-   \subitem بوجھ بردار، 68
+   \subitem بوجھ بردار، 69
    \subitem تیل، 77
    \subitem خلائی قالب، 59
    \subitem دباو بڑھاتا، 58
@@ -357,14 +356,14 @@
 \item دوری عرصہ، 101، 146
 \indexspace
 \item رستا
-   \subitem امالہ، 79
-   \subitem متعاملہ، 79
+   \subitem امالہ، 80
+   \subitem متعاملہ، 80
 \item رستا متعاملیت، 221
 \item رفتار
    \subitem اضافی زاویائی، 216
 \item روغن، 62
 \item روک، 232
-\item ریاضی نمونہ، 81، 211
+\item ریاضی نمونہ، 82، 211
 \item ریلے، 103
 \indexspace
 \item زاویائی فرق، 22
@@ -414,7 +413,7 @@
 \indexspace
 \item قالب، 130
 \item قالبی ضیاع، 62
-   \subitem جزو، 63
+   \subitem جزو، 64
 \item قانون
    \subitem اوہم، 26
    \subitem کولمب، 10
@@ -496,7 +495,7 @@
    \subitem پنجرہ نما، 236
 \item موثر، 19، 50
 \item موثر قیمت، 169
-\item موسیقائی اجزاء، 63
+\item موسیقائی اجزاء، 64
 \item موسیقائی جزو، 147
 \item موصلیت، 25
 \item میدانی لچھے، 256
@@ -513,7 +512,6 @@
    \subitem خود، 256
    \subitem لچھا، 61
 \newpage
-
 \item ہیجان انگیز
    \subitem برقی دباو، 61
    \subitem برقی رو، 61
