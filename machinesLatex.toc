@@ -56,7 +56,7 @@
 \contentsline {subsection}{\numberline {3.11.1}کھلا دور معائنہ}{87}% 
 \contentsline {subsection}{\numberline {3.11.2} قصر دور معائنہ}{89}% 
 \contentsline {section}{\numberline {3.12}تین دوری ٹرانسفارمر}{93}% 
-\contentsline {section}{\numberline {3.13}ٹرانسفارمر چالو کرتے لمحہ زیادہ محرکی برقی رو کا گزر}{101}% 
+\contentsline {section}{\numberline {3.13}ٹرانسفارمر چالو کرتے لمحہ زیادہ ہیجان انگیز برقی رو کا گزر}{101}% 
 \contentsline {chapter}{\numberline {4}برقی اور میکانی توانائی کا باہمی تبادلہ}{103}% 
 \contentsline {section}{\numberline {4.1}مقناطیسی نظام میں قوت اور قوت مروڑ}{103}% 
 \contentsline {section}{\numberline {4.2}تبادلہ توانائی والا ایک لچھے کا نظام}{109}% 

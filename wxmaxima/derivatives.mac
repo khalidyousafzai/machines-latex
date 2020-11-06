@@ -87,3 +87,22 @@ float(%);
 Rc:lc/(ur*ua*A);
 float(%);
 
+Print("======================================");
+kill(all);
+print("ex 3.9");
+
+Vpd:110000;
+Vsd:33000;
+Zd: 80-%i*20;
+
+Zs:Zd/3;
+Vsy:Vsd/sqrt(3);
+I:float(polarform(Vsy/Zs));
+Ip:(Vsd/Vpd)*I;
+cabs(Ip);
+float(180/%pi*carg(Ip));
+p:float(sqrt(3)*Vpd*cabs(Ip)*cos(carg(Ip)));
+
+IL:Vsd/Zd;
+cabs(IL);
+float(carg(IL)*180/%pi)
