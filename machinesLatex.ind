@@ -1,6 +1,5 @@
 \begin{theindex}
 \begin{otherlanguage}{english}
-
   \item ampere-turn, 33
   \item armature coil, 135, 256
 
@@ -208,7 +207,6 @@
   \item torque, 170, 213
     \subitem pull out, 182
 \newpage
-
   \item transformer
     \subitem air core, 59
     \subitem communication, 59
@@ -513,6 +511,7 @@
    \subitem خود، 256
    \subitem لچھا، 61
 \newpage
+
 \item ہیجان انگیز
    \subitem برقی دباو، 61
    \subitem برقی رو، 61
@@ -525,5 +524,4 @@
 \item یک سمت رو
    \subitem مشین، 245
 \item یولر مساوات، 20
-
 \end{theindex}
