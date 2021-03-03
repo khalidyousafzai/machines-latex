@@ -723,10 +723,10 @@ E_{am} \cos \sigma +j E_{am} \sin \sigma&=V_a \cos 0+j V_a \sin 0 + I_a X_s \cos
 \centering
 %\includegraphics{figSynchronousCompoundingCurves}
 \begin{tikzpicture}
-\begin{axis}[
+\begin{axis}[clip=false,
 	ticks=none,
 	xmin=0,
-	xmax=1.35,
+	xmax=1.40,
 	ymin=0,
 %	axis lines=middle,
 %	axis y line=middle,
@@ -844,7 +844,7 @@ p=V_a I_a \cos \phi
 \centering
 %\includegraphics{figSynchronousVcurves}
 \begin{tikzpicture}
-\begin{axis}[
+\begin{axis}[clip=false,
 	ticks=none,
 %	xmin=0,
 %	xmax=1.35,
@@ -875,7 +875,7 @@ p=V_a I_a \cos \phi
 \end{axis}
 \draw[dashed] (3.41,0) to [out=100,in=-100] node[pos=0.65,sloped,above,font=\small]{\RL{جزو طاقت \عددی{0.8} تاخیری}}
 (3.41,5);
-\draw[dashed] (3.41,0) to [out=90,in=-110] node[pos=0.60,sloped,above,font=\small]{\RL{جزو طاقت  \عددی{1}ہم قدم}}
+\draw[dashed] (3.41,0) to [out=90,in=-110] node[pos=0.65,sloped,above,font=\small]{\RL{جزو طاقت  \عددی{1}ہم قدم}}
 (4.5,5);
 \draw[dashed] (3.41,0) to [out=80,in=-120] node[pos=0.70,sloped,below,font=\small]{\RL{جزو طاقت \عددی{0.8} پیش قدم}}
 (5.5,5);
@@ -1006,7 +1006,7 @@ X_s=\frac{\abs{\hat{E}_{am}}}{\abs{\hat{I}_a}}=\frac{E_{am}}{I_a}
 \draw node[right] at (6,-1){$
 \begin{aligned}
 \hat{E}_{am}&=\hat{I}_a R_a +j \hat{I}_a X_s\\
-&\approx j \hat{I}_a X_s \quad \quad \quad X_s \gg R_a\\
+&\approx j \hat{I}_a X_s \quad \quad \quad (X_s \gg R_a)\\
 X_s&=\frac{|\hat{E}_{am}|}{|\hat{I}_a|}
 \end{aligned}
 $};

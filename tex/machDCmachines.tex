@@ -378,9 +378,9 @@
 \draw node at (-270+\tilt-22.5:\rC+0.5){ج};
 \draw node at (-315+\tilt-22.5:\rC+0.5){چ};
 %
-\draw[<-] (-2.5:\rC+0.1) to [out=0,in=180]++(1,0.5) node[right]{\RL{پہلا شگاف میں اندر رخ}};
-\draw[<-] (-42.5:\rC+0.1) to [out=-45,in=180]++(1.5,0.5) node[right]{\RL{پانچواں شگاف میں باہر رخ}};
-\draw[<-] (2.5:\rC+0.1) to [out=0,in=180]++(1,1) node[right]{\RL{چھوتا شگاف میں باہر رخ}};
+\draw[<-] (-2.5:\rC+0.1) to [out=0,in=180]++(1,0.5) node[right]{\RL{پہلے  شگاف میں اندر رخ}};
+\draw[<-] (-42.5:\rC+0.1) to [out=-45,in=180]++(1.5,0.5) node[right]{\RL{پانچویں شگاف میں باہر رخ}};
+\draw[<-] (2.5:\rC+0.1) to [out=0,in=180]++(1,1) node[right]{\RL{چھوتے  شگاف میں باہر رخ}};
 %\draw node[right,align=right] at (20:\rC+0.5){\RL{الف لچھے کو بش نے} \\  \RL{قصر دور کیا ہوا ہے}};
 %\draw node[left,align=right] at (160:\rC+0.5){\RL{ٹ لچھے کو بش نے} \\   \RL{قصر دور کیا ہوا ہے}};
 \end{tikzpicture}
@@ -717,7 +717,8 @@ e=\frac{12}{2} \times 2 \times \pi \times 60 \times 20 \times 0.0442=\SI{1999.82
 \centering
 \begin{tikzpicture}
 \draw (0,0)coordinate(k);
-\mymotor{k}{90}{جنریٹر}
+\mymotor{k}{90}{}
+\draw(k)node[font=\tiny]{جنریٹر};
 \draw (0,0.4)--++(0,0.5) to [short,-o]++(1,0);
 \draw (0,-0.4)--++(0,-0.5) to [short,-o]++(1,0);
 %field
@@ -731,7 +732,8 @@ e=\frac{12}{2} \times 2 \times \pi \times 60 \times 20 \times 0.0442=\SI{1999.82
 \centering
 \begin{tikzpicture}
 \draw (0,0)coordinate(k);
-\mymotor{k}{90}{جنریٹر}
+\mymotor{k}{90}{}
+\draw(k)node[font=\tiny]{جنریٹر};
 \draw (0,0.4)--++(0,1.1) to [short,-o]++(2,0);
 \draw (0,-0.4)--++(0,-1.1) to [short,-o]++(2,0);
 \draw (1,1.5) to [vR,*-,l={$R_m'$}]++(0,-1.5) to [inductor,l={$R_m$},-*]++(0,-1.5);
@@ -833,7 +835,8 @@ e_q=\frac{rpm}{rpm_0} e_{q0}
 \centering
 \begin{tikzpicture}
 \draw (0,0)coordinate(k);
-\mymotor{k}{90}{جنریٹر}
+\mymotor{k}{90}{}
+\draw(k)node[font=\tiny]{جنریٹر};
 \draw (0,0.4)--++(0,0.5) to [inductor,-o,l={\RL{میدانی لچھا}}] ++(2,0);
 \draw (0,-0.4)--++(0,-0.5) to [short,-o]++(2,0);
 %field
@@ -845,7 +848,8 @@ e_q=\frac{rpm}{rpm_0} e_{q0}
 \centering
 \begin{tikzpicture}
 \draw (0,0)coordinate(k);
-\mymotor{k}{90}{جنریٹر}
+\mymotor{k}{90}{}
+\draw(k)node[font=\tiny]{جنریٹر};
 \draw (0,0.4)--(0,1)--++(1,0)  to [inductor,-o,l={\RL{میدانی لچھا}}] ++(2,0);
 \draw (0,-0.4)--(0,-1) to [short,-o]++(3,0);
 \draw (1,1) to [inductor,*-*,l={\RL{میدانی لچھا}}] ++(0,-2);
@@ -871,7 +875,8 @@ e_q=\frac{rpm}{rpm_0} e_{q0}
 %\draw (0,0)coordinate(k);
 %\mymotor{k}{tilt angle}
 \draw (0,0)coordinate(k);
-\mymotor{k}{90}{جنریٹر}
+\mymotor{k}{90}{}
+\draw(k)node[font=\tiny]{جنریٹر};
 \draw (0,0.4)--(0,1)--++(1,0)  to  [short,i^={$I_{ms}$}] ++(0.5,0) to [inductor,l={$N_{ms}$},-o]++(2,0);
 \draw (0,-0.4)--(0,-1) to [short,-o]++(3.5,0);
 \draw (1,1) to [short,*-,i={$I_{mm}$}] ++(0,-0.5) to [inductor,-*,l={$N_{mm}$}]++(0,-1.5);
@@ -883,7 +888,8 @@ e_q=\frac{rpm}{rpm_0} e_{q0}
 \centering
 \begin{tikzpicture}
 \draw (0,0)coordinate(k);
-\mymotor{k}{90}{جنریٹر}
+\mymotor{k}{90}{}
+\draw(k)node[font=\tiny]{جنریٹر};
 \draw (0,0.4)--(0,1)  to [inductor,l={$N_{ms}$},i={$I_{ms}$}]++(2,0)   to [short,-o] ++(1.5,0);
 \draw (0,-0.4)--(0,-1) to [short,-o]++(3.5,0);
 \draw (2,1) to [short,*-,i={$I_{mm}$}] ++(0,-0.5) to [inductor,l={$N_{mm}$},-*]++(0,-1.5);
@@ -966,7 +972,8 @@ V=E_q-I_q R_q
 \centering
 \begin{tikzpicture}
 \draw (0,0)coordinate(k);
-\mymotor{k}{90}{جنریٹر}
+\mymotor{k}{90}{}
+\draw(k)node[font=\tiny]{جنریٹر};
 \draw (-0.7,0) node {$\begin{aligned} &+\\ &E_q\\ &-  \end{aligned}$};
 \draw (0,0.4) to [european resistor,l={$R_q$}]++(0,2) to [short,-o,i={$I_q$}]++(1,0)node[below]{$+$};
 \draw (0,-0.4)--++(0,-0.5)  to [short,-o]++(1,0)node[above]{$-$};
@@ -980,7 +987,8 @@ V=E_q-I_q R_q
 \centering
 \begin{tikzpicture}
 \draw (0,0)coordinate(k);
-\mymotor{k}{90}{جنریٹر}
+\mymotor{k}{90}{}
+\draw(k)node[font=\tiny]{جنریٹر};
 \draw (-0.7,0) node {$\begin{aligned} &+\\ &E_q\\ &-  \end{aligned}$};
 \draw (0,0.4) to [european resistor,l={$R_q$}]++(0,2) to [short,i={$I_q$}]++(0.5,0) to [short,-o]++(2,0)node(a)[below]{$+$};
 \draw (0,-0.4)--++(0,-1.7)  to [short,-o]++(2.5,0)node(b)[above]{$-$};
@@ -1001,7 +1009,8 @@ V=E_q-I_q R_q
 \centering
 \begin{tikzpicture}
 \draw (0,0)coordinate(k);
-\mymotor{k}{90}{جنریٹر}
+\mymotor{k}{90}{}
+\draw(k)node[font=\tiny]{جنریٹر};
 \draw (-0.7,0) node {$\begin{aligned} &+\\ &E_q\\ &-  \end{aligned}$};
 \draw (0,0.4) to [european resistor,l={$R_q$}]++(0,2) to [european resistor,l={$R_m$},i={$I_q$}]++(2,0) to [inductor,-o] ++(2,0)node[below]{$+$}coordinate(upper);
 \draw (0,-0.4)--++(0,-0.5)  to [short,-o]++(4,0)node[above]{$-$}coordinate(lower);
@@ -1013,7 +1022,8 @@ V=E_q-I_q R_q
 \centering
 \begin{tikzpicture}
 \draw (0,0)coordinate(k);
-\mymotor{k}{90}{جنریٹر}
+\mymotor{k}{90}{}
+\draw(k)node[font=\tiny]{جنریٹر};
 \draw (-0.7,0) node {$\begin{aligned} &+\\ &E_q\\ &-  \end{aligned}$};
 \draw (0,0.4) to [european resistor,l={$R_q$}]++(0,2) to [short,i={$I_q$}]++(1,0)  to [european resistor,l={$R_{m1}$}]++(2,0) to [inductor,-o]++(2,0)node(a)[below]{$+$};
 \draw (0,-0.4)--++(0,-1.7)  to [short,-o]++(5,0)node(b)[above]{$-$};
@@ -1051,7 +1061,7 @@ I_q&=\frac{V-E_q}{R_q}
 }
 \begin{tikzpicture}[baseline]
 \draw[] (0,0)--(6,0);
-\node at (3,-0.4) {\RL{میکانی بار}};
+\node at (3,-0.4) {\RL{میکانی بوجھ}};
 \draw[] (0,0)--(0,0.4);
 \draw (0,0.5)--(0,3);
 \node[left] at (-0.2,2.75){\RL{رفتار}};
