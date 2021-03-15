@@ -1,219 +1,222 @@
 \begin{theindex}
 \begin{otherlanguage}{english}
-  \item ampere-turn, 33
-  \item armature coil, 135, 256
+
+  \item ampere-turn, 27
+  \item armature coil, 116, 222
 
   \indexspace
 
-  \item capacitor, 198
-  \item carbon bush, 181
-  \item cartesian system, 4
-  \item charge, 10, 141
-  \item circuit breaker, 183
-  \item coercivity, 46
+  \item capacitor, 171
+  \item carbon bush, 156
+  \item cartesian system, 3
+  \item charge, 9, 121
+  \item circuit breaker, 158
+  \item co-energy, 92
+  \item coercivity, 39
   \item coil
-    \subitem high voltage, 56
-    \subitem low voltage, 56
-    \subitem primary, 55
-    \subitem secondary, 55
-  \item commutator, 170, 245
-  \item conductivity, 25
-  \item conservative field, 111
-  \item core, 55, 130
-  \item core loss, 62
-  \item core loss component, 64
-  \item Coulomb's law, 10
-  \item cross product, 13
-  \item cross section, 9
+    \subitem high voltage, 47
+    \subitem low voltage, 47
+    \subitem primary, 47
+    \subitem secondary, 47
+  \item commutator, 146, 213
+  \item conductivity, 21
+  \item conservative field, 96
+  \item core, 47, 111
+  \item core loss, 52
+  \item core loss component, 54
+  \item Coulomb's law, 9
+  \item cross product, 12
+  \item cross section, 8
   \item current
-    \subitem transformation, 66
-  \item cylindrical coordinates, 5
+    \subitem transformation, 56
+  \item cylindrical coordinates, 4
 
   \indexspace
 
-  \item delta connected, 94
-  \item differentiation, 18
-  \item dot product, 15
+  \item delta connected, 80
+  \item differentiation, 15
+  \item dot product, 13
 
   \indexspace
 
-  \item E,I, 62
-  \item earth, 95
-  \item eddy current loss, 62
-  \item eddy currents, 61, 130
+  \item E,I, 52
+  \item earth, 82
+  \item eddy current loss, 52
+  \item eddy currents, 52, 111
   \item electric field
-    \subitem intensity, 10
-  \item electrical rating, 59
-  \item electromagnet, 135
-  \item electromotive force, 61, 142
+    \subitem intensity, 9
+  \item electrical rating, 50
+  \item electromagnet, 115
+  \item electromotive force, 52, 121
   \item electronics
-    \subitem power, 211
-  \item emf, 142
-  \item enamel, 62
-  \item energy, 44
-    \subitem co, 115
-  \item Euler, 20
-  \item excitation current, 52, 60, 61
-  \item excitation voltage, 61
-  \item excite, 61
-  \item excited coil, 61
+    \subitem power, 183
+  \item emf, 121
+  \item enamel, 52
+  \item energy, 37
+    \subitem co, 99
+  \item Euler, 18
+  \item excitation current, 44, 51, 52
+  \item excitation voltage, 52
+  \item excite, 52
+  \item excited coil, 52
 
   \indexspace
 
-  \item Faraday's law, 38, 129
-  \item field coil, 135, 256
-  \item flux, 30
-  \item Fourier series, 63, 146
-  \item frequency, 134
-  \item fundamental, 147
-  \item fundamental component, 64
+  \item Faraday's law, 32, 111
+  \item field coil, 116, 222
+  \item flux, 24
+  \item Fourier series, 54, 125
+  \item frequency, 115
+  \item fundamental, 125
+  \item fundamental component, 54
 
   \indexspace
 
   \item generator
-    \subitem ac, 165
-  \item ground current, 95
-  \item ground wire, 95
+    \subitem ac, 141
+  \item ground current, 82
+  \item ground wire, 82
 
   \indexspace
 
-  \item harmonic, 147
-  \item harmonic components, 64
-  \item Henry, 40
-  \item hunting, 182
-  \item hysteresis loop, 47
+  \item harmonic, 125
+  \item harmonic components, 54
+  \item Henry, 33
+  \item hunting, 157
+  \item hysteresis loop, 39
 
   \indexspace
 
-  \item impedance transformation, 72
-  \item induced voltage, 38, 50, 61
-  \item inductance, 39
-    \subitem leakage, 187
+  \item impedance transformation, 61
+  \item induced voltage, 32, 42, 52
+  \item inductance, 33
+    \subitem leakage, 161
   \item induction
-    \subitem motor, 211
+    \subitem motor, 183
 
   \indexspace
 
-  \item Joule, 44
+  \item Joule, 37
 
   \indexspace
 
-  \item lagging, 22
-  \item laminations, 31, 62, 130
-  \item leading, 22
-  \item leakage inductance, 80
-  \item leakage reactance, 80
-  \item line current, 95
-  \item line voltage, 95
-  \item linear circuit, 230
-  \item load, 99
-  \item Lorentz law, 141
-  \item Lorenz equation, 104
+  \item lagging, 19
+  \item laminations, 26, 52, 111
+  \item leading, 19
+  \item leakage inductance, 68
+  \item leakage reactance, 68
+  \item line current, 82
+  \item line voltage, 82
+  \item linear circuit, 199
+  \item load, 85
+  \item Lorentz law, 121
+  \item Lorenz equation, 90
 
   \indexspace
 
-  \item magnetic constant, 26
-  \item magnetic core, 31
+  \item magnetic constant, 21
+  \item magnetic core, 26
   \item magnetic field
-    \subitem intensity, 11, 33
+    \subitem intensity, 10, 27
   \item magnetic flux
-    \subitem density, 33
-    \subitem leakage, 79
-    \subitem residual, 46
-  \item magnetizing current, 64
-  \item mmf, 30
-  \item model, 82, 211
-  \item mutual flux linkage, 43
-  \item mutual inductance, 43
+    \subitem density, 27
+    \subitem leakage, 68
+    \subitem residual, 39
+  \item magnetizing current, 54
+  \item mmf, 24
+  \item model, 70, 183
+  \item mutual flux linkage, 36
+  \item mutual inductance, 36
 
   \indexspace
 
-  \item name plate, 98
-  \item non-salient poles, 181
+  \item name plate, 84
+  \item non-salient poles, 157
 
   \indexspace
 
-  \item Ohm's law, 26
-  \item open circuit test, 87
-  \item orthonormal, 3
+  \item Ohm's law, 22
+  \item open circuit test, 74
+  \item orthonormal, 2
 
   \indexspace
 
-  \item parallel connected, 258
-  \item permeability, 26
-    \subitem relative, 26
-  \item phase current, 95
-  \item phase difference, 22
-  \item phase voltage, 95
-  \item phasor, 21
+  \item parallel connected, 224
+  \item permeability, 21
+    \subitem relative, 22
+  \item phase current, 82
+  \item phase difference, 19
+  \item phase voltage, 82
+  \item phasor, 19
   \item pole
-    \subitem non-salient, 144
-    \subitem salient, 144
-  \item power, 44
-  \item power factor, 22
-    \subitem lagging, 22
-    \subitem leading, 22
-  \item power factor angle, 22
-  \item power-angle law, 192
+    \subitem non-salient, 123
+    \subitem salient, 123
+  \item power, 37
+  \item power factor, 19
+    \subitem lagging, 19
+    \subitem leading, 19
+  \item power factor angle, 19
+  \item power-angle law, 166
   \item primary
-    \subitem side, 55
+    \subitem side, 47
 
   \indexspace
 
-  \item rating, 97, 98
-  \item rectifier, 170
-  \item relative permeability, 26
-  \item relay, 103
-  \item reluctance, 25
-  \item resistance, 25
-  \item rms, 19, 50, 169
-  \item rotor, 37
-  \item rotor coil, 106
-  \item rpm, 161
+  \item rating, 83, 84
+  \item rectifier, 146
+  \item relative permeability, 22
+  \item relay, 89
+  \item reluctance, 21
+  \item resistance, 21
+  \item rms, 16, 42, 145
+  \item rotor, 31
+  \item rotor coil, 92
+  \item rpm, 138
 
   \indexspace
 
-  \item saturation, 47
+  \item saturation, 39
   \item scalar, 1
-  \item self excited, 256
-  \item self flux linkage, 43
-  \item self inductance, 43
-  \item separately excited, 256
+  \item self excited, 222
+  \item self flux linkage, 36
+  \item self inductance, 36
+  \item separately excited, 222
   \item side
-    \subitem secondary, 55
-  \item single phase, 23, 59
-  \item slip, 213
-  \item slip rings, 181, 233
-  \item squirrel cage, 236
-  \item star connected, 94
-  \item stator, 37
-  \item stator coil, 106, 131
-  \item steady state, 179
-  \item step down transformer, 58
-  \item step up transformer, 58
-  \item surface density, 11
-  \item synchronous, 134
-  \item synchronous inductance, 188
-  \item synchronous speed, 160, 161, 180
+    \subitem secondary, 47
+  \item single phase, 20, 50
+  \item slip, 184
+  \item slip rings, 156, 203
+  \item squirrel cage, 205
+  \item star connected, 80
+  \item stator, 31
+  \item stator coil, 92, 112
+  \item steady state, 155
+  \item step down transformer, 50
+  \item step up transformer, 50
+  \item surface density, 10
+  \item synchronous, 115
+  \item synchronous inductance, 162
+  \item synchronous speed, 138, 155
 
   \indexspace
 
-  \item Tesla, 33
+  \item Tesla, 28
   \item theorem
-    \subitem maximum power transfer, 233
-  \item Thevenin theorem, 230
-  \item three phase, 59, 93
-  \item time period, 146
-  \item torque, 170, 213
-    \subitem pull out, 182
-\newpage
+    \subitem maximum power transfer, 202
+  \item Thevenin theorem, 199
+  \item three phase, 50, 79
+  \item time period, 125
+  \item torque, 146, 185
+    \subitem pull out, 157
+    \newpage
+    
   \item transformer
-    \subitem air core, 59
-    \subitem communication, 59
-    \subitem ideal, 65
-    \subitem oil, 77
-  \item transient state, 179
-  \item turbine, 181
+    \subitem air core, 50
+    \subitem communication, 50
+    \subitem ideal, 55
+    \subitem oil, 65
+  \item transient state, 155
+  \item turbine, 157
 
   \indexspace
 
@@ -221,308 +224,309 @@
 
   \indexspace
 
-  \item VA, 76
-  \item vector, 2
-  \item volt, 141
-  \item volt-ampere, 76
-  \item voltage, 141
-    \subitem DC, 170
-    \subitem transformation, 66
+  \item VA, 65
+  \item vector, 1
+  \item volt, 121
+  \item volt-ampere, 65
+  \item voltage, 121
+    \subitem DC, 146
+    \subitem transformation, 56
 
   \indexspace
 
-  \item Watt, 44
-  \item Weber, 33
+  \item Watt, 37
+  \item Weber, 27
   \item winding
-    \subitem distributed, 144
-  \item winding factor, 152
+    \subitem distributed, 123
+  \item winding factor, 130
+
 \end{otherlanguage}
 
   \newpage
-
+\indexspace
 \item ابتدائی
-   \subitem جانب، 55
-   \subitem لچھا، 55
-\item ارتباط بہاو، 39
+   \subitem جانب، 47
+   \subitem لچھا، 47
+\item ارتباط بہاو، 33
 \item اضافی
-   \subitem زاویائی رفتار، 216
+   \subitem زاویائی رفتار، 187
 \item اکائی سمتیہ، 2
-\item امالہ، 39
-   \subitem رستا، 187
 \item امالی
-   \subitem برقی دباو، 50
-\item امالی برقی دباو، 38، 61
-\item ایک، تین پتریاں، 62
-\item ایمپیئر-چکر، 33
+   \subitem برقی دباو، 42
+\item امالہ، 33
+   \subitem رستا، 161
+\item امالی برقی دباو، 32، 52
+\item ایک، تین پتریاں، 52
+\item ایمپیئر-چکر، 27
 \indexspace
-\item بار، 141
-\item برقرار چالو، 101، 179
-\item برق گھیر، 198
+\item بار، 121
+\item برقرار چالو، 87، 155
+\item برق گھیر، 171
 \item برقیات
-   \subitem قوی، 211
-\item برقی بار، 10، 141
-\item برقی دباو، 28، 141
-   \subitem تبادلہ، 56، 66
-   \subitem محرک، 142
-   \subitem ہیجانی، 189
-   \subitem یک سمت، 170
-\item برقی رو، 28
-   \subitem بھنور نما، 130
-   \subitem تبادلہ، 66
-   \subitem ہیجان انگیز، 52
-\item برقی سکت، 59
-\item برقی میدان، 10
-   \subitem شدت، 10، 28
-\item بش، 181
-\item بناوٹ، 87
-\item بنیادی جزو، 64، 147
-\item بوجھ، 99
-\item بھٹی، 117
+   \subitem قوی، 183
+\item برقی بار، 9، 121
+\item برقی دباو، 23، 121
+   \subitem تبادلہ، 48، 56
+   \subitem محرک، 121
+   \subitem ہیجانی، 163
+   \subitem یک سمت، 146
+\item برقی رو، 23
+   \subitem بھنور نما، 111
+   \subitem تبادلہ، 56
+   \subitem ہیجان انگیز، 44
+\item برقی سکت، 50
+\item برقی میدان، 9
+   \subitem شدت، 9، 23
+\item بش، 156
+\item بناوٹ، 74
+\item بنیادی جزو، 54، 125
+\item بوجھ، 85
+\item بھٹی، 101
 \item بھنور نما
-   \subitem برقی رو، 61
-   \subitem ضیاع، 62
-\item بھنور نما برقی رو، 130
-\item بے بوجھ، 60
+   \subitem برقی رو، 52
+   \subitem ضیاع، 52
+\item بھنور نما برقی رو، 111
+\item بے بوجھ، 51
 \indexspace
-\item پتری، 31، 130
-\item پتریاں، 62
-\item پیش زاویہ، 22
+\item پتری، 26، 111
+\item پتریاں، 52
+\item پیش زاویہ، 19
 \indexspace
-\item تاخیری، 81
-\item تاخیری زاویہ، 22
-\item تار کا برقی دباو، 95
-\item تار کا برقی رو، 95
-\item تانبا، 28
+\item تاخیری، 69
+\item تاخیری زاویہ، 19
+\item تار کا برقی دباو، 82
+\item تار کا برقی رو، 82
+\item تانبا، 23
 \item تبادلہ
-   \subitem رکاوٹ، 72
-\item تختی، 98
-\item تعدد، 134
-\item تعقب، 182
-\item تفرق، 18
-   \subitem جزوی، 18
-\item تکونی جوڑ، 94
-\item توانائی، 44
-   \subitem ہمہ، 115
-\item تین دوری، 59، 93
+   \subitem رکاوٹ، 61
+\item تختی، 84
+\item تعدد، 115
+\item تعقب، 157
+\item تفرق، 15
+   \subitem جزوی، 15
+\item تکونی جوڑ، 80
+\item توانائی، 37
+   \subitem ہم، 99
+\item تین دوری، 50، 79
 \indexspace
 \item ٹرانسفارمر
-   \subitem برقی دباو والا، 59
-   \subitem بوجھ بردار، 69
-   \subitem تیل، 77
-   \subitem خلائی قالب، 59
-   \subitem دباو بڑھاتا، 58
-   \subitem دباو گھٹاتا، 58
-   \subitem ذرائع ابلاغ، 59
-   \subitem رو والا، 59
-   \subitem کامل، 65
-\item ٹسلا، 33
-\item ٹھنڈی تار، 95
+   \subitem برقی دباو والا، 50
+   \subitem بوجھ بردار، 58
+   \subitem تیل، 65
+   \subitem خلائی قالب، 50
+   \subitem دباو بڑھاتا، 50
+   \subitem دباو گھٹاتا، 50
+   \subitem ذرائع ابلاغ، 50
+   \subitem رو والا، 50
+   \subitem کامل، 55
+\item ٹسلا، 28
+\item ٹھنڈی تار، 82
 \indexspace
-\item ثانوی جانب، 55
+\item ثانوی جانب، 47
 \indexspace
-\item جاول، 44
+\item جاول، 37
 \item جزو
-   \subitem پھیلاو، 152
-\item جزو طاقت، 22
-   \subitem پیش، 22
-   \subitem تاخیری، 22
+   \subitem پھیلاو، 130
+\item جزو طاقت، 19
+   \subitem پیش، 19
+   \subitem تاخیری، 19
 \item جنریٹر
-   \subitem بدلتا رو، 165
+   \subitem بدلتا رو، 141
 \item جوڑ
-   \subitem تکونی، 94
-   \subitem ستارہ نما، 94
+   \subitem تکونی، 80
+   \subitem ستارہ نما، 80
 \indexspace
-\item چرخاب، 181
-\item چکر فی منٹ، 130
-\item چوٹی، 215
+\item چرخاب، 157
+\item چکر فی منٹ، 112
+\item چوٹی، 186
 \indexspace
 \item حال
-   \subitem عارضی، 179
-   \subitem یکساں، 179
+   \subitem عارضی، 155
+   \subitem یکساں، 155
 \indexspace
 \item خطی
-   \subitem برقی دور، 230
-\item خود ارتباط بہاو، 43
-\item خود امالہ، 43
+   \subitem برقی دور، 199
+\item خود ارتباط بہاو، 36
+\item خود امالہ، 36
 \indexspace
 \item داخلی ہیجان
-   \subitem سلسلہ وار، 259
-   \subitem متوازی، 258
-   \subitem مرکب، 259
-\item دور جڑا مرکب، 259
-\item دور شکن، 183
-\item دوری سمتیہ، 21، 190
-\item دوری عرصہ، 146
+   \subitem سلسلہ وار، 225
+   \subitem متوازی، 224
+   \subitem مرکب، 225
+\item دور جڑا مرکب، 225
+\item دور شکن، 158
+\item دوری سمتیہ، 19، 164
+\item دوری عرصہ، 125
 \indexspace
 \item رستا
-   \subitem امالہ، 80
-   \subitem متعاملہ، 80
-\item رستا متعاملیت، 221
+   \subitem امالہ، 68
+   \subitem متعاملہ، 68
+\item رستا متعاملیت، 191
 \item رفتار
-   \subitem اضافی زاویائی، 216
-\item روغن، 62
-\item روک، 232
-\item ریاضی نمونہ، 82، 211
-\item ریلے، 103
+   \subitem اضافی زاویائی، 187
+\item روغن، 52
+\item روک، 201
+\item ریاضی نمونہ، 70، 183
+\item ریلے، 89
 \indexspace
-\item زاویائی فرق، 22
-\item زاویہ جزو طاقت، 22
-\item زمین، 95
-\item زمینی برقی رو، 95
-\item زمینی تار، 95
+\item زاویائی فرق، 19
+\item زاویہ جزو طاقت، 19
+\item زمین، 82
+\item زمینی برقی رو، 82
+\item زمینی تار، 82
 \indexspace
-\item ساکن حصہ، 37
-\item ساکن لچھا، 106، 131
-\item ستارہ نما جوڑ، 94
+\item ساکن حصہ، 31
+\item ساکن لچھا، 92، 112
+\item ستارہ نما جوڑ، 80
 \indexspace
-\item ْسر دور، 39
+\item ْسر دور، 32
 \indexspace
-\item سرکاو، 213
-\item سرک چھلے، 181، 233
-\item سطحی تکمل، 185
-\item سطحی کثافت، 11
-\item سکت، 97، 98
-\item سلسلہ وار، 150
-\item سمت کار، 245
-   \subitem برقیاتی، 170
-   \subitem میکانی، 170
-\item سمتیہ، 2
-   \subitem عمودی اکائی، 3
-\item سمتی رفتار، 104
-\item سیرابیت، 47
+\item سرکاو، 184
+\item سرک چھلے، 156، 203
+\item سطحی تکمل، 159
+\item سطحی کثافت، 10
+\item سکت، 83، 84
+\item سلسلہ وار، 128
+\item سمت کار، 213
+   \subitem برقیاتی، 146
+   \subitem میکانی، 146
+\item سمتیہ، 1
+   \subitem عمودی اکائی، 2
+\item سمتی رفتار، 89
+\item سیرابیت، 39
 \indexspace
 \item ضرب
-   \subitem نقطہ، 15
-\item ضرب صلیبی، 13
+   \subitem نقطہ، 13
+\item ضرب صلیبی، 12
 \indexspace
-\item طاقت، 44
-\item طاقت بالمقابل زاویہ، 192
-\item طول موج، 18
+\item طاقت، 37
+\item طاقت بالمقابل زاویہ، 166
+\item طول موج، 16
 \indexspace
-\item عمودی تراش، 9
-   \subitem رقبہ، 9
+\item عمودی تراش، 8
+   \subitem رقبہ، 8
 \indexspace
 \item غیر سمتی، 1
-\item غیر معاصر، 182
+\item غیر معاصر، 158
 \indexspace
-\item فوریئر، 255
-\item فوریئر تسلسل، 63، 146
+\item فوریئر، 221
+\item فوریئر تسلسل، 54، 125
 \item فیراڈے
-   \subitem قانون، 38، 129
+   \subitem قانون، 32، 111
 \indexspace
-\item قالب، 130
-\item قالبی ضیاع، 62
-   \subitem جزو، 64
+\item قالب، 111
+\item قالبی ضیاع، 52
+   \subitem جزو، 54
 \item قانون
-   \subitem اوہم، 26
-   \subitem کولمب، 10
-   \subitem لورینز، 141
-\item قدامت پسند میدان، 111
-\item قریب جڑا مرکب، 259
+   \subitem اوہم، 22
+   \subitem کولمب، 9
+   \subitem لورینز، 121
+\item قدامت پسند میدان، 96
+\item قریب جڑا مرکب، 225
 \item قطب
-   \subitem ابھرے، 144، 181
-   \subitem ہموار، 144، 181
-\item قوت مروڑ، 170، 213
-   \subitem انتہائی، 182
-\item قوی برقیات، 245
-\item قوی لچھے، 256
+   \subitem ابھرے، 123، 157
+   \subitem ہموار، 123، 157
+\item قوت مروڑ، 146، 185
+   \subitem انتہائی، 157
+\item قوی برقیات، 213
+\item قوی لچھے، 222
 \indexspace
-\item کاربن بش، 181
-\item کارگزاری، 204
+\item کاربن بش، 156
+\item کارگزاری، 177
 \item کثافت
-   \subitem برقی رو، 28
+   \subitem برقی رو، 23
 \item کثافت مقناطیسی بہاو
-   \subitem بقایا، 46
+   \subitem بقایا، 39
 \indexspace
-\item گرم تار، 95
-\item گھومتا حصہ، 37
-\item گھومتا لچھا، 106
+\item گرم تار، 82
+\item گھومتا حصہ، 31
+\item گھومتا لچھا، 92
 \indexspace
 \item لچھا
-   \subitem ابتدائی، 55
-   \subitem پھیلے، 144
-   \subitem پیچدار، 41
-   \subitem ثانوی، 55
-   \subitem رخ، 137
-   \subitem زیادہ برقی دباو، 56
-   \subitem  ساکن، 106
-   \subitem قوی، 135
-   \subitem کم برقی دباو، 56
-   \subitem گھومتا، 106
-   \subitem میدانی، 135
+   \subitem ابتدائی، 47
+   \subitem پھیلے، 123
+   \subitem پیچدار، 34
+   \subitem ثانوی، 47
+   \subitem رخ، 117
+   \subitem زیادہ برقی دباو، 47
+   \subitem  ساکن، 92
+   \subitem قوی، 116
+   \subitem کم برقی دباو، 47
+   \subitem گھومتا، 92
+   \subitem میدانی، 116
 \indexspace
 \item محدد
-   \subitem کارتیسی، 4
-   \subitem نلکی، 5
-\item محرک برقی دباو، 61
+   \subitem کارتیسی، 3
+   \subitem نلکی، 4
+\item محرک برقی دباو، 52
 \item محوری
-   \subitem لمبائی، 166
-\item مخلوط عدد، 196
-\item مرکب جنریٹر، 259
-\item مزاحمت، 25
-\item مزاحمت پیما، 241
-\item مساوات لورینز، 104
+   \subitem لمبائی، 143
+\item مخلوط عدد، 170
+\item مرکب جنریٹر، 225
+\item مزاحمت، 21
+\item مزاحمت پیما، 209
+\item مساوات لورینز، 90
 \item مسئلہ
-   \subitem تھونن، 230
-   \subitem زیادہ سے زیادہ طاقت کی منتقلی، 233
-\item مشترکہ ارتباط امالہ، 43
-\item مشترکہ امالہ، 43
-\item معاصر، 134
-   \subitem مشین، 180
-\item معاصر امالہ، 188
-\item معاصر رفتار، 160، 161، 180
+   \subitem تھونن، 199
+   \subitem زیادہ سے زیادہ طاقت کی منتقلی، 202
+\item مشترکہ ارتباط امالہ، 36
+\item مشترکہ امالہ، 36
+\item معاصر، 115
+   \subitem مشین، 156
+\item معاصر امالہ، 162
+\item معاصر رفتار، 138، 155
 \item معائنہ
-   \subitem کھلا دور، 87
+   \subitem کھلا دور، 74
 \item مقناطیس
-   \subitem برقی، 135
-   \subitem چال کا دائرہ، 47
-   \subitem خاتم شدت، 46
-\item مقناطیسی برقی رو، 64
-\item مقناطیسی بہاو، 30
-   \subitem رستا، 79
-   \subitem کثافت، 33
-\item مقناطیسی چال، 52
-\item مقناطیسی دباو، 30
-   \subitem رخ، 146
-\item مقناطیسی قالب، 31، 55
-\item مقناطیسی مستقل، 26، 171
-   \subitem جزو، 26، 31
+   \subitem برقی، 115
+   \subitem چال کا دائرہ، 39
+   \subitem خاتم شدت، 39
+\item مقناطیسی برقی رو، 54
+\item مقناطیسی بہاو، 24
+   \subitem رستا، 68
+   \subitem کثافت، 27
+\item مقناطیسی چال، 44
+\item مقناطیسی دباو، 24
+   \subitem رخ، 125
+\item مقناطیسی قالب، 26، 47
+\item مقناطیسی مستقل، 21، 147
+   \subitem جزو، 22، 26
 \item مقناطیسی میدان
-   \subitem شدت، 11، 33
+   \subitem شدت، 10، 27
 \item موٹر
-   \subitem امالی، 211
-   \subitem پنجرہ نما، 236
-\item موثر، 19، 50
-\item موثر قیمت، 169
-\item موسیقائی اجزاء، 64
-\item موسیقائی جزو، 147
-\item موصلیت، 25
-\item میدانی لچھے، 256
+   \subitem امالی، 183
+   \subitem پنجرہ نما، 205
+\item موثر، 16، 42
+\item موثر قیمت، 145
+\item موسیقائی اجزاء، 54
+\item موسیقائی جزو، 125
+\item موصلیت، 21
+\item میدانی لچھے، 222
 \indexspace
-\item واٹ، 44
-\item وولٹ، 141
-\item وولٹ-ایمپیئر، 76
-\item ویبر، 33
-\item ویبر-چکر، 39
+\item واٹ، 37
+\item وولٹ، 121
+\item وولٹ-ایمپیئر، 65
+\item ویبر، 27
+\item ویبر-چکر، 33
 \indexspace
-\item ہچکچاہٹ، 25، 30
-\item ہیجان، 61
-   \subitem بیرونی، 256
-   \subitem خود، 256
-   \subitem لچھا، 61
-\newpage
-
+\item ہچکچاہٹ، 21، 24
+\item ہم توانائی، 92
+\item ہیجان، 52
+   \subitem بیرونی، 222
+   \subitem خود، 222
+   \subitem لچھا، 52
 \item ہیجان انگیز
-   \subitem برقی دباو، 61
-   \subitem برقی رو، 61
-\item ہیجان انگیز برقی رو، 60
-\item ہیجانی برقی دباو، 189
+   \subitem برقی دباو، 52
+   \subitem برقی رو، 52
+   \newpage
+\item ہیجان انگیز برقی رو، 51
+\item ہیجانی برقی دباو، 163
 \indexspace
-\item یک دوری، 23، 59
-\item یک دوری برقی دباو، 95
-\item یک دوری برقی رو، 95
+\item یک دوری، 20، 50
+\item یک دوری برقی دباو، 82
+\item یک دوری برقی رو، 82
 \item یک سمت رو
-   \subitem مشین، 245
-\item یولر مساوات، 20
+   \subitem مشین، 213
+\item یولر مساوات، 18
 
 \end{theindex}

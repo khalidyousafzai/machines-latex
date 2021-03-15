@@ -62,7 +62,7 @@
 \contentsline {chapter}{\numberline {\arabicdigits {4}}برقی اور میکانی توانائی کا باہمی تبادلہ}{\arabicdigits {89}}%
 \contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {1}}مقناطیسی نظام میں قوت اور قوت مروڑ}{\arabicdigits {89}}%
 \contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {2}}تبادلہ توانائی والا ایک لچھے کا نظام}{\arabicdigits {95}}%
-\contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {3}}توانائی اور ہم-توانائی}{\arabicdigits {99}}%
+\contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {3}}توانائی اور ہم توانائی}{\arabicdigits {99}}%
 \contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {4}}متعدد لچھوں کا مقناطیسی نظام}{\arabicdigits {103}}%
 \contentsline {chapter}{\numberline {\arabicdigits {5}}گھومتے مشین کے بنیادی اصول}{\arabicdigits {111}}%
 \contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {1}}قانون فیراڈے}{\arabicdigits {111}}%
