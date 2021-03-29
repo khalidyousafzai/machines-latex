@@ -35,7 +35,15 @@
 \contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {6}}مقناطیسی دور حصہ دوم}{\arabicdigits {29}}%
 \contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {7}}خود امالہ ، مشترکہ امالہ اور توانائی}{\arabicdigits {32}}%
 \contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {8}}مقناطیسی مادہ کے خواص}{\arabicdigits {38}}%
+\bgroup 
+\selectlanguage *{english}
+\egroup 
+\selectlanguage *{urdu}
 \contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {9}}ہیجان شدہ لچھا}{\arabicdigits {41}}%
+\bgroup 
+\selectlanguage *{english}
+\egroup 
+\selectlanguage *{urdu}
 \contentsline {chapter}{\numberline {\arabicdigits {3}}ٹرانسفارمر}{\arabicdigits {47}}%
 \contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {1}}ٹرانسفارمر کی اہمیت}{\arabicdigits {48}}%
 \contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {2}}ٹرانسفارمر کے اقسام}{\arabicdigits {50}}%
