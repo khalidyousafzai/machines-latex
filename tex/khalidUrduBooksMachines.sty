@@ -11,14 +11,14 @@
 \usepackage{graphics}
 \usepackage[]{graphicx} 
 \usepackage{cancel}
-%\usepackage{mathpazo}              %kkk
+%\usepackage{mathpazo}              %kkk  gives problems with SI package showing pi as beta
 \usepackage{booktabs}                                  %for tables toprule, midrule and bottomrule
 %\usepackage{parskip}
 \usepackage[stable,bottom]{footmisc}						%for footnotes in the headings
 
 %-----------------
 \usepackage{siunitx} 			%SI units that meets iso-31 regulations such as \micro, \degree \SI{3}{\celsius}
-\sisetup{per=frac,fraction=nice}    %setup for siunitx
+\sisetup{per=frac,fraction=nice,text-degree=°,  math-degree=\textup{°}}   
 
 %\protected\def\numpi{\text{\ensuremath{\pi}}}  %25 june 2015, these two lines were added to be able to use numpi as pi in SI commands.
 %\sisetup{input-symbols = \numpi}					%without it, in the presence of mathpazo package, SI would show beta instead of pi
