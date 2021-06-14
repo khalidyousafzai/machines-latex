@@ -124,7 +124,7 @@
 \contentsline {section}{\numberline {\arabicdigits {8}.\arabicdigits {4}}بیرونی ہیجان اور خود ہیجان یک سمت جنریٹر}{\arabicdigits {222}}%
 \contentsline {section}{\numberline {\arabicdigits {8}.\arabicdigits {5}}یک سمت مشین کی کارکردگی کے خط}{\arabicdigits {226}}%
 \contentsline {subsection}{\numberline {\arabicdigits {8}.\arabicdigits {5}.\arabicdigits {1}}حاصل برقی دباو بالمقابل برقی بوجھ}{\arabicdigits {226}}%
-\contentsline {subsection}{\numberline {\arabicdigits {8}.\arabicdigits {5}.\arabicdigits {2}}رفتار بالمقابل قوت مروڑ}{\arabicdigits {227}}%
+\contentsline {subsection}{\numberline {\arabicdigits {8}.\arabicdigits {5}.\arabicdigits {2}}رفتار بالمقابل قوت مروڑ}{\arabicdigits {228}}%
 \contentsline {chapter}{فرہنگ}{\arabicdigits {235}}%
 \bgroup 
 \selectlanguage *{english}
