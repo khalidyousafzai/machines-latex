@@ -208,6 +208,7 @@
   \item time period, 125
   \item torque, 146, 185
     \subitem pull out, 157
+    
     \newpage
     
   \item transformer
@@ -241,7 +242,7 @@
   \item winding factor, 130
 
 \end{otherlanguage}
-
+ 
   \newpage
 \indexspace
 \item ابتدائی
@@ -515,10 +516,11 @@
    \subitem بیرونی، 222
    \subitem خود، 222
    \subitem لچھا، 52
+   \newpage
+   
 \item ہیجان انگیز
    \subitem برقی دباو، 52
    \subitem برقی رو، 52
-   \newpage
 \item ہیجان انگیز برقی رو، 51
 \item ہیجانی برقی دباو، 163
 \indexspace
