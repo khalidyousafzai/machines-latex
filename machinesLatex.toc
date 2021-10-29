@@ -52,7 +52,7 @@
 \contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {5}}تبادلہ برقی دباو اور تبادلہ برقی رو کے خواص}{\arabicdigits {55}}%
 \contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {6}}ثانوی جانب بوجھ کا ابتدائی جانب اثر}{\arabicdigits {58}}%
 \contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {7}}ٹرانسفارمر کی علامت پر نقطوں کا مطلب}{\arabicdigits {59}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {8}}رکاوٹ کا تبادلہ}{\arabicdigits {59}}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {8}}رکاوٹ کا تبادلہ}{\arabicdigits {60}}%
 \contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {9}}ٹرانسفارمر کے وولٹ و ایمپیئر}{\arabicdigits {64}}%
 \contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {10}}ٹرانسفارمر کے امالہ اور مساوی ادوار}{\arabicdigits {66}}%
 \contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {1}}لچھے کی مزاحمت اور متعاملہ کی علیحدگی}{\arabicdigits {66}}%

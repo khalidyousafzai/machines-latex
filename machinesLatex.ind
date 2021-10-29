@@ -1,7 +1,7 @@
 \begin{theindex}
 \begin{otherlanguage}{english}
 
-  \item ampereturn, 27
+  \item ampere-turn, 27
   \item armature coil, 116, 222
 
   \indexspace
@@ -240,9 +240,8 @@
   \item winding
     \subitem distributed, 123
   \item winding factor, 130
-
 \end{otherlanguage}
- 
+
   \newpage
 \indexspace
 \item ابتدائی
@@ -258,7 +257,7 @@
    \subitem رستا، 161
 \item امالی برقی دباو، 32، 52
 \item ایک، تین پتریاں، 52
-\item ایمپیئروچکر، 27
+\item ایمپیئر و چکر، 27
 \indexspace
 \item بار، 121
 \item برقرار چالو، 87، 155
@@ -508,7 +507,7 @@
 \item وولٹ، 121
 \item وولٹ و ایمپیئر، 65
 \item ویبر، 27
-\item ویبروچکر، 33
+\item ویبر-چکر، 33
 \indexspace
 \item ہچکچاہٹ، 21، 24
 \item ہم توانائی، 92
@@ -516,8 +515,8 @@
    \subitem بیرونی، 222
    \subitem خود، 222
    \subitem لچھا، 52
+  
    \newpage
-   
 \item ہیجان انگیز
    \subitem برقی دباو، 52
    \subitem برقی رو، 52
