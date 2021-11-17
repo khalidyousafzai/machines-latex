@@ -558,7 +558,6 @@ e_c(t)&=E_0\cos\big(\omega_0 t-\frac{4}{3}\pi\big)=E_0\cos\big(\omega_0 t+\frac{
 %\slotNameAtRadial{comma separated angles/name}
 \slotNameAtRadial{\sTilt/a2,\sTilt+60/b2,\sTilt+120/c2}       %a2,b2,c2
 \slotNameAtRadial{\sTilt+90/a2',\sTilt+60+90/b2',\sTilt+30/c2'}    %a2',b2',c2'
-
 \rotor{4}{15}
 %\dotCrossEachPole{comma separated poles}
 \dotCrossEachPole{15,15+180}
@@ -572,14 +571,14 @@ e_c(t)&=E_0\cos\big(\omega_0 t-\frac{4}{3}\pi\big)=E_0\cos\big(\omega_0 t+\frac{
 \begin{subfigure}{0.50\textwidth}
 \centering
 \begin{tikzpicture}
-\draw (0,0) to [short,*-*] ++(0:0.75) to [short] ++(0,0.25)node[shift={(0+90:0.3)}]{a1'} to [inductor] ++(0:2)node[shift={(0+90:0.3)}]{a1} to [short,-*] ++(0,-0.25) to [short,-o] ++(0:0.5) node[right] {$a$};
-\draw (0:0.75) to [short] ++(0,-0.25)node[shift={(0-90:0.3)}]{a2'} to [inductor] ++(0:2)node[shift={(0-90:0.3)}]{a2} to [short] ++(0,0.25);
+\draw (0,0) to [short,*-*] ++(0:0.75) to [short] ++(0,0.25)node[shift={(0+90:0.3)}]{$a1'$} to [inductor] ++(0:2)node[shift={(0+90:0.3)}]{$a1$} to [short,-*] ++(0,-0.25) to [short,-o] ++(0:0.5) node[right] {$a$};
+\draw (0:0.75) to [short] ++(0,-0.25)node[shift={(0-90:0.3)}]{$a2'$} to [inductor] ++(0:2)node[shift={(0-90:0.3)}]{$a2$} to [short] ++(0,0.25);
 %
-\draw (0,0) to [short,-*] ++(120:0.75) to [short] ++(120+90:0.25)node[shift={(120+90:0.3)}]{b1'} to [inductor] ++(120:2)node[shift={(120+90:0.3)}]{b1} to [short,-*] ++(120-90:0.25) to [short,-o] ++(120:0.5) node [above]{$b$};
-\draw (120:0.75) to [short] ++(120-90:0.25)node[shift={(120-90:0.3)}]{b2'} to [inductor] ++(120:2)node[shift={(120-90:0.3)}]{b2} to [short] ++(120+90:0.25);
+\draw (0,0) to [short,-*] ++(120:0.75) to [short] ++(120+90:0.25)node[shift={(120+90:0.3)}]{$b1'$} to [inductor] ++(120:2)node[shift={(120+90:0.3)}]{$b1$} to [short,-*] ++(120-90:0.25) to [short,-o] ++(120:0.5) node [above]{$b$};
+\draw (120:0.75) to [short] ++(120-90:0.25)node[shift={(120-90:0.3)}]{$b2'$} to [inductor] ++(120:2)node[shift={(120-90:0.3)}]{$b2$} to [short] ++(120+90:0.25);
 %
-\draw (0,0) to [short,-*] ++(240:0.75) to [short] ++(240+90:0.25)node[shift={(240+90:0.3)}]{c1'} to [inductor] ++(240:2)node[shift={(240+90:0.3)}]{c1} to [short,-*] ++(240-90:0.25) to [short,-o] ++(240:0.5)node[below]{$c$};
-\draw (240:0.75) to [short] ++(240-90:0.25)node[shift={(240-90:0.3)}]{c2'} to [inductor] ++(240:2)node[shift={(240-90:0.3)}]{c2} to [short] ++(240+90:0.25);
+\draw (0,0) to [short,-*] ++(240:0.75) to [short] ++(240+90:0.25)node[shift={(240+90:0.3)}]{$c1'$} to [inductor] ++(240:2)node[shift={(240+90:0.3)}]{$c1$} to [short,-*] ++(240-90:0.25) to [short,-o] ++(240:0.5)node[below]{$c$};
+\draw (240:0.75) to [short] ++(240-90:0.25)node[shift={(240-90:0.3)}]{$c2'$} to [inductor] ++(240:2)node[shift={(240-90:0.3)}]{$c2$} to [short] ++(240+90:0.25);
 \end{tikzpicture}
 \end{subfigure}
 \caption{چار قطب، تین دوری معاصر مشین۔}
