@@ -97,8 +97,8 @@
 \contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {3}}معاصر مشین کا مساوی دور یا ریاضی نمونہ}{\arabicdigits {163}}%
 \contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {4}}برقی طاقت کی منتقلی}{\arabicdigits {164}}%
 \contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {5}}یکساں حال، برقرار چالو مشین کے خواص}{\arabicdigits {169}}%
-\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {5}.\arabicdigits {1}}معاصر جنریٹر: برقی بوجھ بالمقابل \ensuremath {I_m} کے خط}{\arabicdigits {169}}%
-\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {5}.\arabicdigits {2}}معاصر موٹر:\ensuremath {I_a} بالمقابل \ensuremath {I_m} کے خط}{\arabicdigits {171}}%
+\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {5}.\arabicdigits {1}}معاصر جنریٹر: برقی بوجھ بالمقابل \(I_m\) کے خط}{\arabicdigits {169}}%
+\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {5}.\arabicdigits {2}}معاصر موٹر:\(I_a\) بالمقابل \(I_m\) کے خط}{\arabicdigits {171}}%
 \contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {6}}کھلا دور اور قصر دور معائنہ}{\arabicdigits {173}}%
 \contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {6}.\arabicdigits {1}}کھلا دور معائنہ}{\arabicdigits {173}}%
 \contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {6}.\arabicdigits {2}}قصر دور معائنہ}{\arabicdigits {174}}%

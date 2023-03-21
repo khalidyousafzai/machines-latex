@@ -51,8 +51,10 @@
 \newcommand*{\شے}[1]{\item {#1}}			%used in    \item
 
 %maths commands
-\newcommand*{\عددی}[1]{\: \ensuremath{#1} \:} % in-line math & inside math mode
-\newcommand*{\عددیء}[1]{\ensuremath{#1}}
+%\newcommand*{\عددی}[1]{\: \ensuremath{#1} \:} % in-line math & inside math mode
+%\newcommand*{\عددیء}[1]{\ensuremath{#1}}
+\newcommand*{\عددی}[1]{\: \(#1\) \:} % in-line math & inside math mode
+\newcommand*{\عددیء}[1]{\(#1\)}
 %\newcommand*{\سمتیہ}[1]{\ensuremath{\bf{#1}}}
 \newcommand*{\سمتیہ}[1]{{\ensuremath{{\boldsymbol{#1}}}}}
 \newcommand*{\سمتیہز}[2]{{\ensuremath{{\boldsymbol{#1}_{#2}}}}}     %with non-vector subscript
@@ -65,6 +67,11 @@
 
 \newcommand*{\قریب}[1]{\mbox{#1}}
 \newcommand{\سن}[1]{؁\,\ensuremath{#1}}
+
+\newcommand{\kQuote}[1]{“#1”}
+\newcommand{\kquote}[1]{‘#1’}
+\newcommand{\قولء}[1]{’#1‘}
+\newcommand{\قول}[1]{”#1“}
 
 \renewcommand{\indexname}{فرہنگ}        %apparently did nothing
 
