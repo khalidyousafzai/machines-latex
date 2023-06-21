@@ -1,131 +1,131 @@
 \selectlanguage *{urdu}
-\contentsline {chapter}{دیباچہ}{vii}%
+\contentsline {chapter}{دیباچہ}{vii}{}%
 \bgroup 
 \selectlanguage *{english}
 \egroup 
 \selectlanguage *{urdu}
-\contentsline {chapter}{\numberline {\arabicdigits {1}}بنیادی حقائق}{\arabicdigits {1}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {1}}بنیادی اکائیاں}{\arabicdigits {1}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {2}}غیر سمتی}{\arabicdigits {1}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {3}}سمتیہ}{\arabicdigits {1}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {4}}محدد}{\arabicdigits {2}}%
-\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {4}.\arabicdigits {1}}کارتیسی محددی نظام}{\arabicdigits {2}}%
-\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {4}.\arabicdigits {2}}نلکی محددی نظام}{\arabicdigits {4}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {5}}سمتیہ رقبہ}{\arabicdigits {6}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {6}}رقبہ عمودی تراش}{\arabicdigits {8}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {7}}برقی اور مقناطیسی میدان}{\arabicdigits {9}}%
-\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {7}.\arabicdigits {1}}برقی میدان اور برقی میدان کی شدت}{\arabicdigits {9}}%
-\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {7}.\arabicdigits {2}}مقناطیسی میدان اور مقناطیسی میدان کی شدت}{\arabicdigits {10}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {8}}سطحی اور حجمی کثافت}{\arabicdigits {10}}%
-\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {8}.\arabicdigits {1}}سطحی کثافت}{\arabicdigits {10}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {9}}حجمی کثافت}{\arabicdigits {11}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {10}}صلیبی ضرب اور ضرب نقطہ}{\arabicdigits {12}}%
-\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {10}.\arabicdigits {1}}صلیبی ضرب}{\arabicdigits {12}}%
-\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {10}.\arabicdigits {2}}نقطی ضرب}{\arabicdigits {13}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {11}}تفرق اور جزوی تفرق}{\arabicdigits {15}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {12}}خطی تکمل}{\arabicdigits {16}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {13}}سطحی تکمل}{\arabicdigits {16}}%
-\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {14}} دوری سمتیہ}{\arabicdigits {18}}%
-\contentsline {chapter}{\numberline {\arabicdigits {2}}مقناطیسی ادوار}{\arabicdigits {21}}%
-\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {1}}مزاحمت اور ہچکچاہٹ}{\arabicdigits {21}}%
-\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {2}}کثافتِ برقی رو اور برقی میدان کی شدت}{\arabicdigits {22}}%
-\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {3}}برقی ادوار}{\arabicdigits {23}}%
-\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {4}}مقناطیسی دور حصہ اول}{\arabicdigits {24}}%
-\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {5}}کثافتِ مقناطیسی بہاو اور مقناطیسی میدان کی شدت}{\arabicdigits {26}}%
-\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {6}}مقناطیسی دور حصہ دوم}{\arabicdigits {29}}%
-\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {7}}خود امالہ ، مشترکہ امالہ اور توانائی}{\arabicdigits {32}}%
-\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {8}}مقناطیسی مادہ کے خواص}{\arabicdigits {38}}%
+\contentsline {chapter}{\numberline {\arabicdigits {1}}بنیادی حقائق}{\arabicdigits {1}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {1}}بنیادی اکائیاں}{\arabicdigits {1}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {2}}غیر سمتی}{\arabicdigits {1}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {3}}سمتیہ}{\arabicdigits {1}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {4}}محدد}{\arabicdigits {2}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {4}.\arabicdigits {1}}کارتیسی محددی نظام}{\arabicdigits {2}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {4}.\arabicdigits {2}}نلکی محددی نظام}{\arabicdigits {4}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {5}}سمتیہ رقبہ}{\arabicdigits {6}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {6}}رقبہ عمودی تراش}{\arabicdigits {8}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {7}}برقی اور مقناطیسی میدان}{\arabicdigits {9}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {7}.\arabicdigits {1}}برقی میدان اور برقی میدان کی شدت}{\arabicdigits {9}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {7}.\arabicdigits {2}}مقناطیسی میدان اور مقناطیسی میدان کی شدت}{\arabicdigits {10}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {8}}سطحی اور حجمی کثافت}{\arabicdigits {10}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {8}.\arabicdigits {1}}سطحی کثافت}{\arabicdigits {10}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {9}}حجمی کثافت}{\arabicdigits {11}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {10}}صلیبی ضرب اور ضرب نقطہ}{\arabicdigits {12}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {10}.\arabicdigits {1}}صلیبی ضرب}{\arabicdigits {12}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {1}.\arabicdigits {10}.\arabicdigits {2}}نقطی ضرب}{\arabicdigits {13}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {11}}تفرق اور جزوی تفرق}{\arabicdigits {15}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {12}}خطی تکمل}{\arabicdigits {16}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {13}}سطحی تکمل}{\arabicdigits {16}}{}%
+\contentsline {section}{\numberline {\arabicdigits {1}.\arabicdigits {14}} دوری سمتیہ}{\arabicdigits {18}}{}%
+\contentsline {chapter}{\numberline {\arabicdigits {2}}مقناطیسی ادوار}{\arabicdigits {21}}{}%
+\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {1}}مزاحمت اور ہچکچاہٹ}{\arabicdigits {21}}{}%
+\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {2}}کثافتِ برقی رو اور برقی میدان کی شدت}{\arabicdigits {22}}{}%
+\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {3}}برقی ادوار}{\arabicdigits {23}}{}%
+\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {4}}مقناطیسی دور حصہ اول}{\arabicdigits {24}}{}%
+\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {5}}کثافتِ مقناطیسی بہاو اور مقناطیسی میدان کی شدت}{\arabicdigits {26}}{}%
+\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {6}}مقناطیسی دور حصہ دوم}{\arabicdigits {29}}{}%
+\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {7}}خود امالہ ، مشترکہ امالہ اور توانائی}{\arabicdigits {32}}{}%
+\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {8}}مقناطیسی مادہ کے خواص}{\arabicdigits {38}}{}%
 \bgroup 
 \selectlanguage *{english}
 \egroup 
 \selectlanguage *{urdu}
-\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {9}}ہیجان شدہ لچھا}{\arabicdigits {41}}%
+\contentsline {section}{\numberline {\arabicdigits {2}.\arabicdigits {9}}ہیجان شدہ لچھا}{\arabicdigits {41}}{}%
 \bgroup 
 \selectlanguage *{english}
 \egroup 
 \selectlanguage *{urdu}
-\contentsline {chapter}{\numberline {\arabicdigits {3}}ٹرانسفارمر}{\arabicdigits {47}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {1}}ٹرانسفارمر کی اہمیت}{\arabicdigits {48}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {2}}ٹرانسفارمر کے اقسام}{\arabicdigits {50}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {3}}امالی برقی دباو}{\arabicdigits {51}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {4}}ہیجان انگیز برقی رو اور قالبی ضیاع}{\arabicdigits {52}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {5}}تبادلہ برقی دباو اور تبادلہ برقی رو کے خواص}{\arabicdigits {55}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {6}}ثانوی جانب بوجھ کا ابتدائی جانب اثر}{\arabicdigits {58}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {7}}ٹرانسفارمر کی علامت پر نقطوں کا مطلب}{\arabicdigits {59}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {8}}رکاوٹ کا تبادلہ}{\arabicdigits {60}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {9}}ٹرانسفارمر کے وولٹ و ایمپیئر}{\arabicdigits {64}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {10}}ٹرانسفارمر کے امالہ اور مساوی ادوار}{\arabicdigits {66}}%
-\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {1}}لچھے کی مزاحمت اور متعاملہ کی علیحدگی}{\arabicdigits {66}}%
-\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {2}}رِستا امالہ}{\arabicdigits {68}}%
-\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {3}}ثانوی برقی رو اور قالب کے اثرات}{\arabicdigits {68}}%
-\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {4}}ثانوی لچھے کا امالی برقی دباو}{\arabicdigits {69}}%
-\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {5}}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{\arabicdigits {70}}%
-\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {6}}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{\arabicdigits {70}}%
-\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {7}}ٹرانسفارمر کے سادہ ترین مساوی ادوار}{\arabicdigits {72}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {11}}کھلے دور معائنہ اور قصر دور معائنہ}{\arabicdigits {74}}%
-\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {11}.\arabicdigits {1}}کھلا دور معائنہ}{\arabicdigits {74}}%
-\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {11}.\arabicdigits {2}} قصر دور معائنہ}{\arabicdigits {77}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {12}}تین دوری ٹرانسفارمر}{\arabicdigits {79}}%
-\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {13}}ٹرانسفارمر چالو کرتے لمحہ زیادہ ہیجان انگیز برقی رو کا گزر}{\arabicdigits {86}}%
-\contentsline {chapter}{\numberline {\arabicdigits {4}}برقی اور میکانی توانائی کا باہمی تبادلہ}{\arabicdigits {89}}%
-\contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {1}}مقناطیسی نظام میں قوت اور قوت مروڑ}{\arabicdigits {89}}%
-\contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {2}}تبادلہ توانائی والا ایک لچھے کا نظام}{\arabicdigits {95}}%
-\contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {3}}توانائی اور ہم توانائی}{\arabicdigits {99}}%
-\contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {4}}متعدد لچھوں کا مقناطیسی نظام}{\arabicdigits {103}}%
-\contentsline {chapter}{\numberline {\arabicdigits {5}}گھومتے مشین کے بنیادی اصول}{\arabicdigits {111}}%
-\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {1}}قانون فیراڈے}{\arabicdigits {111}}%
-\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {2}}معاصر مشین}{\arabicdigits {112}}%
-\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {3}}محرک برقی دباو}{\arabicdigits {121}}%
-\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {4}}پھیلے لچھے اور سائن نما مقناطیسی دباو}{\arabicdigits {123}}%
-\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {4}.\arabicdigits {1}}بدلتا رو مشین}{\arabicdigits {125}}%
-\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {5}}مقناطیسی دباو کی گھومتی امواج}{\arabicdigits {132}}%
-\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {5}.\arabicdigits {1}}ایک دور کی لپٹی مشین}{\arabicdigits {132}}%
-\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {5}.\arabicdigits {2}}تین دور کی لپٹی مشین کا تحلیلی تجزیہ}{\arabicdigits {134}}%
-\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {5}.\arabicdigits {3}}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{\arabicdigits {138}}%
-\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {6}}محرک برقی دباو}{\arabicdigits {141}}%
-\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {6}.\arabicdigits {1}}بدلتا رو برقی جنریٹر}{\arabicdigits {141}}%
-\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {6}.\arabicdigits {2}}یک سمت رو برقی جنریٹر}{\arabicdigits {146}}%
-\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {7}}ہموار قطب مشینوں میں قوت مروڑ}{\arabicdigits {146}}%
-\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {7}.\arabicdigits {1}}میکانی قوت مروڑ بذریعہ ترکیب توانائی}{\arabicdigits {146}}%
-\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {7}.\arabicdigits {2}}میکانی قوت مروڑ بذریعہ مقناطیسی بہاو}{\arabicdigits {148}}%
-\contentsline {chapter}{\numberline {\arabicdigits {6}}یکساں حال، برقرار چالو معاصر مشین}{\arabicdigits {155}}%
-\contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {1}}متعدد دوری معاصر مشین}{\arabicdigits {156}}%
-\contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {2}}معاصر مشین کے امالہ}{\arabicdigits {158}}%
-\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {2}.\arabicdigits {1}}خود امالہ}{\arabicdigits {159}}%
-\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {2}.\arabicdigits {2}}مشترکہ امالہ}{\arabicdigits {160}}%
-\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {2}.\arabicdigits {3}}معاصر امالہ}{\arabicdigits {161}}%
-\contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {3}}معاصر مشین کا مساوی دور یا ریاضی نمونہ}{\arabicdigits {163}}%
-\contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {4}}برقی طاقت کی منتقلی}{\arabicdigits {164}}%
-\contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {5}}یکساں حال، برقرار چالو مشین کے خواص}{\arabicdigits {169}}%
-\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {5}.\arabicdigits {1}}معاصر جنریٹر: برقی بوجھ بالمقابل \(I_m\) کے خط}{\arabicdigits {169}}%
-\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {5}.\arabicdigits {2}}معاصر موٹر:\(I_a\) بالمقابل \(I_m\) کے خط}{\arabicdigits {171}}%
-\contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {6}}کھلا دور اور قصر دور معائنہ}{\arabicdigits {173}}%
-\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {6}.\arabicdigits {1}}کھلا دور معائنہ}{\arabicdigits {173}}%
-\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {6}.\arabicdigits {2}}قصر دور معائنہ}{\arabicdigits {174}}%
-\contentsline {chapter}{\numberline {\arabicdigits {7}}امالی مشین}{\arabicdigits {183}}%
-\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {1}}ساکن لچھوں کی گھومتی مقناطیسی موج}{\arabicdigits {183}}%
-\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {2}}مشین کا سرکاو اور گھومتی امواج پر تبصرہ}{\arabicdigits {184}}%
-\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {3}}ساکن لچھوں میں امالی برقی دباو}{\arabicdigits {186}}%
-\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {4}}ساکن لچھوں کی موج کا گھومتے لچھوں کے ساتھ اضافی رفتار اور ان میں پیدا امالی برقی دباو}{\arabicdigits {186}}%
-\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {5}}گھومتے لچھوں کی گھومتے مقناطیسی دباو کی موج}{\arabicdigits {189}}%
-\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {6}}گھومتے لچھوں کے مساوی فرضی ساکن لچھے}{\arabicdigits {190}}%
-\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {7}}امالی موٹر کا مساوی برقی دور}{\arabicdigits {191}}%
-\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {8}}مساوی برقی دور پر غور}{\arabicdigits {196}}%
-\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {9}}امالی موٹر کا مساوی تھونن دور یا ریاضی نمونہ}{\arabicdigits {199}}%
-\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {10}}پنجرہ نما امالی موٹر}{\arabicdigits {205}}%
-\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {11}}بے بوجھ موٹر اور جامد موٹر کے معائنہ }{\arabicdigits {205}}%
-\contentsline {subsection}{\numberline {\arabicdigits {7}.\arabicdigits {11}.\arabicdigits {1}}بے بوجھ موٹر کا معائنہ}{\arabicdigits {205}}%
-\contentsline {subsection}{\numberline {\arabicdigits {7}.\arabicdigits {11}.\arabicdigits {2}}جامد موٹر کا معائنہ}{\arabicdigits {207}}%
-\contentsline {chapter}{\numberline {\arabicdigits {8}}یک سمت رو مشین}{\arabicdigits {213}}%
-\contentsline {section}{\numberline {\arabicdigits {8}.\arabicdigits {1}}میکانی سمت کار کی بنیادی کارکردگی}{\arabicdigits {213}}%
-\contentsline {subsection}{\numberline {\arabicdigits {8}.\arabicdigits {1}.\arabicdigits {1}}میکانی سمت کار کی تفصیل}{\arabicdigits {215}}%
-\contentsline {section}{\numberline {\arabicdigits {8}.\arabicdigits {2}}یک سمت جنریٹر کا برقی دباو}{\arabicdigits {219}}%
-\contentsline {section}{\numberline {\arabicdigits {8}.\arabicdigits {3}}قوت مروڑ}{\arabicdigits {221}}%
-\contentsline {section}{\numberline {\arabicdigits {8}.\arabicdigits {4}}بیرونی ہیجان اور خود ہیجان یک سمت جنریٹر}{\arabicdigits {222}}%
-\contentsline {section}{\numberline {\arabicdigits {8}.\arabicdigits {5}}یک سمت مشین کی کارکردگی کے خط}{\arabicdigits {226}}%
-\contentsline {subsection}{\numberline {\arabicdigits {8}.\arabicdigits {5}.\arabicdigits {1}}حاصل برقی دباو بالمقابل برقی بوجھ}{\arabicdigits {226}}%
-\contentsline {subsection}{\numberline {\arabicdigits {8}.\arabicdigits {5}.\arabicdigits {2}}رفتار بالمقابل قوت مروڑ}{\arabicdigits {228}}%
-\contentsline {chapter}{فرہنگ}{\arabicdigits {235}}%
+\contentsline {chapter}{\numberline {\arabicdigits {3}}ٹرانسفارمر}{\arabicdigits {47}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {1}}ٹرانسفارمر کی اہمیت}{\arabicdigits {48}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {2}}ٹرانسفارمر کے اقسام}{\arabicdigits {50}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {3}}امالی برقی دباو}{\arabicdigits {51}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {4}}ہیجان انگیز برقی رو اور قالبی ضیاع}{\arabicdigits {52}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {5}}تبادلہ برقی دباو اور تبادلہ برقی رو کے خواص}{\arabicdigits {55}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {6}}ثانوی جانب بوجھ کا ابتدائی جانب اثر}{\arabicdigits {58}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {7}}ٹرانسفارمر کی علامت پر نقطوں کا مطلب}{\arabicdigits {59}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {8}}رکاوٹ کا تبادلہ}{\arabicdigits {60}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {9}}ٹرانسفارمر کے وولٹ و ایمپیئر}{\arabicdigits {64}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {10}}ٹرانسفارمر کے امالہ اور مساوی ادوار}{\arabicdigits {66}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {1}}لچھے کی مزاحمت اور متعاملہ کی علیحدگی}{\arabicdigits {66}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {2}}رِستا امالہ}{\arabicdigits {68}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {3}}ثانوی برقی رو اور قالب کے اثرات}{\arabicdigits {68}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {4}}ثانوی لچھے کا امالی برقی دباو}{\arabicdigits {69}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {5}}ثانوی لچھے کی مزاحمت اور متعاملہ کے اثرات}{\arabicdigits {70}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {6}}رکاوٹ کا ابتدائی یا ثانوی جانب تبادلہ}{\arabicdigits {70}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {10}.\arabicdigits {7}}ٹرانسفارمر کے سادہ ترین مساوی ادوار}{\arabicdigits {72}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {11}}کھلے دور معائنہ اور قصر دور معائنہ}{\arabicdigits {74}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {11}.\arabicdigits {1}}کھلا دور معائنہ}{\arabicdigits {74}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {3}.\arabicdigits {11}.\arabicdigits {2}} قصر دور معائنہ}{\arabicdigits {77}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {12}}تین دوری ٹرانسفارمر}{\arabicdigits {79}}{}%
+\contentsline {section}{\numberline {\arabicdigits {3}.\arabicdigits {13}}ٹرانسفارمر چالو کرتے لمحہ زیادہ ہیجان انگیز برقی رو کا گزر}{\arabicdigits {86}}{}%
+\contentsline {chapter}{\numberline {\arabicdigits {4}}برقی اور میکانی توانائی کا باہمی تبادلہ}{\arabicdigits {89}}{}%
+\contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {1}}مقناطیسی نظام میں قوت اور قوت مروڑ}{\arabicdigits {89}}{}%
+\contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {2}}تبادلہ توانائی والا ایک لچھے کا نظام}{\arabicdigits {95}}{}%
+\contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {3}}توانائی اور ہم توانائی}{\arabicdigits {99}}{}%
+\contentsline {section}{\numberline {\arabicdigits {4}.\arabicdigits {4}}متعدد لچھوں کا مقناطیسی نظام}{\arabicdigits {103}}{}%
+\contentsline {chapter}{\numberline {\arabicdigits {5}}گھومتے مشین کے بنیادی اصول}{\arabicdigits {111}}{}%
+\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {1}}قانون فیراڈے}{\arabicdigits {111}}{}%
+\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {2}}معاصر مشین}{\arabicdigits {112}}{}%
+\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {3}}محرک برقی دباو}{\arabicdigits {121}}{}%
+\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {4}}پھیلے لچھے اور سائن نما مقناطیسی دباو}{\arabicdigits {123}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {4}.\arabicdigits {1}}بدلتا رو مشین}{\arabicdigits {125}}{}%
+\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {5}}مقناطیسی دباو کی گھومتی امواج}{\arabicdigits {132}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {5}.\arabicdigits {1}}ایک دور کی لپٹی مشین}{\arabicdigits {132}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {5}.\arabicdigits {2}}تین دور کی لپٹی مشین کا تحلیلی تجزیہ}{\arabicdigits {134}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {5}.\arabicdigits {3}}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{\arabicdigits {138}}{}%
+\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {6}}محرک برقی دباو}{\arabicdigits {141}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {6}.\arabicdigits {1}}بدلتا رو برقی جنریٹر}{\arabicdigits {141}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {6}.\arabicdigits {2}}یک سمت رو برقی جنریٹر}{\arabicdigits {146}}{}%
+\contentsline {section}{\numberline {\arabicdigits {5}.\arabicdigits {7}}ہموار قطب مشینوں میں قوت مروڑ}{\arabicdigits {146}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {7}.\arabicdigits {1}}میکانی قوت مروڑ بذریعہ ترکیب توانائی}{\arabicdigits {146}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {5}.\arabicdigits {7}.\arabicdigits {2}}میکانی قوت مروڑ بذریعہ مقناطیسی بہاو}{\arabicdigits {148}}{}%
+\contentsline {chapter}{\numberline {\arabicdigits {6}}یکساں حال، برقرار چالو معاصر مشین}{\arabicdigits {155}}{}%
+\contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {1}}متعدد دوری معاصر مشین}{\arabicdigits {156}}{}%
+\contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {2}}معاصر مشین کے امالہ}{\arabicdigits {158}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {2}.\arabicdigits {1}}خود امالہ}{\arabicdigits {159}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {2}.\arabicdigits {2}}مشترکہ امالہ}{\arabicdigits {160}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {2}.\arabicdigits {3}}معاصر امالہ}{\arabicdigits {161}}{}%
+\contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {3}}معاصر مشین کا مساوی دور یا ریاضی نمونہ}{\arabicdigits {163}}{}%
+\contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {4}}برقی طاقت کی منتقلی}{\arabicdigits {164}}{}%
+\contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {5}}یکساں حال، برقرار چالو مشین کے خواص}{\arabicdigits {169}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {5}.\arabicdigits {1}}معاصر جنریٹر: برقی بوجھ بالمقابل \(I_m\) کے خط}{\arabicdigits {169}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {5}.\arabicdigits {2}}معاصر موٹر:\(I_a\) بالمقابل \(I_m\) کے خط}{\arabicdigits {171}}{}%
+\contentsline {section}{\numberline {\arabicdigits {6}.\arabicdigits {6}}کھلا دور اور قصر دور معائنہ}{\arabicdigits {173}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {6}.\arabicdigits {1}}کھلا دور معائنہ}{\arabicdigits {173}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {6}.\arabicdigits {6}.\arabicdigits {2}}قصر دور معائنہ}{\arabicdigits {174}}{}%
+\contentsline {chapter}{\numberline {\arabicdigits {7}}امالی مشین}{\arabicdigits {183}}{}%
+\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {1}}ساکن لچھوں کی گھومتی مقناطیسی موج}{\arabicdigits {183}}{}%
+\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {2}}مشین کا سرکاو اور گھومتی امواج پر تبصرہ}{\arabicdigits {184}}{}%
+\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {3}}ساکن لچھوں میں امالی برقی دباو}{\arabicdigits {186}}{}%
+\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {4}}ساکن لچھوں کی موج کا گھومتے لچھوں کے ساتھ اضافی رفتار اور ان میں پیدا امالی برقی دباو}{\arabicdigits {186}}{}%
+\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {5}}گھومتے لچھوں کی گھومتے مقناطیسی دباو کی موج}{\arabicdigits {189}}{}%
+\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {6}}گھومتے لچھوں کے مساوی فرضی ساکن لچھے}{\arabicdigits {190}}{}%
+\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {7}}امالی موٹر کا مساوی برقی دور}{\arabicdigits {191}}{}%
+\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {8}}مساوی برقی دور پر غور}{\arabicdigits {196}}{}%
+\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {9}}امالی موٹر کا مساوی تھونن دور یا ریاضی نمونہ}{\arabicdigits {199}}{}%
+\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {10}}پنجرہ نما امالی موٹر}{\arabicdigits {205}}{}%
+\contentsline {section}{\numberline {\arabicdigits {7}.\arabicdigits {11}}بے بوجھ موٹر اور جامد موٹر کے معائنہ }{\arabicdigits {205}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {7}.\arabicdigits {11}.\arabicdigits {1}}بے بوجھ موٹر کا معائنہ}{\arabicdigits {205}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {7}.\arabicdigits {11}.\arabicdigits {2}}جامد موٹر کا معائنہ}{\arabicdigits {207}}{}%
+\contentsline {chapter}{\numberline {\arabicdigits {8}}یک سمت رو مشین}{\arabicdigits {213}}{}%
+\contentsline {section}{\numberline {\arabicdigits {8}.\arabicdigits {1}}میکانی سمت کار کی بنیادی کارکردگی}{\arabicdigits {213}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {8}.\arabicdigits {1}.\arabicdigits {1}}میکانی سمت کار کی تفصیل}{\arabicdigits {215}}{}%
+\contentsline {section}{\numberline {\arabicdigits {8}.\arabicdigits {2}}یک سمت جنریٹر کا برقی دباو}{\arabicdigits {219}}{}%
+\contentsline {section}{\numberline {\arabicdigits {8}.\arabicdigits {3}}قوت مروڑ}{\arabicdigits {221}}{}%
+\contentsline {section}{\numberline {\arabicdigits {8}.\arabicdigits {4}}بیرونی ہیجان اور خود ہیجان یک سمت جنریٹر}{\arabicdigits {222}}{}%
+\contentsline {section}{\numberline {\arabicdigits {8}.\arabicdigits {5}}یک سمت مشین کی کارکردگی کے خط}{\arabicdigits {226}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {8}.\arabicdigits {5}.\arabicdigits {1}}حاصل برقی دباو بالمقابل برقی بوجھ}{\arabicdigits {226}}{}%
+\contentsline {subsection}{\numberline {\arabicdigits {8}.\arabicdigits {5}.\arabicdigits {2}}رفتار بالمقابل قوت مروڑ}{\arabicdigits {228}}{}%
+\contentsline {chapter}{فرہنگ}{\arabicdigits {235}}{}%
 \bgroup 
 \selectlanguage *{english}
 \egroup 
