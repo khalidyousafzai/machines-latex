@@ -1,445 +1,445 @@
-\indexentry{scalar}{1}
-\indexentry{غیر سمتی}{1}
-\indexentry{vector}{1}
-\indexentry{سمتیہ}{1}
-\indexentry{unit vector}{2}
-\indexentry{اکائی سمتیہ}{2}
-\indexentry{orthonormal}{2}
-\indexentry{سمتیہ!عمودی اکائی}{2}
-\indexentry{cartesian system}{3}
-\indexentry{محدد!کارتیسی}{3}
-\indexentry{cylindrical coordinates}{4}
-\indexentry{محدد!نلکی}{4}
-\indexentry{cross section}{8}
-\indexentry{عمودی تراش}{8}
-\indexentry{عمودی تراش!رقبہ}{8}
-\indexentry{charge}{9}
-\indexentry{برقی بار}{9}
-\indexentry{Coulomb's law}{9}
-\indexentry{قانون!کولمب}{9}
-\indexentry{برقی میدان}{9}
-\indexentry{electric field!intensity}{9}
-\indexentry{برقی میدان!شدت}{9}
-\indexentry{magnetic field!intensity}{10}
-\indexentry{مقناطیسی میدان!شدت}{10}
-\indexentry{surface density}{10}
-\indexentry{سطحی کثافت}{10}
-\indexentry{cross product}{12}
-\indexentry{ضرب صلیبی}{12}
-\indexentry{dot product}{13}
-\indexentry{ضرب!نقطہ}{13}
-\indexentry{differentiation}{15}
-\indexentry{تفرق}{15}
-\indexentry{تفرق!جزوی}{15}
-\indexentry{طول موج}{16}
-\indexentry{rms}{16}
-\indexentry{موثر}{16}
-\indexentry{Euler}{18}
-\indexentry{یولر مساوات}{18}
-\indexentry{phasor}{19}
-\indexentry{دوری سمتیہ}{19}
-\indexentry{leading}{19}
-\indexentry{پیش زاویہ}{19}
-\indexentry{lagging}{19}
-\indexentry{تاخیری زاویہ}{19}
-\indexentry{phase difference}{19}
-\indexentry{زاویائی فرق}{19}
-\indexentry{power factor angle}{19}
-\indexentry{زاویہ جزو طاقت}{19}
-\indexentry{power factor}{19}
-\indexentry{جزو طاقت}{19}
-\indexentry{power factor!leading}{19}
-\indexentry{جزو طاقت!پیش}{19}
-\indexentry{power factor!lagging}{19}
-\indexentry{جزو طاقت!تاخیری}{19}
-\indexentry{single phase}{20}
-\indexentry{یک دوری}{20}
-\indexentry{resistance}{21}
-\indexentry{مزاحمت}{21}
-\indexentry{reluctance}{21}
-\indexentry{ہچکچاہٹ}{21}
-\indexentry{conductivity}{21}
-\indexentry{موصلیت}{21}
-\indexentry{magnetic constant}{21}
-\indexentry{permeability}{21}
-\indexentry{مقناطیسی مستقل}{21}
-\indexentry{permeability!relative}{22}
-\indexentry{relative permeability}{22}
-\indexentry{مقناطیسی مستقل!جزو}{22}
-\indexentry{قانون!اوہم}{22}
-\indexentry{Ohm's law}{22}
-\indexentry{کثافت!برقی رو}{23}
-\indexentry{برقی میدان!شدت}{23}
-\indexentry{تانبا}{23}
-\indexentry{برقی رو}{23}
-\indexentry{برقی دباو}{23}
-\indexentry{mmf}{24}
-\indexentry{مقناطیسی دباو}{24}
-\indexentry{ہچکچاہٹ}{24}
-\indexentry{flux}{24}
-\indexentry{مقناطیسی بہاو}{24}
-\indexentry{مقناطیسی مستقل!جزو}{26}
-\indexentry{magnetic core}{26}
-\indexentry{مقناطیسی قالب}{26}
-\indexentry{laminations}{26}
-\indexentry{پتری}{26}
-\indexentry{ampere-turn}{27}
-\indexentry{ایمپیئر و چکر}{27}
-\indexentry{Weber}{27}
-\indexentry{ویبر}{27}
-\indexentry{magnetic field!intensity}{27}
-\indexentry{مقناطیسی میدان!شدت}{27}
-\indexentry{magnetic flux!density}{27}
-\indexentry{مقناطیسی بہاو!کثافت}{27}
-\indexentry{Tesla}{28}
-\indexentry{ٹسلا}{28}
-\indexentry{stator}{31}
-\indexentry{ساکن حصہ}{31}
-\indexentry{rotor}{31}
-\indexentry{گھومتا حصہ}{31}
-\indexentry{Faraday's law}{32}
-\indexentry{فیراڈے!قانون}{32}
-\indexentry{induced voltage}{32}
-\indexentry{امالی برقی دباو}{32}
-\indexentry{ْسر دور}{32}
-\indexentry{ویبر-چکر}{33}
-\indexentry{ارتباط بہاو}{33}
-\indexentry{inductance}{33}
-\indexentry{امالہ}{33}
-\indexentry{Henry}{33}
-\indexentry{Henry}{33}
-\indexentry{لچھا!پیچدار}{34}
-\indexentry{self inductance}{36}
-\indexentry{خود امالہ}{36}
-\indexentry{mutual inductance}{36}
-\indexentry{مشترکہ امالہ}{36}
-\indexentry{self flux linkage}{36}
-\indexentry{خود ارتباط بہاو}{36}
-\indexentry{mutual flux linkage}{36}
-\indexentry{مشترکہ ارتباط امالہ}{36}
-\indexentry{Watt}{37}
-\indexentry{واٹ}{37}
-\indexentry{power}{37}
-\indexentry{طاقت}{37}
-\indexentry{Joule}{37}
-\indexentry{جاول}{37}
-\indexentry{energy}{37}
-\indexentry{توانائی}{37}
-\indexentry{magnetic flux!residual}{39}
-\indexentry{کثافت مقناطیسی بہاو!بقایا}{39}
-\indexentry{coercivity}{39}
-\indexentry{مقناطیس!خاتم شدت}{39}
-\indexentry{hysteresis loop}{39}
-\indexentry{مقناطیس!چال کا دائرہ}{39}
-\indexentry{سیرابیت}{39}
-\indexentry{saturation}{39}
-\indexentry{induced voltage}{42}
-\indexentry{امالی!برقی دباو}{42}
-\indexentry{rms}{42}
-\indexentry{موثر}{42}
-\indexentry{excitation current}{44}
-\indexentry{برقی رو!ہیجان انگیز}{44}
-\indexentry{مقناطیسی چال}{44}
-\indexentry{core}{47}
-\indexentry{مقناطیسی قالب}{47}
-\indexentry{coil!primary}{47}
-\indexentry{ابتدائی!لچھا}{47}
-\indexentry{لچھا!ابتدائی}{47}
-\indexentry{primary!side}{47}
-\indexentry{ابتدائی!جانب}{47}
-\indexentry{side!secondary}{47}
-\indexentry{ثانوی جانب}{47}
-\indexentry{coil!secondary}{47}
-\indexentry{لچھا!ثانوی}{47}
-\indexentry{coil!low voltage}{47}
-\indexentry{لچھا!کم برقی دباو}{47}
-\indexentry{coil!high voltage}{47}
-\indexentry{لچھا!زیادہ برقی دباو}{47}
-\indexentry{برقی دباو!تبادلہ}{48}
-\indexentry{step down transformer}{50}
-\indexentry{ٹرانسفارمر!دباو گھٹاتا}{50}
-\indexentry{step up transformer}{50}
-\indexentry{ٹرانسفارمر!دباو بڑھاتا}{50}
-\indexentry{three phase}{50}
-\indexentry{تین دوری}{50}
-\indexentry{single phase}{50}
-\indexentry{یک دوری}{50}
-\indexentry{ٹرانسفارمر!برقی دباو والا}{50}
-\indexentry{ٹرانسفارمر!رو والا}{50}
-\indexentry{electrical rating}{50}
-\indexentry{برقی سکت}{50}
-\indexentry{ٹرانسفارمر!خلائی قالب}{50}
-\indexentry{transformer!communication}{50}
-\indexentry{ٹرانسفارمر!ذرائع ابلاغ}{50}
-\indexentry{transformer!air core}{50}
-\indexentry{بے بوجھ}{51}
-\indexentry{excitation current}{51}
-\indexentry{ہیجان انگیز برقی رو}{51}
-\indexentry{ہیجان انگیز!برقی دباو}{52}
-\indexentry{excite}{52}
-\indexentry{ہیجان}{52}
-\indexentry{excitation current}{52}
-\indexentry{ہیجان انگیز!برقی رو}{52}
-\indexentry{excited coil}{52}
-\indexentry{ہیجان!لچھا}{52}
-\indexentry{excitation voltage}{52}
-\indexentry{induced voltage}{52}
-\indexentry{امالی برقی دباو}{52}
-\indexentry{electromotive force}{52}
-\indexentry{محرک برقی دباو}{52}
-\indexentry{بھنور نما!برقی رو}{52}
-\indexentry{eddy currents}{52}
-\indexentry{core loss}{52}
-\indexentry{قالبی ضیاع}{52}
-\indexentry{eddy current loss}{52}
-\indexentry{بھنور نما!ضیاع}{52}
-\indexentry{enamel}{52}
-\indexentry{روغن}{52}
-\indexentry{laminations}{52}
-\indexentry{پتریاں}{52}
-\indexentry{E,I}{52}
-\indexentry{ایک، تین پتریاں}{52}
-\indexentry{Fourier series}{54}
-\indexentry{فوریئر تسلسل}{54}
-\indexentry{harmonic components}{54}
-\indexentry{موسیقائی اجزاء}{54}
-\indexentry{fundamental component}{54}
-\indexentry{بنیادی جزو}{54}
-\indexentry{core loss component}{54}
-\indexentry{قالبی ضیاع!جزو}{54}
-\indexentry{magnetizing current}{54}
-\indexentry{مقناطیسی برقی رو}{54}
-\indexentry{transformer!ideal}{55}
-\indexentry{ٹرانسفارمر!کامل}{55}
-\indexentry{voltage!transformation}{56}
-\indexentry{برقی دباو!تبادلہ}{56}
-\indexentry{current!transformation}{56}
-\indexentry{برقی رو!تبادلہ}{56}
-\indexentry{ٹرانسفارمر!بوجھ بردار}{58}
-\indexentry{impedance transformation}{61}
-\indexentry{تبادلہ!رکاوٹ}{61}
-\indexentry{VA}{65}
-\indexentry{volt-ampere}{65}
-\indexentry{وولٹ و ایمپیئر}{65}
-\indexentry{ٹرانسفارمر!تیل}{65}
-\indexentry{transformer!oil}{65}
-\indexentry{magnetic flux!leakage}{68}
-\indexentry{مقناطیسی بہاو!رستا}{68}
-\indexentry{leakage reactance}{68}
-\indexentry{رستا!متعاملہ}{68}
-\indexentry{leakage inductance}{68}
-\indexentry{رستا!امالہ}{68}
-\indexentry{تاخیری}{69}
-\indexentry{model}{70}
-\indexentry{ریاضی نمونہ}{70}
-\indexentry{open circuit test}{74}
-\indexentry{معائنہ!کھلا دور}{74}
-\indexentry{بناوٹ}{74}
-\indexentry{three phase}{79}
-\indexentry{تین دوری}{79}
-\indexentry{delta connected}{80}
-\indexentry{جوڑ!تکونی}{80}
-\indexentry{تکونی جوڑ}{80}
-\indexentry{star connected}{80}
-\indexentry{جوڑ!ستارہ نما}{80}
-\indexentry{ستارہ نما جوڑ}{80}
-\indexentry{ٹھنڈی تار}{82}
-\indexentry{earth}{82}
-\indexentry{زمین}{82}
-\indexentry{ground wire}{82}
-\indexentry{زمینی تار}{82}
-\indexentry{گرم تار}{82}
-\indexentry{یک دوری برقی رو}{82}
-\indexentry{phase voltage}{82}
-\indexentry{یک دوری برقی دباو}{82}
-\indexentry{line voltage}{82}
-\indexentry{تار کا برقی دباو}{82}
-\indexentry{phase current}{82}
-\indexentry{ground current}{82}
-\indexentry{زمینی برقی رو}{82}
-\indexentry{line current}{82}
-\indexentry{تار کا برقی رو}{82}
-\indexentry{rating}{83}
-\indexentry{سکت}{83}
-\indexentry{rating}{84}
-\indexentry{سکت}{84}
-\indexentry{name plate}{84}
-\indexentry{تختی}{84}
-\indexentry{load}{85}
-\indexentry{بوجھ}{85}
-\indexentry{برقرار چالو}{87}
-\indexentry{relay}{89}
-\indexentry{ریلے}{89}
-\indexentry{سمتی رفتار}{89}
-\indexentry{Lorenz equation}{90}
-\indexentry{مساوات لورینز}{90}
-\indexentry{co-energy}{92}
-\indexentry{ہم توانائی}{92}
-\indexentry{stator coil}{92}
-\indexentry{لچھا! ساکن}{92}
-\indexentry{ساکن لچھا}{92}
-\indexentry{rotor coil}{92}
-\indexentry{لچھا!گھومتا}{92}
-\indexentry{گھومتا لچھا}{92}
-\indexentry{conservative field}{96}
-\indexentry{قدامت پسند میدان}{96}
-\indexentry{energy!co}{99}
-\indexentry{توانائی!ہم}{99}
-\indexentry{بھٹی}{101}
-\indexentry{Faraday's law}{111}
-\indexentry{فیراڈے!قانون}{111}
-\indexentry{core}{111}
-\indexentry{قالب}{111}
-\indexentry{laminations}{111}
-\indexentry{پتری}{111}
-\indexentry{eddy currents}{111}
-\indexentry{برقی رو!بھنور نما}{111}
-\indexentry{بھنور نما برقی رو}{111}
-\indexentry{چکر فی منٹ}{112}
-\indexentry{stator coil}{112}
-\indexentry{ساکن لچھا}{112}
-\indexentry{frequency}{115}
-\indexentry{تعدد}{115}
-\indexentry{synchronous}{115}
-\indexentry{معاصر}{115}
-\indexentry{electromagnet}{115}
-\indexentry{مقناطیس!برقی}{115}
-\indexentry{armature coil}{116}
-\indexentry{لچھا!قوی}{116}
-\indexentry{field coil}{116}
-\indexentry{لچھا!میدانی}{116}
-\indexentry{لچھا!رخ}{117}
-\indexentry{charge}{121}
-\indexentry{بار}{121}
-\indexentry{برقی بار}{121}
-\indexentry{Lorentz law}{121}
-\indexentry{قانون!لورینز}{121}
-\indexentry{voltage}{121}
-\indexentry{برقی دباو}{121}
-\indexentry{volt}{121}
-\indexentry{وولٹ}{121}
-\indexentry{emf}{121}
-\indexentry{electromotive force}{121}
-\indexentry{برقی دباو!محرک}{121}
-\indexentry{winding!distributed}{123}
-\indexentry{لچھا!پھیلے}{123}
-\indexentry{pole!non-salient}{123}
-\indexentry{قطب!ہموار}{123}
-\indexentry{pole!salient}{123}
-\indexentry{قطب!ابھرے}{123}
-\indexentry{مقناطیسی دباو!رخ}{125}
-\indexentry{Fourier series}{125}
-\indexentry{فوریئر تسلسل}{125}
-\indexentry{time period}{125}
-\indexentry{دوری عرصہ}{125}
-\indexentry{fundamental}{125}
-\indexentry{بنیادی جزو}{125}
-\indexentry{harmonic}{125}
-\indexentry{موسیقائی جزو}{125}
-\indexentry{سلسلہ وار}{128}
-\indexentry{winding factor}{130}
-\indexentry{جزو!پھیلاو}{130}
-\indexentry{synchronous speed}{138}
-\indexentry{معاصر رفتار}{138}
-\indexentry{synchronous speed}{138}
-\indexentry{معاصر رفتار}{138}
-\indexentry{rpm}{138}
-\indexentry{generator!ac}{141}
-\indexentry{جنریٹر!بدلتا رو}{141}
-\indexentry{محوری!لمبائی}{143}
-\indexentry{rms}{145}
-\indexentry{موثر قیمت}{145}
-\indexentry{voltage!DC}{146}
-\indexentry{برقی دباو!یک سمت}{146}
-\indexentry{commutator}{146}
-\indexentry{سمت کار!میکانی}{146}
-\indexentry{rectifier}{146}
-\indexentry{سمت کار!برقیاتی}{146}
-\indexentry{torque}{146}
-\indexentry{قوت مروڑ}{146}
-\indexentry{مقناطیسی مستقل}{147}
-\indexentry{برقرار چالو}{155}
-\indexentry{steady state}{155}
-\indexentry{حال!یکساں}{155}
-\indexentry{transient state}{155}
-\indexentry{حال!عارضی}{155}
-\indexentry{synchronous speed}{155}
-\indexentry{معاصر رفتار}{155}
-\indexentry{معاصر!مشین}{156}
-\indexentry{slip rings}{156}
-\indexentry{سرک چھلے}{156}
-\indexentry{carbon bush}{156}
-\indexentry{بش}{156}
-\indexentry{کاربن بش}{156}
-\indexentry{قطب!ابھرے}{157}
-\indexentry{turbine}{157}
-\indexentry{چرخاب}{157}
-\indexentry{non-salient poles}{157}
-\indexentry{قطب!ہموار}{157}
-\indexentry{hunting}{157}
-\indexentry{تعقب}{157}
-\indexentry{torque!pull out}{157}
-\indexentry{قوت مروڑ!انتہائی}{157}
-\indexentry{غیر معاصر}{158}
-\indexentry{circuit breaker}{158}
-\indexentry{دور شکن}{158}
-\indexentry{سطحی تکمل}{159}
-\indexentry{inductance!leakage}{161}
-\indexentry{امالہ!رستا}{161}
-\indexentry{synchronous inductance}{162}
-\indexentry{معاصر امالہ}{162}
-\indexentry{برقی دباو!ہیجانی}{163}
-\indexentry{ہیجانی برقی دباو}{163}
-\indexentry{دوری سمتیہ}{164}
-\indexentry{power-angle law}{166}
-\indexentry{طاقت بالمقابل زاویہ}{166}
-\indexentry{مخلوط عدد}{170}
-\indexentry{capacitor}{171}
-\indexentry{برق گھیر}{171}
-\indexentry{کارگزاری}{177}
-\indexentry{electronics!power}{183}
-\indexentry{برقیات!قوی}{183}
-\indexentry{induction!motor}{183}
-\indexentry{موٹر!امالی}{183}
-\indexentry{model}{183}
-\indexentry{ریاضی نمونہ}{183}
-\indexentry{slip}{184}
-\indexentry{سرکاو}{184}
-\indexentry{torque}{185}
-\indexentry{قوت مروڑ}{185}
-\indexentry{چوٹی}{186}
-\indexentry{رفتار!اضافی زاویائی}{187}
-\indexentry{اضافی!زاویائی رفتار}{187}
-\indexentry{رستا متعاملیت}{191}
-\indexentry{linear circuit}{199}
-\indexentry{خطی!برقی دور}{199}
-\indexentry{Thevenin theorem}{199}
-\indexentry{مسئلہ!تھونن}{199}
-\indexentry{روک}{201}
-\indexentry{theorem!maximum power transfer}{202}
-\indexentry{مسئلہ!زیادہ سے زیادہ طاقت کی منتقلی}{202}
-\indexentry{slip rings}{203}
-\indexentry{سرک چھلے}{203}
-\indexentry{squirrel cage}{205}
-\indexentry{موٹر!پنجرہ نما}{205}
-\indexentry{مزاحمت پیما}{209}
-\indexentry{یک سمت رو!مشین}{213}
-\indexentry{قوی برقیات}{213}
-\indexentry{commutator}{213}
-\indexentry{سمت کار}{213}
-\indexentry{فوریئر}{221}
-\indexentry{separately excited}{222}
-\indexentry{ہیجان!بیرونی}{222}
-\indexentry{self excited}{222}
-\indexentry{ہیجان!خود}{222}
-\indexentry{field coil}{222}
-\indexentry{میدانی لچھے}{222}
-\indexentry{armature coil}{222}
-\indexentry{قوی لچھے}{222}
-\indexentry{parallel connected}{224}
-\indexentry{داخلی ہیجان!متوازی}{224}
-\indexentry{داخلی ہیجان!مرکب}{225}
-\indexentry{داخلی ہیجان!سلسلہ وار}{225}
-\indexentry{مرکب جنریٹر}{225}
-\indexentry{قریب جڑا مرکب}{225}
-\indexentry{دور جڑا مرکب}{225}
+\indexentry{scalar}{\farsidigits {1}}
+\indexentry{غیر سمتی}{\farsidigits {1}}
+\indexentry{vector}{\farsidigits {1}}
+\indexentry{سمتیہ}{\farsidigits {1}}
+\indexentry{unit vector}{\farsidigits {1}}
+\indexentry{اکائی سمتیہ}{\farsidigits {1}}
+\indexentry{orthonormal}{\farsidigits {2}}
+\indexentry{سمتیہ!عمودی اکائی}{\farsidigits {2}}
+\indexentry{cartesian system}{\farsidigits {3}}
+\indexentry{محدد!کارتیسی}{\farsidigits {3}}
+\indexentry{cylindrical coordinates}{\farsidigits {5}}
+\indexentry{محدد!نلکی}{\farsidigits {5}}
+\indexentry{عمودی تراش!رقبہ}{\farsidigits {8}}
+\indexentry{cross section}{\farsidigits {8}}
+\indexentry{عمودی تراش}{\farsidigits {8}}
+\indexentry{charge}{\farsidigits {9}}
+\indexentry{برقی بار}{\farsidigits {9}}
+\indexentry{Coulomb's law}{\farsidigits {9}}
+\indexentry{قانون!کولمب}{\farsidigits {9}}
+\indexentry{برقی میدان}{\farsidigits {9}}
+\indexentry{electric field!intensity}{\farsidigits {9}}
+\indexentry{برقی میدان!شدت}{\farsidigits {9}}
+\indexentry{magnetic field!intensity}{\farsidigits {10}}
+\indexentry{مقناطیسی میدان!شدت}{\farsidigits {10}}
+\indexentry{surface density}{\farsidigits {10}}
+\indexentry{سطحی کثافت}{\farsidigits {10}}
+\indexentry{cross product}{\farsidigits {12}}
+\indexentry{ضرب صلیبی}{\farsidigits {12}}
+\indexentry{dot product}{\farsidigits {14}}
+\indexentry{ضرب!نقطہ}{\farsidigits {14}}
+\indexentry{تفرق!جزوی}{\farsidigits {15}}
+\indexentry{differentiation}{\farsidigits {15}}
+\indexentry{تفرق}{\farsidigits {15}}
+\indexentry{طول موج}{\farsidigits {15}}
+\indexentry{rms}{\farsidigits {16}}
+\indexentry{موثر}{\farsidigits {16}}
+\indexentry{Euler}{\farsidigits {17}}
+\indexentry{یولر مساوات}{\farsidigits {17}}
+\indexentry{phasor}{\farsidigits {18}}
+\indexentry{دوری سمتیہ}{\farsidigits {18}}
+\indexentry{lagging}{\farsidigits {19}}
+\indexentry{تاخیری زاویہ}{\farsidigits {19}}
+\indexentry{leading}{\farsidigits {19}}
+\indexentry{پیش زاویہ}{\farsidigits {19}}
+\indexentry{phase difference}{\farsidigits {19}}
+\indexentry{زاویائی فرق}{\farsidigits {19}}
+\indexentry{power factor angle}{\farsidigits {19}}
+\indexentry{زاویہ جزو طاقت}{\farsidigits {19}}
+\indexentry{power factor}{\farsidigits {19}}
+\indexentry{جزو طاقت}{\farsidigits {19}}
+\indexentry{power factor!leading}{\farsidigits {19}}
+\indexentry{جزو طاقت!پیش}{\farsidigits {19}}
+\indexentry{power factor!lagging}{\farsidigits {19}}
+\indexentry{جزو طاقت!تاخیری}{\farsidigits {19}}
+\indexentry{single phase}{\farsidigits {19}}
+\indexentry{یک دوری}{\farsidigits {19}}
+\indexentry{resistance}{\farsidigits {21}}
+\indexentry{مزاحمت}{\farsidigits {21}}
+\indexentry{magnetic constant}{\farsidigits {21}}
+\indexentry{permeability}{\farsidigits {21}}
+\indexentry{مقناطیسی مستقل}{\farsidigits {21}}
+\indexentry{reluctance}{\farsidigits {21}}
+\indexentry{ہچکچاہٹ}{\farsidigits {21}}
+\indexentry{conductivity}{\farsidigits {21}}
+\indexentry{موصلیت}{\farsidigits {21}}
+\indexentry{permeability!relative}{\farsidigits {22}}
+\indexentry{relative permeability}{\farsidigits {22}}
+\indexentry{مقناطیسی مستقل!جزو}{\farsidigits {22}}
+\indexentry{Ohm's law}{\farsidigits {22}}
+\indexentry{قانون!اوہم}{\farsidigits {22}}
+\indexentry{کثافت!برقی رو}{\farsidigits {23}}
+\indexentry{برقی میدان!شدت}{\farsidigits {23}}
+\indexentry{تانبا}{\farsidigits {23}}
+\indexentry{برقی رو}{\farsidigits {23}}
+\indexentry{برقی دباو}{\farsidigits {23}}
+\indexentry{flux}{\farsidigits {25}}
+\indexentry{مقناطیسی بہاو}{\farsidigits {25}}
+\indexentry{mmf}{\farsidigits {25}}
+\indexentry{مقناطیسی دباو}{\farsidigits {25}}
+\indexentry{ہچکچاہٹ}{\farsidigits {25}}
+\indexentry{مقناطیسی مستقل!جزو}{\farsidigits {25}}
+\indexentry{magnetic core}{\farsidigits {26}}
+\indexentry{مقناطیسی قالب}{\farsidigits {26}}
+\indexentry{laminations}{\farsidigits {26}}
+\indexentry{پتری}{\farsidigits {26}}
+\indexentry{ampere-turn}{\farsidigits {27}}
+\indexentry{ایمپیئر و چکر}{\farsidigits {27}}
+\indexentry{Weber}{\farsidigits {27}}
+\indexentry{ویبر}{\farsidigits {27}}
+\indexentry{مقناطیسی بہاو!کثافت}{\farsidigits {27}}
+\indexentry{magnetic field!intensity}{\farsidigits {27}}
+\indexentry{مقناطیسی میدان!شدت}{\farsidigits {27}}
+\indexentry{magnetic flux!density}{\farsidigits {27}}
+\indexentry{Tesla}{\farsidigits {27}}
+\indexentry{ٹسلا}{\farsidigits {27}}
+\indexentry{rotor}{\farsidigits {30}}
+\indexentry{گھومتا حصہ}{\farsidigits {30}}
+\indexentry{stator}{\farsidigits {30}}
+\indexentry{ساکن حصہ}{\farsidigits {30}}
+\indexentry{Faraday's law}{\farsidigits {32}}
+\indexentry{فیراڈے!قانون}{\farsidigits {32}}
+\indexentry{induced voltage}{\farsidigits {32}}
+\indexentry{امالی برقی دباو}{\farsidigits {32}}
+\indexentry{ْسر دور}{\farsidigits {32}}
+\indexentry{ارتباط بہاو}{\farsidigits {32}}
+\indexentry{ویبر-چکر}{\farsidigits {32}}
+\indexentry{inductance}{\farsidigits {33}}
+\indexentry{امالہ}{\farsidigits {33}}
+\indexentry{Henry}{\farsidigits {33}}
+\indexentry{Henry}{\farsidigits {33}}
+\indexentry{لچھا!پیچدار}{\farsidigits {34}}
+\indexentry{self flux linkage}{\farsidigits {36}}
+\indexentry{خود ارتباط بہاو}{\farsidigits {36}}
+\indexentry{self inductance}{\farsidigits {36}}
+\indexentry{خود امالہ}{\farsidigits {36}}
+\indexentry{mutual flux linkage}{\farsidigits {36}}
+\indexentry{مشترکہ ارتباط امالہ}{\farsidigits {36}}
+\indexentry{mutual inductance}{\farsidigits {36}}
+\indexentry{مشترکہ امالہ}{\farsidigits {36}}
+\indexentry{Watt}{\farsidigits {37}}
+\indexentry{واٹ}{\farsidigits {37}}
+\indexentry{power}{\farsidigits {37}}
+\indexentry{طاقت}{\farsidigits {37}}
+\indexentry{Joule}{\farsidigits {37}}
+\indexentry{جاول}{\farsidigits {37}}
+\indexentry{energy}{\farsidigits {37}}
+\indexentry{توانائی}{\farsidigits {37}}
+\indexentry{magnetic flux!residual}{\farsidigits {38}}
+\indexentry{کثافت مقناطیسی بہاو!بقایا}{\farsidigits {38}}
+\indexentry{coercivity}{\farsidigits {38}}
+\indexentry{مقناطیس!خاتم شدت}{\farsidigits {38}}
+\indexentry{hysteresis loop}{\farsidigits {39}}
+\indexentry{مقناطیس!چال کا دائرہ}{\farsidigits {39}}
+\indexentry{saturation}{\farsidigits {39}}
+\indexentry{سیرابیت}{\farsidigits {39}}
+\indexentry{induced voltage}{\farsidigits {41}}
+\indexentry{امالی!برقی دباو}{\farsidigits {41}}
+\indexentry{rms}{\farsidigits {41}}
+\indexentry{موثر}{\farsidigits {41}}
+\indexentry{excitation current}{\farsidigits {42}}
+\indexentry{برقی رو!ہیجان انگیز}{\farsidigits {42}}
+\indexentry{مقناطیسی چال}{\farsidigits {43}}
+\indexentry{core}{\farsidigits {45}}
+\indexentry{مقناطیسی قالب}{\farsidigits {45}}
+\indexentry{primary!side}{\farsidigits {45}}
+\indexentry{ابتدائی!جانب}{\farsidigits {45}}
+\indexentry{coil!primary}{\farsidigits {45}}
+\indexentry{ابتدائی!لچھا}{\farsidigits {45}}
+\indexentry{لچھا!ابتدائی}{\farsidigits {45}}
+\indexentry{side!secondary}{\farsidigits {45}}
+\indexentry{ثانوی جانب}{\farsidigits {45}}
+\indexentry{coil!secondary}{\farsidigits {45}}
+\indexentry{لچھا!ثانوی}{\farsidigits {45}}
+\indexentry{coil!low voltage}{\farsidigits {45}}
+\indexentry{لچھا!کم برقی دباو}{\farsidigits {45}}
+\indexentry{coil!high voltage}{\farsidigits {45}}
+\indexentry{لچھا!زیادہ برقی دباو}{\farsidigits {45}}
+\indexentry{برقی دباو!تبادلہ}{\farsidigits {46}}
+\indexentry{step up transformer}{\farsidigits {48}}
+\indexentry{ٹرانسفارمر!دباو بڑھاتا}{\farsidigits {48}}
+\indexentry{step down transformer}{\farsidigits {48}}
+\indexentry{ٹرانسفارمر!دباو گھٹاتا}{\farsidigits {48}}
+\indexentry{three phase}{\farsidigits {48}}
+\indexentry{تین دوری}{\farsidigits {48}}
+\indexentry{single phase}{\farsidigits {48}}
+\indexentry{یک دوری}{\farsidigits {48}}
+\indexentry{ٹرانسفارمر!برقی دباو والا}{\farsidigits {48}}
+\indexentry{ٹرانسفارمر!رو والا}{\farsidigits {48}}
+\indexentry{electrical rating}{\farsidigits {48}}
+\indexentry{برقی سکت}{\farsidigits {48}}
+\indexentry{transformer!air core}{\farsidigits {48}}
+\indexentry{ٹرانسفارمر!خلائی قالب}{\farsidigits {48}}
+\indexentry{transformer!communication}{\farsidigits {48}}
+\indexentry{ٹرانسفارمر!ذرائع ابلاغ}{\farsidigits {48}}
+\indexentry{بے بوجھ}{\farsidigits {48}}
+\indexentry{excitation current}{\farsidigits {49}}
+\indexentry{ہیجان انگیز برقی رو}{\farsidigits {49}}
+\indexentry{excitation voltage}{\farsidigits {49}}
+\indexentry{ہیجان انگیز!برقی دباو}{\farsidigits {49}}
+\indexentry{excite}{\farsidigits {49}}
+\indexentry{ہیجان}{\farsidigits {49}}
+\indexentry{excitation current}{\farsidigits {49}}
+\indexentry{ہیجان انگیز!برقی رو}{\farsidigits {49}}
+\indexentry{excited coil}{\farsidigits {49}}
+\indexentry{ہیجان!لچھا}{\farsidigits {49}}
+\indexentry{محرک برقی دباو}{\farsidigits {50}}
+\indexentry{induced voltage}{\farsidigits {50}}
+\indexentry{امالی برقی دباو}{\farsidigits {50}}
+\indexentry{electromotive force}{\farsidigits {50}}
+\indexentry{eddy currents}{\farsidigits {50}}
+\indexentry{بھنور نما!برقی رو}{\farsidigits {50}}
+\indexentry{laminations}{\farsidigits {50}}
+\indexentry{پتریاں}{\farsidigits {50}}
+\indexentry{core loss}{\farsidigits {50}}
+\indexentry{قالبی ضیاع}{\farsidigits {50}}
+\indexentry{eddy current loss}{\farsidigits {50}}
+\indexentry{بھنور نما!ضیاع}{\farsidigits {50}}
+\indexentry{enamel}{\farsidigits {50}}
+\indexentry{روغن}{\farsidigits {50}}
+\indexentry{E,I}{\farsidigits {50}}
+\indexentry{ایک، تین پتریاں}{\farsidigits {50}}
+\indexentry{Fourier series}{\farsidigits {51}}
+\indexentry{فوریئر تسلسل}{\farsidigits {51}}
+\indexentry{harmonic components}{\farsidigits {52}}
+\indexentry{موسیقائی اجزاء}{\farsidigits {52}}
+\indexentry{fundamental component}{\farsidigits {52}}
+\indexentry{بنیادی جزو}{\farsidigits {52}}
+\indexentry{magnetizing current}{\farsidigits {52}}
+\indexentry{مقناطیسی برقی رو}{\farsidigits {52}}
+\indexentry{core loss component}{\farsidigits {52}}
+\indexentry{قالبی ضیاع!جزو}{\farsidigits {52}}
+\indexentry{transformer!ideal}{\farsidigits {52}}
+\indexentry{ٹرانسفارمر!کامل}{\farsidigits {52}}
+\indexentry{voltage!transformation}{\farsidigits {53}}
+\indexentry{برقی دباو!تبادلہ}{\farsidigits {53}}
+\indexentry{current!transformation}{\farsidigits {54}}
+\indexentry{برقی رو!تبادلہ}{\farsidigits {54}}
+\indexentry{ٹرانسفارمر!بوجھ بردار}{\farsidigits {56}}
+\indexentry{impedance transformation}{\farsidigits {58}}
+\indexentry{تبادلہ!رکاوٹ}{\farsidigits {58}}
+\indexentry{VA}{\farsidigits {62}}
+\indexentry{volt-ampere}{\farsidigits {62}}
+\indexentry{وولٹ و ایمپیئر}{\farsidigits {62}}
+\indexentry{ٹرانسفارمر!تیل}{\farsidigits {62}}
+\indexentry{transformer!oil}{\farsidigits {62}}
+\indexentry{مقناطیسی بہاو!رستا}{\farsidigits {64}}
+\indexentry{magnetic flux!leakage}{\farsidigits {64}}
+\indexentry{leakage reactance}{\farsidigits {64}}
+\indexentry{رستا!متعاملہ}{\farsidigits {64}}
+\indexentry{leakage inductance}{\farsidigits {64}}
+\indexentry{رستا!امالہ}{\farsidigits {64}}
+\indexentry{تاخیری}{\farsidigits {65}}
+\indexentry{model}{\farsidigits {67}}
+\indexentry{ریاضی نمونہ}{\farsidigits {67}}
+\indexentry{بناوٹ}{\farsidigits {71}}
+\indexentry{open circuit test}{\farsidigits {71}}
+\indexentry{معائنہ!کھلا دور}{\farsidigits {71}}
+\indexentry{three phase}{\farsidigits {76}}
+\indexentry{تین دوری}{\farsidigits {76}}
+\indexentry{delta connected}{\farsidigits {76}}
+\indexentry{جوڑ!تکونی}{\farsidigits {76}}
+\indexentry{تکونی جوڑ}{\farsidigits {76}}
+\indexentry{star connected}{\farsidigits {76}}
+\indexentry{جوڑ!ستارہ نما}{\farsidigits {76}}
+\indexentry{ستارہ نما جوڑ}{\farsidigits {76}}
+\indexentry{ground wire}{\farsidigits {77}}
+\indexentry{زمینی تار}{\farsidigits {77}}
+\indexentry{گرم تار}{\farsidigits {77}}
+\indexentry{ٹھنڈی تار}{\farsidigits {77}}
+\indexentry{earth}{\farsidigits {77}}
+\indexentry{زمین}{\farsidigits {77}}
+\indexentry{phase current}{\farsidigits {77}}
+\indexentry{یک دوری برقی رو}{\farsidigits {77}}
+\indexentry{phase voltage}{\farsidigits {77}}
+\indexentry{یک دوری برقی دباو}{\farsidigits {77}}
+\indexentry{line current}{\farsidigits {77}}
+\indexentry{تار کا برقی رو}{\farsidigits {77}}
+\indexentry{line voltage}{\farsidigits {77}}
+\indexentry{تار کا برقی دباو}{\farsidigits {77}}
+\indexentry{ground current}{\farsidigits {78}}
+\indexentry{زمینی برقی رو}{\farsidigits {78}}
+\indexentry{rating}{\farsidigits {80}}
+\indexentry{سکت}{\farsidigits {80}}
+\indexentry{rating}{\farsidigits {80}}
+\indexentry{سکت}{\farsidigits {80}}
+\indexentry{name plate}{\farsidigits {80}}
+\indexentry{تختی}{\farsidigits {80}}
+\indexentry{load}{\farsidigits {81}}
+\indexentry{بوجھ}{\farsidigits {81}}
+\indexentry{برقرار چالو}{\farsidigits {83}}
+\indexentry{relay}{\farsidigits {85}}
+\indexentry{ریلے}{\farsidigits {85}}
+\indexentry{سمتی رفتار}{\farsidigits {85}}
+\indexentry{Lorenz equation}{\farsidigits {86}}
+\indexentry{مساوات لورینز}{\farsidigits {86}}
+\indexentry{co-energy}{\farsidigits {88}}
+\indexentry{ہم توانائی}{\farsidigits {88}}
+\indexentry{لچھا! ساکن}{\farsidigits {88}}
+\indexentry{ساکن لچھا}{\farsidigits {88}}
+\indexentry{rotor coil}{\farsidigits {88}}
+\indexentry{لچھا!گھومتا}{\farsidigits {88}}
+\indexentry{گھومتا لچھا}{\farsidigits {88}}
+\indexentry{stator coil}{\farsidigits {88}}
+\indexentry{conservative field}{\farsidigits {91}}
+\indexentry{قدامت پسند میدان}{\farsidigits {91}}
+\indexentry{energy!co}{\farsidigits {95}}
+\indexentry{توانائی!ہم}{\farsidigits {95}}
+\indexentry{بھٹی}{\farsidigits {96}}
+\indexentry{Faraday's law}{\farsidigits {107}}
+\indexentry{فیراڈے!قانون}{\farsidigits {107}}
+\indexentry{core}{\farsidigits {107}}
+\indexentry{قالب}{\farsidigits {107}}
+\indexentry{eddy currents}{\farsidigits {107}}
+\indexentry{برقی رو!بھنور نما}{\farsidigits {107}}
+\indexentry{بھنور نما برقی رو}{\farsidigits {107}}
+\indexentry{laminations}{\farsidigits {107}}
+\indexentry{پتری}{\farsidigits {107}}
+\indexentry{چکر فی منٹ}{\farsidigits {108}}
+\indexentry{stator coil}{\farsidigits {108}}
+\indexentry{ساکن لچھا}{\farsidigits {108}}
+\indexentry{frequency}{\farsidigits {111}}
+\indexentry{تعدد}{\farsidigits {111}}
+\indexentry{synchronous}{\farsidigits {111}}
+\indexentry{معاصر}{\farsidigits {111}}
+\indexentry{electromagnet}{\farsidigits {111}}
+\indexentry{مقناطیس!برقی}{\farsidigits {111}}
+\indexentry{field coil}{\farsidigits {112}}
+\indexentry{لچھا!میدانی}{\farsidigits {112}}
+\indexentry{armature coil}{\farsidigits {112}}
+\indexentry{لچھا!قوی}{\farsidigits {112}}
+\indexentry{لچھا!رخ}{\farsidigits {113}}
+\indexentry{charge}{\farsidigits {115}}
+\indexentry{بار}{\farsidigits {115}}
+\indexentry{برقی بار}{\farsidigits {115}}
+\indexentry{Lorentz law}{\farsidigits {115}}
+\indexentry{قانون!لورینز}{\farsidigits {115}}
+\indexentry{volt}{\farsidigits {116}}
+\indexentry{وولٹ}{\farsidigits {116}}
+\indexentry{voltage}{\farsidigits {116}}
+\indexentry{برقی دباو}{\farsidigits {116}}
+\indexentry{emf}{\farsidigits {116}}
+\indexentry{electromotive force}{\farsidigits {116}}
+\indexentry{برقی دباو!محرک}{\farsidigits {116}}
+\indexentry{pole!salient}{\farsidigits {118}}
+\indexentry{قطب!ابھرے}{\farsidigits {118}}
+\indexentry{winding!distributed}{\farsidigits {118}}
+\indexentry{لچھا!پھیلے}{\farsidigits {118}}
+\indexentry{pole!non-salient}{\farsidigits {118}}
+\indexentry{قطب!ہموار}{\farsidigits {118}}
+\indexentry{مقناطیسی دباو!رخ}{\farsidigits {119}}
+\indexentry{Fourier series}{\farsidigits {120}}
+\indexentry{فوریئر تسلسل}{\farsidigits {120}}
+\indexentry{time period}{\farsidigits {120}}
+\indexentry{دوری عرصہ}{\farsidigits {120}}
+\indexentry{fundamental}{\farsidigits {120}}
+\indexentry{بنیادی جزو}{\farsidigits {120}}
+\indexentry{harmonic}{\farsidigits {120}}
+\indexentry{موسیقائی جزو}{\farsidigits {120}}
+\indexentry{سلسلہ وار}{\farsidigits {123}}
+\indexentry{winding factor}{\farsidigits {125}}
+\indexentry{جزو!پھیلاو}{\farsidigits {125}}
+\indexentry{synchronous speed}{\farsidigits {132}}
+\indexentry{معاصر رفتار}{\farsidigits {132}}
+\indexentry{rpm}{\farsidigits {132}}
+\indexentry{synchronous speed}{\farsidigits {132}}
+\indexentry{معاصر رفتار}{\farsidigits {132}}
+\indexentry{generator!ac}{\farsidigits {135}}
+\indexentry{جنریٹر!بدلتا رو}{\farsidigits {135}}
+\indexentry{محوری!لمبائی}{\farsidigits {137}}
+\indexentry{rms}{\farsidigits {139}}
+\indexentry{موثر قیمت}{\farsidigits {139}}
+\indexentry{voltage!DC}{\farsidigits {140}}
+\indexentry{برقی دباو!یک سمت}{\farsidigits {140}}
+\indexentry{commutator}{\farsidigits {140}}
+\indexentry{سمت کار!میکانی}{\farsidigits {140}}
+\indexentry{rectifier}{\farsidigits {140}}
+\indexentry{سمت کار!برقیاتی}{\farsidigits {140}}
+\indexentry{torque}{\farsidigits {141}}
+\indexentry{قوت مروڑ}{\farsidigits {141}}
+\indexentry{مقناطیسی مستقل}{\farsidigits {141}}
+\indexentry{حال!عارضی}{\farsidigits {149}}
+\indexentry{برقرار چالو}{\farsidigits {149}}
+\indexentry{steady state}{\farsidigits {149}}
+\indexentry{حال!یکساں}{\farsidigits {149}}
+\indexentry{transient state}{\farsidigits {149}}
+\indexentry{synchronous speed}{\farsidigits {149}}
+\indexentry{معاصر رفتار}{\farsidigits {149}}
+\indexentry{معاصر!مشین}{\farsidigits {149}}
+\indexentry{slip rings}{\farsidigits {150}}
+\indexentry{سرک چھلے}{\farsidigits {150}}
+\indexentry{carbon bush}{\farsidigits {150}}
+\indexentry{بش}{\farsidigits {150}}
+\indexentry{کاربن بش}{\farsidigits {150}}
+\indexentry{non-salient poles}{\farsidigits {150}}
+\indexentry{قطب!ہموار}{\farsidigits {150}}
+\indexentry{قطب!ابھرے}{\farsidigits {150}}
+\indexentry{turbine}{\farsidigits {151}}
+\indexentry{چرخاب}{\farsidigits {151}}
+\indexentry{hunting}{\farsidigits {151}}
+\indexentry{تعقب}{\farsidigits {151}}
+\indexentry{قوت مروڑ!انتہائی}{\farsidigits {151}}
+\indexentry{torque!pull out}{\farsidigits {151}}
+\indexentry{غیر معاصر}{\farsidigits {151}}
+\indexentry{circuit breaker}{\farsidigits {151}}
+\indexentry{دور شکن}{\farsidigits {151}}
+\indexentry{سطحی تکمل}{\farsidigits {153}}
+\indexentry{inductance!leakage}{\farsidigits {155}}
+\indexentry{امالہ!رستا}{\farsidigits {155}}
+\indexentry{synchronous inductance}{\farsidigits {156}}
+\indexentry{معاصر امالہ}{\farsidigits {156}}
+\indexentry{برقی دباو!ہیجانی}{\farsidigits {156}}
+\indexentry{ہیجانی برقی دباو}{\farsidigits {156}}
+\indexentry{دوری سمتیہ}{\farsidigits {157}}
+\indexentry{power-angle law}{\farsidigits {159}}
+\indexentry{طاقت بالمقابل زاویہ}{\farsidigits {159}}
+\indexentry{مخلوط عدد}{\farsidigits {163}}
+\indexentry{capacitor}{\farsidigits {164}}
+\indexentry{برق گھیر}{\farsidigits {164}}
+\indexentry{کارگزاری}{\farsidigits {169}}
+\indexentry{electronics!power}{\farsidigits {175}}
+\indexentry{برقیات!قوی}{\farsidigits {175}}
+\indexentry{induction!motor}{\farsidigits {175}}
+\indexentry{موٹر!امالی}{\farsidigits {175}}
+\indexentry{model}{\farsidigits {175}}
+\indexentry{ریاضی نمونہ}{\farsidigits {175}}
+\indexentry{slip}{\farsidigits {176}}
+\indexentry{سرکاو}{\farsidigits {176}}
+\indexentry{torque}{\farsidigits {176}}
+\indexentry{قوت مروڑ}{\farsidigits {176}}
+\indexentry{چوٹی}{\farsidigits {178}}
+\indexentry{رفتار!اضافی زاویائی}{\farsidigits {179}}
+\indexentry{اضافی!زاویائی رفتار}{\farsidigits {179}}
+\indexentry{رستا متعاملیت}{\farsidigits {183}}
+\indexentry{linear circuit}{\farsidigits {190}}
+\indexentry{خطی!برقی دور}{\farsidigits {190}}
+\indexentry{Thevenin theorem}{\farsidigits {190}}
+\indexentry{مسئلہ!تھونن}{\farsidigits {190}}
+\indexentry{روک}{\farsidigits {192}}
+\indexentry{theorem!maximum power transfer}{\farsidigits {192}}
+\indexentry{مسئلہ!زیادہ سے زیادہ طاقت کی منتقلی}{\farsidigits {192}}
+\indexentry{slip rings}{\farsidigits {193}}
+\indexentry{سرک چھلے}{\farsidigits {193}}
+\indexentry{squirrel cage}{\farsidigits {195}}
+\indexentry{موٹر!پنجرہ نما}{\farsidigits {195}}
+\indexentry{مزاحمت پیما}{\farsidigits {199}}
+\indexentry{یک سمت رو!مشین}{\farsidigits {203}}
+\indexentry{قوی برقیات}{\farsidigits {203}}
+\indexentry{commutator}{\farsidigits {203}}
+\indexentry{سمت کار}{\farsidigits {203}}
+\indexentry{فوریئر}{\farsidigits {211}}
+\indexentry{self excited}{\farsidigits {211}}
+\indexentry{ہیجان!خود}{\farsidigits {211}}
+\indexentry{separately excited}{\farsidigits {211}}
+\indexentry{ہیجان!بیرونی}{\farsidigits {211}}
+\indexentry{field coil}{\farsidigits {212}}
+\indexentry{میدانی لچھے}{\farsidigits {212}}
+\indexentry{armature coil}{\farsidigits {212}}
+\indexentry{قوی لچھے}{\farsidigits {212}}
+\indexentry{parallel connected}{\farsidigits {213}}
+\indexentry{داخلی ہیجان!متوازی}{\farsidigits {213}}
+\indexentry{داخلی ہیجان!مرکب}{\farsidigits {213}}
+\indexentry{داخلی ہیجان!سلسلہ وار}{\farsidigits {213}}
+\indexentry{مرکب جنریٹر}{\farsidigits {213}}
+\indexentry{دور جڑا مرکب}{\farsidigits {214}}
+\indexentry{قریب جڑا مرکب}{\farsidigits {214}}
