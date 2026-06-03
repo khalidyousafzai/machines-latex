@@ -17,19 +17,20 @@
 %=================================
 
 \input{./tex/myUrduCommandsMachines.tex}                  %turning latex into urdu
-%\input{./tex/myUrduCommands.tex}                  %turning latex into urdu
+%%\input{./tex/myUrduCommands.tex}                  %turning latex into urdu
 \input{./tex/myUrduGreek.tex}
 \input{./tex/myEMTvectors.tex}
 \input{./tex/myTikzCommandsMachines.tex}
 \input{./tex/myCircuitDimensionsAndMathematicalSymbols}
-%\input{./tex/myElectronicsVariablesBetter.tex}         %these are all tested. to use at the very end when book is finished
+\input{./tex/myElectronicsVariablesBetter.tex}         %these are all tested. to use at the very end when book is finished
 \input{./fig/figRotatingMachPrinciplesLibrary.tex}	%templates used for drawing rotating machines
 
 \graphicspath{{./fig/figFrontPage/}{./fig/figBasicFacts/}{./fig/figMagneticCircuits/}{./fig/figTransformers/}{./fig/figEnergyConversion/}{./fig/figRotatingMachPrinciples/}{./fig/figSynchronous/}{./fig/figInduction/}{./fig/figDC/}{./fig/figQuestions/}}		%paths to figures
 %
 %
 
-\includeonly{./tex/machinesPreface,./tex/machBasicFacts,./tex/machMagneticCircuits,./tex/machTransformers,./tex/machElectroMechConv,./tex/machRotatingMachPrinciples,./tex/machSynchronous,./tex/machInduction,./tex/machDCmachines}
+\includeonly{./tex/machinesPreface,./tex/machBasicFacts,./tex/machMagneticCircuits,./tex/machTransformers,./tex/machElectroMechConv,./tex/machRotatingMachPrinciples,./tex/machSynchronous,./tex/machInduction,./tex/machDCmachines,./tex/machQuestions}
+
 %\includeonly{./tex/machinesPreface,./tex/machTransformers}
 %\includeonly{./tex/emtSymbols,./tex/machinesPreface,./tex/machRotatingMachPrinciples}
 
@@ -71,12 +72,12 @@
 
 \maketitle
 \newpage
-تاریخ درستگی: 12 مئی \سن{2020}
 
 \tableofcontents
 \pagestyle{empty}
+\addcontentsline{toc}{chapter}{دیباچہ}
 \include{./tex/machinesPreface}
-\include{./tex/emtSymbols}
+%\include{./tex/emtSymbols}
 
 \mainmatter                      %added this
 %\renewcommand*{\chaptername}{باب}
@@ -94,7 +95,7 @@
 \include{./tex/machSynchronous}
 \include{./tex/machInduction}
 \include{./tex/machDCmachines}
-%\include{./tex/machQuestions}
+\include{./tex/machQuestions}
 
 %\immediate\closeout\tempfileTerms
 
