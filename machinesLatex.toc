@@ -66,13 +66,13 @@
 \contentsline {section}{\numberline {\farsidigits {5}.\farsidigits {2}}معاصر مشین}{\farsidigits {107}}{}%
 \contentsline {section}{\numberline {\farsidigits {5}.\farsidigits {3}}محرک برقی دباو}{\farsidigits {115}}{}%
 \contentsline {section}{\numberline {\farsidigits {5}.\farsidigits {4}}پھیلے لچھے اور سائن نما مقناطیسی دباو}{\farsidigits {118}}{}%
-\contentsline {subsection}{\numberline {\farsidigits {5}.\farsidigits {4}.\farsidigits {1}}بدلتا رو مشین}{\farsidigits {120}}{}%
+\contentsline {subsection}{\numberline {\farsidigits {5}.\farsidigits {4}.\farsidigits {1}}بدلتی رو مشین}{\farsidigits {120}}{}%
 \contentsline {section}{\numberline {\farsidigits {5}.\farsidigits {5}}مقناطیسی دباو کی گھومتی امواج}{\farsidigits {127}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {5}.\farsidigits {5}.\farsidigits {1}}ایک دور کی لپٹی مشین}{\farsidigits {127}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {5}.\farsidigits {5}.\farsidigits {2}}تین دور کی لپٹی مشین کا تحلیلی تجزیہ}{\farsidigits {128}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {5}.\farsidigits {5}.\farsidigits {3}}تین دور کی لپٹی مشین کا ترسیمی تجزیہ}{\farsidigits {132}}{}%
 \contentsline {section}{\numberline {\farsidigits {5}.\farsidigits {6}}محرک برقی دباو}{\farsidigits {135}}{}%
-\contentsline {subsection}{\numberline {\farsidigits {5}.\farsidigits {6}.\farsidigits {1}}بدلتا رو برقی جنریٹر}{\farsidigits {135}}{}%
+\contentsline {subsection}{\numberline {\farsidigits {5}.\farsidigits {6}.\farsidigits {1}}بدلتی رو برقی جنریٹر}{\farsidigits {135}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {5}.\farsidigits {6}.\farsidigits {2}}یک سمت رو برقی جنریٹر}{\farsidigits {140}}{}%
 \contentsline {section}{\numberline {\farsidigits {5}.\farsidigits {7}}ہموار قطب مشینوں میں قوت مروڑ}{\farsidigits {141}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {5}.\farsidigits {7}.\farsidigits {1}}میکانی قوت مروڑ بذریعہ ترکیب توانائی}{\farsidigits {141}}{}%
