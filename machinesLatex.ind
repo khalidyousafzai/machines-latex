@@ -1,5 +1,5 @@
 \begin{theindex}
-\begin{otherlanguage}{english}
+\begin{otherlanguage*}{english}
   \item ampere-turn, 27
   \item armature coil, 112, 212
 
@@ -236,21 +236,21 @@
   \item winding
     \subitem distributed, 118
   \item winding factor, 125
-\end{otherlanguage}
+\end{otherlanguage*}
   \newpage
 \indexspace
 \item ابتدائی
    \subitem جانب، 45
    \subitem لچھا، 45
-\item ارتباط بہاو، 32
+\item ارتباط بہاؤ، 32
 \item اضافی
    \subitem زاویائی رفتار، 179
 \item اکائی سمتیہ، 1
 \item امالی
-   \subitem برقی دباو، 41
+   \subitem برقی دباؤ، 41
 \item امالہ، 33
    \subitem رستا، 155
-\item امالی برقی دباو، 32، 50
+\item امالی برقی دباؤ، 32، 50
 \item ایک، تین پتریاں، 50
 \item ایمپیئر و چکر، 27
 \indexspace
@@ -260,7 +260,7 @@
 \item برقیات
    \subitem قوی، 175
 \item برقی بار، 9، 115
-\item برقی دباو، 23، 116
+\item برقی دباؤ، 23، 116
    \subitem تبادلہ، 46، 53
    \subitem محرک، 116
    \subitem ہیجانی، 156
@@ -289,8 +289,8 @@
 \indexspace
 \item تاخیری، 65
 \item تاخیری زاویہ، 19
-\item تار کا برقی دباو، 77
-\item تار کا برقی رو، 77
+\item تار کا برقی دباؤ، 77
+\item تار کی برقی رو، 77
 \item تانبا، 23
 \item تبادلہ
    \subitem رکاوٹ، 58
@@ -305,12 +305,12 @@
 \item تین دوری، 48، 76
 \indexspace
 \item ٹرانسفارمر
-   \subitem برقی دباو والا، 48
+   \subitem برقی دباؤ والا، 48
    \subitem بوجھ بردار، 56
    \subitem تیل، 62
    \subitem خلائی قالب، 48
-   \subitem دباو بڑھاتا، 48
-   \subitem دباو گھٹاتا، 48
+   \subitem دباؤ بڑھاتا، 48
+   \subitem دباؤ گھٹاتا، 48
    \subitem ذرائع ابلاغ، 48
    \subitem رو والا، 48
    \subitem کامل، 52
@@ -326,7 +326,7 @@
    \subitem پیش، 19
    \subitem تاخیری، 19
 \item جنریٹر
-   \subitem بدلتا رو، 135
+   \subitem بدلتی رو، 135
 \item جوڑ
    \subitem تکونی، 76
    \subitem ستارہ نما، 76
@@ -341,7 +341,7 @@
 \indexspace
 \item خطی
    \subitem برقی دور، 190
-\item خود ارتباط بہاو، 36
+\item خود ارتباط بہاؤ، 36
 \item خود امالہ، 36
 \indexspace
 \item داخلی ہیجان
@@ -430,7 +430,7 @@
 \item کارگزاری، 169
 \item کثافت
    \subitem برقی رو، 23
-\item کثافت مقناطیسی بہاو
+\item کثافت مقناطیسی بہاؤ
    \subitem بقایا، 38
 \indexspace
 \item گرم تار، 77
@@ -443,17 +443,17 @@
    \subitem پیچدار، 34
    \subitem ثانوی، 45
    \subitem رخ، 113
-   \subitem زیادہ برقی دباو، 45
+   \subitem زیادہ برقی دباؤ، 45
    \subitem  ساکن، 88
    \subitem قوی، 112
-   \subitem کم برقی دباو، 45
+   \subitem کم برقی دباؤ، 45
    \subitem گھومتا، 88
    \subitem میدانی، 112
 \indexspace
 \item محدد
    \subitem کارتیسی، 3
    \subitem نلکی، 5
-\item محرک برقی دباو، 50
+\item محرک برقی دباؤ، 50
 \item محوری
    \subitem لمبائی، 137
 \item مخلوط عدد، 163
@@ -477,11 +477,11 @@
    \subitem چال کا دائرہ، 39
    \subitem خاتم شدت، 38
 \item مقناطیسی برقی رو، 52
-\item مقناطیسی بہاو، 25
+\item مقناطیسی بہاؤ، 25
    \subitem رستا، 64
    \subitem کثافت، 27
 \item مقناطیسی چال، 43
-\item مقناطیسی دباو، 25
+\item مقناطیسی دباؤ، 25
    \subitem رخ، 119
 \item مقناطیسی قالب، 26، 45
 \item مقناطیسی مستقل، 21، 141
@@ -491,11 +491,11 @@
 \item موٹر
    \subitem امالی، 175
    \subitem پنجرہ نما، 195
-\item موثر، 16، 41
-\item موثر قیمت، 139
 \item موسیقائی اجزاء، 52
 \item موسیقائی جزو، 120
 \item موصلیت، 21
+\item مؤثر، 16، 41
+\item مؤثر قیمت، 139
 \item میدانی لچھے، 212
 \indexspace
 \item واٹ، 37
@@ -511,13 +511,13 @@
    \subitem خود، 211
    \subitem لچھا، 49
 \item ہیجان انگیز
-   \subitem برقی دباو، 49
+   \subitem برقی دباؤ، 49
    \subitem برقی رو، 49
 \item ہیجان انگیز برقی رو، 49
-\item ہیجانی برقی دباو، 156
+\item ہیجانی برقی دباؤ، 156
 \indexspace
 \item یک دوری، 19، 48
-\item یک دوری برقی دباو، 77
+\item یک دوری برقی دباؤ، 77
 \item یک دوری برقی رو، 77
 \item یک سمت رو
    \subitem مشین، 203

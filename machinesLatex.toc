@@ -116,6 +116,3 @@
 \contentsline {subsection}{\numberline {\farsidigits {8}.\farsidigits {5}.\farsidigits {2}}رفتار بالمقابل قوت مروڑ}{\farsidigits {216}}{}%
 \contentsline {section}{\numberline {\farsidigits {8}.\farsidigits {6}}سوالات مشین، امالی مشین}{\farsidigits {222}}{}%
 \contentsline {chapter}{فرہنگ}{\farsidigits {227}}{}%
-\selectlanguage *{english}
-\selectlanguage *{urdu}
-\selectlanguage *{urdu}
