@@ -3,7 +3,7 @@
 \contentsline {chapter}{دیباچہ}{vi}{}%
 \contentsline {chapter}{\numberline {\farsidigits {1}}بنیادی حقائق}{\farsidigits {1}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {1}}بنیادی اکائیاں}{\farsidigits {1}}{}%
-\contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {2}}غیر سمتی}{\farsidigits {1}}{}%
+\contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {2}}عددیہ}{\farsidigits {1}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {3}}سمتیہ}{\farsidigits {1}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {4}}محدد}{\farsidigits {2}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {1}.\farsidigits {4}.\farsidigits {1}}کارتیسی محددی نظام}{\farsidigits {2}}{}%
@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {9}}حجمی کثافت}{\farsidigits {11}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {10}}صلیبی ضرب اور ضرب نقطہ}{\farsidigits {11}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {1}.\farsidigits {10}.\farsidigits {1}}صلیبی ضرب}{\farsidigits {12}}{}%
-\contentsline {subsection}{\numberline {\farsidigits {1}.\farsidigits {10}.\farsidigits {2}}نقطی ضرب}{\farsidigits {14}}{}%
+\contentsline {subsection}{\numberline {\farsidigits {1}.\farsidigits {10}.\farsidigits {2}}نقطوی ضرب}{\farsidigits {14}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {11}}تفرق اور جزوی تفرق}{\farsidigits {15}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {12}}خطی تکمل}{\farsidigits {15}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {13}}سطحی تکمل}{\farsidigits {16}}{}%
@@ -115,4 +115,3 @@
 \contentsline {subsection}{\numberline {\farsidigits {8}.\farsidigits {5}.\farsidigits {1}}حاصل برقی دباؤ بالمقابل برقی بوجھ}{\farsidigits {214}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {8}.\farsidigits {5}.\farsidigits {2}}رفتار بالمقابل قوت مروڑ}{\farsidigits {216}}{}%
 \contentsline {section}{\numberline {\farsidigits {8}.\farsidigits {6}}سوالات مشین، امالی مشین}{\farsidigits {222}}{}%
-\contentsline {chapter}{فرہنگ}{\farsidigits {227}}{}%
