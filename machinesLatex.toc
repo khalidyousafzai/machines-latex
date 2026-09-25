@@ -6,8 +6,8 @@
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {2}}عددیہ}{\farsidigits {1}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {3}}سمتیہ}{\farsidigits {1}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {4}}محدد}{\farsidigits {2}}{}%
-\contentsline {subsection}{\numberline {\farsidigits {1}.\farsidigits {4}.\farsidigits {1}}کارتیسی محددی نظام}{\farsidigits {2}}{}%
-\contentsline {subsection}{\numberline {\farsidigits {1}.\farsidigits {4}.\farsidigits {2}}نلکی محددی نظام}{\farsidigits {4}}{}%
+\contentsline {subsection}{\numberline {\farsidigits {1}.\farsidigits {4}.\farsidigits {1}}کارتیسی محدد نظام}{\farsidigits {2}}{}%
+\contentsline {subsection}{\numberline {\farsidigits {1}.\farsidigits {4}.\farsidigits {2}}نلکی محدد نظام}{\farsidigits {4}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {5}}سمتیہ رقبہ}{\farsidigits {6}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {6}}رقبہ عمودی تراش}{\farsidigits {8}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {7}}برقی اور مقناطیسی میدان}{\farsidigits {9}}{}%
