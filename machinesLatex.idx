@@ -25,7 +25,7 @@
 \indexentry{surface density}{\farsidigits {10}}
 \indexentry{سطحی کثافت}{\farsidigits {10}}
 \indexentry{cross product}{\farsidigits {12}}
-\indexentry{ضرب صلیبی}{\farsidigits {12}}
+\indexentry{صلیبی ضرب}{\farsidigits {12}}
 \indexentry{dot product}{\farsidigits {14}}
 \indexentry{ضرب!نقطوی}{\farsidigits {14}}
 \indexentry{تفرق!جزوی}{\farsidigits {15}}
@@ -270,7 +270,8 @@
 \indexentry{برقرار چالو}{\farsidigits {83}}
 \indexentry{relay}{\farsidigits {85}}
 \indexentry{ریلے}{\farsidigits {85}}
-\indexentry{سمتیہ رفتار}{\farsidigits {85}}
+\indexentry{velocity}{\farsidigits {85}}
+\indexentry{سرعت}{\farsidigits {85}}
 \indexentry{Lorenz equation}{\farsidigits {86}}
 \indexentry{مساوات لورینز}{\farsidigits {86}}
 \indexentry{co-energy}{\farsidigits {88}}

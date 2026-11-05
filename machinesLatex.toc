@@ -16,7 +16,7 @@
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {8}}سطحی اور حجمی کثافت}{\farsidigits {10}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {1}.\farsidigits {8}.\farsidigits {1}}سطحی کثافت}{\farsidigits {10}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {9}}حجمی کثافت}{\farsidigits {11}}{}%
-\contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {10}}صلیبی ضرب اور ضرب نقطہ}{\farsidigits {11}}{}%
+\contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {10}}صلیبی ضرب اور نقطوی ضرب}{\farsidigits {11}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {1}.\farsidigits {10}.\farsidigits {1}}صلیبی ضرب}{\farsidigits {12}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {1}.\farsidigits {10}.\farsidigits {2}}نقطوی ضرب}{\farsidigits {14}}{}%
 \contentsline {section}{\numberline {\farsidigits {1}.\farsidigits {11}}تفرق اور جزوی تفرق}{\farsidigits {15}}{}%
