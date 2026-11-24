@@ -31,7 +31,7 @@
 \contentsline {section}{\numberline {\farsidigits {2}.\farsidigits {5}}کثافتِ مقناطیسی بہاؤ اور مقناطیسی میدان کی شدت}{\farsidigits {26}}{}%
 \contentsline {section}{\numberline {\farsidigits {2}.\farsidigits {6}}مقناطیسی دور حصہ دوم}{\farsidigits {28}}{}%
 \contentsline {section}{\numberline {\farsidigits {2}.\farsidigits {7}}خود امالہ ، مشترکہ امالہ اور توانائی}{\farsidigits {32}}{}%
-\contentsline {section}{\numberline {\farsidigits {2}.\farsidigits {8}}مقناطیسی مادہ کے خواص}{\farsidigits {37}}{}%
+\contentsline {section}{\numberline {\farsidigits {2}.\farsidigits {8}}مقناطیسی مادّہ کے خواص}{\farsidigits {37}}{}%
 \contentsline {section}{\numberline {\farsidigits {2}.\farsidigits {9}}ہیجان شدہ لچھا}{\farsidigits {41}}{}%
 \contentsline {chapter}{\numberline {\farsidigits {3}}ٹرانسفارمر}{\farsidigits {45}}{}%
 \contentsline {section}{\numberline {\farsidigits {3}.\farsidigits {1}}ٹرانسفارمر کی اہمیت}{\farsidigits {46}}{}%
@@ -54,7 +54,7 @@
 \contentsline {section}{\numberline {\farsidigits {3}.\farsidigits {11}}کھلے دور معائنہ اور قصر دور معائنہ}{\farsidigits {71}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {3}.\farsidigits {11}.\farsidigits {1}}کھلا دور معائنہ}{\farsidigits {71}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {3}.\farsidigits {11}.\farsidigits {2}} قصر دور معائنہ}{\farsidigits {73}}{}%
-\contentsline {section}{\numberline {\farsidigits {3}.\farsidigits {12}}تین دوری ٹرانسفارمر}{\farsidigits {76}}{}%
+\contentsline {section}{\numberline {\farsidigits {3}.\farsidigits {12}}سہ ہیت ٹرانسفارمر}{\farsidigits {76}}{}%
 \contentsline {section}{\numberline {\farsidigits {3}.\farsidigits {13}}ٹرانسفارمر چالو کرتے لمحہ زیادہ ہیجان انگیز برقی رو کا گزر}{\farsidigits {82}}{}%
 \contentsline {chapter}{\numberline {\farsidigits {4}}برقی اور میکانی توانائی کا باہمی تبادلہ}{\farsidigits {85}}{}%
 \contentsline {section}{\numberline {\farsidigits {4}.\farsidigits {1}}مقناطیسی نظام میں قوت اور قوت مروڑ}{\farsidigits {85}}{}%
@@ -95,7 +95,7 @@
 \contentsline {section}{\numberline {\farsidigits {7}.\farsidigits {1}}ساکن لچھوں کی گھومتی مقناطیسی موج}{\farsidigits {175}}{}%
 \contentsline {section}{\numberline {\farsidigits {7}.\farsidigits {2}}مشین کا سرکاو اور گھومتی امواج پر تبصرہ}{\farsidigits {176}}{}%
 \contentsline {section}{\numberline {\farsidigits {7}.\farsidigits {3}}ساکن لچھوں میں امالی برقی دباؤ}{\farsidigits {177}}{}%
-\contentsline {section}{\numberline {\farsidigits {7}.\farsidigits {4}}ساکن لچھوں کی موج کا گھومتے لچھوں کے ساتھ اضافی رفتار اور ان میں پیدا امالی برقی دباؤ}{\farsidigits {178}}{}%
+\contentsline {section}{\numberline {\farsidigits {7}.\farsidigits {4}}ساکن لچھوں کی موج کا گھومتے لچھوں کے ساتھ باہمی رفتار اور ان میں پیدا امالی برقی دباؤ}{\farsidigits {178}}{}%
 \contentsline {section}{\numberline {\farsidigits {7}.\farsidigits {5}}گھومتے لچھوں کی گھومتے مقناطیسی دباؤ کی موج}{\farsidigits {181}}{}%
 \contentsline {section}{\numberline {\farsidigits {7}.\farsidigits {6}}گھومتے لچھوں کے مساوی فرضی ساکن لچھے}{\farsidigits {182}}{}%
 \contentsline {section}{\numberline {\farsidigits {7}.\farsidigits {7}}امالی موٹر کا مساوی برقی دور}{\farsidigits {183}}{}%
@@ -115,3 +115,4 @@
 \contentsline {subsection}{\numberline {\farsidigits {8}.\farsidigits {5}.\farsidigits {1}}حاصل برقی دباؤ بالمقابل برقی بوجھ}{\farsidigits {214}}{}%
 \contentsline {subsection}{\numberline {\farsidigits {8}.\farsidigits {5}.\farsidigits {2}}رفتار بالمقابل قوت مروڑ}{\farsidigits {216}}{}%
 \contentsline {section}{\numberline {\farsidigits {8}.\farsidigits {6}}سوالات مشین، امالی مشین}{\farsidigits {222}}{}%
+\contentsline {chapter}{فرہنگ}{\farsidigits {227}}{}%

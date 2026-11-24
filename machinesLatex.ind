@@ -1,241 +1,242 @@
 \begin{theindex}
 \begin{otherlanguage*}{english}
-  \item ampere-turn, 27
-  \item armature coil, 112, 212
+  \item ampere-turn ,  27
+  \item armature coil ,  112 ,  212
 
   \indexspace
 
-  \item capacitor, 164
-  \item carbon bush, 150
-  \item cartesian system, 3
-  \item charge, 9, 115
-  \item circuit breaker, 151
-  \item co-energy, 88
-  \item coercivity, 38
+  \item capacitor ,  164
+  \item carbon bush ,  150
+  \item cartesian system ,  3
+  \item charge ,  9 ,  115
+  \item circuit breaker ,  151
+  \item co-energy ,  88
+  \item coercivity ,  38
   \item coil
-    \subitem high voltage, 45
-    \subitem low voltage, 45
-    \subitem primary, 45
-    \subitem secondary, 45
-  \item commutator, 140, 203
-  \item conductivity, 21
-  \item conservative field, 91
-  \item core, 45, 107
-  \item core loss, 50
-  \item core loss component, 52
-  \item Coulomb's law, 9
-  \item cross product, 12
-  \item cross section, 8
+    \subitem high voltage ,  45
+    \subitem low voltage ,  45
+    \subitem primary ,  45
+    \subitem secondary ,  45
+  \item commutator ,  140 ,  203
+  \item conductivity ,  21
+  \item conservative field ,  91
+  \item core ,  45 ,  107
+  \item core loss ,  50
+  \item core loss component ,  52
+  \item Coulomb's law ,  9
+  \item cross product ,  12
+  \item cross section ,  8
   \item current
-    \subitem transformation, 54
-  \item cylindrical coordinates, 5
+    \subitem transformation ,  54
+  \item cylindrical coordinates ,  5
 
   \indexspace
 
-  \item delta connected, 76
-  \item differentiation, 15
-  \item dot product, 14
+  \item delta connected ,  76
+  \item differentiation ,  15
+  \item dot product ,  14
 
   \indexspace
 
-  \item E,I, 50
-  \item earth, 77
-  \item eddy current loss, 50
-  \item eddy currents, 50, 107
+  \item E , I ,  50
+  \item earth ,  77
+  \item eddy current loss ,  50
+  \item eddy currents ,  50 ,  107
   \item electric field
-    \subitem intensity, 9
-  \item electrical rating, 48
-  \item electromagnet, 111
-  \item electromotive force, 50, 116
+    \subitem intensity ,  9
+  \item electrical rating ,  48
+  \item electromagnet ,  111
+  \item electromotive force ,  50 ,  116
   \item electronics
-    \subitem power, 175
-  \item emf, 116
-  \item enamel, 50
-  \item energy, 37
-    \subitem co, 95
-  \item Euler, 17
-  \item excitation current, 42, 49
-  \item excitation voltage, 49
-  \item excite, 49
-  \item excited coil, 49
+    \subitem power ,  175
+  \item emf ,  116
+  \item enamel ,  50
+  \item energy ,  37
+    \subitem co ,  95
+  \item Euler ,  17
+  \item excitation current ,  42 ,  49
+  \item excitation voltage ,  49
+  \item excite ,  49
+  \item excited coil ,  49
 
   \indexspace
 
-  \item Faraday's law, 32, 107
-  \item field coil, 112, 212
-  \item flux, 25
-  \item Fourier series, 51, 120
-  \item frequency, 111
-  \item fundamental, 120
-  \item fundamental component, 52
+  \item Faraday's law ,  32 ,  107
+  \item field coil ,  112 ,  212
+  \item flux ,  25
+  \item Fourier series ,  51 ,  120
+  \item frequency ,  111
+  \item fundamental ,  120
+  \item fundamental component ,  52
 
   \indexspace
 
   \item generator
-    \subitem ac, 135
-  \item ground current, 78
-  \item ground wire, 77
+    \subitem ac ,  135
+  \item ground current ,  78
+  \item ground wire ,  77
 
   \indexspace
 
-  \item harmonic, 120
-  \item harmonic components, 52
-  \item Henry, 33
-  \item hunting, 151
-  \item hysteresis loop, 39
+  \item harmonic ,  120
+  \item harmonic components ,  52
+  \item Henry ,  33
+  \item hunting ,  151
+  \item hysteresis loop ,  39
 
   \indexspace
 
-  \item impedance transformation, 58
-  \item induced voltage, 32, 41, 50
-  \item inductance, 33
-    \subitem leakage, 155
+  \item impedance transformation ,  58
+  \item induced voltage ,  32 ,  41 ,  50
+  \item inductance ,  33
+    \subitem leakage ,  155
   \item induction
-    \subitem motor, 175
+    \subitem motor ,  175
 
   \indexspace
 
-  \item Joule, 37
+  \item Joule ,  37
 
   \indexspace
 
-  \item lagging, 19
-  \item laminations, 26, 50, 107
-  \item leading, 19
-  \item leakage inductance, 64
-  \item leakage reactance, 64
-  \item line current, 77
-  \item line voltage, 77
-  \item linear circuit, 190
-  \item load, 81
-  \item Lorentz law, 115
-  \item Lorenz equation, 86
+  \item lagging ,  19
+  \item laminations ,  26 ,  50 ,  107
+  \item leading ,  19
+  \item leakage inductance ,  64
+  \item leakage reactance ,  64
+  \item line current ,  77
+  \item line voltage ,  77
+  \item linear circuit ,  190
+  \item load ,  81
+  \item Lorentz law ,  115
+  \item Lorenz equation ,  86
 
   \indexspace
 
-  \item magnetic constant, 21
-  \item magnetic core, 26
+  \item magnetic constant ,  21
+  \item magnetic core ,  26
   \item magnetic field
-    \subitem intensity, 10, 27
+    \subitem intensity ,  10 ,  27
   \item magnetic flux
-    \subitem density, 27
-    \subitem leakage, 64
-    \subitem residual, 38
-  \item magnetizing current, 52
-  \item mmf, 25
-  \item model, 67, 175
-  \item mutual flux linkage, 36
-  \item mutual inductance, 36
+    \subitem density ,  27
+    \subitem leakage ,  64
+    \subitem residual ,  38
+  \item magnetizing current ,  52
+  \item mmf ,  25
+  \item model ,  67 ,  175
+  \item mutual flux linkage ,  36
+  \item mutual inductance ,  36
 
   \indexspace
 
-  \item name plate, 80
-  \item non-salient poles, 150
+  \item name plate ,  80
+  \item non-salient poles ,  150
 
   \indexspace
 
-  \item Ohm's law, 22
-  \item open circuit test, 71
-  \item orthonormal, 2
+  \item Ohm's law ,  22
+  \item open circuit test ,  71
+  \item orthonormal ,  2
 
   \indexspace
 
-  \item parallel connected, 213
-  \item permeability, 21
-    \subitem relative, 22
-  \item phase current, 77
-  \item phase difference, 19
-  \item phase voltage, 77
-  \item phasor, 18
+  \item parallel connected ,  213
+  \item permeability ,  21
+    \subitem relative ,  22
+  \item phase current ,  77
+  \item phase difference ,  19
+  \item phase voltage ,  77
+  \item phasor ,  18
   \item pole
-    \subitem non-salient, 118
-    \subitem salient, 118
-  \item power, 37
-  \item power factor, 19
-    \subitem lagging, 19
-    \subitem leading, 19
-  \item power factor angle, 19
-  \item power-angle law, 159
+    \subitem non-salient ,  118
+    \subitem salient ,  118
+  \item power ,  37
+  \item power factor ,  19
+    \subitem lagging ,  19
+    \subitem leading ,  19
+  \item power factor angle ,  19
+  \item power-angle law ,  159
   \item primary
-    \subitem side, 45
+    \subitem side ,  45
 
   \indexspace
 
-  \item rating, 80
-  \item rectifier, 140
-  \item relative permeability, 22
-  \item relay, 85
-  \item reluctance, 21
-  \item resistance, 21
-  \item rms, 16, 41, 139
-  \item rotor, 30
-  \item rotor coil, 88
-  \item rpm, 132
+  \item rating ,  80
+  \item rectifier ,  140
+  \item relative permeability ,  22
+  \item relay ,  85
+  \item reluctance ,  21
+  \item resistance ,  21
+  \item rms ,  16 ,  41 ,  139
+  \item rotor ,  30
+  \item rotor coil ,  88
+  \item rpm ,  132
 
   \indexspace
 
-  \item saturation, 39
-  \item scalar, 1
-  \item self excited, 211
-  \item self flux linkage, 36
-  \item self inductance, 36
-  \item separately excited, 211
+  \item saturation ,  39
+  \item scalar ,  1
+  \item self excited ,  211
+  \item self flux linkage ,  36
+  \item self inductance ,  36
+  \item separately excited ,  211
   \item side
-    \subitem secondary, 45
-  \item single phase, 19, 48
-  \item slip, 176
-  \item slip rings, 150, 193
-  \item squirrel cage, 195
-  \item star connected, 76
-  \item stator, 30
-  \item stator coil, 88, 108
-  \item steady state, 149
-  \item step down transformer, 48
-  \item step up transformer, 48
-  \item surface density, 10
-  \item synchronous, 111
-  \item synchronous inductance, 156
-  \item synchronous speed, 132, 149
+    \subitem secondary ,  45
+  \item single phase ,  19 ,  48
+  \item slip ,  176
+  \item slip rings ,  150 ,  193
+  \item squirrel cage ,  195
+  \item star connected ,  76
+  \item stator ,  30
+  \item stator coil ,  88 ,  108
+  \item steady state ,  149
+  \item step down transformer ,  48
+  \item step up transformer ,  48
+  \item surface density ,  10
+  \item synchronous ,  111
+  \item synchronous inductance ,  156
+  \item synchronous speed ,  132 ,  149
 
   \indexspace
 
-  \item Tesla, 27
+  \item Tesla ,  27
   \item theorem
-    \subitem maximum power transfer, 192
-  \item Thevenin theorem, 190
-  \item three phase, 48, 76
-  \item time period, 120
-  \item torque, 141, 176
-    \subitem pull out, 151
+    \subitem maximum power transfer ,  192
+  \item Thevenin theorem ,  190
+  \item three phase ,  48 ,  76
+  \item time period ,  120
+  \item torque ,  141 ,  176
+    \subitem pull out ,  151
   \item transformer
-    \subitem air core, 48
-    \subitem communication, 48
-    \subitem ideal, 52
-    \subitem oil, 62
-  \item transient state, 149
-  \item turbine, 151
+    \subitem air core ,  48
+    \subitem communication ,  48
+    \subitem ideal ,  52
+    \subitem oil ,  62
+  \item transient state ,  149
+  \item turbine ,  151
 
   \indexspace
 
-  \item unit vector, 1
+  \item unit vector ,  1
 
   \indexspace
 
-  \item VA, 62
-  \item vector, 1
-  \item volt, 116
-  \item volt-ampere, 62
-  \item voltage, 116
-    \subitem DC, 140
-    \subitem transformation, 53
+  \item VA ,  62
+  \item vector ,  1
+  \item velocity ,  85
+  \item volt ,  116
+  \item volt-ampere ,  62
+  \item voltage ,  116
+    \subitem DC ,  140
+    \subitem transformation ,  53
 
   \indexspace
 
-  \item Watt, 37
-  \item Weber, 27
+  \item Watt ,  37
+  \item Weber ,  27
   \item winding
-    \subitem distributed, 118
-  \item winding factor, 125
+    \subitem distributed ,  118
+  \item winding factor ,  125
 \end{otherlanguage*}
   \newpage
 \indexspace
@@ -243,8 +244,6 @@
    \subitem جانب، 45
    \subitem لچھا، 45
 \item ارتباط بہاؤ، 32
-\item اضافی
-   \subitem زاویائی رفتار، 179
 \item اکائی سمتیہ، 1
 \item امالی
    \subitem برقی دباؤ، 41
@@ -255,6 +254,8 @@
 \item ایمپیئر و چکر، 27
 \indexspace
 \item بار، 115
+\item باہمی 
+   \subitem زاویائی رفتار، 179
 \item برقرار چالو، 83، 149
 \item برق گھیر، 164
 \item برقیات
@@ -302,7 +303,6 @@
 \item تکونی جوڑ، 76
 \item توانائی، 37
    \subitem ہم، 95
-\item تین دوری، 48، 76
 \indexspace
 \item ٹرانسفارمر
    \subitem برقی دباؤ والا، 48
@@ -358,7 +358,7 @@
    \subitem متعاملہ، 64
 \item رستا متعاملیت، 183
 \item رفتار
-   \subitem اضافی زاویائی، 179
+   \subitem باہمی زاویائی، 179
 \item روغن، 50
 \item روک، 192
 \item ریاضی نمونہ، 67، 175
@@ -376,6 +376,7 @@
 \indexspace
 \item ْسر دور، 32
 \indexspace
+\item سرعت، 85
 \item سرکاو، 176
 \item سرک چھلے، 150، 193
 \item سطحی تکمل، 153
@@ -386,22 +387,23 @@
    \subitem برقیاتی، 140
    \subitem میکانی، 140
 \item سمتیہ، 1
-   \subitem عمودی اکائی، 2
-\item سمتی رفتار، 85
+   \subitem اکائی متعامد، 2
+\item سہ ہیت، 48، 76
 \item سیرابیت، 39
 \indexspace
+\item صلیبی ضرب، 12
+\indexspace
 \item ضرب
-   \subitem نقطہ، 14
-\item ضرب صلیبی، 12
+   \subitem نقطوی، 14
 \indexspace
 \item طاقت، 37
 \item طاقت بالمقابل زاویہ، 159
 \item طول موج، 15
 \indexspace
+\item عددیہ، 1
 \item عمودی تراش، 8
    \subitem رقبہ، 8
 \indexspace
-\item غیر سمتی، 1
 \item غیر معاصر، 151
 \indexspace
 \item فوریئر، 211
@@ -516,11 +518,11 @@
 \item ہیجان انگیز برقی رو، 49
 \item ہیجانی برقی دباؤ، 156
 \indexspace
-\item یک دوری، 19، 48
-\item یک دوری برقی دباؤ، 77
-\item یک دوری برقی رو، 77
 \item یک سمت رو
    \subitem مشین، 203
+\item یک ہیت، 19، 48
+\item یک ہیتی برقی دباؤ، 77
+\item یک ہیتی برقی رو، 77
 \item یولر مساوات، 17
 
 \end{theindex}

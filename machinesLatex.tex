@@ -6,17 +6,11 @@
 \usepackage{pgfplots}
 
 %============================
-%\usepackage{newfile}                                                                  %collecting techniacalterms
-%\newwrite\tempfileTerms
-%\immediate\openout\tempfileTerms=technicalTerms.tex
-%\newcommand*\wf[1]{\immediate\write\tempfileTerms{#1}}
-%			%%collecting techinal terms
-%\newcommand*{\اصطلاح}[1]{\wf{\unexpanded{ur, #1 ,}}}
-%\newcommand*{\حاشیہب}[1]{ \wf{\unexpanded{en, #1,}}}
-%================================
-%=================================
+
+\usepackage{newfile}		%used to write answers and technical terms to files 
 
 \input{./tex/myUrduCommandsMachines.tex}                  %turning latex into urdu
+\input{./tex/kConditionalCollectTerms}			%collecting terms at end of book
 %%\input{./tex/myUrduCommands.tex}                  %turning latex into urdu
 \input{./tex/myUrduGreek.tex}
 \input{./tex/myEMTvectors.tex}
@@ -60,7 +54,7 @@
 
 \setlatin
 
-\makeindex
+%\makeindex
 %====================
 
 \begin{document}
@@ -106,6 +100,6 @@
 \cleardoublepage
 \addcontentsline{toc}{chapter}{فرہنگ}
 
-%\printindex
+\printindex
 
 \end{document}
